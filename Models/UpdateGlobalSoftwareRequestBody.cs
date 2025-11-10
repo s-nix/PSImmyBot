@@ -1,0 +1,78 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record UpdateGlobalSoftwareRequestBody(
+    [property: JsonPropertyName("agentIntegrationTypeId")]
+    Guid? AgentIntegrationTypeId,
+    [property: JsonPropertyName("chocoProviderSoftwareId")]
+    string? ChocoProviderSoftwareId,
+    [property: JsonPropertyName("detectionMethod")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DetectionMethod>))]
+    DetectionMethod DetectionMethod,
+    [property: JsonPropertyName("detectionScriptId")]
+    int? DetectionScriptId,
+    [property: JsonPropertyName("downloadInstallerScriptId")]
+    int? DownloadInstallerScriptId,
+    [property: JsonPropertyName("dynamicVersionsScriptId")]
+    int? DynamicVersionsScriptId,
+    [property: JsonPropertyName("hidden")] bool Hidden,
+    [property: JsonPropertyName("installOrder")]
+    int InstallOrder,
+    [property: JsonPropertyName("installScriptId")]
+    int? InstallScriptId,
+    [property: JsonPropertyName("licenseDescription")]
+    string? LicenseDescription,
+    [property: JsonPropertyName("licenseRequirement")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareLicenseRequirement>))]
+    SoftwareLicenseRequirement LicenseRequirement,
+    [property: JsonPropertyName("licenseType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<LicenseType>))]
+    LicenseType LicenseType,
+    [property: JsonPropertyName("maintenanceTaskId")]
+    int? MaintenanceTaskId,
+    [property: JsonPropertyName("name")] string? Name,
+    [property: JsonPropertyName("niniteProviderSoftwareId")]
+    string? NiniteProviderSoftwareId,
+    [property: JsonPropertyName("notes")] string? Notes,
+    [property: JsonPropertyName("postInstallScriptId")]
+    int? PostInstallScriptId,
+    [property: JsonPropertyName("postUninstallScriptId")]
+    int? PostUninstallScriptId,
+    [property: JsonPropertyName("rebootNeeded")]
+    bool RebootNeeded,
+    [property: JsonPropertyName("recommended")]
+    bool Recommended,
+    [property: JsonPropertyName("repairScriptId")]
+    int? RepairScriptId,
+    [property: JsonPropertyName("repairType")]
+    int? RepairType,
+    [property: JsonPropertyName("softwareIconMediaId")]
+    int? SoftwareIconMediaId,
+    [property: JsonPropertyName("softwareId")]
+    int SoftwareId,
+    [property: JsonPropertyName("softwarePrerequisites")]
+    ICollection<SoftwarePrerequisite>? SoftwarePrerequisites,
+    [property: JsonPropertyName("softwareTableName")]
+    string? SoftwareTableName,
+    [property: JsonPropertyName("softwareTableNameSearchMode")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareTableNameSearchMode>))]
+    SoftwareTableNameSearchMode SoftwareTableNameSearchMode,
+    [property: JsonPropertyName("testFailedError")]
+    string? TestFailedError,
+    [property: JsonPropertyName("testRequired")]
+    bool TestRequired,
+    [property: JsonPropertyName("testScriptId")]
+    int? TestScriptId,
+    [property: JsonPropertyName("uninstallScriptId")]
+    int? UninstallScriptId,
+    [property: JsonPropertyName("upgradeCode")]
+    string? UpgradeCode,
+    [property: JsonPropertyName("upgradeScriptId")]
+    int? UpgradeScriptId,
+    [property: JsonPropertyName("upgradeStrategy")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<UpdateActionType>))]
+    UpdateActionType UpgradeStrategy,
+    [property: JsonPropertyName("useDynamicVersions")]
+    bool UseDynamicVersions);

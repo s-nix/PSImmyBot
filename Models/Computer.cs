@@ -1,0 +1,102 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record Computer(
+    [property: JsonPropertyName("additionalPersons")]
+    ICollection<ComputerPerson>? AdditionalPersons,
+    [property: JsonPropertyName("agentIdentificationFailures")]
+    ICollection<AgentIdentificationFailure>? AgentIdentificationFailures,
+    [property: JsonPropertyName("agents")] ICollection<ProviderAgent>? Agents,
+    [property: JsonPropertyName("chassisTypes")]
+    ICollection<int>? ChassisTypes,
+    [property: JsonPropertyName("computerName")]
+    string? ComputerName,
+    [property: JsonPropertyName("computerNote")]
+    ComputerNote ComputerNote,
+    [property: JsonPropertyName("computerTags")]
+    ICollection<ComputerTag>? ComputerTags,
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
+    [property: JsonPropertyName("deletedAt")]
+    DateTimeOffset? DeletedAt,
+    [property: JsonPropertyName("deletedReason")]
+    string? DeletedReason,
+    [property: JsonPropertyName("detectedSoftware")]
+    ICollection<DetectedComputerSoftware>? DetectedSoftware,
+    [property: JsonPropertyName("detectionOutdated")]
+    bool DetectionOutdated,
+    [property: JsonPropertyName("deviceId")]
+    Guid DeviceId,
+    [property: JsonPropertyName("devLabVmClaimExpirationDateUtc")]
+    DateTimeOffset? DevLabVmClaimExpirationDateUtc,
+    [property: JsonPropertyName("devLabVmName")]
+    string? DevLabVmName,
+    [property: JsonPropertyName("devLabVmUnclaimed")]
+    bool DevLabVmUnclaimed,
+    [property: JsonPropertyName("domain")] string? Domain,
+    [property: JsonPropertyName("domainRole")]
+    int? DomainRole,
+    [property: JsonPropertyName("excludedFromUserAffinity")]
+    bool ExcludedFromUserAffinity,
+    [property: JsonPropertyName("excludeFromMaintenance")]
+    bool ExcludeFromMaintenance,
+    [property: JsonPropertyName("externalIpAddress")]
+    string? ExternalIpAddress,
+    [property: JsonPropertyName("hasPendingReboot")]
+    bool? HasPendingReboot,
+    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("internalIpAddress")]
+    string? InternalIpAddress,
+    [property: JsonPropertyName("inventoryStartedDate")]
+    DateTimeOffset? InventoryStartedDate,
+    [property: JsonPropertyName("isSandbox")]
+    bool IsSandbox,
+    [property: JsonPropertyName("lastBootTimeUtc")]
+    string? LastBootTimeUtc,
+    [property: JsonPropertyName("lastLoggedOnUser")]
+    string? LastLoggedOnUser,
+    [property: JsonPropertyName("latestInventoryScriptResults")]
+    ICollection<ComputerInventoryTaskScriptResult>? LatestInventoryScriptResults,
+    [property: JsonPropertyName("latestProviderEvent")]
+    ComputerLatestProviderEvent LatestProviderEvent,
+    [property: JsonPropertyName("manufacturer")]
+    string? Manufacturer,
+    [property: JsonPropertyName("model")] string? Model,
+    [property: JsonPropertyName("onboardedDateUtc")]
+    DateTimeOffset? OnboardedDateUtc,
+    [property: JsonPropertyName("onboardingStatus")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ComputerOnboardingStatus>))]
+    ComputerOnboardingStatus OnboardingStatus,
+    [property: JsonPropertyName("operatingSystem")]
+    string? OperatingSystem,
+    [property: JsonPropertyName("osInstallDate")]
+    DateTimeOffset? OsInstallDate,
+    [property: JsonPropertyName("ownerTenant")]
+    Tenant OwnerTenant,
+    [property: JsonPropertyName("predecessorComputers")]
+    ICollection<Computer>? PredecessorComputers,
+    [property: JsonPropertyName("primaryPerson")]
+    Person PrimaryPerson,
+    [property: JsonPropertyName("primaryPersonId")]
+    int? PrimaryPersonId,
+    [property: JsonPropertyName("remoteControlRecordings")]
+    ICollection<RemoteControlRecording>? RemoteControlRecordings,
+    [property: JsonPropertyName("schedules")]
+    ICollection<Schedule>? Schedules,
+    [property: JsonPropertyName("serialNumber")]
+    string? SerialNumber,
+    [property: JsonPropertyName("sessions")]
+    ICollection<MaintenanceSession>? Sessions,
+    [property: JsonPropertyName("successorComputer")]
+    Computer SuccessorComputer,
+    [property: JsonPropertyName("successorComputerId")]
+    int? SuccessorComputerId,
+    [property: JsonPropertyName("tags")] ICollection<Tag>? Tags,
+    [property: JsonPropertyName("tenantId")]
+    int TenantId,
+    [property: JsonPropertyName("updatedDate")]
+    DateTimeOffset UpdatedDate,
+    [property: JsonPropertyName("userAffinities")]
+    ICollection<UserAffinity>? UserAffinities);

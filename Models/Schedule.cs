@@ -1,0 +1,100 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record Schedule(
+    [property: JsonPropertyName("allowAccessToMSPResources")]
+    bool AllowAccessToMspResources,
+    [property: JsonPropertyName("allowAccessToParentTenant")]
+    bool AllowAccessToParentTenant,
+    [property: JsonPropertyName("applyWindowsUpdates")]
+    bool ApplyWindowsUpdates,
+    [property: JsonPropertyName("autoConsentToReboots")]
+    bool AutoConsentToReboots,
+    [property: JsonPropertyName("createdBy")]
+    int? CreatedBy,
+    [property: JsonPropertyName("createdByUser")]
+    User CreatedByUser,
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
+    [property: JsonPropertyName("customCronExpression")]
+    string? CustomCronExpression,
+    [property: JsonPropertyName("day")] int? Day,
+    [property: JsonPropertyName("disabled")]
+    bool Disabled,
+    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("maintenanceIdentifier")]
+    string? MaintenanceIdentifier,
+    [property: JsonPropertyName("maintenanceTime")]
+    string? MaintenanceTime,
+    [property: JsonPropertyName("maintenanceType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
+    MaintenanceType MaintenanceType,
+    [property: JsonPropertyName("name")] string? Name,
+    [property: JsonPropertyName("offlineBehavior")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ComputerOfflineMaintenanceSessionBehavior>))]
+    ComputerOfflineMaintenanceSessionBehavior OfflineBehavior,
+    [property: JsonPropertyName("ownerTenant")]
+    Tenant OwnerTenant,
+    [property: JsonPropertyName("promptTimeoutAction")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<PromptTimeoutAction>))]
+    PromptTimeoutAction PromptTimeoutAction,
+    [property: JsonPropertyName("promptTimeoutMinutes")]
+    int PromptTimeoutMinutes,
+    [property: JsonPropertyName("propagateToChildTenants")]
+    bool PropagateToChildTenants,
+    [property: JsonPropertyName("providerClientGroupType")]
+    Guid? ProviderClientGroupType,
+    [property: JsonPropertyName("providerDeviceGroupType")]
+    Guid? ProviderDeviceGroupType,
+    [property: JsonPropertyName("providerLink")]
+    ProviderLink ProviderLink,
+    [property: JsonPropertyName("providerLinkId")]
+    int? ProviderLinkId,
+    [property: JsonPropertyName("rebootPreference")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<RebootPreference>))]
+    RebootPreference RebootPreference,
+    [property: JsonPropertyName("scheduleExecutionAfterActiveHours")]
+    bool ScheduleExecutionAfterActiveHours,
+    [property: JsonPropertyName("sendDetectionEmail")]
+    bool SendDetectionEmail,
+    [property: JsonPropertyName("sendDetectionEmailWhenAllActionsAreCompliant")]
+    bool SendDetectionEmailWhenAllActionsAreCompliant,
+    [property: JsonPropertyName("sendFollowUpEmail")]
+    bool SendFollowUpEmail,
+    [property: JsonPropertyName("sendFollowUpOnlyIfActionNeeded")]
+    bool SendFollowUpOnlyIfActionNeeded,
+    [property: JsonPropertyName("showMaintenanceActions")]
+    bool ShowMaintenanceActions,
+    [property: JsonPropertyName("showPostponeButton")]
+    bool ShowPostponeButton,
+    [property: JsonPropertyName("showRunNowButton")]
+    bool ShowRunNowButton,
+    [property: JsonPropertyName("suppressRebootsDuringBusinessHours")]
+    bool SuppressRebootsDuringBusinessHours,
+    [property: JsonPropertyName("target")] string? Target,
+    [property: JsonPropertyName("targetCategory")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TargetCategory>))]
+    TargetCategory TargetCategory,
+    [property: JsonPropertyName("targetGroupFilter")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TargetGroupFilter>))]
+    TargetGroupFilter TargetGroupFilter,
+    [property: JsonPropertyName("targetName")]
+    string? TargetName,
+    [property: JsonPropertyName("targetType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TargetType>))]
+    TargetType TargetType,
+    [property: JsonPropertyName("tenantId")]
+    int? TenantId,
+    [property: JsonPropertyName("time")] string? Time,
+    [property: JsonPropertyName("timeZoneInfoId")]
+    string? TimeZoneInfoId,
+    [property: JsonPropertyName("updatedBy")]
+    int? UpdatedBy,
+    [property: JsonPropertyName("updatedByUser")]
+    User UpdatedByUser,
+    [property: JsonPropertyName("updatedDate")]
+    DateTimeOffset UpdatedDate,
+    [property: JsonPropertyName("useComputersTimezoneForExecution")]
+    bool UseComputersTimezoneForExecution);

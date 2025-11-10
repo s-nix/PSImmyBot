@@ -1,0 +1,74 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record GetLocalMaintenanceTaskResponse(
+    [property: JsonPropertyName("createdDateUTC")]
+    DateTimeOffset CreatedDateUtc,
+    [property: JsonPropertyName("databaseType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType DatabaseType,
+    [property: JsonPropertyName("executeSerially")]
+    bool ExecuteSerially,
+    [property: JsonPropertyName("getEnabled")]
+    bool GetEnabled,
+    [property: JsonPropertyName("getScriptId")]
+    int? GetScriptId,
+    [property: JsonPropertyName("getScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType GetScriptType,
+    [property: JsonPropertyName("icon")] MediaResponseBase Icon,
+    [property: JsonPropertyName("iconMediaId")]
+    int? IconMediaId,
+    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("ignoreDuringAutomaticOnboarding")]
+    bool IgnoreDuringAutomaticOnboarding,
+    [property: JsonPropertyName("integrationTypeId")]
+    Guid? IntegrationTypeId,
+    [property: JsonPropertyName("isConfigurationTask")]
+    bool IsConfigurationTask,
+    [property: JsonPropertyName("maintenanceTaskCategory")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceTaskCategory>))]
+    MaintenanceTaskCategory MaintenanceTaskCategory,
+    [property: JsonPropertyName("name")] string? Name,
+    [property: JsonPropertyName("notes")] string? Notes,
+    [property: JsonPropertyName("onboardingOnly")]
+    bool OnboardingOnly,
+    [property: JsonPropertyName("owned")] bool Owned,
+    [property: JsonPropertyName("parameters")]
+    ICollection<GetMaintenanceTaskParameterResponse>? Parameters,
+    [property: JsonPropertyName("recommended")]
+    bool Recommended,
+    [property: JsonPropertyName("setEnabled")]
+    bool SetEnabled,
+    [property: JsonPropertyName("setScriptId")]
+    int? SetScriptId,
+    [property: JsonPropertyName("setScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType SetScriptType,
+    [property: JsonPropertyName("supersededByTaskId")]
+    int? SupersededByTaskId,
+    [property: JsonPropertyName("supersededByTaskMigrationScriptId")]
+    int? SupersededByTaskMigrationScriptId,
+    [property: JsonPropertyName("supersededByTaskMigrationScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType SupersededByTaskMigrationScriptType,
+    [property: JsonPropertyName("supersededByTaskType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType SupersededByTaskType,
+    [property: JsonPropertyName("tenants")]
+    ICollection<TenantMaintenanceTask>? Tenants,
+    [property: JsonPropertyName("testEnabled")]
+    bool TestEnabled,
+    [property: JsonPropertyName("testScriptId")]
+    int? TestScriptId,
+    [property: JsonPropertyName("testScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType TestScriptType,
+    [property: JsonPropertyName("updatedBy")]
+    string? UpdatedBy,
+    [property: JsonPropertyName("updatedDateUTC")]
+    DateTimeOffset UpdatedDateUtc,
+    [property: JsonPropertyName("useScriptParamBlock")]
+    bool UseScriptParamBlock);

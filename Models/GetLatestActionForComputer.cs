@@ -1,0 +1,56 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record GetLatestActionForComputer(
+    [property: JsonPropertyName("actionType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionType>))]
+    MaintenanceActionType ActionType,
+    [property: JsonPropertyName("assignmentId")]
+    int? AssignmentId,
+    [property: JsonPropertyName("assignmentType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType AssignmentType,
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset? CreatedDate,
+    [property: JsonPropertyName("desiredSoftwareState")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DesiredSoftwareState>))]
+    DesiredSoftwareState DesiredSoftwareState,
+    [property: JsonPropertyName("desiredVersion")]
+    string? DesiredVersion,
+    [property: JsonPropertyName("detectedVersion")]
+    string? DetectedVersion,
+    [property: JsonPropertyName("endTime")]
+    DateTimeOffset? EndTime,
+    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("maintenanceDisplayName")]
+    string? MaintenanceDisplayName,
+    [property: JsonPropertyName("maintenanceIdentifier")]
+    string? MaintenanceIdentifier,
+    [property: JsonPropertyName("maintenanceSessionId")]
+    int MaintenanceSessionId,
+    [property: JsonPropertyName("maintenanceTaskMode")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceTaskMode>))]
+    MaintenanceTaskMode MaintenanceTaskMode,
+    [property: JsonPropertyName("maintenanceType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
+    MaintenanceType MaintenanceType,
+    [property: JsonPropertyName("policyDescription")]
+    string? PolicyDescription,
+    [property: JsonPropertyName("reason")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionReason>))]
+    MaintenanceActionReason Reason,
+    [property: JsonPropertyName("result")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResult>))]
+    MaintenanceActionResult Result,
+    [property: JsonPropertyName("resultReason")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResultReason>))]
+    MaintenanceActionResultReason ResultReason,
+    [property: JsonPropertyName("softwareActionIdForConfigurationTask")]
+    int? SoftwareActionIdForConfigurationTask,
+    [property: JsonPropertyName("startTime")]
+    DateTimeOffset? StartTime,
+    [property: JsonPropertyName("status")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionStatus>))]
+    MaintenanceActionStatus Status);
