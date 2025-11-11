@@ -4,6 +4,8 @@ function Set-UpperCase {
   param (
     [string]$InputString
   )
+  $InputString = $InputString.TrimStart("/api/v1/")
+  $InputString = $InputString -replace "{", "" -replace "}", ""
   $strings = $InputString.Split("/")
   $result = foreach ($str in $strings) {
     if ($str -ne "") {
@@ -111,10 +113,8 @@ $(foreach ($param in $parameters) {
     }
 }
 "@
-    #$cmdletFilePath = "Cmdlets/Get$targetMethodName.cs"
-    #$cmdletPayload | Out-File -FilePath $cmdletFilePath -Encoding UTF8
-    Write-Host $cmdletPayload
-    Write-Host "Generated cmdlet: Get$targetMethodName at $cmdletFilePath"
+    $cmdletFilePath = "Cmdlets/Get$targetMethodName.cs"
+    $cmdletPayload | Out-File -FilePath $cmdletFilePath -Encoding UTF8
   }
 }
 
