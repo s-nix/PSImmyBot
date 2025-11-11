@@ -1,5 +1,6 @@
 ﻿using System.Text.Json;
 using PSImmyBot.Models;
+using PropertyInfo = System.Reflection.PropertyInfo;
 
 namespace PSImmyBot;
 internal static class Globals {
@@ -72,5 +73,24 @@ internal static class Globals {
         if (File.Exists(ApiConnectionConfigFilePath)) {
             File.Delete(ApiConnectionConfigFilePath);
         }
+    }
+    public static string ConvertToQueryParameters<T>(T objectToConvert) {
+        if (objectToConvert == null) {
+            return string.Empty;
+        }
+
+        PropertyInfo[] properties = typeof(T).GetProperties();
+        List<string> queryParameters = [];
+
+        foreach (PropertyInfo property in properties) {
+            object? value = property.GetValue(objectToConvert);
+            if (value == null) {
+                continue;
+            }
+            string stringValue = Uri.EscapeDataString(value.ToString() ?? string.Empty);
+            queryParameters.Add($"{property.Name}={stringValue}");
+        }
+
+        return string.Join("&", queryParameters) + "&";
     }
 }

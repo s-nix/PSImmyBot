@@ -1,4 +1,5 @@
-﻿using PSImmyBot.Models;
+﻿using System.Text.Json;
+using PSImmyBot.Models;
 
 namespace PSImmyBot.Services;
 
@@ -13,7 +14,17 @@ public static class ImmyBotApiService {
         HttpResponseMessage response = await client.GetAsync(endpoint);
         response.EnsureSuccessStatusCode();
         string responseContent = await response.Content.ReadAsStringAsync();
-        T? result = System.Text.Json.JsonSerializer.Deserialize<T>(responseContent);
+        T? result;
+        try {
+            result = JsonSerializer.Deserialize<T>(responseContent);
+        } catch (JsonException) {
+            using JsonDocument doc = JsonDocument.Parse(responseContent);
+            if (doc.RootElement.TryGetProperty("data", out JsonElement value)) {
+                result = JsonSerializer.Deserialize<T>(value.GetRawText());
+            } else {
+                throw;
+            }
+        }
         return result ?? throw new System.Text.Json.JsonException("Failed to deserialize API response.");
     }
 }

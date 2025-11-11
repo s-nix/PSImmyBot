@@ -10,7 +10,7 @@ public class GetApplicationLocksResponse : Cmdlet {
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/application-locks?";
 
-        List<ApplicationLocksResponse> response = ImmyBotApiService.Get<List<ApplicationLocksResponse>>(endpoint).GetAwaiter().GetResult();
+        List<ApplicationLocksResponse> response = ImmyBotApiService.Get<List<ApplicationLocksResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
     }
 }

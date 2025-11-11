@@ -1,5 +1,23 @@
 
 
+function Set-UpperCase {
+  param (
+    [string]$InputString
+  )
+  $strings = $InputString.Split("/")
+  $result = foreach ($str in $strings) {
+    if ($str -ne "") {
+      $parts = $str.Split("-")
+      $parts | ForEach-Object {
+        if ($_.Length -gt 0) {
+          ($_.Substring(0, 1).ToUpper() + $_.Substring(1)).Trim()
+        }
+      }
+    }
+  }
+  return $result -join ""
+}
+
 function ConvertFrom-SwaggerGet {
   [CmdletBinding()]
   param (
@@ -10,14 +28,15 @@ function ConvertFrom-SwaggerGet {
   $swaggerJson = $swaggerContent | ConvertFrom-Json -Depth 100
   $endpointPaths = $swaggerJson.paths.PSObject.Members.Name | Where-Object { $_ -like "/api*" }
   foreach ($endpointPath in $endpointPaths) {
+    if (!$swaggerJson.paths.$endpointPath.get) {
+      continue
+    }
     $objectPrimitiveType = $swaggerJson.paths.$endpointPath.get.responses.'200'.content.'application/json'.schema.type
     $objectType = $swaggerJson.paths.$endpointPath.get.responses.'200'.content.'application/json'.schema.'$ref' | Split-Path -Leaf -ea 0
     $objectListType = $swaggerJson.paths.$endpointPath.get.responses.'200'.content.'application/json'.schema.items.'$ref' | Split-Path -Leaf -ea 0
     
     $targetMethodName = if ($objectPrimitiveType -and -not $objectType -and -not $objectListType) {
-      $endpointPath.TrimStart("/api/v1/").Split("/") | ForEach-Object {
-        $_.Split("-") | ForEach-Object { $_.Substring(0, 1).ToUpper() + $_.Substring(1) }
-      } -join ""
+      Set-UpperCase -InputString $endpointPath.TrimStart("/api/v1/")
     }
     elseif ($objectType -and -not $objectListType) {
       $objectType
@@ -26,7 +45,8 @@ function ConvertFrom-SwaggerGet {
       $objectListType
     }
     else {
-      Write-Error "Unable to determine target type for endpoint: $endpointPath" -ErrorAction Stop
+      #Write-Error "Unable to determine target type for endpoint: $endpointPath" -ErrorAction Stop
+      Set-UpperCase -InputString $endpointPath.TrimStart("/api/v1/")
     }
     $targetType = if ($objectPrimitiveType -and -not $objectType -and -not $objectListType) {
       $objectPrimitiveType
@@ -38,7 +58,8 @@ function ConvertFrom-SwaggerGet {
       "List<$objectListType>"
     }
     else {
-      Write-Error "Unable to determine target type for endpoint: $endpointPath" -ErrorAction Stop
+      #Write-Error "Unable to determine target type for endpoint: $endpointPath" -ErrorAction Stop
+      "byte[]"
     }
     $parameters = $swaggerJson.paths.$endpointPath.get.parameters
     $cmdletPayload =
@@ -53,7 +74,8 @@ namespace PSImmyBot.Cmdlets;
 public class Get$targetMethodName : Cmdlet {
 $(foreach ($param in $parameters) {
     $paramName = $param.name
-    $paramType = $param.schema.'#ref' | Split-Path -Leaf -ea 0
+    $paramType = $param.schema.'$ref' | Split-Path -Leaf -ea 0
+    $paramRequired = $param.required -eq $true
     if (-not $paramType) {
         $paramType = switch ($param.schema.type) {
             "string" { "string" }
@@ -62,13 +84,15 @@ $(foreach ($param in $parameters) {
             default { "object" }
         }
     }
-    "    [Parameter(Mandatory = $($param.required))]`n    public $paramType $paramName { get; set; }`n`n"
+    $paramType = if (!$paramRequired) { "$paramType`?" } else { $paramType }
+    "    [Parameter(Mandatory = $($paramRequired.ToString().ToLower()))]`n    public $paramType $paramName { get; set; }`n`n"
 })
     protected override void ProcessRecord() {
         string endpoint = `$"$endpointPath`?";
 $(foreach ($param in $parameters) {
     $paramName = $param.name
-    $paramType = $param.schema.'#ref' | Split-Path -Leaf -ea 0
+    $paramType = $param.schema.'$ref' | Split-Path -Leaf -ea 0
+    $paramRequired = $param.required -eq $true
     if (-not $paramType) {
         $paramType = switch ($param.schema.type) {
             "string" { "string" }
@@ -77,11 +101,12 @@ $(foreach ($param in $parameters) {
             default { "object" }
         }
     }
+    $paramType = if (!$paramRequired) { "$paramType`?" } else { $paramType }
     if ($param.in -eq "query") {
-        "        endpoint += ConvertToQueryParameters<$paramType>($paramName);`n"
+        "        endpoint += Globals.ConvertToQueryParameters($paramName);`n"
     }
 })
-        $targetType response = ImmyBotApiService.Get<$targetType>(endpoint).GetAwaiter().GetResult();
+        $targetType response = ImmyBotApiService.Get<$targetType>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
     }
 }
