@@ -4,7 +4,8 @@ namespace PSImmyBot.Models;
 
 [method: JsonConstructor]
 public record TimelineEvent(
-    [property: JsonPropertyName("data")] string? Data,
+    [property: JsonPropertyName("data")]
+    string? Data,
     [property: JsonPropertyName("dateUTC")]
     DateTimeOffset DateUtc,
     [property: JsonPropertyName("eventType")]
