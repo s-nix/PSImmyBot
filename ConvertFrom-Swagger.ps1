@@ -51,7 +51,12 @@ function ConvertFrom-SwaggerGet {
       Set-UpperCase -InputString $endpointPath.TrimStart("/api/v1/")
     }
     $targetType = if ($objectPrimitiveType -and -not $objectType -and -not $objectListType) {
-      $objectPrimitiveType
+      switch ($objectPrimitiveType) {
+        "string" { "string" }
+        "integer" { "int" }
+        "boolean" { "bool" }
+        default { "object" }
+      }
     }
     elseif ($objectType -and -not $objectListType) {
       $objectType
