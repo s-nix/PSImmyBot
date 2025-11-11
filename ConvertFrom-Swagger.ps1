@@ -5,7 +5,7 @@ function Set-UpperCase {
     [string]$InputString
   )
   $InputString = $InputString.TrimStart("/api/v1/")
-  $InputString = $InputString -replace "{", "" -replace "}", ""
+  $InputString = $InputString -replace "\/\{.*?\}", ""
   $strings = $InputString.Split("/")
   $result = foreach ($str in $strings) {
     if ($str -ne "") {
