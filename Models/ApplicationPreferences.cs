@@ -2,165 +2,123 @@
 
 namespace PSImmyBot.Models;
 
-public record ApplicationPreferences {
-    [JsonConstructor]
-    [Obsolete]
-    public ApplicationPreferences(bool @allowNonAdminsAndNonMspUsersToUseTerminalsAndEditScripts, bool @allowNonAdminsToManageAssignments, int @automaticImmyBotReleaseUpdateHour, int @daysToWaitBeforeAutomaticImmyBotUpdate, Branding @defaultBranding, int? @defaultBrandingId, DefaultEmailBccList @defaultEmailBccList, DefaultScriptTimeouts @defaultScriptTimeouts, string? @defaultTimeZone, bool @disconnectLeastActiveEditorServiceWhenLimitReached, bool @enableAutomaticImmyBotReleaseUpdates, bool @enableAzureUserSync, bool @enableBetaDynamicIntegrationMigrations, bool @enableEphemeralAgentDebugMode, bool @enableHistoricalInventory, bool @enableImmyBotRemoteControl, bool @enableImmyBotRemoteControlRecording, bool @enableMaintenanceActionActivities, bool @enableNiniteIntegration, bool @enableNonEssentialDeviceInventory, bool @enableOnboarding, bool @enablePreflightScripts, bool @enableProviderAuditLogging, bool @enableRequestAccess, bool @enableSessionEmails, bool @enableUserAffinitySync, bool @enableUserImpersonation, bool @hideChocolateyPackages, int @id, string? @immyScriptPath, bool @mspNonAdminsRequireChangeRequestsForCrossTenantDeployments, bool overwriteExistingDeviceIfOsIsNew, int @providerAuditLogRetentionMonths, bool @requireConsentForExternalSessionProviders, bool @runScheduledInventoryAsMaintenanceSessions, bool @showGettingStartedWizard, int @staleComputersLastAgentConnectionAgeDays, bool @useImmyBotChocolateyFeed) {
-        Id = @id;
-        EnableOnboarding = @enableOnboarding;
-        EnableAzureUserSync = @enableAzureUserSync;
-        DefaultEmailBccList = @defaultEmailBccList;
-        EnableNiniteIntegration = @enableNiniteIntegration;
-        DefaultBrandingId = @defaultBrandingId;
-        EnableUserAffinitySync = @enableUserAffinitySync;
-        EnableSessionEmails = @enableSessionEmails;
-        DefaultBranding = @defaultBranding;
-        DefaultScriptTimeouts = @defaultScriptTimeouts;
-        UseImmyBotChocolateyFeed = @useImmyBotChocolateyFeed;
-        HideChocolateyPackages = @hideChocolateyPackages;
-        OverwriteExistingDeviceIfOsIsNew = overwriteExistingDeviceIfOsIsNew;
-        EnableNonEssentialDeviceInventory = @enableNonEssentialDeviceInventory;
-        RequireConsentForExternalSessionProviders = @requireConsentForExternalSessionProviders;
-        AllowNonAdminsToManageAssignments = @allowNonAdminsToManageAssignments;
-        ShowGettingStartedWizard = @showGettingStartedWizard;
-        EnableHistoricalInventory = @enableHistoricalInventory;
-        DefaultTimeZone = @defaultTimeZone;
-        ImmyScriptPath = @immyScriptPath;
-        EnableRequestAccess = @enableRequestAccess;
-        EnableEphemeralAgentDebugMode = @enableEphemeralAgentDebugMode;
-        StaleComputersLastAgentConnectionAgeDays = @staleComputersLastAgentConnectionAgeDays;
-        AllowNonAdminsAndNonMspUsersToUseTerminalsAndEditScripts = @allowNonAdminsAndNonMspUsersToUseTerminalsAndEditScripts;
-        EnablePreflightScripts = @enablePreflightScripts;
-        EnableImmyBotRemoteControl = @enableImmyBotRemoteControl;
-        EnableImmyBotRemoteControlRecording = @enableImmyBotRemoteControlRecording;
-        EnableProviderAuditLogging = @enableProviderAuditLogging;
-        ProviderAuditLogRetentionMonths = @providerAuditLogRetentionMonths;
-        MspNonAdminsRequireChangeRequestsForCrossTenantDeployments = @mspNonAdminsRequireChangeRequestsForCrossTenantDeployments;
-        EnableMaintenanceActionActivities = @enableMaintenanceActionActivities;
-        EnableAutomaticImmyBotReleaseUpdates = @enableAutomaticImmyBotReleaseUpdates;
-        AutomaticImmyBotReleaseUpdateHour = @automaticImmyBotReleaseUpdateHour;
-        DaysToWaitBeforeAutomaticImmyBotUpdate = @daysToWaitBeforeAutomaticImmyBotUpdate;
-        RunScheduledInventoryAsMaintenanceSessions = @runScheduledInventoryAsMaintenanceSessions;
-        EnableBetaDynamicIntegrationMigrations = @enableBetaDynamicIntegrationMigrations;
-        EnableUserImpersonation = @enableUserImpersonation;
-        DisconnectLeastActiveEditorServiceWhenLimitReached = @disconnectLeastActiveEditorServiceWhenLimitReached;
-    }
+[method: JsonConstructor]
+public record ApplicationPreferences(
+    [property: JsonPropertyName("allowNonAdminsAndNonMspUsersToUseTerminalsAndEditScripts")]
+    [property: Obsolete]
+    bool AllowNonAdminsAndNonMspUsersToUseTerminalsAndEditScripts,
 
-    [JsonPropertyName("id")]
-    public int Id { get; init; }
+    [property: JsonPropertyName("allowNonAdminsToManageAssignments")]
+    [property: Obsolete]
+    bool AllowNonAdminsToManageAssignments,
 
-    [JsonPropertyName("enableOnboarding")]
-    public bool EnableOnboarding { get; init; }
+    [property: JsonPropertyName("automaticImmyBotReleaseUpdateHour")]
+    int AutomaticImmyBotReleaseUpdateHour,
 
-    [JsonPropertyName("enableAzureUserSync")]
-    public bool EnableAzureUserSync { get; init; }
+    [property: JsonPropertyName("daysToWaitBeforeAutomaticImmyBotUpdate")]
+    int DaysToWaitBeforeAutomaticImmyBotUpdate,
 
-    [JsonPropertyName("defaultEmailBccList")]
-    public DefaultEmailBccList DefaultEmailBccList { get; init; }
+    [property: JsonPropertyName("defaultBranding")]
+    Branding DefaultBranding,
 
-    [JsonPropertyName("enableNiniteIntegration")]
-    public bool EnableNiniteIntegration { get; init; }
+    [property: JsonPropertyName("defaultBrandingId")]
+    int? DefaultBrandingId,
 
-    [JsonPropertyName("defaultBrandingId")]
-    public int? DefaultBrandingId { get; init; }
+    [property: JsonPropertyName("defaultEmailBccList")]
+    DefaultEmailBccList DefaultEmailBccList,
 
-    [JsonPropertyName("enableUserAffinitySync")]
-    public bool EnableUserAffinitySync { get; init; }
+    [property: JsonPropertyName("defaultScriptTimeouts")]
+    DefaultScriptTimeouts DefaultScriptTimeouts,
 
-    [JsonPropertyName("enableSessionEmails")]
-    public bool EnableSessionEmails { get; init; }
+    [property: JsonPropertyName("defaultTimeZone")]
+    string? DefaultTimeZone,
 
-    [JsonPropertyName("defaultBranding")]
-    public Branding DefaultBranding { get; init; }
+    [property: JsonPropertyName("disconnectLeastActiveEditorServiceWhenLimitReached")]
+    bool DisconnectLeastActiveEditorServiceWhenLimitReached,
 
-    [JsonPropertyName("defaultScriptTimeouts")]
-    public DefaultScriptTimeouts DefaultScriptTimeouts { get; init; }
+    [property: JsonPropertyName("enableAutomaticImmyBotReleaseUpdates")]
+    bool EnableAutomaticImmyBotReleaseUpdates,
 
-    [JsonPropertyName("useImmyBotChocolateyFeed")]
-    public bool UseImmyBotChocolateyFeed { get; init; }
+    [property: JsonPropertyName("enableAzureUserSync")]
+    bool EnableAzureUserSync,
 
-    [JsonPropertyName("hideChocolateyPackages")]
-    public bool HideChocolateyPackages { get; init; }
+    [property: JsonPropertyName("enableBetaDynamicIntegrationMigrations")]
+    bool EnableBetaDynamicIntegrationMigrations,
 
-    [JsonPropertyName("overwriteExistingDeviceIfOSIsNew")]
-    public bool OverwriteExistingDeviceIfOsIsNew { get; init; }
+    [property: JsonPropertyName("enableEphemeralAgentDebugMode")]
+    [property: Obsolete]
+    bool EnableEphemeralAgentDebugMode,
 
-    [JsonPropertyName("enableNonEssentialDeviceInventory")]
-    public bool EnableNonEssentialDeviceInventory { get; init; }
+    [property: JsonPropertyName("enableHistoricalInventory")]
+    bool EnableHistoricalInventory,
 
-    [JsonPropertyName("requireConsentForExternalSessionProviders")]
-    public bool RequireConsentForExternalSessionProviders { get; init; }
+    [property: JsonPropertyName("enableImmyBotRemoteControl")]
+    bool EnableImmyBotRemoteControl,
 
-    [JsonPropertyName("allowNonAdminsToManageAssignments")]
-    [Obsolete]
-    public bool AllowNonAdminsToManageAssignments { get; init; }
+    [property: JsonPropertyName("enableImmyBotRemoteControlRecording")]
+    bool EnableImmyBotRemoteControlRecording,
 
-    [JsonPropertyName("showGettingStartedWizard")]
-    public bool ShowGettingStartedWizard { get; init; }
+    [property: JsonPropertyName("enableMaintenanceActionActivities")]
+    bool EnableMaintenanceActionActivities,
 
-    [JsonPropertyName("enableHistoricalInventory")]
-    public bool EnableHistoricalInventory { get; init; }
+    [property: JsonPropertyName("enableNiniteIntegration")]
+    bool EnableNiniteIntegration,
 
-    [JsonPropertyName("defaultTimeZone")]
-    public string? DefaultTimeZone { get; init; }
+    [property: JsonPropertyName("enableNonEssentialDeviceInventory")]
+    bool EnableNonEssentialDeviceInventory,
 
-    [JsonPropertyName("immyScriptPath")]
-    public string? ImmyScriptPath { get; init; }
+    [property: JsonPropertyName("enableOnboarding")]
+    bool EnableOnboarding,
 
-    [JsonPropertyName("enableRequestAccess")]
-    public bool EnableRequestAccess { get; init; }
+    [property: JsonPropertyName("enablePreflightScripts")]
+    bool EnablePreflightScripts,
 
-    [JsonPropertyName("enableEphemeralAgentDebugMode")]
-    [Obsolete]
-    public bool EnableEphemeralAgentDebugMode { get; init; }
+    [property: JsonPropertyName("enableProviderAuditLogging")]
+    bool EnableProviderAuditLogging,
 
-    [JsonPropertyName("staleComputersLastAgentConnectionAgeDays")]
-    public int StaleComputersLastAgentConnectionAgeDays { get; init; }
+    [property: JsonPropertyName("enableRequestAccess")]
+    bool EnableRequestAccess,
 
-    [JsonPropertyName("allowNonAdminsAndNonMspUsersToUseTerminalsAndEditScripts")]
-    [Obsolete]
-    public bool AllowNonAdminsAndNonMspUsersToUseTerminalsAndEditScripts { get; init; }
+    [property: JsonPropertyName("enableSessionEmails")]
+    bool EnableSessionEmails,
 
-    [JsonPropertyName("enablePreflightScripts")]
-    public bool EnablePreflightScripts { get; init; }
+    [property: JsonPropertyName("enableUserAffinitySync")]
+    bool EnableUserAffinitySync,
 
-    [JsonPropertyName("enableImmyBotRemoteControl")]
-    public bool EnableImmyBotRemoteControl { get; init; }
+    [property: JsonPropertyName("enableUserImpersonation")]
+    bool EnableUserImpersonation,
 
-    [JsonPropertyName("enableImmyBotRemoteControlRecording")]
-    public bool EnableImmyBotRemoteControlRecording { get; init; }
+    [property: JsonPropertyName("hideChocolateyPackages")]
+    bool HideChocolateyPackages,
 
-    [JsonPropertyName("enableProviderAuditLogging")]
-    public bool EnableProviderAuditLogging { get; init; }
+    [property: JsonPropertyName("id")]
+    int Id,
 
-    [JsonPropertyName("providerAuditLogRetentionMonths")]
-    public int ProviderAuditLogRetentionMonths { get; init; }
+    [property: JsonPropertyName("immyScriptPath")]
+    string? ImmyScriptPath,
 
-    [JsonPropertyName("mspNonAdminsRequireChangeRequestsForCrossTenantDeployments")]
-    [Obsolete]
-    public bool MspNonAdminsRequireChangeRequestsForCrossTenantDeployments { get; init; }
+    [property: JsonPropertyName("mspNonAdminsRequireChangeRequestsForCrossTenantDeployments")]
+    [property: Obsolete]
+    bool MspNonAdminsRequireChangeRequestsForCrossTenantDeployments,
 
-    [JsonPropertyName("enableMaintenanceActionActivities")]
-    public bool EnableMaintenanceActionActivities { get; init; }
+    [property: JsonPropertyName("overwriteExistingDeviceIfOSIsNew")]
+    bool OverwriteExistingDeviceIfOsIsNew,
 
-    [JsonPropertyName("enableAutomaticImmyBotReleaseUpdates")]
-    public bool EnableAutomaticImmyBotReleaseUpdates { get; init; }
+    [property: JsonPropertyName("providerAuditLogRetentionMonths")]
+    int ProviderAuditLogRetentionMonths,
 
-    [JsonPropertyName("automaticImmyBotReleaseUpdateHour")]
-    public int AutomaticImmyBotReleaseUpdateHour { get; init; }
+    [property: JsonPropertyName("requireConsentForExternalSessionProviders")]
+    bool RequireConsentForExternalSessionProviders,
 
-    [JsonPropertyName("daysToWaitBeforeAutomaticImmyBotUpdate")]
-    public int DaysToWaitBeforeAutomaticImmyBotUpdate { get; init; }
+    [property: JsonPropertyName("runScheduledInventoryAsMaintenanceSessions")]
+    bool RunScheduledInventoryAsMaintenanceSessions,
 
-    [JsonPropertyName("runScheduledInventoryAsMaintenanceSessions")]
-    public bool RunScheduledInventoryAsMaintenanceSessions { get; init; }
+    [property: JsonPropertyName("showGettingStartedWizard")]
+    bool ShowGettingStartedWizard,
 
-    [JsonPropertyName("enableBetaDynamicIntegrationMigrations")]
-    public bool EnableBetaDynamicIntegrationMigrations { get; init; }
+    [property: JsonPropertyName("staleComputersLastAgentConnectionAgeDays")]
+    int StaleComputersLastAgentConnectionAgeDays,
 
-    [JsonPropertyName("enableUserImpersonation")]
-    public bool EnableUserImpersonation { get; init; }
-
-    [JsonPropertyName("disconnectLeastActiveEditorServiceWhenLimitReached")]
-    public bool DisconnectLeastActiveEditorServiceWhenLimitReached { get; init; }
-}
+    [property: JsonPropertyName("useImmyBotChocolateyFeed")]
+    bool UseImmyBotChocolateyFeed
+);
