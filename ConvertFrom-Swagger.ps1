@@ -247,12 +247,12 @@ $(foreach ($param in $parameters) {
     }
 })
 $(if ($hasPayload -and $hasReturn) {
-    "        $targetReturnType response = ImmyBotApiService.Post<$targetReturnType>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
+    "        $targetReturnType response = ImmyBotApiService.Post<$payloadType, $targetReturnType>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);"
 } elseif ($hasPayload -and -not $hasReturn) {
     "        ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();"
 } elseif (-not $hasPayload -and $hasReturn) {
-    "        $targetReturnType response = ImmyBotApiService.Get<$targetReturnType>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+    "        $targetReturnType response = ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);"
 } else {
     "        ImmyBotApiService.Get(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();"
