@@ -261,9 +261,8 @@ $(if ($hasPayload -and $hasReturn) {
 
 })
 "@
-        $cmdletPayload
-        #$cmdletFilePath = "Cmdlets/Send$targetMethodName.cs"
-        #$cmdletPayload | Out-File -FilePath $cmdletFilePath -Encoding UTF8
+        $cmdletFilePath = "Cmdlets/Send$targetMethodName.cs"
+        $cmdletPayload | Out-File -FilePath $cmdletFilePath -Encoding UTF8
     }
 }
 
