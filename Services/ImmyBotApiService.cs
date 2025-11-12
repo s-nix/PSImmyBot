@@ -58,7 +58,6 @@ public static class ImmyBotApiService {
         }
         HttpResponseMessage response = await client.PostAsync(endpoint, content);
         response.EnsureSuccessStatusCode();
-        string responseContent = await response.Content.ReadAsStringAsync();
     }
     
     public static async Task<T> Post<T>(string endpoint) {
@@ -85,7 +84,7 @@ public static class ImmyBotApiService {
         return result ?? throw new JsonException("Failed to deserialize API response.");
     }
     
-    public static async Task<U?> Post<T, U>(string endpoint, T? bodyObject) {
+    public static async Task<U> Post<T, U>(string endpoint, T? bodyObject) {
         AzureTokenResponse token = Globals.Token
             ?? throw new InvalidOperationException("Azure token is not available or expired. Please authenticate first with Connect-ImmyApi.");
         HttpClient client = new HttpClient();
