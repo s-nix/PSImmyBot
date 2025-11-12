@@ -9,10 +9,10 @@ public class GetEphemeralSession : Cmdlet {
     [Parameter(Mandatory = true)]
     public required string EphemeralSessionId { get; set; }
 
-     [Parameter(Mandatory = true)]
+    [Parameter(Mandatory = true)]
     public required string AgentInstanceId { get; set; }
 
-     [Parameter(Mandatory = true)]
+    [Parameter(Mandatory = true)]
     public int ProviderAgentId { get; set; }
 
 

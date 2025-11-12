@@ -12,7 +12,7 @@ public class GetProviderTypeDto : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/provider-types?";
-        endpoint += Globals.ConvertToQueryParameters(IncludeLinkFormSchemas);
+        endpoint += Globals.ConvertToQueryParameters(IncludeLinkFormSchemas, "includeLinkFormSchemas");
 
         List<ProviderTypeDto> response = ImmyBotApiService.Get<List<ProviderTypeDto>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

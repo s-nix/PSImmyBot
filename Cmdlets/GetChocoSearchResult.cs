@@ -12,7 +12,7 @@ public class GetChocoSearchResult : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/chocolatey/search?";
-        endpoint += Globals.ConvertToQueryParameters(SearchTerm);
+        endpoint += Globals.ConvertToQueryParameters(SearchTerm, "searchTerm");
 
         List<ChocoSearchResult> response = ImmyBotApiService.Get<List<ChocoSearchResult>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

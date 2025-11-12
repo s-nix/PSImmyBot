@@ -9,13 +9,13 @@ public class GetGetGlobalSoftwareResponse : Cmdlet {
     [Parameter(Mandatory = true)]
     public required string SoftwareIdentifier { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public string? Include { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/software/global/{SoftwareIdentifier}?";
-        endpoint += Globals.ConvertToQueryParameters(Include);
+        endpoint += Globals.ConvertToQueryParameters(Include, "include");
 
         GetGlobalSoftwareResponse response = ImmyBotApiService.Get<GetGlobalSoftwareResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

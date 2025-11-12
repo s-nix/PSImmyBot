@@ -9,18 +9,18 @@ public class GetGetScriptNameResponse : Cmdlet {
     [Parameter(Mandatory = false)]
     public string? SearchFilter { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public ScriptCategory? ScriptCategory { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public string? SearchType { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/scripts/local/names?";
-        endpoint += Globals.ConvertToQueryParameters(SearchFilter);
-         endpoint += Globals.ConvertToQueryParameters(ScriptCategory);
-         endpoint += Globals.ConvertToQueryParameters(SearchType);
+        endpoint += Globals.ConvertToQueryParameters(SearchFilter, "searchFilter");
+        endpoint += Globals.ConvertToQueryParameters(ScriptCategory, "scriptCategory");
+        endpoint += Globals.ConvertToQueryParameters(SearchType, "searchType");
 
         List<GetScriptNameResponse> response = ImmyBotApiService.Get<List<GetScriptNameResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

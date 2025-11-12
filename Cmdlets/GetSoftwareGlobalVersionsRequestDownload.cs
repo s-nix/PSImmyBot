@@ -9,7 +9,7 @@ public class GetSoftwareGlobalVersionsRequestDownload : Cmdlet {
     [Parameter(Mandatory = true)]
     public required string SoftwareIdentifier { get; set; }
 
-     [Parameter(Mandatory = true)]
+    [Parameter(Mandatory = true)]
     public required SemanticVersion SemanticVersion { get; set; }
 
 

@@ -9,14 +9,14 @@ public class GetDetectedComputerSoftwareResponse : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? TenantId { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/tenants/software-from-inventory/dx?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
-         endpoint += Globals.ConvertToQueryParameters(TenantId);
+        endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId"); // added name overload
 
         List<DetectedComputerSoftwareResponse> response = ImmyBotApiService.Get<List<DetectedComputerSoftwareResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

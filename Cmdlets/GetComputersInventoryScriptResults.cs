@@ -9,7 +9,7 @@ public class GetComputersInventoryScriptResults : Cmdlet {
     [Parameter(Mandatory = true)]
     public int ComputerId { get; set; }
 
-     [Parameter(Mandatory = true)]
+    [Parameter(Mandatory = true)]
     public required string InventoryKey { get; set; }
 
 

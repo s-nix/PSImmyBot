@@ -9,14 +9,14 @@ public class GetComputerUserAffinityResponse : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? ComputerId { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/computers/user-affinities?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
-         endpoint += Globals.ConvertToQueryParameters(ComputerId);
+        endpoint += Globals.ConvertToQueryParameters(ComputerId, "computerId"); // added name overload
 
         List<ComputerUserAffinityResponse> response = ImmyBotApiService.Get<List<ComputerUserAffinityResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

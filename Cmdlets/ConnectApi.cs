@@ -1,5 +1,4 @@
-﻿
-using System.Management.Automation;
+﻿using System.Management.Automation;
 using System.Text.Json;
 using PSImmyBot.Models;
 
@@ -70,10 +69,7 @@ public class ConnectApi : Cmdlet {
 
         if (!UseSavedConfig && Save) {
             ApiConnectionConfig config = new() {
-                AzureTenantDomain = AzureTenantDomain,
-                AzureClientId = AzureClientId,
-                AzureClientSecret = AzureClientSecret,
-                ImmySubdomain = ImmySubdomain
+                AzureTenantDomain = AzureTenantDomain, AzureClientId = AzureClientId, AzureClientSecret = AzureClientSecret, ImmySubdomain = ImmySubdomain
             };
             _ = Globals.SaveApiConnectionConfig(config);
         }

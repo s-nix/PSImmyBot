@@ -59,7 +59,8 @@ Free Software Foundation, either version 3 of the License, or
         "Get-ScriptsLanguageServiceLanguage", "Get-SoftwareGlobalVersionsRequestDownload", "Get-SoftwareLocalVersionsRequestDownload", "Get-Tags",
         "Get-TargetAssignmentResource", "Get-TechnicianPageInfoFromPsaTicket", "Get-TenantComputerCountResponse", "Get-TenantInfoResult",
         "Get-TenantPreferences", "Get-TenantsSoftwareFromInventoryExport", "Get-TimelineEvent", "Get-TimeZoneResource",
-        "Get-UserSilencedNotificationResponse", "Get-Webhooks", "Remove-ApiConnectionConfig", "Save-ApiConnectionConfig")
+        "Get-UserSilencedNotificationResponse", "Get-Webhooks", "Remove-ApiConnectionConfig", "Save-ApiConnectionConfig",
+        "New-DataSourceLoadOptions", "New-GroupingInfo", "New-SortingInfo", "New-SumamryInfo")
 
     VariablesToExport    = '*'
 

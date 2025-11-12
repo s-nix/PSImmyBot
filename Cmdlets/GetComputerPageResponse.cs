@@ -9,54 +9,54 @@ public class GetComputerPageResponse : Cmdlet {
     [Parameter(Mandatory = false)]
     public string? Filter { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? Skip { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public string? Sort { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? Take { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public bool? SortDesc { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public bool? OnboardingOnly { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public bool? StaleOnly { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public bool? DevLabOnly { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public bool? IncludeOffline { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? TenantId { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public bool? LicensedOnly { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public bool? DeletedOnly { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/computers/paged?";
-        endpoint += Globals.ConvertToQueryParameters(Filter);
-         endpoint += Globals.ConvertToQueryParameters(Skip);
-         endpoint += Globals.ConvertToQueryParameters(Sort);
-         endpoint += Globals.ConvertToQueryParameters(Take);
-         endpoint += Globals.ConvertToQueryParameters(SortDesc);
-         endpoint += Globals.ConvertToQueryParameters(OnboardingOnly);
-         endpoint += Globals.ConvertToQueryParameters(StaleOnly);
-         endpoint += Globals.ConvertToQueryParameters(DevLabOnly);
-         endpoint += Globals.ConvertToQueryParameters(IncludeOffline);
-         endpoint += Globals.ConvertToQueryParameters(TenantId);
-         endpoint += Globals.ConvertToQueryParameters(LicensedOnly);
-         endpoint += Globals.ConvertToQueryParameters(DeletedOnly);
+        endpoint += Globals.ConvertToQueryParameters(Filter, "filter");
+        endpoint += Globals.ConvertToQueryParameters(Skip, "skip");
+        endpoint += Globals.ConvertToQueryParameters(Sort, "sort");
+        endpoint += Globals.ConvertToQueryParameters(Take, "take");
+        endpoint += Globals.ConvertToQueryParameters(SortDesc, "sortDesc");
+        endpoint += Globals.ConvertToQueryParameters(OnboardingOnly, "onboardingOnly");
+        endpoint += Globals.ConvertToQueryParameters(StaleOnly, "staleOnly");
+        endpoint += Globals.ConvertToQueryParameters(DevLabOnly, "devLabOnly");
+        endpoint += Globals.ConvertToQueryParameters(IncludeOffline, "includeOffline");
+        endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId");
+        endpoint += Globals.ConvertToQueryParameters(LicensedOnly, "licensedOnly");
+        endpoint += Globals.ConvertToQueryParameters(DeletedOnly, "deletedOnly");
 
         ComputerPageResponse response = ImmyBotApiService.Get<ComputerPageResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

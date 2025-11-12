@@ -9,21 +9,21 @@ public class GetMaintenanceActionsLatestForTenant : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 
-     [Parameter(Mandatory = true)]
+    [Parameter(Mandatory = true)]
     public int TenantId { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public string? CreatedDateUtc { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public SessionType? SessionType { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/maintenance-actions/latest-for-tenant/{TenantId}?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
-         endpoint += Globals.ConvertToQueryParameters(CreatedDateUtc);
-         endpoint += Globals.ConvertToQueryParameters(SessionType);
+        endpoint += Globals.ConvertToQueryParameters(CreatedDateUtc, "createdDateUtc");
+        endpoint += Globals.ConvertToQueryParameters(SessionType, "sessionType");
 
         object response = ImmyBotApiService.Get<object>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetComputersExport : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
-    
+
     [Parameter(Mandatory = true)]
     [ValidatePattern("\\.xlsx$")]
     public required string OutFile { get; set; }

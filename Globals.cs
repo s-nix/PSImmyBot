@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
 using PSImmyBot.Models;
-using PropertyInfo = System.Reflection.PropertyInfo;
+using System.Globalization;
+using System.Text;
 
 namespace PSImmyBot;
 
@@ -9,7 +10,10 @@ internal static class Globals {
         new JsonSerializerOptions {
             WriteIndented = true
         };
-
+    private static JsonSerializerOptions LoadJsonSerializerOptions { get; } =
+        new JsonSerializerOptions {
+            WriteIndented = false
+        };
     private static string ConfigDirectoryPath =>
         Path.Combine(
             Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
@@ -75,23 +79,58 @@ internal static class Globals {
             File.Delete(ApiConnectionConfigFilePath);
         }
     }
-    public static string ConvertToQueryParameters<T>(T objectToConvert) {
-        if (objectToConvert == null) {
+    public static string ConvertToQueryParameters(DataSourceLoadOptions? loadOptions) {
+        if (loadOptions == null) {
             return string.Empty;
         }
 
-        PropertyInfo[] properties = typeof(T).GetProperties();
-        List<string> queryParameters = [];
+        StringBuilder sb = new();
+        Append(nameof(DataSourceLoadOptions.AllowAsyncOverSync), loadOptions.AllowAsyncOverSync);
+        Append(nameof(DataSourceLoadOptions.DefaultSort), loadOptions.DefaultSort);
+        Append(nameof(DataSourceLoadOptions.ExpandLinqSumType), loadOptions.ExpandLinqSumType);
+        Append(nameof(DataSourceLoadOptions.Filter), loadOptions.Filter);
+        Append(nameof(DataSourceLoadOptions.Group), loadOptions.Group);
+        Append(nameof(DataSourceLoadOptions.GroupSummary), loadOptions.GroupSummary);
+        Append(nameof(DataSourceLoadOptions.IsCountQuery), loadOptions.IsCountQuery);
+        Append(nameof(DataSourceLoadOptions.IsSummaryQuery), loadOptions.IsSummaryQuery);
+        Append(nameof(DataSourceLoadOptions.PaginateViaPrimaryKey), loadOptions.PaginateViaPrimaryKey);
+        Append(nameof(DataSourceLoadOptions.PreSelect), loadOptions.PreSelect);
+        Append(nameof(DataSourceLoadOptions.PrimaryKey), loadOptions.PrimaryKey);
+        Append(nameof(DataSourceLoadOptions.RemoteGrouping), loadOptions.RemoteGrouping);
+        Append(nameof(DataSourceLoadOptions.RemoteSelect), loadOptions.RemoteSelect);
+        Append(nameof(DataSourceLoadOptions.RequireGroupCount), loadOptions.RequireGroupCount);
+        Append(nameof(DataSourceLoadOptions.RequireTotalCount), loadOptions.RequireTotalCount);
+        Append(nameof(DataSourceLoadOptions.Select), loadOptions.Select);
+        Append(nameof(DataSourceLoadOptions.Skip), loadOptions.Skip);
+        Append(nameof(DataSourceLoadOptions.Sort), loadOptions.Sort);
+        Append(nameof(DataSourceLoadOptions.SortByPrimaryKey), loadOptions.SortByPrimaryKey);
+        Append(nameof(DataSourceLoadOptions.StringToLower), loadOptions.StringToLower);
+        Append(nameof(DataSourceLoadOptions.Take), loadOptions.Take);
+        Append(nameof(DataSourceLoadOptions.TotalSummary), loadOptions.TotalSummary);
 
-        foreach (PropertyInfo property in properties) {
-            object? value = property.GetValue(objectToConvert);
-            if (value == null) {
-                continue;
-            }
-            string stringValue = Uri.EscapeDataString(value.ToString() ?? string.Empty);
-            queryParameters.Add($"{property.Name}={stringValue}");
+        return sb.ToString();
+
+        void Append(string name, object? val) {
+            if (val == null) return;
+
+            string str = val switch {
+                string s => s,
+                bool b => b ? "true" : "false",
+                sbyte or byte or short or ushort or int or uint or long or ulong or float or double or decimal => Convert.ToString(val, CultureInfo.InvariantCulture) ?? string.Empty,
+                _ => JsonSerializer.Serialize(val, LoadJsonSerializerOptions)
+            };
+            name = name[..1].ToLowerInvariant() + name[1..];
+            sb.Append(name).Append('=').Append(Escape(str)).Append('&');
         }
 
-        return string.Join("&", queryParameters) + "&";
+        string Escape(string s) => Uri.EscapeDataString(s);
+    }
+    
+    public static string ConvertToQueryParameters<T>(T? value, string paramName) {
+        if (value == null) {
+            return string.Empty;
+        }
+        string stringValue = Uri.EscapeDataString(value.ToString() ?? string.Empty);
+        return $"{paramName}={stringValue}&";
     }
 }

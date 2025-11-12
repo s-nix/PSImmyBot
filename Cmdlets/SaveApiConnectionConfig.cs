@@ -17,11 +17,8 @@ public class SaveApiConnectionConfig : Cmdlet {
     private string ImmySubdomain { get; set; } = string.Empty;
 
     protected override void ProcessRecord() {
-        Models.ApiConnectionConfig config = new Models.ApiConnectionConfig {
-            AzureTenantDomain = AzureTenantDomain,
-            AzureClientId = AzureClientId,
-            AzureClientSecret = AzureClientSecret,
-            ImmySubdomain = ImmySubdomain
+        Models.ApiConnectionConfig config = new() {
+            AzureTenantDomain = AzureTenantDomain, AzureClientId = AzureClientId, AzureClientSecret = AzureClientSecret, ImmySubdomain = ImmySubdomain
         };
         Models.ApiConnectionConfig savedConfig = Globals.SaveApiConnectionConfig(config);
         WriteObject(savedConfig);

@@ -9,14 +9,14 @@ public class GetScriptReferenceCounts : Cmdlet {
     [Parameter(Mandatory = false)]
     public DatabaseType? ScriptType { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? Id { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/scripts/references/count?";
-        endpoint += Globals.ConvertToQueryParameters(ScriptType);
-         endpoint += Globals.ConvertToQueryParameters(Id);
+        endpoint += Globals.ConvertToQueryParameters(ScriptType, "scriptType");
+        endpoint += Globals.ConvertToQueryParameters(Id, "id");
 
         ScriptReferenceCounts response = ImmyBotApiService.Get<ScriptReferenceCounts>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -9,14 +9,14 @@ public class GetTenantsSoftwareFromInventoryExport : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? TenantId { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/tenants/software-from-inventory/export?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
-         endpoint += Globals.ConvertToQueryParameters(TenantId);
+        endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId");
 
         byte[] response = ImmyBotApiService.Get<byte[]>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

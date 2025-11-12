@@ -9,14 +9,14 @@ public class GetMaintenanceTasksReferenceCount : Cmdlet {
     [Parameter(Mandatory = false)]
     public DatabaseType? MaintenanceTaskType { get; set; }
 
-     [Parameter(Mandatory = false)]
+    [Parameter(Mandatory = false)]
     public int? MaintenanceTaskId { get; set; }
 
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/maintenance-tasks/reference-count?";
-        endpoint += Globals.ConvertToQueryParameters(MaintenanceTaskType);
-         endpoint += Globals.ConvertToQueryParameters(MaintenanceTaskId);
+        endpoint += Globals.ConvertToQueryParameters(MaintenanceTaskType, "maintenanceTaskType");
+        endpoint += Globals.ConvertToQueryParameters(MaintenanceTaskId, "maintenanceTaskId");
 
         int response = ImmyBotApiService.Get<int>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

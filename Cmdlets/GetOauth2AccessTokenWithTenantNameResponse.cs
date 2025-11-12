@@ -9,7 +9,7 @@ public class GetOauth2AccessTokenWithTenantNameResponse : Cmdlet {
     [Parameter(Mandatory = true)]
     public int Id { get; set; }
 
-     [Parameter(Mandatory = true)]
+    [Parameter(Mandatory = true)]
     public required string AccessTokenId { get; set; }
 
 

@@ -12,7 +12,7 @@ public class GetNotification : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/notifications/unacknowledged?";
-        endpoint += Globals.ConvertToQueryParameters(Limit);
+        endpoint += Globals.ConvertToQueryParameters(Limit, "limit");
 
         List<Notification> response = ImmyBotApiService.Get<List<Notification>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

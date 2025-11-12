@@ -9,7 +9,7 @@ public class GetGetAzureGroupResponse : Cmdlet {
     [Parameter(Mandatory = true)]
     public required string GroupId { get; set; }
 
-     [Parameter(Mandatory = true)]
+    [Parameter(Mandatory = true)]
     public int Id { get; set; }
 
 
