@@ -36,7 +36,8 @@ $($argLines -join "`n")
     }
 }
 "@
-        $output
+        $outputPath = "Cmdlets/New$className.cs"
+        $output | Out-File -FilePath $outputPath -Encoding UTF8
     }
 }
 
