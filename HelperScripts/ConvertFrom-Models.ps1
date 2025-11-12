@@ -25,20 +25,12 @@ function ConvertFrom-Models {
                     $argLines.Add("    [Parameter(Mandatory = $typeRequired)] public$requiredString $type $name { get; set; }") | Out-Null
                 }
             }
-            # if ($line -match "(\w+\??|\w+<\w+\??>\??|\w+\[\]+\??) (\w+)(,|\);|$)") {
-            #     $type = $matches[1]
-            #     $name = $matches[2]
-            #     $typeRequired = ($type -notmatch "\?$").ToString().ToLower()
-            #     $requiredString = if ($typeRequired -eq 'true') { " required" } else { "" }
-            #     $argNames.Add($name) | Out-Null
-            #     $argLines.Add("    [Parameter(Mandatory = $typeRequired)] public$requiredString $type $name { get; set; }") | Out-Null
-            # }
         }
         $output = @"
 using System.Management.Automation;
 using PSImmyBot.Models;
 
-namespace PSImmyBot.Commands;
+namespace PSImmyBot.Cmdlets;
 
 [Cmdlet(VerbsCommon.New, "$className")]
 public class New$className : Cmdlet {
