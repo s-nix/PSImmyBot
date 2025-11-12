@@ -11,7 +11,7 @@ function ConvertFrom-Models {
         $argLines = [System.Collections.ArrayList]::new()
         $argNames = [System.Collections.ArrayList]::new()
         foreach ($line in $lines) {
-            if ($line -match "(\w+\??) (\w+)(,|\);|$)") {
+            if ($line -match "(\w+\??|\w+<\w+\??>\??|\w+\[\]+\??) (\w+)(,|\);|$)") {
                 $type = $matches[1]
                 $name = $matches[2]
                 $typeRequired = ($type -notmatch "\?$").ToString().ToLower()
