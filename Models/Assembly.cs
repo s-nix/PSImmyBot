@@ -1,86 +1,66 @@
-﻿using System.Text.Json.Serialization;
+﻿using System.Reflection;
+using System.Security;
+using System.Text.Json.Serialization;
 
 namespace PSImmyBot.Models;
 
-public record Assembly {
-    [JsonConstructor]
-    [Obsolete]
-    public Assembly(string? @codeBase, ICollection<CustomAttributeData>? @customAttributes, ICollection<TypeInfo>? @definedTypes, MethodInfo @entryPoint, string? @escapedCodeBase, ICollection<Type>? @exportedTypes, string? @fullName, bool @globalAssemblyCache, long @hostContext, string? @imageRuntimeVersion, bool @isCollectible, bool @isDynamic, bool @isFullyTrusted, string? @location, Module @manifestModule, ICollection<Module>? @modules, bool @reflectionOnly, SecurityRuleSet @securityRuleSet) {
-        DefinedTypes = @definedTypes;
-        ExportedTypes = @exportedTypes;
-        CodeBase = @codeBase;
-        EntryPoint = @entryPoint;
-        FullName = @fullName;
-        ImageRuntimeVersion = @imageRuntimeVersion;
-        IsDynamic = @isDynamic;
-        Location = @location;
-        ReflectionOnly = @reflectionOnly;
-        IsCollectible = @isCollectible;
-        IsFullyTrusted = @isFullyTrusted;
-        CustomAttributes = @customAttributes;
-        EscapedCodeBase = @escapedCodeBase;
-        ManifestModule = @manifestModule;
-        Modules = @modules;
-        GlobalAssemblyCache = @globalAssemblyCache;
-        HostContext = @hostContext;
-        SecurityRuleSet = @securityRuleSet;
-    }
+[method: JsonConstructor]
+public record Assembly(
+    [property: JsonPropertyName("definedTypes")]
+    ICollection<TypeInfo>? DefinedTypes,
 
-    [JsonPropertyName("definedTypes")]
-    public ICollection<TypeInfo>? DefinedTypes { get; init; }
+    [property: JsonPropertyName("exportedTypes")]
+    ICollection<Type>? ExportedTypes,
 
-    [JsonPropertyName("exportedTypes")]
-    public ICollection<Type>? ExportedTypes { get; init; }
+    [property: JsonPropertyName("codeBase")]
+    [property: Obsolete]
+    string? CodeBase,
 
-    [JsonPropertyName("codeBase")]
-    [Obsolete]
-    public string? CodeBase { get; init; }
+    [property: JsonPropertyName("entryPoint")]
+    MethodInfo EntryPoint,
 
-    [JsonPropertyName("entryPoint")]
-    public MethodInfo EntryPoint { get; init; }
+    [property: JsonPropertyName("fullName")]
+    string? FullName,
 
-    [JsonPropertyName("fullName")]
-    public string? FullName { get; init; }
+    [property: JsonPropertyName("imageRuntimeVersion")]
+    string? ImageRuntimeVersion,
 
-    [JsonPropertyName("imageRuntimeVersion")]
-    public string? ImageRuntimeVersion { get; init; }
+    [property: JsonPropertyName("isDynamic")]
+    bool IsDynamic,
 
-    [JsonPropertyName("isDynamic")]
-    public bool IsDynamic { get; init; }
+    [property: JsonPropertyName("location")]
+    string? Location,
 
-    [JsonPropertyName("location")]
-    public string? Location { get; init; }
+    [property: JsonPropertyName("reflectionOnly")]
+    bool ReflectionOnly,
 
-    [JsonPropertyName("reflectionOnly")]
-    public bool ReflectionOnly { get; init; }
+    [property: JsonPropertyName("isCollectible")]
+    bool IsCollectible,
 
-    [JsonPropertyName("isCollectible")]
-    public bool IsCollectible { get; init; }
+    [property: JsonPropertyName("isFullyTrusted")]
+    bool IsFullyTrusted,
 
-    [JsonPropertyName("isFullyTrusted")]
-    public bool IsFullyTrusted { get; init; }
+    [property: JsonPropertyName("customAttributes")]
+    ICollection<CustomAttributeData>? CustomAttributes,
 
-    [JsonPropertyName("customAttributes")]
-    public ICollection<CustomAttributeData>? CustomAttributes { get; init; }
+    [property: JsonPropertyName("escapedCodeBase")]
+    [property: Obsolete]
+    string? EscapedCodeBase,
 
-    [JsonPropertyName("escapedCodeBase")]
-    [Obsolete]
-    public string? EscapedCodeBase { get; init; }
+    [property: JsonPropertyName("manifestModule")]
+    Module ManifestModule,
 
-    [JsonPropertyName("manifestModule")]
-    public Module ManifestModule { get; init; }
+    [property: JsonPropertyName("modules")]
+    ICollection<Module>? Modules,
 
-    [JsonPropertyName("modules")]
-    public ICollection<Module>? Modules { get; init; }
+    [property: JsonPropertyName("globalAssemblyCache")]
+    [property: Obsolete]
+    bool GlobalAssemblyCache,
 
-    [JsonPropertyName("globalAssemblyCache")]
-    [Obsolete]
-    public bool GlobalAssemblyCache { get; init; }
+    [property: JsonPropertyName("hostContext")]
+    long HostContext,
 
-    [JsonPropertyName("hostContext")]
-    public long HostContext { get; init; }
-
-    [JsonPropertyName("securityRuleSet")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SecurityRuleSet>))]
-    public SecurityRuleSet SecurityRuleSet { get; init; }
-}
+    [property: JsonPropertyName("securityRuleSet")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SecurityRuleSet>))]
+    SecurityRuleSet SecurityRuleSet
+);
