@@ -252,10 +252,10 @@ $(if ($hasPayload -and $hasReturn) {
 } elseif ($hasPayload -and -not $hasReturn) {
     "        ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();"
 } elseif (-not $hasPayload -and $hasReturn) {
-    "        $targetReturnType response = ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+    "        $targetReturnType response = ImmyBotApiService.Post<$targetReturnType>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);"
 } else {
-    "        ImmyBotApiService.Get(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();"
+    "        ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();"
 })
     }
 
