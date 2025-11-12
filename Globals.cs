@@ -3,6 +3,7 @@ using PSImmyBot.Models;
 using PropertyInfo = System.Reflection.PropertyInfo;
 
 namespace PSImmyBot;
+
 internal static class Globals {
     private static JsonSerializerOptions JsonSerializerOptions { get; } =
         new JsonSerializerOptions {

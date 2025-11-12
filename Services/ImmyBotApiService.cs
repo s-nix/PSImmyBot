@@ -13,6 +13,11 @@ public static class ImmyBotApiService {
             new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token.AccessToken);
         HttpResponseMessage response = await client.GetAsync(endpoint);
         response.EnsureSuccessStatusCode();
+        // If the content-type is not Json return the raw content
+        if (!response.Content.Headers.ContentType?.MediaType?.Contains("json") ?? false) {
+            object rawContent = await response.Content.ReadAsByteArrayAsync();
+            return (T)rawContent;
+        }
         string responseContent = await response.Content.ReadAsStringAsync();
         T? result;
         try {

@@ -1,0 +1,31 @@
+using System.Management.Automation;
+using PSImmyBot.Models;
+using PSImmyBot.Services;
+
+namespace PSImmyBot.Cmdlets;
+
+[Cmdlet(VerbsCommon.Get, "GetProviderLinkResponse")]
+public class GetGetProviderLinkResponse : Cmdlet {
+    [Parameter(Mandatory = true)]
+    public int Id { get; set; }
+
+     [Parameter(Mandatory = false)]
+    public bool? IncludeClients { get; set; }
+
+     [Parameter(Mandatory = false)]
+    public bool? IncludeProvidersLinkedFromThisProvider { get; set; }
+
+     [Parameter(Mandatory = false)]
+    public bool? ThrowIfAgentInstallerVersionNotSet { get; set; }
+
+
+    protected override void ProcessRecord() {
+        string endpoint = $"/api/v1/provider-links/{Id}?";
+        endpoint += Globals.ConvertToQueryParameters(IncludeClients);
+         endpoint += Globals.ConvertToQueryParameters(IncludeProvidersLinkedFromThisProvider);
+         endpoint += Globals.ConvertToQueryParameters(ThrowIfAgentInstallerVersionNotSet);
+
+        GetProviderLinkResponse response = ImmyBotApiService.Get<GetProviderLinkResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+        WriteObject(response);
+    }
+}

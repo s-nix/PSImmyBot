@@ -1,0 +1,59 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Pester tests",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-NonInteractive",
+				"-Command",
+				"Invoke-Pester -Path ./Tests -CI -Output Detailed"
+			],
+			"problemMatcher": [
+				"$eslint - stylish"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Run Pester tests",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-NonInteractive",
+				"-Command",
+				"Invoke-Pester -Path ./Tests -CI -Output Detailed"
+			],
+			"problemMatcher": [
+				"$eslint - stylish"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Run Pester tests",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-NonInteractive",
+				"-Command",
+				"Invoke-Pester -Path ./Tests -CI -Output Summary"
+			],
+			"group": "test"
+		},
+		{
+			"label": "Run Pester tests",
+			"type": "shell",
+			"command": "pwsh",
+			"args": [
+				"-NoProfile",
+				"-NonInteractive",
+				"-Command",
+				"Invoke-Pester -Path ./Tests -CI -Output Summary"
+			],
+			"group": "test"
+		}
+	]
+}
