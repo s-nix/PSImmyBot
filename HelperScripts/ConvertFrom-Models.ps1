@@ -11,14 +11,28 @@ function ConvertFrom-Models {
         $argLines = [System.Collections.ArrayList]::new()
         $argNames = [System.Collections.ArrayList]::new()
         foreach ($line in $lines) {
-            if ($line -match "(\w+\??|\w+<\w+\??>\??|\w+\[\]+\??) (\w+)(,|\);|$)") {
-                $type = $matches[1]
-                $name = $matches[2]
-                $typeRequired = ($type -notmatch "\?$").ToString().ToLower()
-                $requiredString = if ($typeRequired -eq 'true') { " required" } else { "" }
-                $argNames.Add($name) | Out-Null
-                $argLines.Add("    [Parameter(Mandatory = $typeRequired)] public$requiredString $type $name { get; set; }") | Out-Null
+            if ($line -match "#pragma") {
+                continue
             }
+            $multipleArgs = $line -split ","
+            foreach ($arg in $multipleArgs) {
+                if ($arg -match "(\w+\??|\w+<\w+\??>\??|\w+\[\]+\??) (\w+)(,|\);|$)") {
+                    $type = $matches[1]
+                    $name = $matches[2]
+                    $typeRequired = ($type -notmatch "\?$").ToString().ToLower()
+                    $requiredString = if ($typeRequired -eq 'true') { " required" } else { "" }
+                    $argNames.Add($name) | Out-Null
+                    $argLines.Add("    [Parameter(Mandatory = $typeRequired)] public$requiredString $type $name { get; set; }") | Out-Null
+                }
+            }
+            # if ($line -match "(\w+\??|\w+<\w+\??>\??|\w+\[\]+\??) (\w+)(,|\);|$)") {
+            #     $type = $matches[1]
+            #     $name = $matches[2]
+            #     $typeRequired = ($type -notmatch "\?$").ToString().ToLower()
+            #     $requiredString = if ($typeRequired -eq 'true') { " required" } else { "" }
+            #     $argNames.Add($name) | Out-Null
+            #     $argLines.Add("    [Parameter(Mandatory = $typeRequired)] public$requiredString $type $name { get; set; }") | Out-Null
+            # }
         }
         $output = @"
 using System.Management.Automation;
