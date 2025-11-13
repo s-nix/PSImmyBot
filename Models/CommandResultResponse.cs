@@ -3,7 +3,7 @@
 namespace PSImmyBot.Models;
 
 [method: JsonConstructor]
-public record GetCommandResult(
+public record CommandResultResponse(
     [property: JsonPropertyName("commandType")]
     [property: JsonConverter(typeof(JsonStringEnumConverter<CommandTypes>))]
     CommandTypes CommandType,

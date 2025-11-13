@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ImmyIpAndHostnamesResponse")]
-public class GetImmyIpAndHostnamesResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "IpAndHostnames")]
+public class GetIpAndHostnames : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/auth/get-ip-addresses?";

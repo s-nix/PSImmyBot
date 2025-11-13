@@ -10,7 +10,7 @@ public class GetCommandResult : Cmdlet {
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/scripts/functions?";
 
-        List<GetCommandResult> response = ImmyBotApiService.Get<List<GetCommandResult>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+        List<CommandResultResponse> response = ImmyBotApiService.Get<List<CommandResultResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
     }
 }

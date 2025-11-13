@@ -13,7 +13,7 @@ public class GetLatestActionForComputer : Cmdlet {
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/maintenance-actions/latest-for-computer/{ComputerId}?";
 
-        List<GetLatestActionForComputer> response = ImmyBotApiService.Get<List<GetLatestActionForComputer>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+        List<LatestActionForComputer> response = ImmyBotApiService.Get<List<LatestActionForComputer>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
     }
 }

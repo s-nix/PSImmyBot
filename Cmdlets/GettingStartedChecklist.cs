@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "tingStartedChecklist")]
-public class GettingStartedChecklist : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "GetGettingStartedChecklist")]
+public class GetGettingStartedChecklist : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/getting-started/checklist?";

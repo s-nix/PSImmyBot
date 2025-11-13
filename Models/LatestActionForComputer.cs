@@ -3,7 +3,7 @@
 namespace PSImmyBot.Models;
 
 [method: JsonConstructor]
-public record GetLatestActionForComputer(
+public record LatestActionForComputer(
     [property: JsonPropertyName("actionType")]
     [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionType>))]
     MaintenanceActionType ActionType,

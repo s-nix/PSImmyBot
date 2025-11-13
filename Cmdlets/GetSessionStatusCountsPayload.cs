@@ -10,7 +10,7 @@ public class GetSessionStatusCountsPayload : Cmdlet {
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/maintenance-sessions/status-counts?";
 
-        GetSessionStatusCountsPayload response = ImmyBotApiService.Get<GetSessionStatusCountsPayload>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+        SessionStatusCountsPayload response = ImmyBotApiService.Get<SessionStatusCountsPayload>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
     }
 }

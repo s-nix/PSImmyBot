@@ -3,7 +3,7 @@ using PSImmyBot.Models;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.New, "GetLatestActionForComputer")]
+[Cmdlet(VerbsCommon.New, "LatestActionForComputer")]
 public class NewGetLatestActionForComputer : Cmdlet {
     [Parameter(Mandatory = true)] public required MaintenanceActionType ActionType { get; set; }
     [Parameter(Mandatory = false)] public int? AssignmentId { get; set; }
@@ -28,7 +28,7 @@ public class NewGetLatestActionForComputer : Cmdlet {
     [Parameter(Mandatory = true)] public required MaintenanceActionStatus Status { get; set; }
 
     protected override void ProcessRecord() {
-        GetLatestActionForComputer outputObject = new(ActionType, AssignmentId, AssignmentType, CreatedDate, DesiredSoftwareState, DesiredVersion, DetectedVersion, EndTime, Id, MaintenanceDisplayName, MaintenanceIdentifier, MaintenanceSessionId, MaintenanceTaskMode, MaintenanceType, PolicyDescription, Reason, Result, ResultReason, SoftwareActionIdForConfigurationTask, StartTime, Status);
+        LatestActionForComputer outputObject = new(ActionType, AssignmentId, AssignmentType, CreatedDate, DesiredSoftwareState, DesiredVersion, DetectedVersion, EndTime, Id, MaintenanceDisplayName, MaintenanceIdentifier, MaintenanceSessionId, MaintenanceTaskMode, MaintenanceType, PolicyDescription, Reason, Result, ResultReason, SoftwareActionIdForConfigurationTask, StartTime, Status);
         WriteObject(outputObject);
     }
 }
