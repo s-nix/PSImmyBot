@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "DxComputerInventoryScriptResult")]
-public class GetDxComputerInventoryScriptResult : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "ComputerInventory")]
+public class GetComputerInventory : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 

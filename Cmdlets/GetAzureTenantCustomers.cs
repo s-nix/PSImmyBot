@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "AzureTenantCustomersResult")]
-public class GetAzureTenantCustomersResult : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "AzureTenantCustomers")]
+public class GetAzureTenantCustomers : Cmdlet {
     [Parameter(Mandatory = true)]
     public required string PartnerPrincipalId { get; set; }
 

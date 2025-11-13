@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "AzureErrorLogItem")]
-public class GetAzureErrorLogItem : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "AzureErrorLogItems")]
+public class GetAzureErrorLogItems : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 

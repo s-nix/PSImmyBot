@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "AccessRequestResponse")]
-public class GetAccessRequestResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "AccessRequest")]
+public class GetAccessRequest : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/persons/requesting-access?";

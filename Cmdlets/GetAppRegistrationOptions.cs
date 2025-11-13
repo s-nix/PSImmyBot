@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "AppRegistrationOption")]
-public class GetAppRegistrationOption : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "AppRegistrationOptions")]
+public class GetAppRegistrationOptions : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/azure/app-registration-options?";

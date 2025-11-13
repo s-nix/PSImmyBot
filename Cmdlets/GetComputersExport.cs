@@ -12,8 +12,7 @@ public class GetComputersExport : Cmdlet {
     [Parameter(Mandatory = true)]
     [ValidatePattern("\\.xlsx$")]
     public required string OutFile { get; set; }
-
-
+    
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/computers/export?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);

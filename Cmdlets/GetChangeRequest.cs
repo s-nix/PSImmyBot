@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ChangeRequestResponse")]
-public class GetChangeRequestResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "ChangeRequest")]
+public class GetChangeRequest : Cmdlet {
     [Parameter(Mandatory = true)]
     public int DeploymentId { get; set; }
 

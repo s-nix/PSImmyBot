@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "GetBrandingResponse")]
-public class GetGetBrandingResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "Branding")]
+public class GetBranding : Cmdlet {
     [Parameter(Mandatory = true)]
     public int Id { get; set; }
 

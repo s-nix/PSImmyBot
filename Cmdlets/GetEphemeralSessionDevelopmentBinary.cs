@@ -3,8 +3,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "EphemeralSessionDevelopmentLatestEphemeralBinary")]
-public class GetEphemeralSessionDevelopmentLatestEphemeralBinary : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "EphemeralSessionDevelopmentBinary")]
+public class GetEphemeralSessionDevelopmentBinary : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/ephemeral-session/development/latest-ephemeral-binary?";

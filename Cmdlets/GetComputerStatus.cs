@@ -3,8 +3,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ComputersStatus")]
-public class GetComputersStatus : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "ComputerStatus")]
+public class GetComputerStatus : Cmdlet {
     [Parameter(Mandatory = true)]
     public int ComputerId { get; set; }
 

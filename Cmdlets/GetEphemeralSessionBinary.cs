@@ -3,8 +3,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "EphemeralSession")]
-public class GetEphemeralSession : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "EphemeralSessionBinary")]
+public class GetEphemeralSessionBinary : Cmdlet {
     [Parameter(Mandatory = true)]
     public required string EphemeralSessionId { get; set; }
 

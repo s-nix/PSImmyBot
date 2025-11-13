@@ -7,7 +7,7 @@ namespace PSImmyBot.Cmdlets;
 [Cmdlet(VerbsCommon.Get, "ComputerInventoryAllSoftware")]
 public class GetComputerInventoryAllSoftware : Cmdlet {
     [Parameter(Mandatory = false)]
-    public string? Q { get; set; }
+    public string? SoftwareName { get; set; }
 
     [Parameter(Mandatory = false)]
     public int? TenantId { get; set; }
@@ -18,7 +18,7 @@ public class GetComputerInventoryAllSoftware : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/computers/all-inventory-software/search-by-name?";
-        endpoint += Globals.ConvertToQueryParameters(Q, "q");
+        endpoint += Globals.ConvertToQueryParameters(SoftwareName, "q");
         endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId");
         endpoint += Globals.ConvertToQueryParameters(SearchMode, "searchMode");
 

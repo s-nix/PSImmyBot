@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ApplicationLocksResponse")]
-public class GetApplicationLocksResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "ApplicationLocks")]
+public class GetApplicationLocks : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/application-locks?";

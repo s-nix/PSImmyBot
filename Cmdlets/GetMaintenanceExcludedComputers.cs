@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ComputerNameResponse")]
-public class GetComputerNameResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "MaintenanceExcludedComputers")]
+public class GetMaintenanceExcludedComputers : Cmdlet {
     [Parameter(Mandatory = true)]
     public int Id { get; set; }
 

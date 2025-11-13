@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "GetAgentSha256HashResponse")]
-public class GetGetAgentSha256HashResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "AgentSha256Hash")]
+public class GetAgentSha256Hash : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/immy-agent-metadata/agent-hash?";

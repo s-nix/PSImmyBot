@@ -4,12 +4,11 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "DynamicIntegrationTypeResponse")]
-public class GetDynamicIntegrationTypeResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "DynamicIntegrationType")]
+public class GetDynamicIntegrationType : Cmdlet {
     [Parameter(Mandatory = true)]
     public int Id { get; set; }
-
-
+    
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/dynamic-provider-types/local/{Id}?";
 

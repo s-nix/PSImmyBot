@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "DisabledPreflightScriptResponse")]
-public class GetDisabledPreflightScriptResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "DisabledPreflightScripts")]
+public class GetDisabledPreflightScripts : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/scripts/disabled-preflight-scripts?";

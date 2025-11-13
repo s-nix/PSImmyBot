@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "GetClaimsResponse")]
-public class GetGetClaimsResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "Claims")]
+public class GetClaims : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/users/claims?";

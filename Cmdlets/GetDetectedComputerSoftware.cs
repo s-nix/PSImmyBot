@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "DetectedComputerSoftwareResponse")]
-public class GetDetectedComputerSoftwareResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "DetectedComputerSoftware")]
+public class GetDetectedComputerSoftware : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 
@@ -16,7 +16,7 @@ public class GetDetectedComputerSoftwareResponse : Cmdlet {
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/tenants/software-from-inventory/dx?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
-        endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId"); // added name overload
+        endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId");
 
         List<DetectedComputerSoftwareResponse> response = ImmyBotApiService.Get<List<DetectedComputerSoftwareResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

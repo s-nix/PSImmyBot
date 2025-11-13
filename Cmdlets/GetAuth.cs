@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "GetAuthResponse")]
-public class GetGetAuthResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "Auth")]
+public class GetAuth : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/auth?";

@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ComputerUserAffinityResponse")]
-public class GetComputerUserAffinityResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "ComputerUserAffinities")]
+public class GetComputerUserAffinities : Cmdlet {
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 

@@ -4,17 +4,17 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "GetAzureGroupResponse")]
-public class GetGetAzureGroupResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "AzureGroup")]
+public class GetAzureGroup : Cmdlet {
     [Parameter(Mandatory = true)]
-    public required string GroupId { get; set; }
+    public required string AzureGroupId { get; set; }
 
     [Parameter(Mandatory = true)]
-    public int Id { get; set; }
+    public required int ImmyTenantId { get; set; }
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/{Id}/azure-groups/{GroupId}?";
+        string endpoint = $"/api/v1/tenants/{ImmyTenantId}/azure-groups/{AzureGroupId}?";
 
         GetAzureGroupResponse response = ImmyBotApiService.Get<GetAzureGroupResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

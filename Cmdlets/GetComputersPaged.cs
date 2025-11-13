@@ -4,8 +4,8 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ComputerPageResponse")]
-public class GetComputerPageResponse : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "ComputersPaged")]
+public class GetComputersPaged : Cmdlet {
     [Parameter(Mandatory = false)]
     public string? Filter { get; set; }
 
