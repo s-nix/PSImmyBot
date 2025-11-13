@@ -19,5 +19,4 @@ public class SendGetBashInstallScriptParametersWithOnboardingOptionsRequest : Cm
         IScript response = ImmyBotApiService.Post<GetBashInstallScriptParametersWithOnboardingOptions, IScript>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);
     }
-
 }
