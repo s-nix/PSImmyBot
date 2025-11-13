@@ -16,7 +16,7 @@ public class GetComputerUserAffinities : Cmdlet {
     protected override void ProcessRecord() {
         string endpoint = "/api/v1/computers/user-affinities?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
-        endpoint += Globals.ConvertToQueryParameters(ComputerId, "computerId"); // added name overload
+        endpoint += Globals.ConvertToQueryParameters(ComputerId, "computerId");
 
         List<ComputerUserAffinityResponse> response = ImmyBotApiService.Get<List<ComputerUserAffinityResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -8,7 +8,7 @@ public record ComputerListViewModel(
     int? ActiveSessionId,
     [property: JsonPropertyName("activeSessionStatus")]
     [property: JsonConverter(typeof(JsonStringEnumConverter<SessionStatus>))]
-    SessionStatus ActiveSessionStatus,
+    SessionStatus? ActiveSessionStatus,
     [property: JsonPropertyName("chassisTypes")]
     ICollection<int>? ChassisTypes,
     [property: JsonPropertyName("computerName")]

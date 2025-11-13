@@ -1,4 +1,4 @@
-
+# Keeping these functions for posterity, but they are no longer used in the current build process.
 
 function Set-UpperCase {
     param (
@@ -689,9 +689,8 @@ $(if ($hasPayload -and $hasReturn) {
     }
 }
 
-
 # ConvertFrom-SwaggerGet -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
 # ConvertFrom-SwaggerPost -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
 # ConvertFrom-SwaggerPatch -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
 # ConvertFrom-SwaggerPut -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
-ConvertFrom-SwaggerDelete -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
+# ConvertFrom-SwaggerDelete -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"

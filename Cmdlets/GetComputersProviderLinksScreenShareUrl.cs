@@ -14,7 +14,6 @@ public class GetComputersProviderLinksScreenShareUrl : Cmdlet {
 
     protected override void ProcessRecord() {
         string endpoint = $"/api/v1/computers/{ComputerId}/provider-links/{ProviderLinkId}/screen-share-url?";
-
         string response = ImmyBotApiService.Get<string>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
     }

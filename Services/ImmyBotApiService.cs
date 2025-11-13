@@ -1,9 +1,13 @@
 ﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 using PSImmyBot.Models;
 
 namespace PSImmyBot.Services;
 
 public static class ImmyBotApiService {
+    private static JsonSerializerOptions serializerOptions = new() {
+        DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull
+    };
     public static async Task<T> Get<T>(string endpoint) {
         AzureTokenResponse token = Globals.Token
             ?? throw new InvalidOperationException("Azure token is not available or expired. Please authenticate first with Connect-ImmyApi.");
@@ -21,11 +25,11 @@ public static class ImmyBotApiService {
         string responseContent = await response.Content.ReadAsStringAsync();
         T? result;
         try {
-            result = JsonSerializer.Deserialize<T>(responseContent);
+            result = JsonSerializer.Deserialize<T>(responseContent, serializerOptions);
         } catch (JsonException) {
             using JsonDocument doc = JsonDocument.Parse(responseContent);
             if (doc.RootElement.TryGetProperty("data", out JsonElement value)) {
-                result = JsonSerializer.Deserialize<T>(value.GetRawText());
+                result = JsonSerializer.Deserialize<T>(value.GetRawText(), serializerOptions);
             } else {
                 throw;
             }
