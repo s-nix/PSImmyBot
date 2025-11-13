@@ -11,7 +11,7 @@ public class SendFailAuthCodeFlowRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/oauth/fail-auth-code-flow?";
+        string endpoint = "/api/v1/oauth/fail-auth-code-flow?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

@@ -11,7 +11,7 @@ public class SendCreateLocalSoftwareRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/software/local?";
+        string endpoint = "/api/v1/software/local?";
 
         GetLocalSoftwareResponse response = ImmyBotApiService.Post<CreateLocalSoftwareRequestBody, GetLocalSoftwareResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

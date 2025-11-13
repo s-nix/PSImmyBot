@@ -11,7 +11,7 @@ public class SendMigrateToSupersedingAssignmentRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/migrate-to-superseding-assignment-what-if?";
+        string endpoint = "/api/v1/target-assignments/migrate-to-superseding-assignment-what-if?";
 
         MigrateToSupersedingAssignmentWhatIfResponseOpResult response = ImmyBotApiService.Post<MigrateToSupersedingAssignmentRequest, MigrateToSupersedingAssignmentWhatIfResponseOpResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

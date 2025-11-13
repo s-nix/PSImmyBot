@@ -20,7 +20,7 @@ public class GetComputerSearch : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers?";
+        string endpoint = "/api/v1/computers?";
         endpoint += Globals.ConvertToQueryParameters(Name, "name");
         endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId");
         endpoint += Globals.ConvertToQueryParameters(OrderByUpdatedDate, "orderByUpdatedDate");

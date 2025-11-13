@@ -11,7 +11,7 @@ public class SendUpdateMaintenanceItemOrderPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/update-maintenance-item-order?";
+        string endpoint = "/api/v1/target-assignments/update-maintenance-item-order?";
 
         MaintenanceItemOrder response = ImmyBotApiService.Post<UpdateMaintenanceItemOrderPayload, MaintenanceItemOrder>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

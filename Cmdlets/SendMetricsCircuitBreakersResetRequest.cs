@@ -11,7 +11,7 @@ public class SendMetricsCircuitBreakersResetRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/metrics/circuit-breakers/reset?";
+        string endpoint = "/api/v1/metrics/circuit-breakers/reset?";
         endpoint += Globals.ConvertToQueryParameters(PolicyName, "policyName");
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();

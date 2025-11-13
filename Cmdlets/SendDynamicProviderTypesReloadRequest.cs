@@ -8,7 +8,7 @@ public class SendDynamicProviderTypesReloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/dynamic-provider-types/reload?";
+        string endpoint = "/api/v1/dynamic-provider-types/reload?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

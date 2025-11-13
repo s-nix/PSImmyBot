@@ -11,7 +11,7 @@ public class SendClearApplicationLogSourceContextRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/application-logs/source-context/clear?";
+        string endpoint = "/api/v1/application-logs/source-context/clear?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

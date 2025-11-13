@@ -7,7 +7,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetChangeRequestsOpenCount : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/change-requests/open-count?";
+        string endpoint = "/api/v1/change-requests/open-count?";
 
         int response = ImmyBotApiService.Get<int>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

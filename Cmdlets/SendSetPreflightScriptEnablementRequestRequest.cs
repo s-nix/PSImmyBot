@@ -11,7 +11,7 @@ public class SendSetPreflightScriptEnablementRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/set-preflight-script-enablement?";
+        string endpoint = "/api/v1/scripts/set-preflight-script-enablement?";
 
         OpResult response = ImmyBotApiService.Post<SetPreflightScriptEnablementRequest, OpResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

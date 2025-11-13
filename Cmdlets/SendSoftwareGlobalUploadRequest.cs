@@ -9,7 +9,7 @@ public class SendSoftwareGlobalUploadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/software/global/upload?";
+        string endpoint = "/api/v1/software/global/upload?";
 
         SoftwareFileUploadData response = ImmyBotApiService.Post<SoftwareFileUploadData>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

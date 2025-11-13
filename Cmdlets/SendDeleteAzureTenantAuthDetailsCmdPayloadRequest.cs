@@ -11,7 +11,7 @@ public class SendDeleteAzureTenantAuthDetailsCmdPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/auth/delete-azure-tenant-auth-details?";
+        string endpoint = "/api/v1/auth/delete-azure-tenant-auth-details?";
 
         DeleteAzureTenantAuthDetailsCmdResult response = ImmyBotApiService.Post<DeleteAzureTenantAuthDetailsCmdPayload, DeleteAzureTenantAuthDetailsCmdResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

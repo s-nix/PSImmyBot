@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetAuthResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/auth?";
+        string endpoint = "/api/v1/auth?";
 
         GetAuthResponse response = ImmyBotApiService.Get<GetAuthResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

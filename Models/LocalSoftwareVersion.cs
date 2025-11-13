@@ -2,233 +2,177 @@
 
 namespace PSImmyBot.Models;
 
-public record LocalSoftwareVersion {
-    [JsonConstructor]
-    [Obsolete]
-    public LocalSoftwareVersion(Architecture @architecture, string? @blobName, int? @createdBy, User @createdByUser, DateTimeOffset @createdDate, SemanticVersion @dependsOnSemanticVersion, int? @deprecatedIdField, string? @displayName, string? @displayVersion, string? @installerFile, SoftwareVersionInstallerType @installerType, Script @installScript, int? @installScriptId, DatabaseType @installScriptType, MaintenanceActionResult @lastResult, LicenseType @licenseType, MaintenanceType @maintenanceType, string? @notes, int @numActionFailures, int @numActionSuccesses, string? @packageHash, PackageType @packageType, Script @postInstallScript, int? @postInstallScriptId, DatabaseType @postInstallScriptType, Script @postUninstallScript, int? @postUninstallScriptId, DatabaseType @postUninstallScriptType, string? @productCode, string? @relativeCacheSourcePath, SemanticVersion @semanticVersion, string? @semanticVersionString, LocalSoftware @software, int @softwareId, string? @softwareIdentifier, SoftwareType @softwareType, string? @testFailedError, bool @testRequired, Script @testScript, int? @testScriptId, DatabaseType @testScriptType, Script @uninstallScript, int? @uninstallScriptId, DatabaseType @uninstallScriptType, int? @updatedBy, User @updatedByUser, DateTimeOffset @updatedDate, Script @upgradeScript, int? @upgradeScriptId, DatabaseType @upgradeScriptType, UpdateActionType @upgradeStrategy, string? @url) {
-        CreatedDate = @createdDate;
-        UpdatedDate = @updatedDate;
-        CreatedBy = @createdBy;
-        UpdatedBy = @updatedBy;
-        DisplayName = @displayName;
-        DisplayVersion = @displayVersion;
-        SemanticVersion = @semanticVersion;
-        SemanticVersionString = @semanticVersionString;
-        TestRequired = @testRequired;
-        Url = @url;
-        BlobName = @blobName;
-        RelativeCacheSourcePath = @relativeCacheSourcePath;
-        InstallerFile = @installerFile;
-        TestFailedError = @testFailedError;
-        PackageHash = @packageHash;
-        ProductCode = @productCode;
-        UpgradeStrategy = @upgradeStrategy;
-        PackageType = @packageType;
-        InstallerType = @installerType;
-        MaintenanceType = @maintenanceType;
-        NumActionSuccesses = @numActionSuccesses;
-        NumActionFailures = @numActionFailures;
-        LastResult = @lastResult;
-        Notes = @notes;
-        InstallScriptId = @installScriptId;
-        InstallScriptType = @installScriptType;
-        InstallScript = @installScript;
-        TestScriptId = @testScriptId;
-        TestScriptType = @testScriptType;
-        TestScript = @testScript;
-        UpgradeScriptId = @upgradeScriptId;
-        UpgradeScriptType = @upgradeScriptType;
-        UpgradeScript = @upgradeScript;
-        UninstallScriptId = @uninstallScriptId;
-        UninstallScriptType = @uninstallScriptType;
-        UninstallScript = @uninstallScript;
-        PostInstallScriptId = @postInstallScriptId;
-        PostInstallScriptType = @postInstallScriptType;
-        PostInstallScript = @postInstallScript;
-        PostUninstallScriptId = @postUninstallScriptId;
-        PostUninstallScriptType = @postUninstallScriptType;
-        PostUninstallScript = @postUninstallScript;
-        LicenseType = @licenseType;
-        Architecture = @architecture;
-        DependsOnSemanticVersion = @dependsOnSemanticVersion;
-        DeprecatedIdField = @deprecatedIdField;
-        SoftwareId = @softwareId;
-        Software = @software;
-        SoftwareType = @softwareType;
-        SoftwareIdentifier = @softwareIdentifier;
-        CreatedByUser = @createdByUser;
-        UpdatedByUser = @updatedByUser;
-    }
+[method: JsonConstructor]
+public record LocalSoftwareVersion(
+    [property: JsonPropertyName("architecture")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<Architecture>))]
+    Architecture Architecture,
 
-    [JsonPropertyName("createdDate")]
-    public DateTimeOffset CreatedDate { get; init; }
+    [property: JsonPropertyName("blobName")]
+    string? BlobName,
 
-    [JsonPropertyName("updatedDate")]
-    public DateTimeOffset UpdatedDate { get; init; }
+    [property: JsonPropertyName("createdBy")]
+    int? CreatedBy,
 
-    [JsonPropertyName("createdBy")]
-    public int? CreatedBy { get; init; }
+    [property: JsonPropertyName("createdByUser")]
+    User CreatedByUser,
 
-    [JsonPropertyName("updatedBy")]
-    public int? UpdatedBy { get; init; }
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
 
-    [JsonPropertyName("displayName")]
-    public string? DisplayName { get; init; }
+    [property: JsonPropertyName("dependsOnSemanticVersion")]
+    SemanticVersion DependsOnSemanticVersion,
 
-    [JsonPropertyName("displayVersion")]
-    public string? DisplayVersion { get; init; }
+    [property: JsonPropertyName("deprecatedIdField")]
+    [property: Obsolete]
+    int? DeprecatedIdField,
 
-    [JsonPropertyName("semanticVersion")]
-    [System.ComponentModel.DataAnnotations.Required]
-    public SemanticVersion SemanticVersion { get; init; }
+    [property: JsonPropertyName("displayName")]
+    string? DisplayName,
 
-    [JsonPropertyName("semanticVersionString")]
-    public string? SemanticVersionString { get; init; }
+    [property: JsonPropertyName("displayVersion")]
+    string? DisplayVersion,
 
-    [JsonPropertyName("testRequired")]
-    public bool TestRequired { get; init; }
+    [property: JsonPropertyName("installerFile")]
+    string? InstallerFile,
 
-    [JsonPropertyName("url")]
-    public string? Url { get; init; }
+    [property: JsonPropertyName("installerType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareVersionInstallerType>))]
+    SoftwareVersionInstallerType InstallerType,
 
-    [JsonPropertyName("blobName")]
-    public string? BlobName { get; init; }
+    [property: JsonPropertyName("installScript")]
+    Script InstallScript,
 
-    [JsonPropertyName("relativeCacheSourcePath")]
-    public string? RelativeCacheSourcePath { get; init; }
+    [property: JsonPropertyName("installScriptId")]
+    int? InstallScriptId,
 
-    [JsonPropertyName("installerFile")]
-    public string? InstallerFile { get; init; }
+    [property: JsonPropertyName("installScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType InstallScriptType,
 
-    [JsonPropertyName("testFailedError")]
-    public string? TestFailedError { get; init; }
+    [property: JsonPropertyName("lastResult")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResult>))]
+    MaintenanceActionResult LastResult,
 
-    [JsonPropertyName("packageHash")]
-    public string? PackageHash { get; init; }
+    [property: JsonPropertyName("licenseType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<LicenseType>))]
+    LicenseType LicenseType,
 
-    [JsonPropertyName("productCode")]
-    public string? ProductCode { get; init; }
+    [property: JsonPropertyName("maintenanceType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
+    MaintenanceType MaintenanceType,
 
-    [JsonPropertyName("upgradeStrategy")]
-    [JsonConverter(typeof(JsonStringEnumConverter<UpdateActionType>))]
-    public UpdateActionType UpgradeStrategy { get; init; }
+    [property: JsonPropertyName("notes")]
+    string? Notes,
 
-    [JsonPropertyName("packageType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<PackageType>))]
-    public PackageType PackageType { get; init; }
+    [property: JsonPropertyName("numActionFailures")]
+    int NumActionFailures,
 
-    [JsonPropertyName("installerType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareVersionInstallerType>))]
-    public SoftwareVersionInstallerType InstallerType { get; init; }
+    [property: JsonPropertyName("numActionSuccesses")]
+    int NumActionSuccesses,
 
-    [JsonPropertyName("maintenanceType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
-    public MaintenanceType MaintenanceType { get; init; }
+    [property: JsonPropertyName("packageHash")]
+    string? PackageHash,
 
-    [JsonPropertyName("numActionSuccesses")]
-    public int NumActionSuccesses { get; init; }
+    [property: JsonPropertyName("packageType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<PackageType>))]
+    PackageType PackageType,
 
-    [JsonPropertyName("numActionFailures")]
-    public int NumActionFailures { get; init; }
+    [property: JsonPropertyName("postInstallScript")]
+    Script PostInstallScript,
 
-    [JsonPropertyName("lastResult")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResult>))]
-    public MaintenanceActionResult LastResult { get; init; }
+    [property: JsonPropertyName("postInstallScriptId")]
+    int? PostInstallScriptId,
 
-    [JsonPropertyName("notes")]
-    public string? Notes { get; init; }
+    [property: JsonPropertyName("postInstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType PostInstallScriptType,
 
-    [JsonPropertyName("installScriptId")]
-    public int? InstallScriptId { get; init; }
+    [property: JsonPropertyName("postUninstallScript")]
+    Script PostUninstallScript,
 
-    [JsonPropertyName("installScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType InstallScriptType { get; init; }
+    [property: JsonPropertyName("postUninstallScriptId")]
+    int? PostUninstallScriptId,
 
-    [JsonPropertyName("installScript")]
-    public Script InstallScript { get; init; }
+    [property: JsonPropertyName("postUninstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType PostUninstallScriptType,
 
-    [JsonPropertyName("testScriptId")]
-    public int? TestScriptId { get; init; }
+    [property: JsonPropertyName("productCode")]
+    string? ProductCode,
 
-    [JsonPropertyName("testScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType TestScriptType { get; init; }
+    [property: JsonPropertyName("relativeCacheSourcePath")]
+    string? RelativeCacheSourcePath,
 
-    [JsonPropertyName("testScript")]
-    public Script TestScript { get; init; }
+    [property: JsonPropertyName("semanticVersion")]
+    [property: System.ComponentModel.DataAnnotations.Required]
+    SemanticVersion SemanticVersion,
 
-    [JsonPropertyName("upgradeScriptId")]
-    public int? UpgradeScriptId { get; init; }
+    [property: JsonPropertyName("semanticVersionString")]
+    string? SemanticVersionString,
 
-    [JsonPropertyName("upgradeScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType UpgradeScriptType { get; init; }
+    [property: JsonPropertyName("software")]
+    LocalSoftware Software,
 
-    [JsonPropertyName("upgradeScript")]
-    public Script UpgradeScript { get; init; }
+    [property: JsonPropertyName("softwareId")]
+    int SoftwareId,
 
-    [JsonPropertyName("uninstallScriptId")]
-    public int? UninstallScriptId { get; init; }
+    [property: JsonPropertyName("softwareIdentifier")]
+    string? SoftwareIdentifier,
 
-    [JsonPropertyName("uninstallScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType UninstallScriptType { get; init; }
+    [property: JsonPropertyName("softwareType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareType>))]
+    SoftwareType SoftwareType,
 
-    [JsonPropertyName("uninstallScript")]
-    public Script UninstallScript { get; init; }
+    [property: JsonPropertyName("testFailedError")]
+    string? TestFailedError,
 
-    [JsonPropertyName("postInstallScriptId")]
-    public int? PostInstallScriptId { get; init; }
+    [property: JsonPropertyName("testRequired")]
+    bool TestRequired,
 
-    [JsonPropertyName("postInstallScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType PostInstallScriptType { get; init; }
+    [property: JsonPropertyName("testScript")]
+    Script TestScript,
 
-    [JsonPropertyName("postInstallScript")]
-    public Script PostInstallScript { get; init; }
+    [property: JsonPropertyName("testScriptId")]
+    int? TestScriptId,
 
-    [JsonPropertyName("postUninstallScriptId")]
-    public int? PostUninstallScriptId { get; init; }
+    [property: JsonPropertyName("testScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType TestScriptType,
 
-    [JsonPropertyName("postUninstallScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType PostUninstallScriptType { get; init; }
+    [property: JsonPropertyName("uninstallScript")]
+    Script UninstallScript,
 
-    [JsonPropertyName("postUninstallScript")]
-    public Script PostUninstallScript { get; init; }
+    [property: JsonPropertyName("uninstallScriptId")]
+    int? UninstallScriptId,
 
-    [JsonPropertyName("licenseType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<LicenseType>))]
-    public LicenseType LicenseType { get; init; }
+    [property: JsonPropertyName("uninstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType UninstallScriptType,
 
-    [JsonPropertyName("architecture")]
-    [JsonConverter(typeof(JsonStringEnumConverter<Architecture>))]
-    public Architecture Architecture { get; init; }
+    [property: JsonPropertyName("updatedBy")]
+    int? UpdatedBy,
 
-    [JsonPropertyName("dependsOnSemanticVersion")]
-    public SemanticVersion DependsOnSemanticVersion { get; init; }
+    [property: JsonPropertyName("updatedByUser")]
+    User UpdatedByUser,
 
-    [JsonPropertyName("deprecatedIdField")]
-    [Obsolete]
-    public int? DeprecatedIdField { get; init; }
+    [property: JsonPropertyName("updatedDate")]
+    DateTimeOffset UpdatedDate,
 
-    [JsonPropertyName("softwareId")]
-    public int SoftwareId { get; init; }
+    [property: JsonPropertyName("upgradeScript")]
+    Script UpgradeScript,
 
-    [JsonPropertyName("software")]
-    public LocalSoftware Software { get; init; }
+    [property: JsonPropertyName("upgradeScriptId")]
+    int? UpgradeScriptId,
 
-    [JsonPropertyName("softwareType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareType>))]
-    public SoftwareType SoftwareType { get; init; }
+    [property: JsonPropertyName("upgradeScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType UpgradeScriptType,
 
-    [JsonPropertyName("softwareIdentifier")]
-    public string? SoftwareIdentifier { get; init; }
+    [property: JsonPropertyName("upgradeStrategy")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<UpdateActionType>))]
+    UpdateActionType UpgradeStrategy,
 
-    [JsonPropertyName("createdByUser")]
-    public User CreatedByUser { get; init; }
-
-    [JsonPropertyName("updatedByUser")]
-    public User UpdatedByUser { get; init; }
-}
+    [property: JsonPropertyName("url")]
+    string? Url
+);

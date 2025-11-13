@@ -14,7 +14,7 @@ public class SendCreateProviderLinkRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/provider-links?";
+        string endpoint = "/api/v1/provider-links?";
         endpoint += Globals.ConvertToQueryParameters(ThrowIfAgentInstallerVersionNotSet, "throwIfAgentInstallerVersionNotSet");
 
         GetProviderLinkResponse response = ImmyBotApiService.Post<CreateProviderLinkRequestBody, GetProviderLinkResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();

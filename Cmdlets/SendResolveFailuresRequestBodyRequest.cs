@@ -11,7 +11,7 @@ public class SendResolveFailuresRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/provider-agents/resolve-failures?";
+        string endpoint = "/api/v1/provider-agents/resolve-failures?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

@@ -11,7 +11,7 @@ public class SendValidateParamBlockParametersFromScriptRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/validate-param-block-parameters?";
+        string endpoint = "/api/v1/scripts/validate-param-block-parameters?";
 
         DynamicFormBindResult response = ImmyBotApiService.Post<ValidateParamBlockParametersFromScriptRequest, DynamicFormBindResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

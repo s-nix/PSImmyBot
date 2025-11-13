@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetDisabledPreflightScriptResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/disabled-preflight-scripts?";
+        string endpoint = "/api/v1/scripts/disabled-preflight-scripts?";
 
         List<DisabledPreflightScriptResponse> response = ImmyBotApiService.Get<List<DisabledPreflightScriptResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -11,7 +11,7 @@ public class SendSubscriptionDetailsRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v2/manager/update-subscription?";
+        string endpoint = "/api/v2/manager/update-subscription?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

@@ -11,7 +11,7 @@ public class SendStartEditorServicesRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/language-service/start?";
+        string endpoint = "/api/v1/scripts/language-service/start?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

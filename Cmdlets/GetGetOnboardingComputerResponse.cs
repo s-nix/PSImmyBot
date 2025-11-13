@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetOnboardingComputerResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/onboarding?";
+        string endpoint = "/api/v1/computers/onboarding?";
 
         List<GetOnboardingComputerResponse> response = ImmyBotApiService.Get<List<GetOnboardingComputerResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

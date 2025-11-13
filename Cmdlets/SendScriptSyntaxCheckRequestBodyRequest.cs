@@ -11,7 +11,7 @@ public class SendScriptSyntaxCheckRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/syntax-check?";
+        string endpoint = "/api/v1/scripts/syntax-check?";
 
         SyntaxCheckerResult response = ImmyBotApiService.Post<ScriptSyntaxCheckRequestBody, SyntaxCheckerResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

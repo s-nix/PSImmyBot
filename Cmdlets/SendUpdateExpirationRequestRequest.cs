@@ -11,7 +11,7 @@ public class SendUpdateExpirationRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/update-expiration?";
+        string endpoint = "/api/v1/users/update-expiration?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

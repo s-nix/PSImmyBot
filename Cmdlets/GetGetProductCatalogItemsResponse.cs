@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetProductCatalogItemsResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/billing/product-catalog-items?";
+        string endpoint = "/api/v1/billing/product-catalog-items?";
 
         GetProductCatalogItemsResponse response = ImmyBotApiService.Get<GetProductCatalogItemsResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

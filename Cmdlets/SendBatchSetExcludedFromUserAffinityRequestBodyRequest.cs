@@ -11,7 +11,7 @@ public class SendBatchSetExcludedFromUserAffinityRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/set-excluded-from-user-affinity?";
+        string endpoint = "/api/v1/computers/set-excluded-from-user-affinity?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

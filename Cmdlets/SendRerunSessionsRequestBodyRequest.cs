@@ -11,7 +11,7 @@ public class SendRerunSessionsRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-sessions/rerun?";
+        string endpoint = "/api/v1/maintenance-sessions/rerun?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

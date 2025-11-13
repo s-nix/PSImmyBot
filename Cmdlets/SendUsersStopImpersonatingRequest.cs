@@ -9,7 +9,7 @@ public class SendUsersStopImpersonatingRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/stop-impersonating?";
+        string endpoint = "/api/v1/users/stop-impersonating?";
 
         OpResult response = ImmyBotApiService.Post<OpResult>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

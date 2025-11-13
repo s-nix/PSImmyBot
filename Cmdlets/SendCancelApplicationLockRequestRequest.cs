@@ -11,7 +11,7 @@ public class SendCancelApplicationLockRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/application-locks/request-cancellation?";
+        string endpoint = "/api/v1/application-locks/request-cancellation?";
 
         OpResult response = ImmyBotApiService.Post<CancelApplicationLockRequest, OpResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

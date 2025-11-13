@@ -17,7 +17,7 @@ public class GetGetScriptNameResponse : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/local/names?";
+        string endpoint = "/api/v1/scripts/local/names?";
         endpoint += Globals.ConvertToQueryParameters(SearchFilter, "searchFilter");
         endpoint += Globals.ConvertToQueryParameters(ScriptCategory, "scriptCategory");
         endpoint += Globals.ConvertToQueryParameters(SearchType, "searchType");

@@ -11,7 +11,7 @@ public class SendRemoveParentTenantRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/remove-parent-tenant?";
+        string endpoint = "/api/v1/tenants/remove-parent-tenant?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

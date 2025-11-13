@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetPendingCountsResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/provider-agents/pending-counts?";
+        string endpoint = "/api/v1/provider-agents/pending-counts?";
 
         GetPendingCountsResponse response = ImmyBotApiService.Get<GetPendingCountsResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

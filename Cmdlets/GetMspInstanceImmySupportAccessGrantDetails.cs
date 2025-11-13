@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetMspInstanceImmySupportAccessGrantDetails : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/immy-support-access-grant-details?";
+        string endpoint = "/api/v1/system/immy-support-access-grant-details?";
 
         MspInstanceImmySupportAccessGrantDetails response = ImmyBotApiService.Get<MspInstanceImmySupportAccessGrantDetails>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

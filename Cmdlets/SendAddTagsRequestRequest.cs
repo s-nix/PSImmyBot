@@ -11,7 +11,7 @@ public class SendAddTagsRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/add-tags?";
+        string endpoint = "/api/v1/tenants/add-tags?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

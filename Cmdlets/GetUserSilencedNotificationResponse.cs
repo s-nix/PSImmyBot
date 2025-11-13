@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetUserSilencedNotificationResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/notifications?";
+        string endpoint = "/api/v1/notifications?";
 
         List<UserSilencedNotificationResponse> response = ImmyBotApiService.Get<List<UserSilencedNotificationResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

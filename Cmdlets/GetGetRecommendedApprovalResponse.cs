@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetRecommendedApprovalResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/recommended-approvals?";
+        string endpoint = "/api/v1/target-assignments/recommended-approvals?";
 
         List<GetRecommendedApprovalResponse> response = ImmyBotApiService.Get<List<GetRecommendedApprovalResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

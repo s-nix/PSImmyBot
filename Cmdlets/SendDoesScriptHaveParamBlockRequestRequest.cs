@@ -11,7 +11,7 @@ public class SendDoesScriptHaveParamBlockRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/does-script-have-param-block?";
+        string endpoint = "/api/v1/scripts/does-script-have-param-block?";
 
         bool response = ImmyBotApiService.Post<DoesScriptHaveParamBlockRequest, bool>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

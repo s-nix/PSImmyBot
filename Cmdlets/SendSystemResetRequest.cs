@@ -8,7 +8,7 @@ public class SendSystemResetRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/reset?";
+        string endpoint = "/api/v1/system/reset?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

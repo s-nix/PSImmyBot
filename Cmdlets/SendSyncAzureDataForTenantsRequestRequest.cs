@@ -11,7 +11,7 @@ public class SendSyncAzureDataForTenantsRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/azure/sync-details-from-azure-tenants?";
+        string endpoint = "/api/v1/azure/sync-details-from-azure-tenants?";
 
         List<AzureTenantDetailsSyncResult> response = ImmyBotApiService.Post<SyncAzureDataForTenantsRequest, List<AzureTenantDetailsSyncResult>>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

@@ -11,7 +11,7 @@ public class SendBeginAuthCodeFlowRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/oauth/begin-auth-code-flow?";
+        string endpoint = "/api/v1/oauth/begin-auth-code-flow?";
 
         BeginAuthCodeFlowResponse response = ImmyBotApiService.Post<BeginAuthCodeFlowRequest, BeginAuthCodeFlowResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

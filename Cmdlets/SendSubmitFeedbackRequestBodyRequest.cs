@@ -11,7 +11,7 @@ public class SendSubmitFeedbackRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/submit-feedback?";
+        string endpoint = "/api/v1/users/submit-feedback?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

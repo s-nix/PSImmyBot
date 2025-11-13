@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetReleasesResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/releases?";
+        string endpoint = "/api/v1/system/releases?";
 
         GetReleasesResponse response = ImmyBotApiService.Get<GetReleasesResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

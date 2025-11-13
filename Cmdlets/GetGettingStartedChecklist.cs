@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGettingStartedChecklist : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/getting-started/checklist?";
+        string endpoint = "/api/v1/getting-started/checklist?";
 
         GettingStartedChecklist response = ImmyBotApiService.Get<GettingStartedChecklist>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

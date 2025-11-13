@@ -8,7 +8,7 @@ public class SendManagerTriggerConfigRefreshRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/manager/trigger-config-refresh?";
+        string endpoint = "/api/v1/manager/trigger-config-refresh?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

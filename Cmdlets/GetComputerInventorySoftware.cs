@@ -14,7 +14,7 @@ public class GetComputerInventorySoftware : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/inventory-software/search-by-name?";
+        string endpoint = "/api/v1/computers/inventory-software/search-by-name?";
         endpoint += Globals.ConvertToQueryParameters(Q, "q");
         endpoint += Globals.ConvertToQueryParameters(SearchMode, "searchMode");
 

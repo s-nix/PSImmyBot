@@ -8,7 +8,7 @@ public class SendMediaSupportUploadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/media/support/upload?";
+        string endpoint = "/api/v1/media/support/upload?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

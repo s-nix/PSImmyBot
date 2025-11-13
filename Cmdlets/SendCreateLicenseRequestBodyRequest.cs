@@ -11,7 +11,7 @@ public class SendCreateLicenseRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/licenses?";
+        string endpoint = "/api/v1/licenses?";
 
         GetLicenseResponse response = ImmyBotApiService.Post<CreateLicenseRequestBody, GetLicenseResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

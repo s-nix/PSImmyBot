@@ -10,7 +10,7 @@ public class SendComputersRestoreRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/restore?";
+        string endpoint = "/api/v1/computers/restore?";
 
         bool response = ImmyBotApiService.Post<object, bool>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

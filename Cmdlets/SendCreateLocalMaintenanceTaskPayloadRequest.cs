@@ -11,7 +11,7 @@ public class SendCreateLocalMaintenanceTaskPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-tasks/local?";
+        string endpoint = "/api/v1/maintenance-tasks/local?";
 
         GetLocalMaintenanceTaskResponse response = ImmyBotApiService.Post<CreateLocalMaintenanceTaskPayload, GetLocalMaintenanceTaskResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

@@ -11,7 +11,7 @@ public class SendManagerInstanceUpdatingRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/manager/instance-updating?";
+        string endpoint = "/api/v1/manager/instance-updating?";
         endpoint += Globals.ConvertToQueryParameters(Source, "source");
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();

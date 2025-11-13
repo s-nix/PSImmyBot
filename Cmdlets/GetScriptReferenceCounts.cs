@@ -14,7 +14,7 @@ public class GetScriptReferenceCounts : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/references/count?";
+        string endpoint = "/api/v1/scripts/references/count?";
         endpoint += Globals.ConvertToQueryParameters(ScriptType, "scriptType");
         endpoint += Globals.ConvertToQueryParameters(Id, "id");
 

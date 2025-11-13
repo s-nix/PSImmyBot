@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetBillingPlatformDetails : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/billing/billing-platform-details?";
+        string endpoint = "/api/v1/billing/billing-platform-details?";
 
         BillingPlatformDetails response = ImmyBotApiService.Get<BillingPlatformDetails>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -11,7 +11,7 @@ public class SendCreateUserFromPersonRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/create-from-person?";
+        string endpoint = "/api/v1/users/create-from-person?";
 
         GetUserResponse response = ImmyBotApiService.Post<CreateUserFromPersonRequest, GetUserResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

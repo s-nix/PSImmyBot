@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetAppRegistrationOption : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/azure/app-registration-options?";
+        string endpoint = "/api/v1/azure/app-registration-options?";
 
         List<AppRegistrationOption> response = ImmyBotApiService.Get<List<AppRegistrationOption>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

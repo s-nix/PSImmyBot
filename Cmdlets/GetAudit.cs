@@ -11,7 +11,7 @@ public class GetAudit : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/audits/global/dx?";
+        string endpoint = "/api/v1/audits/global/dx?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
 
         List<Audit> response = ImmyBotApiService.Get<List<Audit>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();

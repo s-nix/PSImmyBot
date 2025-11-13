@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetISubjectMetadata : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/roles/permissions?";
+        string endpoint = "/api/v1/roles/permissions?";
 
         List<ISubjectMetadata> response = ImmyBotApiService.Get<List<ISubjectMetadata>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

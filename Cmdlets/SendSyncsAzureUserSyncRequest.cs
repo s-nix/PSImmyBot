@@ -8,7 +8,7 @@ public class SendSyncsAzureUserSyncRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/syncs/azure-user-sync?";
+        string endpoint = "/api/v1/syncs/azure-user-sync?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

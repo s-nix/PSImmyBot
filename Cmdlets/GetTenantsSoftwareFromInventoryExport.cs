@@ -14,7 +14,7 @@ public class GetTenantsSoftwareFromInventoryExport : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/software-from-inventory/export?";
+        string endpoint = "/api/v1/tenants/software-from-inventory/export?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
         endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId");
 

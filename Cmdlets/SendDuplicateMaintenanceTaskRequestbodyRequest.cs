@@ -11,7 +11,7 @@ public class SendDuplicateMaintenanceTaskRequestbodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-tasks/duplicate?";
+        string endpoint = "/api/v1/maintenance-tasks/duplicate?";
 
         GetLocalMaintenanceTaskResponse response = ImmyBotApiService.Post<DuplicateMaintenanceTaskRequestbody, GetLocalMaintenanceTaskResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

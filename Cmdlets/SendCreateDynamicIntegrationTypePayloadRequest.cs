@@ -11,7 +11,7 @@ public class SendCreateDynamicIntegrationTypePayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/dynamic-provider-types/local;?";
+        string endpoint = "/api/v1/dynamic-provider-types/local;?";
 
         DynamicIntegrationTypeResponse response = ImmyBotApiService.Post<CreateDynamicIntegrationTypePayload, DynamicIntegrationTypeResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

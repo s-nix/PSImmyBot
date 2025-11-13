@@ -11,7 +11,7 @@ public class SendCreateTenantRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants?";
+        string endpoint = "/api/v1/tenants?";
 
         GetTenantResponse response = ImmyBotApiService.Post<CreateTenantRequestBody, GetTenantResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

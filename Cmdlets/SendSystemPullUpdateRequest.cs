@@ -8,7 +8,7 @@ public class SendSystemPullUpdateRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/pull-update?";
+        string endpoint = "/api/v1/system/pull-update?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

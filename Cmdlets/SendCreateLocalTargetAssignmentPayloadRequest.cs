@@ -11,7 +11,7 @@ public class SendCreateLocalTargetAssignmentPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments?";
+        string endpoint = "/api/v1/target-assignments?";
 
         LocalTargetAssignmentResource response = ImmyBotApiService.Post<CreateLocalTargetAssignmentPayload, LocalTargetAssignmentResource>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

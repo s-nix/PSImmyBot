@@ -26,7 +26,7 @@ public class GetMaintenanceTaskSearchResult : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-tasks/search?";
+        string endpoint = "/api/v1/maintenance-tasks/search?";
         endpoint += Globals.ConvertToQueryParameters(Filters, "filters");
         endpoint += Globals.ConvertToQueryParameters(Sorts, "sorts");
         endpoint += Globals.ConvertToQueryParameters(Page, "page");

@@ -11,7 +11,7 @@ public class SendCreateGlobalSoftwareRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/software/global?";
+        string endpoint = "/api/v1/software/global?";
 
         GetGlobalSoftwareResponse response = ImmyBotApiService.Post<CreateGlobalSoftwareRequestBody, GetGlobalSoftwareResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

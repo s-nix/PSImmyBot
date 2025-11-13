@@ -11,7 +11,7 @@ public class SendCreateOrUpdateRoleRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/roles?";
+        string endpoint = "/api/v1/roles?";
 
         GetRoleResponse response = ImmyBotApiService.Post<CreateOrUpdateRoleRequest, GetRoleResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

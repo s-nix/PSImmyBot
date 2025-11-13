@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetSupportBrandingResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/brandings/support-branding?";
+        string endpoint = "/api/v1/brandings/support-branding?";
 
         GetSupportBrandingResponse response = ImmyBotApiService.Get<GetSupportBrandingResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

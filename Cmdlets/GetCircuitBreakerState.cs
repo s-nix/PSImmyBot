@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetCircuitBreakerState : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/metrics/circuit-breakers?";
+        string endpoint = "/api/v1/metrics/circuit-breakers?";
 
         List<CircuitBreakerState> response = ImmyBotApiService.Get<List<CircuitBreakerState>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

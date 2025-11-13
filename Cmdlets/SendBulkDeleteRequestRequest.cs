@@ -11,7 +11,7 @@ public class SendBulkDeleteRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/bulk-delete?";
+        string endpoint = "/api/v1/tenants/bulk-delete?";
 
         DeleteTenantsCmdResponse response = ImmyBotApiService.Post<BulkDeleteRequest, DeleteTenantsCmdResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

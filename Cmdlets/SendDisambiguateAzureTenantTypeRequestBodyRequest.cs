@@ -11,7 +11,7 @@ public class SendDisambiguateAzureTenantTypeRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/azure/disambiguate-azure-tenant-type?";
+        string endpoint = "/api/v1/azure/disambiguate-azure-tenant-type?";
 
         CheckTenantPartnerStatusResponseBody response = ImmyBotApiService.Post<DisambiguateAzureTenantTypeRequestBody, CheckTenantPartnerStatusResponseBody>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

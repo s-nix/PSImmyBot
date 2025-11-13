@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetImmyIpAndHostnamesResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/auth/get-ip-addresses?";
+        string endpoint = "/api/v1/auth/get-ip-addresses?";
 
         ImmyIpAndHostnamesResponse response = ImmyBotApiService.Get<ImmyIpAndHostnamesResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

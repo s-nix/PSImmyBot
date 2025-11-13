@@ -2,278 +2,211 @@
 
 namespace PSImmyBot.Models;
 
-public record MaintenanceAction {
-    [JsonConstructor]
-    [Obsolete]
-    public MaintenanceAction(MaintenanceActionReason @actionReason, MaintenanceActionResult @actionResult, MaintenanceActionResultReason @actionResultReason, string? @actionResultReasonMessage, MaintenanceActionStatus @actionStatus, MaintenanceActionType @actionType, ICollection<MaintenanceActionActivity>? @activities, int? @assignmentId, DatabaseType @assignmentType, int? @computerId, int? @createdBy, DateTimeOffset @createdDate, ICollection<MaintenanceActionDependency>? @dependents, ICollection<MaintenanceActionDependency>? @dependsOn, ICollection<MaintenanceAction>? @dependsOnActions, string? @description, DesiredSoftwareState @desiredSoftwareState, SemanticVersion @desiredVersion, string? @desiredVersionString, SemanticVersion @detectedVersion, string? @detectedVersionString, DateTimeOffset @endTime, bool @hasDeterminedDesiredVersion, bool @hasDeterminedDetectedVersion, bool @hasDeterminedTaskGetResult, bool @hasDeterminedTaskTestResult, int @id, bool @isComplete, bool @isStarted, string? @lastAction, string? @lastActionResult, string? @lastActionRmmComputerId, ScriptLanguage @lastActionType, ICollection<SessionLog>? @logs, string? @maintenanceDisplayName, string? @maintenanceIdentifier, MaintenanceSession @maintenanceSession, int @maintenanceSessionId, string? @maintenanceTaskGetResult, MaintenanceTaskMode @maintenanceTaskMode, DatabaseType @maintenanceTaskType, MaintenanceType @maintenanceType, string? @parameters, int? @parentId, int? @personId, ICollection<SessionPhase>? @phases, string? @policyDescription, string? @postMaintenanceTest, bool? @postMaintenanceTestResult, string? @postMaintenanceTestResultMessage, int? @postMaintenanceTestType, DatabaseType @scriptType, int? @softwareActionIdForConfigurationTask, int @softwareActionIdForConfigurationTaskOrId, SoftwareProviderType @softwareProviderType, string? @softwareTableRegexString, SoftwareType @softwareType, DateTimeOffset @startTime, bool? @taskTestResult, int? @tenantId, int? @updatedBy, DateTimeOffset @updatedDate, bool @usesManualProgressControl) {
-        CreatedDate = @createdDate;
-        UpdatedDate = @updatedDate;
-        CreatedBy = @createdBy;
-        UpdatedBy = @updatedBy;
-        Id = @id;
-        ComputerId = @computerId;
-        TenantId = @tenantId;
-        PersonId = @personId;
-        MaintenanceSessionId = @maintenanceSessionId;
-        AssignmentId = @assignmentId;
-        AssignmentType = @assignmentType;
-        MaintenanceType = @maintenanceType;
-        MaintenanceIdentifier = @maintenanceIdentifier;
-        MaintenanceDisplayName = @maintenanceDisplayName;
-        ActionType = @actionType;
-        DesiredSoftwareState = @desiredSoftwareState;
-        MaintenanceTaskMode = @maintenanceTaskMode;
-        DetectedVersion = @detectedVersion;
-        DetectedVersionString = @detectedVersionString;
-        HasDeterminedDetectedVersion = @hasDeterminedDetectedVersion;
-        DesiredVersion = @desiredVersion;
-        DesiredVersionString = @desiredVersionString;
-        HasDeterminedDesiredVersion = @hasDeterminedDesiredVersion;
-        MaintenanceTaskGetResult = @maintenanceTaskGetResult;
-        HasDeterminedTaskGetResult = @hasDeterminedTaskGetResult;
-        TaskTestResult = @taskTestResult;
-        HasDeterminedTaskTestResult = @hasDeterminedTaskTestResult;
-        SoftwareActionIdForConfigurationTask = @softwareActionIdForConfigurationTask;
-        SoftwareProviderType = @softwareProviderType;
-        ActionStatus = @actionStatus;
-        ActionReason = @actionReason;
-        ActionResult = @actionResult;
-        ActionResultReason = @actionResultReason;
-        PolicyDescription = @policyDescription;
-        ActionResultReasonMessage = @actionResultReasonMessage;
-        PostMaintenanceTest = @postMaintenanceTest;
-        PostMaintenanceTestType = @postMaintenanceTestType;
-        PostMaintenanceTestResult = @postMaintenanceTestResult;
-        PostMaintenanceTestResultMessage = @postMaintenanceTestResultMessage;
-        SoftwareType = @softwareType;
-        MaintenanceTaskType = @maintenanceTaskType;
-        ScriptType = @scriptType;
-        StartTime = @startTime;
-        EndTime = @endTime;
-        SoftwareTableRegexString = @softwareTableRegexString;
-        Description = @description;
-        SoftwareActionIdForConfigurationTaskOrId = @softwareActionIdForConfigurationTaskOrId;
-        IsStarted = @isStarted;
-        IsComplete = @isComplete;
-        MaintenanceSession = @maintenanceSession;
-        Logs = @logs;
-        Phases = @phases;
-        DependsOn = @dependsOn;
-        Dependents = @dependents;
-        DependsOnActions = @dependsOnActions;
-        Activities = @activities;
-        LastAction = @lastAction;
-        LastActionResult = @lastActionResult;
-        LastActionType = @lastActionType;
-        LastActionRmmComputerId = @lastActionRmmComputerId;
-        Parameters = @parameters;
-        ParentId = @parentId;
-        UsesManualProgressControl = @usesManualProgressControl;
-    }
+[method: JsonConstructor]
+public record MaintenanceAction(
+    [property: JsonPropertyName("actionReason")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionReason>))]
+    MaintenanceActionReason ActionReason,
 
-    [JsonPropertyName("createdDate")]
-    public DateTimeOffset CreatedDate { get; init; }
+    [property: JsonPropertyName("actionResult")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResult>))]
+    MaintenanceActionResult ActionResult,
 
-    [JsonPropertyName("updatedDate")]
-    public DateTimeOffset UpdatedDate { get; init; }
+    [property: JsonPropertyName("actionResultReason")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResultReason>))]
+    MaintenanceActionResultReason ActionResultReason,
 
-    [JsonPropertyName("createdBy")]
-    public int? CreatedBy { get; init; }
+    [property: JsonPropertyName("actionResultReasonMessage")]
+    string? ActionResultReasonMessage,
 
-    [JsonPropertyName("updatedBy")]
-    public int? UpdatedBy { get; init; }
+    [property: JsonPropertyName("actionStatus")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionStatus>))]
+    MaintenanceActionStatus ActionStatus,
 
-    [JsonPropertyName("id")]
-    public int Id { get; init; }
+    [property: JsonPropertyName("actionType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionType>))]
+    MaintenanceActionType ActionType,
 
-    [JsonPropertyName("computerId")]
-    public int? ComputerId { get; init; }
+    [property: JsonPropertyName("activities")]
+    ICollection<MaintenanceActionActivity>? Activities,
 
-    [JsonPropertyName("tenantId")]
-    public int? TenantId { get; init; }
+    [property: JsonPropertyName("assignmentId")]
+    int? AssignmentId,
 
-    [JsonPropertyName("personId")]
-    public int? PersonId { get; init; }
+    [property: JsonPropertyName("assignmentType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType AssignmentType,
 
-    [JsonPropertyName("maintenanceSessionId")]
-    public int MaintenanceSessionId { get; init; }
+    [property: JsonPropertyName("computerId")]
+    int? ComputerId,
 
-    [JsonPropertyName("assignmentId")]
-    public int? AssignmentId { get; init; }
+    [property: JsonPropertyName("createdBy")]
+    int? CreatedBy,
 
-    [JsonPropertyName("assignmentType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType AssignmentType { get; init; }
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
 
-    [JsonPropertyName("maintenanceType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
-    public MaintenanceType MaintenanceType { get; init; }
+    [property: JsonPropertyName("dependents")]
+    ICollection<MaintenanceActionDependency>? Dependents,
 
-    [JsonPropertyName("maintenanceIdentifier")]
-    public string? MaintenanceIdentifier { get; init; }
+    [property: JsonPropertyName("dependsOn")]
+    ICollection<MaintenanceActionDependency>? DependsOn,
 
-    [JsonPropertyName("maintenanceDisplayName")]
-    public string? MaintenanceDisplayName { get; init; }
+    [property: JsonPropertyName("dependsOnActions")]
+    ICollection<MaintenanceAction>? DependsOnActions,
 
-    [JsonPropertyName("actionType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionType>))]
-    public MaintenanceActionType ActionType { get; init; }
+    [property: JsonPropertyName("description")]
+    string? Description,
 
-    [JsonPropertyName("desiredSoftwareState")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DesiredSoftwareState>))]
-    public DesiredSoftwareState DesiredSoftwareState { get; init; }
+    [property: JsonPropertyName("desiredSoftwareState")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DesiredSoftwareState>))]
+    DesiredSoftwareState DesiredSoftwareState,
 
-    [JsonPropertyName("maintenanceTaskMode")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceTaskMode>))]
-    public MaintenanceTaskMode MaintenanceTaskMode { get; init; }
+    [property: JsonPropertyName("desiredVersion")]
+    SemanticVersion DesiredVersion,
 
-    [JsonPropertyName("detectedVersion")]
-    public SemanticVersion DetectedVersion { get; init; }
+    [property: JsonPropertyName("desiredVersionString")]
+    string? DesiredVersionString,
 
-    [JsonPropertyName("detectedVersionString")]
-    public string? DetectedVersionString { get; init; }
+    [property: JsonPropertyName("detectedVersion")]
+    SemanticVersion DetectedVersion,
 
-    [JsonPropertyName("hasDeterminedDetectedVersion")]
-    public bool HasDeterminedDetectedVersion { get; init; }
+    [property: JsonPropertyName("detectedVersionString")]
+    string? DetectedVersionString,
 
-    [JsonPropertyName("desiredVersion")]
-    public SemanticVersion DesiredVersion { get; init; }
+    [property: JsonPropertyName("endTime")]
+    DateTimeOffset EndTime,
 
-    [JsonPropertyName("desiredVersionString")]
-    public string? DesiredVersionString { get; init; }
+    [property: JsonPropertyName("hasDeterminedDesiredVersion")]
+    bool HasDeterminedDesiredVersion,
 
-    [JsonPropertyName("hasDeterminedDesiredVersion")]
-    public bool HasDeterminedDesiredVersion { get; init; }
+    [property: JsonPropertyName("hasDeterminedDetectedVersion")]
+    bool HasDeterminedDetectedVersion,
 
-    [JsonPropertyName("maintenanceTaskGetResult")]
-    public string? MaintenanceTaskGetResult { get; init; }
+    [property: JsonPropertyName("hasDeterminedTaskGetResult")]
+    bool HasDeterminedTaskGetResult,
 
-    [JsonPropertyName("hasDeterminedTaskGetResult")]
-    public bool HasDeterminedTaskGetResult { get; init; }
+    [property: JsonPropertyName("hasDeterminedTaskTestResult")]
+    bool HasDeterminedTaskTestResult,
 
-    [JsonPropertyName("taskTestResult")]
-    public bool? TaskTestResult { get; init; }
+    [property: JsonPropertyName("id")]
+    int Id,
 
-    [JsonPropertyName("hasDeterminedTaskTestResult")]
-    public bool HasDeterminedTaskTestResult { get; init; }
+    [property: JsonPropertyName("isComplete")]
+    bool IsComplete,
 
-    [JsonPropertyName("softwareActionIdForConfigurationTask")]
-    public int? SoftwareActionIdForConfigurationTask { get; init; }
+    [property: JsonPropertyName("isStarted")]
+    bool IsStarted,
 
-    [JsonPropertyName("softwareProviderType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareProviderType>))]
-    public SoftwareProviderType SoftwareProviderType { get; init; }
+    [property: JsonPropertyName("lastAction")]
+    [property: Obsolete]
+    string? LastAction,
 
-    [JsonPropertyName("actionStatus")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionStatus>))]
-    public MaintenanceActionStatus ActionStatus { get; init; }
+    [property: JsonPropertyName("lastActionResult")]
+    [property: Obsolete]
+    string? LastActionResult,
 
-    [JsonPropertyName("actionReason")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionReason>))]
-    public MaintenanceActionReason ActionReason { get; init; }
+    [property: JsonPropertyName("lastActionRmmComputerId")]
+    [property: Obsolete]
+    string? LastActionRmmComputerId,
 
-    [JsonPropertyName("actionResult")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResult>))]
-    public MaintenanceActionResult ActionResult { get; init; }
+    [property: JsonPropertyName("lastActionType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ScriptLanguage>))]
+    ScriptLanguage LastActionType,
 
-    [JsonPropertyName("actionResultReason")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceActionResultReason>))]
-    public MaintenanceActionResultReason ActionResultReason { get; init; }
+    [property: JsonPropertyName("logs")]
+    ICollection<SessionLog>? Logs,
 
-    [JsonPropertyName("policyDescription")]
-    public string? PolicyDescription { get; init; }
+    [property: JsonPropertyName("maintenanceDisplayName")]
+    string? MaintenanceDisplayName,
 
-    [JsonPropertyName("actionResultReasonMessage")]
-    public string? ActionResultReasonMessage { get; init; }
+    [property: JsonPropertyName("maintenanceIdentifier")]
+    string? MaintenanceIdentifier,
 
-    [JsonPropertyName("postMaintenanceTest")]
-    public string? PostMaintenanceTest { get; init; }
+    [property: JsonPropertyName("maintenanceSession")]
+    MaintenanceSession MaintenanceSession,
 
-    [JsonPropertyName("postMaintenanceTestType")]
-    public int? PostMaintenanceTestType { get; init; }
+    [property: JsonPropertyName("maintenanceSessionId")]
+    int MaintenanceSessionId,
 
-    [JsonPropertyName("postMaintenanceTestResult")]
-    public bool? PostMaintenanceTestResult { get; init; }
+    [property: JsonPropertyName("maintenanceTaskGetResult")]
+    string? MaintenanceTaskGetResult,
 
-    [JsonPropertyName("postMaintenanceTestResultMessage")]
-    public string? PostMaintenanceTestResultMessage { get; init; }
+    [property: JsonPropertyName("maintenanceTaskMode")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceTaskMode>))]
+    MaintenanceTaskMode MaintenanceTaskMode,
 
-    [JsonPropertyName("softwareType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareType>))]
-    public SoftwareType SoftwareType { get; init; }
+    [property: JsonPropertyName("maintenanceTaskType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType MaintenanceTaskType,
 
-    [JsonPropertyName("maintenanceTaskType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType MaintenanceTaskType { get; init; }
+    [property: JsonPropertyName("maintenanceType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
+    MaintenanceType MaintenanceType,
 
-    [JsonPropertyName("scriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType ScriptType { get; init; }
+    [property: JsonPropertyName("parameters")]
+    string? Parameters,
 
-    [JsonPropertyName("startTime")]
-    public DateTimeOffset StartTime { get; init; }
+    [property: JsonPropertyName("parentId")]
+    int? ParentId,
 
-    [JsonPropertyName("endTime")]
-    public DateTimeOffset EndTime { get; init; }
+    [property: JsonPropertyName("personId")]
+    int? PersonId,
 
-    [JsonPropertyName("softwareTableRegexString")]
-    public string? SoftwareTableRegexString { get; init; }
+    [property: JsonPropertyName("phases")]
+    ICollection<SessionPhase>? Phases,
 
-    [JsonPropertyName("description")]
-    public string? Description { get; init; }
+    [property: JsonPropertyName("policyDescription")]
+    string? PolicyDescription,
 
-    [JsonPropertyName("softwareActionIdForConfigurationTaskOrId")]
-    public int SoftwareActionIdForConfigurationTaskOrId { get; init; }
+    [property: JsonPropertyName("postMaintenanceTest")]
+    string? PostMaintenanceTest,
 
-    [JsonPropertyName("isStarted")]
-    public bool IsStarted { get; init; }
+    [property: JsonPropertyName("postMaintenanceTestResult")]
+    bool? PostMaintenanceTestResult,
 
-    [JsonPropertyName("isComplete")]
-    public bool IsComplete { get; init; }
+    [property: JsonPropertyName("postMaintenanceTestResultMessage")]
+    string? PostMaintenanceTestResultMessage,
 
-    [JsonPropertyName("maintenanceSession")]
-    public MaintenanceSession MaintenanceSession { get; init; }
+    [property: JsonPropertyName("postMaintenanceTestType")]
+    int? PostMaintenanceTestType,
 
-    [JsonPropertyName("logs")]
-    public ICollection<SessionLog>? Logs { get; init; }
+    [property: JsonPropertyName("scriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType ScriptType,
 
-    [JsonPropertyName("phases")]
-    public ICollection<SessionPhase>? Phases { get; init; }
+    [property: JsonPropertyName("softwareActionIdForConfigurationTask")]
+    int? SoftwareActionIdForConfigurationTask,
 
-    [JsonPropertyName("dependsOn")]
-    public ICollection<MaintenanceActionDependency>? DependsOn { get; init; }
+    [property: JsonPropertyName("softwareActionIdForConfigurationTaskOrId")]
+    int SoftwareActionIdForConfigurationTaskOrId,
 
-    [JsonPropertyName("dependents")]
-    public ICollection<MaintenanceActionDependency>? Dependents { get; init; }
+    [property: JsonPropertyName("softwareProviderType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareProviderType>))]
+    SoftwareProviderType SoftwareProviderType,
 
-    [JsonPropertyName("dependsOnActions")]
-    public ICollection<MaintenanceAction>? DependsOnActions { get; init; }
+    [property: JsonPropertyName("softwareTableRegexString")]
+    string? SoftwareTableRegexString,
 
-    [JsonPropertyName("activities")]
-    public ICollection<MaintenanceActionActivity>? Activities { get; init; }
+    [property: JsonPropertyName("softwareType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareType>))]
+    SoftwareType SoftwareType,
 
-    [JsonPropertyName("lastAction")]
-    [Obsolete]
-    public string? LastAction { get; init; }
+    [property: JsonPropertyName("startTime")]
+    DateTimeOffset StartTime,
 
-    [JsonPropertyName("lastActionResult")]
-    [Obsolete]
-    public string? LastActionResult { get; init; }
+    [property: JsonPropertyName("taskTestResult")]
+    bool? TaskTestResult,
 
-    [JsonPropertyName("lastActionType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<ScriptLanguage>))]
-    public ScriptLanguage LastActionType { get; init; }
+    [property: JsonPropertyName("tenantId")]
+    int? TenantId,
 
-    [JsonPropertyName("lastActionRmmComputerId")]
-    [Obsolete]
-    public string? LastActionRmmComputerId { get; init; }
+    [property: JsonPropertyName("updatedBy")]
+    int? UpdatedBy,
 
-    [JsonPropertyName("parameters")]
-    public string? Parameters { get; init; }
+    [property: JsonPropertyName("updatedDate")]
+    DateTimeOffset UpdatedDate,
 
-    [JsonPropertyName("parentId")]
-    public int? ParentId { get; init; }
-
-    [JsonPropertyName("usesManualProgressControl")]
-    public bool UsesManualProgressControl { get; init; }
-}
+    [property: JsonPropertyName("usesManualProgressControl")]
+    bool UsesManualProgressControl
+);

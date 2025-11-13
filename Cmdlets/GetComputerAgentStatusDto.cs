@@ -14,7 +14,7 @@ public class GetComputerAgentStatusDto : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/agent-status?";
+        string endpoint = "/api/v1/computers/agent-status?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
         endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId");
 

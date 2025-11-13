@@ -11,7 +11,7 @@ public class SendTenantConsentRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/azure/tenant-consented?";
+        string endpoint = "/api/v1/azure/tenant-consented?";
 
         TenantConsentResponseBody response = ImmyBotApiService.Post<TenantConsentRequestBody, TenantConsentResponseBody>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

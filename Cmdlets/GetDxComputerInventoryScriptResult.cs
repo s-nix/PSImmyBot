@@ -11,7 +11,7 @@ public class GetDxComputerInventoryScriptResult : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/inventory?";
+        string endpoint = "/api/v1/computers/inventory?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
 
         List<DxComputerInventoryScriptResult> response = ImmyBotApiService.Get<List<DxComputerInventoryScriptResult>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();

@@ -8,7 +8,7 @@ public class SendSystemRestartBackendRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/restart-backend?";
+        string endpoint = "/api/v1/system/restart-backend?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

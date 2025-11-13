@@ -11,7 +11,7 @@ public class SendSendTestBrandingEmailRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/brandings/send-test-email?";
+        string endpoint = "/api/v1/brandings/send-test-email?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

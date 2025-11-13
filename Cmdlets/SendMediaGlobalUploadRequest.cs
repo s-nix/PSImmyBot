@@ -8,7 +8,7 @@ public class SendMediaGlobalUploadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/media/global/upload?";
+        string endpoint = "/api/v1/media/global/upload?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

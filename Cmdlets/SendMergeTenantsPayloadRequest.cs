@@ -11,7 +11,7 @@ public class SendMergeTenantsPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/bulk-merge?";
+        string endpoint = "/api/v1/tenants/bulk-merge?";
 
         CommandResult response = ImmyBotApiService.Post<MergeTenantsPayload, CommandResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

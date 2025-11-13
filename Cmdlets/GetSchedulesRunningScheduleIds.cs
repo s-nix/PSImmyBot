@@ -7,7 +7,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetSchedulesRunningScheduleIds : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/schedules/running-schedule-ids?";
+        string endpoint = "/api/v1/schedules/running-schedule-ids?";
 
         object response = ImmyBotApiService.Get<object>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

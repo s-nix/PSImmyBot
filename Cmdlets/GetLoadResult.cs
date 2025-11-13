@@ -14,7 +14,7 @@ public class GetLoadResult : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/dx?";
+        string endpoint = "/api/v1/scripts/dx?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
         endpoint += Globals.ConvertToQueryParameters(DatabaseType, "databaseType");
 

@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetTenantComputerCountResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/computer-counts?";
+        string endpoint = "/api/v1/tenants/computer-counts?";
 
         List<TenantComputerCountResponse> response = ImmyBotApiService.Get<List<TenantComputerCountResponse>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

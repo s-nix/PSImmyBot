@@ -11,7 +11,7 @@ public class SendPreconsentCustomerTenantsRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/azure/preconsent-customer-tenants?";
+        string endpoint = "/api/v1/azure/preconsent-customer-tenants?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

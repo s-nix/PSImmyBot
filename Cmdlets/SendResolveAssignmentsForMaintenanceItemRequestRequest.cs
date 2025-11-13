@@ -11,7 +11,7 @@ public class SendResolveAssignmentsForMaintenanceItemRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/resolve-assignments-for-maintenance-item?";
+        string endpoint = "/api/v1/tenants/resolve-assignments-for-maintenance-item?";
 
         ResolveAssignmentsForMaintenanceItemResult response = ImmyBotApiService.Post<ResolveAssignmentsForMaintenanceItemRequest, ResolveAssignmentsForMaintenanceItemResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

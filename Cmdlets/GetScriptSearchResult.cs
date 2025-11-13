@@ -26,7 +26,7 @@ public class GetScriptSearchResult : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/search?";
+        string endpoint = "/api/v1/scripts/search?";
         endpoint += Globals.ConvertToQueryParameters(GlobalOnly, "globalOnly");
         endpoint += Globals.ConvertToQueryParameters(Filters, "filters");
         endpoint += Globals.ConvertToQueryParameters(Sorts, "sorts");

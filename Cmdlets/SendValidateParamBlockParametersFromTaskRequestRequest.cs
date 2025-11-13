@@ -11,7 +11,7 @@ public class SendValidateParamBlockParametersFromTaskRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-tasks/validate-param-block-parameters?";
+        string endpoint = "/api/v1/maintenance-tasks/validate-param-block-parameters?";
 
         DynamicFormBindResultWithConvertedParameters response = ImmyBotApiService.Post<ValidateParamBlockParametersFromTaskRequest, DynamicFormBindResultWithConvertedParameters>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

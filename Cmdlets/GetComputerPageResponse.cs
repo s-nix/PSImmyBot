@@ -44,7 +44,7 @@ public class GetComputerPageResponse : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/paged?";
+        string endpoint = "/api/v1/computers/paged?";
         endpoint += Globals.ConvertToQueryParameters(Filter, "filter");
         endpoint += Globals.ConvertToQueryParameters(Skip, "skip");
         endpoint += Globals.ConvertToQueryParameters(Sort, "sort");

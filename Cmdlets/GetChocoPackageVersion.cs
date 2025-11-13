@@ -11,7 +11,7 @@ public class GetChocoPackageVersion : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/chocolatey/find-packages-by-id?";
+        string endpoint = "/api/v1/chocolatey/find-packages-by-id?";
         endpoint += Globals.ConvertToQueryParameters(PackageId, "packageId");
 
         List<ChocoPackageVersion> response = ImmyBotApiService.Get<List<ChocoPackageVersion>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();

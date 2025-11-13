@@ -11,7 +11,7 @@ public class SendCalculateTargetsRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/persons-target-preview?";
+        string endpoint = "/api/v1/target-assignments/persons-target-preview?";
 
         List<TargetedPerson> response = ImmyBotApiService.Post<CalculateTargetsRequest, List<TargetedPerson>>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

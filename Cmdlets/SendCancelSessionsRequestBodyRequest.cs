@@ -11,7 +11,7 @@ public class SendCancelSessionsRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-sessions/cancel?";
+        string endpoint = "/api/v1/maintenance-sessions/cancel?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

@@ -11,7 +11,7 @@ public class SendCreatePersonPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/persons?";
+        string endpoint = "/api/v1/persons?";
 
         GetSimplePersonResponse response = ImmyBotApiService.Post<CreatePersonPayload, GetSimplePersonResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

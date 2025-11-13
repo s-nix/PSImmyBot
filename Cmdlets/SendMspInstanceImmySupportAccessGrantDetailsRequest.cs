@@ -11,7 +11,7 @@ public class SendMspInstanceImmySupportAccessGrantDetailsRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/manager/update-immy-support-access-grant-details?";
+        string endpoint = "/api/v1/manager/update-immy-support-access-grant-details?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

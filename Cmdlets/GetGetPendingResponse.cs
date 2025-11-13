@@ -35,7 +35,7 @@ public class GetGetPendingResponse : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/provider-agents/pending?";
+        string endpoint = "/api/v1/provider-agents/pending?";
         endpoint += Globals.ConvertToQueryParameters(Filter, "filter");
         endpoint += Globals.ConvertToQueryParameters(Sort, "sort");
         endpoint += Globals.ConvertToQueryParameters(Take, "take");

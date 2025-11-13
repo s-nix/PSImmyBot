@@ -8,7 +8,7 @@ public class SendDentityReseedResetClaimsRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/identity-reseed/ResetClaims?";
+        string endpoint = "/api/v1/identity-reseed/ResetClaims?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

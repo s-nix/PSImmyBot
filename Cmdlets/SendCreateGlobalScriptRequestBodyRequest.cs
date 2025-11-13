@@ -14,7 +14,7 @@ public class SendCreateGlobalScriptRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/global?";
+        string endpoint = "/api/v1/scripts/global?";
         endpoint += Globals.ConvertToQueryParameters(IgnoreSyntaxErrors, "ignoreSyntaxErrors");
 
         GetGlobalScriptResponse response = ImmyBotApiService.Post<CreateGlobalScriptRequestBody, GetGlobalScriptResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();

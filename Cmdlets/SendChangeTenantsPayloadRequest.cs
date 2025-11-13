@@ -11,7 +11,7 @@ public class SendChangeTenantsPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/change-tenant?";
+        string endpoint = "/api/v1/computers/change-tenant?";
 
         CommandResult response = ImmyBotApiService.Post<ChangeTenantsPayload, CommandResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

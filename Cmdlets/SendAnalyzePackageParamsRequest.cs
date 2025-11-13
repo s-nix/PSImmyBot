@@ -11,7 +11,7 @@ public class SendAnalyzePackageParamsRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/software/global/analyze?";
+        string endpoint = "/api/v1/software/global/analyze?";
 
         AnalyzeGlobalSoftwarePackageResponse response = ImmyBotApiService.Post<AnalyzePackageParams, AnalyzeGlobalSoftwarePackageResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

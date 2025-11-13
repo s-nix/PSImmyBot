@@ -11,7 +11,7 @@ public class GetAzureErrorLogItem : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/azure-errors/dx?";
+        string endpoint = "/api/v1/azure-errors/dx?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
 
         List<AzureErrorLogItem> response = ImmyBotApiService.Get<List<AzureErrorLogItem>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();

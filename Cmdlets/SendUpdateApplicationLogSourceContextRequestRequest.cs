@@ -11,7 +11,7 @@ public class SendUpdateApplicationLogSourceContextRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/application-logs/source-context?";
+        string endpoint = "/api/v1/application-logs/source-context?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

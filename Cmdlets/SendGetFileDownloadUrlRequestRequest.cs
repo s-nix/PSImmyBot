@@ -11,7 +11,7 @@ public class SendGetFileDownloadUrlRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/media/requestFileDownloadUrl?";
+        string endpoint = "/api/v1/media/requestFileDownloadUrl?";
 
         string response = ImmyBotApiService.Post<GetFileDownloadUrlRequest, string>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

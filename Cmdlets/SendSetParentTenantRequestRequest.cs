@@ -11,7 +11,7 @@ public class SendSetParentTenantRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/set-parent-tenant?";
+        string endpoint = "/api/v1/tenants/set-parent-tenant?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

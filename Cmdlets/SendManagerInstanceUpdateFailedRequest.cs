@@ -8,7 +8,7 @@ public class SendManagerInstanceUpdateFailedRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/manager/instance-update-failed?";
+        string endpoint = "/api/v1/manager/instance-update-failed?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

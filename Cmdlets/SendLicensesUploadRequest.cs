@@ -8,7 +8,7 @@ public class SendLicensesUploadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/licenses/upload?";
+        string endpoint = "/api/v1/licenses/upload?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

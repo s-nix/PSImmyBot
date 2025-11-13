@@ -11,7 +11,7 @@ public class SendRemoveTagsRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/remove-tags?";
+        string endpoint = "/api/v1/tenants/remove-tags?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

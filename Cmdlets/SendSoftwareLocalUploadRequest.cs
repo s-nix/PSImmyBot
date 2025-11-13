@@ -9,7 +9,7 @@ public class SendSoftwareLocalUploadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/software/local/upload?";
+        string endpoint = "/api/v1/software/local/upload?";
 
         SoftwareFileUploadData response = ImmyBotApiService.Post<SoftwareFileUploadData>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

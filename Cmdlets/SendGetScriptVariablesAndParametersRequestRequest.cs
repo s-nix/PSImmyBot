@@ -11,7 +11,7 @@ public class SendGetScriptVariablesAndParametersRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/default-variables?";
+        string endpoint = "/api/v1/scripts/default-variables?";
 
         GetScriptVariablesAndParametersResponse response = ImmyBotApiService.Post<GetScriptVariablesAndParametersRequest, GetScriptVariablesAndParametersResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

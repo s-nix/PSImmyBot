@@ -11,7 +11,7 @@ public class SendReleaseChannelUpdatedRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/manager/release-channel-updated?";
+        string endpoint = "/api/v1/manager/release-channel-updated?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

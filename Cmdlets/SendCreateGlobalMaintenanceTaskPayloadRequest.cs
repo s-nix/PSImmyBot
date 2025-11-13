@@ -11,7 +11,7 @@ public class SendCreateGlobalMaintenanceTaskPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-tasks/global?";
+        string endpoint = "/api/v1/maintenance-tasks/global?";
 
         GetGlobalMaintenanceTaskResponse response = ImmyBotApiService.Post<CreateGlobalMaintenanceTaskPayload, GetGlobalMaintenanceTaskResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

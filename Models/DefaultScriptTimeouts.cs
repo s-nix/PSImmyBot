@@ -2,38 +2,27 @@
 
 namespace PSImmyBot.Models;
 
-public record DefaultScriptTimeouts {
-    [JsonConstructor]
-    [Obsolete]
-    public DefaultScriptTimeouts(int @action, int @autoUpdateJob, int @detection, int @dynamicVersions, int @install, int @uninstall, int @upgrade) {
-        Detection = @detection;
-        Action = @action;
-        Install = @install;
-        Uninstall = @uninstall;
-        Upgrade = @upgrade;
-        AutoUpdateJob = @autoUpdateJob;
-        DynamicVersions = @dynamicVersions;
-    }
+[method: JsonConstructor]
+public record DefaultScriptTimeouts(
+    [property: JsonPropertyName("detection")]
+    int Detection,
 
-    [JsonPropertyName("detection")]
-    public int Detection { get; init; }
+    [property: JsonPropertyName("action")]
+    int Action,
 
-    [JsonPropertyName("action")]
-    public int Action { get; init; }
+    [property: JsonPropertyName("install")]
+    int Install,
 
-    [JsonPropertyName("install")]
-    public int Install { get; init; }
+    [property: JsonPropertyName("uninstall")]
+    int Uninstall,
 
-    [JsonPropertyName("uninstall")]
-    public int Uninstall { get; init; }
+    [property: JsonPropertyName("upgrade")]
+    int Upgrade,
 
-    [JsonPropertyName("upgrade")]
-    public int Upgrade { get; init; }
+    [property: JsonPropertyName("autoUpdateJob")]
+    [property: Obsolete]
+    int AutoUpdateJob,
 
-    [JsonPropertyName("autoUpdateJob")]
-    [Obsolete]
-    public int AutoUpdateJob { get; init; }
-
-    [JsonPropertyName("dynamicVersions")]
-    public int DynamicVersions { get; init; }
-}
+    [property: JsonPropertyName("dynamicVersions")]
+    int DynamicVersions
+);

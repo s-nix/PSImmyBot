@@ -11,7 +11,7 @@ public class SendCreateGlobalTargetAssignmentPayloadRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/global/create?";
+        string endpoint = "/api/v1/target-assignments/global/create?";
 
         GlobalTargetAssignmentResource response = ImmyBotApiService.Post<CreateGlobalTargetAssignmentPayload, GlobalTargetAssignmentResource>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

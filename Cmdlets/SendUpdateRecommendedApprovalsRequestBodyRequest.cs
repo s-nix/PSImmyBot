@@ -11,7 +11,7 @@ public class SendUpdateRecommendedApprovalsRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/recommended-approvals/update?";
+        string endpoint = "/api/v1/target-assignments/recommended-approvals/update?";
 
         List<GetRecommendedApprovalResponse> response = ImmyBotApiService.Post<UpdateRecommendedApprovalsRequestBody, List<GetRecommendedApprovalResponse>>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

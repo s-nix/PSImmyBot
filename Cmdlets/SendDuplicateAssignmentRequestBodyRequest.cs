@@ -11,7 +11,7 @@ public class SendDuplicateAssignmentRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/duplicate?";
+        string endpoint = "/api/v1/target-assignments/duplicate?";
 
         int response = ImmyBotApiService.Post<DuplicateAssignmentRequestBody, int>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

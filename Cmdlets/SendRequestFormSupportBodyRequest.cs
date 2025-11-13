@@ -11,7 +11,7 @@ public class SendRequestFormSupportBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/request-form-support?";
+        string endpoint = "/api/v1/system/request-form-support?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

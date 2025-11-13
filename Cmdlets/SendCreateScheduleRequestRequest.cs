@@ -11,7 +11,7 @@ public class SendCreateScheduleRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/schedules?";
+        string endpoint = "/api/v1/schedules?";
 
         GetScheduleResponse response = ImmyBotApiService.Post<CreateScheduleRequest, GetScheduleResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

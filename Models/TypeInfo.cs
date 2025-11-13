@@ -2,341 +2,255 @@
 
 namespace PSImmyBot.Models;
 
-public record TypeInfo {
-    [JsonConstructor]
-    [Obsolete]
-    public TypeInfo(Assembly @assembly, string? @assemblyQualifiedName, TypeAttributes @attributes, Type @baseType, bool @containsGenericParameters, ICollection<CustomAttributeData>? @customAttributes, ICollection<ConstructorInfo>? @declaredConstructors, ICollection<EventInfo>? @declaredEvents, ICollection<FieldInfo>? @declaredFields, ICollection<MemberInfo>? @declaredMembers, ICollection<MethodInfo>? @declaredMethods, ICollection<TypeInfo>? @declaredNestedTypes, ICollection<PropertyInfo>? @declaredProperties, MethodBase @declaringMethod, Type @declaringType, string? @fullName, GenericParameterAttributes @genericParameterAttributes, int @genericParameterPosition, ICollection<Type>? @genericTypeArguments, ICollection<Type>? @genericTypeParameters, Guid @guid, bool @hasElementType, ICollection<Type>? @implementedInterfaces, bool @isAbstract, bool @isAnsiClass, bool @isArray, bool @isAutoClass, bool @isAutoLayout, bool @isByRef, bool @isByRefLike, bool @isClass, bool @isCollectible, bool isComObject, bool @isConstructedGenericType, bool @isContextful, bool @isEnum, bool @isExplicitLayout, bool @isFunctionPointer, bool @isGenericMethodParameter, bool @isGenericParameter, bool @isGenericType, bool @isGenericTypeDefinition, bool @isGenericTypeParameter, bool @isImport, bool @isInterface, bool @isLayoutSequential, bool @isMarshalByRef, bool @isNested, bool @isNestedAssembly, bool isNestedFamAndAssem, bool @isNestedFamily, bool isNestedFamOrAssem, bool @isNestedPrivate, bool @isNestedPublic, bool @isNotPublic, bool @isPointer, bool @isPrimitive, bool @isPublic, bool @isSealed, bool @isSecurityCritical, bool @isSecuritySafeCritical, bool @isSecurityTransparent, bool @isSerializable, bool @isSignatureType, bool @isSpecialName, bool isSzArray, bool @isTypeDefinition, bool @isUnicodeClass, bool @isUnmanagedFunctionPointer, bool @isValueType, bool @isVariableBoundArray, bool @isVisible, MemberTypes @memberType, int @metadataToken, Module @module, string? @name, string? @namespace, Type @reflectedType, StructLayoutAttribute @structLayoutAttribute, RuntimeTypeHandle @typeHandle, ConstructorInfo @typeInitializer, Type @underlyingSystemType) {
-        Name = @name;
-        CustomAttributes = @customAttributes;
-        IsCollectible = @isCollectible;
-        MetadataToken = @metadataToken;
-        MemberType = @memberType;
-        Namespace = @namespace;
-        AssemblyQualifiedName = @assemblyQualifiedName;
-        FullName = @fullName;
-        Assembly = @assembly;
-        Module = @module;
-        IsInterface = @isInterface;
-        IsNested = @isNested;
-        DeclaringType = @declaringType;
-        DeclaringMethod = @declaringMethod;
-        ReflectedType = @reflectedType;
-        UnderlyingSystemType = @underlyingSystemType;
-        IsTypeDefinition = @isTypeDefinition;
-        IsArray = @isArray;
-        IsByRef = @isByRef;
-        IsPointer = @isPointer;
-        IsConstructedGenericType = @isConstructedGenericType;
-        IsGenericParameter = @isGenericParameter;
-        IsGenericTypeParameter = @isGenericTypeParameter;
-        IsGenericMethodParameter = @isGenericMethodParameter;
-        IsGenericType = @isGenericType;
-        IsGenericTypeDefinition = @isGenericTypeDefinition;
-        IsSzArray = isSzArray;
-        IsVariableBoundArray = @isVariableBoundArray;
-        IsByRefLike = @isByRefLike;
-        IsFunctionPointer = @isFunctionPointer;
-        IsUnmanagedFunctionPointer = @isUnmanagedFunctionPointer;
-        HasElementType = @hasElementType;
-        GenericTypeArguments = @genericTypeArguments;
-        GenericParameterPosition = @genericParameterPosition;
-        GenericParameterAttributes = @genericParameterAttributes;
-        Attributes = @attributes;
-        IsAbstract = @isAbstract;
-        IsImport = @isImport;
-        IsSealed = @isSealed;
-        IsSpecialName = @isSpecialName;
-        IsClass = @isClass;
-        IsNestedAssembly = @isNestedAssembly;
-        IsNestedFamAndAssem = isNestedFamAndAssem;
-        IsNestedFamily = @isNestedFamily;
-        IsNestedFamOrAssem = isNestedFamOrAssem;
-        IsNestedPrivate = @isNestedPrivate;
-        IsNestedPublic = @isNestedPublic;
-        IsNotPublic = @isNotPublic;
-        IsPublic = @isPublic;
-        IsAutoLayout = @isAutoLayout;
-        IsExplicitLayout = @isExplicitLayout;
-        IsLayoutSequential = @isLayoutSequential;
-        IsAnsiClass = @isAnsiClass;
-        IsAutoClass = @isAutoClass;
-        IsUnicodeClass = @isUnicodeClass;
-        IsComObject = isComObject;
-        IsContextful = @isContextful;
-        IsEnum = @isEnum;
-        IsMarshalByRef = @isMarshalByRef;
-        IsPrimitive = @isPrimitive;
-        IsValueType = @isValueType;
-        IsSignatureType = @isSignatureType;
-        IsSecurityCritical = @isSecurityCritical;
-        IsSecuritySafeCritical = @isSecuritySafeCritical;
-        IsSecurityTransparent = @isSecurityTransparent;
-        StructLayoutAttribute = @structLayoutAttribute;
-        TypeInitializer = @typeInitializer;
-        TypeHandle = @typeHandle;
-        Guid = @guid;
-        BaseType = @baseType;
-        IsSerializable = @isSerializable;
-        ContainsGenericParameters = @containsGenericParameters;
-        IsVisible = @isVisible;
-        GenericTypeParameters = @genericTypeParameters;
-        DeclaredConstructors = @declaredConstructors;
-        DeclaredEvents = @declaredEvents;
-        DeclaredFields = @declaredFields;
-        DeclaredMembers = @declaredMembers;
-        DeclaredMethods = @declaredMethods;
-        DeclaredNestedTypes = @declaredNestedTypes;
-        DeclaredProperties = @declaredProperties;
-        ImplementedInterfaces = @implementedInterfaces;
-    }
-
-    [JsonPropertyName("name")]
-    public string? Name { get; init; }
-
-    [JsonPropertyName("customAttributes")]
-    public ICollection<CustomAttributeData>? CustomAttributes { get; init; }
-
-    [JsonPropertyName("isCollectible")]
-    public bool IsCollectible { get; init; }
-
-    [JsonPropertyName("metadataToken")]
-    public int MetadataToken { get; init; }
-
-    [JsonPropertyName("memberType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MemberTypes>))]
-    public MemberTypes MemberType { get; init; }
+[method: JsonConstructor]
+public record TypeInfo(
+    [property: JsonPropertyName("assembly")]
+    Assembly Assembly,
 
-    [JsonPropertyName("namespace")]
-    public string? Namespace { get; init; }
+    [property: JsonPropertyName("assemblyQualifiedName")]
+    string? AssemblyQualifiedName,
 
-    [JsonPropertyName("assemblyQualifiedName")]
-    public string? AssemblyQualifiedName { get; init; }
+    [property: JsonPropertyName("attributes")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TypeAttributes>))]
+    TypeAttributes Attributes,
 
-    [JsonPropertyName("fullName")]
-    public string? FullName { get; init; }
+    [property: JsonPropertyName("baseType")]
+    Type BaseType,
 
-    [JsonPropertyName("assembly")]
-    public Assembly Assembly { get; init; }
+    [property: JsonPropertyName("containsGenericParameters")]
+    bool ContainsGenericParameters,
 
-    [JsonPropertyName("module")]
-    public Module Module { get; init; }
+    [property: JsonPropertyName("customAttributes")]
+    ICollection<CustomAttributeData>? CustomAttributes,
 
-    [JsonPropertyName("isInterface")]
-    public bool IsInterface { get; init; }
+    [property: JsonPropertyName("declaredConstructors")]
+    ICollection<ConstructorInfo>? DeclaredConstructors,
 
-    [JsonPropertyName("isNested")]
-    public bool IsNested { get; init; }
+    [property: JsonPropertyName("declaredEvents")]
+    ICollection<EventInfo>? DeclaredEvents,
 
-    [JsonPropertyName("declaringType")]
-    public Type DeclaringType { get; init; }
+    [property: JsonPropertyName("declaredFields")]
+    ICollection<FieldInfo>? DeclaredFields,
 
-    [JsonPropertyName("declaringMethod")]
-    public MethodBase DeclaringMethod { get; init; }
+    [property: JsonPropertyName("declaredMembers")]
+    ICollection<MemberInfo>? DeclaredMembers,
 
-    [JsonPropertyName("reflectedType")]
-    public Type ReflectedType { get; init; }
+    [property: JsonPropertyName("declaredMethods")]
+    ICollection<MethodInfo>? DeclaredMethods,
 
-    [JsonPropertyName("underlyingSystemType")]
-    public Type UnderlyingSystemType { get; init; }
+    [property: JsonPropertyName("declaredNestedTypes")]
+    ICollection<TypeInfo>? DeclaredNestedTypes,
 
-    [JsonPropertyName("isTypeDefinition")]
-    public bool IsTypeDefinition { get; init; }
+    [property: JsonPropertyName("declaredProperties")]
+    ICollection<PropertyInfo>? DeclaredProperties,
 
-    [JsonPropertyName("isArray")]
-    public bool IsArray { get; init; }
+    [property: JsonPropertyName("declaringMethod")]
+    MethodBase DeclaringMethod,
 
-    [JsonPropertyName("isByRef")]
-    public bool IsByRef { get; init; }
+    [property: JsonPropertyName("declaringType")]
+    Type DeclaringType,
 
-    [JsonPropertyName("isPointer")]
-    public bool IsPointer { get; init; }
+    [property: JsonPropertyName("fullName")]
+    string? FullName,
 
-    [JsonPropertyName("isConstructedGenericType")]
-    public bool IsConstructedGenericType { get; init; }
+    [property: JsonPropertyName("genericParameterAttributes")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<GenericParameterAttributes>))]
+    GenericParameterAttributes GenericParameterAttributes,
 
-    [JsonPropertyName("isGenericParameter")]
-    public bool IsGenericParameter { get; init; }
+    [property: JsonPropertyName("genericParameterPosition")]
+    int GenericParameterPosition,
 
-    [JsonPropertyName("isGenericTypeParameter")]
-    public bool IsGenericTypeParameter { get; init; }
+    [property: JsonPropertyName("genericTypeArguments")]
+    ICollection<Type>? GenericTypeArguments,
 
-    [JsonPropertyName("isGenericMethodParameter")]
-    public bool IsGenericMethodParameter { get; init; }
+    [property: JsonPropertyName("genericTypeParameters")]
+    ICollection<Type>? GenericTypeParameters,
 
-    [JsonPropertyName("isGenericType")]
-    public bool IsGenericType { get; init; }
+    [property: JsonPropertyName("guid")]
+    Guid Guid,
 
-    [JsonPropertyName("isGenericTypeDefinition")]
-    public bool IsGenericTypeDefinition { get; init; }
+    [property: JsonPropertyName("hasElementType")]
+    bool HasElementType,
 
-    [JsonPropertyName("isSZArray")]
-    public bool IsSzArray { get; init; }
+    [property: JsonPropertyName("implementedInterfaces")]
+    ICollection<Type>? ImplementedInterfaces,
 
-    [JsonPropertyName("isVariableBoundArray")]
-    public bool IsVariableBoundArray { get; init; }
+    [property: JsonPropertyName("isAbstract")]
+    bool IsAbstract,
 
-    [JsonPropertyName("isByRefLike")]
-    public bool IsByRefLike { get; init; }
+    [property: JsonPropertyName("isAnsiClass")]
+    bool IsAnsiClass,
 
-    [JsonPropertyName("isFunctionPointer")]
-    public bool IsFunctionPointer { get; init; }
+    [property: JsonPropertyName("isArray")]
+    bool IsArray,
 
-    [JsonPropertyName("isUnmanagedFunctionPointer")]
-    public bool IsUnmanagedFunctionPointer { get; init; }
+    [property: JsonPropertyName("isAutoClass")]
+    bool IsAutoClass,
 
-    [JsonPropertyName("hasElementType")]
-    public bool HasElementType { get; init; }
+    [property: JsonPropertyName("isAutoLayout")]
+    bool IsAutoLayout,
 
-    [JsonPropertyName("genericTypeArguments")]
-    public ICollection<Type>? GenericTypeArguments { get; init; }
+    [property: JsonPropertyName("isByRef")]
+    bool IsByRef,
 
-    [JsonPropertyName("genericParameterPosition")]
-    public int GenericParameterPosition { get; init; }
+    [property: JsonPropertyName("isByRefLike")]
+    bool IsByRefLike,
 
-    [JsonPropertyName("genericParameterAttributes")]
-    [JsonConverter(typeof(JsonStringEnumConverter<GenericParameterAttributes>))]
-    public GenericParameterAttributes GenericParameterAttributes { get; init; }
+    [property: JsonPropertyName("isClass")]
+    bool IsClass,
 
-    [JsonPropertyName("attributes")]
-    [JsonConverter(typeof(JsonStringEnumConverter<TypeAttributes>))]
-    public TypeAttributes Attributes { get; init; }
+    [property: JsonPropertyName("isCollectible")]
+    bool IsCollectible,
 
-    [JsonPropertyName("isAbstract")]
-    public bool IsAbstract { get; init; }
+    [property: JsonPropertyName("isCOMObject")]
+    bool IsComObject,
 
-    [JsonPropertyName("isImport")]
-    public bool IsImport { get; init; }
+    [property: JsonPropertyName("isConstructedGenericType")]
+    bool IsConstructedGenericType,
 
-    [JsonPropertyName("isSealed")]
-    public bool IsSealed { get; init; }
+    [property: JsonPropertyName("isContextful")]
+    bool IsContextful,
 
-    [JsonPropertyName("isSpecialName")]
-    public bool IsSpecialName { get; init; }
+    [property: JsonPropertyName("isEnum")]
+    bool IsEnum,
 
-    [JsonPropertyName("isClass")]
-    public bool IsClass { get; init; }
+    [property: JsonPropertyName("isExplicitLayout")]
+    bool IsExplicitLayout,
 
-    [JsonPropertyName("isNestedAssembly")]
-    public bool IsNestedAssembly { get; init; }
+    [property: JsonPropertyName("isFunctionPointer")]
+    bool IsFunctionPointer,
 
-    [JsonPropertyName("isNestedFamANDAssem")]
-    public bool IsNestedFamAndAssem { get; init; }
+    [property: JsonPropertyName("isGenericMethodParameter")]
+    bool IsGenericMethodParameter,
 
-    [JsonPropertyName("isNestedFamily")]
-    public bool IsNestedFamily { get; init; }
+    [property: JsonPropertyName("isGenericParameter")]
+    bool IsGenericParameter,
 
-    [JsonPropertyName("isNestedFamORAssem")]
-    public bool IsNestedFamOrAssem { get; init; }
+    [property: JsonPropertyName("isGenericType")]
+    bool IsGenericType,
 
-    [JsonPropertyName("isNestedPrivate")]
-    public bool IsNestedPrivate { get; init; }
+    [property: JsonPropertyName("isGenericTypeDefinition")]
+    bool IsGenericTypeDefinition,
 
-    [JsonPropertyName("isNestedPublic")]
-    public bool IsNestedPublic { get; init; }
+    [property: JsonPropertyName("isGenericTypeParameter")]
+    bool IsGenericTypeParameter,
 
-    [JsonPropertyName("isNotPublic")]
-    public bool IsNotPublic { get; init; }
+    [property: JsonPropertyName("isImport")]
+    bool IsImport,
 
-    [JsonPropertyName("isPublic")]
-    public bool IsPublic { get; init; }
+    [property: JsonPropertyName("isInterface")]
+    bool IsInterface,
 
-    [JsonPropertyName("isAutoLayout")]
-    public bool IsAutoLayout { get; init; }
+    [property: JsonPropertyName("isLayoutSequential")]
+    bool IsLayoutSequential,
 
-    [JsonPropertyName("isExplicitLayout")]
-    public bool IsExplicitLayout { get; init; }
+    [property: JsonPropertyName("isMarshalByRef")]
+    bool IsMarshalByRef,
 
-    [JsonPropertyName("isLayoutSequential")]
-    public bool IsLayoutSequential { get; init; }
+    [property: JsonPropertyName("isNested")]
+    bool IsNested,
 
-    [JsonPropertyName("isAnsiClass")]
-    public bool IsAnsiClass { get; init; }
+    [property: JsonPropertyName("isNestedAssembly")]
+    bool IsNestedAssembly,
 
-    [JsonPropertyName("isAutoClass")]
-    public bool IsAutoClass { get; init; }
+    [property: JsonPropertyName("isNestedFamANDAssem")]
+    bool IsNestedFamAndAssem,
 
-    [JsonPropertyName("isUnicodeClass")]
-    public bool IsUnicodeClass { get; init; }
+    [property: JsonPropertyName("isNestedFamily")]
+    bool IsNestedFamily,
 
-    [JsonPropertyName("isCOMObject")]
-    public bool IsComObject { get; init; }
+    [property: JsonPropertyName("isNestedFamORAssem")]
+    bool IsNestedFamOrAssem,
 
-    [JsonPropertyName("isContextful")]
-    public bool IsContextful { get; init; }
+    [property: JsonPropertyName("isNestedPrivate")]
+    bool IsNestedPrivate,
 
-    [JsonPropertyName("isEnum")]
-    public bool IsEnum { get; init; }
+    [property: JsonPropertyName("isNestedPublic")]
+    bool IsNestedPublic,
 
-    [JsonPropertyName("isMarshalByRef")]
-    public bool IsMarshalByRef { get; init; }
+    [property: JsonPropertyName("isNotPublic")]
+    bool IsNotPublic,
 
-    [JsonPropertyName("isPrimitive")]
-    public bool IsPrimitive { get; init; }
+    [property: JsonPropertyName("isPointer")]
+    bool IsPointer,
 
-    [JsonPropertyName("isValueType")]
-    public bool IsValueType { get; init; }
+    [property: JsonPropertyName("isPrimitive")]
+    bool IsPrimitive,
 
-    [JsonPropertyName("isSignatureType")]
-    public bool IsSignatureType { get; init; }
+    [property: JsonPropertyName("isPublic")]
+    bool IsPublic,
 
-    [JsonPropertyName("isSecurityCritical")]
-    public bool IsSecurityCritical { get; init; }
+    [property: JsonPropertyName("isSealed")]
+    bool IsSealed,
 
-    [JsonPropertyName("isSecuritySafeCritical")]
-    public bool IsSecuritySafeCritical { get; init; }
+    [property: JsonPropertyName("isSecurityCritical")]
+    bool IsSecurityCritical,
 
-    [JsonPropertyName("isSecurityTransparent")]
-    public bool IsSecurityTransparent { get; init; }
+    [property: JsonPropertyName("isSecuritySafeCritical")]
+    bool IsSecuritySafeCritical,
 
-    [JsonPropertyName("structLayoutAttribute")]
-    public StructLayoutAttribute StructLayoutAttribute { get; init; }
+    [property: JsonPropertyName("isSecurityTransparent")]
+    bool IsSecurityTransparent,
 
-    [JsonPropertyName("typeInitializer")]
-    public ConstructorInfo TypeInitializer { get; init; }
+    [property: JsonPropertyName("isSerializable")]
+    [property: Obsolete]
+    bool IsSerializable,
 
-    [JsonPropertyName("typeHandle")]
-    public RuntimeTypeHandle TypeHandle { get; init; }
+    [property: JsonPropertyName("isSignatureType")]
+    bool IsSignatureType,
 
-    [JsonPropertyName("guid")]
-    public Guid Guid { get; init; }
+    [property: JsonPropertyName("isSpecialName")]
+    bool IsSpecialName,
 
-    [JsonPropertyName("baseType")]
-    public Type BaseType { get; init; }
+    [property: JsonPropertyName("isSZArray")]
+    bool IsSzArray,
 
-    [JsonPropertyName("isSerializable")]
-    [Obsolete]
-    public bool IsSerializable { get; init; }
+    [property: JsonPropertyName("isTypeDefinition")]
+    bool IsTypeDefinition,
 
-    [JsonPropertyName("containsGenericParameters")]
-    public bool ContainsGenericParameters { get; init; }
+    [property: JsonPropertyName("isUnicodeClass")]
+    bool IsUnicodeClass,
 
-    [JsonPropertyName("isVisible")]
-    public bool IsVisible { get; init; }
+    [property: JsonPropertyName("isUnmanagedFunctionPointer")]
+    bool IsUnmanagedFunctionPointer,
 
-    [JsonPropertyName("genericTypeParameters")]
-    public ICollection<Type>? GenericTypeParameters { get; init; }
+    [property: JsonPropertyName("isValueType")]
+    bool IsValueType,
 
-    [JsonPropertyName("declaredConstructors")]
-    public ICollection<ConstructorInfo>? DeclaredConstructors { get; init; }
+    [property: JsonPropertyName("isVariableBoundArray")]
+    bool IsVariableBoundArray,
 
-    [JsonPropertyName("declaredEvents")]
-    public ICollection<EventInfo>? DeclaredEvents { get; init; }
+    [property: JsonPropertyName("isVisible")]
+    bool IsVisible,
 
-    [JsonPropertyName("declaredFields")]
-    public ICollection<FieldInfo>? DeclaredFields { get; init; }
+    [property: JsonPropertyName("memberType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MemberTypes>))]
+    MemberTypes MemberType,
 
-    [JsonPropertyName("declaredMembers")]
-    public ICollection<MemberInfo>? DeclaredMembers { get; init; }
+    [property: JsonPropertyName("metadataToken")]
+    int MetadataToken,
 
-    [JsonPropertyName("declaredMethods")]
-    public ICollection<MethodInfo>? DeclaredMethods { get; init; }
+    [property: JsonPropertyName("module")]
+    Module Module,
 
-    [JsonPropertyName("declaredNestedTypes")]
-    public ICollection<TypeInfo>? DeclaredNestedTypes { get; init; }
+    [property: JsonPropertyName("name")]
+    string? Name,
 
-    [JsonPropertyName("declaredProperties")]
-    public ICollection<PropertyInfo>? DeclaredProperties { get; init; }
+    [property: JsonPropertyName("namespace")]
+    string? Namespace,
 
-    [JsonPropertyName("implementedInterfaces")]
-    public ICollection<Type>? ImplementedInterfaces { get; init; }
-}
+    [property: JsonPropertyName("reflectedType")]
+    Type ReflectedType,
+
+    [property: JsonPropertyName("structLayoutAttribute")]
+    StructLayoutAttribute StructLayoutAttribute,
+
+    [property: JsonPropertyName("typeHandle")]
+    RuntimeTypeHandle TypeHandle,
+
+    [property: JsonPropertyName("typeInitializer")]
+    ConstructorInfo TypeInitializer,
+
+    [property: JsonPropertyName("underlyingSystemType")]
+    Type UnderlyingSystemType
+);

@@ -2,22 +2,15 @@
 
 namespace PSImmyBot.Models;
 
-public record MaintenanceOnboardingConfiguration {
-    [JsonConstructor]
-    [Obsolete]
-    public MaintenanceOnboardingConfiguration(bool @automaticOnboarding, ICollection<MaintenanceTaskParameterValueDetails>? @onboardingOnlyMaintenanceTaskParameterValueOverrides, IDictionary<string, IDictionary<string, DeploymentParameterValue>?>? @onboardingOnlyParameterValueOverrides) {
-        OnboardingOnlyParameterValueOverrides = @onboardingOnlyParameterValueOverrides;
-        OnboardingOnlyMaintenanceTaskParameterValueOverrides = @onboardingOnlyMaintenanceTaskParameterValueOverrides;
-        AutomaticOnboarding = @automaticOnboarding;
-    }
+[method: JsonConstructor]
+public record MaintenanceOnboardingConfiguration(
+    [property: JsonPropertyName("onboardingOnlyParameterValueOverrides")]
+    IDictionary<string, IDictionary<string, DeploymentParameterValue>?>? OnboardingOnlyParameterValueOverrides,
 
-    [JsonPropertyName("onboardingOnlyParameterValueOverrides")]
-    public IDictionary<string, IDictionary<string, DeploymentParameterValue>?>? OnboardingOnlyParameterValueOverrides { get; init; }
+    [property: JsonPropertyName("onboardingOnlyMaintenanceTaskParameterValueOverrides")]
+    [property: Obsolete]
+    ICollection<MaintenanceTaskParameterValueDetails>? OnboardingOnlyMaintenanceTaskParameterValueOverrides,
 
-    [JsonPropertyName("onboardingOnlyMaintenanceTaskParameterValueOverrides")]
-    [Obsolete]
-    public ICollection<MaintenanceTaskParameterValueDetails>? OnboardingOnlyMaintenanceTaskParameterValueOverrides { get; init; }
-
-    [JsonPropertyName("automaticOnboarding")]
-    public bool AutomaticOnboarding { get; init; }
-}
+    [property: JsonPropertyName("automaticOnboarding")]
+    bool AutomaticOnboarding
+);

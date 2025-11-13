@@ -11,7 +11,7 @@ public class SendUpdateAzureTenantLinkRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/update-azure-tenant-link?";
+        string endpoint = "/api/v1/tenants/update-azure-tenant-link?";
 
         GetTenantResponse response = ImmyBotApiService.Post<UpdateAzureTenantLinkRequest, GetTenantResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

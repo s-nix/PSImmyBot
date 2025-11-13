@@ -2,116 +2,86 @@
 
 namespace PSImmyBot.Models;
 
-public record FieldInfo {
-    [JsonConstructor]
-    [Obsolete]
-    public FieldInfo(FieldAttributes @attributes, ICollection<CustomAttributeData>? @customAttributes, Type @declaringType, RuntimeFieldHandle @fieldHandle, Type @fieldType, bool @isAssembly, bool @isCollectible, bool @isFamily, bool @isFamilyAndAssembly, bool @isFamilyOrAssembly, bool @isInitOnly, bool @isLiteral, bool @isNotSerialized, bool @isPinvokeImpl, bool @isPrivate, bool @isPublic, bool @isSecurityCritical, bool @isSecuritySafeCritical, bool @isSecurityTransparent, bool @isSpecialName, bool @isStatic, MemberTypes @memberType, int @metadataToken, Module @module, string? @name, Type @reflectedType) {
-        Name = @name;
-        DeclaringType = @declaringType;
-        ReflectedType = @reflectedType;
-        Module = @module;
-        CustomAttributes = @customAttributes;
-        IsCollectible = @isCollectible;
-        MetadataToken = @metadataToken;
-        MemberType = @memberType;
-        Attributes = @attributes;
-        FieldType = @fieldType;
-        IsInitOnly = @isInitOnly;
-        IsLiteral = @isLiteral;
-        IsNotSerialized = @isNotSerialized;
-        IsPinvokeImpl = @isPinvokeImpl;
-        IsSpecialName = @isSpecialName;
-        IsStatic = @isStatic;
-        IsAssembly = @isAssembly;
-        IsFamily = @isFamily;
-        IsFamilyAndAssembly = @isFamilyAndAssembly;
-        IsFamilyOrAssembly = @isFamilyOrAssembly;
-        IsPrivate = @isPrivate;
-        IsPublic = @isPublic;
-        IsSecurityCritical = @isSecurityCritical;
-        IsSecuritySafeCritical = @isSecuritySafeCritical;
-        IsSecurityTransparent = @isSecurityTransparent;
-        FieldHandle = @fieldHandle;
-    }
+[method: JsonConstructor]
+public record FieldInfo(
+    [property: JsonPropertyName("name")]
+    string? Name,
 
-    [JsonPropertyName("name")]
-    public string? Name { get; init; }
+    [property: JsonPropertyName("declaringType")]
+    Type DeclaringType,
 
-    [JsonPropertyName("declaringType")]
-    public Type DeclaringType { get; init; }
+    [property: JsonPropertyName("reflectedType")]
+    Type ReflectedType,
 
-    [JsonPropertyName("reflectedType")]
-    public Type ReflectedType { get; init; }
+    [property: JsonPropertyName("module")]
+    Module Module,
 
-    [JsonPropertyName("module")]
-    public Module Module { get; init; }
+    [property: JsonPropertyName("customAttributes")]
+    ICollection<CustomAttributeData>? CustomAttributes,
 
-    [JsonPropertyName("customAttributes")]
-    public ICollection<CustomAttributeData>? CustomAttributes { get; init; }
+    [property: JsonPropertyName("isCollectible")]
+    bool IsCollectible,
 
-    [JsonPropertyName("isCollectible")]
-    public bool IsCollectible { get; init; }
+    [property: JsonPropertyName("metadataToken")]
+    int MetadataToken,
 
-    [JsonPropertyName("metadataToken")]
-    public int MetadataToken { get; init; }
+    [property: JsonPropertyName("memberType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MemberTypes>))]
+    MemberTypes MemberType,
 
-    [JsonPropertyName("memberType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MemberTypes>))]
-    public MemberTypes MemberType { get; init; }
+    [property: JsonPropertyName("attributes")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<FieldAttributes>))]
+    FieldAttributes Attributes,
 
-    [JsonPropertyName("attributes")]
-    [JsonConverter(typeof(JsonStringEnumConverter<FieldAttributes>))]
-    public FieldAttributes Attributes { get; init; }
+    [property: JsonPropertyName("fieldType")]
+    Type FieldType,
 
-    [JsonPropertyName("fieldType")]
-    public Type FieldType { get; init; }
+    [property: JsonPropertyName("isInitOnly")]
+    bool IsInitOnly,
 
-    [JsonPropertyName("isInitOnly")]
-    public bool IsInitOnly { get; init; }
+    [property: JsonPropertyName("isLiteral")]
+    bool IsLiteral,
 
-    [JsonPropertyName("isLiteral")]
-    public bool IsLiteral { get; init; }
+    [property: JsonPropertyName("isNotSerialized")]
+    [property: Obsolete]
+    bool IsNotSerialized,
 
-    [JsonPropertyName("isNotSerialized")]
-    [Obsolete]
-    public bool IsNotSerialized { get; init; }
+    [property: JsonPropertyName("isPinvokeImpl")]
+    bool IsPinvokeImpl,
 
-    [JsonPropertyName("isPinvokeImpl")]
-    public bool IsPinvokeImpl { get; init; }
+    [property: JsonPropertyName("isSpecialName")]
+    bool IsSpecialName,
 
-    [JsonPropertyName("isSpecialName")]
-    public bool IsSpecialName { get; init; }
+    [property: JsonPropertyName("isStatic")]
+    bool IsStatic,
 
-    [JsonPropertyName("isStatic")]
-    public bool IsStatic { get; init; }
+    [property: JsonPropertyName("isAssembly")]
+    bool IsAssembly,
 
-    [JsonPropertyName("isAssembly")]
-    public bool IsAssembly { get; init; }
+    [property: JsonPropertyName("isFamily")]
+    bool IsFamily,
 
-    [JsonPropertyName("isFamily")]
-    public bool IsFamily { get; init; }
+    [property: JsonPropertyName("isFamilyAndAssembly")]
+    bool IsFamilyAndAssembly,
 
-    [JsonPropertyName("isFamilyAndAssembly")]
-    public bool IsFamilyAndAssembly { get; init; }
+    [property: JsonPropertyName("isFamilyOrAssembly")]
+    bool IsFamilyOrAssembly,
 
-    [JsonPropertyName("isFamilyOrAssembly")]
-    public bool IsFamilyOrAssembly { get; init; }
+    [property: JsonPropertyName("isPrivate")]
+    bool IsPrivate,
 
-    [JsonPropertyName("isPrivate")]
-    public bool IsPrivate { get; init; }
+    [property: JsonPropertyName("isPublic")]
+    bool IsPublic,
 
-    [JsonPropertyName("isPublic")]
-    public bool IsPublic { get; init; }
+    [property: JsonPropertyName("isSecurityCritical")]
+    bool IsSecurityCritical,
 
-    [JsonPropertyName("isSecurityCritical")]
-    public bool IsSecurityCritical { get; init; }
+    [property: JsonPropertyName("isSecuritySafeCritical")]
+    bool IsSecuritySafeCritical,
 
-    [JsonPropertyName("isSecuritySafeCritical")]
-    public bool IsSecuritySafeCritical { get; init; }
+    [property: JsonPropertyName("isSecurityTransparent")]
+    bool IsSecurityTransparent,
 
-    [JsonPropertyName("isSecurityTransparent")]
-    public bool IsSecurityTransparent { get; init; }
-
-    [JsonPropertyName("fieldHandle")]
-    public RuntimeFieldHandle FieldHandle { get; init; }
-}
+    [property: JsonPropertyName("fieldHandle")]
+    RuntimeFieldHandle FieldHandle
+);

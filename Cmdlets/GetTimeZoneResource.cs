@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetTimeZoneResource : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/timezones?";
+        string endpoint = "/api/v1/system/timezones?";
 
         List<TimeZoneResource> response = ImmyBotApiService.Get<List<TimeZoneResource>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

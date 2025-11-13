@@ -8,7 +8,7 @@ public class SendDevInstanceManagementStartHangfireServerRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/dev-instance-management/start-hangfire-server?";
+        string endpoint = "/api/v1/dev-instance-management/start-hangfire-server?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

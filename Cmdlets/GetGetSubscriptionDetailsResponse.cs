@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetSubscriptionDetailsResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/billing/subscription-details?";
+        string endpoint = "/api/v1/billing/subscription-details?";
 
         GetSubscriptionDetailsResponse response = ImmyBotApiService.Get<GetSubscriptionDetailsResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

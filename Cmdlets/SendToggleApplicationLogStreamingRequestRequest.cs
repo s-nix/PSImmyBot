@@ -11,7 +11,7 @@ public class SendToggleApplicationLogStreamingRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/application-logs/streaming?";
+        string endpoint = "/api/v1/application-logs/streaming?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

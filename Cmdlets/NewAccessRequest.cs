@@ -1,7 +1,7 @@
-﻿using System.Management.Automation;
+using System.Management.Automation;
 using PSImmyBot.Models;
 
-namespace PSImmyBot.Commands;
+namespace PSImmyBot.Cmdlets;
 
 [Cmdlet(VerbsCommon.New, "AccessRequest")]
 public class NewAccessRequest : Cmdlet {

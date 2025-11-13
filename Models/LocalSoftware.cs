@@ -2,325 +2,247 @@
 
 namespace PSImmyBot.Models;
 
-public record LocalSoftware {
-    [JsonConstructor]
-    [Obsolete]
-    public LocalSoftware(Guid? @agentIntegrationTypeId, string? @chocoProviderSoftwareId, int? @createdBy, User @createdByUser, DateTimeOffset @createdDate, ICollection<AuditPropertyChange>? @customAuditProperties, DetectionMethod @detectionMethod, Script @detectionScript, int? @detectionScriptId, DatabaseType @detectionScriptType, Script @downloadInstallerScript, int? @downloadInstallerScriptId, DatabaseType @downloadInstallerScriptType, Script @dynamicVersionsScript, int? @dynamicVersionsScriptId, DatabaseType @dynamicVersionsScriptType, bool @hidden, int @id, string? @identifier, int @installOrder, Script @installScript, int? @installScriptId, DatabaseType @installScriptType, string? @licenseDescription, SoftwareLicenseRequirement @licenseRequirement, LicenseType @licenseType, MaintenanceSpecifier @maintenanceSpecifier, MaintenanceTask @maintenanceTask, int? @maintenanceTaskId, DatabaseType @maintenanceTaskType, MaintenanceType @maintenanceType, string? @name, string? @niniteProviderSoftwareId, string? @notes, int? @ownerTenantId, Script @postInstallScript, int? @postInstallScriptId, DatabaseType @postInstallScriptType, Script @postUninstallScript, int? @postUninstallScriptId, DatabaseType @postUninstallScriptType, bool @rebootNeeded, bool @recommended, Guid @relativeCacheSourcePath, Script @repairScript, int? @repairScriptId, DatabaseType @repairScriptType, RepairActionType @repairType, Media @softwareIcon, int? @softwareIconMediaId, ICollection<SoftwarePrerequisite>? @softwarePrerequisites, string? @softwareTableName, SoftwareTableNameSearchMode @softwareTableNameSearchMode, SoftwareType @softwareType, ICollection<LocalSoftwareVersion>? @softwareVersions, ICollection<TenantSoftware>? @tenantSoftware, string? @testFailedError, bool @testRequired, Script @testScript, int? @testScriptId, DatabaseType @testScriptType, Script @uninstallScript, int? @uninstallScriptId, DatabaseType @uninstallScriptType, int? @updatedBy, User @updatedByUser, DateTimeOffset @updatedDate, string? @upgradeCode, Script @upgradeScript, int? @upgradeScriptId, DatabaseType @upgradeScriptType, UpdateActionType @upgradeStrategy, bool @useDynamicVersions, bool @useSoftwareTableDetection) {
-        CreatedDate = @createdDate;
-        UpdatedDate = @updatedDate;
-        CreatedBy = @createdBy;
-        UpdatedBy = @updatedBy;
-        Name = @name;
-        LicenseRequirement = @licenseRequirement;
-        InstallOrder = @installOrder;
-        Hidden = @hidden;
-        SoftwareTableName = @softwareTableName;
-        DetectionMethod = @detectionMethod;
-        SoftwareTableNameSearchMode = @softwareTableNameSearchMode;
-        AgentIntegrationTypeId = @agentIntegrationTypeId;
-        DetectionScript = @detectionScript;
-        DetectionScriptId = @detectionScriptId;
-        DetectionScriptType = @detectionScriptType;
-        DownloadInstallerScript = @downloadInstallerScript;
-        DownloadInstallerScriptId = @downloadInstallerScriptId;
-        DownloadInstallerScriptType = @downloadInstallerScriptType;
-        UpgradeCode = @upgradeCode;
-        MaintenanceTask = @maintenanceTask;
-        MaintenanceTaskId = @maintenanceTaskId;
-        MaintenanceTaskType = @maintenanceTaskType;
-        Notes = @notes;
-        RebootNeeded = @rebootNeeded;
-        RepairType = @repairType;
-        RepairScript = @repairScript;
-        RepairScriptId = @repairScriptId;
-        RepairScriptType = @repairScriptType;
-        SoftwareIconMediaId = @softwareIconMediaId;
-        Recommended = @recommended;
-        ChocoProviderSoftwareId = @chocoProviderSoftwareId;
-        NiniteProviderSoftwareId = @niniteProviderSoftwareId;
-        MaintenanceType = @maintenanceType;
-        UseSoftwareTableDetection = @useSoftwareTableDetection;
-        InstallScriptId = @installScriptId;
-        InstallScriptType = @installScriptType;
-        InstallScript = @installScript;
-        TestScriptId = @testScriptId;
-        TestScriptType = @testScriptType;
-        TestScript = @testScript;
-        UpgradeScriptId = @upgradeScriptId;
-        UpgradeScriptType = @upgradeScriptType;
-        UpgradeScript = @upgradeScript;
-        UninstallScriptId = @uninstallScriptId;
-        UninstallScriptType = @uninstallScriptType;
-        UninstallScript = @uninstallScript;
-        PostInstallScriptId = @postInstallScriptId;
-        PostInstallScriptType = @postInstallScriptType;
-        PostInstallScript = @postInstallScript;
-        PostUninstallScriptId = @postUninstallScriptId;
-        PostUninstallScriptType = @postUninstallScriptType;
-        PostUninstallScript = @postUninstallScript;
-        TestRequired = @testRequired;
-        TestFailedError = @testFailedError;
-        UpgradeStrategy = @upgradeStrategy;
-        LicenseType = @licenseType;
-        LicenseDescription = @licenseDescription;
-        UseDynamicVersions = @useDynamicVersions;
-        DynamicVersionsScriptId = @dynamicVersionsScriptId;
-        DynamicVersionsScriptType = @dynamicVersionsScriptType;
-        DynamicVersionsScript = @dynamicVersionsScript;
-        RelativeCacheSourcePath = @relativeCacheSourcePath;
-        MaintenanceSpecifier = @maintenanceSpecifier;
-        Id = @id;
-        OwnerTenantId = @ownerTenantId;
-        SoftwareType = @softwareType;
-        Identifier = @identifier;
-        TenantSoftware = @tenantSoftware;
-        SoftwareVersions = @softwareVersions;
-        SoftwarePrerequisites = @softwarePrerequisites;
-        SoftwareIcon = @softwareIcon;
-        CreatedByUser = @createdByUser;
-        UpdatedByUser = @updatedByUser;
-        CustomAuditProperties = @customAuditProperties;
-    }
-
-    [JsonPropertyName("createdDate")]
-    public DateTimeOffset CreatedDate { get; init; }
-
-    [JsonPropertyName("updatedDate")]
-    public DateTimeOffset UpdatedDate { get; init; }
-
-    [JsonPropertyName("createdBy")]
-    public int? CreatedBy { get; init; }
-
-    [JsonPropertyName("updatedBy")]
-    public int? UpdatedBy { get; init; }
-
-    [JsonPropertyName("name")]
-    public string? Name { get; init; }
-
-    [JsonPropertyName("licenseRequirement")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareLicenseRequirement>))]
-    public SoftwareLicenseRequirement LicenseRequirement { get; init; }
-
-    [JsonPropertyName("installOrder")]
-    public int InstallOrder { get; init; }
+[method: JsonConstructor]
+public record LocalSoftware(
+    [property: JsonPropertyName("agentIntegrationTypeId")]
+    Guid? AgentIntegrationTypeId,
 
-    [JsonPropertyName("hidden")]
-    public bool Hidden { get; init; }
+    [property: JsonPropertyName("chocoProviderSoftwareId")]
+    string? ChocoProviderSoftwareId,
 
-    [JsonPropertyName("softwareTableName")]
-    public string? SoftwareTableName { get; init; }
+    [property: JsonPropertyName("createdBy")]
+    int? CreatedBy,
 
-    [JsonPropertyName("detectionMethod")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DetectionMethod>))]
-    public DetectionMethod DetectionMethod { get; init; }
+    [property: JsonPropertyName("createdByUser")]
+    User CreatedByUser,
 
-    [JsonPropertyName("softwareTableNameSearchMode")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareTableNameSearchMode>))]
-    public SoftwareTableNameSearchMode SoftwareTableNameSearchMode { get; init; }
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
 
-    [JsonPropertyName("agentIntegrationTypeId")]
-    public Guid? AgentIntegrationTypeId { get; init; }
+    [property: JsonPropertyName("customAuditProperties")]
+    ICollection<AuditPropertyChange>? CustomAuditProperties,
 
-    [JsonPropertyName("detectionScript")]
-    public Script DetectionScript { get; init; }
+    [property: JsonPropertyName("detectionMethod")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DetectionMethod>))]
+    DetectionMethod DetectionMethod,
 
-    [JsonPropertyName("detectionScriptId")]
-    public int? DetectionScriptId { get; init; }
+    [property: JsonPropertyName("detectionScript")]
+    Script DetectionScript,
 
-    [JsonPropertyName("detectionScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType DetectionScriptType { get; init; }
+    [property: JsonPropertyName("detectionScriptId")]
+    int? DetectionScriptId,
 
-    [JsonPropertyName("downloadInstallerScript")]
-    public Script DownloadInstallerScript { get; init; }
+    [property: JsonPropertyName("detectionScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType DetectionScriptType,
 
-    [JsonPropertyName("downloadInstallerScriptId")]
-    public int? DownloadInstallerScriptId { get; init; }
+    [property: JsonPropertyName("downloadInstallerScript")]
+    Script DownloadInstallerScript,
 
-    [JsonPropertyName("downloadInstallerScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType DownloadInstallerScriptType { get; init; }
+    [property: JsonPropertyName("downloadInstallerScriptId")]
+    int? DownloadInstallerScriptId,
 
-    [JsonPropertyName("upgradeCode")]
-    public string? UpgradeCode { get; init; }
+    [property: JsonPropertyName("downloadInstallerScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType DownloadInstallerScriptType,
 
-    [JsonPropertyName("maintenanceTask")]
-    public MaintenanceTask MaintenanceTask { get; init; }
+    [property: JsonPropertyName("dynamicVersionsScript")]
+    Script DynamicVersionsScript,
 
-    [JsonPropertyName("maintenanceTaskId")]
-    public int? MaintenanceTaskId { get; init; }
+    [property: JsonPropertyName("dynamicVersionsScriptId")]
+    int? DynamicVersionsScriptId,
 
-    [JsonPropertyName("maintenanceTaskType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType MaintenanceTaskType { get; init; }
+    [property: JsonPropertyName("dynamicVersionsScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType DynamicVersionsScriptType,
 
-    [JsonPropertyName("notes")]
-    public string? Notes { get; init; }
+    [property: JsonPropertyName("hidden")]
+    bool Hidden,
 
-    [JsonPropertyName("rebootNeeded")]
-    public bool RebootNeeded { get; init; }
+    [property: JsonPropertyName("id")]
+    int Id,
 
-    [JsonPropertyName("repairType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<RepairActionType>))]
-    public RepairActionType RepairType { get; init; }
+    [property: JsonPropertyName("identifier")]
+    string? Identifier,
 
-    [JsonPropertyName("repairScript")]
-    public Script RepairScript { get; init; }
+    [property: JsonPropertyName("installOrder")]
+    int InstallOrder,
 
-    [JsonPropertyName("repairScriptId")]
-    public int? RepairScriptId { get; init; }
+    [property: JsonPropertyName("installScript")]
+    Script InstallScript,
 
-    [JsonPropertyName("repairScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType RepairScriptType { get; init; }
+    [property: JsonPropertyName("installScriptId")]
+    int? InstallScriptId,
 
-    [JsonPropertyName("softwareIconMediaId")]
-    public int? SoftwareIconMediaId { get; init; }
+    [property: JsonPropertyName("installScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType InstallScriptType,
 
-    [JsonPropertyName("recommended")]
-    public bool Recommended { get; init; }
+    [property: JsonPropertyName("licenseDescription")]
+    string? LicenseDescription,
 
-    [JsonPropertyName("chocoProviderSoftwareId")]
-    public string? ChocoProviderSoftwareId { get; init; }
+    [property: JsonPropertyName("licenseRequirement")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareLicenseRequirement>))]
+    SoftwareLicenseRequirement LicenseRequirement,
 
-    [JsonPropertyName("niniteProviderSoftwareId")]
-    public string? NiniteProviderSoftwareId { get; init; }
+    [property: JsonPropertyName("licenseType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<LicenseType>))]
+    LicenseType LicenseType,
 
-    [JsonPropertyName("maintenanceType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
-    public MaintenanceType MaintenanceType { get; init; }
+    [property: JsonPropertyName("maintenanceSpecifier")]
+    MaintenanceSpecifier MaintenanceSpecifier,
 
-    [JsonPropertyName("useSoftwareTableDetection")]
-    [Obsolete]
-    public bool UseSoftwareTableDetection { get; init; }
+    [property: JsonPropertyName("maintenanceTask")]
+    MaintenanceTask MaintenanceTask,
 
-    [JsonPropertyName("installScriptId")]
-    public int? InstallScriptId { get; init; }
+    [property: JsonPropertyName("maintenanceTaskId")]
+    int? MaintenanceTaskId,
 
-    [JsonPropertyName("installScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType InstallScriptType { get; init; }
+    [property: JsonPropertyName("maintenanceTaskType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType MaintenanceTaskType,
 
-    [JsonPropertyName("installScript")]
-    public Script InstallScript { get; init; }
+    [property: JsonPropertyName("maintenanceType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
+    MaintenanceType MaintenanceType,
 
-    [JsonPropertyName("testScriptId")]
-    public int? TestScriptId { get; init; }
+    [property: JsonPropertyName("name")]
+    string? Name,
 
-    [JsonPropertyName("testScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType TestScriptType { get; init; }
+    [property: JsonPropertyName("niniteProviderSoftwareId")]
+    string? NiniteProviderSoftwareId,
 
-    [JsonPropertyName("testScript")]
-    public Script TestScript { get; init; }
+    [property: JsonPropertyName("notes")]
+    string? Notes,
 
-    [JsonPropertyName("upgradeScriptId")]
-    public int? UpgradeScriptId { get; init; }
+    [property: JsonPropertyName("ownerTenantId")]
+    int? OwnerTenantId,
 
-    [JsonPropertyName("upgradeScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType UpgradeScriptType { get; init; }
+    [property: JsonPropertyName("postInstallScript")]
+    Script PostInstallScript,
 
-    [JsonPropertyName("upgradeScript")]
-    public Script UpgradeScript { get; init; }
+    [property: JsonPropertyName("postInstallScriptId")]
+    int? PostInstallScriptId,
 
-    [JsonPropertyName("uninstallScriptId")]
-    public int? UninstallScriptId { get; init; }
+    [property: JsonPropertyName("postInstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType PostInstallScriptType,
 
-    [JsonPropertyName("uninstallScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType UninstallScriptType { get; init; }
+    [property: JsonPropertyName("postUninstallScript")]
+    Script PostUninstallScript,
 
-    [JsonPropertyName("uninstallScript")]
-    public Script UninstallScript { get; init; }
+    [property: JsonPropertyName("postUninstallScriptId")]
+    int? PostUninstallScriptId,
 
-    [JsonPropertyName("postInstallScriptId")]
-    public int? PostInstallScriptId { get; init; }
+    [property: JsonPropertyName("postUninstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType PostUninstallScriptType,
 
-    [JsonPropertyName("postInstallScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType PostInstallScriptType { get; init; }
+    [property: JsonPropertyName("rebootNeeded")]
+    bool RebootNeeded,
 
-    [JsonPropertyName("postInstallScript")]
-    public Script PostInstallScript { get; init; }
+    [property: JsonPropertyName("recommended")]
+    bool Recommended,
 
-    [JsonPropertyName("postUninstallScriptId")]
-    public int? PostUninstallScriptId { get; init; }
+    [property: JsonPropertyName("relativeCacheSourcePath")]
+    Guid RelativeCacheSourcePath,
 
-    [JsonPropertyName("postUninstallScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType PostUninstallScriptType { get; init; }
+    [property: JsonPropertyName("repairScript")]
+    Script RepairScript,
 
-    [JsonPropertyName("postUninstallScript")]
-    public Script PostUninstallScript { get; init; }
+    [property: JsonPropertyName("repairScriptId")]
+    int? RepairScriptId,
 
-    [JsonPropertyName("testRequired")]
-    public bool TestRequired { get; init; }
+    [property: JsonPropertyName("repairScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType RepairScriptType,
 
-    [JsonPropertyName("testFailedError")]
-    public string? TestFailedError { get; init; }
+    [property: JsonPropertyName("repairType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<RepairActionType>))]
+    RepairActionType RepairType,
 
-    [JsonPropertyName("upgradeStrategy")]
-    [JsonConverter(typeof(JsonStringEnumConverter<UpdateActionType>))]
-    public UpdateActionType UpgradeStrategy { get; init; }
+    [property: JsonPropertyName("softwareIcon")]
+    Media SoftwareIcon,
 
-    [JsonPropertyName("licenseType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<LicenseType>))]
-    public LicenseType LicenseType { get; init; }
+    [property: JsonPropertyName("softwareIconMediaId")]
+    int? SoftwareIconMediaId,
 
-    [JsonPropertyName("licenseDescription")]
-    public string? LicenseDescription { get; init; }
+    [property: JsonPropertyName("softwarePrerequisites")]
+    ICollection<SoftwarePrerequisite>? SoftwarePrerequisites,
 
-    [JsonPropertyName("useDynamicVersions")]
-    public bool UseDynamicVersions { get; init; }
+    [property: JsonPropertyName("softwareTableName")]
+    string? SoftwareTableName,
 
-    [JsonPropertyName("dynamicVersionsScriptId")]
-    public int? DynamicVersionsScriptId { get; init; }
+    [property: JsonPropertyName("softwareTableNameSearchMode")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareTableNameSearchMode>))]
+    SoftwareTableNameSearchMode SoftwareTableNameSearchMode,
 
-    [JsonPropertyName("dynamicVersionsScriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType DynamicVersionsScriptType { get; init; }
+    [property: JsonPropertyName("softwareType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareType>))]
+    SoftwareType SoftwareType,
 
-    [JsonPropertyName("dynamicVersionsScript")]
-    public Script DynamicVersionsScript { get; init; }
+    [property: JsonPropertyName("softwareVersions")]
+    ICollection<LocalSoftwareVersion>? SoftwareVersions,
 
-    [JsonPropertyName("relativeCacheSourcePath")]
-    public Guid RelativeCacheSourcePath { get; init; }
+    [property: JsonPropertyName("tenantSoftware")]
+    ICollection<TenantSoftware>? TenantSoftware,
 
-    [JsonPropertyName("maintenanceSpecifier")]
-    public MaintenanceSpecifier MaintenanceSpecifier { get; init; }
+    [property: JsonPropertyName("testFailedError")]
+    string? TestFailedError,
 
-    [JsonPropertyName("id")]
-    public int Id { get; init; }
+    [property: JsonPropertyName("testRequired")]
+    bool TestRequired,
 
-    [JsonPropertyName("ownerTenantId")]
-    public int? OwnerTenantId { get; init; }
+    [property: JsonPropertyName("testScript")]
+    Script TestScript,
 
-    [JsonPropertyName("softwareType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareType>))]
-    public SoftwareType SoftwareType { get; init; }
+    [property: JsonPropertyName("testScriptId")]
+    int? TestScriptId,
 
-    [JsonPropertyName("identifier")]
-    public string? Identifier { get; init; }
+    [property: JsonPropertyName("testScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType TestScriptType,
 
-    [JsonPropertyName("tenantSoftware")]
-    public ICollection<TenantSoftware>? TenantSoftware { get; init; }
+    [property: JsonPropertyName("uninstallScript")]
+    Script UninstallScript,
 
-    [JsonPropertyName("softwareVersions")]
-    public ICollection<LocalSoftwareVersion>? SoftwareVersions { get; init; }
+    [property: JsonPropertyName("uninstallScriptId")]
+    int? UninstallScriptId,
 
-    [JsonPropertyName("softwarePrerequisites")]
-    public ICollection<SoftwarePrerequisite>? SoftwarePrerequisites { get; init; }
+    [property: JsonPropertyName("uninstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType UninstallScriptType,
 
-    [JsonPropertyName("softwareIcon")]
-    public Media SoftwareIcon { get; init; }
+    [property: JsonPropertyName("updatedBy")]
+    int? UpdatedBy,
 
-    [JsonPropertyName("createdByUser")]
-    public User CreatedByUser { get; init; }
+    [property: JsonPropertyName("updatedByUser")]
+    User UpdatedByUser,
 
-    [JsonPropertyName("updatedByUser")]
-    public User UpdatedByUser { get; init; }
+    [property: JsonPropertyName("updatedDate")]
+    DateTimeOffset UpdatedDate,
 
-    [JsonPropertyName("customAuditProperties")]
-    public ICollection<AuditPropertyChange>? CustomAuditProperties { get; init; }
-}
+    [property: JsonPropertyName("upgradeCode")]
+    string? UpgradeCode,
+
+    [property: JsonPropertyName("upgradeScript")]
+    Script UpgradeScript,
+
+    [property: JsonPropertyName("upgradeScriptId")]
+    int? UpgradeScriptId,
+
+    [property: JsonPropertyName("upgradeScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType UpgradeScriptType,
+
+    [property: JsonPropertyName("upgradeStrategy")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<UpdateActionType>))]
+    UpdateActionType UpgradeStrategy,
+
+    [property: JsonPropertyName("useDynamicVersions")]
+    bool UseDynamicVersions,
+
+    [property: JsonPropertyName("useSoftwareTableDetection")]
+    [property: Obsolete]
+    bool UseSoftwareTableDetection
+);

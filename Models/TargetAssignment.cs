@@ -2,214 +2,162 @@
 
 namespace PSImmyBot.Models;
 
-public record TargetAssignment {
-    [JsonConstructor]
-    [Obsolete]
-    public TargetAssignment(bool @allowAccessToParentTenant, bool @autoApprove, ICollection<ChangeRequest>? @changeRequests, int? @createdBy, User @createdByUser, DateTimeOffset @createdDate, DatabaseType @databaseType, DesiredSoftwareState @desiredSoftwareState, bool @excluded, int @id, string? @integrationPrompt, string? @integrationTypeId, bool @isCore, License @license, int? @licenseId, string? @maintenanceIdentifier, MaintenanceSpecifier @maintenanceSpecifier, MaintenanceTaskMode @maintenanceTaskMode, ICollection<MaintenanceTaskParameterValue>? @maintenanceTaskParameterValues, MaintenanceType @maintenanceType, TargetAssignmentNotes @notes, bool @onboardingOnly, string? @parameterValueMigrationErrors, bool @propagateToChildTenants, Guid? @providerClientGroupType, Guid? @providerDeviceGroupType, ProviderLink @providerLink, int? @providerLinkId, int? @providerLinkIdForMaintenanceItem, int? @softwareId, SoftwareProviderType @softwareProviderType, SemanticVersion @softwareSemanticVersion, string? @softwareSemanticVersionString, SoftwareSpecifier @softwareSpecifier, int @softwareVersionId, int @sortOrder, string? @target, TargetCategory @targetCategory, TargetEnforcement @targetEnforcement, TargetGroupFilter @targetGroupFilter, string? @targetName, TargetType @targetType, IDictionary<string, DeploymentParameterValue>? @taskParameterValues, int? @tenantId, int? @updatedBy, User @updatedByUser, DateTimeOffset @updatedDate, TargetAssignmentVisibility @visibility) {
-        CreatedDate = @createdDate;
-        UpdatedDate = @updatedDate;
-        CreatedBy = @createdBy;
-        UpdatedBy = @updatedBy;
-        Id = @id;
-        DatabaseType = @databaseType;
-        IsCore = @isCore;
-        AutoApprove = @autoApprove;
-        IntegrationTypeId = @integrationTypeId;
-        IntegrationPrompt = @integrationPrompt;
-        Excluded = @excluded;
-        SortOrder = @sortOrder;
-        MaintenanceIdentifier = @maintenanceIdentifier;
-        MaintenanceType = @maintenanceType;
-        OnboardingOnly = @onboardingOnly;
-        TargetEnforcement = @targetEnforcement;
-        TargetType = @targetType;
-        TargetCategory = @targetCategory;
-        TargetGroupFilter = @targetGroupFilter;
-        Target = @target;
-        TenantId = @tenantId;
-        PropagateToChildTenants = @propagateToChildTenants;
-        AllowAccessToParentTenant = @allowAccessToParentTenant;
-        ProviderLinkId = @providerLinkId;
-        ProviderDeviceGroupType = @providerDeviceGroupType;
-        ProviderClientGroupType = @providerClientGroupType;
-        ProviderLinkIdForMaintenanceItem = @providerLinkIdForMaintenanceItem;
-        TargetName = @targetName;
-        ProviderLink = @providerLink;
-        Notes = @notes;
-        Visibility = @visibility;
-        SoftwareSemanticVersion = @softwareSemanticVersion;
-        SoftwareSemanticVersionString = @softwareSemanticVersionString;
-        DesiredSoftwareState = @desiredSoftwareState;
-        SoftwareProviderType = @softwareProviderType;
-        TaskParameterValues = @taskParameterValues;
-        LicenseId = @licenseId;
-        License = @license;
-        MaintenanceTaskMode = @maintenanceTaskMode;
-        MaintenanceTaskParameterValues = @maintenanceTaskParameterValues;
-        ChangeRequests = @changeRequests;
-        ParameterValueMigrationErrors = @parameterValueMigrationErrors;
-        SoftwareSpecifier = @softwareSpecifier;
-        MaintenanceSpecifier = @maintenanceSpecifier;
-        CreatedByUser = @createdByUser;
-        UpdatedByUser = @updatedByUser;
-        SoftwareId = @softwareId;
-        SoftwareVersionId = @softwareVersionId;
-    }
+[method: JsonConstructor]
+public record TargetAssignment(
+    [property: JsonPropertyName("allowAccessToParentTenant")]
+    bool AllowAccessToParentTenant,
 
-    [JsonPropertyName("createdDate")]
-    public DateTimeOffset CreatedDate { get; init; }
+    [property: JsonPropertyName("autoApprove")]
+    bool AutoApprove,
 
-    [JsonPropertyName("updatedDate")]
-    public DateTimeOffset UpdatedDate { get; init; }
+    [property: JsonPropertyName("changeRequests")]
+    ICollection<ChangeRequest>? ChangeRequests,
 
-    [JsonPropertyName("createdBy")]
-    public int? CreatedBy { get; init; }
+    [property: JsonPropertyName("createdBy")]
+    int? CreatedBy,
 
-    [JsonPropertyName("updatedBy")]
-    public int? UpdatedBy { get; init; }
+    [property: JsonPropertyName("createdByUser")]
+    User CreatedByUser,
 
-    [JsonPropertyName("id")]
-    public int Id { get; init; }
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
 
-    [JsonPropertyName("databaseType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType DatabaseType { get; init; }
+    [property: JsonPropertyName("databaseType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType DatabaseType,
 
-    [JsonPropertyName("isCore")]
-    public bool IsCore { get; init; }
+    [property: JsonPropertyName("desiredSoftwareState")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DesiredSoftwareState>))]
+    DesiredSoftwareState DesiredSoftwareState,
 
-    [JsonPropertyName("autoApprove")]
-    public bool AutoApprove { get; init; }
+    [property: JsonPropertyName("excluded")]
+    bool Excluded,
 
-    [JsonPropertyName("integrationTypeId")]
-    public string? IntegrationTypeId { get; init; }
+    [property: JsonPropertyName("id")]
+    int Id,
 
-    [JsonPropertyName("integrationPrompt")]
-    public string? IntegrationPrompt { get; init; }
+    [property: JsonPropertyName("integrationPrompt")]
+    string? IntegrationPrompt,
 
-    [JsonPropertyName("excluded")]
-    public bool Excluded { get; init; }
+    [property: JsonPropertyName("integrationTypeId")]
+    string? IntegrationTypeId,
 
-    [JsonPropertyName("sortOrder")]
-    public int SortOrder { get; init; }
+    [property: JsonPropertyName("isCore")]
+    bool IsCore,
 
-    [JsonPropertyName("maintenanceIdentifier")]
-    public string? MaintenanceIdentifier { get; init; }
+    [property: JsonPropertyName("license")]
+    License License,
 
-    [JsonPropertyName("maintenanceType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
-    public MaintenanceType MaintenanceType { get; init; }
+    [property: JsonPropertyName("licenseId")]
+    int? LicenseId,
 
-    [JsonPropertyName("onboardingOnly")]
-    [Obsolete]
-    public bool OnboardingOnly { get; init; }
+    [property: JsonPropertyName("maintenanceIdentifier")]
+    string? MaintenanceIdentifier,
 
-    [JsonPropertyName("targetEnforcement")]
-    [JsonConverter(typeof(JsonStringEnumConverter<TargetEnforcement>))]
-    public TargetEnforcement TargetEnforcement { get; init; }
+    [property: JsonPropertyName("maintenanceSpecifier")]
+    MaintenanceSpecifier MaintenanceSpecifier,
 
-    [JsonPropertyName("targetType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<TargetType>))]
-    public TargetType TargetType { get; init; }
+    [property: JsonPropertyName("maintenanceTaskMode")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceTaskMode>))]
+    MaintenanceTaskMode MaintenanceTaskMode,
 
-    [JsonPropertyName("targetCategory")]
-    [JsonConverter(typeof(JsonStringEnumConverter<TargetCategory>))]
-    public TargetCategory TargetCategory { get; init; }
+    [property: JsonPropertyName("maintenanceTaskParameterValues")]
+    [property: Obsolete]
+    ICollection<MaintenanceTaskParameterValue>? MaintenanceTaskParameterValues,
 
-    [JsonPropertyName("targetGroupFilter")]
-    [JsonConverter(typeof(JsonStringEnumConverter<TargetGroupFilter>))]
-    public TargetGroupFilter TargetGroupFilter { get; init; }
+    [property: JsonPropertyName("maintenanceType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MaintenanceType>))]
+    MaintenanceType MaintenanceType,
 
-    [JsonPropertyName("target")]
-    public string? Target { get; init; }
+    [property: JsonPropertyName("notes")]
+    TargetAssignmentNotes Notes,
 
-    [JsonPropertyName("tenantId")]
-    public int? TenantId { get; init; }
+    [property: JsonPropertyName("onboardingOnly")]
+    [property: Obsolete]
+    bool OnboardingOnly,
 
-    [JsonPropertyName("propagateToChildTenants")]
-    public bool PropagateToChildTenants { get; init; }
+    [property: JsonPropertyName("parameterValueMigrationErrors")]
+    string? ParameterValueMigrationErrors,
 
-    [JsonPropertyName("allowAccessToParentTenant")]
-    public bool AllowAccessToParentTenant { get; init; }
+    [property: JsonPropertyName("propagateToChildTenants")]
+    bool PropagateToChildTenants,
 
-    [JsonPropertyName("providerLinkId")]
-    public int? ProviderLinkId { get; init; }
+    [property: JsonPropertyName("providerClientGroupType")]
+    Guid? ProviderClientGroupType,
 
-    [JsonPropertyName("providerDeviceGroupType")]
-    public Guid? ProviderDeviceGroupType { get; init; }
+    [property: JsonPropertyName("providerDeviceGroupType")]
+    Guid? ProviderDeviceGroupType,
 
-    [JsonPropertyName("providerClientGroupType")]
-    public Guid? ProviderClientGroupType { get; init; }
+    [property: JsonPropertyName("providerLink")]
+    ProviderLink ProviderLink,
 
-    [JsonPropertyName("providerLinkIdForMaintenanceItem")]
-    public int? ProviderLinkIdForMaintenanceItem { get; init; }
+    [property: JsonPropertyName("providerLinkId")]
+    int? ProviderLinkId,
 
-    [JsonPropertyName("targetName")]
-    public string? TargetName { get; init; }
+    [property: JsonPropertyName("providerLinkIdForMaintenanceItem")]
+    int? ProviderLinkIdForMaintenanceItem,
 
-    [JsonPropertyName("providerLink")]
-    public ProviderLink ProviderLink { get; init; }
+    [property: JsonPropertyName("softwareId")]
+    [property: Obsolete]
+    int? SoftwareId,
 
-    [JsonPropertyName("notes")]
-    public TargetAssignmentNotes Notes { get; init; }
+    [property: JsonPropertyName("softwareProviderType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareProviderType>))]
+    SoftwareProviderType SoftwareProviderType,
 
-    [JsonPropertyName("visibility")]
-    public TargetAssignmentVisibility Visibility { get; init; }
+    [property: JsonPropertyName("softwareSemanticVersion")]
+    SemanticVersion SoftwareSemanticVersion,
 
-    [JsonPropertyName("softwareSemanticVersion")]
-    public SemanticVersion SoftwareSemanticVersion { get; init; }
+    [property: JsonPropertyName("softwareSemanticVersionString")]
+    string? SoftwareSemanticVersionString,
 
-    [JsonPropertyName("softwareSemanticVersionString")]
-    public string? SoftwareSemanticVersionString { get; init; }
+    [property: JsonPropertyName("softwareSpecifier")]
+    SoftwareSpecifier SoftwareSpecifier,
 
-    [JsonPropertyName("desiredSoftwareState")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DesiredSoftwareState>))]
-    public DesiredSoftwareState DesiredSoftwareState { get; init; }
+    [property: JsonPropertyName("softwareVersionId")]
+    [property: Obsolete]
+    int SoftwareVersionId,
 
-    [JsonPropertyName("softwareProviderType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<SoftwareProviderType>))]
-    public SoftwareProviderType SoftwareProviderType { get; init; }
+    [property: JsonPropertyName("sortOrder")]
+    int SortOrder,
 
-    [JsonPropertyName("taskParameterValues")]
-    public IDictionary<string, DeploymentParameterValue>? TaskParameterValues { get; init; }
+    [property: JsonPropertyName("target")]
+    string? Target,
 
-    [JsonPropertyName("licenseId")]
-    public int? LicenseId { get; init; }
+    [property: JsonPropertyName("targetCategory")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TargetCategory>))]
+    TargetCategory TargetCategory,
 
-    [JsonPropertyName("license")]
-    public License License { get; init; }
+    [property: JsonPropertyName("targetEnforcement")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TargetEnforcement>))]
+    TargetEnforcement TargetEnforcement,
 
-    [JsonPropertyName("maintenanceTaskMode")]
-    [JsonConverter(typeof(JsonStringEnumConverter<MaintenanceTaskMode>))]
-    public MaintenanceTaskMode MaintenanceTaskMode { get; init; }
+    [property: JsonPropertyName("targetGroupFilter")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TargetGroupFilter>))]
+    TargetGroupFilter TargetGroupFilter,
 
-    [JsonPropertyName("maintenanceTaskParameterValues")]
-    [Obsolete]
-    public ICollection<MaintenanceTaskParameterValue>? MaintenanceTaskParameterValues { get; init; }
+    [property: JsonPropertyName("targetName")]
+    string? TargetName,
 
-    [JsonPropertyName("changeRequests")]
-    public ICollection<ChangeRequest>? ChangeRequests { get; init; }
+    [property: JsonPropertyName("targetType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<TargetType>))]
+    TargetType TargetType,
 
-    [JsonPropertyName("parameterValueMigrationErrors")]
-    public string? ParameterValueMigrationErrors { get; init; }
+    [property: JsonPropertyName("taskParameterValues")]
+    IDictionary<string, DeploymentParameterValue>? TaskParameterValues,
 
-    [JsonPropertyName("softwareSpecifier")]
-    public SoftwareSpecifier SoftwareSpecifier { get; init; }
+    [property: JsonPropertyName("tenantId")]
+    int? TenantId,
 
-    [JsonPropertyName("maintenanceSpecifier")]
-    public MaintenanceSpecifier MaintenanceSpecifier { get; init; }
+    [property: JsonPropertyName("updatedBy")]
+    int? UpdatedBy,
 
-    [JsonPropertyName("createdByUser")]
-    public User CreatedByUser { get; init; }
+    [property: JsonPropertyName("updatedByUser")]
+    User UpdatedByUser,
 
-    [JsonPropertyName("updatedByUser")]
-    public User UpdatedByUser { get; init; }
+    [property: JsonPropertyName("updatedDate")]
+    DateTimeOffset UpdatedDate,
 
-    [JsonPropertyName("softwareId")]
-    [Obsolete]
-    public int? SoftwareId { get; init; }
-
-    [JsonPropertyName("softwareVersionId")]
-    [Obsolete]
-    public int SoftwareVersionId { get; init; }
-}
+    [property: JsonPropertyName("visibility")]
+    TargetAssignmentVisibility Visibility
+);

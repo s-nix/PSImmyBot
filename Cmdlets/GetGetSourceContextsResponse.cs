@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetSourceContextsResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/application-logs/source-contexts?";
+        string endpoint = "/api/v1/application-logs/source-contexts?";
 
         GetSourceContextsResponse response = ImmyBotApiService.Get<GetSourceContextsResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

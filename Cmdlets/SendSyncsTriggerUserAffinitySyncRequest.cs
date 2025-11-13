@@ -8,7 +8,7 @@ public class SendSyncsTriggerUserAffinitySyncRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/syncs/trigger-user-affinity-sync?";
+        string endpoint = "/api/v1/syncs/trigger-user-affinity-sync?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

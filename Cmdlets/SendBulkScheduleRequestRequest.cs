@@ -11,7 +11,7 @@ public class SendBulkScheduleRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/schedules/bulk-cancel?";
+        string endpoint = "/api/v1/schedules/bulk-cancel?";
 
         List<BulkScheduleOperationResult> response = ImmyBotApiService.Post<BulkScheduleRequest, List<BulkScheduleOperationResult>>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

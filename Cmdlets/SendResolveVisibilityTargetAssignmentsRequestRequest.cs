@@ -11,7 +11,7 @@ public class SendResolveVisibilityTargetAssignmentsRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/visibility?";
+        string endpoint = "/api/v1/target-assignments/visibility?";
 
         List<TargetAssignmentResource> response = ImmyBotApiService.Post<ResolveVisibilityTargetAssignmentsRequest, List<TargetAssignmentResource>>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

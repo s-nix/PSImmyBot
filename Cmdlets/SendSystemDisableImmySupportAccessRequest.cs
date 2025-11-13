@@ -8,7 +8,7 @@ public class SendSystemDisableImmySupportAccessRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/disable-immy-support-access?";
+        string endpoint = "/api/v1/system/disable-immy-support-access?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

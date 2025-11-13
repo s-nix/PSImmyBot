@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetInventoryTaskResource : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/inventory-tasks?";
+        string endpoint = "/api/v1/inventory-tasks?";
 
         List<InventoryTaskResource> response = ImmyBotApiService.Get<List<InventoryTaskResource>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

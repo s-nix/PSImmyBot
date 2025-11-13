@@ -8,7 +8,7 @@ public class SendMaintenanceSessionsCancelAllRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-sessions/cancel-all?";
+        string endpoint = "/api/v1/maintenance-sessions/cancel-all?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

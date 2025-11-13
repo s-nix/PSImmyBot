@@ -15,7 +15,7 @@ public class GetComputersExport : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/export?";
+        string endpoint = "/api/v1/computers/export?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
 
         byte[] response = ImmyBotApiService.Get<byte[]>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();

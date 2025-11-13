@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetTenantInfoResult : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/azure/partner-tenant-infos?";
+        string endpoint = "/api/v1/azure/partner-tenant-infos?";
 
         List<TenantInfoResult> response = ImmyBotApiService.Get<List<TenantInfoResult>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

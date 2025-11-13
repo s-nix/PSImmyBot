@@ -14,7 +14,7 @@ public class GetComputerUserAffinityResponse : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/computers/user-affinities?";
+        string endpoint = "/api/v1/computers/user-affinities?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
         endpoint += Globals.ConvertToQueryParameters(ComputerId, "computerId"); // added name overload
 

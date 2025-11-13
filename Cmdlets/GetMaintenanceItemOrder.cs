@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetMaintenanceItemOrder : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/maintenance-item-orders?";
+        string endpoint = "/api/v1/target-assignments/maintenance-item-orders?";
 
         List<MaintenanceItemOrder> response = ImmyBotApiService.Get<List<MaintenanceItemOrder>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -11,7 +11,7 @@ public class SendIdentifyAgentRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/provider-agents/identify?";
+        string endpoint = "/api/v1/provider-agents/identify?";
 
         OpResult response = ImmyBotApiService.Post<IdentifyAgentRequest, OpResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

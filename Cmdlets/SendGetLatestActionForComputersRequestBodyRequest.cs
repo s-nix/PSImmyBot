@@ -11,7 +11,7 @@ public class SendGetLatestActionForComputersRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-actions/latest-action-for-computers?";
+        string endpoint = "/api/v1/maintenance-actions/latest-action-for-computers?";
 
         List<GetMaintenanceActionResponse> response = ImmyBotApiService.Post<GetLatestActionForComputersRequestBody, List<GetMaintenanceActionResponse>>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

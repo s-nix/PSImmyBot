@@ -11,7 +11,7 @@ public class SendReleaseDetailsRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/manager/update-release?";
+        string endpoint = "/api/v1/manager/update-release?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

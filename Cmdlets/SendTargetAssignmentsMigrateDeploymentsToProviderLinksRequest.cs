@@ -8,7 +8,7 @@ public class SendTargetAssignmentsMigrateDeploymentsToProviderLinksRequest : Cmd
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/target-assignments/migrate-deployments-to-provider-links?";
+        string endpoint = "/api/v1/target-assignments/migrate-deployments-to-provider-links?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

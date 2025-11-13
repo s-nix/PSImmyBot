@@ -11,7 +11,7 @@ public class SendDuplicateScriptRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/duplicate?";
+        string endpoint = "/api/v1/scripts/duplicate?";
 
         GetLocalScriptResponse response = ImmyBotApiService.Post<DuplicateScriptRequestBody, GetLocalScriptResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

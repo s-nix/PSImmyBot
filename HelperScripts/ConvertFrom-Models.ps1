@@ -8,15 +8,18 @@ function ConvertFrom-Models {
             continue
         }
         $className = ($lines | Select-String -Pattern "public record (\w+)").Matches[0].Groups[1].Value
+        if ($className -ne "Type") {
+            continue
+        }
         $argLines = [System.Collections.ArrayList]::new()
         $argNames = [System.Collections.ArrayList]::new()
         foreach ($line in $lines) {
             if ($line -match "#pragma") {
                 continue
             }
-            $multipleArgs = $line -split ","
+            $multipleArgs = $line -split "(?:,(?! ?\w+\??(<|>)))"
             foreach ($arg in $multipleArgs) {
-                if ($arg -match "(\w+\??|\w+<\w+\??>\??|\w+\[\]+\??) (\w+)(,|\);|$)") {
+                if ($arg -match "(\w+\??|\w+<[\w, ?]+\??>\??|\w+\[\]+\??) (\w+)(,|\);|$)") {
                     $type = $matches[1]
                     $name = $matches[2]
                     $typeRequired = ($type -notmatch "\?$").ToString().ToLower()

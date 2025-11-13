@@ -14,7 +14,7 @@ public class GetDetectedComputerSoftwareResponse : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/software-from-inventory/dx?";
+        string endpoint = "/api/v1/tenants/software-from-inventory/dx?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
         endpoint += Globals.ConvertToQueryParameters(TenantId, "tenantId"); // added name overload
 

@@ -11,7 +11,7 @@ public class SendRunImmyServiceRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/run-immy-service-new?";
+        string endpoint = "/api/v1/run-immy-service-new?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

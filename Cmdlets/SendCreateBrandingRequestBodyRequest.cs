@@ -11,7 +11,7 @@ public class SendCreateBrandingRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/brandings?";
+        string endpoint = "/api/v1/brandings?";
 
         GetBrandingResponse response = ImmyBotApiService.Post<CreateBrandingRequestBody, GetBrandingResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

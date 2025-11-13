@@ -8,7 +8,7 @@ public class SendGettingStartedChecklistResetRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/getting-started/checklist/reset?";
+        string endpoint = "/api/v1/getting-started/checklist/reset?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

@@ -14,7 +14,7 @@ public class SendCreateLocalScriptRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/local?";
+        string endpoint = "/api/v1/scripts/local?";
         endpoint += Globals.ConvertToQueryParameters(IgnoreSyntaxErrors, "ignoreSyntaxErrors");
 
         GetLocalScriptResponse response = ImmyBotApiService.Post<CreateLocalScriptRequestBody, GetLocalScriptResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();

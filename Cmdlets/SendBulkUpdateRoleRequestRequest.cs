@@ -11,7 +11,7 @@ public class SendBulkUpdateRoleRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/add-roles?";
+        string endpoint = "/api/v1/users/add-roles?";
 
         string response = ImmyBotApiService.Post<BulkUpdateRoleRequest, string>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

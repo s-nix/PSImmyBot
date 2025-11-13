@@ -11,7 +11,7 @@ public class SendFastCreateGlobalVersionRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/software/global/fast-create?";
+        string endpoint = "/api/v1/software/global/fast-create?";
 
         GetGlobalSoftwareResponse response = ImmyBotApiService.Post<FastCreateGlobalVersionRequestBody, GetGlobalSoftwareResponse>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

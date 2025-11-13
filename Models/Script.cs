@@ -2,152 +2,114 @@
 
 namespace PSImmyBot.Models;
 
-public record Script {
-    [JsonConstructor]
-    [Obsolete]
-    public Script(string? @action, ICollection<ChangeRequest>? @changeRequests, int? @createdBy, User @createdByUser, DateTimeOffset @createdDate, DynamicIntegrationType @dynamicIntegrationType, DynamicIntegrationTypeProperties @dynamicIntegrationTypeProperties, string? @dynamicProviderStoreId, ActionPreference @errorActionPreference, bool @hidden, int @id, string? @identifier, InventoryTaskScript @inventoryTaskScript, string? @name, ScriptOutputType @outputType, IDictionary<string, object?>? @parameterOverrides, IDictionary<string, object?>? @parameters, int? @providerLinkIdForMaintenanceItem, string? @publicStorageDownloadUrl, bool @readOnly, string? @scriptCacheName, ScriptCategory @scriptCategory, ScriptExecutionContext @scriptExecutionContext, string? @scriptHash, ScriptLanguage @scriptLanguage, DatabaseType @scriptType, bool @skipBusinessHoursCheck, bool @skipPreflight, ICollection<TenantScript>? @tenantRelationships, int? @timeout, int? @updatedBy, User @updatedByUser, DateTimeOffset @updatedDate, IDictionary<string, object?>? @variables) {
-        CreatedDate = @createdDate;
-        UpdatedDate = @updatedDate;
-        CreatedBy = @createdBy;
-        UpdatedBy = @updatedBy;
-        Name = @name;
-        Id = @id;
-        Action = @action;
-        ScriptLanguage = @scriptLanguage;
-        Timeout = @timeout;
-        ScriptExecutionContext = @scriptExecutionContext;
-        ScriptType = @scriptType;
-        ReadOnly = @readOnly;
-        Identifier = @identifier;
-        ScriptCategory = @scriptCategory;
-        OutputType = @outputType;
-        PublicStorageDownloadUrl = @publicStorageDownloadUrl;
-        ScriptHash = @scriptHash;
-        ScriptCacheName = @scriptCacheName;
-        Variables = @variables;
-        Parameters = @parameters;
-        ParameterOverrides = @parameterOverrides;
-        DynamicProviderStoreId = @dynamicProviderStoreId;
-        DynamicIntegrationTypeProperties = @dynamicIntegrationTypeProperties;
-        ProviderLinkIdForMaintenanceItem = @providerLinkIdForMaintenanceItem;
-        TenantRelationships = @tenantRelationships;
-        ChangeRequests = @changeRequests;
-        CreatedByUser = @createdByUser;
-        UpdatedByUser = @updatedByUser;
-        Hidden = @hidden;
-        ErrorActionPreference = @errorActionPreference;
-        SkipPreflight = @skipPreflight;
-        SkipBusinessHoursCheck = @skipBusinessHoursCheck;
-        DynamicIntegrationType = @dynamicIntegrationType;
-        InventoryTaskScript = @inventoryTaskScript;
-    }
+[method: JsonConstructor]
+public record Script(
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
 
-    [JsonPropertyName("createdDate")]
-    public DateTimeOffset CreatedDate { get; init; }
+    [property: JsonPropertyName("updatedDate")]
+    DateTimeOffset UpdatedDate,
 
-    [JsonPropertyName("updatedDate")]
-    public DateTimeOffset UpdatedDate { get; init; }
+    [property: JsonPropertyName("createdBy")]
+    int? CreatedBy,
 
-    [JsonPropertyName("createdBy")]
-    public int? CreatedBy { get; init; }
+    [property: JsonPropertyName("updatedBy")]
+    int? UpdatedBy,
 
-    [JsonPropertyName("updatedBy")]
-    public int? UpdatedBy { get; init; }
+    [property: JsonPropertyName("name")]
+    string? Name,
 
-    [JsonPropertyName("name")]
-    public string? Name { get; init; }
+    [property: JsonPropertyName("id")]
+    int Id,
 
-    [JsonPropertyName("id")]
-    public int Id { get; init; }
+    [property: JsonPropertyName("action")]
+    string? Action,
 
-    [JsonPropertyName("action")]
-    public string? Action { get; init; }
+    [property: JsonPropertyName("scriptLanguage")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ScriptLanguage>))]
+    ScriptLanguage ScriptLanguage,
 
-    [JsonPropertyName("scriptLanguage")]
-    [JsonConverter(typeof(JsonStringEnumConverter<ScriptLanguage>))]
-    public ScriptLanguage ScriptLanguage { get; init; }
+    [property: JsonPropertyName("timeout")]
+    int? Timeout,
 
-    [JsonPropertyName("timeout")]
-    public int? Timeout { get; init; }
+    [property: JsonPropertyName("scriptExecutionContext")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ScriptExecutionContext>))]
+    ScriptExecutionContext ScriptExecutionContext,
 
-    [JsonPropertyName("scriptExecutionContext")]
-    [JsonConverter(typeof(JsonStringEnumConverter<ScriptExecutionContext>))]
-    public ScriptExecutionContext ScriptExecutionContext { get; init; }
+    [property: JsonPropertyName("scriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType ScriptType,
 
-    [JsonPropertyName("scriptType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
-    public DatabaseType ScriptType { get; init; }
+    [property: JsonPropertyName("readOnly")]
+    bool ReadOnly,
 
-    [JsonPropertyName("readOnly")]
-    public bool ReadOnly { get; init; }
+    [property: JsonPropertyName("identifier")]
+    string? Identifier,
 
-    [JsonPropertyName("identifier")]
-    public string? Identifier { get; init; }
+    [property: JsonPropertyName("scriptCategory")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ScriptCategory>))]
+    ScriptCategory ScriptCategory,
 
-    [JsonPropertyName("scriptCategory")]
-    [JsonConverter(typeof(JsonStringEnumConverter<ScriptCategory>))]
-    public ScriptCategory ScriptCategory { get; init; }
+    [property: JsonPropertyName("outputType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ScriptOutputType>))]
+    ScriptOutputType OutputType,
 
-    [JsonPropertyName("outputType")]
-    [JsonConverter(typeof(JsonStringEnumConverter<ScriptOutputType>))]
-    public ScriptOutputType OutputType { get; init; }
+    [property: JsonPropertyName("publicStorageDownloadUrl")]
+    string? PublicStorageDownloadUrl,
 
-    [JsonPropertyName("publicStorageDownloadUrl")]
-    public string? PublicStorageDownloadUrl { get; init; }
+    [property: JsonPropertyName("scriptHash")]
+    string? ScriptHash,
 
-    [JsonPropertyName("scriptHash")]
-    public string? ScriptHash { get; init; }
+    [property: JsonPropertyName("scriptCacheName")]
+    string? ScriptCacheName,
 
-    [JsonPropertyName("scriptCacheName")]
-    public string? ScriptCacheName { get; init; }
+    [property: JsonPropertyName("variables")]
+    IDictionary<string, object?>? Variables,
 
-    [JsonPropertyName("variables")]
-    public IDictionary<string, object?>? Variables { get; init; }
+    [property: JsonPropertyName("parameters")]
+    IDictionary<string, object?>? Parameters,
 
-    [JsonPropertyName("parameters")]
-    public IDictionary<string, object?>? Parameters { get; init; }
+    [property: JsonPropertyName("parameterOverrides")]
+    IDictionary<string, object?>? ParameterOverrides,
 
-    [JsonPropertyName("parameterOverrides")]
-    public IDictionary<string, object?>? ParameterOverrides { get; init; }
+    [property: JsonPropertyName("dynamicProviderStoreId")]
+    string? DynamicProviderStoreId,
 
-    [JsonPropertyName("dynamicProviderStoreId")]
-    public string? DynamicProviderStoreId { get; init; }
+    [property: JsonPropertyName("dynamicIntegrationTypeProperties")]
+    DynamicIntegrationTypeProperties DynamicIntegrationTypeProperties,
 
-    [JsonPropertyName("dynamicIntegrationTypeProperties")]
-    public DynamicIntegrationTypeProperties DynamicIntegrationTypeProperties { get; init; }
+    [property: JsonPropertyName("providerLinkIdForMaintenanceItem")]
+    int? ProviderLinkIdForMaintenanceItem,
 
-    [JsonPropertyName("providerLinkIdForMaintenanceItem")]
-    public int? ProviderLinkIdForMaintenanceItem { get; init; }
+    [property: JsonPropertyName("tenantRelationships")]
+    ICollection<TenantScript>? TenantRelationships,
 
-    [JsonPropertyName("tenantRelationships")]
-    public ICollection<TenantScript>? TenantRelationships { get; init; }
+    [property: JsonPropertyName("changeRequests")]
+    ICollection<ChangeRequest>? ChangeRequests,
 
-    [JsonPropertyName("changeRequests")]
-    public ICollection<ChangeRequest>? ChangeRequests { get; init; }
+    [property: JsonPropertyName("createdByUser")]
+    User CreatedByUser,
 
-    [JsonPropertyName("createdByUser")]
-    public User CreatedByUser { get; init; }
+    [property: JsonPropertyName("updatedByUser")]
+    User UpdatedByUser,
 
-    [JsonPropertyName("updatedByUser")]
-    public User UpdatedByUser { get; init; }
+    [property: JsonPropertyName("hidden")]
+    [property: Obsolete]
+    bool Hidden,
 
-    [JsonPropertyName("hidden")]
-    [Obsolete]
-    public bool Hidden { get; init; }
+    [property: JsonPropertyName("errorActionPreference")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ActionPreference>))]
+    ActionPreference ErrorActionPreference,
 
-    [JsonPropertyName("errorActionPreference")]
-    [JsonConverter(typeof(JsonStringEnumConverter<ActionPreference>))]
-    public ActionPreference ErrorActionPreference { get; init; }
+    [property: JsonPropertyName("skipPreflight")]
+    bool SkipPreflight,
 
-    [JsonPropertyName("skipPreflight")]
-    public bool SkipPreflight { get; init; }
+    [property: JsonPropertyName("skipBusinessHoursCheck")]
+    bool SkipBusinessHoursCheck,
 
-    [JsonPropertyName("skipBusinessHoursCheck")]
-    public bool SkipBusinessHoursCheck { get; init; }
+    [property: JsonPropertyName("dynamicIntegrationType")]
+    DynamicIntegrationType DynamicIntegrationType,
 
-    [JsonPropertyName("dynamicIntegrationType")]
-    public DynamicIntegrationType DynamicIntegrationType { get; init; }
-
-    [JsonPropertyName("inventoryTaskScript")]
-    public InventoryTaskScript InventoryTaskScript { get; init; }
-}
+    [property: JsonPropertyName("inventoryTaskScript")]
+    InventoryTaskScript InventoryTaskScript
+);

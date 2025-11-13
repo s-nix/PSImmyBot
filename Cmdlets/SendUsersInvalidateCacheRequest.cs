@@ -11,7 +11,7 @@ public class SendUsersInvalidateCacheRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/invalidate-cache?";
+        string endpoint = "/api/v1/users/invalidate-cache?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
     }

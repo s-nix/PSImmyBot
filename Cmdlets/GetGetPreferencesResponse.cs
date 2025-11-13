@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetPreferencesResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/preferences?";
+        string endpoint = "/api/v1/preferences?";
 
         GetPreferencesResponse response = ImmyBotApiService.Get<GetPreferencesResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -11,7 +11,7 @@ public class SendGrantAccessRequestRbacRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/grant-access?";
+        string endpoint = "/api/v1/users/grant-access?";
 
         CommandResult response = ImmyBotApiService.Post<GrantAccessRequestRbac, CommandResult>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

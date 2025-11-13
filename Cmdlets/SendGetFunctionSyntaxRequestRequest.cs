@@ -11,7 +11,7 @@ public class SendGetFunctionSyntaxRequestRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/scripts/functions/syntax?";
+        string endpoint = "/api/v1/scripts/functions/syntax?";
 
         string response = ImmyBotApiService.Post<GetFunctionSyntaxRequest, string>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

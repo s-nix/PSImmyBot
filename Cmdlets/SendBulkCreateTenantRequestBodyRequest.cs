@@ -11,7 +11,7 @@ public class SendBulkCreateTenantRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/tenants/bulk-create?";
+        string endpoint = "/api/v1/tenants/bulk-create?";
 
         List<GetTenantResponse> response = ImmyBotApiService.Post<BulkCreateTenantRequestBody, List<GetTenantResponse>>(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
         WriteObject(response);

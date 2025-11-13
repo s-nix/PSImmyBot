@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetAgentSha256HashResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/immy-agent-metadata/agent-hash?";
+        string endpoint = "/api/v1/immy-agent-metadata/agent-hash?";
 
         GetAgentSha256HashResponse response = ImmyBotApiService.Get<GetAgentSha256HashResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

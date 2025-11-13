@@ -9,7 +9,7 @@ public class SendUthRequestAccessRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/auth/request-access?";
+        string endpoint = "/api/v1/auth/request-access?";
 
         CommandResult response = ImmyBotApiService.Post<CommandResult>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);

@@ -11,7 +11,7 @@ public class SendRequestSessionSupportRequestBodyRequest : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/system/request-session-support?";
+        string endpoint = "/api/v1/system/request-session-support?";
 
         ImmyBotApiService.Post(endpoint.TrimEnd('?').TrimEnd('&'), PayloadBody).GetAwaiter().GetResult();
     }

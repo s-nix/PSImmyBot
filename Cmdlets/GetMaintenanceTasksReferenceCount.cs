@@ -14,7 +14,7 @@ public class GetMaintenanceTasksReferenceCount : Cmdlet {
 
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/maintenance-tasks/reference-count?";
+        string endpoint = "/api/v1/maintenance-tasks/reference-count?";
         endpoint += Globals.ConvertToQueryParameters(MaintenanceTaskType, "maintenanceTaskType");
         endpoint += Globals.ConvertToQueryParameters(MaintenanceTaskId, "maintenanceTaskId");
 

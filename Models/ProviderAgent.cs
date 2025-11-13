@@ -2,102 +2,75 @@
 
 namespace PSImmyBot.Models;
 
-public record ProviderAgent {
-    [JsonConstructor]
-    [Obsolete]
-    public ProviderAgent(SemanticVersion @agentVersion, Computer @computer, int? @computerId, DateTimeOffset dateAddedUtc, DateTimeOffset? @deletedAt, string? @deletedReason, DeviceDetails @deviceDetails, string? @externalAgentId, string? @externalClientId, int @id, ICollection<AgentIdentificationFailure>? @identificationFailures, ICollection<AgentIdentificationLog>? @identificationLogs, object? @internalData, bool @isMemberOfInitialDeviceSync, bool @isOnline, DateTimeOffset lastUpdatedUtc, AgentOnboardingOptions @onboardingOptions, ProviderClient @providerClient, ProviderLink @providerLink, int @providerLinkId, bool @requireManualIdentification, bool @supportsOnlineStatus, bool @supportsRunningScripts) {
-        Id = @id;
-        ProviderLinkId = @providerLinkId;
-        ExternalClientId = @externalClientId;
-        ExternalAgentId = @externalAgentId;
-        ComputerId = @computerId;
-        IsOnline = @isOnline;
-        SupportsOnlineStatus = @supportsOnlineStatus;
-        SupportsRunningScripts = @supportsRunningScripts;
-        AgentVersion = @agentVersion;
-        DateAddedUtc = dateAddedUtc;
-        LastUpdatedUtc = lastUpdatedUtc;
-        InternalData = @internalData;
-        DeviceDetails = @deviceDetails;
-        OnboardingOptions = @onboardingOptions;
-        RequireManualIdentification = @requireManualIdentification;
-        ProviderLink = @providerLink;
-        Computer = @computer;
-        ProviderClient = @providerClient;
-        IdentificationFailures = @identificationFailures;
-        IdentificationLogs = @identificationLogs;
-        IsMemberOfInitialDeviceSync = @isMemberOfInitialDeviceSync;
-        DeletedAt = @deletedAt;
-        DeletedReason = @deletedReason;
-    }
+[method: JsonConstructor]
+public record ProviderAgent(
+    [property: JsonPropertyName("id")]
+    int Id,
 
-    [JsonPropertyName("id")]
-    public int Id { get; init; }
+    [property: JsonPropertyName("providerLinkId")]
+    int ProviderLinkId,
 
-    [JsonPropertyName("providerLinkId")]
-    public int ProviderLinkId { get; init; }
+    [property: JsonPropertyName("externalClientId")]
+    string? ExternalClientId,
 
-    [JsonPropertyName("externalClientId")]
-    public string? ExternalClientId { get; init; }
+    [property: JsonPropertyName("externalAgentId")]
+    string? ExternalAgentId,
 
-    [JsonPropertyName("externalAgentId")]
-    public string? ExternalAgentId { get; init; }
+    [property: JsonPropertyName("computerId")]
+    int? ComputerId,
 
-    [JsonPropertyName("computerId")]
-    public int? ComputerId { get; init; }
+    [property: JsonPropertyName("isOnline")]
+    bool IsOnline,
 
-    [JsonPropertyName("isOnline")]
-    public bool IsOnline { get; init; }
+    [property: JsonPropertyName("supportsOnlineStatus")]
+    [property: Obsolete]
+    bool SupportsOnlineStatus,
 
-    [JsonPropertyName("supportsOnlineStatus")]
-    [Obsolete]
-    public bool SupportsOnlineStatus { get; init; }
+    [property: JsonPropertyName("supportsRunningScripts")]
+    bool SupportsRunningScripts,
 
-    [JsonPropertyName("supportsRunningScripts")]
-    public bool SupportsRunningScripts { get; init; }
+    [property: JsonPropertyName("agentVersion")]
+    SemanticVersion AgentVersion,
 
-    [JsonPropertyName("agentVersion")]
-    public SemanticVersion AgentVersion { get; init; }
+    [property: JsonPropertyName("dateAddedUTC")]
+    DateTimeOffset DateAddedUtc,
 
-    [JsonPropertyName("dateAddedUTC")]
-    public DateTimeOffset DateAddedUtc { get; init; }
+    [property: JsonPropertyName("lastUpdatedUTC")]
+    DateTimeOffset LastUpdatedUtc,
 
-    [JsonPropertyName("lastUpdatedUTC")]
-    public DateTimeOffset LastUpdatedUtc { get; init; }
+    [property: JsonPropertyName("internalData")]
+    object? InternalData,
 
-    [JsonPropertyName("internalData")]
-    public object? InternalData { get; init; }
+    [property: JsonPropertyName("deviceDetails")]
+    DeviceDetails DeviceDetails,
 
-    [JsonPropertyName("deviceDetails")]
-    public DeviceDetails DeviceDetails { get; init; }
+    [property: JsonPropertyName("onboardingOptions")]
+    AgentOnboardingOptions OnboardingOptions,
 
-    [JsonPropertyName("onboardingOptions")]
-    public AgentOnboardingOptions OnboardingOptions { get; init; }
+    [property: JsonPropertyName("requireManualIdentification")]
+    bool RequireManualIdentification,
 
-    [JsonPropertyName("requireManualIdentification")]
-    public bool RequireManualIdentification { get; init; }
+    [property: JsonPropertyName("providerLink")]
+    ProviderLink ProviderLink,
 
-    [JsonPropertyName("providerLink")]
-    public ProviderLink ProviderLink { get; init; }
+    [property: JsonPropertyName("computer")]
+    Computer Computer,
 
-    [JsonPropertyName("computer")]
-    public Computer Computer { get; init; }
+    [property: JsonPropertyName("providerClient")]
+    ProviderClient ProviderClient,
 
-    [JsonPropertyName("providerClient")]
-    public ProviderClient ProviderClient { get; init; }
+    [property: JsonPropertyName("identificationFailures")]
+    ICollection<AgentIdentificationFailure>? IdentificationFailures,
 
-    [JsonPropertyName("identificationFailures")]
-    public ICollection<AgentIdentificationFailure>? IdentificationFailures { get; init; }
+    [property: JsonPropertyName("identificationLogs")]
+    ICollection<AgentIdentificationLog>? IdentificationLogs,
 
-    [JsonPropertyName("identificationLogs")]
-    public ICollection<AgentIdentificationLog>? IdentificationLogs { get; init; }
+    [property: JsonPropertyName("isMemberOfInitialDeviceSync")]
+    bool IsMemberOfInitialDeviceSync,
 
-    [JsonPropertyName("isMemberOfInitialDeviceSync")]
-    public bool IsMemberOfInitialDeviceSync { get; init; }
+    [property: JsonPropertyName("deletedAt")]
+    DateTimeOffset? DeletedAt,
 
-    [JsonPropertyName("deletedAt")]
-    public DateTimeOffset? DeletedAt { get; init; }
-
-    [JsonPropertyName("deletedReason")]
-    public string? DeletedReason { get; init; }
-}
+    [property: JsonPropertyName("deletedReason")]
+    string? DeletedReason
+);

@@ -8,7 +8,7 @@ namespace PSImmyBot.Cmdlets;
 public class GetGetClaimsResponse : Cmdlet {
 
     protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/users/claims?";
+        string endpoint = "/api/v1/users/claims?";
 
         GetClaimsResponse response = ImmyBotApiService.Get<GetClaimsResponse>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
