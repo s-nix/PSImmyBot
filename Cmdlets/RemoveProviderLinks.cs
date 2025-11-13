@@ -1,0 +1,20 @@
+using System.Management.Automation;
+using PSImmyBot.Models;
+using PSImmyBot.Services;
+
+namespace PSImmyBot.Cmdlets;
+
+[Cmdlet("Remove", "ProviderLinks")]
+public class RemoveProviderLinks : Cmdlet {
+    [Parameter(Mandatory = true)]
+    public int Id { get; set; }
+
+
+
+    protected override void ProcessRecord() {
+        string endpoint = $"/api/v1/provider-links/{Id}?";
+
+        ImmyBotApiService.Delete(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+    }
+
+}

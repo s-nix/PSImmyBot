@@ -694,3 +694,4 @@ $(if ($hasPayload -and $hasReturn) {
 # ConvertFrom-SwaggerPost -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
 # ConvertFrom-SwaggerPatch -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
 # ConvertFrom-SwaggerPut -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
+ConvertFrom-SwaggerDelete -SwaggerFilePath "C:\Users\stephen.nix\Downloads\immy_swagger.json"
