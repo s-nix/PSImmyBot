@@ -4,6 +4,9 @@ using PSImmyBot.Models;
 
 namespace PSImmyBot.Cmdlets;
 
+/// <summary>
+/// This is a test
+/// </summary>
 [Cmdlet("Connect", "Api")]
 public class ConnectApi : Cmdlet {
     [Parameter(Mandatory = true, ParameterSetName = "Saved")]
