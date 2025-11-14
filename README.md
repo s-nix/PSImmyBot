@@ -52,7 +52,7 @@ Typical workflow:
 
 1. `Connect-ImmyApi` to authenticate against Azure and persist the token/config.
 2. Run any of the cmdlets to interrogate ImmyBot resources.
-3. Use `Disconnect-Api` to clear cached tokens if switching tenants.
+3. Use `Disconnect-ImmyApi` to clear cached tokens if switching tenants.
 
 Example: retrieving computers with optional filters.
 
@@ -79,7 +79,7 @@ All cmdlets rely on shared serialization helpers from `Globals`. Avoid direct HT
 Contributions are welcome even in pre-alpha—just expect sharp edges. ⚔️ 🐛
 
 1. Open an issue describing the bug/feature and affected endpoint.
-2. Follow the established cmdlet naming (`Verb-Noun`) and reuse `Globals` helpers for configuration.
+2. Follow the established cmdlet naming (`Verb-Noun`) and reuse `Globals` helpers for configuration. (A default prefix of "Immy" is used, so the nouns do not need an explicit prefix)
 3. Include a brief usage example or test snippet when possible.
 
 ## License
