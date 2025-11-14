@@ -1,15 +1,23 @@
 site_name: PSImmyBot
 theme:
+  features:
+    - navigation.tabs
+    - toc.integrate
+    - navigation.prune
+  logo: assets/PSImmyBot.png
+  favicon: assets/PSImmyBot.png
   name: material
   palette:
     # Palette toggle for light mode
     - scheme: default
+      primary: white
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: black
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -23,3 +31,10 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.superfences
+extra_css:
+  - styles/extra.css
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/s-nix/PSImmyBot
+copyright: "Copyright (C) 2025 Stephen Nix. Licensed under GNU General Public License v3.0."
