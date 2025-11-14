@@ -5,7 +5,7 @@
 PowerShell module and .NET 8 class library for automating the ImmyBot API.
 
 > **Status: Pre-Alpha**  
-> All cmdlets have not yet been tested and will be broken. Expect breaking changes until milestone 1 is complete.
+> All cmdlets have not yet been tested and will be broken. Expect breaking changes until full release.
 
 ## About the project
 
