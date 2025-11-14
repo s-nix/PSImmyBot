@@ -1,0 +1,69 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record GetProviderLinkResponse(
+    [property: JsonPropertyName("computers")]
+    ICollection<GetComputerResponse>? Computers,
+    [property: JsonPropertyName("createdBy")]
+    int? CreatedBy,
+    [property: JsonPropertyName("createdDateUTC")]
+    DateTimeOffset CreatedDateUtc,
+    [property: JsonPropertyName("disabled")]
+    bool Disabled,
+    [property: JsonPropertyName("errorMessage")]
+    string? ErrorMessage,
+    [property: JsonPropertyName("excludedCapabilities")]
+    ICollection<string>? ExcludedCapabilities,
+    [property: JsonPropertyName("getFormSchemaFailedMessage")]
+    string? GetFormSchemaFailedMessage,
+    [property: JsonPropertyName("getLatestAgentVersionFailedMessage")]
+    string? GetLatestAgentVersionFailedMessage,
+    [property: JsonPropertyName("getProviderFailedMessage")]
+    string? GetProviderFailedMessage,
+    [property: JsonPropertyName("healthStatus")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<HealthStatus>))]
+    HealthStatus HealthStatus,
+    [property: JsonPropertyName("healthStatusMessage")]
+    string? HealthStatusMessage,
+    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("includeClientsFailedMessage")]
+    string? IncludeClientsFailedMessage,
+    [property: JsonPropertyName("inputsWithStoredPasswords")]
+    ICollection<string>? InputsWithStoredPasswords,
+    [property: JsonPropertyName("latestAgentVersion")]
+    string? LatestAgentVersion,
+    [property: JsonPropertyName("linkedFromProviders")]
+    ICollection<LinkedExternalLink>? LinkedFromProviders,
+    [property: JsonPropertyName("name")] string? Name,
+    [property: JsonPropertyName("ownerTenantId")]
+    int OwnerTenantId,
+    [property: JsonPropertyName("providerCapabilities")]
+    ICollection<string>? ProviderCapabilities,
+    [property: JsonPropertyName("providerClients")]
+    ICollection<GetProviderClientResponse>? ProviderClients,
+    [property: JsonPropertyName("providerPluginBaseUrl")]
+    string? ProviderPluginBaseUrl,
+    [property: JsonPropertyName("providersLinkedFromThisProvider")]
+    ICollection<LinkedExternalLink>? ProvidersLinkedFromThisProvider,
+    [property: JsonPropertyName("providerTypeFormData")]
+    object ProviderTypeFormData,
+    [property: JsonPropertyName("providerTypeId")]
+    Guid ProviderTypeId,
+    [property: JsonPropertyName("runScriptPriority")]
+    int RunScriptPriority,
+    [property: JsonPropertyName("schedules")]
+    ICollection<GetScheduleResponse>? Schedules,
+    [property: JsonPropertyName("supportedCrossProviderClientLinkages")]
+    ICollection<SupportedCrossProviderLinkage>? SupportedCrossProviderClientLinkages,
+    [property: JsonPropertyName("supportedCrossProviderInitializationLinkages")]
+    ICollection<SupportedCrossProviderLinkage>? SupportedCrossProviderInitializationLinkages,
+    [property: JsonPropertyName("supportsDeviceUpdating")]
+    bool SupportsDeviceUpdating,
+    [property: JsonPropertyName("updatedBy")]
+    int? UpdatedBy,
+    [property: JsonPropertyName("updatedByName")]
+    string? UpdatedByName,
+    [property: JsonPropertyName("updatedDateUTC")]
+    DateTimeOffset UpdatedDateUtc);

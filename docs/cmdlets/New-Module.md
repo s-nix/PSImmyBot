@@ -1,0 +1,47 @@
+---
+title: New-Module
+---
+
+# New-Module
+
+| Detail | Value |
+| --- | --- |
+| Class | `PSImmyBot.Cmdlets.NewModule` |
+| Source | `Cmdlets/NewModule.cs` |
+| HTTP Method | Custom |
+| Endpoint | Not applicable |
+| Return Type | `Varies/none` |
+| SupportsShouldProcess | False |
+| SupportsPaging | False |
+| SupportsTransactions | False |
+| ConfirmImpact | None |
+| Default Parameter Set | None |
+
+## Behavior
+- Refer to the source implementation for detailed flow; this cmdlet performs custom orchestration beyond simple API proxying.
+
+## Parameters
+
+| Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| Assembly | [Assembly](../models/Assembly.md) | True | — | All | None |
+| CustomAttributes | `ICollection`1` | False | — | All | None |
+| FullyQualifiedName | `String` | False | — | All | None |
+| MdStreamVersion | `Int32` | True | — | All | None |
+| MetadataToken | `Int32` | True | — | All | None |
+| ModuleHandle | [ModuleHandle](../models/ModuleHandle.md) | True | — | All | None |
+| ModuleVersionId | `Guid` | True | — | All | None |
+| Name | `String` | False | — | All | None |
+| ScopeName | `String` | False | — | All | None |
+
+### Parameter sets
+
+- `All`
+
+## Outputs
+
+- See source for specific output behavior.
+
+## Notes
+
+This documentation was generated automatically by `HelperScripts/GenerateDocs.ps1` by analyzing the cmdlet source and compiled metadata.

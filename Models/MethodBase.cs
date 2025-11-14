@@ -1,0 +1,72 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record MethodBase(
+    [property: JsonPropertyName("attributes")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MethodAttributes>))]
+    MethodAttributes Attributes,
+    [property: JsonPropertyName("callingConvention")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<CallingConventions>))]
+    CallingConventions CallingConvention,
+    [property: JsonPropertyName("containsGenericParameters")]
+    bool ContainsGenericParameters,
+    [property: JsonPropertyName("customAttributes")]
+    ICollection<CustomAttributeData>? CustomAttributes,
+    [property: JsonPropertyName("declaringType")]
+    Type DeclaringType,
+    [property: JsonPropertyName("isAbstract")]
+    bool IsAbstract,
+    [property: JsonPropertyName("isAssembly")]
+    bool IsAssembly,
+    [property: JsonPropertyName("isCollectible")]
+    bool IsCollectible,
+    [property: JsonPropertyName("isConstructedGenericMethod")]
+    bool IsConstructedGenericMethod,
+    [property: JsonPropertyName("isConstructor")]
+    bool IsConstructor,
+    [property: JsonPropertyName("isFamily")]
+    bool IsFamily,
+    [property: JsonPropertyName("isFamilyAndAssembly")]
+    bool IsFamilyAndAssembly,
+    [property: JsonPropertyName("isFamilyOrAssembly")]
+    bool IsFamilyOrAssembly,
+    [property: JsonPropertyName("isFinal")]
+    bool IsFinal,
+    [property: JsonPropertyName("isGenericMethod")]
+    bool IsGenericMethod,
+    [property: JsonPropertyName("isGenericMethodDefinition")]
+    bool IsGenericMethodDefinition,
+    [property: JsonPropertyName("isHideBySig")]
+    bool IsHideBySig,
+    [property: JsonPropertyName("isPrivate")]
+    bool IsPrivate,
+    [property: JsonPropertyName("isPublic")]
+    bool IsPublic,
+    [property: JsonPropertyName("isSecurityCritical")]
+    bool IsSecurityCritical,
+    [property: JsonPropertyName("isSecuritySafeCritical")]
+    bool IsSecuritySafeCritical,
+    [property: JsonPropertyName("isSecurityTransparent")]
+    bool IsSecurityTransparent,
+    [property: JsonPropertyName("isSpecialName")]
+    bool IsSpecialName,
+    [property: JsonPropertyName("isStatic")]
+    bool IsStatic,
+    [property: JsonPropertyName("isVirtual")]
+    bool IsVirtual,
+    [property: JsonPropertyName("memberType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MemberTypes>))]
+    MemberTypes MemberType,
+    [property: JsonPropertyName("metadataToken")]
+    int MetadataToken,
+    [property: JsonPropertyName("methodHandle")]
+    RuntimeMethodHandle MethodHandle,
+    [property: JsonPropertyName("methodImplementationFlags")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<MethodImplAttributes>))]
+    MethodImplAttributes MethodImplementationFlags,
+    [property: JsonPropertyName("module")] Module Module,
+    [property: JsonPropertyName("name")] string? Name,
+    [property: JsonPropertyName("reflectedType")]
+    Type ReflectedType);

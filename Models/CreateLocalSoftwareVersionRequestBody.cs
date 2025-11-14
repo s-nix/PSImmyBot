@@ -1,0 +1,80 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record CreateLocalSoftwareVersionRequestBody(
+    [property: JsonPropertyName("blobName")]
+    string? BlobName,
+    [property: JsonPropertyName("dependsOnSemanticVersion")]
+    SemanticVersion DependsOnSemanticVersion,
+    [property: JsonPropertyName("displayName")]
+    string? DisplayName,
+    [property: JsonPropertyName("displayVersion")]
+    string? DisplayVersion,
+    [property: JsonPropertyName("installerFile")]
+    string? InstallerFile,
+    [property: JsonPropertyName("installerType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareVersionInstallerType>))]
+    SoftwareVersionInstallerType InstallerType,
+    [property: JsonPropertyName("installScriptId")]
+    int? InstallScriptId,
+    [property: JsonPropertyName("installScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType InstallScriptType,
+    [property: JsonPropertyName("licenseType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<LicenseType>))]
+    LicenseType LicenseType,
+    [property: JsonPropertyName("notes")] string? Notes,
+    [property: JsonPropertyName("packageHash")]
+    string? PackageHash,
+    [property: JsonPropertyName("packageType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<PackageType>))]
+    PackageType PackageType,
+    [property: JsonPropertyName("postInstallScriptId")]
+    int? PostInstallScriptId,
+    [property: JsonPropertyName("postInstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType PostInstallScriptType,
+    [property: JsonPropertyName("postUninstallScriptId")]
+    int? PostUninstallScriptId,
+    [property: JsonPropertyName("postUninstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType PostUninstallScriptType,
+    [property: JsonPropertyName("productCode")]
+    string? ProductCode,
+    [property: JsonPropertyName("relativeCacheSourcePath")]
+    string? RelativeCacheSourcePath,
+    [property: JsonPropertyName("semanticVersion")]
+    [property: System.ComponentModel.DataAnnotations.Required]
+    SemanticVersion SemanticVersion,
+    [property: JsonPropertyName("softwareId")]
+    int SoftwareId,
+    [property: JsonPropertyName("softwareIdentifier")]
+    string? SoftwareIdentifier,
+    [property: JsonPropertyName("softwareType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SoftwareType>))]
+    SoftwareType SoftwareType,
+    [property: JsonPropertyName("testFailedError")]
+    string? TestFailedError,
+    [property: JsonPropertyName("testRequired")]
+    bool TestRequired,
+    [property: JsonPropertyName("testScriptId")]
+    int? TestScriptId,
+    [property: JsonPropertyName("testScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType TestScriptType,
+    [property: JsonPropertyName("uninstallScriptId")]
+    int? UninstallScriptId,
+    [property: JsonPropertyName("uninstallScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType UninstallScriptType,
+    [property: JsonPropertyName("upgradeScriptId")]
+    int? UpgradeScriptId,
+    [property: JsonPropertyName("upgradeScriptType")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<DatabaseType>))]
+    DatabaseType UpgradeScriptType,
+    [property: JsonPropertyName("upgradeStrategy")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<UpdateActionType>))]
+    UpdateActionType UpgradeStrategy,
+    [property: JsonPropertyName("url")] string? Url);

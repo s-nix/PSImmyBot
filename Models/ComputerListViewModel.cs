@@ -1,0 +1,80 @@
+﻿using System.Text.Json.Serialization;
+
+namespace PSImmyBot.Models;
+
+[method: JsonConstructor]
+public record ComputerListViewModel(
+    [property: JsonPropertyName("activeSessionId")]
+    int? ActiveSessionId,
+    [property: JsonPropertyName("activeSessionStatus")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<SessionStatus>))]
+    SessionStatus? ActiveSessionStatus,
+    [property: JsonPropertyName("chassisTypes")]
+    ICollection<int>? ChassisTypes,
+    [property: JsonPropertyName("computerName")]
+    string? ComputerName,
+    [property: JsonPropertyName("computerTagIds")]
+    ICollection<int>? ComputerTagIds,
+    [property: JsonPropertyName("createdDate")]
+    DateTimeOffset CreatedDate,
+    [property: JsonPropertyName("deletedAt")]
+    DateTimeOffset? DeletedAt,
+    [property: JsonPropertyName("deviceId")]
+    Guid DeviceId,
+    [property: JsonPropertyName("devLabVmClaimExpirationDateUtc")]
+    DateTimeOffset? DevLabVmClaimExpirationDateUtc,
+    [property: JsonPropertyName("devLabVmName")]
+    string? DevLabVmName,
+    [property: JsonPropertyName("devLabVmUnclaimed")]
+    bool DevLabVmUnclaimed,
+    [property: JsonPropertyName("domain")] string? Domain,
+    [property: JsonPropertyName("domainRole")]
+    int? DomainRole,
+    [property: JsonPropertyName("excludeFromMaintenance")]
+    bool ExcludeFromMaintenance,
+    [property: JsonPropertyName("externalIpAddress")]
+    string? ExternalIpAddress,
+    [property: JsonPropertyName("hasPendingReboot")]
+    bool? HasPendingReboot,
+    [property: JsonPropertyName("id")] int Id,
+    [property: JsonPropertyName("internalIpAddress")]
+    string? InternalIpAddress,
+    [property: JsonPropertyName("isDevLab")]
+    bool IsDevLab,
+    [property: JsonPropertyName("isOnline")]
+    bool? IsOnline,
+    [property: JsonPropertyName("isSandbox")]
+    bool IsSandbox,
+    [property: JsonPropertyName("lastBootTimeUtc")]
+    string? LastBootTimeUtc,
+    [property: JsonPropertyName("lastLoggedOnUser")]
+    string? LastLoggedOnUser,
+    [property: JsonPropertyName("lastProviderAgentEventDateUtc")]
+    DateTimeOffset? LastProviderAgentEventDateUtc,
+    [property: JsonPropertyName("licensed")]
+    bool? Licensed,
+    [property: JsonPropertyName("manufacturer")]
+    string? Manufacturer,
+    [property: JsonPropertyName("model")] string? Model,
+    [property: JsonPropertyName("notes")] string? Notes,
+    [property: JsonPropertyName("onboardingStatus")]
+    [property: JsonConverter(typeof(JsonStringEnumConverter<ComputerOnboardingStatus>))]
+    ComputerOnboardingStatus OnboardingStatus,
+    [property: JsonPropertyName("operatingSystem")]
+    string? OperatingSystem,
+    [property: JsonPropertyName("primaryPersonId")]
+    int? PrimaryPersonId,
+    [property: JsonPropertyName("primaryUserEmail")]
+    string? PrimaryUserEmail,
+    [property: JsonPropertyName("primaryUserFirstName")]
+    string? PrimaryUserFirstName,
+    [property: JsonPropertyName("primaryUserLastName")]
+    string? PrimaryUserLastName,
+    [property: JsonPropertyName("providerLinkIds")]
+    ICollection<int>? ProviderLinkIds,
+    [property: JsonPropertyName("serialNumber")]
+    string? SerialNumber,
+    [property: JsonPropertyName("tenantId")]
+    int TenantId,
+    [property: JsonPropertyName("tenantName")]
+    string? TenantName);
