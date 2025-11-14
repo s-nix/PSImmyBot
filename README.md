@@ -38,7 +38,10 @@ dotnet build
 Import-Module "./bin/Debug/net8.0/PSImmyBot.psd1" -Force
 
 # Configure your connection (values will be saved under %AppData%/PSImmyBot)
-Connect-ImmyApi -TenantId "<tenant-guid>" -ClientId "<app-id>" -ClientSecret (Read-Host -AsSecureString)
+Connect-ImmyApi -AzureTenantDomain "<tenant-domain>" -AzureClientId "<app-id>" -AzureClientSecret "<client-secret>" -ImmySubdomain "<immy-subdomain>" -Save
+
+# Or if you've already saved the config:
+Connect-ImmyApi -UseSavedConfig
 ```
 
 > Because the project is pre-alpha, individual cmdlets may fail or produce incomplete data. Validate responses against the ImmyBot portal before automating.
