@@ -10,7 +10,7 @@ title: InventoryTaskScript
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<InventoryTaskScript>` |
+| Implements | IEquatable<[InventoryTaskScript](InventoryTaskScript.md)> |
 | Source | `Models/InventoryTaskScript.cs` |
 
 ## Overview
@@ -23,13 +23,13 @@ title: InventoryTaskScript
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | FromProvider | `bool` | No (value type) | — |
 | InventoryKey | `string` | Reference type (nullable) | — |
-| InventoryTask | `InventoryTask` | Reference type (nullable) | — |
+| InventoryTask | [InventoryTask](InventoryTask.md) | Reference type (nullable) | — |
 | InventoryTaskId | `int` | No (value type) | — |
 | SaveDebugStream | `bool` | No (value type) | — |
 | SaveInformationStream | `bool` | No (value type) | — |
 | SaveVerboseStream | `bool` | No (value type) | — |
 | SaveWarningStream | `bool` | No (value type) | — |
-| Script | `Script` | Reference type (nullable) | — |
+| Script | [Script](Script.md) | Reference type (nullable) | — |
 | ScriptId | `int` | No (value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 

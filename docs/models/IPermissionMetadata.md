@@ -10,7 +10,7 @@ title: IPermissionMetadata
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IPermissionMetadata>` |
+| Implements | IEquatable<[IPermissionMetadata](IPermissionMetadata.md)> |
 | Source | `Models/IPermissionMetadata.cs` |
 
 ## Overview
@@ -21,10 +21,10 @@ title: IPermissionMetadata
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | AllowClaim | `string` | Reference type (nullable) | — |
-| Category | `PermissionCategory` | No (value type) | — |
+| Category | [PermissionCategory](PermissionCategory.md) | No (value type) | — |
 | Claim | `string` | Reference type (nullable) | — |
 | DenyClaim | `string` | Reference type (nullable) | — |
-| Dependencies | `ICollection<IPermissionMetadata>` | Reference type (nullable) | — |
+| Dependencies | ICollection<[IPermissionMetadata](IPermissionMetadata.md)> | Reference type (nullable) | — |
 | Description | `string` | Reference type (nullable) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | HasGreatPower | `bool` | No (value type) | — |
@@ -34,7 +34,7 @@ title: IPermissionMetadata
 | PermissionName | `string` | Reference type (nullable) | — |
 | ResourceClaimType | `string` | Reference type (nullable) | — |
 | SortOrder | `int` | No (value type) | — |
-| Subject | `ISubjectMetadata` | Reference type (nullable) | — |
+| Subject | [ISubjectMetadata](ISubjectMetadata.md) | Reference type (nullable) | — |
 | SubjectClaimType | `string` | Reference type (nullable) | — |
 | TenantClaimType | `string` | Reference type (nullable) | — |
 

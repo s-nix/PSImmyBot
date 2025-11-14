@@ -10,7 +10,7 @@ title: Get-TimelineEvent
 | Source | `Cmdlets/GetTimelineEvent.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}/events? |
-| Return Type | `List<TimelineEvent>` |
+| Return Type | List<[TimelineEvent](../models/TimelineEvent.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TimelineEvent
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/events?` and deserializes to `List<TimelineEvent>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/events?` and deserializes to List<[TimelineEvent](../models/TimelineEvent.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -35,7 +35,7 @@ title: Get-TimelineEvent
 
 ## Outputs
 
-- `List<TimelineEvent>` records produced by `ImmyBotApiService.GET`
+- List<[TimelineEvent](../models/TimelineEvent.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

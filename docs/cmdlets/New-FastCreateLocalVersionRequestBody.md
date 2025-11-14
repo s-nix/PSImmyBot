@@ -24,9 +24,9 @@ title: New-FastCreateLocalVersionRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Software | `CreateLocalSoftwareRequestBody` | True | — | All | None |
+| Software | [CreateLocalSoftwareRequestBody](../models/CreateLocalSoftwareRequestBody.md) | True | — | All | None |
 | SoftwareId | `Nullable`1` | False | — | All | None |
-| SoftwareVersion | `CreateLocalSoftwareVersionRequestBody` | True | — | All | None |
+| SoftwareVersion | [CreateLocalSoftwareVersionRequestBody](../models/CreateLocalSoftwareVersionRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

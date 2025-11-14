@@ -24,10 +24,10 @@ title: New-TenantMaintenanceTask
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| MaintenanceTask | `MaintenanceTask` | True | — | All | None |
+| MaintenanceTask | [MaintenanceTask](../models/MaintenanceTask.md) | True | — | All | None |
 | MaintenanceTaskId | `Int32` | True | — | All | None |
-| Relationship | `Relationship` | True | — | All | None |
-| Tenant | `Tenant` | True | — | All | None |
+| Relationship | [Relationship](../models/Relationship.md) | True | — | All | None |
+| Tenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 
 ### Parameter sets

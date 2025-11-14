@@ -10,7 +10,7 @@ title: Update-TenantPreferencesOperation
 | Source | `Cmdlets/UpdateTenantPreferencesOperation.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/preferences/tenants/{TenantId}? |
-| Return Type | `List<TenantPreferencesOperation>, TenantPreferences` |
+| Return Type | List<[TenantPreferencesOperation](../models/TenantPreferencesOperation.md)>, [TenantPreferences](../models/TenantPreferences.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Update-TenantPreferencesOperation
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/preferences/tenants/{TenantId}?` and deserializes to `List<TenantPreferencesOperation>, TenantPreferences`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/preferences/tenants/{TenantId}?` and deserializes to List<[TenantPreferencesOperation](../models/TenantPreferencesOperation.md)>, [TenantPreferences](../models/TenantPreferences.md).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ title: Update-TenantPreferencesOperation
 
 ## Outputs
 
-- `List<TenantPreferencesOperation>, TenantPreferences` records produced by `ImmyBotApiService.PATCH`
+- List<[TenantPreferencesOperation](../models/TenantPreferencesOperation.md)>, [TenantPreferences](../models/TenantPreferences.md) records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

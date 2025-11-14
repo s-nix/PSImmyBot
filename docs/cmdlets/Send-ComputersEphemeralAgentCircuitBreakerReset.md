@@ -10,7 +10,7 @@ title: Send-ComputersEphemeralAgentCircuitBreakerReset
 | Source | `Cmdlets/SendComputersEphemeralAgentCircuitBreakerReset.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/computers/{ComputerId}/ephemeral-agent-circuit-breaker/reset? |
-| Return Type | `OpResultCircuitBreakerState` |
+| Return Type | [OpResultCircuitBreakerState](../models/OpResultCircuitBreakerState.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-ComputersEphemeralAgentCircuitBreakerReset
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/{ComputerId}/ephemeral-agent-circuit-breaker/reset?` and deserializes to `OpResultCircuitBreakerState`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/{ComputerId}/ephemeral-agent-circuit-breaker/reset?` and deserializes to [OpResultCircuitBreakerState](../models/OpResultCircuitBreakerState.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Send-ComputersEphemeralAgentCircuitBreakerReset
 
 ## Outputs
 
-- `OpResultCircuitBreakerState` records produced by `ImmyBotApiService.POST`
+- [OpResultCircuitBreakerState](../models/OpResultCircuitBreakerState.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

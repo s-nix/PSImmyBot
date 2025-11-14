@@ -10,7 +10,7 @@ title: RuntimeMethodHandle
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RuntimeMethodHandle>` |
+| Implements | IEquatable<[RuntimeMethodHandle](RuntimeMethodHandle.md)> |
 | Source | `Models/RuntimeMethodHandle.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: RuntimeMethodHandle
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Value | `IntPtr` | Reference type (nullable) | — |
+| Value | [IntPtr](IntPtr.md) | Reference type (nullable) | — |
 
 ## Serialization
 

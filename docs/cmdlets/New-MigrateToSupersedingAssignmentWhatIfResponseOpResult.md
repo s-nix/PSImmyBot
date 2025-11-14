@@ -27,7 +27,7 @@ title: New-MigrateToSupersedingAssignmentWhatIfResponseOpResult
 | DateCreatedUtc | `DateTimeOffset` | True | — | All | None |
 | IsSuccess | `Boolean` | True | — | All | None |
 | Reason | `String` | False | — | All | None |
-| Value | `MigrateToSupersedingAssignmentWhatIfResponse` | True | — | All | None |
+| Value | [MigrateToSupersedingAssignmentWhatIfResponse](../models/MigrateToSupersedingAssignmentWhatIfResponse.md) | True | — | All | None |
 
 ### Parameter sets
 

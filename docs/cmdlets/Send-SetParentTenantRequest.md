@@ -24,7 +24,7 @@ title: Send-SetParentTenantRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `SetParentTenantRequest` | True | — | All | None |
+| PayloadBody | [SetParentTenantRequest](../models/SetParentTenantRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

@@ -10,7 +10,7 @@ title: PersonTag
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<PersonTag>` |
+| Implements | IEquatable<[PersonTag](PersonTag.md)> |
 | Source | `Models/PersonTag.cs` |
 
 ## Overview
@@ -21,8 +21,8 @@ title: PersonTag
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | EntityId | `int` | No (value type) | — |
-| Person | `Person` | Reference type (nullable) | — |
-| Tag | `Tag` | Reference type (nullable) | — |
+| Person | [Person](Person.md) | Reference type (nullable) | — |
+| Tag | [Tag](Tag.md) | Reference type (nullable) | — |
 | TagId | `int` | No (value type) | — |
 
 ## Serialization

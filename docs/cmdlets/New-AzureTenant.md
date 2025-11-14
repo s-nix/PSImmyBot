@@ -25,12 +25,12 @@ title: New-AzureTenant
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | AzureTenantLinks | `ICollection`1` | False | — | All | None |
-| AzureTenantType | `AzTenantType` | True | — | All | None |
-| ConsentDetails | `AzureTenantConsentDetails` | True | — | All | None |
-| InfoSyncedFromAzure | `AzureTenantInfo` | True | — | All | None |
-| LastGetTenantInfoSyncResult | `AzureSyncResult` | True | — | All | None |
-| LastGetUsersSyncResult | `AzureSyncResult` | True | — | All | None |
-| ParentPartner | `AzureTenant` | True | — | All | None |
+| AzureTenantType | [AzTenantType](../models/AzTenantType.md) | True | — | All | None |
+| ConsentDetails | [AzureTenantConsentDetails](../models/AzureTenantConsentDetails.md) | True | — | All | None |
+| InfoSyncedFromAzure | [AzureTenantInfo](../models/AzureTenantInfo.md) | True | — | All | None |
+| LastGetTenantInfoSyncResult | [AzureSyncResult](../models/AzureSyncResult.md) | True | — | All | None |
+| LastGetUsersSyncResult | [AzureSyncResult](../models/AzureSyncResult.md) | True | — | All | None |
+| ParentPartner | [AzureTenant](../models/AzureTenant.md) | True | — | All | None |
 | PartnerPrincipalId | `String` | False | — | All | None |
 | PrincipalId | `String` | False | — | All | None |
 

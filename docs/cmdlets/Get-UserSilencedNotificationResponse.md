@@ -10,7 +10,7 @@ title: Get-UserSilencedNotificationResponse
 | Source | `Cmdlets/GetUserSilencedNotificationResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/notifications? |
-| Return Type | `List<UserSilencedNotificationResponse>` |
+| Return Type | List<[UserSilencedNotificationResponse](../models/UserSilencedNotificationResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-UserSilencedNotificationResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/notifications?` and deserializes to `List<UserSilencedNotificationResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/notifications?` and deserializes to List<[UserSilencedNotificationResponse](../models/UserSilencedNotificationResponse.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<UserSilencedNotificationResponse>` records produced by `ImmyBotApiService.GET`
+- List<[UserSilencedNotificationResponse](../models/UserSilencedNotificationResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

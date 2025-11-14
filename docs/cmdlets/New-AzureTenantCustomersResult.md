@@ -25,7 +25,7 @@ title: New-AzureTenantCustomersResult
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | PartnerPrincipalId | `String` | False | — | All | None |
-| Result | `AzureTenantCustomerICollectionAzureErrorOneOf` | True | — | All | None |
+| Result | [AzureTenantCustomerICollectionAzureErrorOneOf](../models/AzureTenantCustomerICollectionAzureErrorOneOf.md) | True | — | All | None |
 
 ### Parameter sets
 

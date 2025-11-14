@@ -10,7 +10,7 @@ title: DefaultScriptTimeouts
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DefaultScriptTimeouts>` |
+| Implements | IEquatable<[DefaultScriptTimeouts](DefaultScriptTimeouts.md)> |
 | Source | `Models/DefaultScriptTimeouts.cs` |
 
 ## Overview

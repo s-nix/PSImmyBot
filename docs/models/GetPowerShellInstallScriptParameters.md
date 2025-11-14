@@ -10,7 +10,7 @@ title: GetPowerShellInstallScriptParameters
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetPowerShellInstallScriptParameters>` |
+| Implements | IEquatable<[GetPowerShellInstallScriptParameters](GetPowerShellInstallScriptParameters.md)> |
 | Source | `Models/GetPowerShellInstallScriptParameters.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetPowerShellInstallScriptParameters
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Platform | `Platform` | No (value type) | — |
+| Platform | [Platform](Platform.md) | No (value type) | — |
 | TargetExternalClientId | `string` | Reference type (nullable) | — |
 
 ## Serialization

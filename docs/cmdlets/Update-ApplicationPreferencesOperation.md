@@ -10,7 +10,7 @@ title: Update-ApplicationPreferencesOperation
 | Source | `Cmdlets/UpdateApplicationPreferencesOperation.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/preferences/application? |
-| Return Type | `List<ApplicationPreferencesOperation>, ApplicationPreferences` |
+| Return Type | List<[ApplicationPreferencesOperation](../models/ApplicationPreferencesOperation.md)>, [ApplicationPreferences](../models/ApplicationPreferences.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Update-ApplicationPreferencesOperation
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/preferences/application?` and deserializes to `List<ApplicationPreferencesOperation>, ApplicationPreferences`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/preferences/application?` and deserializes to List<[ApplicationPreferencesOperation](../models/ApplicationPreferencesOperation.md)>, [ApplicationPreferences](../models/ApplicationPreferences.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Update-ApplicationPreferencesOperation
 
 ## Outputs
 
-- `List<ApplicationPreferencesOperation>, ApplicationPreferences` records produced by `ImmyBotApiService.PATCH`
+- List<[ApplicationPreferencesOperation](../models/ApplicationPreferencesOperation.md)>, [ApplicationPreferences](../models/ApplicationPreferences.md) records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

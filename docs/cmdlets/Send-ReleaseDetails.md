@@ -24,7 +24,7 @@ title: Send-ReleaseDetails
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ReleaseDetails` | True | — | All | None |
+| PayloadBody | [ReleaseDetails](../models/ReleaseDetails.md) | True | — | All | None |
 
 ### Parameter sets
 

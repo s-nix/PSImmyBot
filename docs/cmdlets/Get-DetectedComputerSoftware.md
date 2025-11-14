@@ -10,7 +10,7 @@ title: Get-DetectedComputerSoftware
 | Source | `Cmdlets/GetDetectedComputerSoftware.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/tenants/software-from-inventory/dx? |
-| Return Type | `List<DetectedComputerSoftwareResponse>` |
+| Return Type | List<[DetectedComputerSoftwareResponse](../models/DetectedComputerSoftwareResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Get-DetectedComputerSoftware
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/software-from-inventory/dx?` and deserializes to `List<DetectedComputerSoftwareResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/software-from-inventory/dx?` and deserializes to List<[DetectedComputerSoftwareResponse](../models/DetectedComputerSoftwareResponse.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets
@@ -34,7 +34,7 @@ title: Get-DetectedComputerSoftware
 
 ## Outputs
 
-- `List<DetectedComputerSoftwareResponse>` records produced by `ImmyBotApiService.GET`
+- List<[DetectedComputerSoftwareResponse](../models/DetectedComputerSoftwareResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

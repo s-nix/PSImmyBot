@@ -10,7 +10,7 @@ title: CheckTenantPartnerStatusResponseBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CheckTenantPartnerStatusResponseBody>` |
+| Implements | IEquatable<[CheckTenantPartnerStatusResponseBody](CheckTenantPartnerStatusResponseBody.md)> |
 | Source | `Models/CheckTenantPartnerStatusResponseBody.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: CheckTenantPartnerStatusResponseBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AzureTenantType | `AzTenantType` | No (value type) | — |
+| AzureTenantType | [AzTenantType](AzTenantType.md) | No (value type) | — |
 | PartnerPrincipalId | `string` | Reference type (nullable) | — |
 | TenantPrincipalId | `string` | Reference type (nullable) | — |
 

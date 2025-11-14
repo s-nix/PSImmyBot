@@ -24,7 +24,7 @@ title: New-ComputerInventoryTaskScriptResult
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Computer | `Computer` | True | — | All | None |
+| Computer | [Computer](../models/Computer.md) | True | — | All | None |
 | ComputerId | `Int32` | True | — | All | None |
 | InventoryKey | `String` | False | — | All | None |
 | LatestErrorResult | `Object` | False | — | All | None |

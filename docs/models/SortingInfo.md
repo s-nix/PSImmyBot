@@ -10,7 +10,7 @@ title: SortingInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SortingInfo>` |
+| Implements | IEquatable<[SortingInfo](SortingInfo.md)> |
 | Source | `Models/SortingInfo.cs` |
 
 ## Overview

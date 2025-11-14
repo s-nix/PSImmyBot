@@ -28,7 +28,7 @@ title: New-DynamicFormBindResultWithConvertedParameters
 | ConvertedParameters | `IDictionary`2` | False | — | All | None |
 | HasErrors | `Boolean` | True | — | All | None |
 | ParameterSetName | `String` | False | — | All | None |
-| ShowCommandInfo | `ShowCommandInfo` | True | — | All | None |
+| ShowCommandInfo | [ShowCommandInfo](../models/ShowCommandInfo.md) | True | — | All | None |
 
 ### Parameter sets
 

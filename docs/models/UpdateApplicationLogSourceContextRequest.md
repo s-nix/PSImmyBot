@@ -10,7 +10,7 @@ title: UpdateApplicationLogSourceContextRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateApplicationLogSourceContextRequest>` |
+| Implements | IEquatable<[UpdateApplicationLogSourceContextRequest](UpdateApplicationLogSourceContextRequest.md)> |
 | Source | `Models/UpdateApplicationLogSourceContextRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: UpdateApplicationLogSourceContextRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| MinimumLevel | `LogLevel` | No (value type) | — |
+| MinimumLevel | [LogLevel](LogLevel.md) | No (value type) | — |
 | SourceContext | `string` | Reference type (nullable) | — |
 
 ## Serialization

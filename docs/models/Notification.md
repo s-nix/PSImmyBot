@@ -10,7 +10,7 @@ title: Notification
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Notification>` |
+| Implements | IEquatable<[Notification](Notification.md)> |
 | Source | `Models/Notification.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: Notification
 | AcknowledgedByUserAzureId | `string` | Reference type (nullable) | — |
 | AcknowledgedByUserDisplayName | `string` | Reference type (nullable) | — |
 | AcknowledgedByUserId | `int?` | Yes (nullable value type) | — |
-| Acknowledgement | `NotificationAcknowledgement` | No (value type) | — |
+| Acknowledgement | [NotificationAcknowledgement](NotificationAcknowledgement.md) | No (value type) | — |
 | AdminOnly | `bool` | No (value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Description | `string` | Reference type (nullable) | — |
@@ -33,11 +33,11 @@ title: Notification
 | OnlyForUserId | `int?` | Yes (nullable value type) | — |
 | OutputData | `object` | Reference type (nullable) | — |
 | Resolved | `bool` | No (value type) | — |
-| Severity | `NotificationSeverity` | No (value type) | — |
+| Severity | [NotificationSeverity](NotificationSeverity.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | Title | `string` | Reference type (nullable) | — |
 | TriggeredByUserId | `int?` | Yes (nullable value type) | — |
-| Type | `NotificationType` | No (value type) | — |
+| Type | [NotificationType](NotificationType.md) | No (value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

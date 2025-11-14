@@ -10,7 +10,7 @@ title: RecommendedTargetAssignmentApproval
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RecommendedTargetAssignmentApproval>` |
+| Implements | IEquatable<[RecommendedTargetAssignmentApproval](RecommendedTargetAssignmentApproval.md)> |
 | Source | `Models/RecommendedTargetAssignmentApproval.cs` |
 
 ## Overview
@@ -22,11 +22,11 @@ title: RecommendedTargetAssignmentApproval
 | --- | --- | --- | --- |
 | Approved | `bool` | No (value type) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | GlobalTargetAssignmentId | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

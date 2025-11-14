@@ -33,7 +33,7 @@ title: New-GetProviderLinkResponse
 | GetFormSchemaFailedMessage | `String` | False | — | All | None |
 | GetLatestAgentVersionFailedMessage | `String` | False | — | All | None |
 | GetProviderFailedMessage | `String` | False | — | All | None |
-| HealthStatus | `HealthStatus` | True | — | All | None |
+| HealthStatus | [HealthStatus](../models/HealthStatus.md) | True | — | All | None |
 | HealthStatusMessage | `String` | False | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | IncludeClientsFailedMessage | `String` | False | — | All | None |

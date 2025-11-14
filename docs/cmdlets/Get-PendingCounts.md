@@ -10,7 +10,7 @@ title: Get-PendingCounts
 | Source | `Cmdlets/GetPendingCounts.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-agents/pending-counts? |
-| Return Type | `GetPendingCountsResponse` |
+| Return Type | [GetPendingCountsResponse](../models/GetPendingCountsResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-PendingCounts
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-agents/pending-counts?` and deserializes to `GetPendingCountsResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-agents/pending-counts?` and deserializes to [GetPendingCountsResponse](../models/GetPendingCountsResponse.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `GetPendingCountsResponse` records produced by `ImmyBotApiService.GET`
+- [GetPendingCountsResponse](../models/GetPendingCountsResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

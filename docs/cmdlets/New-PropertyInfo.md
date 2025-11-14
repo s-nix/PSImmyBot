@@ -24,21 +24,21 @@ title: New-PropertyInfo
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Attributes | `PropertyAttributes` | True | — | All | None |
+| Attributes | [PropertyAttributes](../models/PropertyAttributes.md) | True | — | All | None |
 | CanRead | `Boolean` | True | — | All | None |
 | CanWrite | `Boolean` | True | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
-| DeclaringType | `Type` | True | — | All | None |
-| GetMethod | `MethodInfo` | True | — | All | None |
+| DeclaringType | [Type](../models/Type.md) | True | — | All | None |
+| GetMethod | [MethodInfo](../models/MethodInfo.md) | True | — | All | None |
 | IsCollectible | `Boolean` | True | — | All | None |
 | IsSpecialName | `Boolean` | True | — | All | None |
-| MemberType | `MemberTypes` | True | — | All | None |
+| MemberType | [MemberTypes](../models/MemberTypes.md) | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
-| Module | `Module` | True | — | All | None |
+| Module | [Module](../models/Module.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| PropertyType | `Type` | True | — | All | None |
-| ReflectedType | `Type` | True | — | All | None |
-| SetMethod | `MethodInfo` | True | — | All | None |
+| PropertyType | [Type](../models/Type.md) | True | — | All | None |
+| ReflectedType | [Type](../models/Type.md) | True | — | All | None |
+| SetMethod | [MethodInfo](../models/MethodInfo.md) | True | — | All | None |
 
 ### Parameter sets
 

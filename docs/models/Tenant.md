@@ -10,7 +10,7 @@ title: Tenant
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Tenant>` |
+| Implements | IEquatable<[Tenant](Tenant.md)> |
 | Source | `Models/Tenant.cs` |
 
 ## Overview
@@ -21,39 +21,39 @@ title: Tenant
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Active | `bool` | No (value type) | — |
-| AzureTenantLink | `AzureTenantLink` | Reference type (nullable) | — |
-| Brandings | `ICollection<Branding>` | Reference type (nullable) | — |
-| Computers | `ICollection<Computer>` | Reference type (nullable) | — |
+| AzureTenantLink | [AzureTenantLink](AzureTenantLink.md) | Reference type (nullable) | — |
+| Brandings | ICollection<[Branding](Branding.md)> | Reference type (nullable) | — |
+| Computers | ICollection<[Computer](Computer.md)> | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| DetectedComputerSoftware | `ICollection<DetectedComputerSoftware>` | Reference type (nullable) | — |
+| DetectedComputerSoftware | ICollection<[DetectedComputerSoftware](DetectedComputerSoftware.md)> | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | IsMsp | `bool` | No (value type) | — |
-| Licenses | `ICollection<License>` | Reference type (nullable) | — |
-| MaintenanceSessions | `ICollection<MaintenanceSession>` | Reference type (nullable) | — |
-| MaintenanceTasks | `ICollection<TenantMaintenanceTask>` | Reference type (nullable) | — |
+| Licenses | ICollection<[License](License.md)> | Reference type (nullable) | — |
+| MaintenanceSessions | ICollection<[MaintenanceSession](MaintenanceSession.md)> | Reference type (nullable) | — |
+| MaintenanceTasks | ICollection<[TenantMaintenanceTask](TenantMaintenanceTask.md)> | Reference type (nullable) | — |
 | MarkedForDeletionAtUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
-| Media | `ICollection<TenantMedia>` | Reference type (nullable) | — |
+| Media | ICollection<[TenantMedia](TenantMedia.md)> | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OwnedProviderLinks | `ICollection<ProviderLink>` | Reference type (nullable) | — |
-| OwnedTenants | `ICollection<Tenant>` | Reference type (nullable) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
+| OwnedProviderLinks | ICollection<[ProviderLink](ProviderLink.md)> | Reference type (nullable) | — |
+| OwnedTenants | ICollection<[Tenant](Tenant.md)> | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | ParentTenantId | `int?` | Yes (nullable value type) | — |
-| Persons | `ICollection<Person>` | Reference type (nullable) | — |
-| ProviderClients | `ICollection<ProviderClient>` | Reference type (nullable) | — |
-| Schedules | `ICollection<Schedule>` | Reference type (nullable) | — |
-| Scripts | `ICollection<TenantScript>` | Reference type (nullable) | — |
+| Persons | ICollection<[Person](Person.md)> | Reference type (nullable) | — |
+| ProviderClients | ICollection<[ProviderClient](ProviderClient.md)> | Reference type (nullable) | — |
+| Schedules | ICollection<[Schedule](Schedule.md)> | Reference type (nullable) | — |
+| Scripts | ICollection<[TenantScript](TenantScript.md)> | Reference type (nullable) | — |
 | Slug | `string` | Reference type (nullable) | — |
-| SmtpConfig | `SmtpConfig` | Reference type (nullable) | — |
-| Tags | `ICollection<Tag>` | Reference type (nullable) | — |
+| SmtpConfig | [SmtpConfig](SmtpConfig.md) | Reference type (nullable) | — |
+| Tags | ICollection<[Tag](Tag.md)> | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
-| TenantPreferences | `TenantPreferences` | Reference type (nullable) | — |
-| TenantSoftware | `ICollection<TenantSoftware>` | Reference type (nullable) | — |
-| TenantTagAuthorizations | `ICollection<TenantTagAuthorization>` | Reference type (nullable) | — |
-| TenantTags | `ICollection<TenantTag>` | Reference type (nullable) | — |
+| TenantPreferences | [TenantPreferences](TenantPreferences.md) | Reference type (nullable) | — |
+| TenantSoftware | ICollection<[TenantSoftware](TenantSoftware.md)> | Reference type (nullable) | — |
+| TenantTagAuthorizations | ICollection<[TenantTagAuthorization](TenantTagAuthorization.md)> | Reference type (nullable) | — |
+| TenantTags | ICollection<[TenantTag](TenantTag.md)> | Reference type (nullable) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| Users | `ICollection<User>` | Reference type (nullable) | — |
+| Users | ICollection<[User](User.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

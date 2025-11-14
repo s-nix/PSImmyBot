@@ -10,7 +10,7 @@ title: RerunSessionsRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RerunSessionsRequestBody>` |
+| Implements | IEquatable<[RerunSessionsRequestBody](RerunSessionsRequestBody.md)> |
 | Source | `Models/RerunSessionsRequestBody.cs` |
 
 ## Overview

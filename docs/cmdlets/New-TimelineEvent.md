@@ -26,12 +26,12 @@ title: New-TimelineEvent
 | --- | --- | --- | --- | --- | --- |
 | Data | `String` | False | — | All | None |
 | DateUtc | `DateTimeOffset` | True | — | All | None |
-| EventType | `TimelineEventType` | True | — | All | None |
+| EventType | [TimelineEventType](../models/TimelineEventType.md) | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | Identifier | `String` | False | — | All | None |
 | Message | `String` | False | — | All | None |
 | ObjectId | `String` | False | — | All | None |
-| ObjectType | `TimelineObjectType` | True | — | All | None |
+| ObjectType | [TimelineObjectType](../models/TimelineObjectType.md) | True | — | All | None |
 
 ### Parameter sets
 

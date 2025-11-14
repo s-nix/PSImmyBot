@@ -10,7 +10,7 @@ title: GetMaintenanceTaskParameterResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetMaintenanceTaskParameterResponse>` |
+| Implements | IEquatable<[GetMaintenanceTaskParameterResponse](GetMaintenanceTaskParameterResponse.md)> |
 | Source | `Models/GetMaintenanceTaskParameterResponse.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: GetMaintenanceTaskParameterResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DataType | `MaintenanceTaskParameterType` | No (value type) | — |
-| DefaultMedia | `MediaResponseBase` | Reference type (nullable) | — |
-| DefaultMediaDatabaseType | `DatabaseType` | No (value type) | — |
+| DataType | [MaintenanceTaskParameterType](MaintenanceTaskParameterType.md) | No (value type) | — |
+| DefaultMedia | [MediaResponseBase](MediaResponseBase.md) | Reference type (nullable) | — |
+| DefaultMediaDatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DefaultMediaId | `int?` | Yes (nullable value type) | — |
 | DefaultValue | `string` | Reference type (nullable) | — |
 | Hidden | `bool` | No (value type) | — |

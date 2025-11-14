@@ -10,7 +10,7 @@ title: AzureTenantUserSyncResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantUserSyncResult>` |
+| Implements | IEquatable<[AzureTenantUserSyncResult](AzureTenantUserSyncResult.md)> |
 | Source | `Models/AzureTenantUserSyncResult.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: AzureTenantUserSyncResult
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| FailedReason | `AzureError` | Reference type (nullable) | — |
+| FailedReason | [AzureError](AzureError.md) | Reference type (nullable) | — |
 | ImmyTenantsSyncedUsers | `IDictionary<string, int>` | Reference type (nullable) | — |
 | NumUsersSynced | `int` | No (value type) | — |
 | PrincipalId | `string` | Reference type (nullable) | — |

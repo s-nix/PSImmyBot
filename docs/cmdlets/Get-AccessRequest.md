@@ -10,7 +10,7 @@ title: Get-AccessRequest
 | Source | `Cmdlets/GetAccessRequest.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/persons/requesting-access? |
-| Return Type | `List<AccessRequestResponse>` |
+| Return Type | List<[AccessRequestResponse](../models/AccessRequestResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-AccessRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/persons/requesting-access?` and deserializes to `List<AccessRequestResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/persons/requesting-access?` and deserializes to List<[AccessRequestResponse](../models/AccessRequestResponse.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<AccessRequestResponse>` records produced by `ImmyBotApiService.GET`
+- List<[AccessRequestResponse](../models/AccessRequestResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: AddChangeRequestCommentBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AddChangeRequestCommentBody>` |
+| Implements | IEquatable<[AddChangeRequestCommentBody](AddChangeRequestCommentBody.md)> |
 | Source | `Models/AddChangeRequestCommentBody.cs` |
 
 ## Overview

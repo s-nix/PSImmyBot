@@ -31,8 +31,8 @@ title: New-CalculateTargetsRequest
 | ProviderDeviceGroupType | `Nullable`1` | False | — | All | None |
 | ProviderLinkId | `Nullable`1` | False | — | All | None |
 | Target | `String` | False | — | All | None |
-| TargetGroupFilter | `TargetGroupFilter` | True | — | All | None |
-| TargetType | `TargetType` | True | — | All | None |
+| TargetGroupFilter | [TargetGroupFilter](../models/TargetGroupFilter.md) | True | — | All | None |
+| TargetType | [TargetType](../models/TargetType.md) | True | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets

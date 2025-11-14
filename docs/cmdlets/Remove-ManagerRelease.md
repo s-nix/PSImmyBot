@@ -24,7 +24,7 @@ title: Remove-ManagerRelease
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Tag | `SemanticVersion` | True | — | All | None |
+| Tag | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 
 ### Parameter sets
 

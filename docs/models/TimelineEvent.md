@@ -10,7 +10,7 @@ title: TimelineEvent
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TimelineEvent>` |
+| Implements | IEquatable<[TimelineEvent](TimelineEvent.md)> |
 | Source | `Models/TimelineEvent.cs` |
 
 ## Overview
@@ -22,12 +22,12 @@ title: TimelineEvent
 | --- | --- | --- | --- |
 | Data | `string` | Reference type (nullable) | — |
 | DateUtc | `DateTimeOffset` | No (value type) | — |
-| EventType | `TimelineEventType` | No (value type) | — |
+| EventType | [TimelineEventType](TimelineEventType.md) | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Identifier | `string` | Reference type (nullable) | — |
 | Message | `string` | Reference type (nullable) | — |
 | ObjectId | `string` | Reference type (nullable) | — |
-| ObjectType | `TimelineObjectType` | No (value type) | — |
+| ObjectType | [TimelineObjectType](TimelineObjectType.md) | No (value type) | — |
 
 ## Serialization
 

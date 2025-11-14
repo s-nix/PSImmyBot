@@ -10,7 +10,7 @@ title: ChangeRequestCommentResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ChangeRequestCommentResponse>` |
+| Implements | IEquatable<[ChangeRequestCommentResponse](ChangeRequestCommentResponse.md)> |
 | Source | `Models/ChangeRequestCommentResponse.cs` |
 
 ## Overview

@@ -25,7 +25,7 @@ title: New-BeginAuthCodeFlowRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | AllowSilentRefresh | `Boolean` | True | — | All | None |
-| OauthConsentData | `OauthConsentData` | True | — | All | None |
+| OauthConsentData | [OauthConsentData](../models/OauthConsentData.md) | True | — | All | None |
 
 ### Parameter sets
 

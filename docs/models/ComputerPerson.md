@@ -10,7 +10,7 @@ title: ComputerPerson
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerPerson>` |
+| Implements | IEquatable<[ComputerPerson](ComputerPerson.md)> |
 | Source | `Models/ComputerPerson.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: ComputerPerson
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int` | No (value type) | — |
-| Person | `Person` | Reference type (nullable) | — |
+| Person | [Person](Person.md) | Reference type (nullable) | — |
 | PersonId | `int` | No (value type) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: AzureTenantLink
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantLink>` |
+| Implements | IEquatable<[AzureTenantLink](AzureTenantLink.md)> |
 | Source | `Models/AzureTenantLink.cs` |
 
 ## Overview
@@ -21,11 +21,11 @@ title: AzureTenantLink
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | AzTenantId | `string` | Reference type (nullable) | — |
-| AzureTenant | `AzureTenant` | Reference type (nullable) | — |
+| AzureTenant | [AzureTenant](AzureTenant.md) | Reference type (nullable) | — |
 | ImmyTenantId | `int` | No (value type) | — |
-| LimitToDomains | `ICollection<AzureTenantLinkDomainFilter>` | Reference type (nullable) | — |
+| LimitToDomains | ICollection<[AzureTenantLinkDomainFilter](AzureTenantLinkDomainFilter.md)> | Reference type (nullable) | — |
 | ShouldLimitDomains | `bool` | No (value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 
 ## Serialization
 

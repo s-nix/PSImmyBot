@@ -10,7 +10,7 @@ title: ReleaseDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ReleaseDetails>` |
+| Implements | IEquatable<[ReleaseDetails](ReleaseDetails.md)> |
 | Source | `Models/ReleaseDetails.cs` |
 
 ## Overview
@@ -21,11 +21,11 @@ title: ReleaseDetails
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ImmyAgentInstallerFileVersion | `string` | Reference type (nullable) | — |
-| ImmyAgentInstallerVersion | `SemanticVersion` | Reference type (nullable) | — |
+| ImmyAgentInstallerVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | PublishedDate | `DateTimeOffset?` | Yes (nullable value type) | — |
-| ReleaseChannel | `ReleaseChannel` | No (value type) | — |
+| ReleaseChannel | [ReleaseChannel](ReleaseChannel.md) | No (value type) | — |
 | ReleaseNotes | `string` | Reference type (nullable) | — |
-| Tag | `SemanticVersion` | Reference type (nullable) | — |
+| Tag | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 
 ## Serialization
 

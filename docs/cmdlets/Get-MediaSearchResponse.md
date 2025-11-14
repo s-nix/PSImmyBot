@@ -10,7 +10,7 @@ title: Get-MediaSearchResponse
 | Source | `Cmdlets/GetMediaSearchResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/media/search? |
-| Return Type | `MediaSearchResponse` |
+| Return Type | [MediaSearchResponse](../models/MediaSearchResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MediaSearchResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/media/search?` and deserializes to `MediaSearchResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/media/search?` and deserializes to [MediaSearchResponse](../models/MediaSearchResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -37,7 +37,7 @@ title: Get-MediaSearchResponse
 
 ## Outputs
 
-- `MediaSearchResponse` records produced by `ImmyBotApiService.GET`
+- [MediaSearchResponse](../models/MediaSearchResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

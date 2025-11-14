@@ -25,7 +25,7 @@ title: New-CircuitBreakerState
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | CircuitState | `String` | False | — | All | None |
-| LastException | `LastException` | True | — | All | None |
+| LastException | [LastException](../models/LastException.md) | True | — | All | None |
 | PolicyName | `String` | False | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: SubscriptionFeatureBasicInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SubscriptionFeatureBasicInfo>` |
+| Implements | IEquatable<[SubscriptionFeatureBasicInfo](SubscriptionFeatureBasicInfo.md)> |
 | Source | `Models/SubscriptionFeatureBasicInfo.cs` |
 
 ## Overview
@@ -23,9 +23,9 @@ title: SubscriptionFeatureBasicInfo
 | FeatureDescription | `string` | Reference type (nullable) | — |
 | FeatureId | `string` | Reference type (nullable) | — |
 | FeatureName | `string` | Reference type (nullable) | — |
-| Levels | `ICollection<SubscriptionFeatureLevelInfo>` | Reference type (nullable) | — |
-| Status | `SubscriptionFeatureStatus` | No (value type) | — |
-| Type | `SubscriptionFeatureType` | No (value type) | — |
+| Levels | ICollection<[SubscriptionFeatureLevelInfo](SubscriptionFeatureLevelInfo.md)> | Reference type (nullable) | — |
+| Status | [SubscriptionFeatureStatus](SubscriptionFeatureStatus.md) | No (value type) | — |
+| Type | [SubscriptionFeatureType](SubscriptionFeatureType.md) | No (value type) | — |
 | Unit | `string` | Reference type (nullable) | — |
 
 ## Serialization

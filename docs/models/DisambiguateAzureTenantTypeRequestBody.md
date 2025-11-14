@@ -10,7 +10,7 @@ title: DisambiguateAzureTenantTypeRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DisambiguateAzureTenantTypeRequestBody>` |
+| Implements | IEquatable<[DisambiguateAzureTenantTypeRequestBody](DisambiguateAzureTenantTypeRequestBody.md)> |
 | Source | `Models/DisambiguateAzureTenantTypeRequestBody.cs` |
 
 ## Overview

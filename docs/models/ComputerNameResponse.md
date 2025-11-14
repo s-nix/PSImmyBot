@@ -10,7 +10,7 @@ title: ComputerNameResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerNameResponse>` |
+| Implements | IEquatable<[ComputerNameResponse](ComputerNameResponse.md)> |
 | Source | `Models/ComputerNameResponse.cs` |
 
 ## Overview

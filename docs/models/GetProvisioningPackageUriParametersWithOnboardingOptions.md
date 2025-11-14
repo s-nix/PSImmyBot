@@ -10,7 +10,7 @@ title: GetProvisioningPackageUriParametersWithOnboardingOptions
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetProvisioningPackageUriParametersWithOnboardingOptions>` |
+| Implements | IEquatable<[GetProvisioningPackageUriParametersWithOnboardingOptions](GetProvisioningPackageUriParametersWithOnboardingOptions.md)> |
 | Source | `Models/GetProvisioningPackageUriParametersWithOnboardingOptions.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: GetProvisioningPackageUriParametersWithOnboardingOptions
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| OnboardingOptions | `AgentOnboardingOptions` | Reference type (nullable) | — |
-| PpkgOptions | `ProvisioningPackageOptions` | Reference type (nullable) | — |
+| OnboardingOptions | [AgentOnboardingOptions](AgentOnboardingOptions.md) | Reference type (nullable) | — |
+| PpkgOptions | [ProvisioningPackageOptions](ProvisioningPackageOptions.md) | Reference type (nullable) | — |
 | TargetExternalClientId | `string` | Reference type (nullable) | — |
 
 ## Serialization

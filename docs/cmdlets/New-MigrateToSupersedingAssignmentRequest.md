@@ -25,7 +25,7 @@ title: New-MigrateToSupersedingAssignmentRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | NewTaskId | `Int32` | True | — | All | None |
-| NewTaskType | `DatabaseType` | True | — | All | None |
+| NewTaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | OldAssignmentId | `Int32` | True | — | All | None |
 
 ### Parameter sets

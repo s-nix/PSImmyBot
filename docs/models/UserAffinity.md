@@ -10,7 +10,7 @@ title: UserAffinity
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UserAffinity>` |
+| Implements | IEquatable<[UserAffinity](UserAffinity.md)> |
 | Source | `Models/UserAffinity.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: UserAffinity
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int` | No (value type) | — |
 | Date | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| Person | `Person` | Reference type (nullable) | — |
+| Person | [Person](Person.md) | Reference type (nullable) | — |
 | PersonId | `int` | No (value type) | — |
 
 ## Serialization

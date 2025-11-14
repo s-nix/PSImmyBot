@@ -10,7 +10,7 @@ title: RoleClaim
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RoleClaim>` |
+| Implements | IEquatable<[RoleClaim](RoleClaim.md)> |
 | Source | `Models/RoleClaim.cs` |
 
 ## Overview
@@ -26,7 +26,7 @@ title: RoleClaim
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| Role | `Role` | Reference type (nullable) | — |
+| Role | [Role](Role.md) | Reference type (nullable) | — |
 | RoleId | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |

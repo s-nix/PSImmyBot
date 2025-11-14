@@ -10,7 +10,7 @@ title: Get-CommandResult
 | Source | `Cmdlets/GetCommandResult.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/functions? |
-| Return Type | `List<CommandResultResponse>` |
+| Return Type | List<[CommandResultResponse](../models/CommandResultResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-CommandResult
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/functions?` and deserializes to `List<CommandResultResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/functions?` and deserializes to List<[CommandResultResponse](../models/CommandResultResponse.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<CommandResultResponse>` records produced by `ImmyBotApiService.GET`
+- List<[CommandResultResponse](../models/CommandResultResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

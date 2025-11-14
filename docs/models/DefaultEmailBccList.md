@@ -10,7 +10,7 @@ title: DefaultEmailBccList
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DefaultEmailBccList>` |
+| Implements | IEquatable<[DefaultEmailBccList](DefaultEmailBccList.md)> |
 | Source | `Models/DefaultEmailBccList.cs` |
 
 ## Overview

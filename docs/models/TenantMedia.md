@@ -10,7 +10,7 @@ title: TenantMedia
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantMedia>` |
+| Implements | IEquatable<[TenantMedia](TenantMedia.md)> |
 | Source | `Models/TenantMedia.cs` |
 
 ## Overview
@@ -20,10 +20,10 @@ title: TenantMedia
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Media | `Media` | Reference type (nullable) | — |
+| Media | [Media](Media.md) | Reference type (nullable) | — |
 | MediaId | `int` | No (value type) | — |
-| Relationship | `Relationship` | No (value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Relationship | [Relationship](Relationship.md) | No (value type) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

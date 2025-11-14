@@ -10,7 +10,7 @@ title: TenantTagAuthorization
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantTagAuthorization>` |
+| Implements | IEquatable<[TenantTagAuthorization](TenantTagAuthorization.md)> |
 | Source | `Models/TenantTagAuthorization.cs` |
 
 ## Overview
@@ -20,10 +20,10 @@ title: TenantTagAuthorization
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Relationship | `Relationship` | No (value type) | — |
-| Tag | `Tag` | Reference type (nullable) | — |
+| Relationship | [Relationship](Relationship.md) | No (value type) | — |
+| Tag | [Tag](Tag.md) | Reference type (nullable) | — |
 | TagId | `int` | No (value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

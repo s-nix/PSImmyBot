@@ -10,7 +10,7 @@ title: Get-AppRegistrationOptions
 | Source | `Cmdlets/GetAppRegistrationOptions.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/azure/app-registration-options? |
-| Return Type | `List<AppRegistrationOption>` |
+| Return Type | List<[AppRegistrationOption](../models/AppRegistrationOption.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-AppRegistrationOptions
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure/app-registration-options?` and deserializes to `List<AppRegistrationOption>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure/app-registration-options?` and deserializes to List<[AppRegistrationOption](../models/AppRegistrationOption.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<AppRegistrationOption>` records produced by `ImmyBotApiService.GET`
+- List<[AppRegistrationOption](../models/AppRegistrationOption.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

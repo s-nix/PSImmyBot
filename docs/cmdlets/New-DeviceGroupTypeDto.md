@@ -28,7 +28,7 @@ title: New-DeviceGroupTypeDto
 | DeviceGroupTypeId | `Guid` | True | — | All | None |
 | DisplayName | `String` | False | — | All | None |
 | ProviderTypeId | `Guid` | True | — | All | None |
-| TargetScope | `TargetScope` | True | — | All | None |
+| TargetScope | [TargetScope](../models/TargetScope.md) | True | — | All | None |
 
 ### Parameter sets
 

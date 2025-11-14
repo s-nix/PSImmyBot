@@ -10,7 +10,7 @@ title: ResolveAssignmentsForMaintenanceItemRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ResolveAssignmentsForMaintenanceItemRequest>` |
+| Implements | IEquatable<[ResolveAssignmentsForMaintenanceItemRequest](ResolveAssignmentsForMaintenanceItemRequest.md)> |
 | Source | `Models/ResolveAssignmentsForMaintenanceItemRequest.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ResolveAssignmentsForMaintenanceItemRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

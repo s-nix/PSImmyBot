@@ -10,7 +10,7 @@ title: Get-TenantInfoResult
 | Source | `Cmdlets/GetTenantInfoResult.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/azure/partner-tenant-infos? |
-| Return Type | `List<TenantInfoResult>` |
+| Return Type | List<[TenantInfoResult](../models/TenantInfoResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TenantInfoResult
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure/partner-tenant-infos?` and deserializes to `List<TenantInfoResult>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure/partner-tenant-infos?` and deserializes to List<[TenantInfoResult](../models/TenantInfoResult.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<TenantInfoResult>` records produced by `ImmyBotApiService.GET`
+- List<[TenantInfoResult](../models/TenantInfoResult.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

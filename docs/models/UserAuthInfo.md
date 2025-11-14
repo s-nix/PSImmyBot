@@ -10,7 +10,7 @@ title: UserAuthInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UserAuthInfo>` |
+| Implements | IEquatable<[UserAuthInfo](UserAuthInfo.md)> |
 | Source | `Models/UserAuthInfo.cs` |
 
 ## Overview

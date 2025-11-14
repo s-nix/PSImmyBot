@@ -10,7 +10,7 @@ title: Get-Claims
 | Source | `Cmdlets/GetClaims.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/users/claims? |
-| Return Type | `GetClaimsResponse` |
+| Return Type | [GetClaimsResponse](../models/GetClaimsResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Claims
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/users/claims?` and deserializes to `GetClaimsResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/users/claims?` and deserializes to [GetClaimsResponse](../models/GetClaimsResponse.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `GetClaimsResponse` records produced by `ImmyBotApiService.GET`
+- [GetClaimsResponse](../models/GetClaimsResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

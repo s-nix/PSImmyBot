@@ -10,7 +10,7 @@ title: Send-ImpersonationRequest
 | Source | `Cmdlets/SendImpersonationRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/users/{UserId}/impersonate? |
-| Return Type | `ImpersonationRequest, OpResult` |
+| Return Type | [ImpersonationRequest](../models/ImpersonationRequest.md), [OpResult](../models/OpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-ImpersonationRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/{UserId}/impersonate?` and deserializes to `ImpersonationRequest, OpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/{UserId}/impersonate?` and deserializes to [ImpersonationRequest](../models/ImpersonationRequest.md), [OpResult](../models/OpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ImpersonationRequest` | True | — | All | None |
+| PayloadBody | [ImpersonationRequest](../models/ImpersonationRequest.md) | True | — | All | None |
 | UserId | `Int32` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Send-ImpersonationRequest
 
 ## Outputs
 
-- `ImpersonationRequest, OpResult` records produced by `ImmyBotApiService.POST`
+- [ImpersonationRequest](../models/ImpersonationRequest.md), [OpResult](../models/OpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

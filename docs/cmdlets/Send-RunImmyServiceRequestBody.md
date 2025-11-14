@@ -24,7 +24,7 @@ title: Send-RunImmyServiceRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `RunImmyServiceRequestBody` | True | — | All | None |
+| PayloadBody | [RunImmyServiceRequestBody](../models/RunImmyServiceRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

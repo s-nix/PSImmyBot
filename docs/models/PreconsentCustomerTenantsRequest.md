@@ -10,7 +10,7 @@ title: PreconsentCustomerTenantsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<PreconsentCustomerTenantsRequest>` |
+| Implements | IEquatable<[PreconsentCustomerTenantsRequest](PreconsentCustomerTenantsRequest.md)> |
 | Source | `Models/PreconsentCustomerTenantsRequest.cs` |
 
 ## Overview

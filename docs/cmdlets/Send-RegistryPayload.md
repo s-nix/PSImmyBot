@@ -10,7 +10,7 @@ title: Send-RegistryPayload
 | Source | `Cmdlets/SendRegistryPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/computers/{ComputerId}/registry/values? |
-| Return Type | `RegistryPayload, RegistryValueDtoArrayOpResult` |
+| Return Type | [RegistryPayload](../models/RegistryPayload.md), [RegistryValueDtoArrayOpResult](../models/RegistryValueDtoArrayOpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-RegistryPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/{ComputerId}/registry/values?` and deserializes to `RegistryPayload, RegistryValueDtoArrayOpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/{ComputerId}/registry/values?` and deserializes to [RegistryPayload](../models/RegistryPayload.md), [RegistryValueDtoArrayOpResult](../models/RegistryValueDtoArrayOpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Int32` | True | — | All | None |
-| PayloadBody | `RegistryPayload` | True | — | All | None |
+| PayloadBody | [RegistryPayload](../models/RegistryPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-RegistryPayload
 
 ## Outputs
 
-- `RegistryPayload, RegistryValueDtoArrayOpResult` records produced by `ImmyBotApiService.POST`
+- [RegistryPayload](../models/RegistryPayload.md), [RegistryValueDtoArrayOpResult](../models/RegistryValueDtoArrayOpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

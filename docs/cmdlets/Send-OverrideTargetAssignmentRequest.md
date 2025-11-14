@@ -10,7 +10,7 @@ title: Send-OverrideTargetAssignmentRequest
 | Source | `Cmdlets/SendOverrideTargetAssignmentRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/global/{Id}/override? |
-| Return Type | `OverrideTargetAssignmentRequest, LocalTargetAssignmentResource` |
+| Return Type | [OverrideTargetAssignmentRequest](../models/OverrideTargetAssignmentRequest.md), [LocalTargetAssignmentResource](../models/LocalTargetAssignmentResource.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-OverrideTargetAssignmentRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/global/{Id}/override?` and deserializes to `OverrideTargetAssignmentRequest, LocalTargetAssignmentResource`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/global/{Id}/override?` and deserializes to [OverrideTargetAssignmentRequest](../models/OverrideTargetAssignmentRequest.md), [LocalTargetAssignmentResource](../models/LocalTargetAssignmentResource.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `OverrideTargetAssignmentRequest` | True | — | All | None |
+| PayloadBody | [OverrideTargetAssignmentRequest](../models/OverrideTargetAssignmentRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-OverrideTargetAssignmentRequest
 
 ## Outputs
 
-- `OverrideTargetAssignmentRequest, LocalTargetAssignmentResource` records produced by `ImmyBotApiService.POST`
+- [OverrideTargetAssignmentRequest](../models/OverrideTargetAssignmentRequest.md), [LocalTargetAssignmentResource](../models/LocalTargetAssignmentResource.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

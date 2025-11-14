@@ -26,7 +26,7 @@ title: New-MaintenanceSpecifier
 | --- | --- | --- | --- | --- | --- |
 | MaintenanceIdentifier | `String` | False | — | All | None |
 | MaintenanceName | `String` | False | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 
 ### Parameter sets
 

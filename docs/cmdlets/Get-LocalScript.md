@@ -10,7 +10,7 @@ title: Get-LocalScript
 | Source | `Cmdlets/GetLocalScript.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/local/{ScriptId}? |
-| Return Type | `GetLocalScriptResponse` |
+| Return Type | [GetLocalScriptResponse](../models/GetLocalScriptResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-LocalScript
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/local/{ScriptId}?` and deserializes to `GetLocalScriptResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/local/{ScriptId}?` and deserializes to [GetLocalScriptResponse](../models/GetLocalScriptResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-LocalScript
 
 ## Outputs
 
-- `GetLocalScriptResponse` records produced by `ImmyBotApiService.GET`
+- [GetLocalScriptResponse](../models/GetLocalScriptResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: Oauth2AccessTokenErrorResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Oauth2AccessTokenErrorResponse>` |
+| Implements | IEquatable<[Oauth2AccessTokenErrorResponse](Oauth2AccessTokenErrorResponse.md)> |
 | Source | `Models/Oauth2AccessTokenErrorResponse.cs` |
 
 ## Overview

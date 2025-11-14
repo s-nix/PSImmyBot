@@ -28,10 +28,10 @@ title: New-ScriptSearchResult
 | Id | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | Owned | `Boolean` | True | — | All | None |
-| ScriptCategory | `ScriptCategory` | True | — | All | None |
-| ScriptExecutionContext | `ScriptExecutionContext` | True | — | All | None |
-| ScriptLanguage | `ScriptLanguage` | True | — | All | None |
-| ScriptType | `DatabaseType` | True | — | All | None |
+| ScriptCategory | [ScriptCategory](../models/ScriptCategory.md) | True | — | All | None |
+| ScriptExecutionContext | [ScriptExecutionContext](../models/ScriptExecutionContext.md) | True | — | All | None |
+| ScriptLanguage | [ScriptLanguage](../models/ScriptLanguage.md) | True | — | All | None |
+| ScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 
 ### Parameter sets
 

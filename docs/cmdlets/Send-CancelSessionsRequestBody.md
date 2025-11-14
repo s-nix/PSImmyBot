@@ -24,7 +24,7 @@ title: Send-CancelSessionsRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CancelSessionsRequestBody` | True | — | All | None |
+| PayloadBody | [CancelSessionsRequestBody](../models/CancelSessionsRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

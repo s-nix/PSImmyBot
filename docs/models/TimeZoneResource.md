@@ -10,7 +10,7 @@ title: TimeZoneResource
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TimeZoneResource>` |
+| Implements | IEquatable<[TimeZoneResource](TimeZoneResource.md)> |
 | Source | `Models/TimeZoneResource.cs` |
 
 ## Overview

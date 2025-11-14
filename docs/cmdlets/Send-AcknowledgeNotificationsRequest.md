@@ -24,7 +24,7 @@ title: Send-AcknowledgeNotificationsRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `AcknowledgeNotificationsRequest` | True | — | All | None |
+| PayloadBody | [AcknowledgeNotificationsRequest](../models/AcknowledgeNotificationsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

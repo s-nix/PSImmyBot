@@ -24,16 +24,16 @@ title: New-AccessRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AcknowledgedByUser | `User` | True | — | All | None |
+| AcknowledgedByUser | [User](../models/User.md) | True | — | All | None |
 | AcknowledgedByUserId | `Nullable`1` | False | — | All | None |
 | DateAcknowledgedUtc | `Nullable`1` | False | — | All | None |
 | DateRequestedUtc | `DateTimeOffset` | True | — | All | None |
-| ExpirationTime | `ExpirationTime` | True | — | All | None |
+| ExpirationTime | [ExpirationTime](../models/ExpirationTime.md) | True | — | All | None |
 | Granted | `Boolean` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | IsAdmin | `Nullable`1` | False | — | All | None |
 | Message | `String` | False | — | All | None |
-| Person | `Person` | True | — | All | None |
+| Person | [Person](../models/Person.md) | True | — | All | None |
 | PersonId | `Int32` | True | — | All | None |
 
 ### Parameter sets

@@ -24,9 +24,9 @@ title: New-FastCreateGlobalVersionRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Software | `CreateGlobalSoftwareRequestBody` | True | — | All | None |
+| Software | [CreateGlobalSoftwareRequestBody](../models/CreateGlobalSoftwareRequestBody.md) | True | — | All | None |
 | SoftwareId | `Nullable`1` | False | — | All | None |
-| SoftwareVersion | `CreateGlobalSoftwareVersionRequestBody` | True | — | All | None |
+| SoftwareVersion | [CreateGlobalSoftwareVersionRequestBody](../models/CreateGlobalSoftwareVersionRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

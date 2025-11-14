@@ -24,7 +24,7 @@ title: New-InventoryTaskPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Frequency | `InventoryTaskFrequency` | True | — | All | None |
+| Frequency | [InventoryTaskFrequency](../models/InventoryTaskFrequency.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
 
 ### Parameter sets

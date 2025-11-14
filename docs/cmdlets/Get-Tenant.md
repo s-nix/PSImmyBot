@@ -10,7 +10,7 @@ title: Get-Tenant
 | Source | `Cmdlets/GetTenant.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/tenants/{Id}? |
-| Return Type | `GetTenantResponse` |
+| Return Type | [GetTenantResponse](../models/GetTenantResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Tenant
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/{Id}?` and deserializes to `GetTenantResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/{Id}?` and deserializes to [GetTenantResponse](../models/GetTenantResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-Tenant
 
 ## Outputs
 
-- `GetTenantResponse` records produced by `ImmyBotApiService.GET`
+- [GetTenantResponse](../models/GetTenantResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

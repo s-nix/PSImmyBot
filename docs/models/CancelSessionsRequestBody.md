@@ -10,7 +10,7 @@ title: CancelSessionsRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CancelSessionsRequestBody>` |
+| Implements | IEquatable<[CancelSessionsRequestBody](CancelSessionsRequestBody.md)> |
 | Source | `Models/CancelSessionsRequestBody.cs` |
 
 ## Overview

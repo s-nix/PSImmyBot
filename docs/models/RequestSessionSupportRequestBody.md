@@ -10,7 +10,7 @@ title: RequestSessionSupportRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RequestSessionSupportRequestBody>` |
+| Implements | IEquatable<[RequestSessionSupportRequestBody](RequestSessionSupportRequestBody.md)> |
 | Source | `Models/RequestSessionSupportRequestBody.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: TenantMaintenanceTask
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantMaintenanceTask>` |
+| Implements | IEquatable<[TenantMaintenanceTask](TenantMaintenanceTask.md)> |
 | Source | `Models/TenantMaintenanceTask.cs` |
 
 ## Overview
@@ -20,10 +20,10 @@ title: TenantMaintenanceTask
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| MaintenanceTask | `MaintenanceTask` | Reference type (nullable) | — |
+| MaintenanceTask | [MaintenanceTask](MaintenanceTask.md) | Reference type (nullable) | — |
 | MaintenanceTaskId | `int` | No (value type) | — |
-| Relationship | `Relationship` | No (value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Relationship | [Relationship](Relationship.md) | No (value type) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

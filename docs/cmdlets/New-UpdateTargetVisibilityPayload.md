@@ -24,7 +24,7 @@ title: New-UpdateTargetVisibilityPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| TargetVisibility | `TargetVisibility` | True | — | All | None |
+| TargetVisibility | [TargetVisibility](../models/TargetVisibility.md) | True | — | All | None |
 | UpdateStatus | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets

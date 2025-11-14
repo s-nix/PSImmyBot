@@ -10,7 +10,7 @@ title: LinkClientToNewTenantResponseBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<LinkClientToNewTenantResponseBody>` |
+| Implements | IEquatable<[LinkClientToNewTenantResponseBody](LinkClientToNewTenantResponseBody.md)> |
 | Source | `Models/LinkClientToNewTenantResponseBody.cs` |
 
 ## Overview

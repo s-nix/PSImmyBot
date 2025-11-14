@@ -24,11 +24,11 @@ title: New-UserAffinity
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Computer | `Computer` | True | — | All | None |
+| Computer | [Computer](../models/Computer.md) | True | — | All | None |
 | ComputerId | `Int32` | True | — | All | None |
 | Date | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| Person | `Person` | True | — | All | None |
+| Person | [Person](../models/Person.md) | True | — | All | None |
 | PersonId | `Int32` | True | — | All | None |
 
 ### Parameter sets

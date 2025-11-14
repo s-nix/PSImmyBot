@@ -10,7 +10,7 @@ title: ComputerDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerDto>` |
+| Implements | IEquatable<[ComputerDto](ComputerDto.md)> |
 | Source | `Models/ComputerDto.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ComputerDto
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ComputerId | `int` | No (value type) | — |
-| Deployments | `ICollection<ComputerInDeploymentDto>` | Reference type (nullable) | — |
+| Deployments | ICollection<[ComputerInDeploymentDto](ComputerInDeploymentDto.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

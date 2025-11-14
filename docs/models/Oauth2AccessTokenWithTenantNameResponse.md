@@ -10,7 +10,7 @@ title: Oauth2AccessTokenWithTenantNameResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Oauth2AccessTokenWithTenantNameResponse>` |
+| Implements | IEquatable<[Oauth2AccessTokenWithTenantNameResponse](Oauth2AccessTokenWithTenantNameResponse.md)> |
 | Source | `Models/Oauth2AccessTokenWithTenantNameResponse.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: Oauth2AccessTokenWithTenantNameResponse
 | AccessTokenExpiresAtUtc | `DateTimeOffset` | No (value type) | — |
 | AccessTokenId | `string` | Reference type (nullable) | — |
 | AllowSilentRefresh | `bool` | No (value type) | — |
-| ConsentData | `OauthConsentData` | Reference type (nullable) | — |
+| ConsentData | [OauthConsentData](OauthConsentData.md) | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |

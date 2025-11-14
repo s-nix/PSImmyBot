@@ -10,7 +10,7 @@ title: Get-EphemeralAgent
 | Source | `Cmdlets/GetEphemeralAgent.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}/ephemeral-agent? |
-| Return Type | `GetEphemeralAgentResponse` |
+| Return Type | [GetEphemeralAgentResponse](../models/GetEphemeralAgentResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-EphemeralAgent
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/ephemeral-agent?` and deserializes to `GetEphemeralAgentResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/ephemeral-agent?` and deserializes to [GetEphemeralAgentResponse](../models/GetEphemeralAgentResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-EphemeralAgent
 
 ## Outputs
 
-- `GetEphemeralAgentResponse` records produced by `ImmyBotApiService.GET`
+- [GetEphemeralAgentResponse](../models/GetEphemeralAgentResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

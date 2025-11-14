@@ -10,7 +10,7 @@ title: Module
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Module>` |
+| Implements | IEquatable<[Module](Module.md)> |
 | Source | `Models/Module.cs` |
 
 ## Overview
@@ -20,12 +20,12 @@ title: Module
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Assembly | `Assembly` | Reference type (nullable) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
+| Assembly | [Assembly](Assembly.md) | Reference type (nullable) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
 | FullyQualifiedName | `string` | Reference type (nullable) | — |
 | MdStreamVersion | `int` | No (value type) | — |
 | MetadataToken | `int` | No (value type) | — |
-| ModuleHandle | `ModuleHandle` | Reference type (nullable) | — |
+| ModuleHandle | [ModuleHandle](ModuleHandle.md) | Reference type (nullable) | — |
 | ModuleVersionId | `Guid` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | ScopeName | `string` | Reference type (nullable) | — |

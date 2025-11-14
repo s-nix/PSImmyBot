@@ -10,7 +10,7 @@ title: GetMaintenanceSessionStageResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetMaintenanceSessionStageResponse>` |
+| Implements | IEquatable<[GetMaintenanceSessionStageResponse](GetMaintenanceSessionStageResponse.md)> |
 | Source | `Models/GetMaintenanceSessionStageResponse.cs` |
 
 ## Overview
@@ -24,10 +24,10 @@ title: GetMaintenanceSessionStageResponse
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | JobId | `string` | Reference type (nullable) | — |
-| MaintenanceSession | `GetMaintenanceSessionResponse` | Reference type (nullable) | — |
+| MaintenanceSession | [GetMaintenanceSessionResponse](GetMaintenanceSessionResponse.md) | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
-| StageStatus | `SessionStatus` | No (value type) | — |
-| Type | `SessionStageType` | No (value type) | — |
+| StageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
+| Type | [SessionStageType](SessionStageType.md) | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
 

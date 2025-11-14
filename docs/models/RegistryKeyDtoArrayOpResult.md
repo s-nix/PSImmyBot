@@ -10,7 +10,7 @@ title: RegistryKeyDtoArrayOpResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RegistryKeyDtoArrayOpResult>` |
+| Implements | IEquatable<[RegistryKeyDtoArrayOpResult](RegistryKeyDtoArrayOpResult.md)> |
 | Source | `Models/RegistryKeyDtoArrayOpResult.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: RegistryKeyDtoArrayOpResult
 | DateCreatedUtc | `DateTimeOffset` | No (value type) | — |
 | IsSuccess | `bool` | No (value type) | — |
 | Reason | `string` | Reference type (nullable) | — |
-| Value | `ICollection<RegistryKeyDto>` | Reference type (nullable) | — |
+| Value | ICollection<[RegistryKeyDto](RegistryKeyDto.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

@@ -10,7 +10,7 @@ title: MaintenanceSessionStage
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceSessionStage>` |
+| Implements | IEquatable<[MaintenanceSessionStage](MaintenanceSessionStage.md)> |
 | Source | `Models/MaintenanceSessionStage.cs` |
 
 ## Overview
@@ -24,12 +24,12 @@ title: MaintenanceSessionStage
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | JobId | `string` | Reference type (nullable) | — |
-| Logs | `ICollection<SessionLog>` | Reference type (nullable) | — |
-| MaintenanceSession | `MaintenanceSession` | Reference type (nullable) | — |
+| Logs | ICollection<[SessionLog](SessionLog.md)> | Reference type (nullable) | — |
+| MaintenanceSession | [MaintenanceSession](MaintenanceSession.md) | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
-| Phases | `ICollection<SessionPhase>` | Reference type (nullable) | — |
-| StageStatus | `SessionStatus` | No (value type) | — |
-| Type | `SessionStageType` | No (value type) | — |
+| Phases | ICollection<[SessionPhase](SessionPhase.md)> | Reference type (nullable) | — |
+| StageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
+| Type | [SessionStageType](SessionStageType.md) | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 

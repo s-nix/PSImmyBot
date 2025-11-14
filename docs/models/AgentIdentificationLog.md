@@ -10,7 +10,7 @@ title: AgentIdentificationLog
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentIdentificationLog>` |
+| Implements | IEquatable<[AgentIdentificationLog](AgentIdentificationLog.md)> |
 | Source | `Models/AgentIdentificationLog.cs` |
 
 ## Overview
@@ -21,9 +21,9 @@ title: AgentIdentificationLog
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Id | `int` | No (value type) | — |
-| LogType | `AgentIdentificationLogType` | No (value type) | — |
+| LogType | [AgentIdentificationLogType](AgentIdentificationLogType.md) | No (value type) | — |
 | Message | `string` | Reference type (nullable) | — |
-| ProviderAgent | `ProviderAgent` | Reference type (nullable) | — |
+| ProviderAgent | [ProviderAgent](ProviderAgent.md) | Reference type (nullable) | — |
 | ProviderAgentId | `int` | No (value type) | — |
 | TimeUtc | `DateTimeOffset` | No (value type) | — |
 

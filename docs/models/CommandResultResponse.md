@@ -10,7 +10,7 @@ title: CommandResultResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CommandResultResponse>` |
+| Implements | IEquatable<[CommandResultResponse](CommandResultResponse.md)> |
 | Source | `Models/CommandResultResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: CommandResultResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| CommandType | `CommandTypes` | No (value type) | — |
+| CommandType | [CommandTypes](CommandTypes.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 
 ## Serialization

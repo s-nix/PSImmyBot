@@ -28,7 +28,7 @@ title: New-GetEphemeralAgentResponse
 | Id | `Guid` | True | — | All | None |
 | IsConnected | `Boolean` | True | — | All | None |
 | LastActivity | `DateTimeOffset` | True | — | All | None |
-| StartupInfo | `AgentStartupInfo` | True | — | All | None |
+| StartupInfo | [AgentStartupInfo](../models/AgentStartupInfo.md) | True | — | All | None |
 | TotalProcessedScriptCount | `Int32` | True | — | All | None |
 | TotalReceievedBytes | `Int32` | True | — | All | None |
 | TotalSentBytes | `Int32` | True | — | All | None |

@@ -10,7 +10,7 @@ title: ProviderTypeDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderTypeDto>` |
+| Implements | IEquatable<[ProviderTypeDto](ProviderTypeDto.md)> |
 | Source | `Models/ProviderTypeDto.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: ProviderTypeDto
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AgentUpdateFormSchema | `AgentUpdateFormSchema` | Reference type (nullable) | — |
+| AgentUpdateFormSchema | [AgentUpdateFormSchema](AgentUpdateFormSchema.md) | Reference type (nullable) | — |
 | CanManage | `bool` | No (value type) | — |
-| ClientGroupTypes | `ICollection<ClientGroupTypeDto>` | Reference type (nullable) | — |
-| ConfigurationForm | `DynamicFormBindResultWithConvertedParameters` | Reference type (nullable) | — |
-| DeviceGroupTypes | `ICollection<DeviceGroupTypeDto>` | Reference type (nullable) | — |
+| ClientGroupTypes | ICollection<[ClientGroupTypeDto](ClientGroupTypeDto.md)> | Reference type (nullable) | — |
+| ConfigurationForm | [DynamicFormBindResultWithConvertedParameters](DynamicFormBindResultWithConvertedParameters.md) | Reference type (nullable) | — |
+| DeviceGroupTypes | ICollection<[DeviceGroupTypeDto](DeviceGroupTypeDto.md)> | Reference type (nullable) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | DocsUrl | `string` | Reference type (nullable) | — |
 | IsDynamic | `bool` | No (value type) | — |
@@ -32,9 +32,9 @@ title: ProviderTypeDto
 | ProviderCapabilities | `ICollection<string>` | Reference type (nullable) | — |
 | ProviderTypeId | `Guid` | No (value type) | — |
 | ScreenShareLogoSrc | `string` | Reference type (nullable) | — |
-| Source | `ProviderTypeSource` | No (value type) | — |
-| SupportedCrossProviderClientLinkages | `ICollection<SupportedCrossProviderLinkage>` | Reference type (nullable) | — |
-| SupportedCrossProviderInitializationLinkages | `ICollection<SupportedCrossProviderLinkage>` | Reference type (nullable) | — |
+| Source | [ProviderTypeSource](ProviderTypeSource.md) | No (value type) | — |
+| SupportedCrossProviderClientLinkages | ICollection<[SupportedCrossProviderLinkage](SupportedCrossProviderLinkage.md)> | Reference type (nullable) | — |
+| SupportedCrossProviderInitializationLinkages | ICollection<[SupportedCrossProviderLinkage](SupportedCrossProviderLinkage.md)> | Reference type (nullable) | — |
 | SupportsDeviceUpdating | `bool` | No (value type) | — |
 | Tag | `string` | Reference type (nullable) | — |
 

@@ -10,7 +10,7 @@ title: ChangeRequestComment
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ChangeRequestComment>` |
+| Implements | IEquatable<[ChangeRequestComment](ChangeRequestComment.md)> |
 | Source | `Models/ChangeRequestComment.cs` |
 
 ## Overview
@@ -20,16 +20,16 @@ title: ChangeRequestComment
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ChangeRequest | `ChangeRequest` | Reference type (nullable) | — |
+| ChangeRequest | [ChangeRequest](ChangeRequest.md) | Reference type (nullable) | — |
 | ChangeRequestId | `int` | No (value type) | — |
 | Comment | `string` | Reference type (nullable) | — |
 | CommentedByUsername | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

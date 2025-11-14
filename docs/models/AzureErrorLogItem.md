@@ -10,7 +10,7 @@ title: AzureErrorLogItem
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureErrorLogItem>` |
+| Implements | IEquatable<[AzureErrorLogItem](AzureErrorLogItem.md)> |
 | Source | `Models/AzureErrorLogItem.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: AzureErrorLogItem
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AzureError | `AzureError` | Reference type (nullable) | — |
+| AzureError | [AzureError](AzureError.md) | Reference type (nullable) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `Guid` | No (value type) | — |
 | Oauth2AccessTokenId | `int?` | Yes (nullable value type) | — |

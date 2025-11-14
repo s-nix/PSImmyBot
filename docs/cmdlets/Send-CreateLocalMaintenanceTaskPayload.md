@@ -10,7 +10,7 @@ title: Send-CreateLocalMaintenanceTaskPayload
 | Source | `Cmdlets/SendCreateLocalMaintenanceTaskPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/maintenance-tasks/local? |
-| Return Type | `CreateLocalMaintenanceTaskPayload, GetLocalMaintenanceTaskResponse` |
+| Return Type | [CreateLocalMaintenanceTaskPayload](../models/CreateLocalMaintenanceTaskPayload.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateLocalMaintenanceTaskPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/local?` and deserializes to `CreateLocalMaintenanceTaskPayload, GetLocalMaintenanceTaskResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/local?` and deserializes to [CreateLocalMaintenanceTaskPayload](../models/CreateLocalMaintenanceTaskPayload.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateLocalMaintenanceTaskPayload` | True | — | All | None |
+| PayloadBody | [CreateLocalMaintenanceTaskPayload](../models/CreateLocalMaintenanceTaskPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateLocalMaintenanceTaskPayload
 
 ## Outputs
 
-- `CreateLocalMaintenanceTaskPayload, GetLocalMaintenanceTaskResponse` records produced by `ImmyBotApiService.POST`
+- [CreateLocalMaintenanceTaskPayload](../models/CreateLocalMaintenanceTaskPayload.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

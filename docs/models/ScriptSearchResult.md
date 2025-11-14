@@ -10,7 +10,7 @@ title: ScriptSearchResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ScriptSearchResult>` |
+| Implements | IEquatable<[ScriptSearchResult](ScriptSearchResult.md)> |
 | Source | `Models/ScriptSearchResult.cs` |
 
 ## Overview
@@ -24,10 +24,10 @@ title: ScriptSearchResult
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | Owned | `bool` | No (value type) | — |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 
 ## Serialization
 

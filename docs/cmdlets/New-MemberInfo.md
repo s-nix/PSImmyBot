@@ -25,13 +25,13 @@ title: New-MemberInfo
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
-| DeclaringType | `Type` | True | — | All | None |
+| DeclaringType | [Type](../models/Type.md) | True | — | All | None |
 | IsCollectible | `Boolean` | True | — | All | None |
-| MemberType | `MemberTypes` | True | — | All | None |
+| MemberType | [MemberTypes](../models/MemberTypes.md) | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
-| Module | `Module` | True | — | All | None |
+| Module | [Module](../models/Module.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| ReflectedType | `Type` | True | — | All | None |
+| ReflectedType | [Type](../models/Type.md) | True | — | All | None |
 
 ### Parameter sets
 

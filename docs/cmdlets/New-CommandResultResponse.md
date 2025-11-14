@@ -24,7 +24,7 @@ title: New-CommandResultResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| CommandType | `CommandTypes` | True | — | All | None |
+| CommandType | [CommandTypes](../models/CommandTypes.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: Send-SyncAzureDataForTenantsRequest
 | Source | `Cmdlets/SendSyncAzureDataForTenantsRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/azure/sync-details-from-azure-tenants? |
-| Return Type | `SyncAzureDataForTenantsRequest, List<AzureTenantDetailsSyncResult>` |
+| Return Type | [SyncAzureDataForTenantsRequest](../models/SyncAzureDataForTenantsRequest.md), List<[AzureTenantDetailsSyncResult](../models/AzureTenantDetailsSyncResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-SyncAzureDataForTenantsRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/azure/sync-details-from-azure-tenants?` and deserializes to `SyncAzureDataForTenantsRequest, List<AzureTenantDetailsSyncResult>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/azure/sync-details-from-azure-tenants?` and deserializes to [SyncAzureDataForTenantsRequest](../models/SyncAzureDataForTenantsRequest.md), List<[AzureTenantDetailsSyncResult](../models/AzureTenantDetailsSyncResult.md)>.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `SyncAzureDataForTenantsRequest` | True | — | All | None |
+| PayloadBody | [SyncAzureDataForTenantsRequest](../models/SyncAzureDataForTenantsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-SyncAzureDataForTenantsRequest
 
 ## Outputs
 
-- `SyncAzureDataForTenantsRequest, List<AzureTenantDetailsSyncResult>` records produced by `ImmyBotApiService.POST`
+- [SyncAzureDataForTenantsRequest](../models/SyncAzureDataForTenantsRequest.md), List<[AzureTenantDetailsSyncResult](../models/AzureTenantDetailsSyncResult.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

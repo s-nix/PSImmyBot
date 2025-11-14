@@ -10,7 +10,7 @@ title: Send-UpdateGlobalMediaPayload
 | Source | `Cmdlets/SendUpdateGlobalMediaPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/media/global/{Id}? |
-| Return Type | `UpdateGlobalMediaPayload, GlobalMediaResponse` |
+| Return Type | [UpdateGlobalMediaPayload](../models/UpdateGlobalMediaPayload.md), [GlobalMediaResponse](../models/GlobalMediaResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-UpdateGlobalMediaPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/media/global/{Id}?` and deserializes to `UpdateGlobalMediaPayload, GlobalMediaResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/media/global/{Id}?` and deserializes to [UpdateGlobalMediaPayload](../models/UpdateGlobalMediaPayload.md), [GlobalMediaResponse](../models/GlobalMediaResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateGlobalMediaPayload` | True | — | All | None |
+| PayloadBody | [UpdateGlobalMediaPayload](../models/UpdateGlobalMediaPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-UpdateGlobalMediaPayload
 
 ## Outputs
 
-- `UpdateGlobalMediaPayload, GlobalMediaResponse` records produced by `ImmyBotApiService.POST`
+- [UpdateGlobalMediaPayload](../models/UpdateGlobalMediaPayload.md), [GlobalMediaResponse](../models/GlobalMediaResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

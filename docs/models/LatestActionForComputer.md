@@ -10,7 +10,7 @@ title: LatestActionForComputer
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<LatestActionForComputer>` |
+| Implements | IEquatable<[LatestActionForComputer](LatestActionForComputer.md)> |
 | Source | `Models/LatestActionForComputer.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: LatestActionForComputer
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ActionType | `MaintenanceActionType` | No (value type) | — |
+| ActionType | [MaintenanceActionType](MaintenanceActionType.md) | No (value type) | — |
 | AssignmentId | `int?` | Yes (nullable value type) | — |
-| AssignmentType | `DatabaseType` | No (value type) | — |
+| AssignmentType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | CreatedDate | `DateTimeOffset?` | Yes (nullable value type) | — |
-| DesiredSoftwareState | `DesiredSoftwareState` | No (value type) | — |
+| DesiredSoftwareState | [DesiredSoftwareState](DesiredSoftwareState.md) | No (value type) | — |
 | DesiredVersion | `string` | Reference type (nullable) | — |
 | DetectedVersion | `string` | Reference type (nullable) | — |
 | EndTime | `DateTimeOffset?` | Yes (nullable value type) | — |
@@ -32,15 +32,15 @@ title: LatestActionForComputer
 | MaintenanceDisplayName | `string` | Reference type (nullable) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceTaskMode | [MaintenanceTaskMode](MaintenanceTaskMode.md) | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | PolicyDescription | `string` | Reference type (nullable) | — |
-| Reason | `MaintenanceActionReason` | No (value type) | — |
-| Result | `MaintenanceActionResult` | No (value type) | — |
-| ResultReason | `MaintenanceActionResultReason` | No (value type) | — |
+| Reason | [MaintenanceActionReason](MaintenanceActionReason.md) | No (value type) | — |
+| Result | [MaintenanceActionResult](MaintenanceActionResult.md) | No (value type) | — |
+| ResultReason | [MaintenanceActionResultReason](MaintenanceActionResultReason.md) | No (value type) | — |
 | SoftwareActionIdForConfigurationTask | `int?` | Yes (nullable value type) | — |
 | StartTime | `DateTimeOffset?` | Yes (nullable value type) | — |
-| Status | `MaintenanceActionStatus` | No (value type) | — |
+| Status | [MaintenanceActionStatus](MaintenanceActionStatus.md) | No (value type) | — |
 
 ## Serialization
 

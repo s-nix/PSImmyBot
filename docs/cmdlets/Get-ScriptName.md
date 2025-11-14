@@ -10,7 +10,7 @@ title: Get-ScriptName
 | Source | `Cmdlets/GetScriptName.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/local/names? |
-| Return Type | `List<GetScriptNameResponse>` |
+| Return Type | List<[GetScriptNameResponse](../models/GetScriptNameResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ScriptName
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/local/names?` and deserializes to `List<GetScriptNameResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/local/names?` and deserializes to List<[GetScriptNameResponse](../models/GetScriptNameResponse.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -35,7 +35,7 @@ title: Get-ScriptName
 
 ## Outputs
 
-- `List<GetScriptNameResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetScriptNameResponse](../models/GetScriptNameResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

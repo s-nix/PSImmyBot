@@ -10,7 +10,7 @@ title: MigratorDataDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MigratorDataDto>` |
+| Implements | IEquatable<[MigratorDataDto](MigratorDataDto.md)> |
 | Source | `Models/MigratorDataDto.cs` |
 
 ## Overview

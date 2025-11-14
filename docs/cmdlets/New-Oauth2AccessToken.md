@@ -27,7 +27,7 @@ title: New-Oauth2AccessToken
 | AccessTokenExpiresAtUtc | `DateTimeOffset` | True | — | All | None |
 | AccessTokenId | `String` | False | — | All | None |
 | AllowSilentRefresh | `Boolean` | True | — | All | None |
-| ConsentData | `OauthConsentData` | True | — | All | None |
+| ConsentData | [OauthConsentData](../models/OauthConsentData.md) | True | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |

@@ -24,9 +24,9 @@ title: New-MaintenanceActionDependency
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Dependent | `MaintenanceAction` | True | — | All | None |
+| Dependent | [MaintenanceAction](../models/MaintenanceAction.md) | True | — | All | None |
 | DependentId | `Int32` | True | — | All | None |
-| DependsOn | `MaintenanceAction` | True | — | All | None |
+| DependsOn | [MaintenanceAction](../models/MaintenanceAction.md) | True | — | All | None |
 | DependsOnId | `Int32` | True | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: Get-LocalTargetAssignmentResource
 | Source | `Cmdlets/GetLocalTargetAssignmentResource.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/{Id}? |
-| Return Type | `LocalTargetAssignmentResource` |
+| Return Type | [LocalTargetAssignmentResource](../models/LocalTargetAssignmentResource.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-LocalTargetAssignmentResource
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/{Id}?` and deserializes to `LocalTargetAssignmentResource`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/{Id}?` and deserializes to [LocalTargetAssignmentResource](../models/LocalTargetAssignmentResource.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-LocalTargetAssignmentResource
 
 ## Outputs
 
-- `LocalTargetAssignmentResource` records produced by `ImmyBotApiService.GET`
+- [LocalTargetAssignmentResource](../models/LocalTargetAssignmentResource.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

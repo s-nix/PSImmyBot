@@ -26,7 +26,7 @@ title: New-GetLatestActionForTenantsRequestBody
 | --- | --- | --- | --- | --- | --- |
 | DateUtc | `Nullable`1` | False | — | All | None |
 | MaintenanceIdentifier | `String` | False | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 | TenantIds | `ICollection`1` | False | — | All | None |
 
 ### Parameter sets

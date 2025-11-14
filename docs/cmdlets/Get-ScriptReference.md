@@ -10,7 +10,7 @@ title: Get-ScriptReference
 | Source | `Cmdlets/GetScriptReference.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/local/{ScriptId}/references? |
-| Return Type | `List<ScriptReference>` |
+| Return Type | List<[ScriptReference](../models/ScriptReference.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ScriptReference
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/local/{ScriptId}/references?` and deserializes to `List<ScriptReference>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/local/{ScriptId}/references?` and deserializes to List<[ScriptReference](../models/ScriptReference.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-ScriptReference
 
 ## Outputs
 
-- `List<ScriptReference>` records produced by `ImmyBotApiService.GET`
+- List<[ScriptReference](../models/ScriptReference.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

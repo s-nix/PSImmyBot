@@ -24,7 +24,7 @@ title: Send-SubscriptionDetails
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `SubscriptionDetails` | True | — | All | None |
+| PayloadBody | [SubscriptionDetails](../models/SubscriptionDetails.md) | True | — | All | None |
 
 ### Parameter sets
 

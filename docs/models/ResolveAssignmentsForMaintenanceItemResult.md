@@ -10,7 +10,7 @@ title: ResolveAssignmentsForMaintenanceItemResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ResolveAssignmentsForMaintenanceItemResult>` |
+| Implements | IEquatable<[ResolveAssignmentsForMaintenanceItemResult](ResolveAssignmentsForMaintenanceItemResult.md)> |
 | Source | `Models/ResolveAssignmentsForMaintenanceItemResult.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: ResolveAssignmentsForMaintenanceItemResult
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computers | `ICollection<ComputerDto>` | Reference type (nullable) | — |
-| Items | `ICollection<ResolveAssignmentsForMaintenanceItemResultItem>` | Reference type (nullable) | — |
+| Computers | ICollection<[ComputerDto](ComputerDto.md)> | Reference type (nullable) | — |
+| Items | ICollection<[ResolveAssignmentsForMaintenanceItemResultItem](ResolveAssignmentsForMaintenanceItemResultItem.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

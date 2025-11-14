@@ -24,7 +24,7 @@ title: New-GetExecutableUriParametersWithOnboardingOptions
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| OnboardingOptions | `AgentOnboardingOptions` | True | — | All | None |
+| OnboardingOptions | [AgentOnboardingOptions](../models/AgentOnboardingOptions.md) | True | — | All | None |
 | TargetExternalClientId | `String` | False | — | All | None |
 
 ### Parameter sets

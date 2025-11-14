@@ -10,7 +10,7 @@ title: TenantConsentRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantConsentRequestBody>` |
+| Implements | IEquatable<[TenantConsentRequestBody](TenantConsentRequestBody.md)> |
 | Source | `Models/TenantConsentRequestBody.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: TenantConsentRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AppType | `AppRegistrationType` | No (value type) | — |
+| AppType | [AppRegistrationType](AppRegistrationType.md) | No (value type) | — |
 | TenantPrincipalId | `string` | Reference type (nullable) | — |
 
 ## Serialization

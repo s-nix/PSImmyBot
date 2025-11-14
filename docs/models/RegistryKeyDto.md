@@ -10,7 +10,7 @@ title: RegistryKeyDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RegistryKeyDto>` |
+| Implements | IEquatable<[RegistryKeyDto](RegistryKeyDto.md)> |
 | Source | `Models/RegistryKeyDto.cs` |
 
 ## Overview

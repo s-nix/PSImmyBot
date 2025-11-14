@@ -10,7 +10,7 @@ title: ToggleApplicationLogStreamingRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ToggleApplicationLogStreamingRequest>` |
+| Implements | IEquatable<[ToggleApplicationLogStreamingRequest](ToggleApplicationLogStreamingRequest.md)> |
 | Source | `Models/ToggleApplicationLogStreamingRequest.cs` |
 
 ## Overview

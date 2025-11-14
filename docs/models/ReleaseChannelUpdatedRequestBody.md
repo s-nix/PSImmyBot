@@ -10,7 +10,7 @@ title: ReleaseChannelUpdatedRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ReleaseChannelUpdatedRequestBody>` |
+| Implements | IEquatable<[ReleaseChannelUpdatedRequestBody](ReleaseChannelUpdatedRequestBody.md)> |
 | Source | `Models/ReleaseChannelUpdatedRequestBody.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: ReleaseChannelUpdatedRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ReleaseChannel | `ReleaseChannel` | No (value type) | — |
+| ReleaseChannel | [ReleaseChannel](ReleaseChannel.md) | No (value type) | — |
 
 ## Serialization
 

@@ -10,7 +10,7 @@ title: DeviceGroupTypeDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DeviceGroupTypeDto>` |
+| Implements | IEquatable<[DeviceGroupTypeDto](DeviceGroupTypeDto.md)> |
 | Source | `Models/DeviceGroupTypeDto.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: DeviceGroupTypeDto
 | DeviceGroupTypeId | `Guid` | No (value type) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | ProviderTypeId | `Guid` | No (value type) | — |
-| TargetScope | `TargetScope` | No (value type) | — |
+| TargetScope | [TargetScope](TargetScope.md) | No (value type) | — |
 
 ## Serialization
 

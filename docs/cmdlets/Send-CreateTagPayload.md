@@ -24,7 +24,7 @@ title: Send-CreateTagPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateTagPayload` | True | — | All | None |
+| PayloadBody | [CreateTagPayload](../models/CreateTagPayload.md) | True | — | All | None |
 
 ### Parameter sets
 

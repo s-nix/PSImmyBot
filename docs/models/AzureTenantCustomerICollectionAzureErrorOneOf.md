@@ -10,7 +10,7 @@ title: AzureTenantCustomerICollectionAzureErrorOneOf
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantCustomerICollectionAzureErrorOneOf>` |
+| Implements | IEquatable<[AzureTenantCustomerICollectionAzureErrorOneOf](AzureTenantCustomerICollectionAzureErrorOneOf.md)> |
 | Source | `Models/AzureTenantCustomerICollectionAzureErrorOneOf.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: AzureTenantCustomerICollectionAzureErrorOneOf
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AsT0 | `ICollection<AzureTenantCustomer>` | Reference type (nullable) | — |
-| AsT1 | `AzureError` | Reference type (nullable) | — |
+| AsT0 | ICollection<[AzureTenantCustomer](AzureTenantCustomer.md)> | Reference type (nullable) | — |
+| AsT1 | [AzureError](AzureError.md) | Reference type (nullable) | — |
 | Index | `int` | No (value type) | — |
 | IsT0 | `bool` | No (value type) | — |
 | IsT1 | `bool` | No (value type) | — |

@@ -10,7 +10,7 @@ title: AddTagsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AddTagsRequest>` |
+| Implements | IEquatable<[AddTagsRequest](AddTagsRequest.md)> |
 | Source | `Models/AddTagsRequest.cs` |
 
 ## Overview

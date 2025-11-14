@@ -28,7 +28,7 @@ title: New-Tag
 | Computers | `ICollection`1` | False | — | All | None |
 | ComputerTags | `ICollection`1` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
-| CreatedByUser | `User` | True | — | All | None |
+| CreatedByUser | [User](../models/User.md) | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Description | `String` | False | — | All | None |
 | Id | `Int32` | True | — | All | None |
@@ -39,7 +39,7 @@ title: New-Tag
 | Tenants | `ICollection`1` | False | — | All | None |
 | TenantTags | `ICollection`1` | False | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
-| UpdatedByUser | `User` | True | — | All | None |
+| UpdatedByUser | [User](../models/User.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 
 ### Parameter sets

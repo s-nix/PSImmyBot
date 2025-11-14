@@ -10,7 +10,7 @@ title: RunImmyServiceRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RunImmyServiceRequestBody>` |
+| Implements | IEquatable<[RunImmyServiceRequestBody](RunImmyServiceRequestBody.md)> |
 | Source | `Models/RunImmyServiceRequestBody.cs` |
 
 ## Overview
@@ -23,21 +23,21 @@ title: RunImmyServiceRequestBody
 | AllowAccessToParentTenant | `bool` | No (value type) | — |
 | AutoConsentToReboots | `bool` | No (value type) | — |
 | CacheOnly | `bool` | No (value type) | — |
-| Computers | `ICollection<RunImmybotComputerRequestBody>` | Reference type (nullable) | — |
+| Computers | ICollection<[RunImmybotComputerRequestBody](RunImmybotComputerRequestBody.md)> | Reference type (nullable) | — |
 | DeploymentId | `int?` | Yes (nullable value type) | — |
-| DeploymentType | `DatabaseType` | No (value type) | — |
+| DeploymentType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DetectionOnly | `bool` | No (value type) | — |
 | FullMaintenance | `bool` | No (value type) | — |
 | InventoryOnly | `bool` | No (value type) | — |
 | LicenseId | `int?` | Yes (nullable value type) | — |
-| MaintenanceParams | `RunImmybotMaintenanceRequestBody` | Reference type (nullable) | — |
-| OfflineBehavior | `ComputerOfflineMaintenanceSessionBehavior` | No (value type) | — |
-| Persons | `ICollection<RunImmybotPersonRequestBody>` | Reference type (nullable) | — |
-| PromptTimeoutAction | `PromptTimeoutAction` | No (value type) | — |
+| MaintenanceParams | [RunImmybotMaintenanceRequestBody](RunImmybotMaintenanceRequestBody.md) | Reference type (nullable) | — |
+| OfflineBehavior | [ComputerOfflineMaintenanceSessionBehavior](ComputerOfflineMaintenanceSessionBehavior.md) | No (value type) | — |
+| Persons | ICollection<[RunImmybotPersonRequestBody](RunImmybotPersonRequestBody.md)> | Reference type (nullable) | — |
+| PromptTimeoutAction | [PromptTimeoutAction](PromptTimeoutAction.md) | No (value type) | — |
 | PromptTimeoutMinutes | `int` | No (value type) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
 | ProviderLinkIdForAgentUpdates | `int?` | Yes (nullable value type) | — |
-| RebootPreference | `RebootPreference` | No (value type) | — |
+| RebootPreference | [RebootPreference](RebootPreference.md) | No (value type) | — |
 | ResolutionOnly | `bool` | No (value type) | — |
 | RunInventoryInDetection | `bool` | No (value type) | — |
 | ScheduleExecutionAfterActiveHours | `bool` | No (value type) | — |
@@ -51,7 +51,7 @@ title: RunImmyServiceRequestBody
 | ShowRunNowButton | `bool` | No (value type) | — |
 | SkipBackgroundJob | `bool` | No (value type) | — |
 | SuppressRebootsDuringBusinessHours | `bool` | No (value type) | — |
-| Tenants | `ICollection<RunImmybotTenantRequestBody>` | Reference type (nullable) | — |
+| Tenants | ICollection<[RunImmybotTenantRequestBody](RunImmybotTenantRequestBody.md)> | Reference type (nullable) | — |
 | TimeZoneInfoId | `string` | Reference type (nullable) | — |
 | UpdateTime | `string` | Reference type (nullable) | — |
 | UseComputersTimezoneForExecution | `bool` | No (value type) | — |

@@ -24,7 +24,7 @@ title: Send-PreconsentCustomerTenantsRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `PreconsentCustomerTenantsRequest` | True | — | All | None |
+| PayloadBody | [PreconsentCustomerTenantsRequest](../models/PreconsentCustomerTenantsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

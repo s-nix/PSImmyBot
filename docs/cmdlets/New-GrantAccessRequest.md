@@ -24,7 +24,7 @@ title: New-GrantAccessRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ExpirationTime | `ExpirationTime` | True | — | All | None |
+| ExpirationTime | [ExpirationTime](../models/ExpirationTime.md) | True | — | All | None |
 | HasManagementAccess | `Boolean` | True | — | All | None |
 | IsAdmin | `Boolean` | True | — | All | None |
 

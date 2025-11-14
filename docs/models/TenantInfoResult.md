@@ -10,7 +10,7 @@ title: TenantInfoResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantInfoResult>` |
+| Implements | IEquatable<[TenantInfoResult](TenantInfoResult.md)> |
 | Source | `Models/TenantInfoResult.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: TenantInfoResult
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | PrincipalId | `string` | Reference type (nullable) | — |
-| Result | `AzureTenantInfoAzureErrorOneOf` | Reference type (nullable) | — |
+| Result | [AzureTenantInfoAzureErrorOneOf](AzureTenantInfoAzureErrorOneOf.md) | Reference type (nullable) | — |
 
 ## Serialization
 

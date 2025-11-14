@@ -10,7 +10,7 @@ title: ClientGroupTypeDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ClientGroupTypeDto>` |
+| Implements | IEquatable<[ClientGroupTypeDto](ClientGroupTypeDto.md)> |
 | Source | `Models/ClientGroupTypeDto.cs` |
 
 ## Overview

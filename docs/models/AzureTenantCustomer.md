@@ -10,7 +10,7 @@ title: AzureTenantCustomer
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantCustomer>` |
+| Implements | IEquatable<[AzureTenantCustomer](AzureTenantCustomer.md)> |
 | Source | `Models/AzureTenantCustomer.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: AzureTenantCustomer
 | --- | --- | --- | --- |
 | DisplayName | `string` | Reference type (nullable) | — |
 | Domain | `string` | Reference type (nullable) | — |
-| GdapRelationships | `ICollection<AzureGdapRelationshipDetails>` | Reference type (nullable) | — |
+| GdapRelationships | ICollection<[AzureGdapRelationshipDetails](AzureGdapRelationshipDetails.md)> | Reference type (nullable) | — |
 | TenantId | `string` | Reference type (nullable) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: CreateUserFromPersonRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateUserFromPersonRequest>` |
+| Implements | IEquatable<[CreateUserFromPersonRequest](CreateUserFromPersonRequest.md)> |
 | Source | `Models/CreateUserFromPersonRequest.cs` |
 
 ## Overview

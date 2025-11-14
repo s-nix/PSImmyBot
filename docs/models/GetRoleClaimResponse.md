@@ -10,7 +10,7 @@ title: GetRoleClaimResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetRoleClaimResponse>` |
+| Implements | IEquatable<[GetRoleClaimResponse](GetRoleClaimResponse.md)> |
 | Source | `Models/GetRoleClaimResponse.cs` |
 
 ## Overview

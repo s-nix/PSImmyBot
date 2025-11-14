@@ -10,7 +10,7 @@ title: SyncAgentsForClientsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SyncAgentsForClientsRequest>` |
+| Implements | IEquatable<[SyncAgentsForClientsRequest](SyncAgentsForClientsRequest.md)> |
 | Source | `Models/SyncAgentsForClientsRequest.cs` |
 
 ## Overview

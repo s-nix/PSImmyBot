@@ -26,7 +26,7 @@ title: New-GetAgentIdentificationFailureResponse
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Nullable`1` | False | — | All | None |
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
-| ExistingAgent | `IProviderAgentDetails` | True | — | All | None |
+| ExistingAgent | [IProviderAgentDetails](../models/IProviderAgentDetails.md) | True | — | All | None |
 | ExistingAgentId | `Nullable`1` | False | — | All | None |
 | ExistingComputerName | `String` | False | — | All | None |
 | ExistingManufacturer | `String` | False | — | All | None |
@@ -38,7 +38,7 @@ title: New-GetAgentIdentificationFailureResponse
 | ExistingTenantName | `String` | False | — | All | None |
 | FeatureUsageExceeded | `Boolean` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| ManualResolutionDecision | `AgentIdentificationManualResolutionDecision` | True | — | All | None |
+| ManualResolutionDecision | [AgentIdentificationManualResolutionDecision](../models/AgentIdentificationManualResolutionDecision.md) | True | — | All | None |
 | Message | `String` | False | — | All | None |
 | PendingAgentId | `Nullable`1` | False | — | All | None |
 | RequiresManualResolution | `Boolean` | True | — | All | None |

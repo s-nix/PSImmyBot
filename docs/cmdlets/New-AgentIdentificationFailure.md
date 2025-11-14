@@ -24,15 +24,15 @@ title: New-AgentIdentificationFailure
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Computer | `Computer` | True | — | All | None |
+| Computer | [Computer](../models/Computer.md) | True | — | All | None |
 | ComputerId | `Nullable`1` | False | — | All | None |
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
 | ExistingAgentId | `Nullable`1` | False | — | All | None |
 | FeatureUsageExceeded | `Boolean` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| ManualResolutionDecision | `AgentIdentificationManualResolutionDecision` | True | — | All | None |
+| ManualResolutionDecision | [AgentIdentificationManualResolutionDecision](../models/AgentIdentificationManualResolutionDecision.md) | True | — | All | None |
 | Message | `String` | False | — | All | None |
-| PendingAgent | `ProviderAgent` | True | — | All | None |
+| PendingAgent | [ProviderAgent](../models/ProviderAgent.md) | True | — | All | None |
 | PendingAgentId | `Int32` | True | — | All | None |
 | RequiresManualResolution | `Boolean` | True | — | All | None |
 | Resolved | `Boolean` | True | — | All | None |

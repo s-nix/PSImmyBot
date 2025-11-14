@@ -10,7 +10,7 @@ title: ProviderLinkExternalReferenceDataBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderLinkExternalReferenceDataBody>` |
+| Implements | IEquatable<[ProviderLinkExternalReferenceDataBody](ProviderLinkExternalReferenceDataBody.md)> |
 | Source | `Models/ProviderLinkExternalReferenceDataBody.cs` |
 
 ## Overview

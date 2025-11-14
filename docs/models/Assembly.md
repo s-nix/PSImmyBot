@@ -10,7 +10,7 @@ title: Assembly
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Assembly>` |
+| Implements | IEquatable<[Assembly](Assembly.md)> |
 | Source | `Models/Assembly.cs` |
 
 ## Overview
@@ -21,11 +21,11 @@ title: Assembly
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | CodeBase | `string` | Reference type (nullable) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
-| DefinedTypes | `ICollection<TypeInfo>` | Reference type (nullable) | — |
-| EntryPoint | `MethodInfo` | Reference type (nullable) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
+| DefinedTypes | ICollection<[TypeInfo](TypeInfo.md)> | Reference type (nullable) | — |
+| EntryPoint | [MethodInfo](MethodInfo.md) | Reference type (nullable) | — |
 | EscapedCodeBase | `string` | Reference type (nullable) | — |
-| ExportedTypes | `ICollection<Type>` | Reference type (nullable) | — |
+| ExportedTypes | ICollection<[Type](Type.md)> | Reference type (nullable) | — |
 | FullName | `string` | Reference type (nullable) | — |
 | GlobalAssemblyCache | `bool` | No (value type) | — |
 | HostContext | `long` | No (value type) | — |
@@ -34,10 +34,10 @@ title: Assembly
 | IsDynamic | `bool` | No (value type) | — |
 | IsFullyTrusted | `bool` | No (value type) | — |
 | Location | `string` | Reference type (nullable) | — |
-| ManifestModule | `Module` | Reference type (nullable) | — |
-| Modules | `ICollection<Module>` | Reference type (nullable) | — |
+| ManifestModule | [Module](Module.md) | Reference type (nullable) | — |
+| Modules | ICollection<[Module](Module.md)> | Reference type (nullable) | — |
 | ReflectionOnly | `bool` | No (value type) | — |
-| SecurityRuleSet | `SecurityRuleSet` | No (value type) | — |
+| SecurityRuleSet | [SecurityRuleSet](SecurityRuleSet.md) | No (value type) | — |
 
 ## Serialization
 

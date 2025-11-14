@@ -10,7 +10,7 @@ title: SubscriptionAddonDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SubscriptionAddonDto>` |
+| Implements | IEquatable<[SubscriptionAddonDto](SubscriptionAddonDto.md)> |
 | Source | `Models/SubscriptionAddonDto.cs` |
 
 ## Overview

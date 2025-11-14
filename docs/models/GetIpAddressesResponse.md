@@ -10,7 +10,7 @@ title: GetIpAddressesResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetIpAddressesResponse>` |
+| Implements | IEquatable<[GetIpAddressesResponse](GetIpAddressesResponse.md)> |
 | Source | `Models/GetIpAddressesResponse.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: AnalyzeLocalSoftwarePackageResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AnalyzeLocalSoftwarePackageResponse>` |
+| Implements | IEquatable<[AnalyzeLocalSoftwarePackageResponse](AnalyzeLocalSoftwarePackageResponse.md)> |
 | Source | `Models/AnalyzeLocalSoftwarePackageResponse.cs` |
 
 ## Overview
@@ -20,19 +20,19 @@ title: AnalyzeLocalSoftwarePackageResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| BatchInstallScript | `IScriptDetailsBase` | Reference type (nullable) | — |
-| DefaultPowershellUninstallScript | `IScriptDetailsBase` | Reference type (nullable) | — |
+| BatchInstallScript | [IScriptDetailsBase](IScriptDetailsBase.md) | Reference type (nullable) | — |
+| DefaultPowershellUninstallScript | [IScriptDetailsBase](IScriptDetailsBase.md) | Reference type (nullable) | — |
 | Description | `string` | Reference type (nullable) | — |
-| DetectionScript | `IScriptDetailsBase` | Reference type (nullable) | — |
+| DetectionScript | [IScriptDetailsBase](IScriptDetailsBase.md) | Reference type (nullable) | — |
 | DisplayVersion | `string` | Reference type (nullable) | — |
 | Extension | `string` | Reference type (nullable) | — |
 | FileName | `string` | Reference type (nullable) | — |
 | IsExe | `bool` | No (value type) | — |
 | IsMsi | `bool` | No (value type) | — |
 | PackageHash | `string` | Reference type (nullable) | — |
-| PackageType | `PackageType` | No (value type) | — |
-| PowerShellInstallScript | `IScriptDetailsBase` | Reference type (nullable) | — |
-| PowerShellUninstallScript | `IScriptDetailsBase` | Reference type (nullable) | — |
+| PackageType | [PackageType](PackageType.md) | No (value type) | — |
+| PowerShellInstallScript | [IScriptDetailsBase](IScriptDetailsBase.md) | Reference type (nullable) | — |
+| PowerShellUninstallScript | [IScriptDetailsBase](IScriptDetailsBase.md) | Reference type (nullable) | — |
 | ProductCode | `Guid?` | Yes (nullable value type) | — |
 | SoftwareTableName | `string` | Reference type (nullable) | — |
 | UpgradeCode | `Guid?` | Yes (nullable value type) | — |

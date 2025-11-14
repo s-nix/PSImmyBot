@@ -10,7 +10,7 @@ title: ValidateParamBlockParametersFromTaskRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ValidateParamBlockParametersFromTaskRequest>` |
+| Implements | IEquatable<[ValidateParamBlockParametersFromTaskRequest](ValidateParamBlockParametersFromTaskRequest.md)> |
 | Source | `Models/ValidateParamBlockParametersFromTaskRequest.cs` |
 
 ## Overview
@@ -21,13 +21,13 @@ title: ValidateParamBlockParametersFromTaskRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ComputerId | `int?` | Yes (nullable value type) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
-| DeploymentDatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| DeploymentDatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DeploymentId | `int?` | Yes (nullable value type) | — |
 | ForceRebind | `bool` | No (value type) | — |
 | MaintenanceSessionId | `int?` | Yes (nullable value type) | — |
 | MaintenanceTaskId | `int` | No (value type) | — |
-| ParameterValues | `IDictionary<string, ParameterValue>` | Reference type (nullable) | — |
+| ParameterValues | IDictionary<string, [ParameterValue](ParameterValue.md)> | Reference type (nullable) | — |
 | PersonId | `int?` | Yes (nullable value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | TerminalId | `Guid?` | Yes (nullable value type) | — |

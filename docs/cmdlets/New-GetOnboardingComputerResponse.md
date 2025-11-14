@@ -29,7 +29,7 @@ title: New-GetOnboardingComputerResponse
 | IsOnline | `Boolean` | True | — | All | None |
 | OnboardingFailed | `Boolean` | True | — | All | None |
 | OnboardingSessionId | `Nullable`1` | False | — | All | None |
-| OnboardingStatus | `ComputerOnboardingStatus` | True | — | All | None |
+| OnboardingStatus | [ComputerOnboardingStatus](../models/ComputerOnboardingStatus.md) | True | — | All | None |
 | Serial | `String` | False | — | All | None |
 | TenantName | `String` | False | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |

@@ -10,7 +10,7 @@ title: Get-IClientStatus
 | Source | `Cmdlets/GetIClientStatus.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-links/{Id}/clients/statuses? |
-| Return Type | `List<IClientStatus>` |
+| Return Type | List<[IClientStatus](../models/IClientStatus.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-IClientStatus
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/clients/statuses?` and deserializes to `List<IClientStatus>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/clients/statuses?` and deserializes to List<[IClientStatus](../models/IClientStatus.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-IClientStatus
 
 ## Outputs
 
-- `List<IClientStatus>` records produced by `ImmyBotApiService.GET`
+- List<[IClientStatus](../models/IClientStatus.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

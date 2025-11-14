@@ -25,7 +25,7 @@ title: New-GetSpecifiedSoftwareResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | SoftwareIdentifier | `String` | False | — | All | None |
-| SoftwareType | `SoftwareType` | True | — | All | None |
+| SoftwareType | [SoftwareType](../models/SoftwareType.md) | True | — | All | None |
 
 ### Parameter sets
 

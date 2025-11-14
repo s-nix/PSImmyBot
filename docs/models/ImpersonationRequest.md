@@ -10,7 +10,7 @@ title: ImpersonationRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ImpersonationRequest>` |
+| Implements | IEquatable<[ImpersonationRequest](ImpersonationRequest.md)> |
 | Source | `Models/ImpersonationRequest.cs` |
 
 ## Overview

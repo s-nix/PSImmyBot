@@ -10,7 +10,7 @@ title: GetProviderAgentResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetProviderAgentResponse>` |
+| Implements | IEquatable<[GetProviderAgentResponse](GetProviderAgentResponse.md)> |
 | Source | `Models/GetProviderAgentResponse.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: GetProviderAgentResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AgentVersion | `SemanticVersion` | Reference type (nullable) | — |
+| AgentVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | ComputerId | `int?` | Yes (nullable value type) | — |
-| DeviceDetails | `DeviceDetails` | Reference type (nullable) | — |
+| DeviceDetails | [DeviceDetails](DeviceDetails.md) | Reference type (nullable) | — |
 | DeviceUpdateFormData | `object` | Reference type (nullable) | — |
 | ExternalAgentId | `string` | Reference type (nullable) | — |
 | ExternalClientId | `string` | Reference type (nullable) | — |
@@ -31,7 +31,7 @@ title: GetProviderAgentResponse
 | InternalData | `object` | Reference type (nullable) | — |
 | IsOnline | `bool` | No (value type) | — |
 | LastUpdatedUtc | `DateTimeOffset` | No (value type) | — |
-| OnboardingOptions | `AgentOnboardingOptions` | Reference type (nullable) | — |
+| OnboardingOptions | [AgentOnboardingOptions](AgentOnboardingOptions.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int` | No (value type) | — |
 | ProviderTypeId | `Guid` | No (value type) | — |
 | RequireManualIdentification | `bool` | No (value type) | — |

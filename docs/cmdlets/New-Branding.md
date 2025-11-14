@@ -26,7 +26,7 @@ title: New-Branding
 | --- | --- | --- | --- | --- | --- |
 | BackgroundColor | `String` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
-| CreatedByUser | `User` | True | — | All | None |
+| CreatedByUser | [User](../models/User.md) | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Description | `String` | False | — | All | None |
 | EndDate | `Nullable`1` | False | — | All | None |
@@ -38,7 +38,7 @@ title: New-Branding
 | LogoUri | `String` | False | — | All | None |
 | MascotImgUri | `String` | False | — | All | None |
 | MascotName | `String` | False | — | All | None |
-| OwnerTenant | `Tenant` | True | — | All | None |
+| OwnerTenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | StartDate | `Nullable`1` | False | — | All | None |
 | TableHeaderColor | `String` | False | — | All | None |
 | TableHeaderTextColor | `String` | False | — | All | None |
@@ -46,7 +46,7 @@ title: New-Branding
 | TextColor | `String` | False | — | All | None |
 | TimeFormat | `String` | False | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
-| UpdatedByUser | `User` | True | — | All | None |
+| UpdatedByUser | [User](../models/User.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 
 ### Parameter sets

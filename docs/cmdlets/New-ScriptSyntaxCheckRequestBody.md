@@ -25,7 +25,7 @@ title: New-ScriptSyntaxCheckRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Script | `String` | False | — | All | None |
-| ScriptLanguage | `ScriptLanguage` | True | — | All | None |
+| ScriptLanguage | [ScriptLanguage](../models/ScriptLanguage.md) | True | — | All | None |
 
 ### Parameter sets
 

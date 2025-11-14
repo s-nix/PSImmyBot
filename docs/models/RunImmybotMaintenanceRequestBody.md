@@ -10,7 +10,7 @@ title: RunImmybotMaintenanceRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RunImmybotMaintenanceRequestBody>` |
+| Implements | IEquatable<[RunImmybotMaintenanceRequestBody](RunImmybotMaintenanceRequestBody.md)> |
 | Source | `Models/RunImmybotMaintenanceRequestBody.cs` |
 
 ## Overview
@@ -20,17 +20,17 @@ title: RunImmybotMaintenanceRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DesiredSoftwareState | `DesiredSoftwareState` | No (value type) | — |
+| DesiredSoftwareState | [DesiredSoftwareState](DesiredSoftwareState.md) | No (value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceTaskMode | [MaintenanceTaskMode](MaintenanceTaskMode.md) | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | ProviderLinkIdForMaintenanceItem | `int?` | Yes (nullable value type) | — |
 | Repair | `bool` | No (value type) | — |
-| SemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SemanticVersionNormalized | `string` | Reference type (nullable) | — |
-| SoftwareProviderType | `SoftwareProviderType` | No (value type) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
-| TaskParameterValues | `IDictionary<string, DeploymentParameterValue>` | Reference type (nullable) | — |
+| SoftwareProviderType | [SoftwareProviderType](SoftwareProviderType.md) | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
+| TaskParameterValues | IDictionary<string, [DeploymentParameterValue](DeploymentParameterValue.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

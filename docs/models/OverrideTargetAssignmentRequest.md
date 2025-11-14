@@ -10,7 +10,7 @@ title: OverrideTargetAssignmentRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<OverrideTargetAssignmentRequest>` |
+| Implements | IEquatable<[OverrideTargetAssignmentRequest](OverrideTargetAssignmentRequest.md)> |
 | Source | `Models/OverrideTargetAssignmentRequest.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: OverrideTargetAssignmentRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DesiredSoftwareState | `DesiredSoftwareState` | No (value type) | — |
+| DesiredSoftwareState | [DesiredSoftwareState](DesiredSoftwareState.md) | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 
 ## Serialization
 

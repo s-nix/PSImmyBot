@@ -24,7 +24,7 @@ title: Send-BatchSetExcludedFromUserAffinityRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `BatchSetExcludedFromUserAffinityRequestBody` | True | — | All | None |
+| PayloadBody | [BatchSetExcludedFromUserAffinityRequestBody](../models/BatchSetExcludedFromUserAffinityRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

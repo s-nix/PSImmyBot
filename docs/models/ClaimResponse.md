@@ -10,7 +10,7 @@ title: ClaimResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ClaimResponse>` |
+| Implements | IEquatable<[ClaimResponse](ClaimResponse.md)> |
 | Source | `Models/ClaimResponse.cs` |
 
 ## Overview

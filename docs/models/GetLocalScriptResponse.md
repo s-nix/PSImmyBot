@@ -10,7 +10,7 @@ title: GetLocalScriptResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetLocalScriptResponse>` |
+| Implements | IEquatable<[GetLocalScriptResponse](GetLocalScriptResponse.md)> |
 | Source | `Models/GetLocalScriptResponse.cs` |
 
 ## Overview
@@ -24,12 +24,12 @@ title: GetLocalScriptResponse
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OutputType | `ScriptOutputType` | No (value type) | — |
+| OutputType | [ScriptOutputType](ScriptOutputType.md) | No (value type) | — |
 | Owned | `bool` | No (value type) | — |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Timeout | `int?` | Yes (nullable value type) | — |
 | UpdatedBy | `string` | Reference type (nullable) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |

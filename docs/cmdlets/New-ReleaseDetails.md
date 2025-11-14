@@ -25,11 +25,11 @@ title: New-ReleaseDetails
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ImmyAgentInstallerFileVersion | `String` | False | — | All | None |
-| ImmyAgentInstallerVersion | `SemanticVersion` | True | — | All | None |
+| ImmyAgentInstallerVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | PublishedDate | `Nullable`1` | False | — | All | None |
-| ReleaseChannel | `ReleaseChannel` | True | — | All | None |
+| ReleaseChannel | [ReleaseChannel](../models/ReleaseChannel.md) | True | — | All | None |
 | ReleaseNotes | `String` | False | — | All | None |
-| Tag | `SemanticVersion` | True | — | All | None |
+| Tag | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 
 ### Parameter sets
 

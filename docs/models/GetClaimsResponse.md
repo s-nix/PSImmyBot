@@ -10,7 +10,7 @@ title: GetClaimsResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetClaimsResponse>` |
+| Implements | IEquatable<[GetClaimsResponse](GetClaimsResponse.md)> |
 | Source | `Models/GetClaimsResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetClaimsResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Claims | `ICollection<ClaimResponse>` | Reference type (nullable) | — |
+| Claims | ICollection<[ClaimResponse](ClaimResponse.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

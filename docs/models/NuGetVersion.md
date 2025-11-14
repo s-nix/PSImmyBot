@@ -10,7 +10,7 @@ title: NuGetVersion
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<NuGetVersion>` |
+| Implements | IEquatable<[NuGetVersion](NuGetVersion.md)> |
 | Source | `Models/NuGetVersion.cs` |
 
 ## Overview

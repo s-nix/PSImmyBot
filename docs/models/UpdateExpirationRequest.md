@@ -10,7 +10,7 @@ title: UpdateExpirationRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateExpirationRequest>` |
+| Implements | IEquatable<[UpdateExpirationRequest](UpdateExpirationRequest.md)> |
 | Source | `Models/UpdateExpirationRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: UpdateExpirationRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ExpiresIn | `ExpirationTime` | No (value type) | — |
+| ExpiresIn | [ExpirationTime](ExpirationTime.md) | No (value type) | — |
 | PersonIds | `ICollection<int>` | Reference type (nullable) | — |
 
 ## Serialization

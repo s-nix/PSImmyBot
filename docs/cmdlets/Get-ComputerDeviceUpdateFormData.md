@@ -10,7 +10,7 @@ title: Get-ComputerDeviceUpdateFormData
 | Source | `Cmdlets/GetComputerDeviceUpdateFormData.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}/device-update-form-data? |
-| Return Type | `GetComputerDeviceUpdateFormDataResponse` |
+| Return Type | [GetComputerDeviceUpdateFormDataResponse](../models/GetComputerDeviceUpdateFormDataResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ComputerDeviceUpdateFormData
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/device-update-form-data?` and deserializes to `GetComputerDeviceUpdateFormDataResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/device-update-form-data?` and deserializes to [GetComputerDeviceUpdateFormDataResponse](../models/GetComputerDeviceUpdateFormDataResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-ComputerDeviceUpdateFormData
 
 ## Outputs
 
-- `GetComputerDeviceUpdateFormDataResponse` records produced by `ImmyBotApiService.GET`
+- [GetComputerDeviceUpdateFormDataResponse](../models/GetComputerDeviceUpdateFormDataResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: SessionJobArgs
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SessionJobArgs>` |
+| Implements | IEquatable<[SessionJobArgs](SessionJobArgs.md)> |
 | Source | `Models/SessionJobArgs.cs` |
 
 ## Overview
@@ -28,26 +28,26 @@ title: SessionJobArgs
 | CacheOnly | `bool` | No (value type) | — |
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | DeploymentId | `int?` | Yes (nullable value type) | — |
-| DeploymentType | `DatabaseType` | No (value type) | — |
+| DeploymentType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DetectionOnly | `bool` | No (value type) | — |
-| EnqueuedSessionType | `EnqueuedSessionType` | No (value type) | — |
+| EnqueuedSessionType | [EnqueuedSessionType](EnqueuedSessionType.md) | No (value type) | — |
 | HasSessionFeatureBeenTracked | `bool` | No (value type) | — |
 | InstallWindowsUpdates | `bool` | No (value type) | — |
 | InventoryOnly | `bool` | No (value type) | — |
-| MaintenanceAgentUpdatesConfiguration | `MaintenanceAgentUpdatesConfiguration` | Reference type (nullable) | — |
-| MaintenanceEmailConfiguration | `MaintenanceEmailConfiguration` | Reference type (nullable) | — |
-| MaintenanceItem | `MaintenanceItem` | Reference type (nullable) | — |
-| MaintenanceOnboardingConfiguration | `MaintenanceOnboardingConfiguration` | Reference type (nullable) | — |
-| MaintenanceSchedulingConfiguration | `MaintenanceSchedulingConfiguration` | Reference type (nullable) | — |
+| MaintenanceAgentUpdatesConfiguration | [MaintenanceAgentUpdatesConfiguration](MaintenanceAgentUpdatesConfiguration.md) | Reference type (nullable) | — |
+| MaintenanceEmailConfiguration | [MaintenanceEmailConfiguration](MaintenanceEmailConfiguration.md) | Reference type (nullable) | — |
+| MaintenanceItem | [MaintenanceItem](MaintenanceItem.md) | Reference type (nullable) | — |
+| MaintenanceOnboardingConfiguration | [MaintenanceOnboardingConfiguration](MaintenanceOnboardingConfiguration.md) | Reference type (nullable) | — |
+| MaintenanceSchedulingConfiguration | [MaintenanceSchedulingConfiguration](MaintenanceSchedulingConfiguration.md) | Reference type (nullable) | — |
 | ManuallyResumed | `bool` | No (value type) | — |
 | ManuallyResumedByPersonId | `int?` | Yes (nullable value type) | — |
 | ManuallyTriggeredByUserId | `int?` | Yes (nullable value type) | — |
-| OfflineBehavior | `ComputerOfflineMaintenanceSessionBehavior` | No (value type) | — |
+| OfflineBehavior | [ComputerOfflineMaintenanceSessionBehavior](ComputerOfflineMaintenanceSessionBehavior.md) | No (value type) | — |
 | PersonId | `int?` | Yes (nullable value type) | — |
-| PromptTimeoutAction | `PromptTimeoutAction` | No (value type) | — |
+| PromptTimeoutAction | [PromptTimeoutAction](PromptTimeoutAction.md) | No (value type) | — |
 | PromptTimeoutMinutes | `int` | No (value type) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
-| RebootPreference | `RebootPreference` | No (value type) | — |
+| RebootPreference | [RebootPreference](RebootPreference.md) | No (value type) | — |
 | Repair | `bool` | No (value type) | — |
 | RerunFromScheduleId | `int?` | Yes (nullable value type) | — |
 | RerunningAction | `bool` | No (value type) | — |

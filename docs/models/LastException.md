@@ -10,7 +10,7 @@ title: LastException
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<LastException>` |
+| Implements | IEquatable<[LastException](LastException.md)> |
 | Source | `Models/LastException.cs` |
 
 ## Overview
@@ -23,11 +23,11 @@ title: LastException
 | Data | `IDictionary<string, object>` | Reference type (nullable) | — |
 | HelpLink | `string` | Reference type (nullable) | — |
 | HResult | `int` | No (value type) | — |
-| InnerException | `LastException` | Reference type (nullable) | — |
+| InnerException | [LastException](LastException.md) | Reference type (nullable) | — |
 | Message | `string` | Reference type (nullable) | — |
 | Source | `string` | Reference type (nullable) | — |
 | StackTrace | `string` | Reference type (nullable) | — |
-| TargetSite | `MethodBase` | Reference type (nullable) | — |
+| TargetSite | [MethodBase](MethodBase.md) | Reference type (nullable) | — |
 
 ## Serialization
 

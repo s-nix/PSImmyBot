@@ -10,7 +10,7 @@ title: UpdateGlobalMediaPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateGlobalMediaPayload>` |
+| Implements | IEquatable<[UpdateGlobalMediaPayload](UpdateGlobalMediaPayload.md)> |
 | Source | `Models/UpdateGlobalMediaPayload.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: UpdateGlobalMediaPayload
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobReference | `string` | Reference type (nullable) | — |
-| Category | `MediaCategory` | No (value type) | — |
+| Category | [MediaCategory](MediaCategory.md) | No (value type) | — |
 | FileName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | MimeType | `string` | Reference type (nullable) | — |

@@ -31,9 +31,9 @@ title: New-ChangeRequestResponse
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | NewValuesJson | `Object` | True | — | All | None |
-| ObjectType | `ChangeRequestObjectType` | True | — | All | None |
+| ObjectType | [ChangeRequestObjectType](../models/ChangeRequestObjectType.md) | True | — | All | None |
 | ScriptId | `Nullable`1` | False | — | All | None |
-| State | `ChangeRequestState` | True | — | All | None |
+| State | [ChangeRequestState](../models/ChangeRequestState.md) | True | — | All | None |
 | TargetAssignmentId | `Nullable`1` | False | — | All | None |
 | UpdatedDateUtc | `DateTimeOffset` | True | — | All | None |
 

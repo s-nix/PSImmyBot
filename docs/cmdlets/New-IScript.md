@@ -25,7 +25,7 @@ title: New-IScript
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Script | `String` | False | — | All | None |
-| ScriptLanguage | `ScriptLanguage` | True | — | All | None |
+| ScriptLanguage | [ScriptLanguage](../models/ScriptLanguage.md) | True | — | All | None |
 | Timeout | `Int32` | True | — | All | None |
 
 ### Parameter sets

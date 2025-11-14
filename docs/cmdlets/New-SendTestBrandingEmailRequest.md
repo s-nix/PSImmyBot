@@ -24,7 +24,7 @@ title: New-SendTestBrandingEmailRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Branding | `CreateBrandingRequestBody` | True | — | All | None |
+| Branding | [CreateBrandingRequestBody](../models/CreateBrandingRequestBody.md) | True | — | All | None |
 | To | `String` | False | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: TargetedPerson
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TargetedPerson>` |
+| Implements | IEquatable<[TargetedPerson](TargetedPerson.md)> |
 | Source | `Models/TargetedPerson.cs` |
 
 ## Overview

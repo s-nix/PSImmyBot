@@ -10,7 +10,7 @@ title: GetComputerDeviceUpdateFormDataResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetComputerDeviceUpdateFormDataResponse>` |
+| Implements | IEquatable<[GetComputerDeviceUpdateFormDataResponse](GetComputerDeviceUpdateFormDataResponse.md)> |
 | Source | `Models/GetComputerDeviceUpdateFormDataResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetComputerDeviceUpdateFormDataResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Devices | `ICollection<DeviceUpdateFormDataResponse>` | Reference type (nullable) | — |
+| Devices | ICollection<[DeviceUpdateFormDataResponse](DeviceUpdateFormDataResponse.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

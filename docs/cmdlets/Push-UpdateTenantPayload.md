@@ -10,7 +10,7 @@ title: Push-UpdateTenantPayload
 | Source | `Cmdlets/PushUpdateTenantPayload.cs` |
 | HTTP Method | PUT |
 | Endpoint | /api/v1/tenants/{Id}? |
-| Return Type | `UpdateTenantPayload, GetTenantResponse` |
+| Return Type | [UpdateTenantPayload](../models/UpdateTenantPayload.md), [GetTenantResponse](../models/GetTenantResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Push-UpdateTenantPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PUT` targeting `/api/v1/tenants/{Id}?` and deserializes to `UpdateTenantPayload, GetTenantResponse`.
+- Calls `ImmyBotApiService.PUT` targeting `/api/v1/tenants/{Id}?` and deserializes to [UpdateTenantPayload](../models/UpdateTenantPayload.md), [GetTenantResponse](../models/GetTenantResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateTenantPayload` | True | — | All | None |
+| PayloadBody | [UpdateTenantPayload](../models/UpdateTenantPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Push-UpdateTenantPayload
 
 ## Outputs
 
-- `UpdateTenantPayload, GetTenantResponse` records produced by `ImmyBotApiService.PUT`
+- [UpdateTenantPayload](../models/UpdateTenantPayload.md), [GetTenantResponse](../models/GetTenantResponse.md) records produced by `ImmyBotApiService.PUT`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: DeploymentParameterValue
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DeploymentParameterValue>` |
+| Implements | IEquatable<[DeploymentParameterValue](DeploymentParameterValue.md)> |
 | Source | `Models/DeploymentParameterValue.cs` |
 
 ## Overview

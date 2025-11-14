@@ -10,7 +10,7 @@ title: AgentIdentificationFailure
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentIdentificationFailure>` |
+| Implements | IEquatable<[AgentIdentificationFailure](AgentIdentificationFailure.md)> |
 | Source | `Models/AgentIdentificationFailure.cs` |
 
 ## Overview
@@ -20,15 +20,15 @@ title: AgentIdentificationFailure
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | ExistingAgentId | `int?` | Yes (nullable value type) | — |
 | FeatureUsageExceeded | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| ManualResolutionDecision | `AgentIdentificationManualResolutionDecision` | No (value type) | — |
+| ManualResolutionDecision | [AgentIdentificationManualResolutionDecision](AgentIdentificationManualResolutionDecision.md) | No (value type) | — |
 | Message | `string` | Reference type (nullable) | — |
-| PendingAgent | `ProviderAgent` | Reference type (nullable) | — |
+| PendingAgent | [ProviderAgent](ProviderAgent.md) | Reference type (nullable) | — |
 | PendingAgentId | `int` | No (value type) | — |
 | RequiresManualResolution | `bool` | No (value type) | — |
 | Resolved | `bool` | No (value type) | — |

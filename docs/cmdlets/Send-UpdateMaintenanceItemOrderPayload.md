@@ -10,7 +10,7 @@ title: Send-UpdateMaintenanceItemOrderPayload
 | Source | `Cmdlets/SendUpdateMaintenanceItemOrderPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/update-maintenance-item-order? |
-| Return Type | `UpdateMaintenanceItemOrderPayload, MaintenanceItemOrder` |
+| Return Type | [UpdateMaintenanceItemOrderPayload](../models/UpdateMaintenanceItemOrderPayload.md), [MaintenanceItemOrder](../models/MaintenanceItemOrder.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-UpdateMaintenanceItemOrderPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/update-maintenance-item-order?` and deserializes to `UpdateMaintenanceItemOrderPayload, MaintenanceItemOrder`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/update-maintenance-item-order?` and deserializes to [UpdateMaintenanceItemOrderPayload](../models/UpdateMaintenanceItemOrderPayload.md), [MaintenanceItemOrder](../models/MaintenanceItemOrder.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateMaintenanceItemOrderPayload` | True | — | All | None |
+| PayloadBody | [UpdateMaintenanceItemOrderPayload](../models/UpdateMaintenanceItemOrderPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-UpdateMaintenanceItemOrderPayload
 
 ## Outputs
 
-- `UpdateMaintenanceItemOrderPayload, MaintenanceItemOrder` records produced by `ImmyBotApiService.POST`
+- [UpdateMaintenanceItemOrderPayload](../models/UpdateMaintenanceItemOrderPayload.md), [MaintenanceItemOrder](../models/MaintenanceItemOrder.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

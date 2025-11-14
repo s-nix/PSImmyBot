@@ -10,7 +10,7 @@ title: GetSimplePersonResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetSimplePersonResponse>` |
+| Implements | IEquatable<[GetSimplePersonResponse](GetSimplePersonResponse.md)> |
 | Source | `Models/GetSimplePersonResponse.cs` |
 
 ## Overview

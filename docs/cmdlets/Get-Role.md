@@ -10,7 +10,7 @@ title: Get-Role
 | Source | `Cmdlets/GetRole.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/roles/{RoleId}? |
-| Return Type | `GetRoleResponse` |
+| Return Type | [GetRoleResponse](../models/GetRoleResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Role
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/roles/{RoleId}?` and deserializes to `GetRoleResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/roles/{RoleId}?` and deserializes to [GetRoleResponse](../models/GetRoleResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-Role
 
 ## Outputs
 
-- `GetRoleResponse` records produced by `ImmyBotApiService.GET`
+- [GetRoleResponse](../models/GetRoleResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

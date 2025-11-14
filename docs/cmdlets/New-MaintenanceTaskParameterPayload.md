@@ -24,8 +24,8 @@ title: New-MaintenanceTaskParameterPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DataType | `MaintenanceTaskParameterType` | True | — | All | None |
-| DefaultMediaDatabaseType | `DatabaseType` | True | — | All | None |
+| DataType | [MaintenanceTaskParameterType](../models/MaintenanceTaskParameterType.md) | True | — | All | None |
+| DefaultMediaDatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | DefaultMediaId | `Nullable`1` | False | — | All | None |
 | DefaultValue | `String` | False | — | All | None |
 | Hidden | `Boolean` | True | — | All | None |

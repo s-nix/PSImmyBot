@@ -10,7 +10,7 @@ title: Get-ProductCatalogItems
 | Source | `Cmdlets/GetProductCatalogItems.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/billing/product-catalog-items? |
-| Return Type | `GetProductCatalogItemsResponse` |
+| Return Type | [GetProductCatalogItemsResponse](../models/GetProductCatalogItemsResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ProductCatalogItems
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/billing/product-catalog-items?` and deserializes to `GetProductCatalogItemsResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/billing/product-catalog-items?` and deserializes to [GetProductCatalogItemsResponse](../models/GetProductCatalogItemsResponse.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `GetProductCatalogItemsResponse` records produced by `ImmyBotApiService.GET`
+- [GetProductCatalogItemsResponse](../models/GetProductCatalogItemsResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

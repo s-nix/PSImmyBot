@@ -10,7 +10,7 @@ title: Get-TenantPreferences
 | Source | `Cmdlets/GetTenantPreferences.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/preferences/tenants/{TenantId}? |
-| Return Type | `TenantPreferences` |
+| Return Type | [TenantPreferences](../models/TenantPreferences.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TenantPreferences
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/preferences/tenants/{TenantId}?` and deserializes to `TenantPreferences`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/preferences/tenants/{TenantId}?` and deserializes to [TenantPreferences](../models/TenantPreferences.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-TenantPreferences
 
 ## Outputs
 
-- `TenantPreferences` records produced by `ImmyBotApiService.GET`
+- [TenantPreferences](../models/TenantPreferences.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

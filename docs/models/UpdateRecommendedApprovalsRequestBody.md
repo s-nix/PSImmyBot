@@ -10,7 +10,7 @@ title: UpdateRecommendedApprovalsRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateRecommendedApprovalsRequestBody>` |
+| Implements | IEquatable<[UpdateRecommendedApprovalsRequestBody](UpdateRecommendedApprovalsRequestBody.md)> |
 | Source | `Models/UpdateRecommendedApprovalsRequestBody.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: UpdateRecommendedApprovalsRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Approvals | `ICollection<UpdateRecommendedApprovalPayload>` | Reference type (nullable) | — |
+| Approvals | ICollection<[UpdateRecommendedApprovalPayload](UpdateRecommendedApprovalPayload.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

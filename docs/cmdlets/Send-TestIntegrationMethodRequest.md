@@ -10,7 +10,7 @@ title: Send-TestIntegrationMethodRequest
 | Source | `Cmdlets/SendTestIntegrationMethodRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/dynamic-provider-types/test-environment/{TerminalId}/execute-method/{Method}? |
-| Return Type | `TestIntegrationMethodRequest, ObjectOpResult` |
+| Return Type | [TestIntegrationMethodRequest](../models/TestIntegrationMethodRequest.md), [ObjectOpResult](../models/ObjectOpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-TestIntegrationMethodRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/dynamic-provider-types/test-environment/{TerminalId}/execute-method/{Method}?` and deserializes to `TestIntegrationMethodRequest, ObjectOpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/dynamic-provider-types/test-environment/{TerminalId}/execute-method/{Method}?` and deserializes to [TestIntegrationMethodRequest](../models/TestIntegrationMethodRequest.md), [ObjectOpResult](../models/ObjectOpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Method | `String` | True | — | All | None |
-| PayloadBody | `TestIntegrationMethodRequest` | True | — | All | None |
+| PayloadBody | [TestIntegrationMethodRequest](../models/TestIntegrationMethodRequest.md) | True | — | All | None |
 | TerminalId | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -34,7 +34,7 @@ title: Send-TestIntegrationMethodRequest
 
 ## Outputs
 
-- `TestIntegrationMethodRequest, ObjectOpResult` records produced by `ImmyBotApiService.POST`
+- [TestIntegrationMethodRequest](../models/TestIntegrationMethodRequest.md), [ObjectOpResult](../models/ObjectOpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

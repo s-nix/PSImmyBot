@@ -10,7 +10,7 @@ title: OauthConsentData
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<OauthConsentData>` |
+| Implements | IEquatable<[OauthConsentData](OauthConsentData.md)> |
 | Source | `Models/OauthConsentData.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Get-ProviderClient
 | Source | `Cmdlets/GetProviderClient.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-links/{Id}/clients? |
-| Return Type | `List<GetProviderClientResponse>` |
+| Return Type | List<[GetProviderClientResponse](../models/GetProviderClientResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ProviderClient
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/clients?` and deserializes to `List<GetProviderClientResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/clients?` and deserializes to List<[GetProviderClientResponse](../models/GetProviderClientResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-ProviderClient
 
 ## Outputs
 
-- `List<GetProviderClientResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetProviderClientResponse](../models/GetProviderClientResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

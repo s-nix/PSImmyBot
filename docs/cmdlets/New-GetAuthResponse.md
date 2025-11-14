@@ -28,10 +28,10 @@ title: New-GetAuthResponse
 | BackendRegAppId | `String` | False | — | All | None |
 | CanManageCrossTenantDeployments | `Boolean` | True | — | All | None |
 | Claims | `ICollection`1` | False | — | All | None |
-| CurrentReleaseReleaseChannel | `ReleaseChannel` | True | — | All | None |
-| CurrentReleaseVersion | `SemanticVersion` | True | — | All | None |
+| CurrentReleaseReleaseChannel | [ReleaseChannel](../models/ReleaseChannel.md) | True | — | All | None |
+| CurrentReleaseVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | DaysLeftInTrial | `Nullable`1` | False | — | All | None |
-| DevInstanceDetails | `DevInstanceDetails` | True | — | All | None |
+| DevInstanceDetails | [DevInstanceDetails](../models/DevInstanceDetails.md) | True | — | All | None |
 | DisplayName | `String` | False | — | All | None |
 | Email | `String` | False | — | All | None |
 | Features | `ICollection`1` | False | — | All | None |
@@ -41,7 +41,7 @@ title: New-GetAuthResponse
 | HasManagementAccess | `Boolean` | True | — | All | None |
 | ImmyProduct | `String` | False | — | All | None |
 | Impersonating | `Boolean` | True | — | All | None |
-| InstanceReleaseChannel | `ReleaseChannel` | True | — | All | None |
+| InstanceReleaseChannel | [ReleaseChannel](../models/ReleaseChannel.md) | True | — | All | None |
 | InstanceUpdateHasFailed | `Boolean` | True | — | All | None |
 | InstanceUpdateSource | `String` | False | — | All | None |
 | IsAdmin | `Boolean` | True | — | All | None |
@@ -61,7 +61,7 @@ title: New-GetAuthResponse
 | PlanId | `String` | False | — | All | None |
 | PlanPrice | `Nullable`1` | False | — | All | None |
 | PlanQuantity | `Nullable`1` | False | — | All | None |
-| Status | `SubscriptionStatus` | True | — | All | None |
+| Status | [SubscriptionStatus](../models/SubscriptionStatus.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 | TenantName | `String` | False | — | All | None |
 | TrialEndUtc | `Nullable`1` | False | — | All | None |

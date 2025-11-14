@@ -10,7 +10,7 @@ title: TargetAssignmentDuplicateResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TargetAssignmentDuplicateResponse>` |
+| Implements | IEquatable<[TargetAssignmentDuplicateResponse](TargetAssignmentDuplicateResponse.md)> |
 | Source | `Models/TargetAssignmentDuplicateResponse.cs` |
 
 ## Overview

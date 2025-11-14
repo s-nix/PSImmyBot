@@ -10,7 +10,7 @@ title: TargetAssignmentVisibilityPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TargetAssignmentVisibilityPayload>` |
+| Implements | IEquatable<[TargetAssignmentVisibilityPayload](TargetAssignmentVisibilityPayload.md)> |
 | Source | `Models/TargetAssignmentVisibilityPayload.cs` |
 
 ## Overview

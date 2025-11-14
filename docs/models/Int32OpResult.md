@@ -10,7 +10,7 @@ title: Int32OpResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Int32OpResult>` |
+| Implements | IEquatable<[Int32OpResult](Int32OpResult.md)> |
 | Source | `Models/Int32OpResult.cs` |
 
 ## Overview

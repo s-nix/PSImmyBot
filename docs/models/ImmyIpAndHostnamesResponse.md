@@ -10,7 +10,7 @@ title: ImmyIpAndHostnamesResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ImmyIpAndHostnamesResponse>` |
+| Implements | IEquatable<[ImmyIpAndHostnamesResponse](ImmyIpAndHostnamesResponse.md)> |
 | Source | `Models/ImmyIpAndHostnamesResponse.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ImmyIpAndHostnamesResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | GlobalBlobStorageEndpoint | `string` | Reference type (nullable) | — |
-| IpInfo | `GetIpAddressesResponse` | Reference type (nullable) | — |
+| IpInfo | [GetIpAddressesResponse](GetIpAddressesResponse.md) | Reference type (nullable) | — |
 | LocalBlobStorageEndpoint | `string` | Reference type (nullable) | — |
 
 ## Serialization

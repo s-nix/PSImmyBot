@@ -10,7 +10,7 @@ title: Get-Notification
 | Source | `Cmdlets/GetNotification.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/notifications/unacknowledged? |
-| Return Type | `List<Notification>` |
+| Return Type | List<[Notification](../models/Notification.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Notification
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/notifications/unacknowledged?` and deserializes to `List<Notification>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/notifications/unacknowledged?` and deserializes to List<[Notification](../models/Notification.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -33,7 +33,7 @@ title: Get-Notification
 
 ## Outputs
 
-- `List<Notification>` records produced by `ImmyBotApiService.GET`
+- List<[Notification](../models/Notification.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: DeleteTenantsCmdResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DeleteTenantsCmdResponse>` |
+| Implements | IEquatable<[DeleteTenantsCmdResponse](DeleteTenantsCmdResponse.md)> |
 | Source | `Models/DeleteTenantsCmdResponse.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: DeleteTenantsCmdResponse
 | --- | --- | --- | --- |
 | Message | `string` | Reference type (nullable) | — |
 | Success | `bool` | No (value type) | — |
-| TenantResults | `ICollection<DeleteTenantResult>` | Reference type (nullable) | — |
+| TenantResults | ICollection<[DeleteTenantResult](DeleteTenantResult.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

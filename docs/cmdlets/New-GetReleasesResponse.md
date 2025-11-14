@@ -24,7 +24,7 @@ title: New-GetReleasesResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| CurrentRelease | `ReleaseDetails` | True | — | All | None |
+| CurrentRelease | [ReleaseDetails](../models/ReleaseDetails.md) | True | — | All | None |
 | LatestReleases | `ICollection`1` | False | — | All | None |
 
 ### Parameter sets

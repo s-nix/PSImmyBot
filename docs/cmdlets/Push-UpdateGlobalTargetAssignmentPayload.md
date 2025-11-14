@@ -10,7 +10,7 @@ title: Push-UpdateGlobalTargetAssignmentPayload
 | Source | `Cmdlets/PushUpdateGlobalTargetAssignmentPayload.cs` |
 | HTTP Method | PUT |
 | Endpoint | /api/v1/target-assignments/global/{Id}? |
-| Return Type | `UpdateGlobalTargetAssignmentPayload, GlobalTargetAssignmentResource` |
+| Return Type | [UpdateGlobalTargetAssignmentPayload](../models/UpdateGlobalTargetAssignmentPayload.md), [GlobalTargetAssignmentResource](../models/GlobalTargetAssignmentResource.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Push-UpdateGlobalTargetAssignmentPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PUT` targeting `/api/v1/target-assignments/global/{Id}?` and deserializes to `UpdateGlobalTargetAssignmentPayload, GlobalTargetAssignmentResource`.
+- Calls `ImmyBotApiService.PUT` targeting `/api/v1/target-assignments/global/{Id}?` and deserializes to [UpdateGlobalTargetAssignmentPayload](../models/UpdateGlobalTargetAssignmentPayload.md), [GlobalTargetAssignmentResource](../models/GlobalTargetAssignmentResource.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateGlobalTargetAssignmentPayload` | True | — | All | None |
+| PayloadBody | [UpdateGlobalTargetAssignmentPayload](../models/UpdateGlobalTargetAssignmentPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Push-UpdateGlobalTargetAssignmentPayload
 
 ## Outputs
 
-- `UpdateGlobalTargetAssignmentPayload, GlobalTargetAssignmentResource` records produced by `ImmyBotApiService.PUT`
+- [UpdateGlobalTargetAssignmentPayload](../models/UpdateGlobalTargetAssignmentPayload.md), [GlobalTargetAssignmentResource](../models/GlobalTargetAssignmentResource.md) records produced by `ImmyBotApiService.PUT`
 
 ## Notes
 

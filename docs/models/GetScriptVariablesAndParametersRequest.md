@@ -10,7 +10,7 @@ title: GetScriptVariablesAndParametersRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetScriptVariablesAndParametersRequest>` |
+| Implements | IEquatable<[GetScriptVariablesAndParametersRequest](GetScriptVariablesAndParametersRequest.md)> |
 | Source | `Models/GetScriptVariablesAndParametersRequest.cs` |
 
 ## Overview
@@ -21,12 +21,12 @@ title: GetScriptVariablesAndParametersRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ComputerId | `int?` | Yes (nullable value type) | — |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
 | SoftwareId | `int?` | Yes (nullable value type) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 | TaskId | `int?` | Yes (nullable value type) | — |
-| TaskType | `DatabaseType` | No (value type) | — |
+| TaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

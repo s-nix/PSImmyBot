@@ -10,7 +10,7 @@ title: Send-GetPowerShellInstallScriptParametersWithOnboardingOptions
 | Source | `Cmdlets/SendGetPowerShellInstallScriptParametersWithOnboardingOptions.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/agents/powershell-install-script-with-onboarding? |
-| Return Type | `GetPowerShellInstallScriptParametersWithOnboardingOptions, IScript` |
+| Return Type | [GetPowerShellInstallScriptParametersWithOnboardingOptions](../models/GetPowerShellInstallScriptParametersWithOnboardingOptions.md), [IScript](../models/IScript.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-GetPowerShellInstallScriptParametersWithOnboardingOptions
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/powershell-install-script-with-onboarding?` and deserializes to `GetPowerShellInstallScriptParametersWithOnboardingOptions, IScript`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/powershell-install-script-with-onboarding?` and deserializes to [GetPowerShellInstallScriptParametersWithOnboardingOptions](../models/GetPowerShellInstallScriptParametersWithOnboardingOptions.md), [IScript](../models/IScript.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `GetPowerShellInstallScriptParametersWithOnboardingOptions` | True | — | All | None |
+| PayloadBody | [GetPowerShellInstallScriptParametersWithOnboardingOptions](../models/GetPowerShellInstallScriptParametersWithOnboardingOptions.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-GetPowerShellInstallScriptParametersWithOnboardingOptions
 
 ## Outputs
 
-- `GetPowerShellInstallScriptParametersWithOnboardingOptions, IScript` records produced by `ImmyBotApiService.POST`
+- [GetPowerShellInstallScriptParametersWithOnboardingOptions](../models/GetPowerShellInstallScriptParametersWithOnboardingOptions.md), [IScript](../models/IScript.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

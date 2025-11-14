@@ -10,7 +10,7 @@ title: GetLatestActionForTenantsRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetLatestActionForTenantsRequestBody>` |
+| Implements | IEquatable<[GetLatestActionForTenantsRequestBody](GetLatestActionForTenantsRequestBody.md)> |
 | Source | `Models/GetLatestActionForTenantsRequestBody.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: GetLatestActionForTenantsRequestBody
 | --- | --- | --- | --- |
 | DateUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | TenantIds | `ICollection<int>` | Reference type (nullable) | — |
 
 ## Serialization

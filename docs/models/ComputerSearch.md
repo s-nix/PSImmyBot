@@ -10,7 +10,7 @@ title: ComputerSearch
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerSearch>` |
+| Implements | IEquatable<[ComputerSearch](ComputerSearch.md)> |
 | Source | `Models/ComputerSearch.cs` |
 
 ## Overview

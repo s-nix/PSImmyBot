@@ -10,7 +10,7 @@ title: Send-RoviderLinksClientsLinkExactMatchClients
 | Source | `Cmdlets/SendRoviderLinksClientsLinkExactMatchClients.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/clients/link-exact-match-clients? |
-| Return Type | `List<ProviderClientLinkToTenantByExactNameResponse>` |
+| Return Type | List<[ProviderClientLinkToTenantByExactNameResponse](../models/ProviderClientLinkToTenantByExactNameResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-RoviderLinksClientsLinkExactMatchClients
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/clients/link-exact-match-clients?` and deserializes to `List<ProviderClientLinkToTenantByExactNameResponse>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/clients/link-exact-match-clients?` and deserializes to List<[ProviderClientLinkToTenantByExactNameResponse](../models/ProviderClientLinkToTenantByExactNameResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Send-RoviderLinksClientsLinkExactMatchClients
 
 ## Outputs
 
-- `List<ProviderClientLinkToTenantByExactNameResponse>` records produced by `ImmyBotApiService.POST`
+- List<[ProviderClientLinkToTenantByExactNameResponse](../models/ProviderClientLinkToTenantByExactNameResponse.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

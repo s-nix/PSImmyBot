@@ -24,7 +24,7 @@ title: Send-AddTagsRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `AddTagsRequest` | True | — | All | None |
+| PayloadBody | [AddTagsRequest](../models/AddTagsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

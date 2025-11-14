@@ -24,7 +24,7 @@ title: New-UpdateAzureTenantAuthDetailsCmdResult
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AuthDetails | `AzureTenantAuthDetails` | True | — | All | None |
+| AuthDetails | [AzureTenantAuthDetails](../models/AzureTenantAuthDetails.md) | True | — | All | None |
 | DefaultAppRegistrationUpdated | `Boolean` | True | — | All | None |
 
 ### Parameter sets

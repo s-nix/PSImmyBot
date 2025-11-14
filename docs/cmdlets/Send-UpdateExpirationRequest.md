@@ -24,7 +24,7 @@ title: Send-UpdateExpirationRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateExpirationRequest` | True | — | All | None |
+| PayloadBody | [UpdateExpirationRequest](../models/UpdateExpirationRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

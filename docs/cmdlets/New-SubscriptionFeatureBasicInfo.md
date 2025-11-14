@@ -28,8 +28,8 @@ title: New-SubscriptionFeatureBasicInfo
 | FeatureId | `String` | False | — | All | None |
 | FeatureName | `String` | False | — | All | None |
 | Levels | `ICollection`1` | True | — | All | None |
-| Status | `SubscriptionFeatureStatus` | True | — | All | None |
-| Type | `SubscriptionFeatureType` | True | — | All | None |
+| Status | [SubscriptionFeatureStatus](../models/SubscriptionFeatureStatus.md) | True | — | All | None |
+| Type | [SubscriptionFeatureType](../models/SubscriptionFeatureType.md) | True | — | All | None |
 | Unit | `String` | False | — | All | None |
 
 ### Parameter sets

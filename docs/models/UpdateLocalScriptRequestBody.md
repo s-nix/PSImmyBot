@@ -10,7 +10,7 @@ title: UpdateLocalScriptRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateLocalScriptRequestBody>` |
+| Implements | IEquatable<[UpdateLocalScriptRequestBody](UpdateLocalScriptRequestBody.md)> |
 | Source | `Models/UpdateLocalScriptRequestBody.cs` |
 
 ## Overview
@@ -22,13 +22,13 @@ title: UpdateLocalScriptRequestBody
 | --- | --- | --- | --- |
 | Action | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OutputType | `ScriptOutputType` | No (value type) | — |
+| OutputType | [ScriptOutputType](ScriptOutputType.md) | No (value type) | — |
 | ScriptCacheName | `string` | Reference type (nullable) | — |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
-| Tenants | `ICollection<TenantScript>` | Reference type (nullable) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| Tenants | ICollection<[TenantScript](TenantScript.md)> | Reference type (nullable) | — |
 | Timeout | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

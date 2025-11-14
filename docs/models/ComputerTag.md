@@ -10,7 +10,7 @@ title: ComputerTag
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerTag>` |
+| Implements | IEquatable<[ComputerTag](ComputerTag.md)> |
 | Source | `Models/ComputerTag.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: ComputerTag
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | EntityId | `int` | No (value type) | — |
-| Tag | `Tag` | Reference type (nullable) | — |
+| Tag | [Tag](Tag.md) | Reference type (nullable) | — |
 | TagId | `int` | No (value type) | — |
 
 ## Serialization

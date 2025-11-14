@@ -26,9 +26,9 @@ title: New-UserImpersonation
 | --- | --- | --- | --- | --- | --- |
 | ExpiresAtUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| ImpersonatingUser | `User` | True | — | All | None |
+| ImpersonatingUser | [User](../models/User.md) | True | — | All | None |
 | ImpersonatingUserId | `Int32` | True | — | All | None |
-| ImpersonatorUser | `User` | True | — | All | None |
+| ImpersonatorUser | [User](../models/User.md) | True | — | All | None |
 | ImpersonatorUserId | `Int32` | True | — | All | None |
 
 ### Parameter sets

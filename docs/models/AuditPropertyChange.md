@@ -10,7 +10,7 @@ title: AuditPropertyChange
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AuditPropertyChange>` |
+| Implements | IEquatable<[AuditPropertyChange](AuditPropertyChange.md)> |
 | Source | `Models/AuditPropertyChange.cs` |
 
 ## Overview

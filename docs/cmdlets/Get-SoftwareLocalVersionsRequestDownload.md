@@ -24,7 +24,7 @@ title: Get-SoftwareLocalVersionsRequestDownload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| SemanticVersion | `SemanticVersion` | True | — | All | None |
+| SemanticVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | True | — | All | None |
 
 ### Parameter sets

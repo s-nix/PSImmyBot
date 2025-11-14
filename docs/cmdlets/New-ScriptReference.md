@@ -24,11 +24,11 @@ title: New-ScriptReference
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| ScriptReferenceType | `ScriptReferenceType` | True | — | All | None |
-| SoftwareVersion | `SemanticVersion` | True | — | All | None |
+| ScriptReferenceType | [ScriptReferenceType](../models/ScriptReferenceType.md) | True | — | All | None |
+| SoftwareVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 
 ### Parameter sets
 

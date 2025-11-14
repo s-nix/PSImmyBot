@@ -10,7 +10,7 @@ title: ChangeRequestResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ChangeRequestResponse>` |
+| Implements | IEquatable<[ChangeRequestResponse](ChangeRequestResponse.md)> |
 | Source | `Models/ChangeRequestResponse.cs` |
 
 ## Overview
@@ -22,14 +22,14 @@ title: ChangeRequestResponse
 | --- | --- | --- | --- |
 | AcknowledgedByUserId | `int?` | Yes (nullable value type) | — |
 | AcknowledgedByUserName | `string` | Reference type (nullable) | — |
-| Comments | `ICollection<ChangeRequestCommentResponse>` | Reference type (nullable) | — |
+| Comments | ICollection<[ChangeRequestCommentResponse](ChangeRequestCommentResponse.md)> | Reference type (nullable) | — |
 | CreatedByUserName | `string` | Reference type (nullable) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | NewValuesJson | `object` | Reference type (nullable) | — |
-| ObjectType | `ChangeRequestObjectType` | No (value type) | — |
+| ObjectType | [ChangeRequestObjectType](ChangeRequestObjectType.md) | No (value type) | — |
 | ScriptId | `int?` | Yes (nullable value type) | — |
-| State | `ChangeRequestState` | No (value type) | — |
+| State | [ChangeRequestState](ChangeRequestState.md) | No (value type) | — |
 | TargetAssignmentId | `int?` | Yes (nullable value type) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
 

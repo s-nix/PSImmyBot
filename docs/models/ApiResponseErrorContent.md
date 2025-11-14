@@ -10,7 +10,7 @@ title: ApiResponseErrorContent
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApiResponseErrorContent>` |
+| Implements | IEquatable<[ApiResponseErrorContent](ApiResponseErrorContent.md)> |
 | Source | `Models/ApiResponseErrorContent.cs` |
 
 ## Overview

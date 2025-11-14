@@ -25,7 +25,7 @@ title: New-DuplicateScriptRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| ScriptType | `DatabaseType` | True | — | All | None |
+| ScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 
 ### Parameter sets
 

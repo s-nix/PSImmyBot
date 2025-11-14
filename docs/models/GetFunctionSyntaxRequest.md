@@ -10,7 +10,7 @@ title: GetFunctionSyntaxRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetFunctionSyntaxRequest>` |
+| Implements | IEquatable<[GetFunctionSyntaxRequest](GetFunctionSyntaxRequest.md)> |
 | Source | `Models/GetFunctionSyntaxRequest.cs` |
 
 ## Overview

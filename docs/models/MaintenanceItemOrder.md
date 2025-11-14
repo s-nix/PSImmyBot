@@ -10,7 +10,7 @@ title: MaintenanceItemOrder
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceItemOrder>` |
+| Implements | IEquatable<[MaintenanceItemOrder](MaintenanceItemOrder.md)> |
 | Source | `Models/MaintenanceItemOrder.cs` |
 
 ## Overview
@@ -21,9 +21,9 @@ title: MaintenanceItemOrder
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Id | `int` | No (value type) | — |
-| Location | `MaintenanceItemOrderLocation` | No (value type) | — |
+| Location | [MaintenanceItemOrderLocation](MaintenanceItemOrderLocation.md) | No (value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | SortOrder | `double` | No (value type) | — |
 
 ## Serialization

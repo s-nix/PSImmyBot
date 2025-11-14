@@ -10,7 +10,7 @@ title: Send-UpdateLocalMaintenanceTaskPayload
 | Source | `Cmdlets/SendUpdateLocalMaintenanceTaskPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/maintenance-tasks/local/{Id}? |
-| Return Type | `UpdateLocalMaintenanceTaskPayload, GetLocalMaintenanceTaskResponse` |
+| Return Type | [UpdateLocalMaintenanceTaskPayload](../models/UpdateLocalMaintenanceTaskPayload.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-UpdateLocalMaintenanceTaskPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/local/{Id}?` and deserializes to `UpdateLocalMaintenanceTaskPayload, GetLocalMaintenanceTaskResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/local/{Id}?` and deserializes to [UpdateLocalMaintenanceTaskPayload](../models/UpdateLocalMaintenanceTaskPayload.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateLocalMaintenanceTaskPayload` | True | — | All | None |
+| PayloadBody | [UpdateLocalMaintenanceTaskPayload](../models/UpdateLocalMaintenanceTaskPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-UpdateLocalMaintenanceTaskPayload
 
 ## Outputs
 
-- `UpdateLocalMaintenanceTaskPayload, GetLocalMaintenanceTaskResponse` records produced by `ImmyBotApiService.POST`
+- [UpdateLocalMaintenanceTaskPayload](../models/UpdateLocalMaintenanceTaskPayload.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

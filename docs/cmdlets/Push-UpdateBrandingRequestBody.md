@@ -10,7 +10,7 @@ title: Push-UpdateBrandingRequestBody
 | Source | `Cmdlets/PushUpdateBrandingRequestBody.cs` |
 | HTTP Method | PUT |
 | Endpoint | /api/v1/brandings/{Id}? |
-| Return Type | `UpdateBrandingRequestBody, GetBrandingResponse` |
+| Return Type | [UpdateBrandingRequestBody](../models/UpdateBrandingRequestBody.md), [GetBrandingResponse](../models/GetBrandingResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Push-UpdateBrandingRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PUT` targeting `/api/v1/brandings/{Id}?` and deserializes to `UpdateBrandingRequestBody, GetBrandingResponse`.
+- Calls `ImmyBotApiService.PUT` targeting `/api/v1/brandings/{Id}?` and deserializes to [UpdateBrandingRequestBody](../models/UpdateBrandingRequestBody.md), [GetBrandingResponse](../models/GetBrandingResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateBrandingRequestBody` | True | — | All | None |
+| PayloadBody | [UpdateBrandingRequestBody](../models/UpdateBrandingRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Push-UpdateBrandingRequestBody
 
 ## Outputs
 
-- `UpdateBrandingRequestBody, GetBrandingResponse` records produced by `ImmyBotApiService.PUT`
+- [UpdateBrandingRequestBody](../models/UpdateBrandingRequestBody.md), [GetBrandingResponse](../models/GetBrandingResponse.md) records produced by `ImmyBotApiService.PUT`
 
 ## Notes
 

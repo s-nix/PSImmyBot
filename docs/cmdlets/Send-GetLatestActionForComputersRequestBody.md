@@ -10,7 +10,7 @@ title: Send-GetLatestActionForComputersRequestBody
 | Source | `Cmdlets/SendGetLatestActionForComputersRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/maintenance-actions/latest-action-for-computers? |
-| Return Type | `GetLatestActionForComputersRequestBody, List<GetMaintenanceActionResponse>` |
+| Return Type | [GetLatestActionForComputersRequestBody](../models/GetLatestActionForComputersRequestBody.md), List<[GetMaintenanceActionResponse](../models/GetMaintenanceActionResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-GetLatestActionForComputersRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-actions/latest-action-for-computers?` and deserializes to `GetLatestActionForComputersRequestBody, List<GetMaintenanceActionResponse>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-actions/latest-action-for-computers?` and deserializes to [GetLatestActionForComputersRequestBody](../models/GetLatestActionForComputersRequestBody.md), List<[GetMaintenanceActionResponse](../models/GetMaintenanceActionResponse.md)>.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `GetLatestActionForComputersRequestBody` | True | — | All | None |
+| PayloadBody | [GetLatestActionForComputersRequestBody](../models/GetLatestActionForComputersRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-GetLatestActionForComputersRequestBody
 
 ## Outputs
 
-- `GetLatestActionForComputersRequestBody, List<GetMaintenanceActionResponse>` records produced by `ImmyBotApiService.POST`
+- [GetLatestActionForComputersRequestBody](../models/GetLatestActionForComputersRequestBody.md), List<[GetMaintenanceActionResponse](../models/GetMaintenanceActionResponse.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

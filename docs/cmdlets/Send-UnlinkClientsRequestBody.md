@@ -25,7 +25,7 @@ title: Send-UnlinkClientsRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UnlinkClientsRequestBody` | True | — | All | None |
+| PayloadBody | [UnlinkClientsRequestBody](../models/UnlinkClientsRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

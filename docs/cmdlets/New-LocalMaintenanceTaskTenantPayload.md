@@ -24,7 +24,7 @@ title: New-LocalMaintenanceTaskTenantPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Relationship | `Relationship` | True | — | All | None |
+| Relationship | [Relationship](../models/Relationship.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 
 ### Parameter sets

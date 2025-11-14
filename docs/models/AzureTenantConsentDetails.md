@@ -10,7 +10,7 @@ title: AzureTenantConsentDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantConsentDetails>` |
+| Implements | IEquatable<[AzureTenantConsentDetails](AzureTenantConsentDetails.md)> |
 | Source | `Models/AzureTenantConsentDetails.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: AzureTenantConsentDetails
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ConsentDateUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
-| ConsentedWith | `AppRegistrationType` | No (value type) | — |
+| ConsentedWith | [AppRegistrationType](AppRegistrationType.md) | No (value type) | — |
 
 ## Serialization
 

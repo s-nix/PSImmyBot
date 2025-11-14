@@ -26,7 +26,7 @@ title: Send-ProviderAgentsResolveFailure
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | FailureId | `Int32` | True | — | All | None |
-| ManualResolutionDecision | `AgentIdentificationManualResolutionDecision` | False | — | All | None |
+| ManualResolutionDecision | [AgentIdentificationManualResolutionDecision](../models/AgentIdentificationManualResolutionDecision.md) | False | — | All | None |
 
 ### Parameter sets
 

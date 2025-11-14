@@ -10,7 +10,7 @@ title: Send-ErsonsDenyAccess
 | Source | `Cmdlets/SendErsonsDenyAccess.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/persons/{PersonId}/deny-access? |
-| Return Type | `CommandResult` |
+| Return Type | [CommandResult](../models/CommandResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-ErsonsDenyAccess
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/persons/{PersonId}/deny-access?` and deserializes to `CommandResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/persons/{PersonId}/deny-access?` and deserializes to [CommandResult](../models/CommandResult.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Send-ErsonsDenyAccess
 
 ## Outputs
 
-- `CommandResult` records produced by `ImmyBotApiService.POST`
+- [CommandResult](../models/CommandResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

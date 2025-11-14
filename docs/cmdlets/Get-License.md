@@ -10,7 +10,7 @@ title: Get-License
 | Source | `Cmdlets/GetLicense.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/licenses/{LicenseId}? |
-| Return Type | `GetLicenseResponse` |
+| Return Type | [GetLicenseResponse](../models/GetLicenseResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-License
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/licenses/{LicenseId}?` and deserializes to `GetLicenseResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/licenses/{LicenseId}?` and deserializes to [GetLicenseResponse](../models/GetLicenseResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-License
 
 ## Outputs
 
-- `GetLicenseResponse` records produced by `ImmyBotApiService.GET`
+- [GetLicenseResponse](../models/GetLicenseResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

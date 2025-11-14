@@ -24,7 +24,7 @@ title: New-UpdateReleaseChannelRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ReleaseChannel | `ReleaseChannel` | True | — | All | None |
+| ReleaseChannel | [ReleaseChannel](../models/ReleaseChannel.md) | True | — | All | None |
 
 ### Parameter sets
 

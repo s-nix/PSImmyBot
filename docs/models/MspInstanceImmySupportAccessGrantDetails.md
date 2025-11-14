@@ -10,7 +10,7 @@ title: MspInstanceImmySupportAccessGrantDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MspInstanceImmySupportAccessGrantDetails>` |
+| Implements | IEquatable<[MspInstanceImmySupportAccessGrantDetails](MspInstanceImmySupportAccessGrantDetails.md)> |
 | Source | `Models/MspInstanceImmySupportAccessGrantDetails.cs` |
 
 ## Overview

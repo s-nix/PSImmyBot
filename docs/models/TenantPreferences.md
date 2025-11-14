@@ -10,7 +10,7 @@ title: TenantPreferences
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantPreferences>` |
+| Implements | IEquatable<[TenantPreferences](TenantPreferences.md)> |
 | Source | `Models/TenantPreferences.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: TenantPreferences
 | --- | --- | --- | --- |
 | BusinessHoursEnd | `string` | Reference type (nullable) | — |
 | BusinessHoursStart | `string` | Reference type (nullable) | — |
-| DefaultEmailBccList | `DefaultEmailBccList` | Reference type (nullable) | — |
+| DefaultEmailBccList | [DefaultEmailBccList](DefaultEmailBccList.md) | Reference type (nullable) | — |
 | EnableImmyBotRemoteControl | `bool?` | Yes (nullable value type) | — |
 | EnableImmyBotRemoteControlRecording | `bool?` | Yes (nullable value type) | — |
 | EnableOnboarding | `bool` | No (value type) | — |
@@ -32,7 +32,7 @@ title: TenantPreferences
 | ExcludeFromCrossTenantDeploymentsAndSchedules | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | OverwriteExistingDeviceIfOsIsNew | `bool` | No (value type) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | RequireConsentForExternalSessionProviders | `bool?` | Yes (nullable value type) | — |
 | TenantId | `int` | No (value type) | — |
 | TimeZoneInfoId | `string` | Reference type (nullable) | — |

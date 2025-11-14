@@ -10,7 +10,7 @@ title: ValidateParamBlockParametersFromScriptRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ValidateParamBlockParametersFromScriptRequest>` |
+| Implements | IEquatable<[ValidateParamBlockParametersFromScriptRequest](ValidateParamBlockParametersFromScriptRequest.md)> |
 | Source | `Models/ValidateParamBlockParametersFromScriptRequest.cs` |
 
 ## Overview
@@ -21,10 +21,10 @@ title: ValidateParamBlockParametersFromScriptRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ComputerId | `int?` | Yes (nullable value type) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | ForceRebind | `bool` | No (value type) | — |
 | MaintenanceSessionId | `int?` | Yes (nullable value type) | — |
-| ParameterValues | `IDictionary<string, ParameterValue>` | Reference type (nullable) | — |
+| ParameterValues | IDictionary<string, [ParameterValue](ParameterValue.md)> | Reference type (nullable) | — |
 | Script | `string` | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | TerminalId | `Guid?` | Yes (nullable value type) | — |

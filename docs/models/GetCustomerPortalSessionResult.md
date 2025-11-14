@@ -10,7 +10,7 @@ title: GetCustomerPortalSessionResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetCustomerPortalSessionResult>` |
+| Implements | IEquatable<[GetCustomerPortalSessionResult](GetCustomerPortalSessionResult.md)> |
 | Source | `Models/GetCustomerPortalSessionResult.cs` |
 
 ## Overview
@@ -25,7 +25,7 @@ title: GetCustomerPortalSessionResult
 | CustomerId | `string` | Reference type (nullable) | — |
 | ExpiresAt | `DateTimeOffset?` | Yes (nullable value type) | — |
 | PortalSessionId | `string` | Reference type (nullable) | — |
-| Status | `CustomerPortalSessionStatus` | No (value type) | — |
+| Status | [CustomerPortalSessionStatus](CustomerPortalSessionStatus.md) | No (value type) | — |
 | Token | `string` | Reference type (nullable) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: Send-ResolveVisibilityTargetAssignmentsRequest
 | Source | `Cmdlets/SendResolveVisibilityTargetAssignmentsRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/visibility? |
-| Return Type | `ResolveVisibilityTargetAssignmentsRequest, List<TargetAssignmentResource>` |
+| Return Type | [ResolveVisibilityTargetAssignmentsRequest](../models/ResolveVisibilityTargetAssignmentsRequest.md), List<[TargetAssignmentResource](../models/TargetAssignmentResource.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-ResolveVisibilityTargetAssignmentsRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/visibility?` and deserializes to `ResolveVisibilityTargetAssignmentsRequest, List<TargetAssignmentResource>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/visibility?` and deserializes to [ResolveVisibilityTargetAssignmentsRequest](../models/ResolveVisibilityTargetAssignmentsRequest.md), List<[TargetAssignmentResource](../models/TargetAssignmentResource.md)>.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ResolveVisibilityTargetAssignmentsRequest` | True | — | All | None |
+| PayloadBody | [ResolveVisibilityTargetAssignmentsRequest](../models/ResolveVisibilityTargetAssignmentsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-ResolveVisibilityTargetAssignmentsRequest
 
 ## Outputs
 
-- `ResolveVisibilityTargetAssignmentsRequest, List<TargetAssignmentResource>` records produced by `ImmyBotApiService.POST`
+- [ResolveVisibilityTargetAssignmentsRequest](../models/ResolveVisibilityTargetAssignmentsRequest.md), List<[TargetAssignmentResource](../models/TargetAssignmentResource.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

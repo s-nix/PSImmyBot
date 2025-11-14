@@ -10,7 +10,7 @@ title: SetupTestIntegrationRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SetupTestIntegrationRequest>` |
+| Implements | IEquatable<[SetupTestIntegrationRequest](SetupTestIntegrationRequest.md)> |
 | Source | `Models/SetupTestIntegrationRequest.cs` |
 
 ## Overview

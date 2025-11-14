@@ -10,7 +10,7 @@ title: BeginAuthCodeFlowRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BeginAuthCodeFlowRequest>` |
+| Implements | IEquatable<[BeginAuthCodeFlowRequest](BeginAuthCodeFlowRequest.md)> |
 | Source | `Models/BeginAuthCodeFlowRequest.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: BeginAuthCodeFlowRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | AllowSilentRefresh | `bool` | No (value type) | — |
-| OauthConsentData | `OauthConsentData` | Reference type (nullable) | — |
+| OauthConsentData | [OauthConsentData](OauthConsentData.md) | Reference type (nullable) | — |
 
 ## Serialization
 

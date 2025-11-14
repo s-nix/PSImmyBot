@@ -10,7 +10,7 @@ title: AzureTenantResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantResponse>` |
+| Implements | IEquatable<[AzureTenantResponse](AzureTenantResponse.md)> |
 | Source | `Models/AzureTenantResponse.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: AzureTenantResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AzureTenantType | `AzTenantType` | No (value type) | — |
-| ConsentDetails | `AzureTenantConsentDetails` | Reference type (nullable) | — |
-| InfoSyncedFromAzure | `AzureTenantInfo` | Reference type (nullable) | — |
-| LastGetTenantInfoSyncResult | `AzureSyncResult` | Reference type (nullable) | — |
-| LastGetUsersSyncResult | `AzureSyncResult` | Reference type (nullable) | — |
+| AzureTenantType | [AzTenantType](AzTenantType.md) | No (value type) | — |
+| ConsentDetails | [AzureTenantConsentDetails](AzureTenantConsentDetails.md) | Reference type (nullable) | — |
+| InfoSyncedFromAzure | [AzureTenantInfo](AzureTenantInfo.md) | Reference type (nullable) | — |
+| LastGetTenantInfoSyncResult | [AzureSyncResult](AzureSyncResult.md) | Reference type (nullable) | — |
+| LastGetUsersSyncResult | [AzureSyncResult](AzureSyncResult.md) | Reference type (nullable) | — |
 | PartnerPrincipalId | `string` | Reference type (nullable) | — |
 | PrincipalId | `string` | Reference type (nullable) | — |
 

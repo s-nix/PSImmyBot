@@ -26,7 +26,7 @@ title: New-UpdateComputerRequestBody
 | --- | --- | --- | --- | --- | --- |
 | AdditionalPersonIds | `ICollection`1` | False | — | All | None |
 | Notes | `String` | False | — | All | None |
-| OnboardingStatus | `ComputerOnboardingStatus` | True | — | All | None |
+| OnboardingStatus | [ComputerOnboardingStatus](../models/ComputerOnboardingStatus.md) | True | — | All | None |
 | ProviderLinkUpdates | `ICollection`1` | False | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 

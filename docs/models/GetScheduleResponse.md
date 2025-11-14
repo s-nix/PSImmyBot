@@ -10,7 +10,7 @@ title: GetScheduleResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetScheduleResponse>` |
+| Implements | IEquatable<[GetScheduleResponse](GetScheduleResponse.md)> |
 | Source | `Models/GetScheduleResponse.cs` |
 
 ## Overview
@@ -32,19 +32,19 @@ title: GetScheduleResponse
 | Id | `int` | No (value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
 | MaintenanceTime | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | NextOccurenceDate | `DateTimeOffset?` | Yes (nullable value type) | — |
-| OfflineBehavior | `ComputerOfflineMaintenanceSessionBehavior` | No (value type) | — |
+| OfflineBehavior | [ComputerOfflineMaintenanceSessionBehavior](ComputerOfflineMaintenanceSessionBehavior.md) | No (value type) | — |
 | OnboardingOnly | `bool` | No (value type) | — |
-| PromptTimeoutAction | `PromptTimeoutAction` | No (value type) | — |
+| PromptTimeoutAction | [PromptTimeoutAction](PromptTimeoutAction.md) | No (value type) | — |
 | PromptTimeoutMinutes | `int` | No (value type) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
 | ProviderClientGroupType | `Guid?` | Yes (nullable value type) | — |
 | ProviderDeviceGroupType | `Guid?` | Yes (nullable value type) | — |
-| ProviderLink | `GetProviderLinkResponse` | Reference type (nullable) | — |
+| ProviderLink | [GetProviderLinkResponse](GetProviderLinkResponse.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int?` | Yes (nullable value type) | — |
-| RebootPreference | `RebootPreference` | No (value type) | — |
+| RebootPreference | [RebootPreference](RebootPreference.md) | No (value type) | — |
 | ScheduleExecutionAfterActiveHours | `bool` | No (value type) | — |
 | SendDetectionEmail | `bool` | No (value type) | — |
 | SendDetectionEmailWhenAllActionsAreCompliant | `bool` | No (value type) | — |
@@ -55,13 +55,13 @@ title: GetScheduleResponse
 | ShowRunNowButton | `bool` | No (value type) | — |
 | SuppressRebootsDuringBusinessHours | `bool` | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetCategory | `TargetCategory` | No (value type) | — |
-| TargetGroupFilter | `TargetGroupFilter` | No (value type) | — |
+| TargetCategory | [TargetCategory](TargetCategory.md) | No (value type) | — |
+| TargetGroupFilter | [TargetGroupFilter](TargetGroupFilter.md) | No (value type) | — |
 | TargetGroupFilterName | `string` | Reference type (nullable) | — |
 | TargetMissing | `bool` | No (value type) | — |
 | TargetScopeName | `string` | Reference type (nullable) | — |
 | TargetText | `string` | Reference type (nullable) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 | TargetTypeDescription | `string` | Reference type (nullable) | — |
 | TargetTypeMissing | `bool` | No (value type) | — |
 | TargetTypeName | `string` | Reference type (nullable) | — |

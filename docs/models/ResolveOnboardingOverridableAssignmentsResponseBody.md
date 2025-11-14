@@ -10,7 +10,7 @@ title: ResolveOnboardingOverridableAssignmentsResponseBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ResolveOnboardingOverridableAssignmentsResponseBody>` |
+| Implements | IEquatable<[ResolveOnboardingOverridableAssignmentsResponseBody](ResolveOnboardingOverridableAssignmentsResponseBody.md)> |
 | Source | `Models/ResolveOnboardingOverridableAssignmentsResponseBody.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: ResolveOnboardingOverridableAssignmentsResponseBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| NextHighestPriorityNonOnboardingOnlyAssignments | `ICollection<TargetAssignmentResource>` | Reference type (nullable) | — |
-| OverridableAssignments | `ICollection<TargetAssignmentResource>` | Reference type (nullable) | — |
+| NextHighestPriorityNonOnboardingOnlyAssignments | ICollection<[TargetAssignmentResource](TargetAssignmentResource.md)> | Reference type (nullable) | — |
+| OverridableAssignments | ICollection<[TargetAssignmentResource](TargetAssignmentResource.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

@@ -10,7 +10,7 @@ title: UpdateProviderLinkRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateProviderLinkRequestBody>` |
+| Implements | IEquatable<[UpdateProviderLinkRequestBody](UpdateProviderLinkRequestBody.md)> |
 | Source | `Models/UpdateProviderLinkRequestBody.cs` |
 
 ## Overview

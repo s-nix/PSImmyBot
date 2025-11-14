@@ -10,7 +10,7 @@ title: Send-UsersStopImpersonating
 | Source | `Cmdlets/SendUsersStopImpersonating.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/users/stop-impersonating? |
-| Return Type | `OpResult` |
+| Return Type | [OpResult](../models/OpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-UsersStopImpersonating
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/stop-impersonating?` and deserializes to `OpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/stop-impersonating?` and deserializes to [OpResult](../models/OpResult.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `OpResult` records produced by `ImmyBotApiService.POST`
+- [OpResult](../models/OpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

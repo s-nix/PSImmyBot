@@ -29,7 +29,7 @@ title: New-GetCustomerPortalSessionResult
 | CustomerId | `String` | False | — | All | None |
 | ExpiresAt | `Nullable`1` | False | — | All | None |
 | PortalSessionId | `String` | False | — | All | None |
-| Status | `CustomerPortalSessionStatus` | True | — | All | None |
+| Status | [CustomerPortalSessionStatus](../models/CustomerPortalSessionStatus.md) | True | — | All | None |
 | Token | `String` | False | — | All | None |
 
 ### Parameter sets

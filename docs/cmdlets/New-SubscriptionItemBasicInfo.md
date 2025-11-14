@@ -27,7 +27,7 @@ title: New-SubscriptionItemBasicInfo
 | ItemDescription | `String` | False | — | All | None |
 | ItemId | `String` | False | — | All | None |
 | ItemName | `String` | False | — | All | None |
-| ItemType | `SubscriptionItemType` | True | — | All | None |
+| ItemType | [SubscriptionItemType](../models/SubscriptionItemType.md) | True | — | All | None |
 
 ### Parameter sets
 

@@ -10,7 +10,7 @@ title: BeginAuthCodeFlowResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BeginAuthCodeFlowResponse>` |
+| Implements | IEquatable<[BeginAuthCodeFlowResponse](BeginAuthCodeFlowResponse.md)> |
 | Source | `Models/BeginAuthCodeFlowResponse.cs` |
 
 ## Overview

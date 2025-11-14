@@ -10,7 +10,7 @@ title: Get-GlobalScript
 | Source | `Cmdlets/GetGlobalScript.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/global/{ScriptId}? |
-| Return Type | `GetGlobalScriptResponse` |
+| Return Type | [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-GlobalScript
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/global/{ScriptId}?` and deserializes to `GetGlobalScriptResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/global/{ScriptId}?` and deserializes to [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-GlobalScript
 
 ## Outputs
 
-- `GetGlobalScriptResponse` records produced by `ImmyBotApiService.GET`
+- [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

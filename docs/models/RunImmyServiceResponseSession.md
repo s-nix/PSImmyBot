@@ -10,7 +10,7 @@ title: RunImmyServiceResponseSession
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RunImmyServiceResponseSession>` |
+| Implements | IEquatable<[RunImmyServiceResponseSession](RunImmyServiceResponseSession.md)> |
 | Source | `Models/RunImmyServiceResponseSession.cs` |
 
 ## Overview

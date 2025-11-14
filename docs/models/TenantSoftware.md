@@ -10,7 +10,7 @@ title: TenantSoftware
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantSoftware>` |
+| Implements | IEquatable<[TenantSoftware](TenantSoftware.md)> |
 | Source | `Models/TenantSoftware.cs` |
 
 ## Overview
@@ -22,9 +22,9 @@ title: TenantSoftware
 | --- | --- | --- | --- |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| Software | `LocalSoftware` | Reference type (nullable) | — |
+| Software | [LocalSoftware](LocalSoftware.md) | Reference type (nullable) | — |
 | SoftwareId | `int` | No (value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |

@@ -10,7 +10,7 @@ title: ParameterSet
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ParameterSet>` |
+| Implements | IEquatable<[ParameterSet](ParameterSet.md)> |
 | Source | `Models/ParameterSet.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: ParameterSet
 | --- | --- | --- | --- |
 | IsDefault | `bool` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| Parameters | `ICollection<Parameter>` | Reference type (nullable) | — |
+| Parameters | ICollection<[Parameter](Parameter.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

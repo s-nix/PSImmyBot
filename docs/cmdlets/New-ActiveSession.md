@@ -24,9 +24,9 @@ title: New-ActiveSession
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| MaintenanceSession | `MaintenanceSession` | True | — | All | None |
+| MaintenanceSession | [MaintenanceSession](../models/MaintenanceSession.md) | True | — | All | None |
 | MaintenanceSessionId | `Int32` | True | — | All | None |
-| SessionStatus | `SessionStatus` | True | — | All | None |
+| SessionStatus | [SessionStatus](../models/SessionStatus.md) | True | — | All | None |
 
 ### Parameter sets
 

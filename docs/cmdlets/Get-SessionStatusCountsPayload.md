@@ -10,7 +10,7 @@ title: Get-SessionStatusCountsPayload
 | Source | `Cmdlets/GetSessionStatusCountsPayload.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-sessions/status-counts? |
-| Return Type | `SessionStatusCountsPayload` |
+| Return Type | [SessionStatusCountsPayload](../models/SessionStatusCountsPayload.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-SessionStatusCountsPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-sessions/status-counts?` and deserializes to `SessionStatusCountsPayload`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-sessions/status-counts?` and deserializes to [SessionStatusCountsPayload](../models/SessionStatusCountsPayload.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `SessionStatusCountsPayload` records produced by `ImmyBotApiService.GET`
+- [SessionStatusCountsPayload](../models/SessionStatusCountsPayload.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

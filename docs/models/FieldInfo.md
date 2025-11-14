@@ -10,7 +10,7 @@ title: FieldInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<FieldInfo>` |
+| Implements | IEquatable<[FieldInfo](FieldInfo.md)> |
 | Source | `Models/FieldInfo.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: FieldInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Attributes | `FieldAttributes` | No (value type) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
-| DeclaringType | `Type` | Reference type (nullable) | — |
-| FieldHandle | `RuntimeFieldHandle` | Reference type (nullable) | — |
-| FieldType | `Type` | Reference type (nullable) | — |
+| Attributes | [FieldAttributes](FieldAttributes.md) | No (value type) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
+| DeclaringType | [Type](Type.md) | Reference type (nullable) | — |
+| FieldHandle | [RuntimeFieldHandle](RuntimeFieldHandle.md) | Reference type (nullable) | — |
+| FieldType | [Type](Type.md) | Reference type (nullable) | — |
 | IsAssembly | `bool` | No (value type) | — |
 | IsCollectible | `bool` | No (value type) | — |
 | IsFamily | `bool` | No (value type) | — |
@@ -41,11 +41,11 @@ title: FieldInfo
 | IsSecurityTransparent | `bool` | No (value type) | — |
 | IsSpecialName | `bool` | No (value type) | — |
 | IsStatic | `bool` | No (value type) | — |
-| MemberType | `MemberTypes` | No (value type) | — |
+| MemberType | [MemberTypes](MemberTypes.md) | No (value type) | — |
 | MetadataToken | `int` | No (value type) | — |
-| Module | `Module` | Reference type (nullable) | — |
+| Module | [Module](Module.md) | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| ReflectedType | `Type` | Reference type (nullable) | — |
+| ReflectedType | [Type](Type.md) | Reference type (nullable) | — |
 
 ## Serialization
 

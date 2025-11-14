@@ -10,7 +10,7 @@ title: Send-UpdateOptionalTargetAssignmentApprovalPayload
 | Source | `Cmdlets/SendUpdateOptionalTargetAssignmentApprovalPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/optional-target-assignment-approvals/{Id}? |
-| Return Type | `UpdateOptionalTargetAssignmentApprovalPayload, bool` |
+| Return Type | [UpdateOptionalTargetAssignmentApprovalPayload](../models/UpdateOptionalTargetAssignmentApprovalPayload.md), bool |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-UpdateOptionalTargetAssignmentApprovalPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/optional-target-assignment-approvals/{Id}?` and deserializes to `UpdateOptionalTargetAssignmentApprovalPayload, bool`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/optional-target-assignment-approvals/{Id}?` and deserializes to [UpdateOptionalTargetAssignmentApprovalPayload](../models/UpdateOptionalTargetAssignmentApprovalPayload.md), bool.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateOptionalTargetAssignmentApprovalPayload` | True | — | All | None |
+| PayloadBody | [UpdateOptionalTargetAssignmentApprovalPayload](../models/UpdateOptionalTargetAssignmentApprovalPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-UpdateOptionalTargetAssignmentApprovalPayload
 
 ## Outputs
 
-- `UpdateOptionalTargetAssignmentApprovalPayload, bool` records produced by `ImmyBotApiService.POST`
+- [UpdateOptionalTargetAssignmentApprovalPayload](../models/UpdateOptionalTargetAssignmentApprovalPayload.md), bool records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

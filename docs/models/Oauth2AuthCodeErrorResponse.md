@@ -10,7 +10,7 @@ title: Oauth2AuthCodeErrorResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Oauth2AuthCodeErrorResponse>` |
+| Implements | IEquatable<[Oauth2AuthCodeErrorResponse](Oauth2AuthCodeErrorResponse.md)> |
 | Source | `Models/Oauth2AuthCodeErrorResponse.cs` |
 
 ## Overview

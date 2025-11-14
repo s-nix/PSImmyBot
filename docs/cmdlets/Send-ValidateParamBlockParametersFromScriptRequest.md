@@ -10,7 +10,7 @@ title: Send-ValidateParamBlockParametersFromScriptRequest
 | Source | `Cmdlets/SendValidateParamBlockParametersFromScriptRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/validate-param-block-parameters? |
-| Return Type | `ValidateParamBlockParametersFromScriptRequest, DynamicFormBindResult` |
+| Return Type | [ValidateParamBlockParametersFromScriptRequest](../models/ValidateParamBlockParametersFromScriptRequest.md), [DynamicFormBindResult](../models/DynamicFormBindResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-ValidateParamBlockParametersFromScriptRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/validate-param-block-parameters?` and deserializes to `ValidateParamBlockParametersFromScriptRequest, DynamicFormBindResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/validate-param-block-parameters?` and deserializes to [ValidateParamBlockParametersFromScriptRequest](../models/ValidateParamBlockParametersFromScriptRequest.md), [DynamicFormBindResult](../models/DynamicFormBindResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ValidateParamBlockParametersFromScriptRequest` | True | — | All | None |
+| PayloadBody | [ValidateParamBlockParametersFromScriptRequest](../models/ValidateParamBlockParametersFromScriptRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-ValidateParamBlockParametersFromScriptRequest
 
 ## Outputs
 
-- `ValidateParamBlockParametersFromScriptRequest, DynamicFormBindResult` records produced by `ImmyBotApiService.POST`
+- [ValidateParamBlockParametersFromScriptRequest](../models/ValidateParamBlockParametersFromScriptRequest.md), [DynamicFormBindResult](../models/DynamicFormBindResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

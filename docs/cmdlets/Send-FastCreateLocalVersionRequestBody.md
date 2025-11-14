@@ -10,7 +10,7 @@ title: Send-FastCreateLocalVersionRequestBody
 | Source | `Cmdlets/SendFastCreateLocalVersionRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/software/local/fast-create? |
-| Return Type | `FastCreateLocalVersionRequestBody, GetLocalSoftwareResponse` |
+| Return Type | [FastCreateLocalVersionRequestBody](../models/FastCreateLocalVersionRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-FastCreateLocalVersionRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/local/fast-create?` and deserializes to `FastCreateLocalVersionRequestBody, GetLocalSoftwareResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/local/fast-create?` and deserializes to [FastCreateLocalVersionRequestBody](../models/FastCreateLocalVersionRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `FastCreateLocalVersionRequestBody` | True | — | All | None |
+| PayloadBody | [FastCreateLocalVersionRequestBody](../models/FastCreateLocalVersionRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-FastCreateLocalVersionRequestBody
 
 ## Outputs
 
-- `FastCreateLocalVersionRequestBody, GetLocalSoftwareResponse` records produced by `ImmyBotApiService.POST`
+- [FastCreateLocalVersionRequestBody](../models/FastCreateLocalVersionRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

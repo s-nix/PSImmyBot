@@ -10,7 +10,7 @@ title: CustomAttributeNamedArgument
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CustomAttributeNamedArgument>` |
+| Implements | IEquatable<[CustomAttributeNamedArgument](CustomAttributeNamedArgument.md)> |
 | Source | `Models/CustomAttributeNamedArgument.cs` |
 
 ## Overview
@@ -21,9 +21,9 @@ title: CustomAttributeNamedArgument
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | IsField | `bool` | No (value type) | — |
-| MemberInfo | `MemberInfo` | Reference type (nullable) | — |
+| MemberInfo | [MemberInfo](MemberInfo.md) | Reference type (nullable) | — |
 | MemberName | `string` | Reference type (nullable) | — |
-| TypedValue | `CustomAttributeTypedArgument` | Reference type (nullable) | — |
+| TypedValue | [CustomAttributeTypedArgument](CustomAttributeTypedArgument.md) | Reference type (nullable) | — |
 
 ## Serialization
 

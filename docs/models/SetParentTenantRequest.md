@@ -10,7 +10,7 @@ title: SetParentTenantRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SetParentTenantRequest>` |
+| Implements | IEquatable<[SetParentTenantRequest](SetParentTenantRequest.md)> |
 | Source | `Models/SetParentTenantRequest.cs` |
 
 ## Overview

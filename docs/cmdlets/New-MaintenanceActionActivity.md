@@ -30,9 +30,9 @@ title: New-MaintenanceActionActivity
 | CurrentOperation | `String` | False | — | All | None |
 | DateUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| MaintenanceAction | `MaintenanceAction` | True | — | All | None |
+| MaintenanceAction | [MaintenanceAction](../models/MaintenanceAction.md) | True | — | All | None |
 | MaintenanceActionId | `Int32` | True | — | All | None |
-| MaintenanceSession | `MaintenanceSession` | True | — | All | None |
+| MaintenanceSession | [MaintenanceSession](../models/MaintenanceSession.md) | True | — | All | None |
 | MaintenanceSessionId | `Int32` | True | — | All | None |
 | ParentId | `String` | False | — | All | None |
 | PercentComplete | `Nullable`1` | False | — | All | None |

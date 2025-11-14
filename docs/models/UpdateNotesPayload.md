@@ -10,7 +10,7 @@ title: UpdateNotesPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateNotesPayload>` |
+| Implements | IEquatable<[UpdateNotesPayload](UpdateNotesPayload.md)> |
 | Source | `Models/UpdateNotesPayload.cs` |
 
 ## Overview

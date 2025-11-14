@@ -10,7 +10,7 @@ title: InventoryTask
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<InventoryTask>` |
+| Implements | IEquatable<[InventoryTask](InventoryTask.md)> |
 | Source | `Models/InventoryTask.cs` |
 
 ## Overview
@@ -22,13 +22,13 @@ title: InventoryTask
 | --- | --- | --- | --- |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| Frequency | `InventoryTaskFrequency` | No (value type) | — |
+| Frequency | [InventoryTaskFrequency](InventoryTaskFrequency.md) | No (value type) | — |
 | FrequencyTimespan | `string` | Reference type (nullable) | — |
 | FromProvider | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| InventoryTaskType | `DatabaseType` | No (value type) | — |
+| InventoryTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| Scripts | `ICollection<InventoryTaskScript>` | Reference type (nullable) | — |
+| Scripts | ICollection<[InventoryTaskScript](InventoryTaskScript.md)> | Reference type (nullable) | — |
 | SpecifiedNumMinutes | `int?` | Yes (nullable value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |

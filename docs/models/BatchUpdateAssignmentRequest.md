@@ -10,7 +10,7 @@ title: BatchUpdateAssignmentRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BatchUpdateAssignmentRequest>` |
+| Implements | IEquatable<[BatchUpdateAssignmentRequest](BatchUpdateAssignmentRequest.md)> |
 | Source | `Models/BatchUpdateAssignmentRequest.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: BatchUpdateAssignmentRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | TargetAssignmentIds | `ICollection<int>` | Reference type (nullable) | — |
-| UpdateArray | `ICollection<UpdateTargetVisibilityPayload>` | Reference type (nullable) | — |
+| UpdateArray | ICollection<[UpdateTargetVisibilityPayload](UpdateTargetVisibilityPayload.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

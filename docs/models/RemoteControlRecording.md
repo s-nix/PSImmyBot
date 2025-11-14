@@ -10,7 +10,7 @@ title: RemoteControlRecording
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RemoteControlRecording>` |
+| Implements | IEquatable<[RemoteControlRecording](RemoteControlRecording.md)> |
 | Source | `Models/RemoteControlRecording.cs` |
 
 ## Overview
@@ -21,17 +21,17 @@ title: RemoteControlRecording
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobName | `string` | Reference type (nullable) | — |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int` | No (value type) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | MimeContentType | `string` | Reference type (nullable) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| User | `User` | Reference type (nullable) | — |
+| User | [User](User.md) | Reference type (nullable) | — |
 | UserId | `int` | No (value type) | — |
 
 ## Serialization

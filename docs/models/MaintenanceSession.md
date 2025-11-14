@@ -10,7 +10,7 @@ title: MaintenanceSession
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceSession>` |
+| Implements | IEquatable<[MaintenanceSession](MaintenanceSession.md)> |
 | Source | `Models/MaintenanceSession.cs` |
 
 ## Overview
@@ -20,29 +20,29 @@ title: MaintenanceSession
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ActiveSession | `ActiveSession` | Reference type (nullable) | — |
-| Activities | `ICollection<MaintenanceActionActivity>` | Reference type (nullable) | — |
-| Computer | `Computer` | Reference type (nullable) | — |
+| ActiveSession | [ActiveSession](ActiveSession.md) | Reference type (nullable) | — |
+| Activities | ICollection<[MaintenanceActionActivity](MaintenanceActionActivity.md)> | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Duration | `string` | Reference type (nullable) | — |
 | FullMaintenance | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| JobArgs | `SessionJobArgs` | Reference type (nullable) | — |
+| JobArgs | [SessionJobArgs](SessionJobArgs.md) | Reference type (nullable) | — |
 | JobId | `string` | Reference type (nullable) | — |
-| Logs | `ICollection<SessionLog>` | Reference type (nullable) | — |
-| MaintenanceActions | `ICollection<MaintenanceAction>` | Reference type (nullable) | — |
+| Logs | ICollection<[SessionLog](SessionLog.md)> | Reference type (nullable) | — |
+| MaintenanceActions | ICollection<[MaintenanceAction](MaintenanceAction.md)> | Reference type (nullable) | — |
 | Onboarding | `bool` | No (value type) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
-| Person | `Person` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
+| Person | [Person](Person.md) | Reference type (nullable) | — |
 | PersonId | `int?` | Yes (nullable value type) | — |
-| Phases | `ICollection<SessionPhase>` | Reference type (nullable) | — |
+| Phases | ICollection<[SessionPhase](SessionPhase.md)> | Reference type (nullable) | — |
 | ScheduledExecutionDate | `DateTimeOffset?` | Yes (nullable value type) | — |
 | ScheduledId | `int?` | Yes (nullable value type) | — |
-| SessionStatus | `SessionStatus` | No (value type) | — |
-| Stages | `ICollection<MaintenanceSessionStage>` | Reference type (nullable) | — |
+| SessionStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
+| Stages | ICollection<[MaintenanceSessionStage](MaintenanceSessionStage.md)> | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |

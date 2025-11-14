@@ -10,7 +10,7 @@ title: ModuleHandle
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ModuleHandle>` |
+| Implements | IEquatable<[ModuleHandle](ModuleHandle.md)> |
 | Source | `Models/ModuleHandle.cs` |
 
 ## Overview

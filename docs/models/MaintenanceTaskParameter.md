@@ -10,7 +10,7 @@ title: MaintenanceTaskParameter
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceTaskParameter>` |
+| Implements | IEquatable<[MaintenanceTaskParameter](MaintenanceTaskParameter.md)> |
 | Source | `Models/MaintenanceTaskParameter.cs` |
 
 ## Overview
@@ -20,14 +20,14 @@ title: MaintenanceTaskParameter
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DataType | `MaintenanceTaskParameterType` | No (value type) | — |
-| DefaultMedia | `Media` | Reference type (nullable) | — |
-| DefaultMediaDatabaseType | `DatabaseType` | No (value type) | — |
+| DataType | [MaintenanceTaskParameterType](MaintenanceTaskParameterType.md) | No (value type) | — |
+| DefaultMedia | [Media](Media.md) | Reference type (nullable) | — |
+| DefaultMediaDatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DefaultMediaId | `int?` | Yes (nullable value type) | — |
 | DefaultValue | `string` | Reference type (nullable) | — |
 | Hidden | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| MaintenanceTask | `MaintenanceTask` | Reference type (nullable) | — |
+| MaintenanceTask | [MaintenanceTask](MaintenanceTask.md) | Reference type (nullable) | — |
 | MaintenanceTaskId | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | Notes | `string` | Reference type (nullable) | — |

@@ -10,7 +10,7 @@ title: AgentStartupInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentStartupInfo>` |
+| Implements | IEquatable<[AgentStartupInfo](AgentStartupInfo.md)> |
 | Source | `Models/AgentStartupInfo.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: AgentStartupInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| InstalledAgentState | `AgentInstallationDetails` | Reference type (nullable) | — |
+| InstalledAgentState | [AgentInstallationDetails](AgentInstallationDetails.md) | Reference type (nullable) | — |
 | Pid | `int` | No (value type) | — |
 
 ## Serialization

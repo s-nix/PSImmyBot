@@ -10,7 +10,7 @@ title: CustomAttributeData
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CustomAttributeData>` |
+| Implements | IEquatable<[CustomAttributeData](CustomAttributeData.md)> |
 | Source | `Models/CustomAttributeData.cs` |
 
 ## Overview
@@ -20,10 +20,10 @@ title: CustomAttributeData
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AttributeType | `Type` | Reference type (nullable) | — |
-| Constructor | `ConstructorInfo` | Reference type (nullable) | — |
-| ConstructorArguments | `ICollection<CustomAttributeTypedArgument>` | Reference type (nullable) | — |
-| NamedArguments | `ICollection<CustomAttributeNamedArgument>` | Reference type (nullable) | — |
+| AttributeType | [Type](Type.md) | Reference type (nullable) | — |
+| Constructor | [ConstructorInfo](ConstructorInfo.md) | Reference type (nullable) | — |
+| ConstructorArguments | ICollection<[CustomAttributeTypedArgument](CustomAttributeTypedArgument.md)> | Reference type (nullable) | — |
+| NamedArguments | ICollection<[CustomAttributeNamedArgument](CustomAttributeNamedArgument.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

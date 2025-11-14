@@ -10,7 +10,7 @@ title: LinkedExternalLink
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<LinkedExternalLink>` |
+| Implements | IEquatable<[LinkedExternalLink](LinkedExternalLink.md)> |
 | Source | `Models/LinkedExternalLink.cs` |
 
 ## Overview

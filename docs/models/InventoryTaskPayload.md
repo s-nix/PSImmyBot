@@ -10,7 +10,7 @@ title: InventoryTaskPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<InventoryTaskPayload>` |
+| Implements | IEquatable<[InventoryTaskPayload](InventoryTaskPayload.md)> |
 | Source | `Models/InventoryTaskPayload.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: InventoryTaskPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Frequency | `InventoryTaskFrequency` | No (value type) | — |
+| Frequency | [InventoryTaskFrequency](InventoryTaskFrequency.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 
 ## Serialization

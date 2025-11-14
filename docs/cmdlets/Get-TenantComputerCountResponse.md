@@ -10,7 +10,7 @@ title: Get-TenantComputerCountResponse
 | Source | `Cmdlets/GetTenantComputerCountResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/tenants/computer-counts? |
-| Return Type | `List<TenantComputerCountResponse>` |
+| Return Type | List<[TenantComputerCountResponse](../models/TenantComputerCountResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TenantComputerCountResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/computer-counts?` and deserializes to `List<TenantComputerCountResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/computer-counts?` and deserializes to List<[TenantComputerCountResponse](../models/TenantComputerCountResponse.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<TenantComputerCountResponse>` records produced by `ImmyBotApiService.GET`
+- List<[TenantComputerCountResponse](../models/TenantComputerCountResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

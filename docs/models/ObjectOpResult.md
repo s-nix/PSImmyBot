@@ -10,7 +10,7 @@ title: ObjectOpResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ObjectOpResult>` |
+| Implements | IEquatable<[ObjectOpResult](ObjectOpResult.md)> |
 | Source | `Models/ObjectOpResult.cs` |
 
 ## Overview

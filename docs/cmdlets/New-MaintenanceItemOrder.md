@@ -25,9 +25,9 @@ title: New-MaintenanceItemOrder
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| Location | `MaintenanceItemOrderLocation` | True | — | All | None |
+| Location | [MaintenanceItemOrderLocation](../models/MaintenanceItemOrderLocation.md) | True | — | All | None |
 | MaintenanceIdentifier | `String` | False | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 | SortOrder | `Double` | True | — | All | None |
 
 ### Parameter sets

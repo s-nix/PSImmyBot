@@ -10,7 +10,7 @@ title: DynamicIntegrationTypeProperties
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DynamicIntegrationTypeProperties>` |
+| Implements | IEquatable<[DynamicIntegrationTypeProperties](DynamicIntegrationTypeProperties.md)> |
 | Source | `Models/DynamicIntegrationTypeProperties.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: DynamicIntegrationTypeProperties
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DocsUrl | `string` | Reference type (nullable) | — |
 | LogoMediaId | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |

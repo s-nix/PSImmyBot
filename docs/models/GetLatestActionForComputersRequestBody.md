@@ -10,7 +10,7 @@ title: GetLatestActionForComputersRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetLatestActionForComputersRequestBody>` |
+| Implements | IEquatable<[GetLatestActionForComputersRequestBody](GetLatestActionForComputersRequestBody.md)> |
 | Source | `Models/GetLatestActionForComputersRequestBody.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: GetLatestActionForComputersRequestBody
 | ComputerIds | `ICollection<int>` | Reference type (nullable) | — |
 | DateUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 
 ## Serialization
 

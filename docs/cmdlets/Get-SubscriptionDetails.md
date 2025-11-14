@@ -10,7 +10,7 @@ title: Get-SubscriptionDetails
 | Source | `Cmdlets/GetSubscriptionDetails.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/billing/subscription-details? |
-| Return Type | `GetSubscriptionDetailsResponse` |
+| Return Type | [GetSubscriptionDetailsResponse](../models/GetSubscriptionDetailsResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-SubscriptionDetails
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/billing/subscription-details?` and deserializes to `GetSubscriptionDetailsResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/billing/subscription-details?` and deserializes to [GetSubscriptionDetailsResponse](../models/GetSubscriptionDetailsResponse.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `GetSubscriptionDetailsResponse` records produced by `ImmyBotApiService.GET`
+- [GetSubscriptionDetailsResponse](../models/GetSubscriptionDetailsResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

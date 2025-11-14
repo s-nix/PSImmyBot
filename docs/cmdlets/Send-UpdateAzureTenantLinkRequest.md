@@ -10,7 +10,7 @@ title: Send-UpdateAzureTenantLinkRequest
 | Source | `Cmdlets/SendUpdateAzureTenantLinkRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/tenants/update-azure-tenant-link? |
-| Return Type | `UpdateAzureTenantLinkRequest, GetTenantResponse` |
+| Return Type | [UpdateAzureTenantLinkRequest](../models/UpdateAzureTenantLinkRequest.md), [GetTenantResponse](../models/GetTenantResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-UpdateAzureTenantLinkRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/update-azure-tenant-link?` and deserializes to `UpdateAzureTenantLinkRequest, GetTenantResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/update-azure-tenant-link?` and deserializes to [UpdateAzureTenantLinkRequest](../models/UpdateAzureTenantLinkRequest.md), [GetTenantResponse](../models/GetTenantResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateAzureTenantLinkRequest` | True | — | All | None |
+| PayloadBody | [UpdateAzureTenantLinkRequest](../models/UpdateAzureTenantLinkRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-UpdateAzureTenantLinkRequest
 
 ## Outputs
 
-- `UpdateAzureTenantLinkRequest, GetTenantResponse` records produced by `ImmyBotApiService.POST`
+- [UpdateAzureTenantLinkRequest](../models/UpdateAzureTenantLinkRequest.md), [GetTenantResponse](../models/GetTenantResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

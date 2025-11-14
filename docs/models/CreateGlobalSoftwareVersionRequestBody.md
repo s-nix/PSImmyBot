@@ -10,7 +10,7 @@ title: CreateGlobalSoftwareVersionRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateGlobalSoftwareVersionRequestBody>` |
+| Implements | IEquatable<[CreateGlobalSoftwareVersionRequestBody](CreateGlobalSoftwareVersionRequestBody.md)> |
 | Source | `Models/CreateGlobalSoftwareVersionRequestBody.cs` |
 
 ## Overview
@@ -21,30 +21,30 @@ title: CreateGlobalSoftwareVersionRequestBody
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobName | `string` | Reference type (nullable) | — |
-| DependsOnSemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| DependsOnSemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | DisplayVersion | `string` | Reference type (nullable) | — |
 | InstallerFile | `string` | Reference type (nullable) | — |
-| InstallerType | `SoftwareVersionInstallerType` | No (value type) | — |
+| InstallerType | [SoftwareVersionInstallerType](SoftwareVersionInstallerType.md) | No (value type) | — |
 | InstallScriptId | `int?` | Yes (nullable value type) | — |
-| LicenseType | `LicenseType` | No (value type) | — |
+| LicenseType | [LicenseType](LicenseType.md) | No (value type) | — |
 | Notes | `string` | Reference type (nullable) | — |
 | PackageHash | `string` | Reference type (nullable) | — |
-| PackageType | `PackageType` | No (value type) | — |
+| PackageType | [PackageType](PackageType.md) | No (value type) | — |
 | PostInstallScriptId | `int?` | Yes (nullable value type) | — |
 | PostUninstallScriptId | `int?` | Yes (nullable value type) | — |
 | ProductCode | `string` | Reference type (nullable) | — |
 | RelativeCacheSourcePath | `string` | Reference type (nullable) | — |
-| SemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SoftwareId | `int` | No (value type) | — |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 | TestFailedError | `string` | Reference type (nullable) | — |
 | TestRequired | `bool` | No (value type) | — |
 | TestScriptId | `int?` | Yes (nullable value type) | — |
 | UninstallScriptId | `int?` | Yes (nullable value type) | — |
 | UpgradeScriptId | `int?` | Yes (nullable value type) | — |
-| UpgradeStrategy | `UpdateActionType` | No (value type) | — |
+| UpgradeStrategy | [UpdateActionType](UpdateActionType.md) | No (value type) | — |
 | Url | `string` | Reference type (nullable) | — |
 
 ## Serialization

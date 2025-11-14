@@ -10,7 +10,7 @@ title: DuplicateMaintenanceTaskRequestbody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DuplicateMaintenanceTaskRequestbody>` |
+| Implements | IEquatable<[DuplicateMaintenanceTaskRequestbody](DuplicateMaintenanceTaskRequestbody.md)> |
 | Source | `Models/DuplicateMaintenanceTaskRequestbody.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: DuplicateMaintenanceTaskRequestbody
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | MaintenanceTaskId | `int` | No (value type) | — |
-| MaintenanceTaskType | `DatabaseType` | No (value type) | — |
+| MaintenanceTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 
 ## Serialization
 

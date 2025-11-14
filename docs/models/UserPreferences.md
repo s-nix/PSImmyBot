@@ -10,7 +10,7 @@ title: UserPreferences
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UserPreferences>` |
+| Implements | IEquatable<[UserPreferences](UserPreferences.md)> |
 | Source | `Models/UserPreferences.cs` |
 
 ## Overview

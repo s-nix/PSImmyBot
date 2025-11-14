@@ -10,7 +10,7 @@ title: RemoveParentTenantRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RemoveParentTenantRequest>` |
+| Implements | IEquatable<[RemoveParentTenantRequest](RemoveParentTenantRequest.md)> |
 | Source | `Models/RemoveParentTenantRequest.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: UpdateBrandingRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateBrandingRequestBody>` |
+| Implements | IEquatable<[UpdateBrandingRequestBody](UpdateBrandingRequestBody.md)> |
 | Source | `Models/UpdateBrandingRequestBody.cs` |
 
 ## Overview

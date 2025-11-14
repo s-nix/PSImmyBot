@@ -10,7 +10,7 @@ title: DeviceDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DeviceDetails>` |
+| Implements | IEquatable<[DeviceDetails](DeviceDetails.md)> |
 | Source | `Models/DeviceDetails.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: MaintenanceItem
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceItem>` |
+| Implements | IEquatable<[MaintenanceItem](MaintenanceItem.md)> |
 | Source | `Models/MaintenanceItem.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: MaintenanceItem
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | ProviderLinkIdForMaintenanceItem | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

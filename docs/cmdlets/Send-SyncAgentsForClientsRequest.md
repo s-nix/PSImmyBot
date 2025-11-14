@@ -25,7 +25,7 @@ title: Send-SyncAgentsForClientsRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `SyncAgentsForClientsRequest` | True | — | All | None |
+| PayloadBody | [SyncAgentsForClientsRequest](../models/SyncAgentsForClientsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

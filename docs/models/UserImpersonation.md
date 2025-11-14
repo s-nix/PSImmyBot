@@ -10,7 +10,7 @@ title: UserImpersonation
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UserImpersonation>` |
+| Implements | IEquatable<[UserImpersonation](UserImpersonation.md)> |
 | Source | `Models/UserImpersonation.cs` |
 
 ## Overview
@@ -22,9 +22,9 @@ title: UserImpersonation
 | --- | --- | --- | --- |
 | ExpiresAtUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| ImpersonatingUser | `User` | Reference type (nullable) | — |
+| ImpersonatingUser | [User](User.md) | Reference type (nullable) | — |
 | ImpersonatingUserId | `int` | No (value type) | — |
-| ImpersonatorUser | `User` | Reference type (nullable) | — |
+| ImpersonatorUser | [User](User.md) | Reference type (nullable) | — |
 | ImpersonatorUserId | `int` | No (value type) | — |
 
 ## Serialization

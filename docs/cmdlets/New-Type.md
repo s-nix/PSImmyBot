@@ -24,16 +24,16 @@ title: New-Type
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Assembly | `Assembly` | True | — | All | None |
+| Assembly | [Assembly](../models/Assembly.md) | True | — | All | None |
 | AssemblyQualifiedName | `String` | False | — | All | None |
-| Attributes | `TypeAttributes` | True | — | All | None |
-| BaseType | `Type` | True | — | All | None |
+| Attributes | [TypeAttributes](../models/TypeAttributes.md) | True | — | All | None |
+| BaseType | [Type](../models/Type.md) | True | — | All | None |
 | ContainsGenericParameters | `Boolean` | True | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
-| DeclaringMethod | `MethodBase` | True | — | All | None |
-| DeclaringType | `Type` | True | — | All | None |
+| DeclaringMethod | [MethodBase](../models/MethodBase.md) | True | — | All | None |
+| DeclaringType | [Type](../models/Type.md) | True | — | All | None |
 | FullName | `String` | False | — | All | None |
-| GenericParameterAttributes | `GenericParameterAttributes` | True | — | All | None |
+| GenericParameterAttributes | [GenericParameterAttributes](../models/GenericParameterAttributes.md) | True | — | All | None |
 | GenericParameterPosition | `Int32` | True | — | All | None |
 | GenericTypeArguments | `ICollection`1` | False | — | All | None |
 | Guid | `Guid` | True | — | All | None |
@@ -87,16 +87,16 @@ title: New-Type
 | IsValueType | `Boolean` | True | — | All | None |
 | IsVariableBoundArray | `Boolean` | True | — | All | None |
 | IsVisible | `Boolean` | True | — | All | None |
-| MemberType | `MemberTypes` | True | — | All | None |
+| MemberType | [MemberTypes](../models/MemberTypes.md) | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
-| Module | `Module` | True | — | All | None |
+| Module | [Module](../models/Module.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | Namespace | `String` | False | — | All | None |
-| ReflectedType | `Type` | True | — | All | None |
-| StructLayoutAttribute | `StructLayoutAttribute` | True | — | All | None |
-| TypeHandle | `RuntimeTypeHandle` | True | — | All | None |
-| TypeInitializer | `ConstructorInfo` | True | — | All | None |
-| UnderlyingSystemType | `Type` | True | — | All | None |
+| ReflectedType | [Type](../models/Type.md) | True | — | All | None |
+| StructLayoutAttribute | [StructLayoutAttribute](../models/StructLayoutAttribute.md) | True | — | All | None |
+| TypeHandle | [RuntimeTypeHandle](../models/RuntimeTypeHandle.md) | True | — | All | None |
+| TypeInitializer | [ConstructorInfo](../models/ConstructorInfo.md) | True | — | All | None |
+| UnderlyingSystemType | [Type](../models/Type.md) | True | — | All | None |
 
 ### Parameter sets
 

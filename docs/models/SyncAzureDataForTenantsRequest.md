@@ -10,7 +10,7 @@ title: SyncAzureDataForTenantsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SyncAzureDataForTenantsRequest>` |
+| Implements | IEquatable<[SyncAzureDataForTenantsRequest](SyncAzureDataForTenantsRequest.md)> |
 | Source | `Models/SyncAzureDataForTenantsRequest.cs` |
 
 ## Overview

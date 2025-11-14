@@ -10,7 +10,7 @@ title: LocalMediaResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<LocalMediaResponse>` |
+| Implements | IEquatable<[LocalMediaResponse](LocalMediaResponse.md)> |
 | Source | `Models/LocalMediaResponse.cs` |
 
 ## Overview
@@ -21,9 +21,9 @@ title: LocalMediaResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobReference | `string` | Reference type (nullable) | — |
-| Category | `MediaCategory` | No (value type) | — |
+| Category | [MediaCategory](MediaCategory.md) | No (value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | FileName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | MimeType | `string` | Reference type (nullable) | — |
@@ -31,7 +31,7 @@ title: LocalMediaResponse
 | Owned | `bool` | No (value type) | — |
 | PackageHash | `string` | Reference type (nullable) | — |
 | RelativeCacheSourcePath | `string` | Reference type (nullable) | — |
-| Tenants | `ICollection<TenantMedia>` | Reference type (nullable) | — |
+| Tenants | ICollection<[TenantMedia](TenantMedia.md)> | Reference type (nullable) | — |
 | UpdatedBy | `string` | Reference type (nullable) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
 

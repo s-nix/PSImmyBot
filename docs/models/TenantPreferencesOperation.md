@@ -10,7 +10,7 @@ title: TenantPreferencesOperation
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantPreferencesOperation>` |
+| Implements | IEquatable<[TenantPreferencesOperation](TenantPreferencesOperation.md)> |
 | Source | `Models/TenantPreferencesOperation.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: TenantPreferencesOperation
 | --- | --- | --- | --- |
 | From | `string` | Reference type (nullable) | — |
 | Op | `string` | Reference type (nullable) | — |
-| OperationType | `OperationType` | No (value type) | — |
+| OperationType | [OperationType](OperationType.md) | No (value type) | — |
 | Path | `string` | Reference type (nullable) | — |
 | Value | `object` | Reference type (nullable) | — |
 

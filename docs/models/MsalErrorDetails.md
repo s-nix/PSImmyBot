@@ -10,7 +10,7 @@ title: MsalErrorDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MsalErrorDetails>` |
+| Implements | IEquatable<[MsalErrorDetails](MsalErrorDetails.md)> |
 | Source | `Models/MsalErrorDetails.cs` |
 
 ## Overview

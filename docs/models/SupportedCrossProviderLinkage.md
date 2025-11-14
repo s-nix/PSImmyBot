@@ -10,7 +10,7 @@ title: SupportedCrossProviderLinkage
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SupportedCrossProviderLinkage>` |
+| Implements | IEquatable<[SupportedCrossProviderLinkage](SupportedCrossProviderLinkage.md)> |
 | Source | `Models/SupportedCrossProviderLinkage.cs` |
 
 ## Overview

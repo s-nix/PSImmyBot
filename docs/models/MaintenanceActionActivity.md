@@ -10,7 +10,7 @@ title: MaintenanceActionActivity
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceActionActivity>` |
+| Implements | IEquatable<[MaintenanceActionActivity](MaintenanceActionActivity.md)> |
 | Source | `Models/MaintenanceActionActivity.cs` |
 
 ## Overview
@@ -26,9 +26,9 @@ title: MaintenanceActionActivity
 | CurrentOperation | `string` | Reference type (nullable) | — |
 | DateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| MaintenanceAction | `MaintenanceAction` | Reference type (nullable) | — |
+| MaintenanceAction | [MaintenanceAction](MaintenanceAction.md) | Reference type (nullable) | — |
 | MaintenanceActionId | `int` | No (value type) | — |
-| MaintenanceSession | `MaintenanceSession` | Reference type (nullable) | — |
+| MaintenanceSession | [MaintenanceSession](MaintenanceSession.md) | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
 | ParentId | `string` | Reference type (nullable) | — |
 | PercentComplete | `int?` | Yes (nullable value type) | — |

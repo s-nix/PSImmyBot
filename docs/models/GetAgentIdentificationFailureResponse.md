@@ -10,7 +10,7 @@ title: GetAgentIdentificationFailureResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetAgentIdentificationFailureResponse>` |
+| Implements | IEquatable<[GetAgentIdentificationFailureResponse](GetAgentIdentificationFailureResponse.md)> |
 | Source | `Models/GetAgentIdentificationFailureResponse.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: GetAgentIdentificationFailureResponse
 | --- | --- | --- | --- |
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
-| ExistingAgent | `IProviderAgentDetails` | Reference type (nullable) | — |
+| ExistingAgent | [IProviderAgentDetails](IProviderAgentDetails.md) | Reference type (nullable) | — |
 | ExistingAgentId | `int?` | Yes (nullable value type) | — |
 | ExistingComputerName | `string` | Reference type (nullable) | — |
 | ExistingManufacturer | `string` | Reference type (nullable) | — |
@@ -34,7 +34,7 @@ title: GetAgentIdentificationFailureResponse
 | ExistingTenantName | `string` | Reference type (nullable) | — |
 | FeatureUsageExceeded | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| ManualResolutionDecision | `AgentIdentificationManualResolutionDecision` | No (value type) | — |
+| ManualResolutionDecision | [AgentIdentificationManualResolutionDecision](AgentIdentificationManualResolutionDecision.md) | No (value type) | — |
 | Message | `string` | Reference type (nullable) | — |
 | PendingAgentId | `int?` | Yes (nullable value type) | — |
 | RequiresManualResolution | `bool` | No (value type) | — |

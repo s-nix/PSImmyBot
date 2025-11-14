@@ -10,7 +10,7 @@ title: RegistryValueDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RegistryValueDto>` |
+| Implements | IEquatable<[RegistryValueDto](RegistryValueDto.md)> |
 | Source | `Models/RegistryValueDto.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: RegistryValueDto
 | --- | --- | --- | --- |
 | BinaryValue | `string` | Reference type (nullable) | — |
 | DWordValue | `int?` | Yes (nullable value type) | — |
-| Kind | `RegistryValueKindDto` | No (value type) | — |
+| Kind | [RegistryValueKindDto](RegistryValueKindDto.md) | No (value type) | — |
 | MultiStringValue | `ICollection<string>` | Reference type (nullable) | — |
 | ParentKeyPath | `string` | Reference type (nullable) | — |
 | QWordValue | `long?` | Yes (nullable value type) | — |

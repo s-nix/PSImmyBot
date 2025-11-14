@@ -10,7 +10,7 @@ title: IProviderAgentDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IProviderAgentDetails>` |
+| Implements | IEquatable<[IProviderAgentDetails](IProviderAgentDetails.md)> |
 | Source | `Models/IProviderAgentDetails.cs` |
 
 ## Overview
@@ -20,14 +20,14 @@ title: IProviderAgentDetails
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AgentVersion | `SemanticVersion` | Reference type (nullable) | — |
-| DeviceDetails | `DeviceDetails` | Reference type (nullable) | — |
+| AgentVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
+| DeviceDetails | [DeviceDetails](DeviceDetails.md) | Reference type (nullable) | — |
 | ExternalAgentId | `string` | Reference type (nullable) | — |
 | ExternalClientId | `string` | Reference type (nullable) | — |
 | InternalData | `object` | Reference type (nullable) | — |
 | IsOnline | `bool` | No (value type) | — |
 | LastUpdatedUtc | `DateTimeOffset` | No (value type) | — |
-| OnboardingOptions | `AgentOnboardingOptions` | Reference type (nullable) | — |
+| OnboardingOptions | [AgentOnboardingOptions](AgentOnboardingOptions.md) | Reference type (nullable) | — |
 | RequireManualIdentification | `bool` | No (value type) | — |
 | SupportsRunningScripts | `bool` | No (value type) | — |
 

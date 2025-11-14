@@ -25,12 +25,12 @@ title: New-GetScriptVariablesAndParametersRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Nullable`1` | False | — | All | None |
-| ScriptCategory | `ScriptCategory` | True | — | All | None |
-| ScriptExecutionContext | `ScriptExecutionContext` | True | — | All | None |
+| ScriptCategory | [ScriptCategory](../models/ScriptCategory.md) | True | — | All | None |
+| ScriptExecutionContext | [ScriptExecutionContext](../models/ScriptExecutionContext.md) | True | — | All | None |
 | SoftwareId | `Nullable`1` | False | — | All | None |
-| SoftwareType | `SoftwareType` | True | — | All | None |
+| SoftwareType | [SoftwareType](../models/SoftwareType.md) | True | — | All | None |
 | TaskId | `Nullable`1` | False | — | All | None |
-| TaskType | `DatabaseType` | True | — | All | None |
+| TaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets

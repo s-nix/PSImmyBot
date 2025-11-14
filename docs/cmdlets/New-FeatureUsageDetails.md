@@ -28,7 +28,7 @@ title: New-FeatureUsageDetails
 | ItemCount | `Nullable`1` | False | — | All | None |
 | MaxCount | `Nullable`1` | False | — | All | None |
 | MaxCountPerItem | `Nullable`1` | False | — | All | None |
-| ResetInterval | `FeatureResetInterval` | True | — | All | None |
+| ResetInterval | [FeatureResetInterval](../models/FeatureResetInterval.md) | True | — | All | None |
 
 ### Parameter sets
 

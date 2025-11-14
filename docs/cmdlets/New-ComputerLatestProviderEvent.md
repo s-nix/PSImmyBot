@@ -24,7 +24,7 @@ title: New-ComputerLatestProviderEvent
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Computer | `Computer` | True | — | All | None |
+| Computer | [Computer](../models/Computer.md) | True | — | All | None |
 | ComputerId | `Int32` | True | — | All | None |
 | LastProviderAgentEventDateUtc | `DateTimeOffset` | True | — | All | None |
 

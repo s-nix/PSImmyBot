@@ -10,7 +10,7 @@ title: AzureTenantInfoAzureErrorOneOf
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantInfoAzureErrorOneOf>` |
+| Implements | IEquatable<[AzureTenantInfoAzureErrorOneOf](AzureTenantInfoAzureErrorOneOf.md)> |
 | Source | `Models/AzureTenantInfoAzureErrorOneOf.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: AzureTenantInfoAzureErrorOneOf
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AsT0 | `AzureTenantInfo` | Reference type (nullable) | — |
-| AsT1 | `AzureError` | Reference type (nullable) | — |
+| AsT0 | [AzureTenantInfo](AzureTenantInfo.md) | Reference type (nullable) | — |
+| AsT1 | [AzureError](AzureError.md) | Reference type (nullable) | — |
 | Index | `int` | No (value type) | — |
 | IsT0 | `bool` | No (value type) | — |
 | IsT1 | `bool` | No (value type) | — |

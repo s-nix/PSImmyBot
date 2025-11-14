@@ -24,7 +24,7 @@ title: Send-SendTestBrandingEmailRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `SendTestBrandingEmailRequest` | True | — | All | None |
+| PayloadBody | [SendTestBrandingEmailRequest](../models/SendTestBrandingEmailRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

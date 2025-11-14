@@ -10,7 +10,7 @@ title: UpdateMaintenanceItemOrderPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateMaintenanceItemOrderPayload>` |
+| Implements | IEquatable<[UpdateMaintenanceItemOrderPayload](UpdateMaintenanceItemOrderPayload.md)> |
 | Source | `Models/UpdateMaintenanceItemOrderPayload.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: UpdateMaintenanceItemOrderPayload
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Id | `int` | No (value type) | — |
-| Location | `MaintenanceItemOrderLocation` | No (value type) | — |
+| Location | [MaintenanceItemOrderLocation](MaintenanceItemOrderLocation.md) | No (value type) | — |
 | ToIndex | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

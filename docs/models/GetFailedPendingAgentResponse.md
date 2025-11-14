@@ -10,7 +10,7 @@ title: GetFailedPendingAgentResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetFailedPendingAgentResponse>` |
+| Implements | IEquatable<[GetFailedPendingAgentResponse](GetFailedPendingAgentResponse.md)> |
 | Source | `Models/GetFailedPendingAgentResponse.cs` |
 
 ## Overview
@@ -26,7 +26,7 @@ title: GetFailedPendingAgentResponse
 | ExternalAgentId | `string` | Reference type (nullable) | — |
 | ExternalClientName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
-| IdentificationFailures | `ICollection<GetAgentIdentificationFailureResponse>` | Reference type (nullable) | — |
+| IdentificationFailures | ICollection<[GetAgentIdentificationFailureResponse](GetAgentIdentificationFailureResponse.md)> | Reference type (nullable) | — |
 | IsOnline | `bool` | No (value type) | — |
 | OperatingSystemName | `string` | Reference type (nullable) | — |
 | OsInstallDate | `DateTimeOffset?` | Yes (nullable value type) | — |

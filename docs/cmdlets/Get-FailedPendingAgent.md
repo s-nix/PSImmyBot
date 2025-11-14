@@ -10,7 +10,7 @@ title: Get-FailedPendingAgent
 | Source | `Cmdlets/GetFailedPendingAgent.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-agents/{ComputerId}/pending-conflicts? |
-| Return Type | `List<GetFailedPendingAgentResponse>` |
+| Return Type | List<[GetFailedPendingAgentResponse](../models/GetFailedPendingAgentResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-FailedPendingAgent
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-agents/{ComputerId}/pending-conflicts?` and deserializes to `List<GetFailedPendingAgentResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-agents/{ComputerId}/pending-conflicts?` and deserializes to List<[GetFailedPendingAgentResponse](../models/GetFailedPendingAgentResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-FailedPendingAgent
 
 ## Outputs
 
-- `List<GetFailedPendingAgentResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetFailedPendingAgentResponse](../models/GetFailedPendingAgentResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

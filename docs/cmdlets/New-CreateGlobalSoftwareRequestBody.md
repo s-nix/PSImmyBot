@@ -26,7 +26,7 @@ title: New-CreateGlobalSoftwareRequestBody
 | --- | --- | --- | --- | --- | --- |
 | AgentIntegrationTypeId | `Nullable`1` | False | — | All | None |
 | ChocoProviderSoftwareId | `String` | False | — | All | None |
-| DetectionMethod | `DetectionMethod` | True | — | All | None |
+| DetectionMethod | [DetectionMethod](../models/DetectionMethod.md) | True | — | All | None |
 | DetectionScriptId | `Nullable`1` | False | — | All | None |
 | DownloadInstallerScriptId | `Nullable`1` | False | — | All | None |
 | DynamicVersionsScriptId | `Nullable`1` | False | — | All | None |
@@ -34,8 +34,8 @@ title: New-CreateGlobalSoftwareRequestBody
 | InstallOrder | `Int32` | True | — | All | None |
 | InstallScriptId | `Nullable`1` | False | — | All | None |
 | LicenseDescription | `String` | False | — | All | None |
-| LicenseRequirement | `SoftwareLicenseRequirement` | True | — | All | None |
-| LicenseType | `LicenseType` | True | — | All | None |
+| LicenseRequirement | [SoftwareLicenseRequirement](../models/SoftwareLicenseRequirement.md) | True | — | All | None |
+| LicenseType | [LicenseType](../models/LicenseType.md) | True | — | All | None |
 | MaintenanceTaskId | `Nullable`1` | False | — | All | None |
 | Name | `String` | False | — | All | None |
 | NiniteProviderSoftwareId | `String` | False | — | All | None |
@@ -49,14 +49,14 @@ title: New-CreateGlobalSoftwareRequestBody
 | SoftwareIconMediaId | `Nullable`1` | False | — | All | None |
 | SoftwarePrerequisites | `ICollection`1` | False | — | All | None |
 | SoftwareTableName | `String` | False | — | All | None |
-| SoftwareTableNameSearchMode | `SoftwareTableNameSearchMode` | True | — | All | None |
+| SoftwareTableNameSearchMode | [SoftwareTableNameSearchMode](../models/SoftwareTableNameSearchMode.md) | True | — | All | None |
 | TestFailedError | `String` | False | — | All | None |
 | TestRequired | `Boolean` | True | — | All | None |
 | TestScriptId | `Nullable`1` | False | — | All | None |
 | UninstallScriptId | `Nullable`1` | False | — | All | None |
 | UpgradeCode | `String` | False | — | All | None |
 | UpgradeScriptId | `Nullable`1` | False | — | All | None |
-| UpgradeStrategy | `UpdateActionType` | True | — | All | None |
+| UpgradeStrategy | [UpdateActionType](../models/UpdateActionType.md) | True | — | All | None |
 | UseDynamicVersions | `Boolean` | True | — | All | None |
 
 ### Parameter sets

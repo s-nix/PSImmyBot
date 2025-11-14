@@ -10,7 +10,7 @@ title: ProviderClient
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderClient>` |
+| Implements | IEquatable<[ProviderClient](ProviderClient.md)> |
 | Source | `Models/ProviderClient.cs` |
 
 ## Overview
@@ -26,9 +26,9 @@ title: ProviderClient
 | ExternalClientName | `string` | Reference type (nullable) | — |
 | HasCompletedInitialAgentSync | `bool` | No (value type) | — |
 | InternalData | `object` | Reference type (nullable) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
-| ProviderAgents | `ICollection<ProviderAgent>` | Reference type (nullable) | — |
-| ProviderLink | `ProviderLink` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
+| ProviderAgents | ICollection<[ProviderAgent](ProviderAgent.md)> | Reference type (nullable) | — |
+| ProviderLink | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int` | No (value type) | — |
 | Status | `string` | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |

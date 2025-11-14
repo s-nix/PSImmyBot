@@ -10,7 +10,7 @@ title: BulkDeleteResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkDeleteResponse>` |
+| Implements | IEquatable<[BulkDeleteResponse](BulkDeleteResponse.md)> |
 | Source | `Models/BulkDeleteResponse.cs` |
 
 ## Overview

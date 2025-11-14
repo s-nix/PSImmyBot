@@ -10,7 +10,7 @@ title: Send-BulkScheduleRequest
 | Source | `Cmdlets/SendBulkScheduleRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/schedules/bulk-cancel? |
-| Return Type | `BulkScheduleRequest, List<BulkScheduleOperationResult>` |
+| Return Type | [BulkScheduleRequest](../models/BulkScheduleRequest.md), List<[BulkScheduleOperationResult](../models/BulkScheduleOperationResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-BulkScheduleRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/schedules/bulk-cancel?` and deserializes to `BulkScheduleRequest, List<BulkScheduleOperationResult>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/schedules/bulk-cancel?` and deserializes to [BulkScheduleRequest](../models/BulkScheduleRequest.md), List<[BulkScheduleOperationResult](../models/BulkScheduleOperationResult.md)>.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `BulkScheduleRequest` | True | — | All | None |
+| PayloadBody | [BulkScheduleRequest](../models/BulkScheduleRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-BulkScheduleRequest
 
 ## Outputs
 
-- `BulkScheduleRequest, List<BulkScheduleOperationResult>` records produced by `ImmyBotApiService.POST`
+- [BulkScheduleRequest](../models/BulkScheduleRequest.md), List<[BulkScheduleOperationResult](../models/BulkScheduleOperationResult.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

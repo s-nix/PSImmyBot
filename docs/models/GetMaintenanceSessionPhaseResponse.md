@@ -10,7 +10,7 @@ title: GetMaintenanceSessionPhaseResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetMaintenanceSessionPhaseResponse>` |
+| Implements | IEquatable<[GetMaintenanceSessionPhaseResponse](GetMaintenanceSessionPhaseResponse.md)> |
 | Source | `Models/GetMaintenanceSessionPhaseResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetMaintenanceSessionPhaseResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ActionProgressPhaseName | `ActionProgressPhaseName` | No (value type) | — |
+| ActionProgressPhaseName | [ActionProgressPhaseName](ActionProgressPhaseName.md) | No (value type) | — |
 | DateCompletedUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | DateStartedUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | Id | `int` | No (value type) | — |
@@ -31,7 +31,7 @@ title: GetMaintenanceSessionPhaseResponse
 | ProgressCompleted | `bool` | No (value type) | — |
 | ProgressPercentComplete | `double?` | Yes (nullable value type) | — |
 | ProgressStatus | `string` | Reference type (nullable) | — |
-| Status | `SessionPhaseStatus` | No (value type) | — |
+| Status | [SessionPhaseStatus](SessionPhaseStatus.md) | No (value type) | — |
 
 ## Serialization
 

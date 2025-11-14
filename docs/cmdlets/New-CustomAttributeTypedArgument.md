@@ -24,7 +24,7 @@ title: New-CustomAttributeTypedArgument
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ArgumentType | `Type` | True | — | All | None |
+| ArgumentType | [Type](../models/Type.md) | True | — | All | None |
 | Value | `Object` | False | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: RunImmyServiceResponseBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RunImmyServiceResponseBody>` |
+| Implements | IEquatable<[RunImmyServiceResponseBody](RunImmyServiceResponseBody.md)> |
 | Source | `Models/RunImmyServiceResponseBody.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: RunImmyServiceResponseBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| SessionsAlreadyInProgress | `ICollection<RunImmyServiceResponseSession>` | Reference type (nullable) | — |
-| SessionsStarted | `ICollection<RunImmyServiceResponseSession>` | Reference type (nullable) | — |
+| SessionsAlreadyInProgress | ICollection<[RunImmyServiceResponseSession](RunImmyServiceResponseSession.md)> | Reference type (nullable) | — |
+| SessionsStarted | ICollection<[RunImmyServiceResponseSession](RunImmyServiceResponseSession.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

@@ -10,7 +10,7 @@ title: UpdateTargetVisibilityPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateTargetVisibilityPayload>` |
+| Implements | IEquatable<[UpdateTargetVisibilityPayload](UpdateTargetVisibilityPayload.md)> |
 | Source | `Models/UpdateTargetVisibilityPayload.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: UpdateTargetVisibilityPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| TargetVisibility | `TargetVisibility` | No (value type) | — |
+| TargetVisibility | [TargetVisibility](TargetVisibility.md) | No (value type) | — |
 | UpdateStatus | `bool?` | Yes (nullable value type) | — |
 
 ## Serialization

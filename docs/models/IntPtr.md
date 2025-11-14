@@ -10,7 +10,7 @@ title: IntPtr
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IntPtr>` |
+| Implements | IEquatable<[IntPtr](IntPtr.md)> |
 | Source | `Models/IntPtr.cs` |
 
 ## Overview

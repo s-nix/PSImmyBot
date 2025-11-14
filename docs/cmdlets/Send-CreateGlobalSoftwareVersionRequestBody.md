@@ -10,7 +10,7 @@ title: Send-CreateGlobalSoftwareVersionRequestBody
 | Source | `Cmdlets/SendCreateGlobalSoftwareVersionRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/software/global/{SoftwareIdentifier}/versions? |
-| Return Type | `CreateGlobalSoftwareVersionRequestBody, GetGlobalSoftwareVersionResponse` |
+| Return Type | [CreateGlobalSoftwareVersionRequestBody](../models/CreateGlobalSoftwareVersionRequestBody.md), [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateGlobalSoftwareVersionRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global/{SoftwareIdentifier}/versions?` and deserializes to `CreateGlobalSoftwareVersionRequestBody, GetGlobalSoftwareVersionResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global/{SoftwareIdentifier}/versions?` and deserializes to [CreateGlobalSoftwareVersionRequestBody](../models/CreateGlobalSoftwareVersionRequestBody.md), [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateGlobalSoftwareVersionRequestBody` | True | — | All | None |
+| PayloadBody | [CreateGlobalSoftwareVersionRequestBody](../models/CreateGlobalSoftwareVersionRequestBody.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Send-CreateGlobalSoftwareVersionRequestBody
 
 ## Outputs
 
-- `CreateGlobalSoftwareVersionRequestBody, GetGlobalSoftwareVersionResponse` records produced by `ImmyBotApiService.POST`
+- [CreateGlobalSoftwareVersionRequestBody](../models/CreateGlobalSoftwareVersionRequestBody.md), [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

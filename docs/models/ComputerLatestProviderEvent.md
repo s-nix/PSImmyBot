@@ -10,7 +10,7 @@ title: ComputerLatestProviderEvent
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerLatestProviderEvent>` |
+| Implements | IEquatable<[ComputerLatestProviderEvent](ComputerLatestProviderEvent.md)> |
 | Source | `Models/ComputerLatestProviderEvent.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: ComputerLatestProviderEvent
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int` | No (value type) | — |
 | LastProviderAgentEventDateUtc | `DateTimeOffset` | No (value type) | — |
 

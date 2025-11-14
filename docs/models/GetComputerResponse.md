@@ -10,7 +10,7 @@ title: GetComputerResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetComputerResponse>` |
+| Implements | IEquatable<[GetComputerResponse](GetComputerResponse.md)> |
 | Source | `Models/GetComputerResponse.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: GetComputerResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AdditionalPersons | `ICollection<GetPersonResponse>` | Reference type (nullable) | — |
-| Agents | `ICollection<GetProviderAgentResponse>` | Reference type (nullable) | — |
+| AdditionalPersons | ICollection<[GetPersonResponse](GetPersonResponse.md)> | Reference type (nullable) | — |
+| Agents | ICollection<[GetProviderAgentResponse](GetProviderAgentResponse.md)> | Reference type (nullable) | — |
 | ComputerName | `string` | Reference type (nullable) | — |
 | ComputerTagIds | `ICollection<int>` | Reference type (nullable) | — |
 | DetectionOutdated | `bool` | No (value type) | — |
@@ -43,11 +43,11 @@ title: GetComputerResponse
 | IsServer | `bool?` | Yes (nullable value type) | — |
 | Licensed | `bool` | No (value type) | — |
 | Notes | `string` | Reference type (nullable) | — |
-| OnboardingStatus | `ComputerOnboardingStatus` | No (value type) | — |
-| PrimaryPerson | `GetPersonResponse` | Reference type (nullable) | — |
+| OnboardingStatus | [ComputerOnboardingStatus](ComputerOnboardingStatus.md) | No (value type) | — |
+| PrimaryPerson | [GetPersonResponse](GetPersonResponse.md) | Reference type (nullable) | — |
 | PrimaryPersonId | `int?` | Yes (nullable value type) | — |
-| Sessions | `ICollection<GetMaintenanceSessionResponse>` | Reference type (nullable) | — |
-| Tenant | `GetTenantResponse` | Reference type (nullable) | — |
+| Sessions | ICollection<[GetMaintenanceSessionResponse](GetMaintenanceSessionResponse.md)> | Reference type (nullable) | — |
+| Tenant | [GetTenantResponse](GetTenantResponse.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | TenantName | `string` | Reference type (nullable) | — |
 

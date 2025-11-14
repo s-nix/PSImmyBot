@@ -10,7 +10,7 @@ title: Send-SkipOnboardingRequest
 | Source | `Cmdlets/SendSkipOnboardingRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/computers/skip-onboarding? |
-| Return Type | `List<SkipOnboardingRequest>, List<SkipOnboardingResponse>` |
+| Return Type | List<[SkipOnboardingRequest](../models/SkipOnboardingRequest.md)>, List<[SkipOnboardingResponse](../models/SkipOnboardingResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-SkipOnboardingRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/skip-onboarding?` and deserializes to `List<SkipOnboardingRequest>, List<SkipOnboardingResponse>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/skip-onboarding?` and deserializes to List<[SkipOnboardingRequest](../models/SkipOnboardingRequest.md)>, List<[SkipOnboardingResponse](../models/SkipOnboardingResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Send-SkipOnboardingRequest
 
 ## Outputs
 
-- `List<SkipOnboardingRequest>, List<SkipOnboardingResponse>` records produced by `ImmyBotApiService.POST`
+- List<[SkipOnboardingRequest](../models/SkipOnboardingRequest.md)>, List<[SkipOnboardingResponse](../models/SkipOnboardingResponse.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

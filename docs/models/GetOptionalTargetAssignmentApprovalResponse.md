@@ -10,7 +10,7 @@ title: GetOptionalTargetAssignmentApprovalResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetOptionalTargetAssignmentApprovalResponse>` |
+| Implements | IEquatable<[GetOptionalTargetAssignmentApprovalResponse](GetOptionalTargetAssignmentApprovalResponse.md)> |
 | Source | `Models/GetOptionalTargetAssignmentApprovalResponse.cs` |
 
 ## Overview
@@ -20,14 +20,14 @@ title: GetOptionalTargetAssignmentApprovalResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Approved | `TargetAssignmentApprovalStatus` | No (value type) | — |
+| Approved | [TargetAssignmentApprovalStatus](TargetAssignmentApprovalStatus.md) | No (value type) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
 | TargetAssignmentId | `int` | No (value type) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
 

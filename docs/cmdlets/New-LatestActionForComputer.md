@@ -24,11 +24,11 @@ title: New-LatestActionForComputer
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ActionType | `MaintenanceActionType` | True | — | All | None |
+| ActionType | [MaintenanceActionType](../models/MaintenanceActionType.md) | True | — | All | None |
 | AssignmentId | `Nullable`1` | False | — | All | None |
-| AssignmentType | `DatabaseType` | True | — | All | None |
+| AssignmentType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | CreatedDate | `Nullable`1` | False | — | All | None |
-| DesiredSoftwareState | `DesiredSoftwareState` | True | — | All | None |
+| DesiredSoftwareState | [DesiredSoftwareState](../models/DesiredSoftwareState.md) | True | — | All | None |
 | DesiredVersion | `String` | False | — | All | None |
 | DetectedVersion | `String` | False | — | All | None |
 | EndTime | `Nullable`1` | False | — | All | None |
@@ -36,15 +36,15 @@ title: New-LatestActionForComputer
 | MaintenanceDisplayName | `String` | False | — | All | None |
 | MaintenanceIdentifier | `String` | False | — | All | None |
 | MaintenanceSessionId | `Int32` | True | — | All | None |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | True | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceTaskMode | [MaintenanceTaskMode](../models/MaintenanceTaskMode.md) | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 | PolicyDescription | `String` | False | — | All | None |
-| Reason | `MaintenanceActionReason` | True | — | All | None |
-| Result | `MaintenanceActionResult` | True | — | All | None |
-| ResultReason | `MaintenanceActionResultReason` | True | — | All | None |
+| Reason | [MaintenanceActionReason](../models/MaintenanceActionReason.md) | True | — | All | None |
+| Result | [MaintenanceActionResult](../models/MaintenanceActionResult.md) | True | — | All | None |
+| ResultReason | [MaintenanceActionResultReason](../models/MaintenanceActionResultReason.md) | True | — | All | None |
 | SoftwareActionIdForConfigurationTask | `Nullable`1` | False | — | All | None |
 | StartTime | `Nullable`1` | False | — | All | None |
-| Status | `MaintenanceActionStatus` | True | — | All | None |
+| Status | [MaintenanceActionStatus](../models/MaintenanceActionStatus.md) | True | — | All | None |
 
 ### Parameter sets
 

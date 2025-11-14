@@ -27,7 +27,7 @@ title: New-ResolveVisibilityTargetAssignmentsRequest
 | ComputerId | `Nullable`1` | False | — | All | None |
 | PersonId | `Nullable`1` | False | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
-| Visibility | `TargetVisibility` | True | — | All | None |
+| Visibility | [TargetVisibility](../models/TargetVisibility.md) | True | — | All | None |
 
 ### Parameter sets
 

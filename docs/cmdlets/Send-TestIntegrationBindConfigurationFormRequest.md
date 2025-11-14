@@ -10,7 +10,7 @@ title: Send-TestIntegrationBindConfigurationFormRequest
 | Source | `Cmdlets/SendTestIntegrationBindConfigurationFormRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/dynamic-provider-types/test-environment/{TerminalId}/bind-configuration-form? |
-| Return Type | `TestIntegrationBindConfigurationFormRequest, DynamicFormBindResultOpResult` |
+| Return Type | [TestIntegrationBindConfigurationFormRequest](../models/TestIntegrationBindConfigurationFormRequest.md), [DynamicFormBindResultOpResult](../models/DynamicFormBindResultOpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-TestIntegrationBindConfigurationFormRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/dynamic-provider-types/test-environment/{TerminalId}/bind-configuration-form?` and deserializes to `TestIntegrationBindConfigurationFormRequest, DynamicFormBindResultOpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/dynamic-provider-types/test-environment/{TerminalId}/bind-configuration-form?` and deserializes to [TestIntegrationBindConfigurationFormRequest](../models/TestIntegrationBindConfigurationFormRequest.md), [DynamicFormBindResultOpResult](../models/DynamicFormBindResultOpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `TestIntegrationBindConfigurationFormRequest` | True | — | All | None |
+| PayloadBody | [TestIntegrationBindConfigurationFormRequest](../models/TestIntegrationBindConfigurationFormRequest.md) | True | — | All | None |
 | TerminalId | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Send-TestIntegrationBindConfigurationFormRequest
 
 ## Outputs
 
-- `TestIntegrationBindConfigurationFormRequest, DynamicFormBindResultOpResult` records produced by `ImmyBotApiService.POST`
+- [TestIntegrationBindConfigurationFormRequest](../models/TestIntegrationBindConfigurationFormRequest.md), [DynamicFormBindResultOpResult](../models/DynamicFormBindResultOpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: GroupingInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GroupingInfo>` |
+| Implements | IEquatable<[GroupingInfo](GroupingInfo.md)> |
 | Source | `Models/GroupingInfo.cs` |
 
 ## Overview

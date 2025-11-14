@@ -10,7 +10,7 @@ title: GetUserResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetUserResponse>` |
+| Implements | IEquatable<[GetUserResponse](GetUserResponse.md)> |
 | Source | `Models/GetUserResponse.cs` |
 
 ## Overview

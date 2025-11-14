@@ -10,7 +10,7 @@ title: RegistryPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RegistryPayload>` |
+| Implements | IEquatable<[RegistryPayload](RegistryPayload.md)> |
 | Source | `Models/RegistryPayload.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Get-ComputerInventory
 | Source | `Cmdlets/GetComputerInventory.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/inventory? |
-| Return Type | `List<DxComputerInventoryScriptResult>` |
+| Return Type | List<[DxComputerInventoryScriptResult](../models/DxComputerInventoryScriptResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Get-ComputerInventory
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/inventory?` and deserializes to `List<DxComputerInventoryScriptResult>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/inventory?` and deserializes to List<[DxComputerInventoryScriptResult](../models/DxComputerInventoryScriptResult.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Get-ComputerInventory
 
 ## Outputs
 
-- `List<DxComputerInventoryScriptResult>` records produced by `ImmyBotApiService.GET`
+- List<[DxComputerInventoryScriptResult](../models/DxComputerInventoryScriptResult.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

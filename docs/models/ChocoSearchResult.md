@@ -10,7 +10,7 @@ title: ChocoSearchResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ChocoSearchResult>` |
+| Implements | IEquatable<[ChocoSearchResult](ChocoSearchResult.md)> |
 | Source | `Models/ChocoSearchResult.cs` |
 
 ## Overview

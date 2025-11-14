@@ -10,7 +10,7 @@ title: IdentifyAgentRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IdentifyAgentRequest>` |
+| Implements | IEquatable<[IdentifyAgentRequest](IdentifyAgentRequest.md)> |
 | Source | `Models/IdentifyAgentRequest.cs` |
 
 ## Overview

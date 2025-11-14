@@ -25,7 +25,7 @@ title: New-ImmyIpAndHostnamesResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | GlobalBlobStorageEndpoint | `String` | False | — | All | None |
-| IpInfo | `GetIpAddressesResponse` | True | — | All | None |
+| IpInfo | [GetIpAddressesResponse](../models/GetIpAddressesResponse.md) | True | — | All | None |
 | LocalBlobStorageEndpoint | `String` | False | — | All | None |
 
 ### Parameter sets

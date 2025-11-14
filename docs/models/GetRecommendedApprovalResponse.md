@@ -10,7 +10,7 @@ title: GetRecommendedApprovalResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetRecommendedApprovalResponse>` |
+| Implements | IEquatable<[GetRecommendedApprovalResponse](GetRecommendedApprovalResponse.md)> |
 | Source | `Models/GetRecommendedApprovalResponse.cs` |
 
 ## Overview

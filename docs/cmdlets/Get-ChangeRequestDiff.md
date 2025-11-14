@@ -10,7 +10,7 @@ title: Get-ChangeRequestDiff
 | Source | `Cmdlets/GetChangeRequestDiff.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/change-request/{ChangeRequestId}/diff? |
-| Return Type | `ChangeRequestDiff` |
+| Return Type | [ChangeRequestDiff](../models/ChangeRequestDiff.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ChangeRequestDiff
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/change-request/{ChangeRequestId}/diff?` and deserializes to `ChangeRequestDiff`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/change-request/{ChangeRequestId}/diff?` and deserializes to [ChangeRequestDiff](../models/ChangeRequestDiff.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-ChangeRequestDiff
 
 ## Outputs
 
-- `ChangeRequestDiff` records produced by `ImmyBotApiService.GET`
+- [ChangeRequestDiff](../models/ChangeRequestDiff.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

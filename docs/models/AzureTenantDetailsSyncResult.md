@@ -10,7 +10,7 @@ title: AzureTenantDetailsSyncResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantDetailsSyncResult>` |
+| Implements | IEquatable<[AzureTenantDetailsSyncResult](AzureTenantDetailsSyncResult.md)> |
 | Source | `Models/AzureTenantDetailsSyncResult.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: AzureTenantDetailsSyncResult
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| FailedReason | `AzureError` | Reference type (nullable) | — |
+| FailedReason | [AzureError](AzureError.md) | Reference type (nullable) | — |
 | PrincipalId | `string` | Reference type (nullable) | — |
-| TenantInformationSynced | `AzureTenantInfo` | Reference type (nullable) | — |
+| TenantInformationSynced | [AzureTenantInfo](AzureTenantInfo.md) | Reference type (nullable) | — |
 | WasSuccessful | `bool` | No (value type) | — |
 
 ## Serialization

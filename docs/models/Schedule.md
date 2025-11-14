@@ -10,7 +10,7 @@ title: Schedule
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Schedule>` |
+| Implements | IEquatable<[Schedule](Schedule.md)> |
 | Source | `Models/Schedule.cs` |
 
 ## Overview
@@ -25,7 +25,7 @@ title: Schedule
 | ApplyWindowsUpdates | `bool` | No (value type) | — |
 | AutoConsentToReboots | `bool` | No (value type) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | CustomCronExpression | `string` | Reference type (nullable) | — |
 | Day | `int?` | Yes (nullable value type) | — |
@@ -33,18 +33,18 @@ title: Schedule
 | Id | `int` | No (value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
 | MaintenanceTime | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OfflineBehavior | `ComputerOfflineMaintenanceSessionBehavior` | No (value type) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
-| PromptTimeoutAction | `PromptTimeoutAction` | No (value type) | — |
+| OfflineBehavior | [ComputerOfflineMaintenanceSessionBehavior](ComputerOfflineMaintenanceSessionBehavior.md) | No (value type) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
+| PromptTimeoutAction | [PromptTimeoutAction](PromptTimeoutAction.md) | No (value type) | — |
 | PromptTimeoutMinutes | `int` | No (value type) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
 | ProviderClientGroupType | `Guid?` | Yes (nullable value type) | — |
 | ProviderDeviceGroupType | `Guid?` | Yes (nullable value type) | — |
-| ProviderLink | `ProviderLink` | Reference type (nullable) | — |
+| ProviderLink | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int?` | Yes (nullable value type) | — |
-| RebootPreference | `RebootPreference` | No (value type) | — |
+| RebootPreference | [RebootPreference](RebootPreference.md) | No (value type) | — |
 | ScheduleExecutionAfterActiveHours | `bool` | No (value type) | — |
 | SendDetectionEmail | `bool` | No (value type) | — |
 | SendDetectionEmailWhenAllActionsAreCompliant | `bool` | No (value type) | — |
@@ -55,15 +55,15 @@ title: Schedule
 | ShowRunNowButton | `bool` | No (value type) | — |
 | SuppressRebootsDuringBusinessHours | `bool` | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetCategory | `TargetCategory` | No (value type) | — |
-| TargetGroupFilter | `TargetGroupFilter` | No (value type) | — |
+| TargetCategory | [TargetCategory](TargetCategory.md) | No (value type) | — |
+| TargetGroupFilter | [TargetGroupFilter](TargetGroupFilter.md) | No (value type) | — |
 | TargetName | `string` | Reference type (nullable) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | Time | `string` | Reference type (nullable) | — |
 | TimeZoneInfoId | `string` | Reference type (nullable) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 | UseComputersTimezoneForExecution | `bool` | No (value type) | — |
 

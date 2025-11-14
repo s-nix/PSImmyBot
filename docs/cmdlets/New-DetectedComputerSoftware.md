@@ -24,9 +24,9 @@ title: New-DetectedComputerSoftware
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Computer | `Computer` | True | — | All | None |
+| Computer | [Computer](../models/Computer.md) | True | — | All | None |
 | ComputerId | `Int32` | True | — | All | None |
-| Context | `SoftwareRegistryContext` | True | — | All | None |
+| Context | [SoftwareRegistryContext](../models/SoftwareRegistryContext.md) | True | — | All | None |
 | DetectedAt | `DateTimeOffset` | True | — | All | None |
 | DisplayIcon | `String` | False | — | All | None |
 | DisplayName | `String` | False | — | All | None |
@@ -38,13 +38,13 @@ title: New-DetectedComputerSoftware
 | InstallLocation | `String` | False | — | All | None |
 | OriginalKey | `String` | False | — | All | None |
 | Platform | `String` | False | — | All | None |
-| PrimaryPerson | `Person` | True | — | All | None |
+| PrimaryPerson | [Person](../models/Person.md) | True | — | All | None |
 | PrimaryPersonId | `Nullable`1` | False | — | All | None |
 | ProductCode | `Nullable`1` | False | — | All | None |
 | QuietUninstallString | `String` | False | — | All | None |
 | RegistryPath | `String` | False | — | All | None |
 | SystemComponent | `Nullable`1` | False | — | All | None |
-| Tenant | `Tenant` | True | — | All | None |
+| Tenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 | UninstallString | `String` | False | — | All | None |
 | UpgradeCode | `Nullable`1` | False | — | All | None |

@@ -24,7 +24,7 @@ title: Send-ReleaseChannelUpdatedRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ReleaseChannelUpdatedRequestBody` | True | — | All | None |
+| PayloadBody | [ReleaseChannelUpdatedRequestBody](../models/ReleaseChannelUpdatedRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

@@ -10,7 +10,7 @@ title: UpdateLicenseRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateLicenseRequestBody>` |
+| Implements | IEquatable<[UpdateLicenseRequestBody](UpdateLicenseRequestBody.md)> |
 | Source | `Models/UpdateLicenseRequestBody.cs` |
 
 ## Overview
@@ -24,10 +24,10 @@ title: UpdateLicenseRequestBody
 | LicenseValue | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
 | RestrictToMajorVersion | `bool` | No (value type) | — |
-| SemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
 | SoftwareName | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

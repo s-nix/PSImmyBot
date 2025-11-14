@@ -10,7 +10,7 @@ title: DevInstanceDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DevInstanceDetails>` |
+| Implements | IEquatable<[DevInstanceDetails](DevInstanceDetails.md)> |
 | Source | `Models/DevInstanceDetails.cs` |
 
 ## Overview

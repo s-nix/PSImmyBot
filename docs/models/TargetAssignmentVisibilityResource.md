@@ -10,7 +10,7 @@ title: TargetAssignmentVisibilityResource
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TargetAssignmentVisibilityResource>` |
+| Implements | IEquatable<[TargetAssignmentVisibilityResource](TargetAssignmentVisibilityResource.md)> |
 | Source | `Models/TargetAssignmentVisibilityResource.cs` |
 
 ## Overview

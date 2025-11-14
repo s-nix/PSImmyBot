@@ -24,7 +24,7 @@ title: Send-UpdateTagPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateTagPayload` | True | — | All | None |
+| PayloadBody | [UpdateTagPayload](../models/UpdateTagPayload.md) | True | — | All | None |
 | TagId | `Int32` | True | — | All | None |
 
 ### Parameter sets

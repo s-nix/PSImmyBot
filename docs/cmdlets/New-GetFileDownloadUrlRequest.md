@@ -25,7 +25,7 @@ title: New-GetFileDownloadUrlRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | BlobName | `String` | False | — | All | None |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 
 ### Parameter sets
 

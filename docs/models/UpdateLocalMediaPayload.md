@@ -10,7 +10,7 @@ title: UpdateLocalMediaPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateLocalMediaPayload>` |
+| Implements | IEquatable<[UpdateLocalMediaPayload](UpdateLocalMediaPayload.md)> |
 | Source | `Models/UpdateLocalMediaPayload.cs` |
 
 ## Overview
@@ -21,14 +21,14 @@ title: UpdateLocalMediaPayload
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobReference | `string` | Reference type (nullable) | — |
-| Category | `MediaCategory` | No (value type) | — |
+| Category | [MediaCategory](MediaCategory.md) | No (value type) | — |
 | FileName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | MimeType | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
 | PackageHash | `string` | Reference type (nullable) | — |
 | RelativeCacheSourcePath | `string` | Reference type (nullable) | — |
-| Tenants | `ICollection<TenantMedia>` | Reference type (nullable) | — |
+| Tenants | ICollection<[TenantMedia](TenantMedia.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

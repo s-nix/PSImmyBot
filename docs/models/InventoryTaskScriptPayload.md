@@ -10,7 +10,7 @@ title: InventoryTaskScriptPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<InventoryTaskScriptPayload>` |
+| Implements | IEquatable<[InventoryTaskScriptPayload](InventoryTaskScriptPayload.md)> |
 | Source | `Models/InventoryTaskScriptPayload.cs` |
 
 ## Overview

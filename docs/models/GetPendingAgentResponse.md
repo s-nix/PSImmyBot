@@ -10,7 +10,7 @@ title: GetPendingAgentResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetPendingAgentResponse>` |
+| Implements | IEquatable<[GetPendingAgentResponse](GetPendingAgentResponse.md)> |
 | Source | `Models/GetPendingAgentResponse.cs` |
 
 ## Overview
@@ -27,7 +27,7 @@ title: GetPendingAgentResponse
 | ExternalClientName | `string` | Reference type (nullable) | — |
 | Failed | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| IdentificationFailures | `ICollection<GetAgentIdentificationFailureResponse>` | Reference type (nullable) | — |
+| IdentificationFailures | ICollection<[GetAgentIdentificationFailureResponse](GetAgentIdentificationFailureResponse.md)> | Reference type (nullable) | — |
 | IsComputerDeleted | `bool` | No (value type) | — |
 | IsOnline | `bool` | No (value type) | — |
 | Manufacturer | `string` | Reference type (nullable) | — |

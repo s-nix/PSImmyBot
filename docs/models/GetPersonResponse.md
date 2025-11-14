@@ -10,7 +10,7 @@ title: GetPersonResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetPersonResponse>` |
+| Implements | IEquatable<[GetPersonResponse](GetPersonResponse.md)> |
 | Source | `Models/GetPersonResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetPersonResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AdditionalComputers | `ICollection<GetComputerResponse>` | Reference type (nullable) | — |
+| AdditionalComputers | ICollection<[GetComputerResponse](GetComputerResponse.md)> | Reference type (nullable) | — |
 | AzurePrincipalId | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
@@ -29,12 +29,12 @@ title: GetPersonResponse
 | FirstName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | LastName | `string` | Reference type (nullable) | — |
-| PrimaryComputers | `ICollection<GetComputerResponse>` | Reference type (nullable) | — |
+| PrimaryComputers | ICollection<[GetComputerResponse](GetComputerResponse.md)> | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
-| User | `GetUserResponse` | Reference type (nullable) | — |
-| UserAffinities | `ICollection<GetUserAffinityResponse>` | Reference type (nullable) | — |
+| User | [GetUserResponse](GetUserResponse.md) | Reference type (nullable) | — |
+| UserAffinities | ICollection<[GetUserAffinityResponse](GetUserAffinityResponse.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

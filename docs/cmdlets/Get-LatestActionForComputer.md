@@ -10,7 +10,7 @@ title: Get-LatestActionForComputer
 | Source | `Cmdlets/GetLatestActionForComputer.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-actions/latest-for-computer/{ComputerId}? |
-| Return Type | `List<LatestActionForComputer>` |
+| Return Type | List<[LatestActionForComputer](../models/LatestActionForComputer.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-LatestActionForComputer
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-actions/latest-for-computer/{ComputerId}?` and deserializes to `List<LatestActionForComputer>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-actions/latest-for-computer/{ComputerId}?` and deserializes to List<[LatestActionForComputer](../models/LatestActionForComputer.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-LatestActionForComputer
 
 ## Outputs
 
-- `List<LatestActionForComputer>` records produced by `ImmyBotApiService.GET`
+- List<[LatestActionForComputer](../models/LatestActionForComputer.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

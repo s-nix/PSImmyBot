@@ -10,7 +10,7 @@ title: MigrateToSupersedingAssignmentWhatIfResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MigrateToSupersedingAssignmentWhatIfResponse>` |
+| Implements | IEquatable<[MigrateToSupersedingAssignmentWhatIfResponse](MigrateToSupersedingAssignmentWhatIfResponse.md)> |
 | Source | `Models/MigrateToSupersedingAssignmentWhatIfResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: MigrateToSupersedingAssignmentWhatIfResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Assignment | `LocalTargetAssignmentResource` | Reference type (nullable) | — |
+| Assignment | [LocalTargetAssignmentResource](LocalTargetAssignmentResource.md) | Reference type (nullable) | — |
 | IsNew | `bool` | No (value type) | — |
 | PolicyDescription | `string` | Reference type (nullable) | — |
 

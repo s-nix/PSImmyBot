@@ -10,7 +10,7 @@ title: GetGlobalScriptResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetGlobalScriptResponse>` |
+| Implements | IEquatable<[GetGlobalScriptResponse](GetGlobalScriptResponse.md)> |
 | Source | `Models/GetGlobalScriptResponse.cs` |
 
 ## Overview
@@ -24,11 +24,11 @@ title: GetGlobalScriptResponse
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OutputType | `ScriptOutputType` | No (value type) | — |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
+| OutputType | [ScriptOutputType](ScriptOutputType.md) | No (value type) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Timeout | `int?` | Yes (nullable value type) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
 

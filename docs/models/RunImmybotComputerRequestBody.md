@@ -10,7 +10,7 @@ title: RunImmybotComputerRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RunImmybotComputerRequestBody>` |
+| Implements | IEquatable<[RunImmybotComputerRequestBody](RunImmybotComputerRequestBody.md)> |
 | Source | `Models/RunImmybotComputerRequestBody.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: RunImmybotComputerRequestBody
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ComputerId | `int` | No (value type) | — |
-| MaintenanceTaskParameterValueOverrides | `IDictionary<string, IDictionary<string, DeploymentParameterValue>>` | Reference type (nullable) | — |
+| MaintenanceTaskParameterValueOverrides | IDictionary<string, IDictionary<string, [DeploymentParameterValue](DeploymentParameterValue.md)>> | Reference type (nullable) | — |
 
 ## Serialization
 

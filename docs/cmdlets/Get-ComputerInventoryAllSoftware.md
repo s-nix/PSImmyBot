@@ -10,7 +10,7 @@ title: Get-ComputerInventoryAllSoftware
 | Source | `Cmdlets/GetComputerInventoryAllSoftware.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/all-inventory-software/search-by-name? |
-| Return Type | `List<ComputerInventoryAllSoftware>` |
+| Return Type | List<[ComputerInventoryAllSoftware](../models/ComputerInventoryAllSoftware.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ComputerInventoryAllSoftware
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/all-inventory-software/search-by-name?` and deserializes to `List<ComputerInventoryAllSoftware>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/all-inventory-software/search-by-name?` and deserializes to List<[ComputerInventoryAllSoftware](../models/ComputerInventoryAllSoftware.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -35,7 +35,7 @@ title: Get-ComputerInventoryAllSoftware
 
 ## Outputs
 
-- `List<ComputerInventoryAllSoftware>` records produced by `ImmyBotApiService.GET`
+- List<[ComputerInventoryAllSoftware](../models/ComputerInventoryAllSoftware.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

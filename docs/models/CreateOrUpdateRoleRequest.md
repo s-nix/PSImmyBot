@@ -10,7 +10,7 @@ title: CreateOrUpdateRoleRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateOrUpdateRoleRequest>` |
+| Implements | IEquatable<[CreateOrUpdateRoleRequest](CreateOrUpdateRoleRequest.md)> |
 | Source | `Models/CreateOrUpdateRoleRequest.cs` |
 
 ## Overview

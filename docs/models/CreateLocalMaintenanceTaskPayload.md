@@ -10,7 +10,7 @@ title: CreateLocalMaintenanceTaskPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateLocalMaintenanceTaskPayload>` |
+| Implements | IEquatable<[CreateLocalMaintenanceTaskPayload](CreateLocalMaintenanceTaskPayload.md)> |
 | Source | `Models/CreateLocalMaintenanceTaskPayload.cs` |
 
 ## Overview
@@ -20,32 +20,32 @@ title: CreateLocalMaintenanceTaskPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | ExecuteSerially | `bool` | No (value type) | — |
 | GetEnabled | `bool` | No (value type) | — |
 | GetScriptId | `int?` | Yes (nullable value type) | — |
-| GetScriptType | `DatabaseType` | No (value type) | — |
+| GetScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | IconMediaId | `int?` | Yes (nullable value type) | — |
 | IgnoreDuringAutomaticOnboarding | `bool` | No (value type) | — |
 | IntegrationTypeId | `Guid?` | Yes (nullable value type) | — |
 | IsConfigurationTask | `bool` | No (value type) | — |
-| MaintenanceTaskCategory | `MaintenanceTaskCategory` | No (value type) | — |
+| MaintenanceTaskCategory | [MaintenanceTaskCategory](MaintenanceTaskCategory.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | Notes | `string` | Reference type (nullable) | — |
 | OnboardingOnly | `bool` | No (value type) | — |
-| Parameters | `ICollection<MaintenanceTaskParameterPayload>` | Reference type (nullable) | — |
+| Parameters | ICollection<[MaintenanceTaskParameterPayload](MaintenanceTaskParameterPayload.md)> | Reference type (nullable) | — |
 | Recommended | `bool` | No (value type) | — |
 | SetEnabled | `bool` | No (value type) | — |
 | SetScriptId | `int?` | Yes (nullable value type) | — |
-| SetScriptType | `DatabaseType` | No (value type) | — |
+| SetScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | SupersededByTaskId | `int?` | Yes (nullable value type) | — |
 | SupersededByTaskMigrationScriptId | `int?` | Yes (nullable value type) | — |
-| SupersededByTaskMigrationScriptType | `DatabaseType` | No (value type) | — |
-| SupersededByTaskType | `DatabaseType` | No (value type) | — |
-| Tenants | `ICollection<LocalMaintenanceTaskTenantPayload>` | Reference type (nullable) | — |
+| SupersededByTaskMigrationScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| SupersededByTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| Tenants | ICollection<[LocalMaintenanceTaskTenantPayload](LocalMaintenanceTaskTenantPayload.md)> | Reference type (nullable) | — |
 | TestEnabled | `bool` | No (value type) | — |
 | TestScriptId | `int?` | Yes (nullable value type) | — |
-| TestScriptType | `DatabaseType` | No (value type) | — |
+| TestScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | UseScriptParamBlock | `bool` | No (value type) | — |
 
 ## Serialization

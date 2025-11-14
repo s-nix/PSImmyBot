@@ -10,7 +10,7 @@ title: Get-ComputerAgentStatusDto
 | Source | `Cmdlets/GetComputerAgentStatusDto.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/agent-status? |
-| Return Type | `List<ComputerAgentStatusDto>` |
+| Return Type | List<[ComputerAgentStatusDto](../models/ComputerAgentStatusDto.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Get-ComputerAgentStatusDto
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/agent-status?` and deserializes to `List<ComputerAgentStatusDto>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/agent-status?` and deserializes to List<[ComputerAgentStatusDto](../models/ComputerAgentStatusDto.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets
@@ -34,7 +34,7 @@ title: Get-ComputerAgentStatusDto
 
 ## Outputs
 
-- `List<ComputerAgentStatusDto>` records produced by `ImmyBotApiService.GET`
+- List<[ComputerAgentStatusDto](../models/ComputerAgentStatusDto.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

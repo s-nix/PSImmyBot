@@ -10,7 +10,7 @@ title: Send-GetBashInstallScriptParameters
 | Source | `Cmdlets/SendGetBashInstallScriptParameters.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/agents/bash-install-script? |
-| Return Type | `GetBashInstallScriptParameters, IScript` |
+| Return Type | [GetBashInstallScriptParameters](../models/GetBashInstallScriptParameters.md), [IScript](../models/IScript.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-GetBashInstallScriptParameters
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/bash-install-script?` and deserializes to `GetBashInstallScriptParameters, IScript`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/bash-install-script?` and deserializes to [GetBashInstallScriptParameters](../models/GetBashInstallScriptParameters.md), [IScript](../models/IScript.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `GetBashInstallScriptParameters` | True | — | All | None |
+| PayloadBody | [GetBashInstallScriptParameters](../models/GetBashInstallScriptParameters.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-GetBashInstallScriptParameters
 
 ## Outputs
 
-- `GetBashInstallScriptParameters, IScript` records produced by `ImmyBotApiService.POST`
+- [GetBashInstallScriptParameters](../models/GetBashInstallScriptParameters.md), [IScript](../models/IScript.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

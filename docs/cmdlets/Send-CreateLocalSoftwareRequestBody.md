@@ -10,7 +10,7 @@ title: Send-CreateLocalSoftwareRequestBody
 | Source | `Cmdlets/SendCreateLocalSoftwareRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/software/local? |
-| Return Type | `CreateLocalSoftwareRequestBody, GetLocalSoftwareResponse` |
+| Return Type | [CreateLocalSoftwareRequestBody](../models/CreateLocalSoftwareRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateLocalSoftwareRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/local?` and deserializes to `CreateLocalSoftwareRequestBody, GetLocalSoftwareResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/local?` and deserializes to [CreateLocalSoftwareRequestBody](../models/CreateLocalSoftwareRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateLocalSoftwareRequestBody` | True | — | All | None |
+| PayloadBody | [CreateLocalSoftwareRequestBody](../models/CreateLocalSoftwareRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateLocalSoftwareRequestBody
 
 ## Outputs
 
-- `CreateLocalSoftwareRequestBody, GetLocalSoftwareResponse` records produced by `ImmyBotApiService.POST`
+- [CreateLocalSoftwareRequestBody](../models/CreateLocalSoftwareRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

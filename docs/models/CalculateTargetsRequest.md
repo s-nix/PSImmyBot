@@ -10,7 +10,7 @@ title: CalculateTargetsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CalculateTargetsRequest>` |
+| Implements | IEquatable<[CalculateTargetsRequest](CalculateTargetsRequest.md)> |
 | Source | `Models/CalculateTargetsRequest.cs` |
 
 ## Overview
@@ -27,8 +27,8 @@ title: CalculateTargetsRequest
 | ProviderDeviceGroupType | `Guid?` | Yes (nullable value type) | — |
 | ProviderLinkId | `int?` | Yes (nullable value type) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetGroupFilter | `TargetGroupFilter` | No (value type) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetGroupFilter | [TargetGroupFilter](TargetGroupFilter.md) | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

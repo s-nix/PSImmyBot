@@ -25,7 +25,7 @@ title: Send-UpdateComputerAdditionalPersonsRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateComputerAdditionalPersonsRequestBody` | True | — | All | None |
+| PayloadBody | [UpdateComputerAdditionalPersonsRequestBody](../models/UpdateComputerAdditionalPersonsRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

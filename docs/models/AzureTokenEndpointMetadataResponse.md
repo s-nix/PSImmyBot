@@ -10,7 +10,7 @@ title: AzureTokenEndpointMetadataResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTokenEndpointMetadataResponse>` |
+| Implements | IEquatable<[AzureTokenEndpointMetadataResponse](AzureTokenEndpointMetadataResponse.md)> |
 | Source | `Models/AzureTokenEndpointMetadataResponse.cs` |
 
 ## Overview

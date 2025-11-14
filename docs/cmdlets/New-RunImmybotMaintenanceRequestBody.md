@@ -24,16 +24,16 @@ title: New-RunImmybotMaintenanceRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DesiredSoftwareState | `DesiredSoftwareState` | True | — | All | None |
+| DesiredSoftwareState | [DesiredSoftwareState](../models/DesiredSoftwareState.md) | True | — | All | None |
 | MaintenanceIdentifier | `String` | False | — | All | None |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | True | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceTaskMode | [MaintenanceTaskMode](../models/MaintenanceTaskMode.md) | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 | ProviderLinkIdForMaintenanceItem | `Nullable`1` | False | — | All | None |
 | Repair | `Boolean` | True | — | All | None |
-| SemanticVersion | `SemanticVersion` | True | — | All | None |
+| SemanticVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | SemanticVersionNormalized | `String` | False | — | All | None |
-| SoftwareProviderType | `SoftwareProviderType` | True | — | All | None |
-| SoftwareType | `SoftwareType` | True | — | All | None |
+| SoftwareProviderType | [SoftwareProviderType](../models/SoftwareProviderType.md) | True | — | All | None |
+| SoftwareType | [SoftwareType](../models/SoftwareType.md) | True | — | All | None |
 | TaskParameterValues | `IDictionary`2` | False | — | All | None |
 
 ### Parameter sets

@@ -25,9 +25,9 @@ title: New-AgentIdentificationLog
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| LogType | `AgentIdentificationLogType` | True | — | All | None |
+| LogType | [AgentIdentificationLogType](../models/AgentIdentificationLogType.md) | True | — | All | None |
 | Message | `String` | False | — | All | None |
-| ProviderAgent | `ProviderAgent` | True | — | All | None |
+| ProviderAgent | [ProviderAgent](../models/ProviderAgent.md) | True | — | All | None |
 | ProviderAgentId | `Int32` | True | — | All | None |
 | TimeUtc | `DateTimeOffset` | True | — | All | None |
 

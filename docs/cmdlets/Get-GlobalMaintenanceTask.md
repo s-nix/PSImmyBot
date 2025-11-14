@@ -10,7 +10,7 @@ title: Get-GlobalMaintenanceTask
 | Source | `Cmdlets/GetGlobalMaintenanceTask.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-tasks/global/{Id}? |
-| Return Type | `GetGlobalMaintenanceTaskResponse` |
+| Return Type | [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-GlobalMaintenanceTask
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-tasks/global/{Id}?` and deserializes to `GetGlobalMaintenanceTaskResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-tasks/global/{Id}?` and deserializes to [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-GlobalMaintenanceTask
 
 ## Outputs
 
-- `GetGlobalMaintenanceTaskResponse` records produced by `ImmyBotApiService.GET`
+- [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

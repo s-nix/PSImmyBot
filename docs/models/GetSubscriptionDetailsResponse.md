@@ -10,7 +10,7 @@ title: GetSubscriptionDetailsResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetSubscriptionDetailsResponse>` |
+| Implements | IEquatable<[GetSubscriptionDetailsResponse](GetSubscriptionDetailsResponse.md)> |
 | Source | `Models/GetSubscriptionDetailsResponse.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: GetSubscriptionDetailsResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| FeaturesEnabledFromSubscription | `ICollection<FeatureEnabledFromSubscription>` | Reference type (nullable) | — |
+| FeaturesEnabledFromSubscription | ICollection<[FeatureEnabledFromSubscription](FeatureEnabledFromSubscription.md)> | Reference type (nullable) | — |
 | PlanId | `string` | Reference type (nullable) | — |
-| Status | `SubscriptionStatus` | No (value type) | — |
+| Status | [SubscriptionStatus](SubscriptionStatus.md) | No (value type) | — |
 | SubscriptionActivatedDateUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | TrialEndUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | TrialStartUtc | `DateTimeOffset?` | Yes (nullable value type) | — |

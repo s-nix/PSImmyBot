@@ -10,7 +10,7 @@ title: Get-ComputersPaged
 | Source | `Cmdlets/GetComputersPaged.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/paged? |
-| Return Type | `ComputerPageResponse` |
+| Return Type | [ComputerPageResponse](../models/ComputerPageResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ComputersPaged
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/paged?` and deserializes to `ComputerPageResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/paged?` and deserializes to [ComputerPageResponse](../models/ComputerPageResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -44,7 +44,7 @@ title: Get-ComputersPaged
 
 ## Outputs
 
-- `ComputerPageResponse` records produced by `ImmyBotApiService.GET`
+- [ComputerPageResponse](../models/ComputerPageResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

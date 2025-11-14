@@ -10,7 +10,7 @@ title: ComputerInventoryTaskScriptResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerInventoryTaskScriptResult>` |
+| Implements | IEquatable<[ComputerInventoryTaskScriptResult](ComputerInventoryTaskScriptResult.md)> |
 | Source | `Models/ComputerInventoryTaskScriptResult.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: ComputerInventoryTaskScriptResult
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int` | No (value type) | — |
 | InventoryKey | `string` | Reference type (nullable) | — |
 | LatestErrorResult | `object` | Reference type (nullable) | — |

@@ -10,7 +10,7 @@ title: LoadResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<LoadResult>` |
+| Implements | IEquatable<[LoadResult](LoadResult.md)> |
 | Source | `Models/LoadResult.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Send-UthRequestAccess
 | Source | `Cmdlets/SendUthRequestAccess.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/auth/request-access? |
-| Return Type | `CommandResult` |
+| Return Type | [CommandResult](../models/CommandResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-UthRequestAccess
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/auth/request-access?` and deserializes to `CommandResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/auth/request-access?` and deserializes to [CommandResult](../models/CommandResult.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `CommandResult` records produced by `ImmyBotApiService.POST`
+- [CommandResult](../models/CommandResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

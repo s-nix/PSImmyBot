@@ -10,7 +10,7 @@ title: License
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<License>` |
+| Implements | IEquatable<[License](License.md)> |
 | Source | `Models/License.cs` |
 
 ## Overview
@@ -21,21 +21,21 @@ title: License
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | LicenseValue | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | RestrictToMajorVersion | `bool` | No (value type) | — |
-| SemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
 | SoftwareName | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
-| TargetAssignments | `ICollection<TargetAssignment>` | Reference type (nullable) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
+| TargetAssignments | ICollection<[TargetAssignment](TargetAssignment.md)> | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

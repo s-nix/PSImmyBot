@@ -24,9 +24,9 @@ title: New-GetProviderAgentResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AgentVersion | `SemanticVersion` | True | — | All | None |
+| AgentVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | ComputerId | `Nullable`1` | False | — | All | None |
-| DeviceDetails | `DeviceDetails` | True | — | All | None |
+| DeviceDetails | [DeviceDetails](../models/DeviceDetails.md) | True | — | All | None |
 | DeviceUpdateFormData | `Object` | False | — | All | None |
 | ExternalAgentId | `String` | False | — | All | None |
 | ExternalClientId | `String` | False | — | All | None |
@@ -35,7 +35,7 @@ title: New-GetProviderAgentResponse
 | InternalData | `Object` | False | — | All | None |
 | IsOnline | `Boolean` | True | — | All | None |
 | LastUpdatedUtc | `DateTimeOffset` | True | — | All | None |
-| OnboardingOptions | `AgentOnboardingOptions` | True | — | All | None |
+| OnboardingOptions | [AgentOnboardingOptions](../models/AgentOnboardingOptions.md) | True | — | All | None |
 | ProviderLinkId | `Int32` | True | — | All | None |
 | ProviderTypeId | `Guid` | True | — | All | None |
 | RequireManualIdentification | `Boolean` | True | — | All | None |

@@ -25,7 +25,7 @@ title: New-IPermissionMetadata
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | AllowClaim | `String` | False | — | All | None |
-| Category | `PermissionCategory` | True | — | All | None |
+| Category | [PermissionCategory](../models/PermissionCategory.md) | True | — | All | None |
 | Claim | `String` | False | — | All | None |
 | DenyClaim | `String` | False | — | All | None |
 | Dependencies | `ICollection`1` | False | — | All | None |
@@ -38,7 +38,7 @@ title: New-IPermissionMetadata
 | PermissionName | `String` | False | — | All | None |
 | ResourceClaimType | `String` | False | — | All | None |
 | SortOrder | `Int32` | True | — | All | None |
-| Subject | `ISubjectMetadata` | True | — | All | None |
+| Subject | [ISubjectMetadata](../models/ISubjectMetadata.md) | True | — | All | None |
 | SubjectClaimType | `String` | False | — | All | None |
 | TenantClaimType | `String` | False | — | All | None |
 

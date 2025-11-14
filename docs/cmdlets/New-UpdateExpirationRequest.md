@@ -24,7 +24,7 @@ title: New-UpdateExpirationRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ExpiresIn | `ExpirationTime` | True | — | All | None |
+| ExpiresIn | [ExpirationTime](../models/ExpirationTime.md) | True | — | All | None |
 | PersonIds | `ICollection`1` | False | — | All | None |
 
 ### Parameter sets

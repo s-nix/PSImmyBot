@@ -10,7 +10,7 @@ title: RequestFormSupportBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RequestFormSupportBody>` |
+| Implements | IEquatable<[RequestFormSupportBody](RequestFormSupportBody.md)> |
 | Source | `Models/RequestFormSupportBody.cs` |
 
 ## Overview

@@ -24,11 +24,11 @@ title: New-MethodBase
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Attributes | `MethodAttributes` | True | — | All | None |
-| CallingConvention | `CallingConventions` | True | — | All | None |
+| Attributes | [MethodAttributes](../models/MethodAttributes.md) | True | — | All | None |
+| CallingConvention | [CallingConventions](../models/CallingConventions.md) | True | — | All | None |
 | ContainsGenericParameters | `Boolean` | True | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
-| DeclaringType | `Type` | True | — | All | None |
+| DeclaringType | [Type](../models/Type.md) | True | — | All | None |
 | IsAbstract | `Boolean` | True | — | All | None |
 | IsAssembly | `Boolean` | True | — | All | None |
 | IsCollectible | `Boolean` | True | — | All | None |
@@ -49,13 +49,13 @@ title: New-MethodBase
 | IsSpecialName | `Boolean` | True | — | All | None |
 | IsStatic | `Boolean` | True | — | All | None |
 | IsVirtual | `Boolean` | True | — | All | None |
-| MemberType | `MemberTypes` | True | — | All | None |
+| MemberType | [MemberTypes](../models/MemberTypes.md) | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
-| MethodHandle | `RuntimeMethodHandle` | True | — | All | None |
-| MethodImplementationFlags | `MethodImplAttributes` | True | — | All | None |
-| Module | `Module` | True | — | All | None |
+| MethodHandle | [RuntimeMethodHandle](../models/RuntimeMethodHandle.md) | True | — | All | None |
+| MethodImplementationFlags | [MethodImplAttributes](../models/MethodImplAttributes.md) | True | — | All | None |
+| Module | [Module](../models/Module.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| ReflectedType | `Type` | True | — | All | None |
+| ReflectedType | [Type](../models/Type.md) | True | — | All | None |
 
 ### Parameter sets
 

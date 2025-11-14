@@ -10,7 +10,7 @@ title: BulkScheduleRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkScheduleRequest>` |
+| Implements | IEquatable<[BulkScheduleRequest](BulkScheduleRequest.md)> |
 | Source | `Models/BulkScheduleRequest.cs` |
 
 ## Overview

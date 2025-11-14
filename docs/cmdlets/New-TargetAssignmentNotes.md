@@ -27,7 +27,7 @@ title: New-TargetAssignmentNotes
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | Notes | `String` | False | — | All | None |
-| TargetAssignment | `TargetAssignment` | True | — | All | None |
+| TargetAssignment | [TargetAssignment](../models/TargetAssignment.md) | True | — | All | None |
 | TargetAssignmentId | `Int32` | True | — | All | None |
 | UpdatedByName | `String` | False | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |

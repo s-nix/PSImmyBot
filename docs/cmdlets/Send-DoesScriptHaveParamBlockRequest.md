@@ -10,7 +10,7 @@ title: Send-DoesScriptHaveParamBlockRequest
 | Source | `Cmdlets/SendDoesScriptHaveParamBlockRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/does-script-have-param-block? |
-| Return Type | `DoesScriptHaveParamBlockRequest, bool` |
+| Return Type | [DoesScriptHaveParamBlockRequest](../models/DoesScriptHaveParamBlockRequest.md), bool |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-DoesScriptHaveParamBlockRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/does-script-have-param-block?` and deserializes to `DoesScriptHaveParamBlockRequest, bool`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/does-script-have-param-block?` and deserializes to [DoesScriptHaveParamBlockRequest](../models/DoesScriptHaveParamBlockRequest.md), bool.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `DoesScriptHaveParamBlockRequest` | True | — | All | None |
+| PayloadBody | [DoesScriptHaveParamBlockRequest](../models/DoesScriptHaveParamBlockRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-DoesScriptHaveParamBlockRequest
 
 ## Outputs
 
-- `DoesScriptHaveParamBlockRequest, bool` records produced by `ImmyBotApiService.POST`
+- [DoesScriptHaveParamBlockRequest](../models/DoesScriptHaveParamBlockRequest.md), bool records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

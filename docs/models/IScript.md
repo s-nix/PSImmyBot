@@ -10,7 +10,7 @@ title: IScript
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IScript>` |
+| Implements | IEquatable<[IScript](IScript.md)> |
 | Source | `Models/IScript.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: IScript
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Script | `string` | Reference type (nullable) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
 | Timeout | `int` | No (value type) | — |
 
 ## Serialization

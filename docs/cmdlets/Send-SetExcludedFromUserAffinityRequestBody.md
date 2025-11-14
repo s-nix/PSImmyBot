@@ -25,7 +25,7 @@ title: Send-SetExcludedFromUserAffinityRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Int32` | True | — | All | None |
-| PayloadBody | `SetExcludedFromUserAffinityRequestBody` | True | — | All | None |
+| PayloadBody | [SetExcludedFromUserAffinityRequestBody](../models/SetExcludedFromUserAffinityRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

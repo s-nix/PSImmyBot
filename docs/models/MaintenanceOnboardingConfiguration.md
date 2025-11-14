@@ -10,7 +10,7 @@ title: MaintenanceOnboardingConfiguration
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceOnboardingConfiguration>` |
+| Implements | IEquatable<[MaintenanceOnboardingConfiguration](MaintenanceOnboardingConfiguration.md)> |
 | Source | `Models/MaintenanceOnboardingConfiguration.cs` |
 
 ## Overview
@@ -21,8 +21,8 @@ title: MaintenanceOnboardingConfiguration
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | AutomaticOnboarding | `bool` | No (value type) | — |
-| OnboardingOnlyMaintenanceTaskParameterValueOverrides | `ICollection<MaintenanceTaskParameterValueDetails>` | Reference type (nullable) | — |
-| OnboardingOnlyParameterValueOverrides | `IDictionary<string, IDictionary<string, DeploymentParameterValue>>` | Reference type (nullable) | — |
+| OnboardingOnlyMaintenanceTaskParameterValueOverrides | ICollection<[MaintenanceTaskParameterValueDetails](MaintenanceTaskParameterValueDetails.md)> | Reference type (nullable) | — |
+| OnboardingOnlyParameterValueOverrides | IDictionary<string, IDictionary<string, [DeploymentParameterValue](DeploymentParameterValue.md)>> | Reference type (nullable) | — |
 
 ## Serialization
 

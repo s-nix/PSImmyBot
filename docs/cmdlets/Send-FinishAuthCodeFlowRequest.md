@@ -24,7 +24,7 @@ title: Send-FinishAuthCodeFlowRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `FinishAuthCodeFlowRequest` | True | — | All | None |
+| PayloadBody | [FinishAuthCodeFlowRequest](../models/FinishAuthCodeFlowRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

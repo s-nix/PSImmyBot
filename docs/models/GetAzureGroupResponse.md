@@ -10,7 +10,7 @@ title: GetAzureGroupResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetAzureGroupResponse>` |
+| Implements | IEquatable<[GetAzureGroupResponse](GetAzureGroupResponse.md)> |
 | Source | `Models/GetAzureGroupResponse.cs` |
 
 ## Overview

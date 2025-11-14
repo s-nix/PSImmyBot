@@ -10,7 +10,7 @@ title: ScriptSyntaxCheckRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ScriptSyntaxCheckRequestBody>` |
+| Implements | IEquatable<[ScriptSyntaxCheckRequestBody](ScriptSyntaxCheckRequestBody.md)> |
 | Source | `Models/ScriptSyntaxCheckRequestBody.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ScriptSyntaxCheckRequestBody
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Script | `string` | Reference type (nullable) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
 
 ## Serialization
 

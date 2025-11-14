@@ -10,7 +10,7 @@ title: MigrateToSupersedingAssignmentRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MigrateToSupersedingAssignmentRequest>` |
+| Implements | IEquatable<[MigrateToSupersedingAssignmentRequest](MigrateToSupersedingAssignmentRequest.md)> |
 | Source | `Models/MigrateToSupersedingAssignmentRequest.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: MigrateToSupersedingAssignmentRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | NewTaskId | `int` | No (value type) | — |
-| NewTaskType | `DatabaseType` | No (value type) | — |
+| NewTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | OldAssignmentId | `int` | No (value type) | — |
 
 ## Serialization

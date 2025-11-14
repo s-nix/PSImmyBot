@@ -35,9 +35,9 @@ title: New-Parameter
 | IsMandatory | `Boolean` | True | — | All | None |
 | IsValueStripped | `Boolean` | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| OauthConsentParameterData | `OauthConsentData` | True | — | All | None |
+| OauthConsentParameterData | [OauthConsentData](../models/OauthConsentData.md) | True | — | All | None |
 | OnlyForHelpText | `Boolean` | True | — | All | None |
-| ParameterType | `ParameterType` | True | — | All | None |
+| ParameterType | [ParameterType](../models/ParameterType.md) | True | — | All | None |
 | Position | `Int32` | True | — | All | None |
 | ShowDropdownAsRadioButtons | `Boolean` | True | — | All | None |
 | ShowRawHelpText | `Boolean` | True | — | All | None |

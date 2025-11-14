@@ -10,7 +10,7 @@ title: ScriptActionAudit
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ScriptActionAudit>` |
+| Implements | IEquatable<[ScriptActionAudit](ScriptActionAudit.md)> |
 | Source | `Models/ScriptActionAudit.cs` |
 
 ## Overview

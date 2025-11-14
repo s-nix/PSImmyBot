@@ -10,7 +10,7 @@ title: Get-LocalSoftware
 | Source | `Cmdlets/GetLocalSoftware.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/software/local/{SoftwareIdentifier}? |
-| Return Type | `GetLocalSoftwareResponse` |
+| Return Type | [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-LocalSoftware
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/local/{SoftwareIdentifier}?` and deserializes to `GetLocalSoftwareResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/local/{SoftwareIdentifier}?` and deserializes to [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -34,7 +34,7 @@ title: Get-LocalSoftware
 
 ## Outputs
 
-- `GetLocalSoftwareResponse` records produced by `ImmyBotApiService.GET`
+- [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

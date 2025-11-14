@@ -10,7 +10,7 @@ title: DataSourceLoadOptions
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DataSourceLoadOptions>` |
+| Implements | IEquatable<[DataSourceLoadOptions](DataSourceLoadOptions.md)> |
 | Source | `Models/DataSourceLoadOptions.cs` |
 
 ## Overview
@@ -24,8 +24,8 @@ title: DataSourceLoadOptions
 | DefaultSort | `string` | Reference type (nullable) | — |
 | ExpandLinqSumType | `bool?` | Yes (nullable value type) | — |
 | Filter | `ICollection<object>` | Reference type (nullable) | — |
-| Group | `ICollection<GroupingInfo>` | Reference type (nullable) | — |
-| GroupSummary | `ICollection<SummaryInfo>` | Reference type (nullable) | — |
+| Group | ICollection<[GroupingInfo](GroupingInfo.md)> | Reference type (nullable) | — |
+| GroupSummary | ICollection<[SummaryInfo](SummaryInfo.md)> | Reference type (nullable) | — |
 | IsCountQuery | `bool` | No (value type) | — |
 | IsSummaryQuery | `bool` | No (value type) | — |
 | PaginateViaPrimaryKey | `bool?` | Yes (nullable value type) | — |
@@ -37,11 +37,11 @@ title: DataSourceLoadOptions
 | RequireTotalCount | `bool` | No (value type) | — |
 | Select | `ICollection<string>` | Reference type (nullable) | — |
 | Skip | `int` | No (value type) | — |
-| Sort | `ICollection<SortingInfo>` | Reference type (nullable) | — |
+| Sort | ICollection<[SortingInfo](SortingInfo.md)> | Reference type (nullable) | — |
 | SortByPrimaryKey | `bool?` | Yes (nullable value type) | — |
 | StringToLower | `bool?` | Yes (nullable value type) | — |
 | Take | `int` | No (value type) | — |
-| TotalSummary | `ICollection<SummaryInfo>` | Reference type (nullable) | — |
+| TotalSummary | ICollection<[SummaryInfo](SummaryInfo.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

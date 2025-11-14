@@ -10,7 +10,7 @@ title: Send-DuplicateScriptRequestBody
 | Source | `Cmdlets/SendDuplicateScriptRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/duplicate? |
-| Return Type | `DuplicateScriptRequestBody, GetLocalScriptResponse` |
+| Return Type | [DuplicateScriptRequestBody](../models/DuplicateScriptRequestBody.md), [GetLocalScriptResponse](../models/GetLocalScriptResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-DuplicateScriptRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/duplicate?` and deserializes to `DuplicateScriptRequestBody, GetLocalScriptResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/duplicate?` and deserializes to [DuplicateScriptRequestBody](../models/DuplicateScriptRequestBody.md), [GetLocalScriptResponse](../models/GetLocalScriptResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `DuplicateScriptRequestBody` | True | — | All | None |
+| PayloadBody | [DuplicateScriptRequestBody](../models/DuplicateScriptRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-DuplicateScriptRequestBody
 
 ## Outputs
 
-- `DuplicateScriptRequestBody, GetLocalScriptResponse` records produced by `ImmyBotApiService.POST`
+- [DuplicateScriptRequestBody](../models/DuplicateScriptRequestBody.md), [GetLocalScriptResponse](../models/GetLocalScriptResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

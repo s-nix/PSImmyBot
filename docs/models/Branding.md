@@ -10,7 +10,7 @@ title: Branding
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Branding>` |
+| Implements | IEquatable<[Branding](Branding.md)> |
 | Source | `Models/Branding.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: Branding
 | --- | --- | --- | --- |
 | BackgroundColor | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Description | `string` | Reference type (nullable) | — |
 | EndDate | `DateTimeOffset?` | Yes (nullable value type) | — |
@@ -34,7 +34,7 @@ title: Branding
 | LogoUri | `string` | Reference type (nullable) | — |
 | MascotImgUri | `string` | Reference type (nullable) | — |
 | MascotName | `string` | Reference type (nullable) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | StartDate | `DateTimeOffset?` | Yes (nullable value type) | — |
 | TableHeaderColor | `string` | Reference type (nullable) | — |
 | TableHeaderTextColor | `string` | Reference type (nullable) | — |
@@ -42,7 +42,7 @@ title: Branding
 | TextColor | `string` | Reference type (nullable) | — |
 | TimeFormat | `string` | Reference type (nullable) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

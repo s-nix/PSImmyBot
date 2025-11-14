@@ -24,7 +24,7 @@ title: Send-SubmitFeedbackRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `SubmitFeedbackRequestBody` | True | — | All | None |
+| PayloadBody | [SubmitFeedbackRequestBody](../models/SubmitFeedbackRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

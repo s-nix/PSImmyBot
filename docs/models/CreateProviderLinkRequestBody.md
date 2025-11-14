@@ -10,7 +10,7 @@ title: CreateProviderLinkRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateProviderLinkRequestBody>` |
+| Implements | IEquatable<[CreateProviderLinkRequestBody](CreateProviderLinkRequestBody.md)> |
 | Source | `Models/CreateProviderLinkRequestBody.cs` |
 
 ## Overview

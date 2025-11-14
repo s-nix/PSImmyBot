@@ -10,7 +10,7 @@ title: Push-UpdateProviderLinkRequestBody
 | Source | `Cmdlets/PushUpdateProviderLinkRequestBody.cs` |
 | HTTP Method | PUT |
 | Endpoint | /api/v1/provider-links/{Id}? |
-| Return Type | `UpdateProviderLinkRequestBody, GetProviderLinkResponse` |
+| Return Type | [UpdateProviderLinkRequestBody](../models/UpdateProviderLinkRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Push-UpdateProviderLinkRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PUT` targeting `/api/v1/provider-links/{Id}?` and deserializes to `UpdateProviderLinkRequestBody, GetProviderLinkResponse`.
+- Calls `ImmyBotApiService.PUT` targeting `/api/v1/provider-links/{Id}?` and deserializes to [UpdateProviderLinkRequestBody](../models/UpdateProviderLinkRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -26,7 +26,7 @@ title: Push-UpdateProviderLinkRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateProviderLinkRequestBody` | True | — | All | None |
+| PayloadBody | [UpdateProviderLinkRequestBody](../models/UpdateProviderLinkRequestBody.md) | True | — | All | None |
 | ThrowIfAgentInstallerVersionNotSet | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets
@@ -35,7 +35,7 @@ title: Push-UpdateProviderLinkRequestBody
 
 ## Outputs
 
-- `UpdateProviderLinkRequestBody, GetProviderLinkResponse` records produced by `ImmyBotApiService.PUT`
+- [UpdateProviderLinkRequestBody](../models/UpdateProviderLinkRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) records produced by `ImmyBotApiService.PUT`
 
 ## Notes
 

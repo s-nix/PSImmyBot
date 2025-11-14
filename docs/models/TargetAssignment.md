@@ -10,7 +10,7 @@ title: TargetAssignment
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TargetAssignment>` |
+| Implements | IEquatable<[TargetAssignment](TargetAssignment.md)> |
 | Source | `Models/TargetAssignment.cs` |
 
 ## Overview
@@ -22,52 +22,52 @@ title: TargetAssignment
 | --- | --- | --- | --- |
 | AllowAccessToParentTenant | `bool` | No (value type) | — |
 | AutoApprove | `bool` | No (value type) | — |
-| ChangeRequests | `ICollection<ChangeRequest>` | Reference type (nullable) | — |
+| ChangeRequests | ICollection<[ChangeRequest](ChangeRequest.md)> | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
-| DesiredSoftwareState | `DesiredSoftwareState` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| DesiredSoftwareState | [DesiredSoftwareState](DesiredSoftwareState.md) | No (value type) | — |
 | Excluded | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | IntegrationPrompt | `string` | Reference type (nullable) | — |
 | IntegrationTypeId | `string` | Reference type (nullable) | — |
 | IsCore | `bool` | No (value type) | — |
-| License | `License` | Reference type (nullable) | — |
+| License | [License](License.md) | Reference type (nullable) | — |
 | LicenseId | `int?` | Yes (nullable value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceSpecifier | `MaintenanceSpecifier` | Reference type (nullable) | — |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | No (value type) | — |
-| MaintenanceTaskParameterValues | `ICollection<MaintenanceTaskParameterValue>` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
-| Notes | `TargetAssignmentNotes` | Reference type (nullable) | — |
+| MaintenanceSpecifier | [MaintenanceSpecifier](MaintenanceSpecifier.md) | Reference type (nullable) | — |
+| MaintenanceTaskMode | [MaintenanceTaskMode](MaintenanceTaskMode.md) | No (value type) | — |
+| MaintenanceTaskParameterValues | ICollection<[MaintenanceTaskParameterValue](MaintenanceTaskParameterValue.md)> | Reference type (nullable) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
+| Notes | [TargetAssignmentNotes](TargetAssignmentNotes.md) | Reference type (nullable) | — |
 | OnboardingOnly | `bool` | No (value type) | — |
 | ParameterValueMigrationErrors | `string` | Reference type (nullable) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
 | ProviderClientGroupType | `Guid?` | Yes (nullable value type) | — |
 | ProviderDeviceGroupType | `Guid?` | Yes (nullable value type) | — |
-| ProviderLink | `ProviderLink` | Reference type (nullable) | — |
+| ProviderLink | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int?` | Yes (nullable value type) | — |
 | ProviderLinkIdForMaintenanceItem | `int?` | Yes (nullable value type) | — |
 | SoftwareId | `int?` | Yes (nullable value type) | — |
-| SoftwareProviderType | `SoftwareProviderType` | No (value type) | — |
-| SoftwareSemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SoftwareProviderType | [SoftwareProviderType](SoftwareProviderType.md) | No (value type) | — |
+| SoftwareSemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SoftwareSemanticVersionString | `string` | Reference type (nullable) | — |
-| SoftwareSpecifier | `SoftwareSpecifier` | Reference type (nullable) | — |
+| SoftwareSpecifier | [SoftwareSpecifier](SoftwareSpecifier.md) | Reference type (nullable) | — |
 | SoftwareVersionId | `int` | No (value type) | — |
 | SortOrder | `int` | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetCategory | `TargetCategory` | No (value type) | — |
-| TargetEnforcement | `TargetEnforcement` | No (value type) | — |
-| TargetGroupFilter | `TargetGroupFilter` | No (value type) | — |
+| TargetCategory | [TargetCategory](TargetCategory.md) | No (value type) | — |
+| TargetEnforcement | [TargetEnforcement](TargetEnforcement.md) | No (value type) | — |
+| TargetGroupFilter | [TargetGroupFilter](TargetGroupFilter.md) | No (value type) | — |
 | TargetName | `string` | Reference type (nullable) | — |
-| TargetType | `TargetType` | No (value type) | — |
-| TaskParameterValues | `IDictionary<string, DeploymentParameterValue>` | Reference type (nullable) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
+| TaskParameterValues | IDictionary<string, [DeploymentParameterValue](DeploymentParameterValue.md)> | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| Visibility | `TargetAssignmentVisibility` | Reference type (nullable) | — |
+| Visibility | [TargetAssignmentVisibility](TargetAssignmentVisibility.md) | Reference type (nullable) | — |
 
 ## Serialization
 

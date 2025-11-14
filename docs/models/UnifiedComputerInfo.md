@@ -10,7 +10,7 @@ title: UnifiedComputerInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UnifiedComputerInfo>` |
+| Implements | IEquatable<[UnifiedComputerInfo](UnifiedComputerInfo.md)> |
 | Source | `Models/UnifiedComputerInfo.cs` |
 
 ## Overview

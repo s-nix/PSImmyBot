@@ -10,7 +10,7 @@ title: ParameterInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ParameterInfo>` |
+| Implements | IEquatable<[ParameterInfo](ParameterInfo.md)> |
 | Source | `Models/ParameterInfo.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: ParameterInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Attributes | `ParameterAttributes` | No (value type) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
+| Attributes | [ParameterAttributes](ParameterAttributes.md) | No (value type) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
 | DefaultValue | `object` | Reference type (nullable) | — |
 | HasDefaultValue | `bool` | No (value type) | — |
 | IsIn | `bool` | No (value type) | — |
@@ -29,10 +29,10 @@ title: ParameterInfo
 | IsOptional | `bool` | No (value type) | — |
 | IsOut | `bool` | No (value type) | — |
 | IsRetval | `bool` | No (value type) | — |
-| Member | `MemberInfo` | Reference type (nullable) | — |
+| Member | [MemberInfo](MemberInfo.md) | Reference type (nullable) | — |
 | MetadataToken | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| ParameterType | `Type` | Reference type (nullable) | — |
+| ParameterType | [Type](Type.md) | Reference type (nullable) | — |
 | Position | `int` | No (value type) | — |
 | RawDefaultValue | `object` | Reference type (nullable) | — |
 

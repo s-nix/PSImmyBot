@@ -10,7 +10,7 @@ title: Person
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Person>` |
+| Implements | IEquatable<[Person](Person.md)> |
 | Source | `Models/Person.cs` |
 
 ## Overview
@@ -20,30 +20,30 @@ title: Person
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AccessRequests | `ICollection<AccessRequest>` | Reference type (nullable) | — |
-| AdditionalComputers | `ICollection<ComputerPerson>` | Reference type (nullable) | — |
+| AccessRequests | ICollection<[AccessRequest](AccessRequest.md)> | Reference type (nullable) | — |
+| AdditionalComputers | ICollection<[ComputerPerson](ComputerPerson.md)> | Reference type (nullable) | — |
 | AzurePrincipalId | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| DetectedComputerSoftware | `ICollection<DetectedComputerSoftware>` | Reference type (nullable) | — |
+| DetectedComputerSoftware | ICollection<[DetectedComputerSoftware](DetectedComputerSoftware.md)> | Reference type (nullable) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | EmailAddress | `string` | Reference type (nullable) | — |
 | FirstName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | LastName | `string` | Reference type (nullable) | — |
 | OnPremisesSecurityIdentifier | `string` | Reference type (nullable) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
-| PersonSessions | `ICollection<MaintenanceSession>` | Reference type (nullable) | — |
-| PersonTags | `ICollection<PersonTag>` | Reference type (nullable) | — |
-| PrimaryComputers | `ICollection<Computer>` | Reference type (nullable) | — |
-| Tags | `ICollection<Tag>` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
+| PersonSessions | ICollection<[MaintenanceSession](MaintenanceSession.md)> | Reference type (nullable) | — |
+| PersonTags | ICollection<[PersonTag](PersonTag.md)> | Reference type (nullable) | — |
+| PrimaryComputers | ICollection<[Computer](Computer.md)> | Reference type (nullable) | — |
+| Tags | ICollection<[Tag](Tag.md)> | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| User | `User` | Reference type (nullable) | — |
-| UserAffinities | `ICollection<UserAffinity>` | Reference type (nullable) | — |
+| User | [User](User.md) | Reference type (nullable) | — |
+| UserAffinities | ICollection<[UserAffinity](UserAffinity.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

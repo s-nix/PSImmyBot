@@ -10,7 +10,7 @@ title: Get-Branding
 | Source | `Cmdlets/GetBranding.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/brandings/{Id}? |
-| Return Type | `GetBrandingResponse` |
+| Return Type | [GetBrandingResponse](../models/GetBrandingResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Branding
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/brandings/{Id}?` and deserializes to `GetBrandingResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/brandings/{Id}?` and deserializes to [GetBrandingResponse](../models/GetBrandingResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-Branding
 
 ## Outputs
 
-- `GetBrandingResponse` records produced by `ImmyBotApiService.GET`
+- [GetBrandingResponse](../models/GetBrandingResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

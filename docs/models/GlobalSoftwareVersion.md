@@ -10,7 +10,7 @@ title: GlobalSoftwareVersion
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GlobalSoftwareVersion>` |
+| Implements | IEquatable<[GlobalSoftwareVersion](GlobalSoftwareVersion.md)> |
 | Source | `Models/GlobalSoftwareVersion.cs` |
 
 ## Overview
@@ -20,55 +20,55 @@ title: GlobalSoftwareVersion
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Architecture | `Architecture` | No (value type) | — |
+| Architecture | [Architecture](Architecture.md) | No (value type) | — |
 | BlobName | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| DependsOnSemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| DependsOnSemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | DeprecatedIdField | `int?` | Yes (nullable value type) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | DisplayVersion | `string` | Reference type (nullable) | — |
 | InstallerFile | `string` | Reference type (nullable) | — |
-| InstallerType | `SoftwareVersionInstallerType` | No (value type) | — |
-| InstallScript | `Script` | Reference type (nullable) | — |
+| InstallerType | [SoftwareVersionInstallerType](SoftwareVersionInstallerType.md) | No (value type) | — |
+| InstallScript | [Script](Script.md) | Reference type (nullable) | — |
 | InstallScriptId | `int?` | Yes (nullable value type) | — |
-| InstallScriptType | `DatabaseType` | No (value type) | — |
-| LastResult | `MaintenanceActionResult` | No (value type) | — |
-| LicenseType | `LicenseType` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| InstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| LastResult | [MaintenanceActionResult](MaintenanceActionResult.md) | No (value type) | — |
+| LicenseType | [LicenseType](LicenseType.md) | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Notes | `string` | Reference type (nullable) | — |
 | NumActionFailures | `int` | No (value type) | — |
 | NumActionSuccesses | `int` | No (value type) | — |
 | PackageHash | `string` | Reference type (nullable) | — |
-| PackageType | `PackageType` | No (value type) | — |
-| PostInstallScript | `Script` | Reference type (nullable) | — |
+| PackageType | [PackageType](PackageType.md) | No (value type) | — |
+| PostInstallScript | [Script](Script.md) | Reference type (nullable) | — |
 | PostInstallScriptId | `int?` | Yes (nullable value type) | — |
-| PostInstallScriptType | `DatabaseType` | No (value type) | — |
-| PostUninstallScript | `Script` | Reference type (nullable) | — |
+| PostInstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| PostUninstallScript | [Script](Script.md) | Reference type (nullable) | — |
 | PostUninstallScriptId | `int?` | Yes (nullable value type) | — |
-| PostUninstallScriptType | `DatabaseType` | No (value type) | — |
+| PostUninstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | ProductCode | `string` | Reference type (nullable) | — |
 | RelativeCacheSourcePath | `string` | Reference type (nullable) | — |
-| SemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SemanticVersionString | `string` | Reference type (nullable) | — |
-| Software | `GlobalSoftware` | Reference type (nullable) | — |
+| Software | [GlobalSoftware](GlobalSoftware.md) | Reference type (nullable) | — |
 | SoftwareId | `int` | No (value type) | — |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 | TestFailedError | `string` | Reference type (nullable) | — |
 | TestRequired | `bool` | No (value type) | — |
-| TestScript | `Script` | Reference type (nullable) | — |
+| TestScript | [Script](Script.md) | Reference type (nullable) | — |
 | TestScriptId | `int?` | Yes (nullable value type) | — |
-| TestScriptType | `DatabaseType` | No (value type) | — |
-| UninstallScript | `Script` | Reference type (nullable) | — |
+| TestScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| UninstallScript | [Script](Script.md) | Reference type (nullable) | — |
 | UninstallScriptId | `int?` | Yes (nullable value type) | — |
-| UninstallScriptType | `DatabaseType` | No (value type) | — |
+| UninstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| UpgradeScript | `Script` | Reference type (nullable) | — |
+| UpgradeScript | [Script](Script.md) | Reference type (nullable) | — |
 | UpgradeScriptId | `int?` | Yes (nullable value type) | — |
-| UpgradeScriptType | `DatabaseType` | No (value type) | — |
-| UpgradeStrategy | `UpdateActionType` | No (value type) | — |
+| UpgradeScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| UpgradeStrategy | [UpdateActionType](UpdateActionType.md) | No (value type) | — |
 | Url | `string` | Reference type (nullable) | — |
 
 ## Serialization

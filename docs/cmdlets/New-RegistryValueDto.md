@@ -26,7 +26,7 @@ title: New-RegistryValueDto
 | --- | --- | --- | --- | --- | --- |
 | BinaryValue | `String` | False | — | All | None |
 | DWordValue | `Nullable`1` | False | — | All | None |
-| Kind | `RegistryValueKindDto` | True | — | All | None |
+| Kind | [RegistryValueKindDto](../models/RegistryValueKindDto.md) | True | — | All | None |
 | MultiStringValue | `ICollection`1` | False | — | All | None |
 | ParentKeyPath | `String` | False | — | All | None |
 | QWordValue | `Nullable`1` | False | — | All | None |

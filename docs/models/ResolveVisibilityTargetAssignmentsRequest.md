@@ -10,7 +10,7 @@ title: ResolveVisibilityTargetAssignmentsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ResolveVisibilityTargetAssignmentsRequest>` |
+| Implements | IEquatable<[ResolveVisibilityTargetAssignmentsRequest](ResolveVisibilityTargetAssignmentsRequest.md)> |
 | Source | `Models/ResolveVisibilityTargetAssignmentsRequest.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: ResolveVisibilityTargetAssignmentsRequest
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | PersonId | `int?` | Yes (nullable value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
-| Visibility | `TargetVisibility` | No (value type) | — |
+| Visibility | [TargetVisibility](TargetVisibility.md) | No (value type) | — |
 
 ## Serialization
 

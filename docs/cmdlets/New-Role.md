@@ -26,7 +26,7 @@ title: New-Role
 | --- | --- | --- | --- | --- | --- |
 | ConcurrencyStamp | `String` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
-| CreatedByUser | `User` | True | — | All | None |
+| CreatedByUser | [User](../models/User.md) | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | CustomAuditProperties | `ICollection`1` | False | — | All | None |
 | Description | `String` | False | — | All | None |
@@ -34,11 +34,11 @@ title: New-Role
 | Name | `String` | False | — | All | None |
 | NormalizedName | `String` | False | — | All | None |
 | RoleClaims | `ICollection`1` | False | — | All | None |
-| RoleType | `RoleType` | True | — | All | None |
+| RoleType | [RoleType](../models/RoleType.md) | True | — | All | None |
 | RoleTypeId | `Int32` | True | — | All | None |
-| TenantRestrictionMode | `TenantRestrictionMode` | True | — | All | None |
+| TenantRestrictionMode | [TenantRestrictionMode](../models/TenantRestrictionMode.md) | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
-| UpdatedByUser | `User` | True | — | All | None |
+| UpdatedByUser | [User](../models/User.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 | UserRoles | `ICollection`1` | False | — | All | None |
 

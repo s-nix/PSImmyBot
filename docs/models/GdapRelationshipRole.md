@@ -10,7 +10,7 @@ title: GdapRelationshipRole
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GdapRelationshipRole>` |
+| Implements | IEquatable<[GdapRelationshipRole](GdapRelationshipRole.md)> |
 | Source | `Models/GdapRelationshipRole.cs` |
 
 ## Overview

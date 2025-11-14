@@ -10,7 +10,7 @@ title: UserSilencedNotification
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UserSilencedNotification>` |
+| Implements | IEquatable<[UserSilencedNotification](UserSilencedNotification.md)> |
 | Source | `Models/UserSilencedNotification.cs` |
 
 ## Overview
@@ -23,9 +23,9 @@ title: UserSilencedNotification
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | NotificationObjectId | `string` | Reference type (nullable) | — |
-| NotificationType | `NotificationType` | No (value type) | — |
+| NotificationType | [NotificationType](NotificationType.md) | No (value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| User | `User` | Reference type (nullable) | — |
+| User | [User](User.md) | Reference type (nullable) | — |
 | UserId | `int` | No (value type) | — |
 
 ## Serialization

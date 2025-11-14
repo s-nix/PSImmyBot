@@ -10,7 +10,7 @@ title: Get-RdpInfo
 | Source | `Cmdlets/GetRdpInfo.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/dev-lab/{ComputerId}/rdp-info? |
-| Return Type | `GetRdpInfoResponse` |
+| Return Type | [GetRdpInfoResponse](../models/GetRdpInfoResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-RdpInfo
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/dev-lab/{ComputerId}/rdp-info?` and deserializes to `GetRdpInfoResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/dev-lab/{ComputerId}/rdp-info?` and deserializes to [GetRdpInfoResponse](../models/GetRdpInfoResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-RdpInfo
 
 ## Outputs
 
-- `GetRdpInfoResponse` records produced by `ImmyBotApiService.GET`
+- [GetRdpInfoResponse](../models/GetRdpInfoResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -25,7 +25,7 @@ title: Get-ComputersExport
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 | OutFile | `String` | True | — | All | None |
 
 ### Parameter sets

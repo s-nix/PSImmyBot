@@ -10,7 +10,7 @@ title: Get-MigrationPreviewResponse
 | Source | `Cmdlets/GetMigrationPreviewResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/software/local/{SoftwareIdentifier}/migrate-local-to-global-what-if? |
-| Return Type | `MigrationPreviewResponse` |
+| Return Type | [MigrationPreviewResponse](../models/MigrationPreviewResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MigrationPreviewResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/local/{SoftwareIdentifier}/migrate-local-to-global-what-if?` and deserializes to `MigrationPreviewResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/local/{SoftwareIdentifier}/migrate-local-to-global-what-if?` and deserializes to [MigrationPreviewResponse](../models/MigrationPreviewResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-MigrationPreviewResponse
 
 ## Outputs
 
-- `MigrationPreviewResponse` records produced by `ImmyBotApiService.GET`
+- [MigrationPreviewResponse](../models/MigrationPreviewResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

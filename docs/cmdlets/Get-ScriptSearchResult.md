@@ -10,7 +10,7 @@ title: Get-ScriptSearchResult
 | Source | `Cmdlets/GetScriptSearchResult.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/search? |
-| Return Type | `List<ScriptSearchResult>` |
+| Return Type | List<[ScriptSearchResult](../models/ScriptSearchResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ScriptSearchResult
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/search?` and deserializes to `List<ScriptSearchResult>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/search?` and deserializes to List<[ScriptSearchResult](../models/ScriptSearchResult.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -38,7 +38,7 @@ title: Get-ScriptSearchResult
 
 ## Outputs
 
-- `List<ScriptSearchResult>` records produced by `ImmyBotApiService.GET`
+- List<[ScriptSearchResult](../models/ScriptSearchResult.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

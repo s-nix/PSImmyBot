@@ -24,16 +24,16 @@ title: New-ChangeRequestComment
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ChangeRequest | `ChangeRequest` | True | — | All | None |
+| ChangeRequest | [ChangeRequest](../models/ChangeRequest.md) | True | — | All | None |
 | ChangeRequestId | `Int32` | True | — | All | None |
 | Comment | `String` | False | — | All | None |
 | CommentedByUsername | `String` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
-| CreatedByUser | `User` | True | — | All | None |
+| CreatedByUser | [User](../models/User.md) | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
-| UpdatedByUser | `User` | True | — | All | None |
+| UpdatedByUser | [User](../models/User.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 
 ### Parameter sets

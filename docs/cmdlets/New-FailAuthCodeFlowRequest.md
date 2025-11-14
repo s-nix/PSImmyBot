@@ -24,7 +24,7 @@ title: New-FailAuthCodeFlowRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| OauthErrorResponse | `Oauth2AuthCodeErrorResponse` | True | — | All | None |
+| OauthErrorResponse | [Oauth2AuthCodeErrorResponse](../models/Oauth2AuthCodeErrorResponse.md) | True | — | All | None |
 | OauthHookId | `Guid` | True | — | All | None |
 
 ### Parameter sets

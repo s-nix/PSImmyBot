@@ -24,7 +24,7 @@ title: New-AzureTenantUserSyncResult
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| FailedReason | `AzureError` | True | — | All | None |
+| FailedReason | [AzureError](../models/AzureError.md) | True | — | All | None |
 | ImmyTenantsSyncedUsers | `IDictionary`2` | False | — | All | None |
 | NumUsersSynced | `Int32` | True | — | All | None |
 | PrincipalId | `String` | False | — | All | None |

@@ -10,7 +10,7 @@ title: GetSmtpConfigResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetSmtpConfigResponse>` |
+| Implements | IEquatable<[GetSmtpConfigResponse](GetSmtpConfigResponse.md)> |
 | Source | `Models/GetSmtpConfigResponse.cs` |
 
 ## Overview

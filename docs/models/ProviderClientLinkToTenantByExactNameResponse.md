@@ -10,7 +10,7 @@ title: ProviderClientLinkToTenantByExactNameResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderClientLinkToTenantByExactNameResponse>` |
+| Implements | IEquatable<[ProviderClientLinkToTenantByExactNameResponse](ProviderClientLinkToTenantByExactNameResponse.md)> |
 | Source | `Models/ProviderClientLinkToTenantByExactNameResponse.cs` |
 
 ## Overview

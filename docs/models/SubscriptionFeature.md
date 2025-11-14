@@ -10,7 +10,7 @@ title: SubscriptionFeature
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SubscriptionFeature>` |
+| Implements | IEquatable<[SubscriptionFeature](SubscriptionFeature.md)> |
 | Source | `Models/SubscriptionFeature.cs` |
 
 ## Overview

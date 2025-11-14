@@ -10,7 +10,7 @@ title: GetProviderAgentIdentificationLogResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetProviderAgentIdentificationLogResponse>` |
+| Implements | IEquatable<[GetProviderAgentIdentificationLogResponse](GetProviderAgentIdentificationLogResponse.md)> |
 | Source | `Models/GetProviderAgentIdentificationLogResponse.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: GetProviderAgentIdentificationLogResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Id | `int` | No (value type) | — |
-| LogType | `AgentIdentificationLogType` | No (value type) | — |
+| LogType | [AgentIdentificationLogType](AgentIdentificationLogType.md) | No (value type) | — |
 | Message | `string` | Reference type (nullable) | — |
 | ProviderAgentId | `int` | No (value type) | — |
 | TimeUtc | `DateTimeOffset` | No (value type) | — |

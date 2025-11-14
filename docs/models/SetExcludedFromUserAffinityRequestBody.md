@@ -10,7 +10,7 @@ title: SetExcludedFromUserAffinityRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SetExcludedFromUserAffinityRequestBody>` |
+| Implements | IEquatable<[SetExcludedFromUserAffinityRequestBody](SetExcludedFromUserAffinityRequestBody.md)> |
 | Source | `Models/SetExcludedFromUserAffinityRequestBody.cs` |
 
 ## Overview

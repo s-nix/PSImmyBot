@@ -10,7 +10,7 @@ title: UpdateTagPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateTagPayload>` |
+| Implements | IEquatable<[UpdateTagPayload](UpdateTagPayload.md)> |
 | Source | `Models/UpdateTagPayload.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: UpdateTagPayload
 | Description | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| TenantTagAuthorizations | `ICollection<CreateTenantTagAuthorizationPayload>` | Reference type (nullable) | — |
+| TenantTagAuthorizations | ICollection<[CreateTenantTagAuthorizationPayload](CreateTenantTagAuthorizationPayload.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

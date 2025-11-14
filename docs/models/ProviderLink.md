@@ -10,7 +10,7 @@ title: ProviderLink
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderLink>` |
+| Implements | IEquatable<[ProviderLink](ProviderLink.md)> |
 | Source | `Models/ProviderLink.cs` |
 
 ## Overview
@@ -20,31 +20,31 @@ title: ProviderLink
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Agents | `ICollection<ProviderAgent>` | Reference type (nullable) | — |
+| Agents | ICollection<[ProviderAgent](ProviderAgent.md)> | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Disabled | `bool` | No (value type) | — |
 | DisabledOrUnhealthy | `bool` | No (value type) | — |
 | ExcludedCapabilities | `ICollection<string>` | Reference type (nullable) | — |
-| HealthStatus | `HealthStatus` | No (value type) | — |
+| HealthStatus | [HealthStatus](HealthStatus.md) | No (value type) | — |
 | HealthStatusMessage | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
-| LinkedFromProviders | `ICollection<ProviderLinkCrossReference>` | Reference type (nullable) | — |
+| LinkedFromProviders | ICollection<[ProviderLinkCrossReference](ProviderLinkCrossReference.md)> | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
-| ProviderClients | `ICollection<ProviderClient>` | Reference type (nullable) | — |
-| ProviderInternalData | `ProviderLinkInternalData` | Reference type (nullable) | — |
-| ProvidersLinkedFromThisProvider | `ICollection<ProviderLinkCrossReference>` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
+| ProviderClients | ICollection<[ProviderClient](ProviderClient.md)> | Reference type (nullable) | — |
+| ProviderInternalData | [ProviderLinkInternalData](ProviderLinkInternalData.md) | Reference type (nullable) | — |
+| ProvidersLinkedFromThisProvider | ICollection<[ProviderLinkCrossReference](ProviderLinkCrossReference.md)> | Reference type (nullable) | — |
 | ProviderTypeFormData | `object` | Reference type (nullable) | — |
 | ProviderTypeId | `Guid` | No (value type) | — |
 | RunScriptPriority | `int` | No (value type) | — |
-| Schedules | `ICollection<Schedule>` | Reference type (nullable) | — |
-| TargetAssignments | `ICollection<TargetAssignment>` | Reference type (nullable) | — |
+| Schedules | ICollection<[Schedule](Schedule.md)> | Reference type (nullable) | — |
+| TargetAssignments | ICollection<[TargetAssignment](TargetAssignment.md)> | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | UnhealthyCount | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

@@ -29,9 +29,9 @@ title: New-AgentOnboardingOptions
 | IsDevLab | `Boolean` | True | — | All | None |
 | OnboardingCorrelationId | `String` | False | — | All | None |
 | OnboardingSessionAutoConsentToReboots | `Boolean` | True | — | All | None |
-| OnboardingSessionPromptTimeoutAction | `PromptTimeoutAction` | True | — | All | None |
+| OnboardingSessionPromptTimeoutAction | [PromptTimeoutAction](../models/PromptTimeoutAction.md) | True | — | All | None |
 | OnboardingSessionPromptTimeoutMinutes | `Int32` | True | — | All | None |
-| OnboardingSessionRebootPreference | `RebootPreference` | True | — | All | None |
+| OnboardingSessionRebootPreference | [RebootPreference](../models/RebootPreference.md) | True | — | All | None |
 | OnboardingSessionSendFollowUpEmail | `Boolean` | True | — | All | None |
 | PrimaryPersonId | `Nullable`1` | False | — | All | None |
 | Tags | `ICollection`1` | False | — | All | None |

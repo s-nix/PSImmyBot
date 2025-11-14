@@ -10,7 +10,7 @@ title: TargetAssignmentVisibility
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TargetAssignmentVisibility>` |
+| Implements | IEquatable<[TargetAssignmentVisibility](TargetAssignmentVisibility.md)> |
 | Source | `Models/TargetAssignmentVisibility.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: TargetAssignmentVisibility
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | SelfService | `bool` | No (value type) | — |
-| TargetAssignment | `TargetAssignment` | Reference type (nullable) | — |
+| TargetAssignment | [TargetAssignment](TargetAssignment.md) | Reference type (nullable) | — |
 | TargetAssignmentId | `int` | No (value type) | — |
 | TechnicianPod | `bool` | No (value type) | — |
 

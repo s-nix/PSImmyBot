@@ -24,7 +24,7 @@ title: New-DisabledPreflightScriptResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | ScriptId | `Int32` | True | — | All | None |
 

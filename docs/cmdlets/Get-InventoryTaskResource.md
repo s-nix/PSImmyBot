@@ -10,7 +10,7 @@ title: Get-InventoryTaskResource
 | Source | `Cmdlets/GetInventoryTaskResource.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/inventory-tasks? |
-| Return Type | `List<InventoryTaskResource>` |
+| Return Type | List<[InventoryTaskResource](../models/InventoryTaskResource.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-InventoryTaskResource
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/inventory-tasks?` and deserializes to `List<InventoryTaskResource>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/inventory-tasks?` and deserializes to List<[InventoryTaskResource](../models/InventoryTaskResource.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<InventoryTaskResource>` records produced by `ImmyBotApiService.GET`
+- List<[InventoryTaskResource](../models/InventoryTaskResource.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

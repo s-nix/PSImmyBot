@@ -26,9 +26,9 @@ title: New-TenantSoftware
 | --- | --- | --- | --- | --- | --- |
 | CreatedBy | `Nullable`1` | False | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
-| Software | `LocalSoftware` | True | — | All | None |
+| Software | [LocalSoftware](../models/LocalSoftware.md) | True | — | All | None |
 | SoftwareId | `Int32` | True | — | All | None |
-| Tenant | `Tenant` | True | — | All | None |
+| Tenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |

@@ -10,7 +10,7 @@ title: MissingAccessTokenDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MissingAccessTokenDetails>` |
+| Implements | IEquatable<[MissingAccessTokenDetails](MissingAccessTokenDetails.md)> |
 | Source | `Models/MissingAccessTokenDetails.cs` |
 
 ## Overview

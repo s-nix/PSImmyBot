@@ -24,22 +24,22 @@ title: New-SessionPhase
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ActionProgressPhaseName | `ActionProgressPhaseName` | True | — | All | None |
+| ActionProgressPhaseName | [ActionProgressPhaseName](../models/ActionProgressPhaseName.md) | True | — | All | None |
 | DateCompletedUtc | `Nullable`1` | False | — | All | None |
 | DateStartedUtc | `Nullable`1` | False | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | Logs | `ICollection`1` | False | — | All | None |
-| MaintenanceAction | `MaintenanceAction` | True | — | All | None |
+| MaintenanceAction | [MaintenanceAction](../models/MaintenanceAction.md) | True | — | All | None |
 | MaintenanceActionId | `Nullable`1` | False | — | All | None |
-| MaintenanceSession | `MaintenanceSession` | True | — | All | None |
+| MaintenanceSession | [MaintenanceSession](../models/MaintenanceSession.md) | True | — | All | None |
 | MaintenanceSessionId | `Int32` | True | — | All | None |
-| MaintenanceSessionStage | `MaintenanceSessionStage` | True | — | All | None |
+| MaintenanceSessionStage | [MaintenanceSessionStage](../models/MaintenanceSessionStage.md) | True | — | All | None |
 | MaintenanceSessionStageId | `Int32` | True | — | All | None |
 | PhaseName | `String` | False | — | All | None |
 | ProgressCompleted | `Boolean` | True | — | All | None |
 | ProgressPercentComplete | `Nullable`1` | False | — | All | None |
 | ProgressStatus | `String` | False | — | All | None |
-| Status | `SessionPhaseStatus` | True | — | All | None |
+| Status | [SessionPhaseStatus](../models/SessionPhaseStatus.md) | True | — | All | None |
 
 ### Parameter sets
 

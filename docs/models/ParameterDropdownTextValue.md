@@ -10,7 +10,7 @@ title: ParameterDropdownTextValue
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ParameterDropdownTextValue>` |
+| Implements | IEquatable<[ParameterDropdownTextValue](ParameterDropdownTextValue.md)> |
 | Source | `Models/ParameterDropdownTextValue.cs` |
 
 ## Overview

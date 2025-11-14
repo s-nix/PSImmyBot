@@ -10,7 +10,7 @@ title: CreateScheduleRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateScheduleRequest>` |
+| Implements | IEquatable<[CreateScheduleRequest](CreateScheduleRequest.md)> |
 | Source | `Models/CreateScheduleRequest.cs` |
 
 ## Overview
@@ -29,16 +29,16 @@ title: CreateScheduleRequest
 | Disabled | `bool` | No (value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
 | MaintenanceTime | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OfflineBehavior | `ComputerOfflineMaintenanceSessionBehavior` | No (value type) | — |
-| PromptTimeoutAction | `PromptTimeoutAction` | No (value type) | — |
+| OfflineBehavior | [ComputerOfflineMaintenanceSessionBehavior](ComputerOfflineMaintenanceSessionBehavior.md) | No (value type) | — |
+| PromptTimeoutAction | [PromptTimeoutAction](PromptTimeoutAction.md) | No (value type) | — |
 | PromptTimeoutMinutes | `int` | No (value type) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
 | ProviderClientGroupType | `Guid?` | Yes (nullable value type) | — |
 | ProviderDeviceGroupType | `Guid?` | Yes (nullable value type) | — |
 | ProviderLinkId | `int?` | Yes (nullable value type) | — |
-| RebootPreference | `RebootPreference` | No (value type) | — |
+| RebootPreference | [RebootPreference](RebootPreference.md) | No (value type) | — |
 | ScheduleExecutionAfterActiveHours | `bool` | No (value type) | — |
 | SendDetectionEmail | `bool` | No (value type) | — |
 | SendDetectionEmailWhenAllActionsAreCompliant | `bool` | No (value type) | — |
@@ -49,9 +49,9 @@ title: CreateScheduleRequest
 | ShowRunNowButton | `bool` | No (value type) | — |
 | SuppressRebootsDuringBusinessHours | `bool` | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetCategory | `TargetCategory` | No (value type) | — |
-| TargetGroupFilter | `TargetGroupFilter` | No (value type) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetCategory | [TargetCategory](TargetCategory.md) | No (value type) | — |
+| TargetGroupFilter | [TargetGroupFilter](TargetGroupFilter.md) | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | Time | `string` | Reference type (nullable) | — |
 | TimeZoneInfoId | `string` | Reference type (nullable) | — |

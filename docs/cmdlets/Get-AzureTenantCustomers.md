@@ -10,7 +10,7 @@ title: Get-AzureTenantCustomers
 | Source | `Cmdlets/GetAzureTenantCustomers.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/azure/partner-tenant-customers/{PartnerPrincipalId}? |
-| Return Type | `List<AzureTenantCustomersResult>` |
+| Return Type | List<[AzureTenantCustomersResult](../models/AzureTenantCustomersResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-AzureTenantCustomers
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure/partner-tenant-customers/{PartnerPrincipalId}?` and deserializes to `List<AzureTenantCustomersResult>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure/partner-tenant-customers/{PartnerPrincipalId}?` and deserializes to List<[AzureTenantCustomersResult](../models/AzureTenantCustomersResult.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-AzureTenantCustomers
 
 ## Outputs
 
-- `List<AzureTenantCustomersResult>` records produced by `ImmyBotApiService.GET`
+- List<[AzureTenantCustomersResult](../models/AzureTenantCustomersResult.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

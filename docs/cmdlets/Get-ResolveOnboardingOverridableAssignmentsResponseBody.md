@@ -10,7 +10,7 @@ title: Get-ResolveOnboardingOverridableAssignmentsResponseBody
 | Source | `Cmdlets/GetResolveOnboardingOverridableAssignmentsResponseBody.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}/resolve-onboarding-overridable-target-assignments? |
-| Return Type | `ResolveOnboardingOverridableAssignmentsResponseBody` |
+| Return Type | [ResolveOnboardingOverridableAssignmentsResponseBody](../models/ResolveOnboardingOverridableAssignmentsResponseBody.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ResolveOnboardingOverridableAssignmentsResponseBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/resolve-onboarding-overridable-target-assignments?` and deserializes to `ResolveOnboardingOverridableAssignmentsResponseBody`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/resolve-onboarding-overridable-target-assignments?` and deserializes to [ResolveOnboardingOverridableAssignmentsResponseBody](../models/ResolveOnboardingOverridableAssignmentsResponseBody.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-ResolveOnboardingOverridableAssignmentsResponseBody
 
 ## Outputs
 
-- `ResolveOnboardingOverridableAssignmentsResponseBody` records produced by `ImmyBotApiService.GET`
+- [ResolveOnboardingOverridableAssignmentsResponseBody](../models/ResolveOnboardingOverridableAssignmentsResponseBody.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

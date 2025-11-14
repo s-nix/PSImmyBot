@@ -29,11 +29,11 @@ title: New-MaintenanceTaskParameterValueDetails
 | Id | `Int32` | True | — | All | None |
 | MaintenanceTaskId | `Int32` | True | — | All | None |
 | MaintenanceTaskParameterId | `Int32` | True | — | All | None |
-| MaintenanceTaskType | `DatabaseType` | True | — | All | None |
-| MediaDatabaseType | `DatabaseType` | True | — | All | None |
+| MaintenanceTaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
+| MediaDatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | MediaId | `Nullable`1` | False | — | All | None |
 | ParameterName | `String` | False | — | All | None |
-| ParameterType | `MaintenanceTaskParameterType` | True | — | All | None |
+| ParameterType | [MaintenanceTaskParameterType](../models/MaintenanceTaskParameterType.md) | True | — | All | None |
 | Value | `String` | False | — | All | None |
 
 ### Parameter sets

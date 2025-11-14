@@ -167,6 +167,85 @@ function Get-ParameterMetadata {
     return $results | Sort-Object Name
 }
 
+$script:CmdletDocPaths = @{}
+$script:ModelDocPaths = @{}
+
+function Get-RelativeDocLinkPath {
+    param(
+        [string]$SourceFile,
+        [string]$TargetFile
+    )
+
+    if ([string]::IsNullOrWhiteSpace($SourceFile) -or [string]::IsNullOrWhiteSpace($TargetFile)) {
+        return $null
+    }
+
+    $sourceDir = Split-Path -Parent $SourceFile
+    if ([string]::IsNullOrWhiteSpace($sourceDir)) {
+        return $null
+    }
+
+    $relative = [System.IO.Path]::GetRelativePath($sourceDir, $TargetFile)
+    return ($relative -replace '\\', '/')
+}
+
+function Convert-DocReferencesToLinks {
+    param(
+        [string]$Text,
+        [string]$SourceFile
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Text)) {
+        return $Text
+    }
+
+    $result = $Text
+
+    $result = [regex]::Replace($result, '\b[A-Za-z]+-[A-Za-z0-9][A-Za-z0-9-]*\b', {
+            param($match)
+            $name = $match.Value
+            if ($script:CmdletDocPaths.ContainsKey($name)) {
+                $linkPath = Get-RelativeDocLinkPath -SourceFile $SourceFile -TargetFile $script:CmdletDocPaths[$name]
+                if ($linkPath) {
+                    return ('[{0}]({1})' -f $name, $linkPath)
+                }
+            }
+            return $name
+        })
+
+    $result = [regex]::Replace($result, '\b[A-Z][A-Za-z0-9_]*\b', {
+            param($match)
+            $name = $match.Value
+            if ($script:ModelDocPaths.ContainsKey($name)) {
+                $linkPath = Get-RelativeDocLinkPath -SourceFile $SourceFile -TargetFile $script:ModelDocPaths[$name]
+                if ($linkPath) {
+                    return ('[{0}]({1})' -f $name, $linkPath)
+                }
+            }
+            return $name
+        })
+
+    return $result
+}
+
+function Format-LinkedCode {
+    param(
+        [string]$Value,
+        [string]$SourceFile
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Value)) {
+        return '—'
+    }
+
+    $linked = Convert-DocReferencesToLinks -Text $Value -SourceFile $SourceFile
+    if ($linked -ne $Value) {
+        return $linked
+    }
+
+    return ('`{0}`' -f $Value)
+}
+
 function Escape-Markdown {
     param([string]$Value)
     if ($null -eq $Value -or $Value -eq '') {
@@ -191,13 +270,18 @@ function Get-PipelineText {
 function Build-BehaviorBullets {
     param(
         $ServiceInfo,
-        [string]$SourceText
+        [string]$SourceText,
+        [string]$TargetPath
     )
 
     $bullets = @()
     if ($ServiceInfo.HttpMethod) {
         $endpointText = if ($ServiceInfo.Endpoint) { (' targeting `{0}`' -f $ServiceInfo.Endpoint) } else { '' }
-        $returnText = if ($ServiceInfo.ReturnType) { (' and deserializes to `{0}`' -f $ServiceInfo.ReturnType) } else { '' }
+        $returnText = ''
+        if ($ServiceInfo.ReturnType) {
+            $returnTextValue = Format-LinkedCode -Value $ServiceInfo.ReturnType -SourceFile $TargetPath
+            $returnText = " and deserializes to $returnTextValue"
+        }
         $bullets += ('Calls `ImmyBotApiService.{0}`{1}{2}.' -f $ServiceInfo.HttpMethod, $endpointText, $returnText)
     }
     if ($ServiceInfo.UsesQueryHelper) {
@@ -301,7 +385,8 @@ function Get-ModelKind {
 function Build-ModelDoc {
     param(
         [System.IO.FileInfo]$ModelFile,
-        [Type]$ModelType
+        [Type]$ModelType,
+        [string]$TargetPath
     )
 
     $modelName = $ModelFile.BaseName
@@ -333,12 +418,12 @@ function Build-ModelDoc {
     $assemblyName = $ModelType.Assembly.GetName().Name
     $baseType = if ($ModelType.BaseType -and $ModelType.BaseType -ne [object]) { Get-FriendlyTypeName -Type $ModelType.BaseType } else { 'object' }
     $interfaces = @($ModelType.GetInterfaces() | Sort-Object Name)
-    $interfaceText = if ($interfaces.Count -gt 0) {
-        (($interfaces | ForEach-Object { '`{0}`' -f (Get-FriendlyTypeName -Type $_) }) -join ', ')
+    $interfaceNames = @()
+    foreach ($interface in $interfaces) {
+        $friendlyInterface = Get-FriendlyTypeName -Type $interface
+        $interfaceNames += Format-LinkedCode -Value $friendlyInterface -SourceFile $TargetPath
     }
-    else {
-        'None'
-    }
+    $interfaceText = if ($interfaceNames.Count -gt 0) { ($interfaceNames -join ', ') } else { 'None' }
 
     $lines = @()
     $lines += '---'
@@ -352,7 +437,7 @@ function Build-ModelDoc {
     $lines += ('| Namespace | `{0}` |' -f $namespace)
     $lines += ('| Kind | {0} |' -f $kind)
     $lines += ('| Assembly | `{0}` |' -f $assemblyName)
-    $lines += ('| Base Type | `{0}` |' -f $baseType)
+    $lines += ('| Base Type | {0} |' -f (Format-LinkedCode -Value $baseType -SourceFile $TargetPath))
     $lines += ('| Implements | {0} |' -f $interfaceText)
     $lines += ('| Source | `Models/{0}` |' -f $ModelFile.Name)
     $lines += ''
@@ -386,7 +471,7 @@ function Build-ModelDoc {
             foreach ($prop in $properties) {
                 $propType = Get-FriendlyTypeName -Type $prop.PropertyType
                 $nullable = Get-NullableDescriptor -Type $prop.PropertyType
-                $lines += ('| {0} | `{1}` | {2} | — |' -f $prop.Name, $propType, $nullable)
+                $lines += ('| {0} | {1} | {2} | — |' -f $prop.Name, (Format-LinkedCode -Value $propType -SourceFile $TargetPath), $nullable)
             }
         }
         else {
@@ -422,6 +507,19 @@ $modelDocsDir = Join-Path $Root 'docs/models'
 New-Item -ItemType Directory -Force -Path $cmdletDocsDir | Out-Null
 New-Item -ItemType Directory -Force -Path $modelDocsDir | Out-Null
 
+$models = Get-ChildItem -Path (Join-Path $Root 'Models') -Filter '*.cs' | Sort-Object Name
+foreach ($model in $models) {
+    $modelDocPath = Join-Path $modelDocsDir "$($model.BaseName).md"
+    $script:ModelDocPaths[$model.BaseName] = $modelDocPath
+}
+
+$modelTypes = $assembly.GetTypes() | Where-Object { $_.Namespace -eq 'PSImmyBot.Models' }
+$modelLookup = @{}
+foreach ($modelType in $modelTypes) {
+    $modelLookup[$modelType.Name] = $modelType
+}
+
+$cmdletMetadata = @()
 foreach ($type in $cmdlets) {
     $cmdletAttr = $type.GetCustomAttributes([System.Management.Automation.CmdletAttribute], $false)
     if (-not $cmdletAttr -or $cmdletAttr.Length -eq 0) {
@@ -429,6 +527,22 @@ foreach ($type in $cmdlets) {
     }
     $cmdletAttr = $cmdletAttr[0]
     $cmdletName = "{0}-{1}" -f $cmdletAttr.VerbName, $cmdletAttr.NounName
+    $targetPath = Join-Path $cmdletDocsDir "$cmdletName.md"
+    $script:CmdletDocPaths[$cmdletName] = $targetPath
+    $cmdletMetadata += [pscustomobject]@{
+        Type       = $type
+        Attribute  = $cmdletAttr
+        Name       = $cmdletName
+        TargetPath = $targetPath
+    }
+}
+
+foreach ($cmdlet in $cmdletMetadata) {
+    $type = $cmdlet.Type
+    $cmdletAttr = $cmdlet.Attribute
+    $cmdletName = $cmdlet.Name
+    $targetPath = $cmdlet.TargetPath
+
     $sourcePath = Join-Path $Root "Cmdlets/$($type.Name).cs"
     $sourceText = if (Test-Path $sourcePath) { Get-Content -Path $sourcePath -Raw } else { '' }
     $serviceInfo = Get-ServiceCallInfo -SourceText $sourceText
@@ -439,7 +553,8 @@ foreach ($type in $cmdlets) {
         $positionText = if ($param.Positions.Count -gt 0) { ($param.Positions -join ', ') } else { '—' }
         $setsText = ($param.ParameterSets -join ', ')
         $pipelineText = Get-PipelineText -Value $param.PipelineValue -Property $param.PipelineProperty
-        $tableRows += ('| {0} | `{1}` | {2} | {3} | {4} | {5} |' -f $param.Name, $param.Type, $param.Mandatory, $positionText, $setsText, $pipelineText)
+        $typeDisplay = Format-LinkedCode -Value $param.Type -SourceFile $targetPath
+        $tableRows += ('| {0} | {1} | {2} | {3} | {4} | {5} |' -f $param.Name, $typeDisplay, $param.Mandatory, $positionText, $setsText, $pipelineText)
     }
 
     $parameterSetNames = [System.Collections.Generic.HashSet[string]]::new()
@@ -452,7 +567,7 @@ foreach ($type in $cmdlets) {
         $null = $parameterSetNames.Add('All')
     }
 
-    $behaviorBullets = Build-BehaviorBullets -ServiceInfo $serviceInfo -SourceText $sourceText
+    $behaviorBullets = Build-BehaviorBullets -ServiceInfo $serviceInfo -SourceText $sourceText -TargetPath $targetPath
     $supportsShouldProcess = $cmdletAttr.SupportsShouldProcess
     $supportsPaging = $cmdletAttr.SupportsPaging
     $supportsTransactions = $cmdletAttr.SupportsTransactions
@@ -462,6 +577,7 @@ foreach ($type in $cmdlets) {
     $httpMethodText = if ($serviceInfo.HttpMethod) { $serviceInfo.HttpMethod } else { 'Custom' }
     $endpointText = if ($serviceInfo.Endpoint) { $serviceInfo.Endpoint } else { 'Not applicable' }
     $returnTypeText = if ($serviceInfo.ReturnType) { $serviceInfo.ReturnType } else { 'Varies/none' }
+    $returnTypeDisplay = Format-LinkedCode -Value $returnTypeText -SourceFile $targetPath
 
     $lines = @()
     $lines += '---'
@@ -476,7 +592,7 @@ foreach ($type in $cmdlets) {
     $lines += ('| Source | `Cmdlets/{0}.cs` |' -f $type.Name)
     $lines += "| HTTP Method | $httpMethodText |"
     $lines += "| Endpoint | $endpointText |"
-    $lines += ('| Return Type | `{0}` |' -f $returnTypeText)
+    $lines += ('| Return Type | {0} |' -f $returnTypeDisplay)
     $lines += "| SupportsShouldProcess | $supportsShouldProcess |"
     $lines += "| SupportsPaging | $supportsPaging |"
     $lines += "| SupportsTransactions | $supportsTransactions |"
@@ -485,7 +601,7 @@ foreach ($type in $cmdlets) {
     $lines += ''
     $lines += '## Behavior'
     foreach ($bullet in $behaviorBullets) {
-        $lines += "- $bullet"
+        $lines += ("- $bullet")
     }
 
     if ($parameters.Count -gt 0) {
@@ -514,7 +630,7 @@ foreach ($type in $cmdlets) {
     $lines += '## Outputs'
     $lines += ''
     if ($serviceInfo.HttpMethod) {
-        $lines += ('- `{0}` records produced by `ImmyBotApiService.{1}`' -f $returnTypeText, $serviceInfo.HttpMethod)
+        $lines += ('- {0} records produced by `ImmyBotApiService.{1}`' -f $returnTypeDisplay, $serviceInfo.HttpMethod)
     }
     else {
         $lines += '- See source for specific output behavior.'
@@ -525,17 +641,9 @@ foreach ($type in $cmdlets) {
     $lines += ''
     $lines += 'This documentation was generated automatically by `HelperScripts/GenerateDocs.ps1` by analyzing the cmdlet source and compiled metadata.'
 
-    $targetPath = Join-Path $cmdletDocsDir "$cmdletName.md"
     Set-Content -Path $targetPath -Value ($lines -join [Environment]::NewLine) -Encoding UTF8
 }
 
-$modelTypes = $assembly.GetTypes() | Where-Object { $_.Namespace -eq 'PSImmyBot.Models' }
-$modelLookup = @{}
-foreach ($modelType in $modelTypes) {
-    $modelLookup[$modelType.Name] = $modelType
-}
-
-$models = Get-ChildItem -Path (Join-Path $Root 'Models') -Filter '*.cs' | Sort-Object Name
 foreach ($model in $models) {
     $modelName = $model.BaseName
     $matchedType = $null
@@ -543,7 +651,7 @@ foreach ($model in $models) {
         $matchedType = $modelLookup[$modelName]
     }
 
-    $contentLines = Build-ModelDoc -ModelFile $model -ModelType $matchedType
-    $targetPath = Join-Path $modelDocsDir "$modelName.md"
+    $targetPath = $script:ModelDocPaths[$modelName]
+    $contentLines = Build-ModelDoc -ModelFile $model -ModelType $matchedType -TargetPath $targetPath
     Set-Content -Path $targetPath -Value ($contentLines -join [Environment]::NewLine) -Encoding UTF8
 }

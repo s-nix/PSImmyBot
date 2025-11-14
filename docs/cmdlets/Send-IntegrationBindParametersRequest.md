@@ -10,7 +10,7 @@ title: Send-IntegrationBindParametersRequest
 | Source | `Cmdlets/SendIntegrationBindParametersRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-types/{ProviderType}/bind-parameters? |
-| Return Type | `IntegrationBindParametersRequest, DynamicFormBindResult` |
+| Return Type | [IntegrationBindParametersRequest](../models/IntegrationBindParametersRequest.md), [DynamicFormBindResult](../models/DynamicFormBindResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-IntegrationBindParametersRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-types/{ProviderType}/bind-parameters?` and deserializes to `IntegrationBindParametersRequest, DynamicFormBindResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-types/{ProviderType}/bind-parameters?` and deserializes to [IntegrationBindParametersRequest](../models/IntegrationBindParametersRequest.md), [DynamicFormBindResult](../models/DynamicFormBindResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `IntegrationBindParametersRequest` | True | — | All | None |
+| PayloadBody | [IntegrationBindParametersRequest](../models/IntegrationBindParametersRequest.md) | True | — | All | None |
 | ProviderType | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Send-IntegrationBindParametersRequest
 
 ## Outputs
 
-- `IntegrationBindParametersRequest, DynamicFormBindResult` records produced by `ImmyBotApiService.POST`
+- [IntegrationBindParametersRequest](../models/IntegrationBindParametersRequest.md), [DynamicFormBindResult](../models/DynamicFormBindResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

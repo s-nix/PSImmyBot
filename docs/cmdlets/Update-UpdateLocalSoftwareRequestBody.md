@@ -10,7 +10,7 @@ title: Update-UpdateLocalSoftwareRequestBody
 | Source | `Cmdlets/UpdateUpdateLocalSoftwareRequestBody.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/software/local/{SoftwareIdentifier}? |
-| Return Type | `UpdateLocalSoftwareRequestBody, GetLocalSoftwareResponse` |
+| Return Type | [UpdateLocalSoftwareRequestBody](../models/UpdateLocalSoftwareRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Update-UpdateLocalSoftwareRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/local/{SoftwareIdentifier}?` and deserializes to `UpdateLocalSoftwareRequestBody, GetLocalSoftwareResponse`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/local/{SoftwareIdentifier}?` and deserializes to [UpdateLocalSoftwareRequestBody](../models/UpdateLocalSoftwareRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateLocalSoftwareRequestBody` | True | — | All | None |
+| PayloadBody | [UpdateLocalSoftwareRequestBody](../models/UpdateLocalSoftwareRequestBody.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Update-UpdateLocalSoftwareRequestBody
 
 ## Outputs
 
-- `UpdateLocalSoftwareRequestBody, GetLocalSoftwareResponse` records produced by `ImmyBotApiService.PATCH`
+- [UpdateLocalSoftwareRequestBody](../models/UpdateLocalSoftwareRequestBody.md), [GetLocalSoftwareResponse](../models/GetLocalSoftwareResponse.md) records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

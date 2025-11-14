@@ -10,7 +10,7 @@ title: SubmitFeedbackRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SubmitFeedbackRequestBody>` |
+| Implements | IEquatable<[SubmitFeedbackRequestBody](SubmitFeedbackRequestBody.md)> |
 | Source | `Models/SubmitFeedbackRequestBody.cs` |
 
 ## Overview

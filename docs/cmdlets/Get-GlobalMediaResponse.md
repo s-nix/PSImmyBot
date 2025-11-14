@@ -10,7 +10,7 @@ title: Get-GlobalMediaResponse
 | Source | `Cmdlets/GetGlobalMediaResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/media/global/{Id}? |
-| Return Type | `GlobalMediaResponse` |
+| Return Type | [GlobalMediaResponse](../models/GlobalMediaResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-GlobalMediaResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/media/global/{Id}?` and deserializes to `GlobalMediaResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/media/global/{Id}?` and deserializes to [GlobalMediaResponse](../models/GlobalMediaResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-GlobalMediaResponse
 
 ## Outputs
 
-- `GlobalMediaResponse` records produced by `ImmyBotApiService.GET`
+- [GlobalMediaResponse](../models/GlobalMediaResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

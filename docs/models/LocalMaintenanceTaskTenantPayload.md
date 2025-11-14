@@ -10,7 +10,7 @@ title: LocalMaintenanceTaskTenantPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<LocalMaintenanceTaskTenantPayload>` |
+| Implements | IEquatable<[LocalMaintenanceTaskTenantPayload](LocalMaintenanceTaskTenantPayload.md)> |
 | Source | `Models/LocalMaintenanceTaskTenantPayload.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: LocalMaintenanceTaskTenantPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Relationship | `Relationship` | No (value type) | — |
+| Relationship | [Relationship](Relationship.md) | No (value type) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

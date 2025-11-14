@@ -24,7 +24,7 @@ title: Send-RemoveParentTenantRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `RemoveParentTenantRequest` | True | — | All | None |
+| PayloadBody | [RemoveParentTenantRequest](../models/RemoveParentTenantRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

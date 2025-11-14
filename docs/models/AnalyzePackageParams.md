@@ -10,7 +10,7 @@ title: AnalyzePackageParams
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AnalyzePackageParams>` |
+| Implements | IEquatable<[AnalyzePackageParams](AnalyzePackageParams.md)> |
 | Source | `Models/AnalyzePackageParams.cs` |
 
 ## Overview

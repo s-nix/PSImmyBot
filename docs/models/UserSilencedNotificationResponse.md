@@ -10,7 +10,7 @@ title: UserSilencedNotificationResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UserSilencedNotificationResponse>` |
+| Implements | IEquatable<[UserSilencedNotificationResponse](UserSilencedNotificationResponse.md)> |
 | Source | `Models/UserSilencedNotificationResponse.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: UserSilencedNotificationResponse
 | DateSilencedUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | NotificationObjectId | `string` | Reference type (nullable) | — |
-| NotificationType | `NotificationType` | No (value type) | — |
+| NotificationType | [NotificationType](NotificationType.md) | No (value type) | — |
 | UserId | `int` | No (value type) | — |
 
 ## Serialization

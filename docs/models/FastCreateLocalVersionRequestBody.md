@@ -10,7 +10,7 @@ title: FastCreateLocalVersionRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<FastCreateLocalVersionRequestBody>` |
+| Implements | IEquatable<[FastCreateLocalVersionRequestBody](FastCreateLocalVersionRequestBody.md)> |
 | Source | `Models/FastCreateLocalVersionRequestBody.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: FastCreateLocalVersionRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Software | `CreateLocalSoftwareRequestBody` | Reference type (nullable) | — |
+| Software | [CreateLocalSoftwareRequestBody](CreateLocalSoftwareRequestBody.md) | Reference type (nullable) | — |
 | SoftwareId | `int?` | Yes (nullable value type) | — |
-| SoftwareVersion | `CreateLocalSoftwareVersionRequestBody` | Reference type (nullable) | — |
+| SoftwareVersion | [CreateLocalSoftwareVersionRequestBody](CreateLocalSoftwareVersionRequestBody.md) | Reference type (nullable) | — |
 
 ## Serialization
 

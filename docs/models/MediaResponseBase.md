@@ -10,7 +10,7 @@ title: MediaResponseBase
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MediaResponseBase>` |
+| Implements | IEquatable<[MediaResponseBase](MediaResponseBase.md)> |
 | Source | `Models/MediaResponseBase.cs` |
 
 ## Overview
@@ -21,9 +21,9 @@ title: MediaResponseBase
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobReference | `string` | Reference type (nullable) | — |
-| Category | `MediaCategory` | No (value type) | — |
+| Category | [MediaCategory](MediaCategory.md) | No (value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | FileName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | MimeType | `string` | Reference type (nullable) | — |

@@ -10,7 +10,7 @@ title: CommandResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CommandResult>` |
+| Implements | IEquatable<[CommandResult](CommandResult.md)> |
 | Source | `Models/CommandResult.cs` |
 
 ## Overview

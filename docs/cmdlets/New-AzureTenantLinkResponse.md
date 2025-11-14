@@ -25,7 +25,7 @@ title: New-AzureTenantLinkResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | AzTenantId | `String` | False | — | All | None |
-| AzureTenant | `AzureTenantResponse` | True | — | All | None |
+| AzureTenant | [AzureTenantResponse](../models/AzureTenantResponse.md) | True | — | All | None |
 | ImmyTenantId | `Int32` | True | — | All | None |
 | LimitToDomains | `ICollection`1` | False | — | All | None |
 | ShouldLimitDomains | `Boolean` | True | — | All | None |

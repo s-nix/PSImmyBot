@@ -30,9 +30,9 @@ title: New-ProviderClient
 | ExternalClientName | `String` | False | — | All | None |
 | HasCompletedInitialAgentSync | `Boolean` | True | — | All | None |
 | InternalData | `Object` | False | — | All | None |
-| OwnerTenant | `Tenant` | True | — | All | None |
+| OwnerTenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | ProviderAgents | `ICollection`1` | False | — | All | None |
-| ProviderLink | `ProviderLink` | True | — | All | None |
+| ProviderLink | [ProviderLink](../models/ProviderLink.md) | True | — | All | None |
 | ProviderLinkId | `Int32` | True | — | All | None |
 | Status | `String` | False | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |

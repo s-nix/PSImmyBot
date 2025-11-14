@@ -10,7 +10,7 @@ title: Send-CreateGlobalSoftwareRequestBody
 | Source | `Cmdlets/SendCreateGlobalSoftwareRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/software/global? |
-| Return Type | `CreateGlobalSoftwareRequestBody, GetGlobalSoftwareResponse` |
+| Return Type | [CreateGlobalSoftwareRequestBody](../models/CreateGlobalSoftwareRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateGlobalSoftwareRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global?` and deserializes to `CreateGlobalSoftwareRequestBody, GetGlobalSoftwareResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global?` and deserializes to [CreateGlobalSoftwareRequestBody](../models/CreateGlobalSoftwareRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateGlobalSoftwareRequestBody` | True | — | All | None |
+| PayloadBody | [CreateGlobalSoftwareRequestBody](../models/CreateGlobalSoftwareRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateGlobalSoftwareRequestBody
 
 ## Outputs
 
-- `CreateGlobalSoftwareRequestBody, GetGlobalSoftwareResponse` records produced by `ImmyBotApiService.POST`
+- [CreateGlobalSoftwareRequestBody](../models/CreateGlobalSoftwareRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

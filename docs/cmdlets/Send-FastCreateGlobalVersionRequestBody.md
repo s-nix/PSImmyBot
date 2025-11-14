@@ -10,7 +10,7 @@ title: Send-FastCreateGlobalVersionRequestBody
 | Source | `Cmdlets/SendFastCreateGlobalVersionRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/software/global/fast-create? |
-| Return Type | `FastCreateGlobalVersionRequestBody, GetGlobalSoftwareResponse` |
+| Return Type | [FastCreateGlobalVersionRequestBody](../models/FastCreateGlobalVersionRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-FastCreateGlobalVersionRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global/fast-create?` and deserializes to `FastCreateGlobalVersionRequestBody, GetGlobalSoftwareResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global/fast-create?` and deserializes to [FastCreateGlobalVersionRequestBody](../models/FastCreateGlobalVersionRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `FastCreateGlobalVersionRequestBody` | True | — | All | None |
+| PayloadBody | [FastCreateGlobalVersionRequestBody](../models/FastCreateGlobalVersionRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-FastCreateGlobalVersionRequestBody
 
 ## Outputs
 
-- `FastCreateGlobalVersionRequestBody, GetGlobalSoftwareResponse` records produced by `ImmyBotApiService.POST`
+- [FastCreateGlobalVersionRequestBody](../models/FastCreateGlobalVersionRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

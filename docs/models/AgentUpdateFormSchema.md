@@ -10,7 +10,7 @@ title: AgentUpdateFormSchema
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentUpdateFormSchema>` |
+| Implements | IEquatable<[AgentUpdateFormSchema](AgentUpdateFormSchema.md)> |
 | Source | `Models/AgentUpdateFormSchema.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: AgentUpdateFormSchema
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Inputs | `ICollection<AgentUpdateFormSchemaInput>` | Reference type (nullable) | — |
+| Inputs | ICollection<[AgentUpdateFormSchemaInput](AgentUpdateFormSchemaInput.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

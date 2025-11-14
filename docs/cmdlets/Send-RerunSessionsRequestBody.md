@@ -24,7 +24,7 @@ title: Send-RerunSessionsRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `RerunSessionsRequestBody` | True | — | All | None |
+| PayloadBody | [RerunSessionsRequestBody](../models/RerunSessionsRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

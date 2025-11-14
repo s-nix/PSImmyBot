@@ -10,7 +10,7 @@ title: DeleteTenantResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DeleteTenantResult>` |
+| Implements | IEquatable<[DeleteTenantResult](DeleteTenantResult.md)> |
 | Source | `Models/DeleteTenantResult.cs` |
 
 ## Overview

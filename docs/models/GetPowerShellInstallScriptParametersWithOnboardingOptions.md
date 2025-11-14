@@ -10,7 +10,7 @@ title: GetPowerShellInstallScriptParametersWithOnboardingOptions
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetPowerShellInstallScriptParametersWithOnboardingOptions>` |
+| Implements | IEquatable<[GetPowerShellInstallScriptParametersWithOnboardingOptions](GetPowerShellInstallScriptParametersWithOnboardingOptions.md)> |
 | Source | `Models/GetPowerShellInstallScriptParametersWithOnboardingOptions.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: GetPowerShellInstallScriptParametersWithOnboardingOptions
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| OnboardingOptions | `AgentOnboardingOptions` | Reference type (nullable) | — |
-| Platform | `Platform` | No (value type) | — |
+| OnboardingOptions | [AgentOnboardingOptions](AgentOnboardingOptions.md) | Reference type (nullable) | — |
+| Platform | [Platform](Platform.md) | No (value type) | — |
 | TargetExternalClientId | `string` | Reference type (nullable) | — |
 
 ## Serialization

@@ -24,11 +24,11 @@ title: New-AzureTenantTokenCredentialDetails
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| GotAccessTokenFrom | `AccessTokenSource` | True | — | All | None |
+| GotAccessTokenFrom | [AccessTokenSource](../models/AccessTokenSource.md) | True | — | All | None |
 | OnlyUsePartnerCenterRefresh | `Boolean` | True | — | All | None |
 | PartnerPrincipalId | `String` | False | — | All | None |
 | ResolvedClientId | `String` | False | — | All | None |
-| TenantAzurePermissionLevel | `AzurePermissionLevel2` | True | — | All | None |
+| TenantAzurePermissionLevel | [AzurePermissionLevel2](../models/AzurePermissionLevel2.md) | True | — | All | None |
 | TenantPreferredAzureClientId | `String` | False | — | All | None |
 | TenantPrincipalId | `String` | False | — | All | None |
 

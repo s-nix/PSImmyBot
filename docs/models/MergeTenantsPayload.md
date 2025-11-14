@@ -10,7 +10,7 @@ title: MergeTenantsPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MergeTenantsPayload>` |
+| Implements | IEquatable<[MergeTenantsPayload](MergeTenantsPayload.md)> |
 | Source | `Models/MergeTenantsPayload.cs` |
 
 ## Overview

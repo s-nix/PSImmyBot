@@ -10,7 +10,7 @@ title: CreateTagPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateTagPayload>` |
+| Implements | IEquatable<[CreateTagPayload](CreateTagPayload.md)> |
 | Source | `Models/CreateTagPayload.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: CreateTagPayload
 | Color | `string` | Reference type (nullable) | — |
 | Description | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| TenantTagAuthorizations | `ICollection<CreateTenantTagAuthorizationPayload>` | Reference type (nullable) | — |
+| TenantTagAuthorizations | ICollection<[CreateTenantTagAuthorizationPayload](CreateTenantTagAuthorizationPayload.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

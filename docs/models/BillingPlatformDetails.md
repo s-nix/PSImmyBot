@@ -10,7 +10,7 @@ title: BillingPlatformDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BillingPlatformDetails>` |
+| Implements | IEquatable<[BillingPlatformDetails](BillingPlatformDetails.md)> |
 | Source | `Models/BillingPlatformDetails.cs` |
 
 ## Overview

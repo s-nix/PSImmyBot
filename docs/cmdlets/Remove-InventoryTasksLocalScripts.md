@@ -10,7 +10,7 @@ title: Remove-InventoryTasksLocalScripts
 | Source | `Cmdlets/RemoveInventoryTasksLocalScripts.cs` |
 | HTTP Method | DELETE |
 | Endpoint | /api/v1/inventory-tasks/local/{TaskId}/scripts/{InventoryKey}? |
-| Return Type | `InventoryTaskResource` |
+| Return Type | [InventoryTaskResource](../models/InventoryTaskResource.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Remove-InventoryTasksLocalScripts
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.DELETE` targeting `/api/v1/inventory-tasks/local/{TaskId}/scripts/{InventoryKey}?` and deserializes to `InventoryTaskResource`.
+- Calls `ImmyBotApiService.DELETE` targeting `/api/v1/inventory-tasks/local/{TaskId}/scripts/{InventoryKey}?` and deserializes to [InventoryTaskResource](../models/InventoryTaskResource.md).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ title: Remove-InventoryTasksLocalScripts
 
 ## Outputs
 
-- `InventoryTaskResource` records produced by `ImmyBotApiService.DELETE`
+- [InventoryTaskResource](../models/InventoryTaskResource.md) records produced by `ImmyBotApiService.DELETE`
 
 ## Notes
 

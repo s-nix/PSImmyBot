@@ -10,7 +10,7 @@ title: SkipOnboardingResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SkipOnboardingResponse>` |
+| Implements | IEquatable<[SkipOnboardingResponse](SkipOnboardingResponse.md)> |
 | Source | `Models/SkipOnboardingResponse.cs` |
 
 ## Overview

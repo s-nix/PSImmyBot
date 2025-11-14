@@ -10,7 +10,7 @@ title: Send-UpdateLocalMediaPayload
 | Source | `Cmdlets/SendUpdateLocalMediaPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/media/local/{Id}? |
-| Return Type | `UpdateLocalMediaPayload, LocalMediaResponse` |
+| Return Type | [UpdateLocalMediaPayload](../models/UpdateLocalMediaPayload.md), [LocalMediaResponse](../models/LocalMediaResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-UpdateLocalMediaPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/media/local/{Id}?` and deserializes to `UpdateLocalMediaPayload, LocalMediaResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/media/local/{Id}?` and deserializes to [UpdateLocalMediaPayload](../models/UpdateLocalMediaPayload.md), [LocalMediaResponse](../models/LocalMediaResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateLocalMediaPayload` | True | — | All | None |
+| PayloadBody | [UpdateLocalMediaPayload](../models/UpdateLocalMediaPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-UpdateLocalMediaPayload
 
 ## Outputs
 
-- `UpdateLocalMediaPayload, LocalMediaResponse` records produced by `ImmyBotApiService.POST`
+- [UpdateLocalMediaPayload](../models/UpdateLocalMediaPayload.md), [LocalMediaResponse](../models/LocalMediaResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

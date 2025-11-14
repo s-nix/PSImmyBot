@@ -10,7 +10,7 @@ title: Send-ValidateParamBlockParametersFromTaskRequest
 | Source | `Cmdlets/SendValidateParamBlockParametersFromTaskRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/maintenance-tasks/validate-param-block-parameters? |
-| Return Type | `ValidateParamBlockParametersFromTaskRequest, DynamicFormBindResultWithConvertedParameters` |
+| Return Type | [ValidateParamBlockParametersFromTaskRequest](../models/ValidateParamBlockParametersFromTaskRequest.md), [DynamicFormBindResultWithConvertedParameters](../models/DynamicFormBindResultWithConvertedParameters.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-ValidateParamBlockParametersFromTaskRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/validate-param-block-parameters?` and deserializes to `ValidateParamBlockParametersFromTaskRequest, DynamicFormBindResultWithConvertedParameters`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/validate-param-block-parameters?` and deserializes to [ValidateParamBlockParametersFromTaskRequest](../models/ValidateParamBlockParametersFromTaskRequest.md), [DynamicFormBindResultWithConvertedParameters](../models/DynamicFormBindResultWithConvertedParameters.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ValidateParamBlockParametersFromTaskRequest` | True | — | All | None |
+| PayloadBody | [ValidateParamBlockParametersFromTaskRequest](../models/ValidateParamBlockParametersFromTaskRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-ValidateParamBlockParametersFromTaskRequest
 
 ## Outputs
 
-- `ValidateParamBlockParametersFromTaskRequest, DynamicFormBindResultWithConvertedParameters` records produced by `ImmyBotApiService.POST`
+- [ValidateParamBlockParametersFromTaskRequest](../models/ValidateParamBlockParametersFromTaskRequest.md), [DynamicFormBindResultWithConvertedParameters](../models/DynamicFormBindResultWithConvertedParameters.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

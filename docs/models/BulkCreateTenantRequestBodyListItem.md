@@ -10,7 +10,7 @@ title: BulkCreateTenantRequestBodyListItem
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkCreateTenantRequestBodyListItem>` |
+| Implements | IEquatable<[BulkCreateTenantRequestBodyListItem](BulkCreateTenantRequestBodyListItem.md)> |
 | Source | `Models/BulkCreateTenantRequestBodyListItem.cs` |
 
 ## Overview

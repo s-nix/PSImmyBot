@@ -10,7 +10,7 @@ title: ShowCommandInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ShowCommandInfo>` |
+| Implements | IEquatable<[ShowCommandInfo](ShowCommandInfo.md)> |
 | Source | `Models/ShowCommandInfo.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ShowCommandInfo
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Definition | `string` | Reference type (nullable) | — |
-| ParameterSets | `ICollection<ParameterSet>` | Reference type (nullable) | — |
+| ParameterSets | ICollection<[ParameterSet](ParameterSet.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

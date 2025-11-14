@@ -10,7 +10,7 @@ title: Get-MaintenanceItemOrder
 | Source | `Cmdlets/GetMaintenanceItemOrder.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/maintenance-item-orders? |
-| Return Type | `List<MaintenanceItemOrder>` |
+| Return Type | List<[MaintenanceItemOrder](../models/MaintenanceItemOrder.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MaintenanceItemOrder
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/maintenance-item-orders?` and deserializes to `List<MaintenanceItemOrder>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/maintenance-item-orders?` and deserializes to List<[MaintenanceItemOrder](../models/MaintenanceItemOrder.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<MaintenanceItemOrder>` records produced by `ImmyBotApiService.GET`
+- List<[MaintenanceItemOrder](../models/MaintenanceItemOrder.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

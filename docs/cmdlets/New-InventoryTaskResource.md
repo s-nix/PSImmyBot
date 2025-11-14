@@ -25,10 +25,10 @@ title: New-InventoryTaskResource
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
-| Frequency | `InventoryTaskFrequency` | True | — | All | None |
+| Frequency | [InventoryTaskFrequency](../models/InventoryTaskFrequency.md) | True | — | All | None |
 | FromProvider | `Boolean` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| InventoryTaskType | `DatabaseType` | True | — | All | None |
+| InventoryTaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | Scripts | `ICollection`1` | False | — | All | None |
 | SpecifiedNumMinutes | `Nullable`1` | False | — | All | None |

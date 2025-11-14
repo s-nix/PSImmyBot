@@ -24,7 +24,7 @@ title: Send-StartEditorServicesRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `StartEditorServicesRequest` | True | — | All | None |
+| PayloadBody | [StartEditorServicesRequest](../models/StartEditorServicesRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

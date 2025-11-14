@@ -10,7 +10,7 @@ title: AccessRequestResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AccessRequestResponse>` |
+| Implements | IEquatable<[AccessRequestResponse](AccessRequestResponse.md)> |
 | Source | `Models/AccessRequestResponse.cs` |
 
 ## Overview

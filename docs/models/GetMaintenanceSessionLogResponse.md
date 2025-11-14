@@ -10,7 +10,7 @@ title: GetMaintenanceSessionLogResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetMaintenanceSessionLogResponse>` |
+| Implements | IEquatable<[GetMaintenanceSessionLogResponse](GetMaintenanceSessionLogResponse.md)> |
 | Source | `Models/GetMaintenanceSessionLogResponse.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: GetMaintenanceSessionLogResponse
 | Id | `int` | No (value type) | — |
 | IsPrimary | `bool` | No (value type) | — |
 | MaintenanceActionId | `int?` | Yes (nullable value type) | — |
-| MaintenanceActionStatus | `MaintenanceActionStatus` | No (value type) | — |
+| MaintenanceActionStatus | [MaintenanceActionStatus](MaintenanceActionStatus.md) | No (value type) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
 | MaintenanceSessionStageId | `int?` | Yes (nullable value type) | — |
 | Message | `string` | Reference type (nullable) | — |
@@ -36,14 +36,14 @@ title: GetMaintenanceSessionLogResponse
 | ProgressSecondsRemaining | `double?` | Yes (nullable value type) | — |
 | ProgressStatus | `string` | Reference type (nullable) | — |
 | Script | `string` | Reference type (nullable) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
 | ScriptId | `int?` | Yes (nullable value type) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
 | ScriptOutput | `string` | Reference type (nullable) | — |
 | ScriptParameters | `IDictionary<string, object>` | Reference type (nullable) | — |
 | ScriptTimeout | `int?` | Yes (nullable value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
-| SessionLogType | `SessionLogType` | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| SessionLogType | [SessionLogType](SessionLogType.md) | No (value type) | — |
 | SessionPhaseId | `int?` | Yes (nullable value type) | — |
 | Time | `DateTimeOffset` | No (value type) | — |
 | UpdatedTime | `DateTimeOffset?` | Yes (nullable value type) | — |

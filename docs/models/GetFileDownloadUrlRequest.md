@@ -10,7 +10,7 @@ title: GetFileDownloadUrlRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetFileDownloadUrlRequest>` |
+| Implements | IEquatable<[GetFileDownloadUrlRequest](GetFileDownloadUrlRequest.md)> |
 | Source | `Models/GetFileDownloadUrlRequest.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: GetFileDownloadUrlRequest
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobName | `string` | Reference type (nullable) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 
 ## Serialization
 

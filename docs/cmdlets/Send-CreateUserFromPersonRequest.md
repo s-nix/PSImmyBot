@@ -10,7 +10,7 @@ title: Send-CreateUserFromPersonRequest
 | Source | `Cmdlets/SendCreateUserFromPersonRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/users/create-from-person? |
-| Return Type | `CreateUserFromPersonRequest, GetUserResponse` |
+| Return Type | [CreateUserFromPersonRequest](../models/CreateUserFromPersonRequest.md), [GetUserResponse](../models/GetUserResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateUserFromPersonRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/create-from-person?` and deserializes to `CreateUserFromPersonRequest, GetUserResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/create-from-person?` and deserializes to [CreateUserFromPersonRequest](../models/CreateUserFromPersonRequest.md), [GetUserResponse](../models/GetUserResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateUserFromPersonRequest` | True | — | All | None |
+| PayloadBody | [CreateUserFromPersonRequest](../models/CreateUserFromPersonRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateUserFromPersonRequest
 
 ## Outputs
 
-- `CreateUserFromPersonRequest, GetUserResponse` records produced by `ImmyBotApiService.POST`
+- [CreateUserFromPersonRequest](../models/CreateUserFromPersonRequest.md), [GetUserResponse](../models/GetUserResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

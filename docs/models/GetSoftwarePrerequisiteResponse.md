@@ -10,7 +10,7 @@ title: GetSoftwarePrerequisiteResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetSoftwarePrerequisiteResponse>` |
+| Implements | IEquatable<[GetSoftwarePrerequisiteResponse](GetSoftwarePrerequisiteResponse.md)> |
 | Source | `Models/GetSoftwarePrerequisiteResponse.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: GetSoftwarePrerequisiteResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ActionToPerform | `ActionToPerform` | No (value type) | — |
-| Condition | `Condition` | No (value type) | — |
-| SoftwaresForCondition | `ICollection<GetSpecifiedSoftwareResponse>` | Reference type (nullable) | — |
-| SoftwaresToPerformActionOn | `ICollection<GetSpecifiedSoftwareResponse>` | Reference type (nullable) | — |
-| SubjectQualifier | `SubjectQualifier` | No (value type) | — |
+| ActionToPerform | [ActionToPerform](ActionToPerform.md) | No (value type) | — |
+| Condition | [Condition](Condition.md) | No (value type) | — |
+| SoftwaresForCondition | ICollection<[GetSpecifiedSoftwareResponse](GetSpecifiedSoftwareResponse.md)> | Reference type (nullable) | — |
+| SoftwaresToPerformActionOn | ICollection<[GetSpecifiedSoftwareResponse](GetSpecifiedSoftwareResponse.md)> | Reference type (nullable) | — |
+| SubjectQualifier | [SubjectQualifier](SubjectQualifier.md) | No (value type) | — |
 
 ## Serialization
 

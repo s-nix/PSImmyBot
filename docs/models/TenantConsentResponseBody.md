@@ -10,7 +10,7 @@ title: TenantConsentResponseBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantConsentResponseBody>` |
+| Implements | IEquatable<[TenantConsentResponseBody](TenantConsentResponseBody.md)> |
 | Source | `Models/TenantConsentResponseBody.cs` |
 
 ## Overview

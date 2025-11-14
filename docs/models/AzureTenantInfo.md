@@ -10,7 +10,7 @@ title: AzureTenantInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantInfo>` |
+| Implements | IEquatable<[AzureTenantInfo](AzureTenantInfo.md)> |
 | Source | `Models/AzureTenantInfo.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Send-CreateProviderLinkRequestBody
 | Source | `Cmdlets/SendCreateProviderLinkRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links? |
-| Return Type | `CreateProviderLinkRequestBody, GetProviderLinkResponse` |
+| Return Type | [CreateProviderLinkRequestBody](../models/CreateProviderLinkRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-CreateProviderLinkRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links?` and deserializes to `CreateProviderLinkRequestBody, GetProviderLinkResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links?` and deserializes to [CreateProviderLinkRequestBody](../models/CreateProviderLinkRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateProviderLinkRequestBody` | True | — | All | None |
+| PayloadBody | [CreateProviderLinkRequestBody](../models/CreateProviderLinkRequestBody.md) | True | — | All | None |
 | ThrowIfAgentInstallerVersionNotSet | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets
@@ -34,7 +34,7 @@ title: Send-CreateProviderLinkRequestBody
 
 ## Outputs
 
-- `CreateProviderLinkRequestBody, GetProviderLinkResponse` records produced by `ImmyBotApiService.POST`
+- [CreateProviderLinkRequestBody](../models/CreateProviderLinkRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

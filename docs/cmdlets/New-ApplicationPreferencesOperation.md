@@ -26,7 +26,7 @@ title: New-ApplicationPreferencesOperation
 | --- | --- | --- | --- | --- | --- |
 | From | `String` | False | — | All | None |
 | Op | `String` | False | — | All | None |
-| OperationType | `OperationType` | True | — | All | None |
+| OperationType | [OperationType](../models/OperationType.md) | True | — | All | None |
 | Path | `String` | False | — | All | None |
 | Value | `Object` | False | — | All | None |
 

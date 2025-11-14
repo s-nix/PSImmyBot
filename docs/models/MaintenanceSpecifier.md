@@ -10,7 +10,7 @@ title: MaintenanceSpecifier
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceSpecifier>` |
+| Implements | IEquatable<[MaintenanceSpecifier](MaintenanceSpecifier.md)> |
 | Source | `Models/MaintenanceSpecifier.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: MaintenanceSpecifier
 | --- | --- | --- | --- |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
 | MaintenanceName | `string` | Reference type (nullable) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 
 ## Serialization
 

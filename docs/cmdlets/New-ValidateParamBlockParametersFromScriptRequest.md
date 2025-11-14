@@ -25,7 +25,7 @@ title: New-ValidateParamBlockParametersFromScriptRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Nullable`1` | False | — | All | None |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | ForceRebind | `Boolean` | True | — | All | None |
 | MaintenanceSessionId | `Nullable`1` | False | — | All | None |
 | ParameterValues | `IDictionary`2` | False | — | All | None |

@@ -10,7 +10,7 @@ title: UpdateGlobalScriptRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateGlobalScriptRequestBody>` |
+| Implements | IEquatable<[UpdateGlobalScriptRequestBody](UpdateGlobalScriptRequestBody.md)> |
 | Source | `Models/UpdateGlobalScriptRequestBody.cs` |
 
 ## Overview
@@ -22,11 +22,11 @@ title: UpdateGlobalScriptRequestBody
 | --- | --- | --- | --- |
 | Action | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OutputType | `ScriptOutputType` | No (value type) | — |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
+| OutputType | [ScriptOutputType](ScriptOutputType.md) | No (value type) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Timeout | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: BulkLinkClientsToTenantsRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkLinkClientsToTenantsRequestBody>` |
+| Implements | IEquatable<[BulkLinkClientsToTenantsRequestBody](BulkLinkClientsToTenantsRequestBody.md)> |
 | Source | `Models/BulkLinkClientsToTenantsRequestBody.cs` |
 
 ## Overview

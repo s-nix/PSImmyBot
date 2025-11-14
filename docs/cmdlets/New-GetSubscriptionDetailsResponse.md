@@ -26,7 +26,7 @@ title: New-GetSubscriptionDetailsResponse
 | --- | --- | --- | --- | --- | --- |
 | FeaturesEnabledFromSubscription | `ICollection`1` | False | — | All | None |
 | PlanId | `String` | False | — | All | None |
-| Status | `SubscriptionStatus` | True | — | All | None |
+| Status | [SubscriptionStatus](../models/SubscriptionStatus.md) | True | — | All | None |
 | SubscriptionActivatedDateUtc | `Nullable`1` | False | — | All | None |
 | TrialEndUtc | `Nullable`1` | False | — | All | None |
 | TrialStartUtc | `Nullable`1` | False | — | All | None |

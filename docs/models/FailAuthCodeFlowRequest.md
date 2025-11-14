@@ -10,7 +10,7 @@ title: FailAuthCodeFlowRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<FailAuthCodeFlowRequest>` |
+| Implements | IEquatable<[FailAuthCodeFlowRequest](FailAuthCodeFlowRequest.md)> |
 | Source | `Models/FailAuthCodeFlowRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: FailAuthCodeFlowRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| OauthErrorResponse | `Oauth2AuthCodeErrorResponse` | Reference type (nullable) | — |
+| OauthErrorResponse | [Oauth2AuthCodeErrorResponse](Oauth2AuthCodeErrorResponse.md) | Reference type (nullable) | — |
 | OauthHookId | `Guid` | No (value type) | — |
 
 ## Serialization

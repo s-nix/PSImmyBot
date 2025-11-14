@@ -10,7 +10,7 @@ title: Send-ChangeTenantsPayload
 | Source | `Cmdlets/SendChangeTenantsPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/computers/change-tenant? |
-| Return Type | `ChangeTenantsPayload, CommandResult` |
+| Return Type | [ChangeTenantsPayload](../models/ChangeTenantsPayload.md), [CommandResult](../models/CommandResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-ChangeTenantsPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/change-tenant?` and deserializes to `ChangeTenantsPayload, CommandResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/change-tenant?` and deserializes to [ChangeTenantsPayload](../models/ChangeTenantsPayload.md), [CommandResult](../models/CommandResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ChangeTenantsPayload` | True | — | All | None |
+| PayloadBody | [ChangeTenantsPayload](../models/ChangeTenantsPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-ChangeTenantsPayload
 
 ## Outputs
 
-- `ChangeTenantsPayload, CommandResult` records produced by `ImmyBotApiService.POST`
+- [ChangeTenantsPayload](../models/ChangeTenantsPayload.md), [CommandResult](../models/CommandResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

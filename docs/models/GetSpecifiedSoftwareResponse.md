@@ -10,7 +10,7 @@ title: GetSpecifiedSoftwareResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetSpecifiedSoftwareResponse>` |
+| Implements | IEquatable<[GetSpecifiedSoftwareResponse](GetSpecifiedSoftwareResponse.md)> |
 | Source | `Models/GetSpecifiedSoftwareResponse.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: GetSpecifiedSoftwareResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 
 ## Serialization
 

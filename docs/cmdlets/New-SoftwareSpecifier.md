@@ -24,9 +24,9 @@ title: New-SoftwareSpecifier
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| MaintenanceSpecifier | `MaintenanceSpecifier` | True | — | All | None |
+| MaintenanceSpecifier | [MaintenanceSpecifier](../models/MaintenanceSpecifier.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | False | — | All | None |
-| SoftwareType | `SoftwareType` | True | — | All | None |
+| SoftwareType | [SoftwareType](../models/SoftwareType.md) | True | — | All | None |
 
 ### Parameter sets
 

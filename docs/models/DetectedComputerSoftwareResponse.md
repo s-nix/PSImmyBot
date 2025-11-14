@@ -10,7 +10,7 @@ title: DetectedComputerSoftwareResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DetectedComputerSoftwareResponse>` |
+| Implements | IEquatable<[DetectedComputerSoftwareResponse](DetectedComputerSoftwareResponse.md)> |
 | Source | `Models/DetectedComputerSoftwareResponse.cs` |
 
 ## Overview

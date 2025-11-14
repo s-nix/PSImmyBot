@@ -10,7 +10,7 @@ title: Send-CalculateTargetsRequest
 | Source | `Cmdlets/SendCalculateTargetsRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/persons-target-preview? |
-| Return Type | `CalculateTargetsRequest, List<TargetedPerson>` |
+| Return Type | [CalculateTargetsRequest](../models/CalculateTargetsRequest.md), List<[TargetedPerson](../models/TargetedPerson.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CalculateTargetsRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/persons-target-preview?` and deserializes to `CalculateTargetsRequest, List<TargetedPerson>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/persons-target-preview?` and deserializes to [CalculateTargetsRequest](../models/CalculateTargetsRequest.md), List<[TargetedPerson](../models/TargetedPerson.md)>.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CalculateTargetsRequest` | True | — | All | None |
+| PayloadBody | [CalculateTargetsRequest](../models/CalculateTargetsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CalculateTargetsRequest
 
 ## Outputs
 
-- `CalculateTargetsRequest, List<TargetedPerson>` records produced by `ImmyBotApiService.POST`
+- [CalculateTargetsRequest](../models/CalculateTargetsRequest.md), List<[TargetedPerson](../models/TargetedPerson.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

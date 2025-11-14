@@ -10,7 +10,7 @@ title: UpdateUserPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateUserPayload>` |
+| Implements | IEquatable<[UpdateUserPayload](UpdateUserPayload.md)> |
 | Source | `Models/UpdateUserPayload.cs` |
 
 ## Overview

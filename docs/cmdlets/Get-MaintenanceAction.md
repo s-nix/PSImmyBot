@@ -10,7 +10,7 @@ title: Get-MaintenanceAction
 | Source | `Cmdlets/GetMaintenanceAction.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-actions/computer/{ComputerId}/needs-attention? |
-| Return Type | `List<GetMaintenanceActionResponse>` |
+| Return Type | List<[GetMaintenanceActionResponse](../models/GetMaintenanceActionResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MaintenanceAction
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-actions/computer/{ComputerId}/needs-attention?` and deserializes to `List<GetMaintenanceActionResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-actions/computer/{ComputerId}/needs-attention?` and deserializes to List<[GetMaintenanceActionResponse](../models/GetMaintenanceActionResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-MaintenanceAction
 
 ## Outputs
 
-- `List<GetMaintenanceActionResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetMaintenanceActionResponse](../models/GetMaintenanceActionResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

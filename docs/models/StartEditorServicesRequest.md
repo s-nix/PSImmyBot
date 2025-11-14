@@ -10,7 +10,7 @@ title: StartEditorServicesRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<StartEditorServicesRequest>` |
+| Implements | IEquatable<[StartEditorServicesRequest](StartEditorServicesRequest.md)> |
 | Source | `Models/StartEditorServicesRequest.cs` |
 
 ## Overview
@@ -20,10 +20,10 @@ title: StartEditorServicesRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
 | ScriptId | `int?` | Yes (nullable value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | TerminalId | `Guid` | No (value type) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: Send-GetPowerShellInstallScriptParameters
 | Source | `Cmdlets/SendGetPowerShellInstallScriptParameters.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/agents/powershell-install-script? |
-| Return Type | `GetPowerShellInstallScriptParameters, IScript` |
+| Return Type | [GetPowerShellInstallScriptParameters](../models/GetPowerShellInstallScriptParameters.md), [IScript](../models/IScript.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-GetPowerShellInstallScriptParameters
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/powershell-install-script?` and deserializes to `GetPowerShellInstallScriptParameters, IScript`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/powershell-install-script?` and deserializes to [GetPowerShellInstallScriptParameters](../models/GetPowerShellInstallScriptParameters.md), [IScript](../models/IScript.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `GetPowerShellInstallScriptParameters` | True | — | All | None |
+| PayloadBody | [GetPowerShellInstallScriptParameters](../models/GetPowerShellInstallScriptParameters.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-GetPowerShellInstallScriptParameters
 
 ## Outputs
 
-- `GetPowerShellInstallScriptParameters, IScript` records produced by `ImmyBotApiService.POST`
+- [GetPowerShellInstallScriptParameters](../models/GetPowerShellInstallScriptParameters.md), [IScript](../models/IScript.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

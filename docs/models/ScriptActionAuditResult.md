@@ -10,7 +10,7 @@ title: ScriptActionAuditResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ScriptActionAuditResult>` |
+| Implements | IEquatable<[ScriptActionAuditResult](ScriptActionAuditResult.md)> |
 | Source | `Models/ScriptActionAuditResult.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: ScriptActionAuditResult
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Audit | `ScriptActionAudit` | Reference type (nullable) | — |
+| Audit | [ScriptActionAudit](ScriptActionAudit.md) | Reference type (nullable) | — |
 | Total | `int` | No (value type) | — |
 
 ## Serialization

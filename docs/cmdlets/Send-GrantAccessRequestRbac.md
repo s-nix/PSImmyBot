@@ -10,7 +10,7 @@ title: Send-GrantAccessRequestRbac
 | Source | `Cmdlets/SendGrantAccessRequestRbac.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/users/grant-access? |
-| Return Type | `GrantAccessRequestRbac, CommandResult` |
+| Return Type | [GrantAccessRequestRbac](../models/GrantAccessRequestRbac.md), [CommandResult](../models/CommandResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-GrantAccessRequestRbac
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/grant-access?` and deserializes to `GrantAccessRequestRbac, CommandResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/users/grant-access?` and deserializes to [GrantAccessRequestRbac](../models/GrantAccessRequestRbac.md), [CommandResult](../models/CommandResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `GrantAccessRequestRbac` | True | — | All | None |
+| PayloadBody | [GrantAccessRequestRbac](../models/GrantAccessRequestRbac.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-GrantAccessRequestRbac
 
 ## Outputs
 
-- `GrantAccessRequestRbac, CommandResult` records produced by `ImmyBotApiService.POST`
+- [GrantAccessRequestRbac](../models/GrantAccessRequestRbac.md), [CommandResult](../models/CommandResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: AzureSyncResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureSyncResult>` |
+| Implements | IEquatable<[AzureSyncResult](AzureSyncResult.md)> |
 | Source | `Models/AzureSyncResult.cs` |
 
 ## Overview

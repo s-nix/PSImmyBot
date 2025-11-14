@@ -28,10 +28,10 @@ title: New-ApplicationPreferences
 | AllowNonAdminsToManageAssignments | `Boolean` | True | — | All | None |
 | AutomaticImmyBotReleaseUpdateHour | `Int32` | True | — | All | None |
 | DaysToWaitBeforeAutomaticImmyBotUpdate | `Int32` | True | — | All | None |
-| DefaultBranding | `Branding` | True | — | All | None |
+| DefaultBranding | [Branding](../models/Branding.md) | True | — | All | None |
 | DefaultBrandingId | `Nullable`1` | False | — | All | None |
-| DefaultEmailBccList | `DefaultEmailBccList` | True | — | All | None |
-| DefaultScriptTimeouts | `DefaultScriptTimeouts` | True | — | All | None |
+| DefaultEmailBccList | [DefaultEmailBccList](../models/DefaultEmailBccList.md) | True | — | All | None |
+| DefaultScriptTimeouts | [DefaultScriptTimeouts](../models/DefaultScriptTimeouts.md) | True | — | All | None |
 | DefaultTimeZone | `String` | False | — | All | None |
 | DisconnectLeastActiveEditorServiceWhenLimitReached | `Boolean` | True | — | All | None |
 | EnableAutomaticImmyBotReleaseUpdates | `Boolean` | True | — | All | None |

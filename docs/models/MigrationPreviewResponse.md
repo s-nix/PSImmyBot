@@ -10,7 +10,7 @@ title: MigrationPreviewResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MigrationPreviewResponse>` |
+| Implements | IEquatable<[MigrationPreviewResponse](MigrationPreviewResponse.md)> |
 | Source | `Models/MigrationPreviewResponse.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: MigrationPreviewResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| MaintenanceTasks | `ICollection<MigratorDataDto>` | Reference type (nullable) | — |
-| Scripts | `ICollection<MigratorDataDto>` | Reference type (nullable) | — |
-| Software | `ICollection<MigratorDataDto>` | Reference type (nullable) | — |
+| MaintenanceTasks | ICollection<[MigratorDataDto](MigratorDataDto.md)> | Reference type (nullable) | — |
+| Scripts | ICollection<[MigratorDataDto](MigratorDataDto.md)> | Reference type (nullable) | — |
+| Software | ICollection<[MigratorDataDto](MigratorDataDto.md)> | Reference type (nullable) | — |
 | SoftwareHasLocalPrerequisites | `bool` | No (value type) | — |
-| SoftwareVersions | `ICollection<MigratorDataDto>` | Reference type (nullable) | — |
+| SoftwareVersions | ICollection<[MigratorDataDto](MigratorDataDto.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

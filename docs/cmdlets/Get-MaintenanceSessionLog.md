@@ -10,7 +10,7 @@ title: Get-MaintenanceSessionLog
 | Source | `Cmdlets/GetMaintenanceSessionLog.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-sessions/{SessionId}/last-log? |
-| Return Type | `GetMaintenanceSessionLogResponse` |
+| Return Type | [GetMaintenanceSessionLogResponse](../models/GetMaintenanceSessionLogResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MaintenanceSessionLog
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-sessions/{SessionId}/last-log?` and deserializes to `GetMaintenanceSessionLogResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-sessions/{SessionId}/last-log?` and deserializes to [GetMaintenanceSessionLogResponse](../models/GetMaintenanceSessionLogResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-MaintenanceSessionLog
 
 ## Outputs
 
-- `GetMaintenanceSessionLogResponse` records produced by `ImmyBotApiService.GET`
+- [GetMaintenanceSessionLogResponse](../models/GetMaintenanceSessionLogResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: Get-SimplePerson
 | Source | `Cmdlets/GetSimplePerson.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/persons/{Id}? |
-| Return Type | `GetSimplePersonResponse` |
+| Return Type | [GetSimplePersonResponse](../models/GetSimplePersonResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-SimplePerson
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/persons/{Id}?` and deserializes to `GetSimplePersonResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/persons/{Id}?` and deserializes to [GetSimplePersonResponse](../models/GetSimplePersonResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-SimplePerson
 
 ## Outputs
 
-- `GetSimplePersonResponse` records produced by `ImmyBotApiService.GET`
+- [GetSimplePersonResponse](../models/GetSimplePersonResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

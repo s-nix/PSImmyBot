@@ -27,7 +27,7 @@ title: New-GetMaintenanceSessionLogResponse
 | Id | `Int32` | True | — | All | None |
 | IsPrimary | `Boolean` | True | — | All | None |
 | MaintenanceActionId | `Nullable`1` | False | — | All | None |
-| MaintenanceActionStatus | `MaintenanceActionStatus` | True | — | All | None |
+| MaintenanceActionStatus | [MaintenanceActionStatus](../models/MaintenanceActionStatus.md) | True | — | All | None |
 | MaintenanceSessionId | `Int32` | True | — | All | None |
 | MaintenanceSessionStageId | `Nullable`1` | False | — | All | None |
 | Message | `String` | False | — | All | None |
@@ -40,14 +40,14 @@ title: New-GetMaintenanceSessionLogResponse
 | ProgressSecondsRemaining | `Nullable`1` | False | — | All | None |
 | ProgressStatus | `String` | False | — | All | None |
 | Script | `String` | False | — | All | None |
-| ScriptExecutionContext | `ScriptExecutionContext` | True | — | All | None |
+| ScriptExecutionContext | [ScriptExecutionContext](../models/ScriptExecutionContext.md) | True | — | All | None |
 | ScriptId | `Nullable`1` | False | — | All | None |
-| ScriptLanguage | `ScriptLanguage` | True | — | All | None |
+| ScriptLanguage | [ScriptLanguage](../models/ScriptLanguage.md) | True | — | All | None |
 | ScriptOutput | `String` | False | — | All | None |
 | ScriptParameters | `IDictionary`2` | False | — | All | None |
 | ScriptTimeout | `Nullable`1` | False | — | All | None |
-| ScriptType | `DatabaseType` | True | — | All | None |
-| SessionLogType | `SessionLogType` | True | — | All | None |
+| ScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
+| SessionLogType | [SessionLogType](../models/SessionLogType.md) | True | — | All | None |
 | SessionPhaseId | `Nullable`1` | False | — | All | None |
 | Time | `DateTimeOffset` | True | — | All | None |
 | UpdatedTime | `Nullable`1` | False | — | All | None |

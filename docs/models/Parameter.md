@@ -10,7 +10,7 @@ title: Parameter
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Parameter>` |
+| Implements | IEquatable<[Parameter](Parameter.md)> |
 | Source | `Models/Parameter.cs` |
 
 ## Overview
@@ -31,13 +31,13 @@ title: Parameter
 | IsMandatory | `bool` | No (value type) | — |
 | IsValueStripped | `bool` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OauthConsentParameterData | `OauthConsentData` | Reference type (nullable) | — |
+| OauthConsentParameterData | [OauthConsentData](OauthConsentData.md) | Reference type (nullable) | — |
 | OnlyForHelpText | `bool` | No (value type) | — |
-| ParameterType | `ParameterType` | Reference type (nullable) | — |
+| ParameterType | [ParameterType](ParameterType.md) | Reference type (nullable) | — |
 | Position | `int` | No (value type) | — |
 | ShowDropdownAsRadioButtons | `bool` | No (value type) | — |
 | ShowRawHelpText | `bool` | No (value type) | — |
-| ValidDropdownValues | `ICollection<ParameterDropdownTextValue>` | Reference type (nullable) | — |
+| ValidDropdownValues | ICollection<[ParameterDropdownTextValue](ParameterDropdownTextValue.md)> | Reference type (nullable) | — |
 | ValidParamSetValues | `ICollection<string>` | Reference type (nullable) | — |
 | ValueFromPipeline | `bool` | No (value type) | — |
 

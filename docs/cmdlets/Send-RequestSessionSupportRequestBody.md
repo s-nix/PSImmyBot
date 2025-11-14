@@ -24,7 +24,7 @@ title: Send-RequestSessionSupportRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `RequestSessionSupportRequestBody` | True | — | All | None |
+| PayloadBody | [RequestSessionSupportRequestBody](../models/RequestSessionSupportRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

@@ -24,14 +24,14 @@ title: New-MaintenanceTaskParameter
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DataType | `MaintenanceTaskParameterType` | True | — | All | None |
-| DefaultMedia | `Media` | True | — | All | None |
-| DefaultMediaDatabaseType | `DatabaseType` | True | — | All | None |
+| DataType | [MaintenanceTaskParameterType](../models/MaintenanceTaskParameterType.md) | True | — | All | None |
+| DefaultMedia | [Media](../models/Media.md) | True | — | All | None |
+| DefaultMediaDatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | DefaultMediaId | `Nullable`1` | False | — | All | None |
 | DefaultValue | `String` | False | — | All | None |
 | Hidden | `Boolean` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| MaintenanceTask | `MaintenanceTask` | True | — | All | None |
+| MaintenanceTask | [MaintenanceTask](../models/MaintenanceTask.md) | True | — | All | None |
 | MaintenanceTaskId | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | Notes | `String` | False | — | All | None |

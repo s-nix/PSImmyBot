@@ -10,7 +10,7 @@ title: GetGlobalSoftwareResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetGlobalSoftwareResponse>` |
+| Implements | IEquatable<[GetGlobalSoftwareResponse](GetGlobalSoftwareResponse.md)> |
 | Source | `Models/GetGlobalSoftwareResponse.cs` |
 
 ## Overview
@@ -23,55 +23,55 @@ title: GetGlobalSoftwareResponse
 | AgentIntegrationTypeId | `Guid?` | Yes (nullable value type) | — |
 | ChocoProviderSoftwareId | `string` | Reference type (nullable) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
-| DetectionMethod | `DetectionMethod` | No (value type) | — |
+| DetectionMethod | [DetectionMethod](DetectionMethod.md) | No (value type) | — |
 | DetectionScriptId | `int?` | Yes (nullable value type) | — |
-| DetectionScriptType | `DatabaseType` | No (value type) | — |
+| DetectionScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DownloadInstallerScriptId | `int?` | Yes (nullable value type) | — |
-| DownloadInstallerScriptType | `DatabaseType` | No (value type) | — |
+| DownloadInstallerScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DynamicVersionsScriptId | `int?` | Yes (nullable value type) | — |
-| DynamicVersionsScriptType | `DatabaseType` | No (value type) | — |
+| DynamicVersionsScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Hidden | `bool` | No (value type) | — |
 | Id | `int?` | Yes (nullable value type) | — |
 | Identifier | `string` | Reference type (nullable) | — |
 | InstallOrder | `int` | No (value type) | — |
 | InstallScriptId | `int?` | Yes (nullable value type) | — |
-| InstallScriptType | `DatabaseType` | No (value type) | — |
+| InstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | LicenseDescription | `string` | Reference type (nullable) | — |
-| LicenseRequirement | `SoftwareLicenseRequirement` | No (value type) | — |
-| LicenseType | `LicenseType` | No (value type) | — |
+| LicenseRequirement | [SoftwareLicenseRequirement](SoftwareLicenseRequirement.md) | No (value type) | — |
+| LicenseType | [LicenseType](LicenseType.md) | No (value type) | — |
 | MaintenanceTaskId | `int?` | Yes (nullable value type) | — |
-| MaintenanceTaskType | `DatabaseType` | No (value type) | — |
+| MaintenanceTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | NiniteProviderSoftwareId | `string` | Reference type (nullable) | — |
 | Notes | `string` | Reference type (nullable) | — |
 | OwnerTenantId | `int?` | Yes (nullable value type) | — |
 | PostInstallScriptId | `int?` | Yes (nullable value type) | — |
-| PostInstallScriptType | `DatabaseType` | No (value type) | — |
+| PostInstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | PostUninstallScriptId | `int?` | Yes (nullable value type) | — |
-| PostUninstallScriptType | `DatabaseType` | No (value type) | — |
+| PostUninstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | RebootNeeded | `bool` | No (value type) | — |
 | Recommended | `bool` | No (value type) | — |
 | RepairScriptId | `int?` | Yes (nullable value type) | — |
-| RepairScriptType | `DatabaseType` | No (value type) | — |
-| RepairType | `RepairActionType` | No (value type) | — |
-| SoftwareIcon | `GlobalMediaResponse` | Reference type (nullable) | — |
+| RepairScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| RepairType | [RepairActionType](RepairActionType.md) | No (value type) | — |
+| SoftwareIcon | [GlobalMediaResponse](GlobalMediaResponse.md) | Reference type (nullable) | — |
 | SoftwareIconMediaId | `int?` | Yes (nullable value type) | — |
-| SoftwarePrerequisites | `ICollection<GetSoftwarePrerequisiteResponse>` | Reference type (nullable) | — |
+| SoftwarePrerequisites | ICollection<[GetSoftwarePrerequisiteResponse](GetSoftwarePrerequisiteResponse.md)> | Reference type (nullable) | — |
 | SoftwareTableName | `string` | Reference type (nullable) | — |
-| SoftwareTableNameSearchMode | `SoftwareTableNameSearchMode` | No (value type) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
-| SoftwareVersions | `ICollection<GetGlobalSoftwareVersionResponse>` | Reference type (nullable) | — |
+| SoftwareTableNameSearchMode | [SoftwareTableNameSearchMode](SoftwareTableNameSearchMode.md) | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
+| SoftwareVersions | ICollection<[GetGlobalSoftwareVersionResponse](GetGlobalSoftwareVersionResponse.md)> | Reference type (nullable) | — |
 | TestFailedError | `string` | Reference type (nullable) | — |
 | TestRequired | `bool` | No (value type) | — |
 | TestScriptId | `int?` | Yes (nullable value type) | — |
-| TestScriptType | `DatabaseType` | No (value type) | — |
+| TestScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | UninstallScriptId | `int?` | Yes (nullable value type) | — |
-| UninstallScriptType | `DatabaseType` | No (value type) | — |
+| UninstallScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | UpgradeCode | `string` | Reference type (nullable) | — |
 | UpgradeScriptId | `int?` | Yes (nullable value type) | — |
-| UpgradeScriptType | `DatabaseType` | No (value type) | — |
-| UpgradeStrategy | `UpdateActionType` | No (value type) | — |
+| UpgradeScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| UpgradeStrategy | [UpdateActionType](UpdateActionType.md) | No (value type) | — |
 | UseDynamicVersions | `bool` | No (value type) | — |
 
 ## Serialization

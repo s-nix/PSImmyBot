@@ -10,7 +10,7 @@ title: Get-MaintenanceTaskSearchResult
 | Source | `Cmdlets/GetMaintenanceTaskSearchResult.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-tasks/search? |
-| Return Type | `List<MaintenanceTaskSearchResult>` |
+| Return Type | List<[MaintenanceTaskSearchResult](../models/MaintenanceTaskSearchResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MaintenanceTaskSearchResult
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-tasks/search?` and deserializes to `List<MaintenanceTaskSearchResult>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-tasks/search?` and deserializes to List<[MaintenanceTaskSearchResult](../models/MaintenanceTaskSearchResult.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -38,7 +38,7 @@ title: Get-MaintenanceTaskSearchResult
 
 ## Outputs
 
-- `List<MaintenanceTaskSearchResult>` records produced by `ImmyBotApiService.GET`
+- List<[MaintenanceTaskSearchResult](../models/MaintenanceTaskSearchResult.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

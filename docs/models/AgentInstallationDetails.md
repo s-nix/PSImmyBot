@@ -10,7 +10,7 @@ title: AgentInstallationDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentInstallationDetails>` |
+| Implements | IEquatable<[AgentInstallationDetails](AgentInstallationDetails.md)> |
 | Source | `Models/AgentInstallationDetails.cs` |
 
 ## Overview

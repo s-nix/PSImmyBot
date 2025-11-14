@@ -24,21 +24,21 @@ title: New-EventInfo
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AddMethod | `MethodInfo` | True | — | All | None |
-| Attributes | `EventAttributes` | True | — | All | None |
+| AddMethod | [MethodInfo](../models/MethodInfo.md) | True | — | All | None |
+| Attributes | [EventAttributes](../models/EventAttributes.md) | True | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
-| DeclaringType | `Type` | True | — | All | None |
-| EventHandlerType | `Type` | True | — | All | None |
+| DeclaringType | [Type](../models/Type.md) | True | — | All | None |
+| EventHandlerType | [Type](../models/Type.md) | True | — | All | None |
 | IsCollectible | `Boolean` | True | — | All | None |
 | IsMulticast | `Boolean` | True | — | All | None |
 | IsSpecialName | `Boolean` | True | — | All | None |
-| MemberType | `MemberTypes` | True | — | All | None |
+| MemberType | [MemberTypes](../models/MemberTypes.md) | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
-| Module | `Module` | True | — | All | None |
+| Module | [Module](../models/Module.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| RaiseMethod | `MethodInfo` | True | — | All | None |
-| ReflectedType | `Type` | True | — | All | None |
-| RemoveMethod | `MethodInfo` | True | — | All | None |
+| RaiseMethod | [MethodInfo](../models/MethodInfo.md) | True | — | All | None |
+| ReflectedType | [Type](../models/Type.md) | True | — | All | None |
+| RemoveMethod | [MethodInfo](../models/MethodInfo.md) | True | — | All | None |
 
 ### Parameter sets
 

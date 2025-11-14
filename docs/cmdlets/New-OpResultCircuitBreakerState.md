@@ -25,8 +25,8 @@ title: New-OpResultCircuitBreakerState
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | CircuitState | `String` | False | — | All | None |
-| LastException | `LastException` | True | — | All | None |
-| LastResult | `OpResult` | True | — | All | None |
+| LastException | [LastException](../models/LastException.md) | True | — | All | None |
+| LastResult | [OpResult](../models/OpResult.md) | True | — | All | None |
 | PolicyName | `String` | False | — | All | None |
 
 ### Parameter sets

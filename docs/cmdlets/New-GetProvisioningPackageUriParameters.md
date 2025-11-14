@@ -24,7 +24,7 @@ title: New-GetProvisioningPackageUriParameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PpkgOptions | `ProvisioningPackageOptions` | True | — | All | None |
+| PpkgOptions | [ProvisioningPackageOptions](../models/ProvisioningPackageOptions.md) | True | — | All | None |
 | TargetExternalClientId | `String` | False | — | All | None |
 
 ### Parameter sets

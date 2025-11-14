@@ -10,7 +10,7 @@ title: TenantScript
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantScript>` |
+| Implements | IEquatable<[TenantScript](TenantScript.md)> |
 | Source | `Models/TenantScript.cs` |
 
 ## Overview
@@ -20,10 +20,10 @@ title: TenantScript
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Relationship | `Relationship` | No (value type) | — |
-| Script | `Script` | Reference type (nullable) | — |
+| Relationship | [Relationship](Relationship.md) | No (value type) | — |
+| Script | [Script](Script.md) | Reference type (nullable) | — |
 | ScriptId | `int` | No (value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

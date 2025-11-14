@@ -10,7 +10,7 @@ title: GetMaintenanceActionResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetMaintenanceActionResponse>` |
+| Implements | IEquatable<[GetMaintenanceActionResponse](GetMaintenanceActionResponse.md)> |
 | Source | `Models/GetMaintenanceActionResponse.cs` |
 
 ## Overview
@@ -20,10 +20,10 @@ title: GetMaintenanceActionResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ActionType | `MaintenanceActionType` | No (value type) | — |
+| ActionType | [MaintenanceActionType](MaintenanceActionType.md) | No (value type) | — |
 | ActionTypeName | `string` | Reference type (nullable) | — |
 | AssignmentId | `int?` | Yes (nullable value type) | — |
-| AssignmentType | `DatabaseType` | No (value type) | — |
+| AssignmentType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | ComputerName | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
@@ -31,7 +31,7 @@ title: GetMaintenanceActionResponse
 | DependentsNames | `ICollection<string>` | Reference type (nullable) | — |
 | DependsOnNames | `ICollection<string>` | Reference type (nullable) | — |
 | Description | `string` | Reference type (nullable) | — |
-| DesiredSoftwareState | `DesiredSoftwareState` | No (value type) | — |
+| DesiredSoftwareState | [DesiredSoftwareState](DesiredSoftwareState.md) | No (value type) | — |
 | DesiredVersionString | `string` | Reference type (nullable) | — |
 | DetectedVersionString | `string` | Reference type (nullable) | — |
 | EndTime | `DateTimeOffset` | No (value type) | — |
@@ -41,9 +41,9 @@ title: GetMaintenanceActionResponse
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
 | MaintenanceTaskGetResult | `string` | Reference type (nullable) | — |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | No (value type) | — |
-| MaintenanceTaskType | `DatabaseType` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceTaskMode | [MaintenanceTaskMode](MaintenanceTaskMode.md) | No (value type) | — |
+| MaintenanceTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | MaintenanceTypeName | `string` | Reference type (nullable) | — |
 | ParentId | `int?` | Yes (nullable value type) | — |
 | PolicyDescription | `string` | Reference type (nullable) | — |
@@ -51,16 +51,16 @@ title: GetMaintenanceActionResponse
 | PostMaintenanceTestResult | `bool?` | Yes (nullable value type) | — |
 | PostMaintenanceTestResultMessage | `string` | Reference type (nullable) | — |
 | PostMaintenanceTestType | `int?` | Yes (nullable value type) | — |
-| Reason | `MaintenanceActionReason` | No (value type) | — |
-| Result | `MaintenanceActionResult` | No (value type) | — |
+| Reason | [MaintenanceActionReason](MaintenanceActionReason.md) | No (value type) | — |
+| Result | [MaintenanceActionResult](MaintenanceActionResult.md) | No (value type) | — |
 | ResultName | `string` | Reference type (nullable) | — |
-| ResultReason | `MaintenanceActionResultReason` | No (value type) | — |
+| ResultReason | [MaintenanceActionResultReason](MaintenanceActionResultReason.md) | No (value type) | — |
 | ResultReasonMessage | `string` | Reference type (nullable) | — |
 | SoftwareActionIdForConfigurationTask | `int?` | Yes (nullable value type) | — |
-| SoftwareProviderType | `SoftwareProviderType` | No (value type) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareProviderType | [SoftwareProviderType](SoftwareProviderType.md) | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 | StartTime | `DateTimeOffset` | No (value type) | — |
-| Status | `MaintenanceActionStatus` | No (value type) | — |
+| Status | [MaintenanceActionStatus](MaintenanceActionStatus.md) | No (value type) | — |
 | StatusName | `string` | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | TenantName | `string` | Reference type (nullable) | — |

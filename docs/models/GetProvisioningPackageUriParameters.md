@@ -10,7 +10,7 @@ title: GetProvisioningPackageUriParameters
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetProvisioningPackageUriParameters>` |
+| Implements | IEquatable<[GetProvisioningPackageUriParameters](GetProvisioningPackageUriParameters.md)> |
 | Source | `Models/GetProvisioningPackageUriParameters.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetProvisioningPackageUriParameters
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| PpkgOptions | `ProvisioningPackageOptions` | Reference type (nullable) | — |
+| PpkgOptions | [ProvisioningPackageOptions](ProvisioningPackageOptions.md) | Reference type (nullable) | — |
 | TargetExternalClientId | `string` | Reference type (nullable) | — |
 
 ## Serialization

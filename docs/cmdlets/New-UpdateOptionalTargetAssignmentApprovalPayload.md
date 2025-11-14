@@ -24,11 +24,11 @@ title: New-UpdateOptionalTargetAssignmentApprovalPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Approved | `TargetAssignmentApprovalStatus` | True | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| Approved | [TargetAssignmentApprovalStatus](../models/TargetAssignmentApprovalStatus.md) | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 | Target | `String` | False | — | All | None |
 | TargetAssignmentId | `Int32` | True | — | All | None |
-| TargetType | `TargetType` | True | — | All | None |
+| TargetType | [TargetType](../models/TargetType.md) | True | — | All | None |
 
 ### Parameter sets
 

@@ -24,7 +24,7 @@ title: New-MigrateToSupersedingAssignmentWhatIfResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Assignment | `LocalTargetAssignmentResource` | True | — | All | None |
+| Assignment | [LocalTargetAssignmentResource](../models/LocalTargetAssignmentResource.md) | True | — | All | None |
 | IsNew | `Boolean` | True | — | All | None |
 | PolicyDescription | `String` | False | — | All | None |
 

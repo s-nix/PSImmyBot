@@ -10,7 +10,7 @@ title: Get-ScriptActionAuditResult
 | Source | `Cmdlets/GetScriptActionAuditResult.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/global/{ScriptId}/audit? |
-| Return Type | `ScriptActionAuditResult` |
+| Return Type | [ScriptActionAuditResult](../models/ScriptActionAuditResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ScriptActionAuditResult
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/global/{ScriptId}/audit?` and deserializes to `ScriptActionAuditResult`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/global/{ScriptId}/audit?` and deserializes to [ScriptActionAuditResult](../models/ScriptActionAuditResult.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -34,7 +34,7 @@ title: Get-ScriptActionAuditResult
 
 ## Outputs
 
-- `ScriptActionAuditResult` records produced by `ImmyBotApiService.GET`
+- [ScriptActionAuditResult](../models/ScriptActionAuditResult.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: UserRole
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UserRole>` |
+| Implements | IEquatable<[UserRole](UserRole.md)> |
 | Source | `Models/UserRole.cs` |
 
 ## Overview
@@ -23,11 +23,11 @@ title: UserRole
 | AuditObjectName | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| Role | `Role` | Reference type (nullable) | — |
+| Role | [Role](Role.md) | Reference type (nullable) | — |
 | RoleId | `int` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| User | `User` | Reference type (nullable) | — |
+| User | [User](User.md) | Reference type (nullable) | — |
 | UserId | `int` | No (value type) | — |
 
 ## Serialization

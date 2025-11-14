@@ -24,7 +24,7 @@ title: New-SourceContextLogLevel
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| LogLevel | `LogLevel` | True | — | All | None |
+| LogLevel | [LogLevel](../models/LogLevel.md) | True | — | All | None |
 | SourceContext | `String` | False | — | All | None |
 
 ### Parameter sets

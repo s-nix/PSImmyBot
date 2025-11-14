@@ -10,7 +10,7 @@ title: Send-CreateGlobalScriptRequestBody
 | Source | `Cmdlets/SendCreateGlobalScriptRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/global? |
-| Return Type | `CreateGlobalScriptRequestBody, GetGlobalScriptResponse` |
+| Return Type | [CreateGlobalScriptRequestBody](../models/CreateGlobalScriptRequestBody.md), [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-CreateGlobalScriptRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/global?` and deserializes to `CreateGlobalScriptRequestBody, GetGlobalScriptResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/global?` and deserializes to [CreateGlobalScriptRequestBody](../models/CreateGlobalScriptRequestBody.md), [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -26,7 +26,7 @@ title: Send-CreateGlobalScriptRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | IgnoreSyntaxErrors | `Nullable`1` | False | — | All | None |
-| PayloadBody | `CreateGlobalScriptRequestBody` | True | — | All | None |
+| PayloadBody | [CreateGlobalScriptRequestBody](../models/CreateGlobalScriptRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -34,7 +34,7 @@ title: Send-CreateGlobalScriptRequestBody
 
 ## Outputs
 
-- `CreateGlobalScriptRequestBody, GetGlobalScriptResponse` records produced by `ImmyBotApiService.POST`
+- [CreateGlobalScriptRequestBody](../models/CreateGlobalScriptRequestBody.md), [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

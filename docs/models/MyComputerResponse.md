@@ -10,7 +10,7 @@ title: MyComputerResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MyComputerResponse>` |
+| Implements | IEquatable<[MyComputerResponse](MyComputerResponse.md)> |
 | Source | `Models/MyComputerResponse.cs` |
 
 ## Overview

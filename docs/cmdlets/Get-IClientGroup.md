@@ -10,7 +10,7 @@ title: Get-IClientGroup
 | Source | `Cmdlets/GetIClientGroup.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-types/client-group-types/{ClientGroupTypeId}/client-groups? |
-| Return Type | `List<IClientGroup>` |
+| Return Type | List<[IClientGroup](../models/IClientGroup.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-IClientGroup
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-types/client-group-types/{ClientGroupTypeId}/client-groups?` and deserializes to `List<IClientGroup>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-types/client-group-types/{ClientGroupTypeId}/client-groups?` and deserializes to List<[IClientGroup](../models/IClientGroup.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -35,7 +35,7 @@ title: Get-IClientGroup
 
 ## Outputs
 
-- `List<IClientGroup>` records produced by `ImmyBotApiService.GET`
+- List<[IClientGroup](../models/IClientGroup.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

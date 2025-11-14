@@ -24,9 +24,9 @@ title: New-GetPreferencesResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ApplicationPreferences | `ApplicationPreferences` | True | — | All | None |
-| TenantPreferences | `TenantPreferences` | True | — | All | None |
-| UserPreferences | `UserPreferences` | True | — | All | None |
+| ApplicationPreferences | [ApplicationPreferences](../models/ApplicationPreferences.md) | True | — | All | None |
+| TenantPreferences | [TenantPreferences](../models/TenantPreferences.md) | True | — | All | None |
+| UserPreferences | [UserPreferences](../models/UserPreferences.md) | True | — | All | None |
 
 ### Parameter sets
 

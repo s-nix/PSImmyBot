@@ -10,7 +10,7 @@ title: DynamicFormBindResultWithConvertedParameters
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DynamicFormBindResultWithConvertedParameters>` |
+| Implements | IEquatable<[DynamicFormBindResultWithConvertedParameters](DynamicFormBindResultWithConvertedParameters.md)> |
 | Source | `Models/DynamicFormBindResultWithConvertedParameters.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: DynamicFormBindResultWithConvertedParameters
 | ConvertedParameters | `IDictionary<string, object>` | Reference type (nullable) | — |
 | HasErrors | `bool` | No (value type) | — |
 | ParameterSetName | `string` | Reference type (nullable) | — |
-| ShowCommandInfo | `ShowCommandInfo` | Reference type (nullable) | — |
+| ShowCommandInfo | [ShowCommandInfo](ShowCommandInfo.md) | Reference type (nullable) | — |
 
 ## Serialization
 

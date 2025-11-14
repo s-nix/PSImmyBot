@@ -10,7 +10,7 @@ title: Send-LinkClientToNewTenantRequestBody
 | Source | `Cmdlets/SendLinkClientToNewTenantRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/clients/link-to-new-tenant? |
-| Return Type | `LinkClientToNewTenantRequestBody, LinkClientToNewTenantResponseBody` |
+| Return Type | [LinkClientToNewTenantRequestBody](../models/LinkClientToNewTenantRequestBody.md), [LinkClientToNewTenantResponseBody](../models/LinkClientToNewTenantResponseBody.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-LinkClientToNewTenantRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/clients/link-to-new-tenant?` and deserializes to `LinkClientToNewTenantRequestBody, LinkClientToNewTenantResponseBody`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/clients/link-to-new-tenant?` and deserializes to [LinkClientToNewTenantRequestBody](../models/LinkClientToNewTenantRequestBody.md), [LinkClientToNewTenantResponseBody](../models/LinkClientToNewTenantResponseBody.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `LinkClientToNewTenantRequestBody` | True | — | All | None |
+| PayloadBody | [LinkClientToNewTenantRequestBody](../models/LinkClientToNewTenantRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-LinkClientToNewTenantRequestBody
 
 ## Outputs
 
-- `LinkClientToNewTenantRequestBody, LinkClientToNewTenantResponseBody` records produced by `ImmyBotApiService.POST`
+- [LinkClientToNewTenantRequestBody](../models/LinkClientToNewTenantRequestBody.md), [LinkClientToNewTenantResponseBody](../models/LinkClientToNewTenantResponseBody.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

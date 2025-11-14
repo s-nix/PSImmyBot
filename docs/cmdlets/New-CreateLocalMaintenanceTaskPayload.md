@@ -24,16 +24,16 @@ title: New-CreateLocalMaintenanceTaskPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | ExecuteSerially | `Boolean` | True | — | All | None |
 | GetEnabled | `Boolean` | True | — | All | None |
 | GetScriptId | `Nullable`1` | False | — | All | None |
-| GetScriptType | `DatabaseType` | True | — | All | None |
+| GetScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | IconMediaId | `Nullable`1` | False | — | All | None |
 | IgnoreDuringAutomaticOnboarding | `Boolean` | True | — | All | None |
 | IntegrationTypeId | `Nullable`1` | False | — | All | None |
 | IsConfigurationTask | `Boolean` | True | — | All | None |
-| MaintenanceTaskCategory | `MaintenanceTaskCategory` | True | — | All | None |
+| MaintenanceTaskCategory | [MaintenanceTaskCategory](../models/MaintenanceTaskCategory.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | Notes | `String` | False | — | All | None |
 | OnboardingOnly | `Boolean` | True | — | All | None |
@@ -41,15 +41,15 @@ title: New-CreateLocalMaintenanceTaskPayload
 | Recommended | `Boolean` | True | — | All | None |
 | SetEnabled | `Boolean` | True | — | All | None |
 | SetScriptId | `Nullable`1` | False | — | All | None |
-| SetScriptType | `DatabaseType` | True | — | All | None |
+| SetScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | SupersededByTaskId | `Nullable`1` | False | — | All | None |
 | SupersededByTaskMigrationScriptId | `Nullable`1` | False | — | All | None |
-| SupersededByTaskMigrationScriptType | `DatabaseType` | True | — | All | None |
-| SupersededByTaskType | `DatabaseType` | True | — | All | None |
+| SupersededByTaskMigrationScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
+| SupersededByTaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | Tenants | `ICollection`1` | False | — | All | None |
 | TestEnabled | `Boolean` | True | — | All | None |
 | TestScriptId | `Nullable`1` | False | — | All | None |
-| TestScriptType | `DatabaseType` | True | — | All | None |
+| TestScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | UseScriptParamBlock | `Boolean` | True | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: Push-UpdatePersonPayload
 | Source | `Cmdlets/PushUpdatePersonPayload.cs` |
 | HTTP Method | PUT |
 | Endpoint | /api/v1/persons/{Id}? |
-| Return Type | `UpdatePersonPayload, GetSimplePersonResponse` |
+| Return Type | [UpdatePersonPayload](../models/UpdatePersonPayload.md), [GetSimplePersonResponse](../models/GetSimplePersonResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Push-UpdatePersonPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PUT` targeting `/api/v1/persons/{Id}?` and deserializes to `UpdatePersonPayload, GetSimplePersonResponse`.
+- Calls `ImmyBotApiService.PUT` targeting `/api/v1/persons/{Id}?` and deserializes to [UpdatePersonPayload](../models/UpdatePersonPayload.md), [GetSimplePersonResponse](../models/GetSimplePersonResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdatePersonPayload` | True | — | All | None |
+| PayloadBody | [UpdatePersonPayload](../models/UpdatePersonPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Push-UpdatePersonPayload
 
 ## Outputs
 
-- `UpdatePersonPayload, GetSimplePersonResponse` records produced by `ImmyBotApiService.PUT`
+- [UpdatePersonPayload](../models/UpdatePersonPayload.md), [GetSimplePersonResponse](../models/GetSimplePersonResponse.md) records produced by `ImmyBotApiService.PUT`
 
 ## Notes
 

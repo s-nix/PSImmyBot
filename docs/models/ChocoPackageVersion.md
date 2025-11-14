@@ -10,7 +10,7 @@ title: ChocoPackageVersion
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ChocoPackageVersion>` |
+| Implements | IEquatable<[ChocoPackageVersion](ChocoPackageVersion.md)> |
 | Source | `Models/ChocoPackageVersion.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ChocoPackageVersion
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Id | `string` | Reference type (nullable) | — |
-| SemanticVersion | `NuGetVersion` | Reference type (nullable) | — |
+| SemanticVersion | [NuGetVersion](NuGetVersion.md) | Reference type (nullable) | — |
 | Title | `string` | Reference type (nullable) | — |
 | Version | `string` | Reference type (nullable) | — |
 

@@ -10,7 +10,7 @@ title: Get-Computer
 | Source | `Cmdlets/GetComputer.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}? |
-| Return Type | `GetComputerResponse` |
+| Return Type | [GetComputerResponse](../models/GetComputerResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Computer
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}?` and deserializes to `GetComputerResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}?` and deserializes to [GetComputerResponse](../models/GetComputerResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -38,7 +38,7 @@ title: Get-Computer
 
 ## Outputs
 
-- `GetComputerResponse` records produced by `ImmyBotApiService.GET`
+- [GetComputerResponse](../models/GetComputerResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

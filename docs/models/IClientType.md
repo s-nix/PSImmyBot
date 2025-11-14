@@ -10,7 +10,7 @@ title: IClientType
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IClientType>` |
+| Implements | IEquatable<[IClientType](IClientType.md)> |
 | Source | `Models/IClientType.cs` |
 
 ## Overview

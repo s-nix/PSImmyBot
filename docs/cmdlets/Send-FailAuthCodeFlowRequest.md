@@ -24,7 +24,7 @@ title: Send-FailAuthCodeFlowRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `FailAuthCodeFlowRequest` | True | — | All | None |
+| PayloadBody | [FailAuthCodeFlowRequest](../models/FailAuthCodeFlowRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

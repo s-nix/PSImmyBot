@@ -10,7 +10,7 @@ title: SemanticVersion
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SemanticVersion>` |
+| Implements | IEquatable<[SemanticVersion](SemanticVersion.md)> |
 | Source | `Models/SemanticVersion.cs` |
 
 ## Overview

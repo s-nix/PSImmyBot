@@ -25,9 +25,9 @@ title: New-LocalMediaResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | BlobReference | `String` | False | — | All | None |
-| Category | `MediaCategory` | True | — | All | None |
+| Category | [MediaCategory](../models/MediaCategory.md) | True | — | All | None |
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | FileName | `String` | False | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | MimeType | `String` | False | — | All | None |

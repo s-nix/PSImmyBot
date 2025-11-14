@@ -10,7 +10,7 @@ title: MaintenanceTaskParameterPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceTaskParameterPayload>` |
+| Implements | IEquatable<[MaintenanceTaskParameterPayload](MaintenanceTaskParameterPayload.md)> |
 | Source | `Models/MaintenanceTaskParameterPayload.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: MaintenanceTaskParameterPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DataType | `MaintenanceTaskParameterType` | No (value type) | — |
-| DefaultMediaDatabaseType | `DatabaseType` | No (value type) | — |
+| DataType | [MaintenanceTaskParameterType](MaintenanceTaskParameterType.md) | No (value type) | — |
+| DefaultMediaDatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DefaultMediaId | `int?` | Yes (nullable value type) | — |
 | DefaultValue | `string` | Reference type (nullable) | — |
 | Hidden | `bool` | No (value type) | — |

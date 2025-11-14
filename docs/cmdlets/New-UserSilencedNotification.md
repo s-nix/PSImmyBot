@@ -27,9 +27,9 @@ title: New-UserSilencedNotification
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | NotificationObjectId | `String` | False | — | All | None |
-| NotificationType | `NotificationType` | True | — | All | None |
+| NotificationType | [NotificationType](../models/NotificationType.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
-| User | `User` | True | — | All | None |
+| User | [User](../models/User.md) | True | — | All | None |
 | UserId | `Int32` | True | — | All | None |
 
 ### Parameter sets

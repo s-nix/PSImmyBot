@@ -24,9 +24,9 @@ title: New-OverrideTargetAssignmentRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DesiredSoftwareState | `DesiredSoftwareState` | True | — | All | None |
+| DesiredSoftwareState | [DesiredSoftwareState](../models/DesiredSoftwareState.md) | True | — | All | None |
 | Target | `String` | False | — | All | None |
-| TargetType | `TargetType` | True | — | All | None |
+| TargetType | [TargetType](../models/TargetType.md) | True | — | All | None |
 
 ### Parameter sets
 

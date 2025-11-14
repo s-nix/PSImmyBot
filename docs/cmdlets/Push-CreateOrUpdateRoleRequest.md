@@ -10,7 +10,7 @@ title: Push-CreateOrUpdateRoleRequest
 | Source | `Cmdlets/PushCreateOrUpdateRoleRequest.cs` |
 | HTTP Method | PUT |
 | Endpoint | /api/v1/roles/{RoleId}? |
-| Return Type | `CreateOrUpdateRoleRequest, GetRoleResponse` |
+| Return Type | [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Push-CreateOrUpdateRoleRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PUT` targeting `/api/v1/roles/{RoleId}?` and deserializes to `CreateOrUpdateRoleRequest, GetRoleResponse`.
+- Calls `ImmyBotApiService.PUT` targeting `/api/v1/roles/{RoleId}?` and deserializes to [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateOrUpdateRoleRequest` | True | — | All | None |
+| PayloadBody | [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md) | True | — | All | None |
 | RoleId | `Int32` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Push-CreateOrUpdateRoleRequest
 
 ## Outputs
 
-- `CreateOrUpdateRoleRequest, GetRoleResponse` records produced by `ImmyBotApiService.PUT`
+- [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md) records produced by `ImmyBotApiService.PUT`
 
 ## Notes
 

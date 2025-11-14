@@ -10,7 +10,7 @@ title: OpResultCircuitBreakerState
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<OpResultCircuitBreakerState>` |
+| Implements | IEquatable<[OpResultCircuitBreakerState](OpResultCircuitBreakerState.md)> |
 | Source | `Models/OpResultCircuitBreakerState.cs` |
 
 ## Overview
@@ -21,8 +21,8 @@ title: OpResultCircuitBreakerState
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | CircuitState | `string` | Reference type (nullable) | — |
-| LastException | `LastException` | Reference type (nullable) | — |
-| LastResult | `OpResult` | Reference type (nullable) | — |
+| LastException | [LastException](LastException.md) | Reference type (nullable) | — |
+| LastResult | [OpResult](OpResult.md) | Reference type (nullable) | — |
 | PolicyName | `string` | Reference type (nullable) | — |
 
 ## Serialization

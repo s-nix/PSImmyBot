@@ -10,7 +10,7 @@ title: SendTestBrandingEmailRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SendTestBrandingEmailRequest>` |
+| Implements | IEquatable<[SendTestBrandingEmailRequest](SendTestBrandingEmailRequest.md)> |
 | Source | `Models/SendTestBrandingEmailRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: SendTestBrandingEmailRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Branding | `CreateBrandingRequestBody` | Reference type (nullable) | — |
+| Branding | [CreateBrandingRequestBody](CreateBrandingRequestBody.md) | Reference type (nullable) | — |
 | To | `string` | Reference type (nullable) | — |
 
 ## Serialization

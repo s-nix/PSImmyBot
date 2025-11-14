@@ -10,7 +10,7 @@ title: SyntaxCheckerResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SyntaxCheckerResult>` |
+| Implements | IEquatable<[SyntaxCheckerResult](SyntaxCheckerResult.md)> |
 | Source | `Models/SyntaxCheckerResult.cs` |
 
 ## Overview

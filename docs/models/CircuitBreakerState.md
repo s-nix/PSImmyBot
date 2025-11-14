@@ -10,7 +10,7 @@ title: CircuitBreakerState
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CircuitBreakerState>` |
+| Implements | IEquatable<[CircuitBreakerState](CircuitBreakerState.md)> |
 | Source | `Models/CircuitBreakerState.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: CircuitBreakerState
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | CircuitState | `string` | Reference type (nullable) | — |
-| LastException | `LastException` | Reference type (nullable) | — |
+| LastException | [LastException](LastException.md) | Reference type (nullable) | — |
 | PolicyName | `string` | Reference type (nullable) | — |
 
 ## Serialization

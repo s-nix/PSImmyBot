@@ -10,7 +10,7 @@ title: Send-OauthOauthAccessTokensRefresh
 | Source | `Cmdlets/SendOauthOauthAccessTokensRefresh.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/oauth/oauth-access-tokens/{Id}/refresh? |
-| Return Type | `Oauth2AccessToken` |
+| Return Type | [Oauth2AccessToken](../models/Oauth2AccessToken.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-OauthOauthAccessTokensRefresh
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/oauth/oauth-access-tokens/{Id}/refresh?` and deserializes to `Oauth2AccessToken`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/oauth/oauth-access-tokens/{Id}/refresh?` and deserializes to [Oauth2AccessToken](../models/Oauth2AccessToken.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Send-OauthOauthAccessTokensRefresh
 
 ## Outputs
 
-- `Oauth2AccessToken` records produced by `ImmyBotApiService.POST`
+- [Oauth2AccessToken](../models/Oauth2AccessToken.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

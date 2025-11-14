@@ -10,7 +10,7 @@ title: Get-MyComputerResponse
 | Source | `Cmdlets/GetMyComputerResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/my? |
-| Return Type | `List<MyComputerResponse>` |
+| Return Type | List<[MyComputerResponse](../models/MyComputerResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MyComputerResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/my?` and deserializes to `List<MyComputerResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/my?` and deserializes to List<[MyComputerResponse](../models/MyComputerResponse.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<MyComputerResponse>` records produced by `ImmyBotApiService.GET`
+- List<[MyComputerResponse](../models/MyComputerResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

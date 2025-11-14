@@ -28,7 +28,7 @@ title: New-AgentStatusDto
 | IsConnected | `Boolean` | True | — | All | None |
 | LastUpdatedUtc | `DateTimeOffset` | True | — | All | None |
 | ProviderLinkId | `Int32` | True | — | All | None |
-| Version | `SemanticVersion` | True | — | All | None |
+| Version | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 
 ### Parameter sets
 

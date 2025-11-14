@@ -25,19 +25,19 @@ title: New-MaintenanceTaskParameterValue
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | AllowOverrideFromComputerOnboarding | `Boolean` | True | — | All | None |
-| Deployment | `TargetAssignment` | True | — | All | None |
+| Deployment | [TargetAssignment](../models/TargetAssignment.md) | True | — | All | None |
 | DeploymentId | `Int32` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| MaintenanceTask | `MaintenanceTask` | True | — | All | None |
+| MaintenanceTask | [MaintenanceTask](../models/MaintenanceTask.md) | True | — | All | None |
 | MaintenanceTaskId | `Int32` | True | — | All | None |
-| MaintenanceTaskParameter | `MaintenanceTaskParameter` | True | — | All | None |
+| MaintenanceTaskParameter | [MaintenanceTaskParameter](../models/MaintenanceTaskParameter.md) | True | — | All | None |
 | MaintenanceTaskParameterId | `Int32` | True | — | All | None |
-| MaintenanceTaskType | `DatabaseType` | True | — | All | None |
-| Media | `Media` | True | — | All | None |
-| MediaDatabaseType | `DatabaseType` | True | — | All | None |
+| MaintenanceTaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
+| Media | [Media](../models/Media.md) | True | — | All | None |
+| MediaDatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | MediaId | `Nullable`1` | False | — | All | None |
 | ParameterName | `String` | False | — | All | None |
-| ParameterType | `MaintenanceTaskParameterType` | True | — | All | None |
+| ParameterType | [MaintenanceTaskParameterType](../models/MaintenanceTaskParameterType.md) | True | — | All | None |
 | Value | `String` | False | — | All | None |
 
 ### Parameter sets

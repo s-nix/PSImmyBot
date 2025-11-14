@@ -10,7 +10,7 @@ title: SoftwareFileUploadData
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SoftwareFileUploadData>` |
+| Implements | IEquatable<[SoftwareFileUploadData](SoftwareFileUploadData.md)> |
 | Source | `Models/SoftwareFileUploadData.cs` |
 
 ## Overview
@@ -22,9 +22,9 @@ title: SoftwareFileUploadData
 | --- | --- | --- | --- |
 | FileBlobName | `string` | Reference type (nullable) | — |
 | InstallerFile | `string` | Reference type (nullable) | — |
-| InstallerType | `SoftwareVersionInstallerType` | No (value type) | — |
+| InstallerType | [SoftwareVersionInstallerType](SoftwareVersionInstallerType.md) | No (value type) | — |
 | Md5Hash | `string` | Reference type (nullable) | — |
-| PackageType | `PackageType` | No (value type) | — |
+| PackageType | [PackageType](PackageType.md) | No (value type) | — |
 | RelativeCacheSourcePath | `Guid` | No (value type) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: GetTenantResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetTenantResponse>` |
+| Implements | IEquatable<[GetTenantResponse](GetTenantResponse.md)> |
 | Source | `Models/GetTenantResponse.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: GetTenantResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Active | `bool` | No (value type) | — |
-| AzureTenantLink | `AzureTenantLinkResponse` | Reference type (nullable) | — |
+| AzureTenantLink | [AzureTenantLinkResponse](AzureTenantLinkResponse.md) | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |

@@ -10,7 +10,7 @@ title: GetScriptNameResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetScriptNameResponse>` |
+| Implements | IEquatable<[GetScriptNameResponse](GetScriptNameResponse.md)> |
 | Source | `Models/GetScriptNameResponse.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: GetScriptNameResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Action | `string` | Reference type (nullable) | — |
-| Category | `ScriptCategory` | No (value type) | — |
+| Category | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | UpdatedBy | `string` | Reference type (nullable) | — |

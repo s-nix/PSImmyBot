@@ -24,7 +24,7 @@ title: New-TenantConsentRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AppType | `AppRegistrationType` | True | — | All | None |
+| AppType | [AppRegistrationType](../models/AppRegistrationType.md) | True | — | All | None |
 | TenantPrincipalId | `String` | False | — | All | None |
 
 ### Parameter sets

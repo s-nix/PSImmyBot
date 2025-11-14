@@ -25,21 +25,21 @@ title: New-License
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | CreatedBy | `Nullable`1` | False | — | All | None |
-| CreatedByUser | `User` | True | — | All | None |
+| CreatedByUser | [User](../models/User.md) | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | LicenseValue | `String` | False | — | All | None |
 | Name | `String` | False | — | All | None |
-| OwnerTenant | `Tenant` | True | — | All | None |
+| OwnerTenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | RestrictToMajorVersion | `Boolean` | True | — | All | None |
-| SemanticVersion | `SemanticVersion` | True | — | All | None |
+| SemanticVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | False | — | All | None |
 | SoftwareName | `String` | False | — | All | None |
-| SoftwareType | `SoftwareType` | True | — | All | None |
+| SoftwareType | [SoftwareType](../models/SoftwareType.md) | True | — | All | None |
 | TargetAssignments | `ICollection`1` | False | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
-| UpdatedByUser | `User` | True | — | All | None |
+| UpdatedByUser | [User](../models/User.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 
 ### Parameter sets

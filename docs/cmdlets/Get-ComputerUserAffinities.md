@@ -10,7 +10,7 @@ title: Get-ComputerUserAffinities
 | Source | `Cmdlets/GetComputerUserAffinities.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/user-affinities? |
-| Return Type | `List<ComputerUserAffinityResponse>` |
+| Return Type | List<[ComputerUserAffinityResponse](../models/ComputerUserAffinityResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ComputerUserAffinities
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/user-affinities?` and deserializes to `List<ComputerUserAffinityResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/user-affinities?` and deserializes to List<[ComputerUserAffinityResponse](../models/ComputerUserAffinityResponse.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -26,7 +26,7 @@ title: Get-ComputerUserAffinities
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Nullable`1` | False | — | All | None |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 
 ### Parameter sets
 
@@ -34,7 +34,7 @@ title: Get-ComputerUserAffinities
 
 ## Outputs
 
-- `List<ComputerUserAffinityResponse>` records produced by `ImmyBotApiService.GET`
+- List<[ComputerUserAffinityResponse](../models/ComputerUserAffinityResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

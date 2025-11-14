@@ -24,7 +24,7 @@ title: Send-UpdateApplicationLogSourceContextRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateApplicationLogSourceContextRequest` | True | — | All | None |
+| PayloadBody | [UpdateApplicationLogSourceContextRequest](../models/UpdateApplicationLogSourceContextRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

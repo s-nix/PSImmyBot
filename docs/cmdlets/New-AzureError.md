@@ -24,15 +24,15 @@ title: New-AzureError
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ApiResponseContent | `ApiResponseErrorContent` | True | — | All | None |
-| CredentialDetails | `AzureTenantTokenCredentialDetails` | True | — | All | None |
+| ApiResponseContent | [ApiResponseErrorContent](../models/ApiResponseErrorContent.md) | True | — | All | None |
+| CredentialDetails | [AzureTenantTokenCredentialDetails](../models/AzureTenantTokenCredentialDetails.md) | True | — | All | None |
 | FormattedErrorMessage | `String` | False | — | All | None |
 | Message | `String` | False | — | All | None |
-| MissingAccessToken | `MissingAccessTokenDetails` | True | — | All | None |
-| MsalError | `MsalErrorDetails` | True | — | All | None |
-| OauthAccessTokenErrorResponse | `Oauth2AccessTokenErrorResponse` | True | — | All | None |
-| ODataError | `ODataErrorDetails` | True | — | All | None |
-| PartnerCenterApiResponseDetails | `ApiResponseErrorContent` | True | — | All | None |
+| MissingAccessToken | [MissingAccessTokenDetails](../models/MissingAccessTokenDetails.md) | True | — | All | None |
+| MsalError | [MsalErrorDetails](../models/MsalErrorDetails.md) | True | — | All | None |
+| OauthAccessTokenErrorResponse | [Oauth2AccessTokenErrorResponse](../models/Oauth2AccessTokenErrorResponse.md) | True | — | All | None |
+| ODataError | [ODataErrorDetails](../models/ODataErrorDetails.md) | True | — | All | None |
+| PartnerCenterApiResponseDetails | [ApiResponseErrorContent](../models/ApiResponseErrorContent.md) | True | — | All | None |
 
 ### Parameter sets
 

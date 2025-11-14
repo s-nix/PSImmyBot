@@ -10,7 +10,7 @@ title: GetEphemeralAgentResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetEphemeralAgentResponse>` |
+| Implements | IEquatable<[GetEphemeralAgentResponse](GetEphemeralAgentResponse.md)> |
 | Source | `Models/GetEphemeralAgentResponse.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: GetEphemeralAgentResponse
 | Id | `Guid` | No (value type) | — |
 | IsConnected | `bool` | No (value type) | — |
 | LastActivity | `DateTimeOffset` | No (value type) | — |
-| StartupInfo | `AgentStartupInfo` | Reference type (nullable) | — |
+| StartupInfo | [AgentStartupInfo](AgentStartupInfo.md) | Reference type (nullable) | — |
 | TotalProcessedScriptCount | `int` | No (value type) | — |
 | TotalReceievedBytes | `int` | No (value type) | — |
 | TotalSentBytes | `int` | No (value type) | — |

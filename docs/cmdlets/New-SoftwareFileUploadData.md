@@ -26,9 +26,9 @@ title: New-SoftwareFileUploadData
 | --- | --- | --- | --- | --- | --- |
 | FileBlobName | `String` | False | — | All | None |
 | InstallerFile | `String` | False | — | All | None |
-| InstallerType | `SoftwareVersionInstallerType` | True | — | All | None |
+| InstallerType | [SoftwareVersionInstallerType](../models/SoftwareVersionInstallerType.md) | True | — | All | None |
 | Md5Hash | `String` | False | — | All | None |
-| PackageType | `PackageType` | True | — | All | None |
+| PackageType | [PackageType](../models/PackageType.md) | True | — | All | None |
 | RelativeCacheSourcePath | `Guid` | True | — | All | None |
 
 ### Parameter sets

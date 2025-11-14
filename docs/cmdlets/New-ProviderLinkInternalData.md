@@ -25,7 +25,7 @@ title: New-ProviderLinkInternalData
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | InternalData | `Object` | False | — | All | None |
-| ProviderLink | `ProviderLink` | True | — | All | None |
+| ProviderLink | [ProviderLink](../models/ProviderLink.md) | True | — | All | None |
 | ProviderLinkId | `Int32` | True | — | All | None |
 
 ### Parameter sets

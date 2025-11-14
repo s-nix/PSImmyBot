@@ -10,7 +10,7 @@ title: Get-TargetAssignmentResource
 | Source | `Cmdlets/GetTargetAssignmentResource.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/persons/{Id}/self-service? |
-| Return Type | `List<TargetAssignmentResource>` |
+| Return Type | List<[TargetAssignmentResource](../models/TargetAssignmentResource.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TargetAssignmentResource
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/persons/{Id}/self-service?` and deserializes to `List<TargetAssignmentResource>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/persons/{Id}/self-service?` and deserializes to List<[TargetAssignmentResource](../models/TargetAssignmentResource.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-TargetAssignmentResource
 
 ## Outputs
 
-- `List<TargetAssignmentResource>` records produced by `ImmyBotApiService.GET`
+- List<[TargetAssignmentResource](../models/TargetAssignmentResource.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

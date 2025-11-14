@@ -10,7 +10,7 @@ title: Get-OpResult
 | Source | `Cmdlets/GetOpResult.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}/launch-ephemeral-agent? |
-| Return Type | `OpResult` |
+| Return Type | [OpResult](../models/OpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-OpResult
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/launch-ephemeral-agent?` and deserializes to `OpResult`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/launch-ephemeral-agent?` and deserializes to [OpResult](../models/OpResult.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-OpResult
 
 ## Outputs
 
-- `OpResult` records produced by `ImmyBotApiService.GET`
+- [OpResult](../models/OpResult.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: UpdateOptionalTargetAssignmentApprovalPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateOptionalTargetAssignmentApprovalPayload>` |
+| Implements | IEquatable<[UpdateOptionalTargetAssignmentApprovalPayload](UpdateOptionalTargetAssignmentApprovalPayload.md)> |
 | Source | `Models/UpdateOptionalTargetAssignmentApprovalPayload.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: UpdateOptionalTargetAssignmentApprovalPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Approved | `TargetAssignmentApprovalStatus` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| Approved | [TargetAssignmentApprovalStatus](TargetAssignmentApprovalStatus.md) | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
 | TargetAssignmentId | `int` | No (value type) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 
 ## Serialization
 

@@ -10,7 +10,7 @@ title: StructLayoutAttribute
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<StructLayoutAttribute>` |
+| Implements | IEquatable<[StructLayoutAttribute](StructLayoutAttribute.md)> |
 | Source | `Models/StructLayoutAttribute.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: StructLayoutAttribute
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | TypeId | `object` | Reference type (nullable) | — |
-| Value | `LayoutKind` | No (value type) | — |
+| Value | [LayoutKind](LayoutKind.md) | No (value type) | — |
 
 ## Serialization
 

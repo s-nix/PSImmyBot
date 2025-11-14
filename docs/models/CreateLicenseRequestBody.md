@@ -10,7 +10,7 @@ title: CreateLicenseRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateLicenseRequestBody>` |
+| Implements | IEquatable<[CreateLicenseRequestBody](CreateLicenseRequestBody.md)> |
 | Source | `Models/CreateLicenseRequestBody.cs` |
 
 ## Overview
@@ -23,10 +23,10 @@ title: CreateLicenseRequestBody
 | LicenseValue | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
 | RestrictToMajorVersion | `bool` | No (value type) | — |
-| SemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
 | SoftwareName | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: Send-GetExecutableUriParametersWithOnboardingOptions
 | Source | `Cmdlets/SendGetExecutableUriParametersWithOnboardingOptions.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/agents/executable-uri-with-onboarding? |
-| Return Type | `GetExecutableUriParametersWithOnboardingOptions, string` |
+| Return Type | [GetExecutableUriParametersWithOnboardingOptions](../models/GetExecutableUriParametersWithOnboardingOptions.md), string |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-GetExecutableUriParametersWithOnboardingOptions
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/executable-uri-with-onboarding?` and deserializes to `GetExecutableUriParametersWithOnboardingOptions, string`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/executable-uri-with-onboarding?` and deserializes to [GetExecutableUriParametersWithOnboardingOptions](../models/GetExecutableUriParametersWithOnboardingOptions.md), string.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `GetExecutableUriParametersWithOnboardingOptions` | True | — | All | None |
+| PayloadBody | [GetExecutableUriParametersWithOnboardingOptions](../models/GetExecutableUriParametersWithOnboardingOptions.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-GetExecutableUriParametersWithOnboardingOptions
 
 ## Outputs
 
-- `GetExecutableUriParametersWithOnboardingOptions, string` records produced by `ImmyBotApiService.POST`
+- [GetExecutableUriParametersWithOnboardingOptions](../models/GetExecutableUriParametersWithOnboardingOptions.md), string records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: MaintenanceEmailConfiguration
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceEmailConfiguration>` |
+| Implements | IEquatable<[MaintenanceEmailConfiguration](MaintenanceEmailConfiguration.md)> |
 | Source | `Models/MaintenanceEmailConfiguration.cs` |
 
 ## Overview

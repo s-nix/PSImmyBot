@@ -10,7 +10,7 @@ title: Get-Schedule
 | Source | `Cmdlets/GetSchedule.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/schedules/{ScheduleId}? |
-| Return Type | `GetScheduleResponse` |
+| Return Type | [GetScheduleResponse](../models/GetScheduleResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Schedule
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/schedules/{ScheduleId}?` and deserializes to `GetScheduleResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/schedules/{ScheduleId}?` and deserializes to [GetScheduleResponse](../models/GetScheduleResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-Schedule
 
 ## Outputs
 
-- `GetScheduleResponse` records produced by `ImmyBotApiService.GET`
+- [GetScheduleResponse](../models/GetScheduleResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: GetScriptVariablesAndParametersResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetScriptVariablesAndParametersResponse>` |
+| Implements | IEquatable<[GetScriptVariablesAndParametersResponse](GetScriptVariablesAndParametersResponse.md)> |
 | Source | `Models/GetScriptVariablesAndParametersResponse.cs` |
 
 ## Overview

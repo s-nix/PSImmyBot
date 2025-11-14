@@ -28,18 +28,18 @@ title: New-ChangeRequest
 | AcknowledgedByUserName | `String` | False | — | All | None |
 | Comments | `ICollection`1` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
-| CreatedByUser | `User` | True | — | All | None |
+| CreatedByUser | [User](../models/User.md) | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | NewValuesJson | `Object` | True | — | All | None |
-| ObjectType | `ChangeRequestObjectType` | True | — | All | None |
-| Script | `Script` | True | — | All | None |
+| ObjectType | [ChangeRequestObjectType](../models/ChangeRequestObjectType.md) | True | — | All | None |
+| Script | [Script](../models/Script.md) | True | — | All | None |
 | ScriptId | `Nullable`1` | False | — | All | None |
-| State | `ChangeRequestState` | True | — | All | None |
-| TargetAssignment | `TargetAssignment` | True | — | All | None |
+| State | [ChangeRequestState](../models/ChangeRequestState.md) | True | — | All | None |
+| TargetAssignment | [TargetAssignment](../models/TargetAssignment.md) | True | — | All | None |
 | TargetAssignmentId | `Nullable`1` | False | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
-| UpdatedByUser | `User` | True | — | All | None |
+| UpdatedByUser | [User](../models/User.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 
 ### Parameter sets

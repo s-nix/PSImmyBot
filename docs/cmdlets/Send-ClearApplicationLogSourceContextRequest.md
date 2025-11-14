@@ -24,7 +24,7 @@ title: Send-ClearApplicationLogSourceContextRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ClearApplicationLogSourceContextRequest` | True | — | All | None |
+| PayloadBody | [ClearApplicationLogSourceContextRequest](../models/ClearApplicationLogSourceContextRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

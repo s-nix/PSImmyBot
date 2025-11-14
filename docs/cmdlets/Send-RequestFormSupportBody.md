@@ -24,7 +24,7 @@ title: Send-RequestFormSupportBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `RequestFormSupportBody` | True | — | All | None |
+| PayloadBody | [RequestFormSupportBody](../models/RequestFormSupportBody.md) | True | — | All | None |
 
 ### Parameter sets
 

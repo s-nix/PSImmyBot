@@ -10,7 +10,7 @@ title: Send-ResolveAssignmentsForMaintenanceItemRequest
 | Source | `Cmdlets/SendResolveAssignmentsForMaintenanceItemRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/tenants/resolve-assignments-for-maintenance-item? |
-| Return Type | `ResolveAssignmentsForMaintenanceItemRequest, ResolveAssignmentsForMaintenanceItemResult` |
+| Return Type | [ResolveAssignmentsForMaintenanceItemRequest](../models/ResolveAssignmentsForMaintenanceItemRequest.md), [ResolveAssignmentsForMaintenanceItemResult](../models/ResolveAssignmentsForMaintenanceItemResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-ResolveAssignmentsForMaintenanceItemRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/resolve-assignments-for-maintenance-item?` and deserializes to `ResolveAssignmentsForMaintenanceItemRequest, ResolveAssignmentsForMaintenanceItemResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/resolve-assignments-for-maintenance-item?` and deserializes to [ResolveAssignmentsForMaintenanceItemRequest](../models/ResolveAssignmentsForMaintenanceItemRequest.md), [ResolveAssignmentsForMaintenanceItemResult](../models/ResolveAssignmentsForMaintenanceItemResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ResolveAssignmentsForMaintenanceItemRequest` | True | — | All | None |
+| PayloadBody | [ResolveAssignmentsForMaintenanceItemRequest](../models/ResolveAssignmentsForMaintenanceItemRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-ResolveAssignmentsForMaintenanceItemRequest
 
 ## Outputs
 
-- `ResolveAssignmentsForMaintenanceItemRequest, ResolveAssignmentsForMaintenanceItemResult` records produced by `ImmyBotApiService.POST`
+- [ResolveAssignmentsForMaintenanceItemRequest](../models/ResolveAssignmentsForMaintenanceItemRequest.md), [ResolveAssignmentsForMaintenanceItemResult](../models/ResolveAssignmentsForMaintenanceItemResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

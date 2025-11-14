@@ -25,7 +25,7 @@ title: New-DuplicateMaintenanceTaskRequestbody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | MaintenanceTaskId | `Int32` | True | — | All | None |
-| MaintenanceTaskType | `DatabaseType` | True | — | All | None |
+| MaintenanceTaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 
 ### Parameter sets
 

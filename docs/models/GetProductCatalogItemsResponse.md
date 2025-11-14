@@ -10,7 +10,7 @@ title: GetProductCatalogItemsResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetProductCatalogItemsResponse>` |
+| Implements | IEquatable<[GetProductCatalogItemsResponse](GetProductCatalogItemsResponse.md)> |
 | Source | `Models/GetProductCatalogItemsResponse.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: GetProductCatalogItemsResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Addons | `ICollection<SubscriptionItemBasicInfo>` | Reference type (nullable) | — |
-| Features | `ICollection<SubscriptionFeatureBasicInfo>` | Reference type (nullable) | — |
-| Plans | `ICollection<SubscriptionItemBasicInfo>` | Reference type (nullable) | — |
+| Addons | ICollection<[SubscriptionItemBasicInfo](SubscriptionItemBasicInfo.md)> | Reference type (nullable) | — |
+| Features | ICollection<[SubscriptionFeatureBasicInfo](SubscriptionFeatureBasicInfo.md)> | Reference type (nullable) | — |
+| Plans | ICollection<[SubscriptionItemBasicInfo](SubscriptionItemBasicInfo.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

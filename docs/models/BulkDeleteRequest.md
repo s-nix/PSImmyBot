@@ -10,7 +10,7 @@ title: BulkDeleteRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkDeleteRequest>` |
+| Implements | IEquatable<[BulkDeleteRequest](BulkDeleteRequest.md)> |
 | Source | `Models/BulkDeleteRequest.cs` |
 
 ## Overview

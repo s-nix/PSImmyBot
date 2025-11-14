@@ -26,9 +26,9 @@ title: New-ProviderLinkCrossReference
 | --- | --- | --- | --- | --- | --- |
 | IsExternalClientLinkingEnabled | `Boolean` | True | — | All | None |
 | IsProviderLink2InitializedFromProviderLink1 | `Boolean` | True | — | All | None |
-| ProviderLink1 | `ProviderLink` | True | — | All | None |
+| ProviderLink1 | [ProviderLink](../models/ProviderLink.md) | True | — | All | None |
 | ProviderLink1Id | `Int32` | True | — | All | None |
-| ProviderLink2 | `ProviderLink` | True | — | All | None |
+| ProviderLink2 | [ProviderLink](../models/ProviderLink.md) | True | — | All | None |
 | ProviderLink2Id | `Int32` | True | — | All | None |
 
 ### Parameter sets

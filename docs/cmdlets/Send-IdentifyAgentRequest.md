@@ -10,7 +10,7 @@ title: Send-IdentifyAgentRequest
 | Source | `Cmdlets/SendIdentifyAgentRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-agents/identify? |
-| Return Type | `IdentifyAgentRequest, OpResult` |
+| Return Type | [IdentifyAgentRequest](../models/IdentifyAgentRequest.md), [OpResult](../models/OpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-IdentifyAgentRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-agents/identify?` and deserializes to `IdentifyAgentRequest, OpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-agents/identify?` and deserializes to [IdentifyAgentRequest](../models/IdentifyAgentRequest.md), [OpResult](../models/OpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `IdentifyAgentRequest` | True | — | All | None |
+| PayloadBody | [IdentifyAgentRequest](../models/IdentifyAgentRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-IdentifyAgentRequest
 
 ## Outputs
 
-- `IdentifyAgentRequest, OpResult` records produced by `ImmyBotApiService.POST`
+- [IdentifyAgentRequest](../models/IdentifyAgentRequest.md), [OpResult](../models/OpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

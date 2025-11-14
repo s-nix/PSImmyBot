@@ -10,7 +10,7 @@ title: AccessRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AccessRequest>` |
+| Implements | IEquatable<[AccessRequest](AccessRequest.md)> |
 | Source | `Models/AccessRequest.cs` |
 
 ## Overview
@@ -20,16 +20,16 @@ title: AccessRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AcknowledgedByUser | `User` | Reference type (nullable) | — |
+| AcknowledgedByUser | [User](User.md) | Reference type (nullable) | — |
 | AcknowledgedByUserId | `int?` | Yes (nullable value type) | — |
 | DateAcknowledgedUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | DateRequestedUtc | `DateTimeOffset` | No (value type) | — |
-| ExpirationTime | `ExpirationTime` | No (value type) | — |
+| ExpirationTime | [ExpirationTime](ExpirationTime.md) | No (value type) | — |
 | Granted | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | IsAdmin | `bool?` | Yes (nullable value type) | — |
 | Message | `string` | Reference type (nullable) | — |
-| Person | `Person` | Reference type (nullable) | — |
+| Person | [Person](Person.md) | Reference type (nullable) | — |
 | PersonId | `int` | No (value type) | — |
 
 ## Serialization

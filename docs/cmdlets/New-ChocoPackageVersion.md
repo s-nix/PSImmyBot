@@ -25,7 +25,7 @@ title: New-ChocoPackageVersion
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `String` | False | — | All | None |
-| SemanticVersion | `NuGetVersion` | True | — | All | None |
+| SemanticVersion | [NuGetVersion](../models/NuGetVersion.md) | True | — | All | None |
 | Title | `String` | False | — | All | None |
 | Version | `String` | False | — | All | None |
 

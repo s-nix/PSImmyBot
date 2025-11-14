@@ -10,7 +10,7 @@ title: Send-BulkCreateTenantRequestBody
 | Source | `Cmdlets/SendBulkCreateTenantRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/tenants/bulk-create? |
-| Return Type | `BulkCreateTenantRequestBody, List<GetTenantResponse>` |
+| Return Type | [BulkCreateTenantRequestBody](../models/BulkCreateTenantRequestBody.md), List<[GetTenantResponse](../models/GetTenantResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-BulkCreateTenantRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/bulk-create?` and deserializes to `BulkCreateTenantRequestBody, List<GetTenantResponse>`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/bulk-create?` and deserializes to [BulkCreateTenantRequestBody](../models/BulkCreateTenantRequestBody.md), List<[GetTenantResponse](../models/GetTenantResponse.md)>.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `BulkCreateTenantRequestBody` | True | — | All | None |
+| PayloadBody | [BulkCreateTenantRequestBody](../models/BulkCreateTenantRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-BulkCreateTenantRequestBody
 
 ## Outputs
 
-- `BulkCreateTenantRequestBody, List<GetTenantResponse>` records produced by `ImmyBotApiService.POST`
+- [BulkCreateTenantRequestBody](../models/BulkCreateTenantRequestBody.md), List<[GetTenantResponse](../models/GetTenantResponse.md)> records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

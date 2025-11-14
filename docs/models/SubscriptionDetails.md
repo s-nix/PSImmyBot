@@ -10,7 +10,7 @@ title: SubscriptionDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SubscriptionDetails>` |
+| Implements | IEquatable<[SubscriptionDetails](SubscriptionDetails.md)> |
 | Source | `Models/SubscriptionDetails.cs` |
 
 ## Overview
@@ -21,14 +21,14 @@ title: SubscriptionDetails
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ActivatedAtUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
-| Addons | `ICollection<SubscriptionAddonDto>` | Reference type (nullable) | — |
+| Addons | ICollection<[SubscriptionAddonDto](SubscriptionAddonDto.md)> | Reference type (nullable) | — |
 | CustomerEmail | `string` | Reference type (nullable) | — |
 | CustomerId | `string` | Reference type (nullable) | — |
-| Features | `ICollection<SubscriptionFeature>` | Reference type (nullable) | — |
+| Features | ICollection<[SubscriptionFeature](SubscriptionFeature.md)> | Reference type (nullable) | — |
 | PlanId | `string` | Reference type (nullable) | — |
 | PlanPrice | `int` | No (value type) | — |
 | PlanQuantity | `int` | No (value type) | — |
-| Status | `SubscriptionStatus` | No (value type) | — |
+| Status | [SubscriptionStatus](SubscriptionStatus.md) | No (value type) | — |
 | TrialEndUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | TrialStartUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 

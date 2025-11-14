@@ -10,7 +10,7 @@ title: TypeInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TypeInfo>` |
+| Implements | IEquatable<[TypeInfo](TypeInfo.md)> |
 | Source | `Models/TypeInfo.cs` |
 
 ## Overview
@@ -20,29 +20,29 @@ title: TypeInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Assembly | `Assembly` | Reference type (nullable) | — |
+| Assembly | [Assembly](Assembly.md) | Reference type (nullable) | — |
 | AssemblyQualifiedName | `string` | Reference type (nullable) | — |
-| Attributes | `TypeAttributes` | No (value type) | — |
-| BaseType | `Type` | Reference type (nullable) | — |
+| Attributes | [TypeAttributes](TypeAttributes.md) | No (value type) | — |
+| BaseType | [Type](Type.md) | Reference type (nullable) | — |
 | ContainsGenericParameters | `bool` | No (value type) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
-| DeclaredConstructors | `ICollection<ConstructorInfo>` | Reference type (nullable) | — |
-| DeclaredEvents | `ICollection<EventInfo>` | Reference type (nullable) | — |
-| DeclaredFields | `ICollection<FieldInfo>` | Reference type (nullable) | — |
-| DeclaredMembers | `ICollection<MemberInfo>` | Reference type (nullable) | — |
-| DeclaredMethods | `ICollection<MethodInfo>` | Reference type (nullable) | — |
-| DeclaredNestedTypes | `ICollection<TypeInfo>` | Reference type (nullable) | — |
-| DeclaredProperties | `ICollection<PropertyInfo>` | Reference type (nullable) | — |
-| DeclaringMethod | `MethodBase` | Reference type (nullable) | — |
-| DeclaringType | `Type` | Reference type (nullable) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
+| DeclaredConstructors | ICollection<[ConstructorInfo](ConstructorInfo.md)> | Reference type (nullable) | — |
+| DeclaredEvents | ICollection<[EventInfo](EventInfo.md)> | Reference type (nullable) | — |
+| DeclaredFields | ICollection<[FieldInfo](FieldInfo.md)> | Reference type (nullable) | — |
+| DeclaredMembers | ICollection<[MemberInfo](MemberInfo.md)> | Reference type (nullable) | — |
+| DeclaredMethods | ICollection<[MethodInfo](MethodInfo.md)> | Reference type (nullable) | — |
+| DeclaredNestedTypes | ICollection<[TypeInfo](TypeInfo.md)> | Reference type (nullable) | — |
+| DeclaredProperties | ICollection<[PropertyInfo](PropertyInfo.md)> | Reference type (nullable) | — |
+| DeclaringMethod | [MethodBase](MethodBase.md) | Reference type (nullable) | — |
+| DeclaringType | [Type](Type.md) | Reference type (nullable) | — |
 | FullName | `string` | Reference type (nullable) | — |
-| GenericParameterAttributes | `GenericParameterAttributes` | No (value type) | — |
+| GenericParameterAttributes | [GenericParameterAttributes](GenericParameterAttributes.md) | No (value type) | — |
 | GenericParameterPosition | `int` | No (value type) | — |
-| GenericTypeArguments | `ICollection<Type>` | Reference type (nullable) | — |
-| GenericTypeParameters | `ICollection<Type>` | Reference type (nullable) | — |
+| GenericTypeArguments | ICollection<[Type](Type.md)> | Reference type (nullable) | — |
+| GenericTypeParameters | ICollection<[Type](Type.md)> | Reference type (nullable) | — |
 | Guid | `Guid` | No (value type) | — |
 | HasElementType | `bool` | No (value type) | — |
-| ImplementedInterfaces | `ICollection<Type>` | Reference type (nullable) | — |
+| ImplementedInterfaces | ICollection<[Type](Type.md)> | Reference type (nullable) | — |
 | IsAbstract | `bool` | No (value type) | — |
 | IsAnsiClass | `bool` | No (value type) | — |
 | IsArray | `bool` | No (value type) | — |
@@ -92,16 +92,16 @@ title: TypeInfo
 | IsValueType | `bool` | No (value type) | — |
 | IsVariableBoundArray | `bool` | No (value type) | — |
 | IsVisible | `bool` | No (value type) | — |
-| MemberType | `MemberTypes` | No (value type) | — |
+| MemberType | [MemberTypes](MemberTypes.md) | No (value type) | — |
 | MetadataToken | `int` | No (value type) | — |
-| Module | `Module` | Reference type (nullable) | — |
+| Module | [Module](Module.md) | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
 | Namespace | `string` | Reference type (nullable) | — |
-| ReflectedType | `Type` | Reference type (nullable) | — |
-| StructLayoutAttribute | `StructLayoutAttribute` | Reference type (nullable) | — |
-| TypeHandle | `RuntimeTypeHandle` | Reference type (nullable) | — |
-| TypeInitializer | `ConstructorInfo` | Reference type (nullable) | — |
-| UnderlyingSystemType | `Type` | Reference type (nullable) | — |
+| ReflectedType | [Type](Type.md) | Reference type (nullable) | — |
+| StructLayoutAttribute | [StructLayoutAttribute](StructLayoutAttribute.md) | Reference type (nullable) | — |
+| TypeHandle | [RuntimeTypeHandle](RuntimeTypeHandle.md) | Reference type (nullable) | — |
+| TypeInitializer | [ConstructorInfo](ConstructorInfo.md) | Reference type (nullable) | — |
+| UnderlyingSystemType | [Type](Type.md) | Reference type (nullable) | — |
 
 ## Serialization
 

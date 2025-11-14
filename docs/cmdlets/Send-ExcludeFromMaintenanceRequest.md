@@ -25,7 +25,7 @@ title: Send-ExcludeFromMaintenanceRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Int32` | True | — | All | None |
-| PayloadBody | `ExcludeFromMaintenanceRequest` | True | — | All | None |
+| PayloadBody | [ExcludeFromMaintenanceRequest](../models/ExcludeFromMaintenanceRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

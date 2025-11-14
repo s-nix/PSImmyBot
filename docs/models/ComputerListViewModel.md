@@ -10,7 +10,7 @@ title: ComputerListViewModel
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerListViewModel>` |
+| Implements | IEquatable<[ComputerListViewModel](ComputerListViewModel.md)> |
 | Source | `Models/ComputerListViewModel.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ComputerListViewModel
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | ActiveSessionId | `int?` | Yes (nullable value type) | — |
-| ActiveSessionStatus | `SessionStatus?` | Yes (nullable value type) | — |
+| ActiveSessionStatus | [SessionStatus](SessionStatus.md)? | Yes (nullable value type) | — |
 | ChassisTypes | `ICollection<int>` | Reference type (nullable) | — |
 | ComputerName | `string` | Reference type (nullable) | — |
 | ComputerTagIds | `ICollection<int>` | Reference type (nullable) | — |
@@ -48,7 +48,7 @@ title: ComputerListViewModel
 | Manufacturer | `string` | Reference type (nullable) | — |
 | Model | `string` | Reference type (nullable) | — |
 | Notes | `string` | Reference type (nullable) | — |
-| OnboardingStatus | `ComputerOnboardingStatus` | No (value type) | — |
+| OnboardingStatus | [ComputerOnboardingStatus](ComputerOnboardingStatus.md) | No (value type) | — |
 | OperatingSystem | `string` | Reference type (nullable) | — |
 | PrimaryPersonId | `int?` | Yes (nullable value type) | — |
 | PrimaryUserEmail | `string` | Reference type (nullable) | — |

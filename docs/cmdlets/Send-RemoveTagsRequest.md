@@ -24,7 +24,7 @@ title: Send-RemoveTagsRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `RemoveTagsRequest` | True | — | All | None |
+| PayloadBody | [RemoveTagsRequest](../models/RemoveTagsRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

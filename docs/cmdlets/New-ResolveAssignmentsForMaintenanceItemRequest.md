@@ -25,7 +25,7 @@ title: New-ResolveAssignmentsForMaintenanceItemRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | MaintenanceIdentifier | `String` | False | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 
 ### Parameter sets

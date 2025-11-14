@@ -25,7 +25,7 @@ title: New-TargetAssignmentVisibility
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | SelfService | `Boolean` | True | — | All | None |
-| TargetAssignment | `TargetAssignment` | True | — | All | None |
+| TargetAssignment | [TargetAssignment](../models/TargetAssignment.md) | True | — | All | None |
 | TargetAssignmentId | `Int32` | True | — | All | None |
 | TechnicianPod | `Boolean` | True | — | All | None |
 

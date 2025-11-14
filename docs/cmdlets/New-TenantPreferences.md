@@ -26,7 +26,7 @@ title: New-TenantPreferences
 | --- | --- | --- | --- | --- | --- |
 | BusinessHoursEnd | `String` | False | — | All | None |
 | BusinessHoursStart | `String` | False | — | All | None |
-| DefaultEmailBccList | `DefaultEmailBccList` | True | — | All | None |
+| DefaultEmailBccList | [DefaultEmailBccList](../models/DefaultEmailBccList.md) | True | — | All | None |
 | EnableImmyBotRemoteControl | `Nullable`1` | False | — | All | None |
 | EnableImmyBotRemoteControlRecording | `Nullable`1` | False | — | All | None |
 | EnableOnboarding | `Boolean` | True | — | All | None |
@@ -36,7 +36,7 @@ title: New-TenantPreferences
 | ExcludeFromCrossTenantDeploymentsAndSchedules | `Boolean` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | OverwriteExistingDeviceIfOsIsNew | `Boolean` | True | — | All | None |
-| OwnerTenant | `Tenant` | True | — | All | None |
+| OwnerTenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | RequireConsentForExternalSessionProviders | `Nullable`1` | False | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 | TimeZoneInfoId | `String` | False | — | All | None |

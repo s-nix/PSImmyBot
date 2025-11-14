@@ -10,7 +10,7 @@ title: ActiveSession
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ActiveSession>` |
+| Implements | IEquatable<[ActiveSession](ActiveSession.md)> |
 | Source | `Models/ActiveSession.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: ActiveSession
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| MaintenanceSession | `MaintenanceSession` | Reference type (nullable) | — |
+| MaintenanceSession | [MaintenanceSession](MaintenanceSession.md) | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
-| SessionStatus | `SessionStatus` | No (value type) | — |
+| SessionStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
 
 ## Serialization
 

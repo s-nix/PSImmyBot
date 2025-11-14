@@ -10,7 +10,7 @@ title: Update-UserPreferencesOperation
 | Source | `Cmdlets/UpdateUserPreferencesOperation.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/preferences/my? |
-| Return Type | `List<UserPreferencesOperation>, UserPreferences` |
+| Return Type | List<[UserPreferencesOperation](../models/UserPreferencesOperation.md)>, [UserPreferences](../models/UserPreferences.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Update-UserPreferencesOperation
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/preferences/my?` and deserializes to `List<UserPreferencesOperation>, UserPreferences`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/preferences/my?` and deserializes to List<[UserPreferencesOperation](../models/UserPreferencesOperation.md)>, [UserPreferences](../models/UserPreferences.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Update-UserPreferencesOperation
 
 ## Outputs
 
-- `List<UserPreferencesOperation>, UserPreferences` records produced by `ImmyBotApiService.PATCH`
+- List<[UserPreferencesOperation](../models/UserPreferencesOperation.md)>, [UserPreferences](../models/UserPreferences.md) records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

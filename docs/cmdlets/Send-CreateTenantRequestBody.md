@@ -10,7 +10,7 @@ title: Send-CreateTenantRequestBody
 | Source | `Cmdlets/SendCreateTenantRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/tenants? |
-| Return Type | `CreateTenantRequestBody, GetTenantResponse` |
+| Return Type | [CreateTenantRequestBody](../models/CreateTenantRequestBody.md), [GetTenantResponse](../models/GetTenantResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateTenantRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants?` and deserializes to `CreateTenantRequestBody, GetTenantResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants?` and deserializes to [CreateTenantRequestBody](../models/CreateTenantRequestBody.md), [GetTenantResponse](../models/GetTenantResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateTenantRequestBody` | True | — | All | None |
+| PayloadBody | [CreateTenantRequestBody](../models/CreateTenantRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateTenantRequestBody
 
 ## Outputs
 
-- `CreateTenantRequestBody, GetTenantResponse` records produced by `ImmyBotApiService.POST`
+- [CreateTenantRequestBody](../models/CreateTenantRequestBody.md), [GetTenantResponse](../models/GetTenantResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

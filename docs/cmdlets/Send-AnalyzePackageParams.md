@@ -10,7 +10,7 @@ title: Send-AnalyzePackageParams
 | Source | `Cmdlets/SendAnalyzePackageParams.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/software/global/analyze? |
-| Return Type | `AnalyzePackageParams, AnalyzeGlobalSoftwarePackageResponse` |
+| Return Type | [AnalyzePackageParams](../models/AnalyzePackageParams.md), [AnalyzeGlobalSoftwarePackageResponse](../models/AnalyzeGlobalSoftwarePackageResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-AnalyzePackageParams
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global/analyze?` and deserializes to `AnalyzePackageParams, AnalyzeGlobalSoftwarePackageResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/software/global/analyze?` and deserializes to [AnalyzePackageParams](../models/AnalyzePackageParams.md), [AnalyzeGlobalSoftwarePackageResponse](../models/AnalyzeGlobalSoftwarePackageResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `AnalyzePackageParams` | True | — | All | None |
+| PayloadBody | [AnalyzePackageParams](../models/AnalyzePackageParams.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-AnalyzePackageParams
 
 ## Outputs
 
-- `AnalyzePackageParams, AnalyzeGlobalSoftwarePackageResponse` records produced by `ImmyBotApiService.POST`
+- [AnalyzePackageParams](../models/AnalyzePackageParams.md), [AnalyzeGlobalSoftwarePackageResponse](../models/AnalyzeGlobalSoftwarePackageResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

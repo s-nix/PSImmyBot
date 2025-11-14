@@ -24,9 +24,9 @@ title: New-ComputerTag
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Computer | `Computer` | True | — | All | None |
+| Computer | [Computer](../models/Computer.md) | True | — | All | None |
 | EntityId | `Int32` | True | — | All | None |
-| Tag | `Tag` | True | — | All | None |
+| Tag | [Tag](../models/Tag.md) | True | — | All | None |
 | TagId | `Int32` | True | — | All | None |
 
 ### Parameter sets

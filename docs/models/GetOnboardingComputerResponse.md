@@ -10,7 +10,7 @@ title: GetOnboardingComputerResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetOnboardingComputerResponse>` |
+| Implements | IEquatable<[GetOnboardingComputerResponse](GetOnboardingComputerResponse.md)> |
 | Source | `Models/GetOnboardingComputerResponse.cs` |
 
 ## Overview
@@ -25,7 +25,7 @@ title: GetOnboardingComputerResponse
 | IsOnline | `bool` | No (value type) | — |
 | OnboardingFailed | `bool` | No (value type) | — |
 | OnboardingSessionId | `int?` | Yes (nullable value type) | — |
-| OnboardingStatus | `ComputerOnboardingStatus` | No (value type) | — |
+| OnboardingStatus | [ComputerOnboardingStatus](ComputerOnboardingStatus.md) | No (value type) | — |
 | Serial | `string` | Reference type (nullable) | — |
 | TenantName | `string` | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |

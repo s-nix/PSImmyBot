@@ -27,7 +27,7 @@ title: New-Assembly
 | CodeBase | `String` | False | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
 | DefinedTypes | `ICollection`1` | False | — | All | None |
-| EntryPoint | `MethodInfo` | True | — | All | None |
+| EntryPoint | [MethodInfo](../models/MethodInfo.md) | True | — | All | None |
 | EscapedCodeBase | `String` | False | — | All | None |
 | ExportedTypes | `ICollection`1` | False | — | All | None |
 | FullName | `String` | False | — | All | None |
@@ -38,10 +38,10 @@ title: New-Assembly
 | IsDynamic | `Boolean` | True | — | All | None |
 | IsFullyTrusted | `Boolean` | True | — | All | None |
 | Location | `String` | False | — | All | None |
-| ManifestModule | `Module` | True | — | All | None |
+| ManifestModule | [Module](../models/Module.md) | True | — | All | None |
 | Modules | `ICollection`1` | False | — | All | None |
 | ReflectionOnly | `Boolean` | True | — | All | None |
-| SecurityRuleSet | `SecurityRuleSet` | True | — | All | None |
+| SecurityRuleSet | [SecurityRuleSet](../models/SecurityRuleSet.md) | True | — | All | None |
 
 ### Parameter sets
 

@@ -10,7 +10,7 @@ title: UpdateGlobalSoftwareRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateGlobalSoftwareRequestBody>` |
+| Implements | IEquatable<[UpdateGlobalSoftwareRequestBody](UpdateGlobalSoftwareRequestBody.md)> |
 | Source | `Models/UpdateGlobalSoftwareRequestBody.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: UpdateGlobalSoftwareRequestBody
 | --- | --- | --- | --- |
 | AgentIntegrationTypeId | `Guid?` | Yes (nullable value type) | — |
 | ChocoProviderSoftwareId | `string` | Reference type (nullable) | — |
-| DetectionMethod | `DetectionMethod` | No (value type) | — |
+| DetectionMethod | [DetectionMethod](DetectionMethod.md) | No (value type) | — |
 | DetectionScriptId | `int?` | Yes (nullable value type) | — |
 | DownloadInstallerScriptId | `int?` | Yes (nullable value type) | — |
 | DynamicVersionsScriptId | `int?` | Yes (nullable value type) | — |
@@ -30,8 +30,8 @@ title: UpdateGlobalSoftwareRequestBody
 | InstallOrder | `int` | No (value type) | — |
 | InstallScriptId | `int?` | Yes (nullable value type) | — |
 | LicenseDescription | `string` | Reference type (nullable) | — |
-| LicenseRequirement | `SoftwareLicenseRequirement` | No (value type) | — |
-| LicenseType | `LicenseType` | No (value type) | — |
+| LicenseRequirement | [SoftwareLicenseRequirement](SoftwareLicenseRequirement.md) | No (value type) | — |
+| LicenseType | [LicenseType](LicenseType.md) | No (value type) | — |
 | MaintenanceTaskId | `int?` | Yes (nullable value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | NiniteProviderSoftwareId | `string` | Reference type (nullable) | — |
@@ -44,16 +44,16 @@ title: UpdateGlobalSoftwareRequestBody
 | RepairType | `int?` | Yes (nullable value type) | — |
 | SoftwareIconMediaId | `int?` | Yes (nullable value type) | — |
 | SoftwareId | `int` | No (value type) | — |
-| SoftwarePrerequisites | `ICollection<SoftwarePrerequisite>` | Reference type (nullable) | — |
+| SoftwarePrerequisites | ICollection<[SoftwarePrerequisite](SoftwarePrerequisite.md)> | Reference type (nullable) | — |
 | SoftwareTableName | `string` | Reference type (nullable) | — |
-| SoftwareTableNameSearchMode | `SoftwareTableNameSearchMode` | No (value type) | — |
+| SoftwareTableNameSearchMode | [SoftwareTableNameSearchMode](SoftwareTableNameSearchMode.md) | No (value type) | — |
 | TestFailedError | `string` | Reference type (nullable) | — |
 | TestRequired | `bool` | No (value type) | — |
 | TestScriptId | `int?` | Yes (nullable value type) | — |
 | UninstallScriptId | `int?` | Yes (nullable value type) | — |
 | UpgradeCode | `string` | Reference type (nullable) | — |
 | UpgradeScriptId | `int?` | Yes (nullable value type) | — |
-| UpgradeStrategy | `UpdateActionType` | No (value type) | — |
+| UpgradeStrategy | [UpdateActionType](UpdateActionType.md) | No (value type) | — |
 | UseDynamicVersions | `bool` | No (value type) | — |
 
 ## Serialization

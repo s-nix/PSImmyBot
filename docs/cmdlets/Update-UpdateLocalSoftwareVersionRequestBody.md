@@ -10,7 +10,7 @@ title: Update-UpdateLocalSoftwareVersionRequestBody
 | Source | `Cmdlets/UpdateUpdateLocalSoftwareVersionRequestBody.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/software/local/{SoftwareIdentifier}/versions/{SemanticVersion}? |
-| Return Type | `UpdateLocalSoftwareVersionRequestBody, GetLocalSoftwareVersionResponse` |
+| Return Type | [UpdateLocalSoftwareVersionRequestBody](../models/UpdateLocalSoftwareVersionRequestBody.md), [GetLocalSoftwareVersionResponse](../models/GetLocalSoftwareVersionResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Update-UpdateLocalSoftwareVersionRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/local/{SoftwareIdentifier}/versions/{SemanticVersion}?` and deserializes to `UpdateLocalSoftwareVersionRequestBody, GetLocalSoftwareVersionResponse`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/local/{SoftwareIdentifier}/versions/{SemanticVersion}?` and deserializes to [UpdateLocalSoftwareVersionRequestBody](../models/UpdateLocalSoftwareVersionRequestBody.md), [GetLocalSoftwareVersionResponse](../models/GetLocalSoftwareVersionResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateLocalSoftwareVersionRequestBody` | True | — | All | None |
-| SemanticVersion | `SemanticVersion` | True | — | All | None |
+| PayloadBody | [UpdateLocalSoftwareVersionRequestBody](../models/UpdateLocalSoftwareVersionRequestBody.md) | True | — | All | None |
+| SemanticVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -34,7 +34,7 @@ title: Update-UpdateLocalSoftwareVersionRequestBody
 
 ## Outputs
 
-- `UpdateLocalSoftwareVersionRequestBody, GetLocalSoftwareVersionResponse` records produced by `ImmyBotApiService.PATCH`
+- [UpdateLocalSoftwareVersionRequestBody](../models/UpdateLocalSoftwareVersionRequestBody.md), [GetLocalSoftwareVersionResponse](../models/GetLocalSoftwareVersionResponse.md) records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: ProviderLinkCrossReference
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderLinkCrossReference>` |
+| Implements | IEquatable<[ProviderLinkCrossReference](ProviderLinkCrossReference.md)> |
 | Source | `Models/ProviderLinkCrossReference.cs` |
 
 ## Overview
@@ -22,9 +22,9 @@ title: ProviderLinkCrossReference
 | --- | --- | --- | --- |
 | IsExternalClientLinkingEnabled | `bool` | No (value type) | — |
 | IsProviderLink2InitializedFromProviderLink1 | `bool` | No (value type) | — |
-| ProviderLink1 | `ProviderLink` | Reference type (nullable) | — |
+| ProviderLink1 | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
 | ProviderLink1Id | `int` | No (value type) | — |
-| ProviderLink2 | `ProviderLink` | Reference type (nullable) | — |
+| ProviderLink2 | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
 | ProviderLink2Id | `int` | No (value type) | — |
 
 ## Serialization

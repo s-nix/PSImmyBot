@@ -25,8 +25,8 @@ title: New-ValidateParamBlockParametersFromTaskRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ComputerId | `Nullable`1` | False | — | All | None |
-| DatabaseType | `DatabaseType` | True | — | All | None |
-| DeploymentDatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
+| DeploymentDatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | DeploymentId | `Nullable`1` | False | — | All | None |
 | ForceRebind | `Boolean` | True | — | All | None |
 | MaintenanceSessionId | `Nullable`1` | False | — | All | None |

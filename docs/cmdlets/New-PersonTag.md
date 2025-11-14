@@ -25,8 +25,8 @@ title: New-PersonTag
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | EntityId | `Int32` | True | — | All | None |
-| Person | `Person` | True | — | All | None |
-| Tag | `Tag` | True | — | All | None |
+| Person | [Person](../models/Person.md) | True | — | All | None |
+| Tag | [Tag](../models/Tag.md) | True | — | All | None |
 | TagId | `Int32` | True | — | All | None |
 
 ### Parameter sets

@@ -27,11 +27,11 @@ title: New-UserRole
 | AuditObjectName | `String` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
-| Role | `Role` | True | — | All | None |
+| Role | [Role](../models/Role.md) | True | — | All | None |
 | RoleId | `Int32` | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
-| User | `User` | True | — | All | None |
+| User | [User](../models/User.md) | True | — | All | None |
 | UserId | `Int32` | True | — | All | None |
 
 ### Parameter sets

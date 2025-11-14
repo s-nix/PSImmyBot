@@ -10,7 +10,7 @@ title: DynamicIntegrationType
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DynamicIntegrationType>` |
+| Implements | IEquatable<[DynamicIntegrationType](DynamicIntegrationType.md)> |
 | Source | `Models/DynamicIntegrationType.cs` |
 
 ## Overview
@@ -22,18 +22,18 @@ title: DynamicIntegrationType
 | --- | --- | --- | --- |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | CreationErrorMessage | `string` | Reference type (nullable) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DocsUrl | `string` | Reference type (nullable) | — |
 | Enabled | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | IntegrationTypeId | `Guid` | No (value type) | — |
-| Logo | `Media` | Reference type (nullable) | — |
+| Logo | [Media](Media.md) | Reference type (nullable) | — |
 | LogoId | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| Script | `Script` | Reference type (nullable) | — |
+| Script | [Script](Script.md) | Reference type (nullable) | — |
 | ScriptId | `int` | No (value type) | — |
 | Secrets | `object` | Reference type (nullable) | — |
-| Tag | `IntegrationTag` | No (value type) | — |
+| Tag | [IntegrationTag](IntegrationTag.md) | No (value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

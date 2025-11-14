@@ -10,7 +10,7 @@ title: ResolveAssignmentsForMaintenanceItemResultItem
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ResolveAssignmentsForMaintenanceItemResultItem>` |
+| Implements | IEquatable<[ResolveAssignmentsForMaintenanceItemResultItem](ResolveAssignmentsForMaintenanceItemResultItem.md)> |
 | Source | `Models/ResolveAssignmentsForMaintenanceItemResultItem.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: ResolveAssignmentsForMaintenanceItemResultItem
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DeploymentId | `int` | No (value type) | — |
 | DeploymentPhrase | `string` | Reference type (nullable) | — |
 

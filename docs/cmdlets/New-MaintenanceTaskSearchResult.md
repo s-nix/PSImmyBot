@@ -24,7 +24,7 @@ title: New-MaintenanceTaskSearchResult
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | Owned | `Boolean` | True | — | All | None |

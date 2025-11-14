@@ -27,7 +27,7 @@ title: New-AzureTenantAuthDetails
 | AzureTenantPrincipalId | `String` | False | — | All | None |
 | CustomAppRegAppId | `String` | False | — | All | None |
 | CustomAppRegSecret | `String` | False | — | All | None |
-| SelectedPermissionLevel | `AzurePermissionLevel2` | True | — | All | None |
+| SelectedPermissionLevel | [AzurePermissionLevel2](../models/AzurePermissionLevel2.md) | True | — | All | None |
 
 ### Parameter sets
 

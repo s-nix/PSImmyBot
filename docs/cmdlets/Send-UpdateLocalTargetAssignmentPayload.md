@@ -10,7 +10,7 @@ title: Send-UpdateLocalTargetAssignmentPayload
 | Source | `Cmdlets/SendUpdateLocalTargetAssignmentPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/change-request/{ChangeRequestId}? |
-| Return Type | `UpdateLocalTargetAssignmentPayload, ChangeRequestResponse` |
+| Return Type | [UpdateLocalTargetAssignmentPayload](../models/UpdateLocalTargetAssignmentPayload.md), [ChangeRequestResponse](../models/ChangeRequestResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-UpdateLocalTargetAssignmentPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/change-request/{ChangeRequestId}?` and deserializes to `UpdateLocalTargetAssignmentPayload, ChangeRequestResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/change-request/{ChangeRequestId}?` and deserializes to [UpdateLocalTargetAssignmentPayload](../models/UpdateLocalTargetAssignmentPayload.md), [ChangeRequestResponse](../models/ChangeRequestResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ChangeRequestId | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateLocalTargetAssignmentPayload` | True | — | All | None |
+| PayloadBody | [UpdateLocalTargetAssignmentPayload](../models/UpdateLocalTargetAssignmentPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-UpdateLocalTargetAssignmentPayload
 
 ## Outputs
 
-- `UpdateLocalTargetAssignmentPayload, ChangeRequestResponse` records produced by `ImmyBotApiService.POST`
+- [UpdateLocalTargetAssignmentPayload](../models/UpdateLocalTargetAssignmentPayload.md), [ChangeRequestResponse](../models/ChangeRequestResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -24,8 +24,8 @@ title: New-AzureTenantInfoAzureErrorOneOf
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AsT0 | `AzureTenantInfo` | True | — | All | None |
-| AsT1 | `AzureError` | True | — | All | None |
+| AsT0 | [AzureTenantInfo](../models/AzureTenantInfo.md) | True | — | All | None |
+| AsT1 | [AzureError](../models/AzureError.md) | True | — | All | None |
 | Index | `Int32` | True | — | All | None |
 | IsT0 | `Boolean` | True | — | All | None |
 | IsT1 | `Boolean` | True | — | All | None |

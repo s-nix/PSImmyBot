@@ -10,7 +10,7 @@ title: Feature
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Feature>` |
+| Implements | IEquatable<[Feature](Feature.md)> |
 | Source | `Models/Feature.cs` |
 
 ## Overview

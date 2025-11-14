@@ -10,7 +10,7 @@ title: UnlinkClientsRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UnlinkClientsRequestBody>` |
+| Implements | IEquatable<[UnlinkClientsRequestBody](UnlinkClientsRequestBody.md)> |
 | Source | `Models/UnlinkClientsRequestBody.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: UpdateComputerAdditionalPersonsRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateComputerAdditionalPersonsRequestBody>` |
+| Implements | IEquatable<[UpdateComputerAdditionalPersonsRequestBody](UpdateComputerAdditionalPersonsRequestBody.md)> |
 | Source | `Models/UpdateComputerAdditionalPersonsRequestBody.cs` |
 
 ## Overview

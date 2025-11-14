@@ -10,7 +10,7 @@ title: UpdateRecommendedApprovalPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateRecommendedApprovalPayload>` |
+| Implements | IEquatable<[UpdateRecommendedApprovalPayload](UpdateRecommendedApprovalPayload.md)> |
 | Source | `Models/UpdateRecommendedApprovalPayload.cs` |
 
 ## Overview

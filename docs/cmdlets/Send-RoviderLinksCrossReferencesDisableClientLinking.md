@@ -10,7 +10,7 @@ title: Send-RoviderLinksCrossReferencesDisableClientLinking
 | Source | `Cmdlets/SendRoviderLinksCrossReferencesDisableClientLinking.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/cross-references/{ExternalLinkId}/disable-client-linking? |
-| Return Type | `LinkedExternalLink` |
+| Return Type | [LinkedExternalLink](../models/LinkedExternalLink.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-RoviderLinksCrossReferencesDisableClientLinking
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/cross-references/{ExternalLinkId}/disable-client-linking?` and deserializes to `LinkedExternalLink`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/cross-references/{ExternalLinkId}/disable-client-linking?` and deserializes to [LinkedExternalLink](../models/LinkedExternalLink.md).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ title: Send-RoviderLinksCrossReferencesDisableClientLinking
 
 ## Outputs
 
-- `LinkedExternalLink` records produced by `ImmyBotApiService.POST`
+- [LinkedExternalLink](../models/LinkedExternalLink.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

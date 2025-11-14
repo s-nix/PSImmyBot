@@ -10,7 +10,7 @@ title: MigrateToSupersedingAssignmentWhatIfResponseOpResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MigrateToSupersedingAssignmentWhatIfResponseOpResult>` |
+| Implements | IEquatable<[MigrateToSupersedingAssignmentWhatIfResponseOpResult](MigrateToSupersedingAssignmentWhatIfResponseOpResult.md)> |
 | Source | `Models/MigrateToSupersedingAssignmentWhatIfResponseOpResult.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: MigrateToSupersedingAssignmentWhatIfResponseOpResult
 | DateCreatedUtc | `DateTimeOffset` | No (value type) | — |
 | IsSuccess | `bool` | No (value type) | — |
 | Reason | `string` | Reference type (nullable) | — |
-| Value | `MigrateToSupersedingAssignmentWhatIfResponse` | Reference type (nullable) | — |
+| Value | [MigrateToSupersedingAssignmentWhatIfResponse](MigrateToSupersedingAssignmentWhatIfResponse.md) | Reference type (nullable) | — |
 
 ## Serialization
 

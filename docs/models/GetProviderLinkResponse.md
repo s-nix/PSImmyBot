@@ -10,7 +10,7 @@ title: GetProviderLinkResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetProviderLinkResponse>` |
+| Implements | IEquatable<[GetProviderLinkResponse](GetProviderLinkResponse.md)> |
 | Source | `Models/GetProviderLinkResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetProviderLinkResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computers | `ICollection<GetComputerResponse>` | Reference type (nullable) | — |
+| Computers | ICollection<[GetComputerResponse](GetComputerResponse.md)> | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | Disabled | `bool` | No (value type) | — |
@@ -29,25 +29,25 @@ title: GetProviderLinkResponse
 | GetFormSchemaFailedMessage | `string` | Reference type (nullable) | — |
 | GetLatestAgentVersionFailedMessage | `string` | Reference type (nullable) | — |
 | GetProviderFailedMessage | `string` | Reference type (nullable) | — |
-| HealthStatus | `HealthStatus` | No (value type) | — |
+| HealthStatus | [HealthStatus](HealthStatus.md) | No (value type) | — |
 | HealthStatusMessage | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | IncludeClientsFailedMessage | `string` | Reference type (nullable) | — |
 | InputsWithStoredPasswords | `ICollection<string>` | Reference type (nullable) | — |
 | LatestAgentVersion | `string` | Reference type (nullable) | — |
-| LinkedFromProviders | `ICollection<LinkedExternalLink>` | Reference type (nullable) | — |
+| LinkedFromProviders | ICollection<[LinkedExternalLink](LinkedExternalLink.md)> | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
 | OwnerTenantId | `int` | No (value type) | — |
 | ProviderCapabilities | `ICollection<string>` | Reference type (nullable) | — |
-| ProviderClients | `ICollection<GetProviderClientResponse>` | Reference type (nullable) | — |
+| ProviderClients | ICollection<[GetProviderClientResponse](GetProviderClientResponse.md)> | Reference type (nullable) | — |
 | ProviderPluginBaseUrl | `string` | Reference type (nullable) | — |
-| ProvidersLinkedFromThisProvider | `ICollection<LinkedExternalLink>` | Reference type (nullable) | — |
+| ProvidersLinkedFromThisProvider | ICollection<[LinkedExternalLink](LinkedExternalLink.md)> | Reference type (nullable) | — |
 | ProviderTypeFormData | `object` | Reference type (nullable) | — |
 | ProviderTypeId | `Guid` | No (value type) | — |
 | RunScriptPriority | `int` | No (value type) | — |
-| Schedules | `ICollection<GetScheduleResponse>` | Reference type (nullable) | — |
-| SupportedCrossProviderClientLinkages | `ICollection<SupportedCrossProviderLinkage>` | Reference type (nullable) | — |
-| SupportedCrossProviderInitializationLinkages | `ICollection<SupportedCrossProviderLinkage>` | Reference type (nullable) | — |
+| Schedules | ICollection<[GetScheduleResponse](GetScheduleResponse.md)> | Reference type (nullable) | — |
+| SupportedCrossProviderClientLinkages | ICollection<[SupportedCrossProviderLinkage](SupportedCrossProviderLinkage.md)> | Reference type (nullable) | — |
+| SupportedCrossProviderInitializationLinkages | ICollection<[SupportedCrossProviderLinkage](SupportedCrossProviderLinkage.md)> | Reference type (nullable) | — |
 | SupportsDeviceUpdating | `bool` | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
 | UpdatedByName | `string` | Reference type (nullable) | — |

@@ -10,7 +10,7 @@ title: Get-Pending
 | Source | `Cmdlets/GetPending.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-agents/pending? |
-| Return Type | `GetPendingResponse` |
+| Return Type | [GetPendingResponse](../models/GetPendingResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Pending
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-agents/pending?` and deserializes to `GetPendingResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-agents/pending?` and deserializes to [GetPendingResponse](../models/GetPendingResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -41,7 +41,7 @@ title: Get-Pending
 
 ## Outputs
 
-- `GetPendingResponse` records produced by `ImmyBotApiService.GET`
+- [GetPendingResponse](../models/GetPendingResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

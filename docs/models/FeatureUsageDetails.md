@@ -10,7 +10,7 @@ title: FeatureUsageDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<FeatureUsageDetails>` |
+| Implements | IEquatable<[FeatureUsageDetails](FeatureUsageDetails.md)> |
 | Source | `Models/FeatureUsageDetails.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: FeatureUsageDetails
 | ItemCount | `int?` | Yes (nullable value type) | — |
 | MaxCount | `int?` | Yes (nullable value type) | — |
 | MaxCountPerItem | `int?` | Yes (nullable value type) | — |
-| ResetInterval | `FeatureResetInterval` | No (value type) | — |
+| ResetInterval | [FeatureResetInterval](FeatureResetInterval.md) | No (value type) | — |
 
 ## Serialization
 

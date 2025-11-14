@@ -10,7 +10,7 @@ title: MaintenanceTaskParameterValueDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceTaskParameterValueDetails>` |
+| Implements | IEquatable<[MaintenanceTaskParameterValueDetails](MaintenanceTaskParameterValueDetails.md)> |
 | Source | `Models/MaintenanceTaskParameterValueDetails.cs` |
 
 ## Overview
@@ -25,11 +25,11 @@ title: MaintenanceTaskParameterValueDetails
 | Id | `int` | No (value type) | — |
 | MaintenanceTaskId | `int` | No (value type) | — |
 | MaintenanceTaskParameterId | `int` | No (value type) | — |
-| MaintenanceTaskType | `DatabaseType` | No (value type) | — |
-| MediaDatabaseType | `DatabaseType` | No (value type) | — |
+| MaintenanceTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| MediaDatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | MediaId | `int?` | Yes (nullable value type) | — |
 | ParameterName | `string` | Reference type (nullable) | — |
-| ParameterType | `MaintenanceTaskParameterType` | No (value type) | — |
+| ParameterType | [MaintenanceTaskParameterType](MaintenanceTaskParameterType.md) | No (value type) | — |
 | Value | `string` | Reference type (nullable) | — |
 
 ## Serialization

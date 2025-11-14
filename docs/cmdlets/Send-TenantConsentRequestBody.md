@@ -10,7 +10,7 @@ title: Send-TenantConsentRequestBody
 | Source | `Cmdlets/SendTenantConsentRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/azure/tenant-consented? |
-| Return Type | `TenantConsentRequestBody, TenantConsentResponseBody` |
+| Return Type | [TenantConsentRequestBody](../models/TenantConsentRequestBody.md), [TenantConsentResponseBody](../models/TenantConsentResponseBody.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-TenantConsentRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/azure/tenant-consented?` and deserializes to `TenantConsentRequestBody, TenantConsentResponseBody`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/azure/tenant-consented?` and deserializes to [TenantConsentRequestBody](../models/TenantConsentRequestBody.md), [TenantConsentResponseBody](../models/TenantConsentResponseBody.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `TenantConsentRequestBody` | True | — | All | None |
+| PayloadBody | [TenantConsentRequestBody](../models/TenantConsentRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-TenantConsentRequestBody
 
 ## Outputs
 
-- `TenantConsentRequestBody, TenantConsentResponseBody` records produced by `ImmyBotApiService.POST`
+- [TenantConsentRequestBody](../models/TenantConsentRequestBody.md), [TenantConsentResponseBody](../models/TenantConsentResponseBody.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

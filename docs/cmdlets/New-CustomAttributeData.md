@@ -24,8 +24,8 @@ title: New-CustomAttributeData
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AttributeType | `Type` | True | — | All | None |
-| Constructor | `ConstructorInfo` | True | — | All | None |
+| AttributeType | [Type](../models/Type.md) | True | — | All | None |
+| Constructor | [ConstructorInfo](../models/ConstructorInfo.md) | True | — | All | None |
 | ConstructorArguments | `ICollection`1` | False | — | All | None |
 | NamedArguments | `ICollection`1` | False | — | All | None |
 

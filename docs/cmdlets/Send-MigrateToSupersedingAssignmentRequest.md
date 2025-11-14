@@ -10,7 +10,7 @@ title: Send-MigrateToSupersedingAssignmentRequest
 | Source | `Cmdlets/SendMigrateToSupersedingAssignmentRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/migrate-to-superseding-assignment-what-if? |
-| Return Type | `MigrateToSupersedingAssignmentRequest, MigrateToSupersedingAssignmentWhatIfResponseOpResult` |
+| Return Type | [MigrateToSupersedingAssignmentRequest](../models/MigrateToSupersedingAssignmentRequest.md), [MigrateToSupersedingAssignmentWhatIfResponseOpResult](../models/MigrateToSupersedingAssignmentWhatIfResponseOpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-MigrateToSupersedingAssignmentRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/migrate-to-superseding-assignment-what-if?` and deserializes to `MigrateToSupersedingAssignmentRequest, MigrateToSupersedingAssignmentWhatIfResponseOpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/migrate-to-superseding-assignment-what-if?` and deserializes to [MigrateToSupersedingAssignmentRequest](../models/MigrateToSupersedingAssignmentRequest.md), [MigrateToSupersedingAssignmentWhatIfResponseOpResult](../models/MigrateToSupersedingAssignmentWhatIfResponseOpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `MigrateToSupersedingAssignmentRequest` | True | — | All | None |
+| PayloadBody | [MigrateToSupersedingAssignmentRequest](../models/MigrateToSupersedingAssignmentRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-MigrateToSupersedingAssignmentRequest
 
 ## Outputs
 
-- `MigrateToSupersedingAssignmentRequest, MigrateToSupersedingAssignmentWhatIfResponseOpResult` records produced by `ImmyBotApiService.POST`
+- [MigrateToSupersedingAssignmentRequest](../models/MigrateToSupersedingAssignmentRequest.md), [MigrateToSupersedingAssignmentWhatIfResponseOpResult](../models/MigrateToSupersedingAssignmentWhatIfResponseOpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

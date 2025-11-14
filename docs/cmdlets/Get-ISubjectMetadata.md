@@ -10,7 +10,7 @@ title: Get-ISubjectMetadata
 | Source | `Cmdlets/GetISubjectMetadata.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/roles/permissions? |
-| Return Type | `List<ISubjectMetadata>` |
+| Return Type | List<[ISubjectMetadata](../models/ISubjectMetadata.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ISubjectMetadata
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/roles/permissions?` and deserializes to `List<ISubjectMetadata>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/roles/permissions?` and deserializes to List<[ISubjectMetadata](../models/ISubjectMetadata.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<ISubjectMetadata>` records produced by `ImmyBotApiService.GET`
+- List<[ISubjectMetadata](../models/ISubjectMetadata.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

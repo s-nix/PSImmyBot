@@ -10,7 +10,7 @@ title: GetTargetAssignmentTypeResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetTargetAssignmentTypeResponse>` |
+| Implements | IEquatable<[GetTargetAssignmentTypeResponse](GetTargetAssignmentTypeResponse.md)> |
 | Source | `Models/GetTargetAssignmentTypeResponse.cs` |
 
 ## Overview
@@ -21,12 +21,12 @@ title: GetTargetAssignmentTypeResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | AllowAccessToParentTenant | `bool` | No (value type) | — |
-| DesiredSoftwareState | `DesiredSoftwareState` | No (value type) | — |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | No (value type) | — |
+| DesiredSoftwareState | [DesiredSoftwareState](DesiredSoftwareState.md) | No (value type) | — |
+| MaintenanceTaskMode | [MaintenanceTaskMode](MaintenanceTaskMode.md) | No (value type) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetEnforcement | `TargetEnforcement` | No (value type) | — |
-| TargetType | `TargetType` | No (value type) | — |
+| TargetEnforcement | [TargetEnforcement](TargetEnforcement.md) | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

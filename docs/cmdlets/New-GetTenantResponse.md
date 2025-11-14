@@ -25,7 +25,7 @@ title: New-GetTenantResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Active | `Boolean` | True | — | All | None |
-| AzureTenantLink | `AzureTenantLinkResponse` | True | — | All | None |
+| AzureTenantLink | [AzureTenantLinkResponse](../models/AzureTenantLinkResponse.md) | True | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |

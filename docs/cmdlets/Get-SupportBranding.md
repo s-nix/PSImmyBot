@@ -10,7 +10,7 @@ title: Get-SupportBranding
 | Source | `Cmdlets/GetSupportBranding.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/brandings/support-branding? |
-| Return Type | `GetSupportBrandingResponse` |
+| Return Type | [GetSupportBrandingResponse](../models/GetSupportBrandingResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-SupportBranding
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/brandings/support-branding?` and deserializes to `GetSupportBrandingResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/brandings/support-branding?` and deserializes to [GetSupportBrandingResponse](../models/GetSupportBrandingResponse.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `GetSupportBrandingResponse` records produced by `ImmyBotApiService.GET`
+- [GetSupportBrandingResponse](../models/GetSupportBrandingResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

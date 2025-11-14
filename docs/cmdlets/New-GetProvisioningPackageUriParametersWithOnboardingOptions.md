@@ -24,8 +24,8 @@ title: New-GetProvisioningPackageUriParametersWithOnboardingOptions
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| OnboardingOptions | `AgentOnboardingOptions` | True | — | All | None |
-| PpkgOptions | `ProvisioningPackageOptions` | True | — | All | None |
+| OnboardingOptions | [AgentOnboardingOptions](../models/AgentOnboardingOptions.md) | True | — | All | None |
+| PpkgOptions | [ProvisioningPackageOptions](../models/ProvisioningPackageOptions.md) | True | — | All | None |
 | TargetExternalClientId | `String` | False | — | All | None |
 
 ### Parameter sets

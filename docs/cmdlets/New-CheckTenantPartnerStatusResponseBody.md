@@ -24,7 +24,7 @@ title: New-CheckTenantPartnerStatusResponseBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AzureTenantType | `AzTenantType` | True | — | All | None |
+| AzureTenantType | [AzTenantType](../models/AzTenantType.md) | True | — | All | None |
 | PartnerPrincipalId | `String` | False | — | All | None |
 | TenantPrincipalId | `String` | False | — | All | None |
 

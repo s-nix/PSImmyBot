@@ -10,7 +10,7 @@ title: GetReleasesResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetReleasesResponse>` |
+| Implements | IEquatable<[GetReleasesResponse](GetReleasesResponse.md)> |
 | Source | `Models/GetReleasesResponse.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: GetReleasesResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| CurrentRelease | `ReleaseDetails` | Reference type (nullable) | — |
-| LatestReleases | `ICollection<ReleaseDetails>` | Reference type (nullable) | — |
+| CurrentRelease | [ReleaseDetails](ReleaseDetails.md) | Reference type (nullable) | — |
+| LatestReleases | ICollection<[ReleaseDetails](ReleaseDetails.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

@@ -24,10 +24,10 @@ title: New-ProviderTypeDto
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AgentUpdateFormSchema | `AgentUpdateFormSchema` | True | — | All | None |
+| AgentUpdateFormSchema | [AgentUpdateFormSchema](../models/AgentUpdateFormSchema.md) | True | — | All | None |
 | CanManage | `Boolean` | True | — | All | None |
 | ClientGroupTypes | `ICollection`1` | False | — | All | None |
-| ConfigurationForm | `DynamicFormBindResultWithConvertedParameters` | True | — | All | None |
+| ConfigurationForm | [DynamicFormBindResultWithConvertedParameters](../models/DynamicFormBindResultWithConvertedParameters.md) | True | — | All | None |
 | DeviceGroupTypes | `ICollection`1` | False | — | All | None |
 | DisplayName | `String` | False | — | All | None |
 | DocsUrl | `String` | False | — | All | None |
@@ -36,7 +36,7 @@ title: New-ProviderTypeDto
 | ProviderCapabilities | `ICollection`1` | False | — | All | None |
 | ProviderTypeId | `Guid` | True | — | All | None |
 | ScreenShareLogoSrc | `String` | False | — | All | None |
-| Source | `ProviderTypeSource` | True | — | All | None |
+| Source | [ProviderTypeSource](../models/ProviderTypeSource.md) | True | — | All | None |
 | SupportedCrossProviderClientLinkages | `ICollection`1` | False | — | All | None |
 | SupportedCrossProviderInitializationLinkages | `ICollection`1` | False | — | All | None |
 | SupportsDeviceUpdating | `Boolean` | True | — | All | None |

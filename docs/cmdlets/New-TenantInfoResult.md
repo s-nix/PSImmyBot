@@ -25,7 +25,7 @@ title: New-TenantInfoResult
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | PrincipalId | `String` | False | — | All | None |
-| Result | `AzureTenantInfoAzureErrorOneOf` | True | — | All | None |
+| Result | [AzureTenantInfoAzureErrorOneOf](../models/AzureTenantInfoAzureErrorOneOf.md) | True | — | All | None |
 
 ### Parameter sets
 

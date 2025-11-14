@@ -10,7 +10,7 @@ title: DynamicIntegrationTypeResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DynamicIntegrationTypeResponse>` |
+| Implements | IEquatable<[DynamicIntegrationTypeResponse](DynamicIntegrationTypeResponse.md)> |
 | Source | `Models/DynamicIntegrationTypeResponse.cs` |
 
 ## Overview
@@ -22,16 +22,16 @@ title: DynamicIntegrationTypeResponse
 | --- | --- | --- | --- |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
 | CreationErrorMessage | `string` | Reference type (nullable) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DocsUrl | `string` | Reference type (nullable) | — |
 | Enabled | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | IntegrationTypeId | `Guid` | No (value type) | — |
-| Logo | `GlobalMediaResponse` | Reference type (nullable) | — |
+| Logo | [GlobalMediaResponse](GlobalMediaResponse.md) | Reference type (nullable) | — |
 | LogoId | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | ScriptId | `int` | No (value type) | — |
-| Tag | `IntegrationTag` | No (value type) | — |
+| Tag | [IntegrationTag](IntegrationTag.md) | No (value type) | — |
 | UpdatedDateUtc | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

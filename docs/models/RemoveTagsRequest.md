@@ -10,7 +10,7 @@ title: RemoveTagsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RemoveTagsRequest>` |
+| Implements | IEquatable<[RemoveTagsRequest](RemoveTagsRequest.md)> |
 | Source | `Models/RemoveTagsRequest.cs` |
 
 ## Overview

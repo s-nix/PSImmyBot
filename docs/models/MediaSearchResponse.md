@@ -10,7 +10,7 @@ title: MediaSearchResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MediaSearchResponse>` |
+| Implements | IEquatable<[MediaSearchResponse](MediaSearchResponse.md)> |
 | Source | `Models/MediaSearchResponse.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: MediaSearchResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Global | `ICollection<GlobalMediaResponse>` | Reference type (nullable) | — |
-| Local | `ICollection<LocalMediaResponse>` | Reference type (nullable) | — |
+| Global | ICollection<[GlobalMediaResponse](GlobalMediaResponse.md)> | Reference type (nullable) | — |
+| Local | ICollection<[LocalMediaResponse](LocalMediaResponse.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

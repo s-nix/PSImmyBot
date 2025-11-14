@@ -32,7 +32,7 @@ title: New-SubscriptionDetails
 | PlanId | `String` | False | — | All | None |
 | PlanPrice | `Int32` | True | — | All | None |
 | PlanQuantity | `Int32` | True | — | All | None |
-| Status | `SubscriptionStatus` | True | — | All | None |
+| Status | [SubscriptionStatus](../models/SubscriptionStatus.md) | True | — | All | None |
 | TrialEndUtc | `Nullable`1` | False | — | All | None |
 | TrialStartUtc | `Nullable`1` | False | — | All | None |
 

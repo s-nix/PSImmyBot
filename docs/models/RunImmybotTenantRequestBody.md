@@ -10,7 +10,7 @@ title: RunImmybotTenantRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RunImmybotTenantRequestBody>` |
+| Implements | IEquatable<[RunImmybotTenantRequestBody](RunImmybotTenantRequestBody.md)> |
 | Source | `Models/RunImmybotTenantRequestBody.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: RunImmybotTenantRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| MaintenanceTaskParameterValueOverrides | `IDictionary<string, IDictionary<string, DeploymentParameterValue>>` | Reference type (nullable) | — |
+| MaintenanceTaskParameterValueOverrides | IDictionary<string, IDictionary<string, [DeploymentParameterValue](DeploymentParameterValue.md)>> | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

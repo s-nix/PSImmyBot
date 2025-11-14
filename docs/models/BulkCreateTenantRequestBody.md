@@ -10,7 +10,7 @@ title: BulkCreateTenantRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkCreateTenantRequestBody>` |
+| Implements | IEquatable<[BulkCreateTenantRequestBody](BulkCreateTenantRequestBody.md)> |
 | Source | `Models/BulkCreateTenantRequestBody.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: BulkCreateTenantRequestBody
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | OwnerTenantId | `int` | No (value type) | — |
-| Tenants | `ICollection<BulkCreateTenantRequestBodyListItem>` | Reference type (nullable) | — |
+| Tenants | ICollection<[BulkCreateTenantRequestBodyListItem](BulkCreateTenantRequestBodyListItem.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

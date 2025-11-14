@@ -10,7 +10,7 @@ title: GetAgentSha256HashResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetAgentSha256HashResponse>` |
+| Implements | IEquatable<[GetAgentSha256HashResponse](GetAgentSha256HashResponse.md)> |
 | Source | `Models/GetAgentSha256HashResponse.cs` |
 
 ## Overview

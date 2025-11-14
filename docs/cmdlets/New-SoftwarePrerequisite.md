@@ -24,12 +24,12 @@ title: New-SoftwarePrerequisite
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ActionToPerform | `ActionToPerform` | True | — | All | None |
-| Condition | `Condition` | True | — | All | None |
+| ActionToPerform | [ActionToPerform](../models/ActionToPerform.md) | True | — | All | None |
+| Condition | [Condition](../models/Condition.md) | True | — | All | None |
 | SoftwaresForCondition | `ICollection`1` | False | — | All | None |
 | SoftwareSpecifiers | `ICollection`1` | False | — | All | None |
 | SoftwaresToPerformActionOn | `ICollection`1` | False | — | All | None |
-| SubjectQualifier | `SubjectQualifier` | True | — | All | None |
+| SubjectQualifier | [SubjectQualifier](../models/SubjectQualifier.md) | True | — | All | None |
 
 ### Parameter sets
 

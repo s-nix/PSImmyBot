@@ -47,11 +47,11 @@ title: New-GetComputerResponse
 | IsServer | `Nullable`1` | False | — | All | None |
 | Licensed | `Boolean` | True | — | All | None |
 | Notes | `String` | False | — | All | None |
-| OnboardingStatus | `ComputerOnboardingStatus` | True | — | All | None |
-| PrimaryPerson | `GetPersonResponse` | True | — | All | None |
+| OnboardingStatus | [ComputerOnboardingStatus](../models/ComputerOnboardingStatus.md) | True | — | All | None |
+| PrimaryPerson | [GetPersonResponse](../models/GetPersonResponse.md) | True | — | All | None |
 | PrimaryPersonId | `Nullable`1` | False | — | All | None |
 | Sessions | `ICollection`1` | False | — | All | None |
-| Tenant | `GetTenantResponse` | True | — | All | None |
+| Tenant | [GetTenantResponse](../models/GetTenantResponse.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 | TenantName | `String` | False | — | All | None |
 

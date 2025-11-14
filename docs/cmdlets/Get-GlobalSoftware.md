@@ -10,7 +10,7 @@ title: Get-GlobalSoftware
 | Source | `Cmdlets/GetGlobalSoftware.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/software/global/{SoftwareIdentifier}? |
-| Return Type | `GetGlobalSoftwareResponse` |
+| Return Type | [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-GlobalSoftware
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/global/{SoftwareIdentifier}?` and deserializes to `GetGlobalSoftwareResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/global/{SoftwareIdentifier}?` and deserializes to [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -34,7 +34,7 @@ title: Get-GlobalSoftware
 
 ## Outputs
 
-- `GetGlobalSoftwareResponse` records produced by `ImmyBotApiService.GET`
+- [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

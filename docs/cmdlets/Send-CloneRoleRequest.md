@@ -10,7 +10,7 @@ title: Send-CloneRoleRequest
 | Source | `Cmdlets/SendCloneRoleRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/roles/{RoleId}/clone? |
-| Return Type | `CloneRoleRequest, GetRoleResponse` |
+| Return Type | [CloneRoleRequest](../models/CloneRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CloneRoleRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/roles/{RoleId}/clone?` and deserializes to `CloneRoleRequest, GetRoleResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/roles/{RoleId}/clone?` and deserializes to [CloneRoleRequest](../models/CloneRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CloneRoleRequest` | True | — | All | None |
+| PayloadBody | [CloneRoleRequest](../models/CloneRoleRequest.md) | True | — | All | None |
 | RoleId | `Int32` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Send-CloneRoleRequest
 
 ## Outputs
 
-- `CloneRoleRequest, GetRoleResponse` records produced by `ImmyBotApiService.POST`
+- [CloneRoleRequest](../models/CloneRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

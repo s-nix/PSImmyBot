@@ -10,7 +10,7 @@ title: CloneRoleRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CloneRoleRequest>` |
+| Implements | IEquatable<[CloneRoleRequest](CloneRoleRequest.md)> |
 | Source | `Models/CloneRoleRequest.cs` |
 
 ## Overview

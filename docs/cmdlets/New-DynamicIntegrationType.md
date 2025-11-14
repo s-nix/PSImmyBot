@@ -26,18 +26,18 @@ title: New-DynamicIntegrationType
 | --- | --- | --- | --- | --- | --- |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | CreationErrorMessage | `String` | False | — | All | None |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | DocsUrl | `String` | False | — | All | None |
 | Enabled | `Boolean` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | IntegrationTypeId | `Guid` | True | — | All | None |
-| Logo | `Media` | True | — | All | None |
+| Logo | [Media](../models/Media.md) | True | — | All | None |
 | LogoId | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| Script | `Script` | True | — | All | None |
+| Script | [Script](../models/Script.md) | True | — | All | None |
 | ScriptId | `Int32` | True | — | All | None |
 | Secrets | `Object` | False | — | All | None |
-| Tag | `IntegrationTag` | True | — | All | None |
+| Tag | [IntegrationTag](../models/IntegrationTag.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: ApplicationLockEventEventStream
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApplicationLockEventEventStream>` |
+| Implements | IEquatable<[ApplicationLockEventEventStream](ApplicationLockEventEventStream.md)> |
 | Source | `Models/ApplicationLockEventEventStream.cs` |
 
 ## Overview

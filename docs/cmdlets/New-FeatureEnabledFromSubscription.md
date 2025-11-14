@@ -25,9 +25,9 @@ title: New-FeatureEnabledFromSubscription
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | FeatureCustomValue | `String` | False | — | All | None |
-| FeatureEntitlementType | `FeatureEntitlementType` | True | — | All | None |
+| FeatureEntitlementType | [FeatureEntitlementType](../models/FeatureEntitlementType.md) | True | — | All | None |
 | FeatureId | `String` | False | — | All | None |
-| FeatureUsage | `FeatureUsageDetails` | True | — | All | None |
+| FeatureUsage | [FeatureUsageDetails](../models/FeatureUsageDetails.md) | True | — | All | None |
 | IsUsageBased | `Boolean` | True | — | All | None |
 
 ### Parameter sets

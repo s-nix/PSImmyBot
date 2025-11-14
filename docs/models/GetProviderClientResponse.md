@@ -10,7 +10,7 @@ title: GetProviderClientResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetProviderClientResponse>` |
+| Implements | IEquatable<[GetProviderClientResponse](GetProviderClientResponse.md)> |
 | Source | `Models/GetProviderClientResponse.cs` |
 
 ## Overview
@@ -26,7 +26,7 @@ title: GetProviderClientResponse
 | ExternalClientName | `string` | Reference type (nullable) | — |
 | InternalData | `object` | Reference type (nullable) | — |
 | LinkedToTenantId | `int?` | Yes (nullable value type) | — |
-| ProviderLink | `GetProviderLinkResponse` | Reference type (nullable) | — |
+| ProviderLink | [GetProviderLinkResponse](GetProviderLinkResponse.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int` | No (value type) | — |
 | Status | `string` | Reference type (nullable) | — |
 | Types | `ICollection<string>` | Reference type (nullable) | — |

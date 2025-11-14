@@ -10,7 +10,7 @@ title: SoftwarePrerequisite
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SoftwarePrerequisite>` |
+| Implements | IEquatable<[SoftwarePrerequisite](SoftwarePrerequisite.md)> |
 | Source | `Models/SoftwarePrerequisite.cs` |
 
 ## Overview
@@ -20,12 +20,12 @@ title: SoftwarePrerequisite
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ActionToPerform | `ActionToPerform` | No (value type) | — |
-| Condition | `Condition` | No (value type) | — |
-| SoftwaresForCondition | `ICollection<SoftwareSpecifier>` | Reference type (nullable) | — |
-| SoftwareSpecifiers | `ICollection<SoftwareSpecifier>` | Reference type (nullable) | — |
-| SoftwaresToPerformActionOn | `ICollection<SoftwareSpecifier>` | Reference type (nullable) | — |
-| SubjectQualifier | `SubjectQualifier` | No (value type) | — |
+| ActionToPerform | [ActionToPerform](ActionToPerform.md) | No (value type) | — |
+| Condition | [Condition](Condition.md) | No (value type) | — |
+| SoftwaresForCondition | ICollection<[SoftwareSpecifier](SoftwareSpecifier.md)> | Reference type (nullable) | — |
+| SoftwareSpecifiers | ICollection<[SoftwareSpecifier](SoftwareSpecifier.md)> | Reference type (nullable) | — |
+| SoftwaresToPerformActionOn | ICollection<[SoftwareSpecifier](SoftwareSpecifier.md)> | Reference type (nullable) | — |
+| SubjectQualifier | [SubjectQualifier](SubjectQualifier.md) | No (value type) | — |
 
 ## Serialization
 

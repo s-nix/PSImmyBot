@@ -10,7 +10,7 @@ title: Send-CreateProviderLinkWithExternalProviderReferenceRequestBody
 | Source | `Cmdlets/SendCreateProviderLinkWithExternalProviderReferenceRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/create-with-external-provider-reference? |
-| Return Type | `CreateProviderLinkWithExternalProviderReferenceRequestBody, GetProviderLinkResponse` |
+| Return Type | [CreateProviderLinkWithExternalProviderReferenceRequestBody](../models/CreateProviderLinkWithExternalProviderReferenceRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-CreateProviderLinkWithExternalProviderReferenceRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/create-with-external-provider-reference?` and deserializes to `CreateProviderLinkWithExternalProviderReferenceRequestBody, GetProviderLinkResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/create-with-external-provider-reference?` and deserializes to [CreateProviderLinkWithExternalProviderReferenceRequestBody](../models/CreateProviderLinkWithExternalProviderReferenceRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateProviderLinkWithExternalProviderReferenceRequestBody` | True | — | All | None |
+| PayloadBody | [CreateProviderLinkWithExternalProviderReferenceRequestBody](../models/CreateProviderLinkWithExternalProviderReferenceRequestBody.md) | True | — | All | None |
 | ThrowIfAgentInstallerVersionNotSet | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets
@@ -34,7 +34,7 @@ title: Send-CreateProviderLinkWithExternalProviderReferenceRequestBody
 
 ## Outputs
 
-- `CreateProviderLinkWithExternalProviderReferenceRequestBody, GetProviderLinkResponse` records produced by `ImmyBotApiService.POST`
+- [CreateProviderLinkWithExternalProviderReferenceRequestBody](../models/CreateProviderLinkWithExternalProviderReferenceRequestBody.md), [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

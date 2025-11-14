@@ -10,7 +10,7 @@ title: CreateLinkedProviderReferenceRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateLinkedProviderReferenceRequestBody>` |
+| Implements | IEquatable<[CreateLinkedProviderReferenceRequestBody](CreateLinkedProviderReferenceRequestBody.md)> |
 | Source | `Models/CreateLinkedProviderReferenceRequestBody.cs` |
 
 ## Overview

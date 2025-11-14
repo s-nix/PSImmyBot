@@ -10,7 +10,7 @@ title: Get-DynamicIntegrationType
 | Source | `Cmdlets/GetDynamicIntegrationType.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/dynamic-provider-types/local/{Id}? |
-| Return Type | `DynamicIntegrationTypeResponse` |
+| Return Type | [DynamicIntegrationTypeResponse](../models/DynamicIntegrationTypeResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-DynamicIntegrationType
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/dynamic-provider-types/local/{Id}?` and deserializes to `DynamicIntegrationTypeResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/dynamic-provider-types/local/{Id}?` and deserializes to [DynamicIntegrationTypeResponse](../models/DynamicIntegrationTypeResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-DynamicIntegrationType
 
 ## Outputs
 
-- `DynamicIntegrationTypeResponse` records produced by `ImmyBotApiService.GET`
+- [DynamicIntegrationTypeResponse](../models/DynamicIntegrationTypeResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

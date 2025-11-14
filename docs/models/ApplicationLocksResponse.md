@@ -10,7 +10,7 @@ title: ApplicationLocksResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApplicationLocksResponse>` |
+| Implements | IEquatable<[ApplicationLocksResponse](ApplicationLocksResponse.md)> |
 | Source | `Models/ApplicationLocksResponse.cs` |
 
 ## Overview
@@ -21,8 +21,8 @@ title: ApplicationLocksResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Key | `string` | Reference type (nullable) | — |
-| LockHolder | `ApplicationLockCallerInfo` | Reference type (nullable) | — |
-| LockWaiters | `ICollection<ApplicationLockCallerInfo>` | Reference type (nullable) | — |
+| LockHolder | [ApplicationLockCallerInfo](ApplicationLockCallerInfo.md) | Reference type (nullable) | — |
+| LockWaiters | ICollection<[ApplicationLockCallerInfo](ApplicationLockCallerInfo.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

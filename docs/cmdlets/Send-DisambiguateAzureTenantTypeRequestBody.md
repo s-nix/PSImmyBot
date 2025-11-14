@@ -10,7 +10,7 @@ title: Send-DisambiguateAzureTenantTypeRequestBody
 | Source | `Cmdlets/SendDisambiguateAzureTenantTypeRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/azure/disambiguate-azure-tenant-type? |
-| Return Type | `DisambiguateAzureTenantTypeRequestBody, CheckTenantPartnerStatusResponseBody` |
+| Return Type | [DisambiguateAzureTenantTypeRequestBody](../models/DisambiguateAzureTenantTypeRequestBody.md), [CheckTenantPartnerStatusResponseBody](../models/CheckTenantPartnerStatusResponseBody.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-DisambiguateAzureTenantTypeRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/azure/disambiguate-azure-tenant-type?` and deserializes to `DisambiguateAzureTenantTypeRequestBody, CheckTenantPartnerStatusResponseBody`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/azure/disambiguate-azure-tenant-type?` and deserializes to [DisambiguateAzureTenantTypeRequestBody](../models/DisambiguateAzureTenantTypeRequestBody.md), [CheckTenantPartnerStatusResponseBody](../models/CheckTenantPartnerStatusResponseBody.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `DisambiguateAzureTenantTypeRequestBody` | True | — | All | None |
+| PayloadBody | [DisambiguateAzureTenantTypeRequestBody](../models/DisambiguateAzureTenantTypeRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-DisambiguateAzureTenantTypeRequestBody
 
 ## Outputs
 
-- `DisambiguateAzureTenantTypeRequestBody, CheckTenantPartnerStatusResponseBody` records produced by `ImmyBotApiService.POST`
+- [DisambiguateAzureTenantTypeRequestBody](../models/DisambiguateAzureTenantTypeRequestBody.md), [CheckTenantPartnerStatusResponseBody](../models/CheckTenantPartnerStatusResponseBody.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

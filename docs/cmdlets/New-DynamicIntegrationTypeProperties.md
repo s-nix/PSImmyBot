@@ -24,7 +24,7 @@ title: New-DynamicIntegrationTypeProperties
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | DocsUrl | `String` | False | — | All | None |
 | LogoMediaId | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |

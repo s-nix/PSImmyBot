@@ -10,7 +10,7 @@ title: DeleteAzureTenantAuthDetailsCmdResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DeleteAzureTenantAuthDetailsCmdResult>` |
+| Implements | IEquatable<[DeleteAzureTenantAuthDetailsCmdResult](DeleteAzureTenantAuthDetailsCmdResult.md)> |
 | Source | `Models/DeleteAzureTenantAuthDetailsCmdResult.cs` |
 
 ## Overview

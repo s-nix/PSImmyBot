@@ -10,7 +10,7 @@ title: Send-GetFileDownloadUrlRequest
 | Source | `Cmdlets/SendGetFileDownloadUrlRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/media/requestFileDownloadUrl? |
-| Return Type | `GetFileDownloadUrlRequest, string` |
+| Return Type | [GetFileDownloadUrlRequest](../models/GetFileDownloadUrlRequest.md), string |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-GetFileDownloadUrlRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/media/requestFileDownloadUrl?` and deserializes to `GetFileDownloadUrlRequest, string`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/media/requestFileDownloadUrl?` and deserializes to [GetFileDownloadUrlRequest](../models/GetFileDownloadUrlRequest.md), string.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `GetFileDownloadUrlRequest` | True | — | All | None |
+| PayloadBody | [GetFileDownloadUrlRequest](../models/GetFileDownloadUrlRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-GetFileDownloadUrlRequest
 
 ## Outputs
 
-- `GetFileDownloadUrlRequest, string` records produced by `ImmyBotApiService.POST`
+- [GetFileDownloadUrlRequest](../models/GetFileDownloadUrlRequest.md), string records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

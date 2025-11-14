@@ -10,7 +10,7 @@ title: AzureTenantTokenCredentialDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantTokenCredentialDetails>` |
+| Implements | IEquatable<[AzureTenantTokenCredentialDetails](AzureTenantTokenCredentialDetails.md)> |
 | Source | `Models/AzureTenantTokenCredentialDetails.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: AzureTenantTokenCredentialDetails
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| GotAccessTokenFrom | `AccessTokenSource` | No (value type) | — |
+| GotAccessTokenFrom | [AccessTokenSource](AccessTokenSource.md) | No (value type) | — |
 | OnlyUsePartnerCenterRefresh | `bool` | No (value type) | — |
 | PartnerPrincipalId | `string` | Reference type (nullable) | — |
 | ResolvedClientId | `string` | Reference type (nullable) | — |
-| TenantAzurePermissionLevel | `AzurePermissionLevel2` | No (value type) | — |
+| TenantAzurePermissionLevel | [AzurePermissionLevel2](AzurePermissionLevel2.md) | No (value type) | — |
 | TenantPreferredAzureClientId | `string` | Reference type (nullable) | — |
 | TenantPrincipalId | `string` | Reference type (nullable) | — |
 

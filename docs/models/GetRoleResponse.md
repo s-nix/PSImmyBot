@@ -10,7 +10,7 @@ title: GetRoleResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetRoleResponse>` |
+| Implements | IEquatable<[GetRoleResponse](GetRoleResponse.md)> |
 | Source | `Models/GetRoleResponse.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: GetRoleResponse
 | Description | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| RoleClaims | `ICollection<GetRoleClaimResponse>` | Reference type (nullable) | — |
+| RoleClaims | ICollection<[GetRoleClaimResponse](GetRoleClaimResponse.md)> | Reference type (nullable) | — |
 | RoleTypeId | `int` | No (value type) | — |
 | RoleTypeName | `string` | Reference type (nullable) | — |
 | UpdatedBy | `string` | Reference type (nullable) | — |

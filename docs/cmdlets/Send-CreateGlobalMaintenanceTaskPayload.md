@@ -10,7 +10,7 @@ title: Send-CreateGlobalMaintenanceTaskPayload
 | Source | `Cmdlets/SendCreateGlobalMaintenanceTaskPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/maintenance-tasks/global? |
-| Return Type | `CreateGlobalMaintenanceTaskPayload, GetGlobalMaintenanceTaskResponse` |
+| Return Type | [CreateGlobalMaintenanceTaskPayload](../models/CreateGlobalMaintenanceTaskPayload.md), [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateGlobalMaintenanceTaskPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/global?` and deserializes to `CreateGlobalMaintenanceTaskPayload, GetGlobalMaintenanceTaskResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/global?` and deserializes to [CreateGlobalMaintenanceTaskPayload](../models/CreateGlobalMaintenanceTaskPayload.md), [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateGlobalMaintenanceTaskPayload` | True | — | All | None |
+| PayloadBody | [CreateGlobalMaintenanceTaskPayload](../models/CreateGlobalMaintenanceTaskPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateGlobalMaintenanceTaskPayload
 
 ## Outputs
 
-- `CreateGlobalMaintenanceTaskPayload, GetGlobalMaintenanceTaskResponse` records produced by `ImmyBotApiService.POST`
+- [CreateGlobalMaintenanceTaskPayload](../models/CreateGlobalMaintenanceTaskPayload.md), [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: Computer
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Computer>` |
+| Implements | IEquatable<[Computer](Computer.md)> |
 | Source | `Models/Computer.cs` |
 
 ## Overview
@@ -20,17 +20,17 @@ title: Computer
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AdditionalPersons | `ICollection<ComputerPerson>` | Reference type (nullable) | — |
-| AgentIdentificationFailures | `ICollection<AgentIdentificationFailure>` | Reference type (nullable) | — |
-| Agents | `ICollection<ProviderAgent>` | Reference type (nullable) | — |
+| AdditionalPersons | ICollection<[ComputerPerson](ComputerPerson.md)> | Reference type (nullable) | — |
+| AgentIdentificationFailures | ICollection<[AgentIdentificationFailure](AgentIdentificationFailure.md)> | Reference type (nullable) | — |
+| Agents | ICollection<[ProviderAgent](ProviderAgent.md)> | Reference type (nullable) | — |
 | ChassisTypes | `ICollection<int>` | Reference type (nullable) | — |
 | ComputerName | `string` | Reference type (nullable) | — |
-| ComputerNote | `ComputerNote` | Reference type (nullable) | — |
-| ComputerTags | `ICollection<ComputerTag>` | Reference type (nullable) | — |
+| ComputerNote | [ComputerNote](ComputerNote.md) | Reference type (nullable) | — |
+| ComputerTags | ICollection<[ComputerTag](ComputerTag.md)> | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | DeletedAt | `DateTimeOffset?` | Yes (nullable value type) | — |
 | DeletedReason | `string` | Reference type (nullable) | — |
-| DetectedSoftware | `ICollection<DetectedComputerSoftware>` | Reference type (nullable) | — |
+| DetectedSoftware | ICollection<[DetectedComputerSoftware](DetectedComputerSoftware.md)> | Reference type (nullable) | — |
 | DetectionOutdated | `bool` | No (value type) | — |
 | DeviceId | `Guid` | No (value type) | — |
 | DevLabVmClaimExpirationDateUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
@@ -48,28 +48,28 @@ title: Computer
 | IsSandbox | `bool` | No (value type) | — |
 | LastBootTimeUtc | `string` | Reference type (nullable) | — |
 | LastLoggedOnUser | `string` | Reference type (nullable) | — |
-| LatestInventoryScriptResults | `ICollection<ComputerInventoryTaskScriptResult>` | Reference type (nullable) | — |
-| LatestProviderEvent | `ComputerLatestProviderEvent` | Reference type (nullable) | — |
+| LatestInventoryScriptResults | ICollection<[ComputerInventoryTaskScriptResult](ComputerInventoryTaskScriptResult.md)> | Reference type (nullable) | — |
+| LatestProviderEvent | [ComputerLatestProviderEvent](ComputerLatestProviderEvent.md) | Reference type (nullable) | — |
 | Manufacturer | `string` | Reference type (nullable) | — |
 | Model | `string` | Reference type (nullable) | — |
 | OnboardedDateUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
-| OnboardingStatus | `ComputerOnboardingStatus` | No (value type) | — |
+| OnboardingStatus | [ComputerOnboardingStatus](ComputerOnboardingStatus.md) | No (value type) | — |
 | OperatingSystem | `string` | Reference type (nullable) | — |
 | OsInstallDate | `DateTimeOffset?` | Yes (nullable value type) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
-| PredecessorComputers | `ICollection<Computer>` | Reference type (nullable) | — |
-| PrimaryPerson | `Person` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
+| PredecessorComputers | ICollection<[Computer](Computer.md)> | Reference type (nullable) | — |
+| PrimaryPerson | [Person](Person.md) | Reference type (nullable) | — |
 | PrimaryPersonId | `int?` | Yes (nullable value type) | — |
-| RemoteControlRecordings | `ICollection<RemoteControlRecording>` | Reference type (nullable) | — |
-| Schedules | `ICollection<Schedule>` | Reference type (nullable) | — |
+| RemoteControlRecordings | ICollection<[RemoteControlRecording](RemoteControlRecording.md)> | Reference type (nullable) | — |
+| Schedules | ICollection<[Schedule](Schedule.md)> | Reference type (nullable) | — |
 | SerialNumber | `string` | Reference type (nullable) | — |
-| Sessions | `ICollection<MaintenanceSession>` | Reference type (nullable) | — |
-| SuccessorComputer | `Computer` | Reference type (nullable) | — |
+| Sessions | ICollection<[MaintenanceSession](MaintenanceSession.md)> | Reference type (nullable) | — |
+| SuccessorComputer | [Computer](Computer.md) | Reference type (nullable) | — |
 | SuccessorComputerId | `int?` | Yes (nullable value type) | — |
-| Tags | `ICollection<Tag>` | Reference type (nullable) | — |
+| Tags | ICollection<[Tag](Tag.md)> | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| UserAffinities | `ICollection<UserAffinity>` | Reference type (nullable) | — |
+| UserAffinities | ICollection<[UserAffinity](UserAffinity.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

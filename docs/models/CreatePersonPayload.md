@@ -10,7 +10,7 @@ title: CreatePersonPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreatePersonPayload>` |
+| Implements | IEquatable<[CreatePersonPayload](CreatePersonPayload.md)> |
 | Source | `Models/CreatePersonPayload.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Get-AzureTenantAuthDetails
 | Source | `Cmdlets/GetAzureTenantAuthDetails.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/auth/get-azure-tenant-auth-details/{AzureTenantPrincipalId}? |
-| Return Type | `AzureTenantAuthDetails` |
+| Return Type | [AzureTenantAuthDetails](../models/AzureTenantAuthDetails.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-AzureTenantAuthDetails
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/auth/get-azure-tenant-auth-details/{AzureTenantPrincipalId}?` and deserializes to `AzureTenantAuthDetails`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/auth/get-azure-tenant-auth-details/{AzureTenantPrincipalId}?` and deserializes to [AzureTenantAuthDetails](../models/AzureTenantAuthDetails.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-AzureTenantAuthDetails
 
 ## Outputs
 
-- `AzureTenantAuthDetails` records produced by `ImmyBotApiService.GET`
+- [AzureTenantAuthDetails](../models/AzureTenantAuthDetails.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

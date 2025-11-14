@@ -10,7 +10,7 @@ title: ODataErrorDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ODataErrorDetails>` |
+| Implements | IEquatable<[ODataErrorDetails](ODataErrorDetails.md)> |
 | Source | `Models/ODataErrorDetails.cs` |
 
 ## Overview

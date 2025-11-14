@@ -10,7 +10,7 @@ title: MaintenanceTaskSearchResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceTaskSearchResult>` |
+| Implements | IEquatable<[MaintenanceTaskSearchResult](MaintenanceTaskSearchResult.md)> |
 | Source | `Models/MaintenanceTaskSearchResult.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: MaintenanceTaskSearchResult
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | Owned | `bool` | No (value type) | — |

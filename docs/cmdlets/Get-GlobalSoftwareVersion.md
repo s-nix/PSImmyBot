@@ -10,7 +10,7 @@ title: Get-GlobalSoftwareVersion
 | Source | `Cmdlets/GetGlobalSoftwareVersion.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/software/global/{SoftwareIdentifier}/latest? |
-| Return Type | `GetGlobalSoftwareVersionResponse` |
+| Return Type | [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-GlobalSoftwareVersion
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/global/{SoftwareIdentifier}/latest?` and deserializes to `GetGlobalSoftwareVersionResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/software/global/{SoftwareIdentifier}/latest?` and deserializes to [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-GlobalSoftwareVersion
 
 ## Outputs
 
-- `GetGlobalSoftwareVersionResponse` records produced by `ImmyBotApiService.GET`
+- [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: GettingStartedChecklist
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GettingStartedChecklist>` |
+| Implements | IEquatable<[GettingStartedChecklist](GettingStartedChecklist.md)> |
 | Source | `Models/GettingStartedChecklist.cs` |
 
 ## Overview

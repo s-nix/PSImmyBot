@@ -10,7 +10,7 @@ title: Send-UpdateGlobalScriptRequestBody
 | Source | `Cmdlets/SendUpdateGlobalScriptRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/global/{ScriptId}? |
-| Return Type | `UpdateGlobalScriptRequestBody, GetGlobalScriptResponse` |
+| Return Type | [UpdateGlobalScriptRequestBody](../models/UpdateGlobalScriptRequestBody.md), [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-UpdateGlobalScriptRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/global/{ScriptId}?` and deserializes to `UpdateGlobalScriptRequestBody, GetGlobalScriptResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/global/{ScriptId}?` and deserializes to [UpdateGlobalScriptRequestBody](../models/UpdateGlobalScriptRequestBody.md), [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -26,7 +26,7 @@ title: Send-UpdateGlobalScriptRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | IgnoreSyntaxErrors | `Nullable`1` | False | — | All | None |
-| PayloadBody | `UpdateGlobalScriptRequestBody` | True | — | All | None |
+| PayloadBody | [UpdateGlobalScriptRequestBody](../models/UpdateGlobalScriptRequestBody.md) | True | — | All | None |
 | ScriptId | `Int32` | True | — | All | None |
 
 ### Parameter sets
@@ -35,7 +35,7 @@ title: Send-UpdateGlobalScriptRequestBody
 
 ## Outputs
 
-- `UpdateGlobalScriptRequestBody, GetGlobalScriptResponse` records produced by `ImmyBotApiService.POST`
+- [UpdateGlobalScriptRequestBody](../models/UpdateGlobalScriptRequestBody.md), [GetGlobalScriptResponse](../models/GetGlobalScriptResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

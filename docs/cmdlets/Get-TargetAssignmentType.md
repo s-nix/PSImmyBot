@@ -10,7 +10,7 @@ title: Get-TargetAssignmentType
 | Source | `Cmdlets/GetTargetAssignmentType.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/{Id}/type? |
-| Return Type | `GetTargetAssignmentTypeResponse` |
+| Return Type | [GetTargetAssignmentTypeResponse](../models/GetTargetAssignmentTypeResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TargetAssignmentType
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/{Id}/type?` and deserializes to `GetTargetAssignmentTypeResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/{Id}/type?` and deserializes to [GetTargetAssignmentTypeResponse](../models/GetTargetAssignmentTypeResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-TargetAssignmentType
 
 ## Outputs
 
-- `GetTargetAssignmentTypeResponse` records produced by `ImmyBotApiService.GET`
+- [GetTargetAssignmentTypeResponse](../models/GetTargetAssignmentTypeResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

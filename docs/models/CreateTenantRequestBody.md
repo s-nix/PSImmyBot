@@ -10,7 +10,7 @@ title: CreateTenantRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateTenantRequestBody>` |
+| Implements | IEquatable<[CreateTenantRequestBody](CreateTenantRequestBody.md)> |
 | Source | `Models/CreateTenantRequestBody.cs` |
 
 ## Overview

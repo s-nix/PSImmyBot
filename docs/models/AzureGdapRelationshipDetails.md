@@ -10,7 +10,7 @@ title: AzureGdapRelationshipDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureGdapRelationshipDetails>` |
+| Implements | IEquatable<[AzureGdapRelationshipDetails](AzureGdapRelationshipDetails.md)> |
 | Source | `Models/AzureGdapRelationshipDetails.cs` |
 
 ## Overview
@@ -20,14 +20,14 @@ title: AzureGdapRelationshipDetails
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AccessAssignments | `ICollection<GdapRelationshipAccessAssignment>` | Reference type (nullable) | — |
+| AccessAssignments | ICollection<[GdapRelationshipAccessAssignment](GdapRelationshipAccessAssignment.md)> | Reference type (nullable) | — |
 | AutoExtendDuration | `string` | Reference type (nullable) | — |
 | CreatedDateTimeUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | DurationNumDays | `int?` | Yes (nullable value type) | — |
 | EndDateTimeUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | Id | `string` | Reference type (nullable) | — |
-| Roles | `ICollection<GdapRelationshipRole>` | Reference type (nullable) | — |
+| Roles | ICollection<[GdapRelationshipRole](GdapRelationshipRole.md)> | Reference type (nullable) | — |
 | Status | `string` | Reference type (nullable) | — |
 
 ## Serialization

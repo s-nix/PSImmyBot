@@ -10,7 +10,7 @@ title: Get-RecommendedApproval
 | Source | `Cmdlets/GetRecommendedApproval.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/recommended-approvals? |
-| Return Type | `List<GetRecommendedApprovalResponse>` |
+| Return Type | List<[GetRecommendedApprovalResponse](../models/GetRecommendedApprovalResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-RecommendedApproval
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/recommended-approvals?` and deserializes to `List<GetRecommendedApprovalResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/recommended-approvals?` and deserializes to List<[GetRecommendedApprovalResponse](../models/GetRecommendedApprovalResponse.md)>.
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `List<GetRecommendedApprovalResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetRecommendedApprovalResponse](../models/GetRecommendedApprovalResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

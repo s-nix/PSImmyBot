@@ -10,7 +10,7 @@ title: SummaryInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SummaryInfo>` |
+| Implements | IEquatable<[SummaryInfo](SummaryInfo.md)> |
 | Source | `Models/SummaryInfo.cs` |
 
 ## Overview

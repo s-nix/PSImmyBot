@@ -10,7 +10,7 @@ title: SoftwareSpecifier
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SoftwareSpecifier>` |
+| Implements | IEquatable<[SoftwareSpecifier](SoftwareSpecifier.md)> |
 | Source | `Models/SoftwareSpecifier.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: SoftwareSpecifier
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| MaintenanceSpecifier | `MaintenanceSpecifier` | Reference type (nullable) | — |
+| MaintenanceSpecifier | [MaintenanceSpecifier](MaintenanceSpecifier.md) | Reference type (nullable) | — |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 
 ## Serialization
 

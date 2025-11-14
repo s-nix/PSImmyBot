@@ -10,7 +10,7 @@ title: DuplicateAssignmentRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DuplicateAssignmentRequestBody>` |
+| Implements | IEquatable<[DuplicateAssignmentRequestBody](DuplicateAssignmentRequestBody.md)> |
 | Source | `Models/DuplicateAssignmentRequestBody.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: DuplicateAssignmentRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Id | `int` | No (value type) | — |
 
 ## Serialization

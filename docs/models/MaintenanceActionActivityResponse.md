@@ -10,7 +10,7 @@ title: MaintenanceActionActivityResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceActionActivityResponse>` |
+| Implements | IEquatable<[MaintenanceActionActivityResponse](MaintenanceActionActivityResponse.md)> |
 | Source | `Models/MaintenanceActionActivityResponse.cs` |
 
 ## Overview

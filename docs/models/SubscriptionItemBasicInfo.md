@@ -10,7 +10,7 @@ title: SubscriptionItemBasicInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SubscriptionItemBasicInfo>` |
+| Implements | IEquatable<[SubscriptionItemBasicInfo](SubscriptionItemBasicInfo.md)> |
 | Source | `Models/SubscriptionItemBasicInfo.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: SubscriptionItemBasicInfo
 | ItemDescription | `string` | Reference type (nullable) | — |
 | ItemId | `string` | Reference type (nullable) | — |
 | ItemName | `string` | Reference type (nullable) | — |
-| ItemType | `SubscriptionItemType` | No (value type) | — |
+| ItemType | [SubscriptionItemType](SubscriptionItemType.md) | No (value type) | — |
 
 ## Serialization
 

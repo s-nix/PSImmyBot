@@ -10,7 +10,7 @@ title: ComputerInDeploymentDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerInDeploymentDto>` |
+| Implements | IEquatable<[ComputerInDeploymentDto](ComputerInDeploymentDto.md)> |
 | Source | `Models/ComputerInDeploymentDto.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: ComputerInDeploymentDto
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | DeploymentId | `int` | No (value type) | — |
 
 ## Serialization

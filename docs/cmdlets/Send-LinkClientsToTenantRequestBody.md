@@ -25,7 +25,7 @@ title: Send-LinkClientsToTenantRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `LinkClientsToTenantRequestBody` | True | — | All | None |
+| PayloadBody | [LinkClientsToTenantRequestBody](../models/LinkClientsToTenantRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

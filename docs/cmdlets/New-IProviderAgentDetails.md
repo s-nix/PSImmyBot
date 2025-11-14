@@ -24,14 +24,14 @@ title: New-IProviderAgentDetails
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AgentVersion | `SemanticVersion` | True | — | All | None |
-| DeviceDetails | `DeviceDetails` | True | — | All | None |
+| AgentVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
+| DeviceDetails | [DeviceDetails](../models/DeviceDetails.md) | True | — | All | None |
 | ExternalAgentId | `String` | False | — | All | None |
 | ExternalClientId | `String` | False | — | All | None |
 | InternalData | `Object` | False | — | All | None |
 | IsOnline | `Boolean` | True | — | All | None |
 | LastUpdatedUtc | `DateTimeOffset` | True | — | All | None |
-| OnboardingOptions | `AgentOnboardingOptions` | True | — | All | None |
+| OnboardingOptions | [AgentOnboardingOptions](../models/AgentOnboardingOptions.md) | True | — | All | None |
 | RequireManualIdentification | `Boolean` | True | — | All | None |
 | SupportsRunningScripts | `Boolean` | True | — | All | None |
 

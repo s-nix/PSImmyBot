@@ -10,7 +10,7 @@ title: ApplicationPreferencesOperation
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApplicationPreferencesOperation>` |
+| Implements | IEquatable<[ApplicationPreferencesOperation](ApplicationPreferencesOperation.md)> |
 | Source | `Models/ApplicationPreferencesOperation.cs` |
 
 ## Overview
@@ -22,7 +22,7 @@ title: ApplicationPreferencesOperation
 | --- | --- | --- | --- |
 | From | `string` | Reference type (nullable) | — |
 | Op | `string` | Reference type (nullable) | — |
-| OperationType | `OperationType` | No (value type) | — |
+| OperationType | [OperationType](OperationType.md) | No (value type) | — |
 | Path | `string` | Reference type (nullable) | — |
 | Value | `object` | Reference type (nullable) | — |
 

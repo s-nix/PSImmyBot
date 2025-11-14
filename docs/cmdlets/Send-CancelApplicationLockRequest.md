@@ -10,7 +10,7 @@ title: Send-CancelApplicationLockRequest
 | Source | `Cmdlets/SendCancelApplicationLockRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/application-locks/request-cancellation? |
-| Return Type | `CancelApplicationLockRequest, OpResult` |
+| Return Type | [CancelApplicationLockRequest](../models/CancelApplicationLockRequest.md), [OpResult](../models/OpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CancelApplicationLockRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/application-locks/request-cancellation?` and deserializes to `CancelApplicationLockRequest, OpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/application-locks/request-cancellation?` and deserializes to [CancelApplicationLockRequest](../models/CancelApplicationLockRequest.md), [OpResult](../models/OpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CancelApplicationLockRequest` | True | — | All | None |
+| PayloadBody | [CancelApplicationLockRequest](../models/CancelApplicationLockRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CancelApplicationLockRequest
 
 ## Outputs
 
-- `CancelApplicationLockRequest, OpResult` records produced by `ImmyBotApiService.POST`
+- [CancelApplicationLockRequest](../models/CancelApplicationLockRequest.md), [OpResult](../models/OpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

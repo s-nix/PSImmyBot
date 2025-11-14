@@ -10,7 +10,7 @@ title: SessionPhase
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SessionPhase>` |
+| Implements | IEquatable<[SessionPhase](SessionPhase.md)> |
 | Source | `Models/SessionPhase.cs` |
 
 ## Overview
@@ -20,22 +20,22 @@ title: SessionPhase
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ActionProgressPhaseName | `ActionProgressPhaseName` | No (value type) | — |
+| ActionProgressPhaseName | [ActionProgressPhaseName](ActionProgressPhaseName.md) | No (value type) | — |
 | DateCompletedUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | DateStartedUtc | `DateTimeOffset?` | Yes (nullable value type) | — |
 | Id | `int` | No (value type) | — |
-| Logs | `ICollection<SessionLog>` | Reference type (nullable) | — |
-| MaintenanceAction | `MaintenanceAction` | Reference type (nullable) | — |
+| Logs | ICollection<[SessionLog](SessionLog.md)> | Reference type (nullable) | — |
+| MaintenanceAction | [MaintenanceAction](MaintenanceAction.md) | Reference type (nullable) | — |
 | MaintenanceActionId | `int?` | Yes (nullable value type) | — |
-| MaintenanceSession | `MaintenanceSession` | Reference type (nullable) | — |
+| MaintenanceSession | [MaintenanceSession](MaintenanceSession.md) | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
-| MaintenanceSessionStage | `MaintenanceSessionStage` | Reference type (nullable) | — |
+| MaintenanceSessionStage | [MaintenanceSessionStage](MaintenanceSessionStage.md) | Reference type (nullable) | — |
 | MaintenanceSessionStageId | `int` | No (value type) | — |
 | PhaseName | `string` | Reference type (nullable) | — |
 | ProgressCompleted | `bool` | No (value type) | — |
 | ProgressPercentComplete | `double?` | Yes (nullable value type) | — |
 | ProgressStatus | `string` | Reference type (nullable) | — |
-| Status | `SessionPhaseStatus` | No (value type) | — |
+| Status | [SessionPhaseStatus](SessionPhaseStatus.md) | No (value type) | — |
 
 ## Serialization
 

@@ -10,7 +10,7 @@ title: Send-CreateOrUpdateRoleRequest
 | Source | `Cmdlets/SendCreateOrUpdateRoleRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/roles? |
-| Return Type | `CreateOrUpdateRoleRequest, GetRoleResponse` |
+| Return Type | [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateOrUpdateRoleRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/roles?` and deserializes to `CreateOrUpdateRoleRequest, GetRoleResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/roles?` and deserializes to [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateOrUpdateRoleRequest` | True | — | All | None |
+| PayloadBody | [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateOrUpdateRoleRequest
 
 ## Outputs
 
-- `CreateOrUpdateRoleRequest, GetRoleResponse` records produced by `ImmyBotApiService.POST`
+- [CreateOrUpdateRoleRequest](../models/CreateOrUpdateRoleRequest.md), [GetRoleResponse](../models/GetRoleResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

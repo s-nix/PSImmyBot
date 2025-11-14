@@ -10,7 +10,7 @@ title: MaintenanceTask
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceTask>` |
+| Implements | IEquatable<[MaintenanceTask](MaintenanceTask.md)> |
 | Source | `Models/MaintenanceTask.cs` |
 
 ## Overview
@@ -21,42 +21,42 @@ title: MaintenanceTask
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | ExecuteSerially | `bool` | No (value type) | — |
 | GetEnabled | `bool` | No (value type) | — |
-| GetScript | `Script` | Reference type (nullable) | — |
+| GetScript | [Script](Script.md) | Reference type (nullable) | — |
 | GetScriptId | `int?` | Yes (nullable value type) | — |
-| GetScriptType | `DatabaseType` | No (value type) | — |
-| Icon | `Media` | Reference type (nullable) | — |
+| GetScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| Icon | [Media](Media.md) | Reference type (nullable) | — |
 | IconMediaId | `int?` | Yes (nullable value type) | — |
 | Id | `int` | No (value type) | — |
 | IgnoreDuringAutomaticOnboarding | `bool` | No (value type) | — |
 | IntegrationTypeId | `Guid?` | Yes (nullable value type) | — |
 | IsConfigurationTask | `bool` | No (value type) | — |
-| MaintenanceTaskCategory | `MaintenanceTaskCategory` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceTaskCategory | [MaintenanceTaskCategory](MaintenanceTaskCategory.md) | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | Notes | `string` | Reference type (nullable) | — |
 | OnboardingOnly | `bool` | No (value type) | — |
-| Parameters | `ICollection<MaintenanceTaskParameter>` | Reference type (nullable) | — |
+| Parameters | ICollection<[MaintenanceTaskParameter](MaintenanceTaskParameter.md)> | Reference type (nullable) | — |
 | Recommended | `bool` | No (value type) | — |
 | SetEnabled | `bool` | No (value type) | — |
-| SetScript | `Script` | Reference type (nullable) | — |
+| SetScript | [Script](Script.md) | Reference type (nullable) | — |
 | SetScriptId | `int?` | Yes (nullable value type) | — |
-| SetScriptType | `DatabaseType` | No (value type) | — |
+| SetScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | SupersededByTaskId | `int?` | Yes (nullable value type) | — |
 | SupersededByTaskMigrationScriptId | `int?` | Yes (nullable value type) | — |
-| SupersededByTaskMigrationScriptType | `DatabaseType` | No (value type) | — |
-| SupersededByTaskType | `DatabaseType` | No (value type) | — |
-| TenantRelationships | `ICollection<TenantMaintenanceTask>` | Reference type (nullable) | — |
+| SupersededByTaskMigrationScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| SupersededByTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| TenantRelationships | ICollection<[TenantMaintenanceTask](TenantMaintenanceTask.md)> | Reference type (nullable) | — |
 | TestEnabled | `bool` | No (value type) | — |
-| TestScript | `Script` | Reference type (nullable) | — |
+| TestScript | [Script](Script.md) | Reference type (nullable) | — |
 | TestScriptId | `int?` | Yes (nullable value type) | — |
-| TestScriptType | `DatabaseType` | No (value type) | — |
+| TestScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 | UseScriptParamBlock | `bool` | No (value type) | — |
 

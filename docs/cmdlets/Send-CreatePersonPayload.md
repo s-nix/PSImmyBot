@@ -10,7 +10,7 @@ title: Send-CreatePersonPayload
 | Source | `Cmdlets/SendCreatePersonPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/persons? |
-| Return Type | `CreatePersonPayload, GetSimplePersonResponse` |
+| Return Type | [CreatePersonPayload](../models/CreatePersonPayload.md), [GetSimplePersonResponse](../models/GetSimplePersonResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreatePersonPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/persons?` and deserializes to `CreatePersonPayload, GetSimplePersonResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/persons?` and deserializes to [CreatePersonPayload](../models/CreatePersonPayload.md), [GetSimplePersonResponse](../models/GetSimplePersonResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreatePersonPayload` | True | — | All | None |
+| PayloadBody | [CreatePersonPayload](../models/CreatePersonPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreatePersonPayload
 
 ## Outputs
 
-- `CreatePersonPayload, GetSimplePersonResponse` records produced by `ImmyBotApiService.POST`
+- [CreatePersonPayload](../models/CreatePersonPayload.md), [GetSimplePersonResponse](../models/GetSimplePersonResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

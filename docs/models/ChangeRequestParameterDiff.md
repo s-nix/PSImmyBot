@@ -10,7 +10,7 @@ title: ChangeRequestParameterDiff
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ChangeRequestParameterDiff>` |
+| Implements | IEquatable<[ChangeRequestParameterDiff](ChangeRequestParameterDiff.md)> |
 | Source | `Models/ChangeRequestParameterDiff.cs` |
 
 ## Overview
@@ -21,8 +21,8 @@ title: ChangeRequestParameterDiff
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Name | `string` | Reference type (nullable) | — |
-| NewValue | `DeploymentParameterValue` | Reference type (nullable) | — |
-| OldValue | `DeploymentParameterValue` | Reference type (nullable) | — |
+| NewValue | [DeploymentParameterValue](DeploymentParameterValue.md) | Reference type (nullable) | — |
+| OldValue | [DeploymentParameterValue](DeploymentParameterValue.md) | Reference type (nullable) | — |
 
 ## Serialization
 

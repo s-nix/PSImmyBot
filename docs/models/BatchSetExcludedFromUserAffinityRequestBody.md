@@ -10,7 +10,7 @@ title: BatchSetExcludedFromUserAffinityRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BatchSetExcludedFromUserAffinityRequestBody>` |
+| Implements | IEquatable<[BatchSetExcludedFromUserAffinityRequestBody](BatchSetExcludedFromUserAffinityRequestBody.md)> |
 | Source | `Models/BatchSetExcludedFromUserAffinityRequestBody.cs` |
 
 ## Overview

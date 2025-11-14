@@ -25,9 +25,9 @@ title: New-CustomAttributeNamedArgument
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | IsField | `Boolean` | True | — | All | None |
-| MemberInfo | `MemberInfo` | True | — | All | None |
+| MemberInfo | [MemberInfo](../models/MemberInfo.md) | True | — | All | None |
 | MemberName | `String` | False | — | All | None |
-| TypedValue | `CustomAttributeTypedArgument` | True | — | All | None |
+| TypedValue | [CustomAttributeTypedArgument](../models/CustomAttributeTypedArgument.md) | True | — | All | None |
 
 ### Parameter sets
 

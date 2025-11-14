@@ -10,7 +10,7 @@ title: Send-DuplicateAssignmentRequestBody
 | Source | `Cmdlets/SendDuplicateAssignmentRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/duplicate? |
-| Return Type | `DuplicateAssignmentRequestBody, int` |
+| Return Type | [DuplicateAssignmentRequestBody](../models/DuplicateAssignmentRequestBody.md), int |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-DuplicateAssignmentRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/duplicate?` and deserializes to `DuplicateAssignmentRequestBody, int`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/duplicate?` and deserializes to [DuplicateAssignmentRequestBody](../models/DuplicateAssignmentRequestBody.md), int.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `DuplicateAssignmentRequestBody` | True | — | All | None |
+| PayloadBody | [DuplicateAssignmentRequestBody](../models/DuplicateAssignmentRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-DuplicateAssignmentRequestBody
 
 ## Outputs
 
-- `DuplicateAssignmentRequestBody, int` records produced by `ImmyBotApiService.POST`
+- [DuplicateAssignmentRequestBody](../models/DuplicateAssignmentRequestBody.md), int records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

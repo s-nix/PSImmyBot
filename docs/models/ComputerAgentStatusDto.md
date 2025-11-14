@@ -10,7 +10,7 @@ title: ComputerAgentStatusDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerAgentStatusDto>` |
+| Implements | IEquatable<[ComputerAgentStatusDto](ComputerAgentStatusDto.md)> |
 | Source | `Models/ComputerAgentStatusDto.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: ComputerAgentStatusDto
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Agents | `ICollection<AgentStatusDto>` | Reference type (nullable) | — |
+| Agents | ICollection<[AgentStatusDto](AgentStatusDto.md)> | Reference type (nullable) | — |
 | AllAgentsConnected | `bool` | No (value type) | — |
 | ComputerName | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |

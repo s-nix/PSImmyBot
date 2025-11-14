@@ -25,17 +25,17 @@ title: New-RemoteControlRecording
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | BlobName | `String` | False | — | All | None |
-| Computer | `Computer` | True | — | All | None |
+| Computer | [Computer](../models/Computer.md) | True | — | All | None |
 | ComputerId | `Int32` | True | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | MimeContentType | `String` | False | — | All | None |
-| Tenant | `Tenant` | True | — | All | None |
+| Tenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
-| User | `User` | True | — | All | None |
+| User | [User](../models/User.md) | True | — | All | None |
 | UserId | `Int32` | True | — | All | None |
 
 ### Parameter sets

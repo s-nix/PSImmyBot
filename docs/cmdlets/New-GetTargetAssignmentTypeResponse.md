@@ -25,12 +25,12 @@ title: New-GetTargetAssignmentTypeResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | AllowAccessToParentTenant | `Boolean` | True | — | All | None |
-| DesiredSoftwareState | `DesiredSoftwareState` | True | — | All | None |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | True | — | All | None |
+| DesiredSoftwareState | [DesiredSoftwareState](../models/DesiredSoftwareState.md) | True | — | All | None |
+| MaintenanceTaskMode | [MaintenanceTaskMode](../models/MaintenanceTaskMode.md) | True | — | All | None |
 | PropagateToChildTenants | `Boolean` | True | — | All | None |
 | Target | `String` | False | — | All | None |
-| TargetEnforcement | `TargetEnforcement` | True | — | All | None |
-| TargetType | `TargetType` | True | — | All | None |
+| TargetEnforcement | [TargetEnforcement](../models/TargetEnforcement.md) | True | — | All | None |
+| TargetType | [TargetType](../models/TargetType.md) | True | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets

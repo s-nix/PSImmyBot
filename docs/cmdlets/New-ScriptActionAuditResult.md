@@ -24,7 +24,7 @@ title: New-ScriptActionAuditResult
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Audit | `ScriptActionAudit` | True | — | All | None |
+| Audit | [ScriptActionAudit](../models/ScriptActionAudit.md) | True | — | All | None |
 | Total | `Int32` | True | — | All | None |
 
 ### Parameter sets

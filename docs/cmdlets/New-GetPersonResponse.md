@@ -37,7 +37,7 @@ title: New-GetPersonResponse
 | TenantId | `Int32` | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
 | UpdatedDateUtc | `DateTimeOffset` | True | — | All | None |
-| User | `GetUserResponse` | True | — | All | None |
+| User | [GetUserResponse](../models/GetUserResponse.md) | True | — | All | None |
 | UserAffinities | `ICollection`1` | False | — | All | None |
 
 ### Parameter sets

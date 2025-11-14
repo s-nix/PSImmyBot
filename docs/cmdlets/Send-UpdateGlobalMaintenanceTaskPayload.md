@@ -10,7 +10,7 @@ title: Send-UpdateGlobalMaintenanceTaskPayload
 | Source | `Cmdlets/SendUpdateGlobalMaintenanceTaskPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/maintenance-tasks/global/{Id}? |
-| Return Type | `UpdateGlobalMaintenanceTaskPayload, GetGlobalMaintenanceTaskResponse` |
+| Return Type | [UpdateGlobalMaintenanceTaskPayload](../models/UpdateGlobalMaintenanceTaskPayload.md), [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-UpdateGlobalMaintenanceTaskPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/global/{Id}?` and deserializes to `UpdateGlobalMaintenanceTaskPayload, GetGlobalMaintenanceTaskResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/global/{Id}?` and deserializes to [UpdateGlobalMaintenanceTaskPayload](../models/UpdateGlobalMaintenanceTaskPayload.md), [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateGlobalMaintenanceTaskPayload` | True | — | All | None |
+| PayloadBody | [UpdateGlobalMaintenanceTaskPayload](../models/UpdateGlobalMaintenanceTaskPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-UpdateGlobalMaintenanceTaskPayload
 
 ## Outputs
 
-- `UpdateGlobalMaintenanceTaskPayload, GetGlobalMaintenanceTaskResponse` records produced by `ImmyBotApiService.POST`
+- [UpdateGlobalMaintenanceTaskPayload](../models/UpdateGlobalMaintenanceTaskPayload.md), [GetGlobalMaintenanceTaskResponse](../models/GetGlobalMaintenanceTaskResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

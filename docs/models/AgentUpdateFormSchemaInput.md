@@ -10,7 +10,7 @@ title: AgentUpdateFormSchemaInput
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentUpdateFormSchemaInput>` |
+| Implements | IEquatable<[AgentUpdateFormSchemaInput](AgentUpdateFormSchemaInput.md)> |
 | Source | `Models/AgentUpdateFormSchemaInput.cs` |
 
 ## Overview

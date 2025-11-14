@@ -10,7 +10,7 @@ title: ProvisioningPackageOptions
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProvisioningPackageOptions>` |
+| Implements | IEquatable<[ProvisioningPackageOptions](ProvisioningPackageOptions.md)> |
 | Source | `Models/ProvisioningPackageOptions.cs` |
 
 ## Overview

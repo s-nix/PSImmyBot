@@ -10,7 +10,7 @@ title: ExcludeFromMaintenanceRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ExcludeFromMaintenanceRequest>` |
+| Implements | IEquatable<[ExcludeFromMaintenanceRequest](ExcludeFromMaintenanceRequest.md)> |
 | Source | `Models/ExcludeFromMaintenanceRequest.cs` |
 
 ## Overview

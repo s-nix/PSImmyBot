@@ -10,7 +10,7 @@ title: GetUserAffinityResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetUserAffinityResponse>` |
+| Implements | IEquatable<[GetUserAffinityResponse](GetUserAffinityResponse.md)> |
 | Source | `Models/GetUserAffinityResponse.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: GetUserAffinityResponse
 | ComputerId | `int` | No (value type) | — |
 | Date | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| Person | `GetPersonResponse` | Reference type (nullable) | — |
+| Person | [GetPersonResponse](GetPersonResponse.md) | Reference type (nullable) | — |
 | PersonId | `int` | No (value type) | — |
 
 ## Serialization

@@ -27,11 +27,11 @@ title: New-LastException
 | Data | `IDictionary`2` | False | — | All | None |
 | HelpLink | `String` | False | — | All | None |
 | HResult | `Int32` | True | — | All | None |
-| InnerException | `LastException` | True | — | All | None |
+| InnerException | [LastException](../models/LastException.md) | True | — | All | None |
 | Message | `String` | False | — | All | None |
 | Source | `String` | False | — | All | None |
 | StackTrace | `String` | False | — | All | None |
-| TargetSite | `MethodBase` | True | — | All | None |
+| TargetSite | [MethodBase](../models/MethodBase.md) | True | — | All | None |
 
 ### Parameter sets
 

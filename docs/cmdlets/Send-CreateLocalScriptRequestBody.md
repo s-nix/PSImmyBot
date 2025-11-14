@@ -10,7 +10,7 @@ title: Send-CreateLocalScriptRequestBody
 | Source | `Cmdlets/SendCreateLocalScriptRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/local? |
-| Return Type | `CreateLocalScriptRequestBody, GetLocalScriptResponse` |
+| Return Type | [CreateLocalScriptRequestBody](../models/CreateLocalScriptRequestBody.md), [GetLocalScriptResponse](../models/GetLocalScriptResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-CreateLocalScriptRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/local?` and deserializes to `CreateLocalScriptRequestBody, GetLocalScriptResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/local?` and deserializes to [CreateLocalScriptRequestBody](../models/CreateLocalScriptRequestBody.md), [GetLocalScriptResponse](../models/GetLocalScriptResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -26,7 +26,7 @@ title: Send-CreateLocalScriptRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | IgnoreSyntaxErrors | `Nullable`1` | False | — | All | None |
-| PayloadBody | `CreateLocalScriptRequestBody` | True | — | All | None |
+| PayloadBody | [CreateLocalScriptRequestBody](../models/CreateLocalScriptRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -34,7 +34,7 @@ title: Send-CreateLocalScriptRequestBody
 
 ## Outputs
 
-- `CreateLocalScriptRequestBody, GetLocalScriptResponse` records produced by `ImmyBotApiService.POST`
+- [CreateLocalScriptRequestBody](../models/CreateLocalScriptRequestBody.md), [GetLocalScriptResponse](../models/GetLocalScriptResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: RoleType
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RoleType>` |
+| Implements | IEquatable<[RoleType](RoleType.md)> |
 | Source | `Models/RoleType.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Get-ProviderLink
 | Source | `Cmdlets/GetProviderLink.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-links/{Id}? |
-| Return Type | `GetProviderLinkResponse` |
+| Return Type | [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ProviderLink
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}?` and deserializes to `GetProviderLinkResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}?` and deserializes to [GetProviderLinkResponse](../models/GetProviderLinkResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -36,7 +36,7 @@ title: Get-ProviderLink
 
 ## Outputs
 
-- `GetProviderLinkResponse` records produced by `ImmyBotApiService.GET`
+- [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: Send-BeginAuthCodeFlowRequest
 | Source | `Cmdlets/SendBeginAuthCodeFlowRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/oauth/begin-auth-code-flow? |
-| Return Type | `BeginAuthCodeFlowRequest, BeginAuthCodeFlowResponse` |
+| Return Type | [BeginAuthCodeFlowRequest](../models/BeginAuthCodeFlowRequest.md), [BeginAuthCodeFlowResponse](../models/BeginAuthCodeFlowResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-BeginAuthCodeFlowRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/oauth/begin-auth-code-flow?` and deserializes to `BeginAuthCodeFlowRequest, BeginAuthCodeFlowResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/oauth/begin-auth-code-flow?` and deserializes to [BeginAuthCodeFlowRequest](../models/BeginAuthCodeFlowRequest.md), [BeginAuthCodeFlowResponse](../models/BeginAuthCodeFlowResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `BeginAuthCodeFlowRequest` | True | — | All | None |
+| PayloadBody | [BeginAuthCodeFlowRequest](../models/BeginAuthCodeFlowRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-BeginAuthCodeFlowRequest
 
 ## Outputs
 
-- `BeginAuthCodeFlowRequest, BeginAuthCodeFlowResponse` records produced by `ImmyBotApiService.POST`
+- [BeginAuthCodeFlowRequest](../models/BeginAuthCodeFlowRequest.md), [BeginAuthCodeFlowResponse](../models/BeginAuthCodeFlowResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

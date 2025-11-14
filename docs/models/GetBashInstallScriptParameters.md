@@ -10,7 +10,7 @@ title: GetBashInstallScriptParameters
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetBashInstallScriptParameters>` |
+| Implements | IEquatable<[GetBashInstallScriptParameters](GetBashInstallScriptParameters.md)> |
 | Source | `Models/GetBashInstallScriptParameters.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetBashInstallScriptParameters
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Platform | `Platform` | No (value type) | — |
+| Platform | [Platform](Platform.md) | No (value type) | — |
 | TargetExternalClientId | `string` | Reference type (nullable) | — |
 
 ## Serialization

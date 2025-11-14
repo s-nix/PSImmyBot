@@ -10,7 +10,7 @@ title: ProviderLinkUpdate
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderLinkUpdate>` |
+| Implements | IEquatable<[ProviderLinkUpdate](ProviderLinkUpdate.md)> |
 | Source | `Models/ProviderLinkUpdate.cs` |
 
 ## Overview

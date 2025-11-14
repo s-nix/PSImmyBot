@@ -24,7 +24,7 @@ title: Send-MspInstanceImmySupportAccessGrantDetails
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `MspInstanceImmySupportAccessGrantDetails` | True | — | All | None |
+| PayloadBody | [MspInstanceImmySupportAccessGrantDetails](../models/MspInstanceImmySupportAccessGrantDetails.md) | True | — | All | None |
 
 ### Parameter sets
 

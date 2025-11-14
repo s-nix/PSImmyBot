@@ -10,7 +10,7 @@ title: DxComputerInventoryScriptResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DxComputerInventoryScriptResult>` |
+| Implements | IEquatable<[DxComputerInventoryScriptResult](DxComputerInventoryScriptResult.md)> |
 | Source | `Models/DxComputerInventoryScriptResult.cs` |
 
 ## Overview

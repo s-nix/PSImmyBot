@@ -27,7 +27,7 @@ title: New-SmtpConfig
 | Enabled | `Boolean` | True | — | All | None |
 | EnableSsl | `Boolean` | True | — | All | None |
 | Host | `String` | False | — | All | None |
-| OwnerTenant | `Tenant` | True | — | All | None |
+| OwnerTenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | PasswordHash | `String` | False | — | All | None |
 | Port | `Int32` | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |

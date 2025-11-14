@@ -24,19 +24,19 @@ title: New-AnalyzeLocalSoftwarePackageResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| BatchInstallScript | `IScriptDetailsBase` | True | — | All | None |
-| DefaultPowershellUninstallScript | `IScriptDetailsBase` | True | — | All | None |
+| BatchInstallScript | [IScriptDetailsBase](../models/IScriptDetailsBase.md) | True | — | All | None |
+| DefaultPowershellUninstallScript | [IScriptDetailsBase](../models/IScriptDetailsBase.md) | True | — | All | None |
 | Description | `String` | False | — | All | None |
-| DetectionScript | `IScriptDetailsBase` | True | — | All | None |
+| DetectionScript | [IScriptDetailsBase](../models/IScriptDetailsBase.md) | True | — | All | None |
 | DisplayVersion | `String` | False | — | All | None |
 | Extension | `String` | False | — | All | None |
 | FileName | `String` | False | — | All | None |
 | IsExe | `Boolean` | True | — | All | None |
 | IsMsi | `Boolean` | True | — | All | None |
 | PackageHash | `String` | False | — | All | None |
-| PackageType | `PackageType` | True | — | All | None |
-| PowerShellInstallScript | `IScriptDetailsBase` | True | — | All | None |
-| PowerShellUninstallScript | `IScriptDetailsBase` | True | — | All | None |
+| PackageType | [PackageType](../models/PackageType.md) | True | — | All | None |
+| PowerShellInstallScript | [IScriptDetailsBase](../models/IScriptDetailsBase.md) | True | — | All | None |
+| PowerShellUninstallScript | [IScriptDetailsBase](../models/IScriptDetailsBase.md) | True | — | All | None |
 | ProductCode | `Nullable`1` | False | — | All | None |
 | SoftwareTableName | `String` | False | — | All | None |
 | UpgradeCode | `Nullable`1` | False | — | All | None |

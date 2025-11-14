@@ -10,7 +10,7 @@ title: ProviderLinkInternalData
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderLinkInternalData>` |
+| Implements | IEquatable<[ProviderLinkInternalData](ProviderLinkInternalData.md)> |
 | Source | `Models/ProviderLinkInternalData.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ProviderLinkInternalData
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | InternalData | `object` | Reference type (nullable) | — |
-| ProviderLink | `ProviderLink` | Reference type (nullable) | — |
+| ProviderLink | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int` | No (value type) | — |
 
 ## Serialization

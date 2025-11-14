@@ -24,7 +24,7 @@ title: New-ResolveAssignmentsForMaintenanceItemResultItem
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | DeploymentId | `Int32` | True | — | All | None |
 | DeploymentPhrase | `String` | False | — | All | None |
 

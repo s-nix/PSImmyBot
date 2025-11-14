@@ -24,14 +24,14 @@ title: New-GetOptionalTargetAssignmentApprovalResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Approved | `TargetAssignmentApprovalStatus` | True | — | All | None |
+| Approved | [TargetAssignmentApprovalStatus](../models/TargetAssignmentApprovalStatus.md) | True | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 | Target | `String` | False | — | All | None |
 | TargetAssignmentId | `Int32` | True | — | All | None |
-| TargetType | `TargetType` | True | — | All | None |
+| TargetType | [TargetType](../models/TargetType.md) | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
 | UpdatedDateUtc | `DateTimeOffset` | True | — | All | None |
 

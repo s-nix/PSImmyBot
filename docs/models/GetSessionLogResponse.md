@@ -10,7 +10,7 @@ title: GetSessionLogResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetSessionLogResponse>` |
+| Implements | IEquatable<[GetSessionLogResponse](GetSessionLogResponse.md)> |
 | Source | `Models/GetSessionLogResponse.cs` |
 
 ## Overview
@@ -22,12 +22,12 @@ title: GetSessionLogResponse
 | --- | --- | --- | --- |
 | Id | `int` | No (value type) | — |
 | IsPrimary | `bool` | No (value type) | — |
-| MaintenanceAction | `GetMaintenanceActionResponse` | Reference type (nullable) | — |
+| MaintenanceAction | [GetMaintenanceActionResponse](GetMaintenanceActionResponse.md) | Reference type (nullable) | — |
 | MaintenanceActionId | `int?` | Yes (nullable value type) | — |
-| MaintenanceActionStatus | `MaintenanceActionStatus` | No (value type) | — |
-| MaintenanceSession | `GetMaintenanceSessionResponse` | Reference type (nullable) | — |
+| MaintenanceActionStatus | [MaintenanceActionStatus](MaintenanceActionStatus.md) | No (value type) | — |
+| MaintenanceSession | [GetMaintenanceSessionResponse](GetMaintenanceSessionResponse.md) | Reference type (nullable) | — |
 | MaintenanceSessionId | `int` | No (value type) | — |
-| MaintenanceSessionStage | `GetMaintenanceSessionStageResponse` | Reference type (nullable) | — |
+| MaintenanceSessionStage | [GetMaintenanceSessionStageResponse](GetMaintenanceSessionStageResponse.md) | Reference type (nullable) | — |
 | MaintenanceSessionStageId | `int?` | Yes (nullable value type) | — |
 | Message | `string` | Reference type (nullable) | — |
 | ParamBlockParameters | `IDictionary<string, object>` | Reference type (nullable) | — |
@@ -40,11 +40,11 @@ title: GetSessionLogResponse
 | ProgressStatus | `string` | Reference type (nullable) | — |
 | Script | `string` | Reference type (nullable) | — |
 | ScriptId | `int?` | Yes (nullable value type) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
 | ScriptOutput | `string` | Reference type (nullable) | — |
 | ScriptParameters | `IDictionary<string, object>` | Reference type (nullable) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
-| SessionLogType | `SessionLogType` | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| SessionLogType | [SessionLogType](SessionLogType.md) | No (value type) | — |
 | SessionPhaseId | `int?` | Yes (nullable value type) | — |
 | Time | `DateTimeOffset` | No (value type) | — |
 | UpdatedTime | `DateTimeOffset?` | Yes (nullable value type) | — |

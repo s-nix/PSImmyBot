@@ -10,7 +10,7 @@ title: AgentStatusDto
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentStatusDto>` |
+| Implements | IEquatable<[AgentStatusDto](AgentStatusDto.md)> |
 | Source | `Models/AgentStatusDto.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: AgentStatusDto
 | IsConnected | `bool` | No (value type) | — |
 | LastUpdatedUtc | `DateTimeOffset` | No (value type) | — |
 | ProviderLinkId | `int` | No (value type) | — |
-| Version | `SemanticVersion` | Reference type (nullable) | — |
+| Version | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 
 ## Serialization
 

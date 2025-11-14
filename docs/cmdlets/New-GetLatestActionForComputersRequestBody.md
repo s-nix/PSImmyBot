@@ -27,7 +27,7 @@ title: New-GetLatestActionForComputersRequestBody
 | ComputerIds | `ICollection`1` | False | — | All | None |
 | DateUtc | `Nullable`1` | False | — | All | None |
 | MaintenanceIdentifier | `String` | False | — | All | None |
-| MaintenanceType | `MaintenanceType` | True | — | All | None |
+| MaintenanceType | [MaintenanceType](../models/MaintenanceType.md) | True | — | All | None |
 
 ### Parameter sets
 

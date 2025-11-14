@@ -10,7 +10,7 @@ title: Send-DuplicateMaintenanceTaskRequestbody
 | Source | `Cmdlets/SendDuplicateMaintenanceTaskRequestbody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/maintenance-tasks/duplicate? |
-| Return Type | `DuplicateMaintenanceTaskRequestbody, GetLocalMaintenanceTaskResponse` |
+| Return Type | [DuplicateMaintenanceTaskRequestbody](../models/DuplicateMaintenanceTaskRequestbody.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-DuplicateMaintenanceTaskRequestbody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/duplicate?` and deserializes to `DuplicateMaintenanceTaskRequestbody, GetLocalMaintenanceTaskResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/maintenance-tasks/duplicate?` and deserializes to [DuplicateMaintenanceTaskRequestbody](../models/DuplicateMaintenanceTaskRequestbody.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `DuplicateMaintenanceTaskRequestbody` | True | — | All | None |
+| PayloadBody | [DuplicateMaintenanceTaskRequestbody](../models/DuplicateMaintenanceTaskRequestbody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-DuplicateMaintenanceTaskRequestbody
 
 ## Outputs
 
-- `DuplicateMaintenanceTaskRequestbody, GetLocalMaintenanceTaskResponse` records produced by `ImmyBotApiService.POST`
+- [DuplicateMaintenanceTaskRequestbody](../models/DuplicateMaintenanceTaskRequestbody.md), [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

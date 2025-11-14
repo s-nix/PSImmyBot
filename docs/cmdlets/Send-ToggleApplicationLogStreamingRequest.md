@@ -24,7 +24,7 @@ title: Send-ToggleApplicationLogStreamingRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ToggleApplicationLogStreamingRequest` | True | — | All | None |
+| PayloadBody | [ToggleApplicationLogStreamingRequest](../models/ToggleApplicationLogStreamingRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

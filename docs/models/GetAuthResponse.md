@@ -10,7 +10,7 @@ title: GetAuthResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetAuthResponse>` |
+| Implements | IEquatable<[GetAuthResponse](GetAuthResponse.md)> |
 | Source | `Models/GetAuthResponse.cs` |
 
 ## Overview
@@ -20,24 +20,24 @@ title: GetAuthResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Addons | `ICollection<SubscriptionAddonDto>` | Reference type (nullable) | — |
+| Addons | ICollection<[SubscriptionAddonDto](SubscriptionAddonDto.md)> | Reference type (nullable) | — |
 | BackendRegAppId | `string` | Reference type (nullable) | — |
 | CanManageCrossTenantDeployments | `bool` | No (value type) | — |
-| Claims | `ICollection<ClaimResponse>` | Reference type (nullable) | — |
-| CurrentReleaseReleaseChannel | `ReleaseChannel` | No (value type) | — |
-| CurrentReleaseVersion | `SemanticVersion` | Reference type (nullable) | — |
+| Claims | ICollection<[ClaimResponse](ClaimResponse.md)> | Reference type (nullable) | — |
+| CurrentReleaseReleaseChannel | [ReleaseChannel](ReleaseChannel.md) | No (value type) | — |
+| CurrentReleaseVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | DaysLeftInTrial | `int?` | Yes (nullable value type) | — |
-| DevInstanceDetails | `DevInstanceDetails` | Reference type (nullable) | — |
+| DevInstanceDetails | [DevInstanceDetails](DevInstanceDetails.md) | Reference type (nullable) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
 | Email | `string` | Reference type (nullable) | — |
-| Features | `ICollection<Feature>` | Reference type (nullable) | — |
+| Features | ICollection<[Feature](Feature.md)> | Reference type (nullable) | — |
 | FirstName | `string` | Reference type (nullable) | — |
 | GlobalPublicMediaContainerName | `string` | Reference type (nullable) | — |
 | GlobalSoftwareEndpoint | `string` | Reference type (nullable) | — |
 | HasManagementAccess | `bool` | No (value type) | — |
 | ImmyProduct | `string` | Reference type (nullable) | — |
 | Impersonating | `bool` | No (value type) | — |
-| InstanceReleaseChannel | `ReleaseChannel` | No (value type) | — |
+| InstanceReleaseChannel | [ReleaseChannel](ReleaseChannel.md) | No (value type) | — |
 | InstanceUpdateHasFailed | `bool` | No (value type) | — |
 | InstanceUpdateSource | `string` | Reference type (nullable) | — |
 | IsAdmin | `bool` | No (value type) | — |
@@ -57,7 +57,7 @@ title: GetAuthResponse
 | PlanId | `string` | Reference type (nullable) | — |
 | PlanPrice | `int?` | Yes (nullable value type) | — |
 | PlanQuantity | `int?` | Yes (nullable value type) | — |
-| Status | `SubscriptionStatus` | No (value type) | — |
+| Status | [SubscriptionStatus](SubscriptionStatus.md) | No (value type) | — |
 | TenantId | `int` | No (value type) | — |
 | TenantName | `string` | Reference type (nullable) | — |
 | TrialEndUtc | `DateTimeOffset?` | Yes (nullable value type) | — |

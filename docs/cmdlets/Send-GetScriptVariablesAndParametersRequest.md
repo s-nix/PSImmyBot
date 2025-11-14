@@ -10,7 +10,7 @@ title: Send-GetScriptVariablesAndParametersRequest
 | Source | `Cmdlets/SendGetScriptVariablesAndParametersRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/default-variables? |
-| Return Type | `GetScriptVariablesAndParametersRequest, GetScriptVariablesAndParametersResponse` |
+| Return Type | [GetScriptVariablesAndParametersRequest](../models/GetScriptVariablesAndParametersRequest.md), [GetScriptVariablesAndParametersResponse](../models/GetScriptVariablesAndParametersResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-GetScriptVariablesAndParametersRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/default-variables?` and deserializes to `GetScriptVariablesAndParametersRequest, GetScriptVariablesAndParametersResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/default-variables?` and deserializes to [GetScriptVariablesAndParametersRequest](../models/GetScriptVariablesAndParametersRequest.md), [GetScriptVariablesAndParametersResponse](../models/GetScriptVariablesAndParametersResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `GetScriptVariablesAndParametersRequest` | True | — | All | None |
+| PayloadBody | [GetScriptVariablesAndParametersRequest](../models/GetScriptVariablesAndParametersRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-GetScriptVariablesAndParametersRequest
 
 ## Outputs
 
-- `GetScriptVariablesAndParametersRequest, GetScriptVariablesAndParametersResponse` records produced by `ImmyBotApiService.POST`
+- [GetScriptVariablesAndParametersRequest](../models/GetScriptVariablesAndParametersRequest.md), [GetScriptVariablesAndParametersResponse](../models/GetScriptVariablesAndParametersResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

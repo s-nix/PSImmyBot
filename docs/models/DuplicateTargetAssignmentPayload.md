@@ -10,7 +10,7 @@ title: DuplicateTargetAssignmentPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DuplicateTargetAssignmentPayload>` |
+| Implements | IEquatable<[DuplicateTargetAssignmentPayload](DuplicateTargetAssignmentPayload.md)> |
 | Source | `Models/DuplicateTargetAssignmentPayload.cs` |
 
 ## Overview
@@ -21,12 +21,12 @@ title: DuplicateTargetAssignmentPayload
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | AllowAccessToParentTenant | `bool` | No (value type) | — |
-| DesiredSoftwareState | `DesiredSoftwareState` | No (value type) | — |
+| DesiredSoftwareState | [DesiredSoftwareState](DesiredSoftwareState.md) | No (value type) | — |
 | Excluded | `bool` | No (value type) | — |
 | Id | `int?` | Yes (nullable value type) | — |
 | MaintenanceIdentifier | `string` | Reference type (nullable) | — |
-| MaintenanceTaskMode | `MaintenanceTaskMode` | No (value type) | — |
-| MaintenanceType | `MaintenanceType` | No (value type) | — |
+| MaintenanceTaskMode | [MaintenanceTaskMode](MaintenanceTaskMode.md) | No (value type) | — |
+| MaintenanceType | [MaintenanceType](MaintenanceType.md) | No (value type) | — |
 | Notes | `string` | Reference type (nullable) | — |
 | OnboardingOnly | `bool` | No (value type) | — |
 | PropagateToChildTenants | `bool` | No (value type) | — |
@@ -34,14 +34,14 @@ title: DuplicateTargetAssignmentPayload
 | ProviderDeviceGroupType | `Guid?` | Yes (nullable value type) | — |
 | ProviderLinkId | `int?` | Yes (nullable value type) | — |
 | ProviderLinkIdForMaintenanceItem | `int?` | Yes (nullable value type) | — |
-| SoftwareProviderType | `SoftwareProviderType` | No (value type) | — |
-| SoftwareSemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SoftwareProviderType | [SoftwareProviderType](SoftwareProviderType.md) | No (value type) | — |
+| SoftwareSemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | Target | `string` | Reference type (nullable) | — |
-| TargetCategory | `TargetCategory` | No (value type) | — |
-| TargetEnforcement | `TargetEnforcement` | No (value type) | — |
-| TargetGroupFilter | `TargetGroupFilter` | No (value type) | — |
-| TargetType | `TargetType` | No (value type) | — |
-| TaskParameterValues | `IDictionary<string, DeploymentParameterValue>` | Reference type (nullable) | — |
+| TargetCategory | [TargetCategory](TargetCategory.md) | No (value type) | — |
+| TargetEnforcement | [TargetEnforcement](TargetEnforcement.md) | No (value type) | — |
+| TargetGroupFilter | [TargetGroupFilter](TargetGroupFilter.md) | No (value type) | — |
+| TargetType | [TargetType](TargetType.md) | No (value type) | — |
+| TaskParameterValues | IDictionary<string, [DeploymentParameterValue](DeploymentParameterValue.md)> | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

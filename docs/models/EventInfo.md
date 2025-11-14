@@ -10,7 +10,7 @@ title: EventInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<EventInfo>` |
+| Implements | IEquatable<[EventInfo](EventInfo.md)> |
 | Source | `Models/EventInfo.cs` |
 
 ## Overview
@@ -20,21 +20,21 @@ title: EventInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AddMethod | `MethodInfo` | Reference type (nullable) | — |
-| Attributes | `EventAttributes` | No (value type) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
-| DeclaringType | `Type` | Reference type (nullable) | — |
-| EventHandlerType | `Type` | Reference type (nullable) | — |
+| AddMethod | [MethodInfo](MethodInfo.md) | Reference type (nullable) | — |
+| Attributes | [EventAttributes](EventAttributes.md) | No (value type) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
+| DeclaringType | [Type](Type.md) | Reference type (nullable) | — |
+| EventHandlerType | [Type](Type.md) | Reference type (nullable) | — |
 | IsCollectible | `bool` | No (value type) | — |
 | IsMulticast | `bool` | No (value type) | — |
 | IsSpecialName | `bool` | No (value type) | — |
-| MemberType | `MemberTypes` | No (value type) | — |
+| MemberType | [MemberTypes](MemberTypes.md) | No (value type) | — |
 | MetadataToken | `int` | No (value type) | — |
-| Module | `Module` | Reference type (nullable) | — |
+| Module | [Module](Module.md) | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| RaiseMethod | `MethodInfo` | Reference type (nullable) | — |
-| ReflectedType | `Type` | Reference type (nullable) | — |
-| RemoveMethod | `MethodInfo` | Reference type (nullable) | — |
+| RaiseMethod | [MethodInfo](MethodInfo.md) | Reference type (nullable) | — |
+| ReflectedType | [Type](Type.md) | Reference type (nullable) | — |
+| RemoveMethod | [MethodInfo](MethodInfo.md) | Reference type (nullable) | — |
 
 ## Serialization
 

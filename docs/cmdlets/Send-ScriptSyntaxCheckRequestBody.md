@@ -10,7 +10,7 @@ title: Send-ScriptSyntaxCheckRequestBody
 | Source | `Cmdlets/SendScriptSyntaxCheckRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/syntax-check? |
-| Return Type | `ScriptSyntaxCheckRequestBody, SyntaxCheckerResult` |
+| Return Type | [ScriptSyntaxCheckRequestBody](../models/ScriptSyntaxCheckRequestBody.md), [SyntaxCheckerResult](../models/SyntaxCheckerResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-ScriptSyntaxCheckRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/syntax-check?` and deserializes to `ScriptSyntaxCheckRequestBody, SyntaxCheckerResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/syntax-check?` and deserializes to [ScriptSyntaxCheckRequestBody](../models/ScriptSyntaxCheckRequestBody.md), [SyntaxCheckerResult](../models/SyntaxCheckerResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ScriptSyntaxCheckRequestBody` | True | — | All | None |
+| PayloadBody | [ScriptSyntaxCheckRequestBody](../models/ScriptSyntaxCheckRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-ScriptSyntaxCheckRequestBody
 
 ## Outputs
 
-- `ScriptSyntaxCheckRequestBody, SyntaxCheckerResult` records produced by `ImmyBotApiService.POST`
+- [ScriptSyntaxCheckRequestBody](../models/ScriptSyntaxCheckRequestBody.md), [SyntaxCheckerResult](../models/SyntaxCheckerResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

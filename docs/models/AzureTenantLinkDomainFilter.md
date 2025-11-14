@@ -10,7 +10,7 @@ title: AzureTenantLinkDomainFilter
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantLinkDomainFilter>` |
+| Implements | IEquatable<[AzureTenantLinkDomainFilter](AzureTenantLinkDomainFilter.md)> |
 | Source | `Models/AzureTenantLinkDomainFilter.cs` |
 
 ## Overview

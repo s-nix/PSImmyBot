@@ -10,7 +10,7 @@ title: Get-TenantSoftwareFromInventory
 | Source | `Cmdlets/GetTenantSoftwareFromInventory.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/tenants/software-from-inventory/{Id}? |
-| Return Type | `List<GetTenantSoftwareFromInventoryResponse>` |
+| Return Type | List<[GetTenantSoftwareFromInventoryResponse](../models/GetTenantSoftwareFromInventoryResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TenantSoftwareFromInventory
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/software-from-inventory/{Id}?` and deserializes to `List<GetTenantSoftwareFromInventoryResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/software-from-inventory/{Id}?` and deserializes to List<[GetTenantSoftwareFromInventoryResponse](../models/GetTenantSoftwareFromInventoryResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-TenantSoftwareFromInventory
 
 ## Outputs
 
-- `List<GetTenantSoftwareFromInventoryResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetTenantSoftwareFromInventoryResponse](../models/GetTenantSoftwareFromInventoryResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

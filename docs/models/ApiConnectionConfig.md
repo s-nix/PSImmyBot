@@ -10,7 +10,7 @@ title: ApiConnectionConfig
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApiConnectionConfig>` |
+| Implements | IEquatable<[ApiConnectionConfig](ApiConnectionConfig.md)> |
 | Source | `Models/ApiConnectionConfig.cs` |
 
 ## Overview

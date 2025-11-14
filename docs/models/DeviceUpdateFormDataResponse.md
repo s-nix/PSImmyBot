@@ -10,7 +10,7 @@ title: DeviceUpdateFormDataResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DeviceUpdateFormDataResponse>` |
+| Implements | IEquatable<[DeviceUpdateFormDataResponse](DeviceUpdateFormDataResponse.md)> |
 | Source | `Models/DeviceUpdateFormDataResponse.cs` |
 
 ## Overview

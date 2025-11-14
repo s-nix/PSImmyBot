@@ -10,7 +10,7 @@ title: IClientGroup
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IClientGroup>` |
+| Implements | IEquatable<[IClientGroup](IClientGroup.md)> |
 | Source | `Models/IClientGroup.cs` |
 
 ## Overview

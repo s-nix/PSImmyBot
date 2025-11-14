@@ -10,7 +10,7 @@ title: Update-UpdateGlobalSoftwareVersionRequestBody
 | Source | `Cmdlets/UpdateUpdateGlobalSoftwareVersionRequestBody.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/software/global/{SoftwareIdentifier}/versions/{SemanticVersion}? |
-| Return Type | `UpdateGlobalSoftwareVersionRequestBody, GetGlobalSoftwareVersionResponse` |
+| Return Type | [UpdateGlobalSoftwareVersionRequestBody](../models/UpdateGlobalSoftwareVersionRequestBody.md), [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Update-UpdateGlobalSoftwareVersionRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/global/{SoftwareIdentifier}/versions/{SemanticVersion}?` and deserializes to `UpdateGlobalSoftwareVersionRequestBody, GetGlobalSoftwareVersionResponse`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/global/{SoftwareIdentifier}/versions/{SemanticVersion}?` and deserializes to [UpdateGlobalSoftwareVersionRequestBody](../models/UpdateGlobalSoftwareVersionRequestBody.md), [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateGlobalSoftwareVersionRequestBody` | True | — | All | None |
-| SemanticVersion | `SemanticVersion` | True | — | All | None |
+| PayloadBody | [UpdateGlobalSoftwareVersionRequestBody](../models/UpdateGlobalSoftwareVersionRequestBody.md) | True | — | All | None |
+| SemanticVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -34,7 +34,7 @@ title: Update-UpdateGlobalSoftwareVersionRequestBody
 
 ## Outputs
 
-- `UpdateGlobalSoftwareVersionRequestBody, GetGlobalSoftwareVersionResponse` records produced by `ImmyBotApiService.PATCH`
+- [UpdateGlobalSoftwareVersionRequestBody](../models/UpdateGlobalSoftwareVersionRequestBody.md), [GetGlobalSoftwareVersionResponse](../models/GetGlobalSoftwareVersionResponse.md) records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

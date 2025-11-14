@@ -10,7 +10,7 @@ title: ComputerUserAffinityResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerUserAffinityResponse>` |
+| Implements | IEquatable<[ComputerUserAffinityResponse](ComputerUserAffinityResponse.md)> |
 | Source | `Models/ComputerUserAffinityResponse.cs` |
 
 ## Overview

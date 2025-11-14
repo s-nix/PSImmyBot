@@ -10,7 +10,7 @@ title: GetBrandingResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetBrandingResponse>` |
+| Implements | IEquatable<[GetBrandingResponse](GetBrandingResponse.md)> |
 | Source | `Models/GetBrandingResponse.cs` |
 
 ## Overview

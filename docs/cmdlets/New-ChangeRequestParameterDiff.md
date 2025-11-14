@@ -25,8 +25,8 @@ title: New-ChangeRequestParameterDiff
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Name | `String` | False | — | All | None |
-| NewValue | `DeploymentParameterValue` | True | — | All | None |
-| OldValue | `DeploymentParameterValue` | True | — | All | None |
+| NewValue | [DeploymentParameterValue](../models/DeploymentParameterValue.md) | True | — | All | None |
+| OldValue | [DeploymentParameterValue](../models/DeploymentParameterValue.md) | True | — | All | None |
 
 ### Parameter sets
 

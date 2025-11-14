@@ -10,7 +10,7 @@ title: DisabledPreflightScriptResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DisabledPreflightScriptResponse>` |
+| Implements | IEquatable<[DisabledPreflightScriptResponse](DisabledPreflightScriptResponse.md)> |
 | Source | `Models/DisabledPreflightScriptResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: DisabledPreflightScriptResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | ScriptId | `int` | No (value type) | — |
 

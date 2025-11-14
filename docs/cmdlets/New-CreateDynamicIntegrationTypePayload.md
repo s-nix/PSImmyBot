@@ -30,7 +30,7 @@ title: New-CreateDynamicIntegrationTypePayload
 | LogoId | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | ScriptId | `Int32` | True | — | All | None |
-| Tag | `IntegrationTag` | True | — | All | None |
+| Tag | [IntegrationTag](../models/IntegrationTag.md) | True | — | All | None |
 
 ### Parameter sets
 

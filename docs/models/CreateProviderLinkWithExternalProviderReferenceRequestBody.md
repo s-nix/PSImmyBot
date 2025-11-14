@@ -10,7 +10,7 @@ title: CreateProviderLinkWithExternalProviderReferenceRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateProviderLinkWithExternalProviderReferenceRequestBody>` |
+| Implements | IEquatable<[CreateProviderLinkWithExternalProviderReferenceRequestBody](CreateProviderLinkWithExternalProviderReferenceRequestBody.md)> |
 | Source | `Models/CreateProviderLinkWithExternalProviderReferenceRequestBody.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: CreateProviderLinkWithExternalProviderReferenceRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ProviderLink | `ProviderLink` | Reference type (nullable) | — |
-| ProviderLinkExternalReferenceData | `ProviderLinkExternalReferenceDataBody` | Reference type (nullable) | — |
+| ProviderLink | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
+| ProviderLinkExternalReferenceData | [ProviderLinkExternalReferenceDataBody](ProviderLinkExternalReferenceDataBody.md) | Reference type (nullable) | — |
 
 ## Serialization
 

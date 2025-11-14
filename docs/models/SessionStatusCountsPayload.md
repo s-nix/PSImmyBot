@@ -10,7 +10,7 @@ title: SessionStatusCountsPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SessionStatusCountsPayload>` |
+| Implements | IEquatable<[SessionStatusCountsPayload](SessionStatusCountsPayload.md)> |
 | Source | `Models/SessionStatusCountsPayload.cs` |
 
 ## Overview

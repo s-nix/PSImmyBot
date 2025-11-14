@@ -10,7 +10,7 @@ title: Send-InventoryTaskScriptPayload
 | Source | `Cmdlets/SendInventoryTaskScriptPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/inventory-tasks/local/{Id}/scripts? |
-| Return Type | `InventoryTaskScriptPayload, InventoryTaskScriptResource` |
+| Return Type | [InventoryTaskScriptPayload](../models/InventoryTaskScriptPayload.md), [InventoryTaskScriptResource](../models/InventoryTaskScriptResource.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-InventoryTaskScriptPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/inventory-tasks/local/{Id}/scripts?` and deserializes to `InventoryTaskScriptPayload, InventoryTaskScriptResource`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/inventory-tasks/local/{Id}/scripts?` and deserializes to [InventoryTaskScriptPayload](../models/InventoryTaskScriptPayload.md), [InventoryTaskScriptResource](../models/InventoryTaskScriptResource.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `InventoryTaskScriptPayload` | True | — | All | None |
+| PayloadBody | [InventoryTaskScriptPayload](../models/InventoryTaskScriptPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-InventoryTaskScriptPayload
 
 ## Outputs
 
-- `InventoryTaskScriptPayload, InventoryTaskScriptResource` records produced by `ImmyBotApiService.POST`
+- [InventoryTaskScriptPayload](../models/InventoryTaskScriptPayload.md), [InventoryTaskScriptResource](../models/InventoryTaskScriptResource.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: ISubjectMetadata
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ISubjectMetadata>` |
+| Implements | IEquatable<[ISubjectMetadata](ISubjectMetadata.md)> |
 | Source | `Models/ISubjectMetadata.cs` |
 
 ## Overview
@@ -27,7 +27,7 @@ title: ISubjectMetadata
 | IsResourceBased | `bool` | No (value type) | — |
 | IsSystemManaged | `bool` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| Permissions | `ICollection<IPermissionMetadata>` | Reference type (nullable) | — |
+| Permissions | ICollection<[IPermissionMetadata](IPermissionMetadata.md)> | Reference type (nullable) | — |
 | SortOrder | `int` | No (value type) | — |
 
 ## Serialization

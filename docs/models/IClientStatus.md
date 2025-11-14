@@ -10,7 +10,7 @@ title: IClientStatus
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IClientStatus>` |
+| Implements | IEquatable<[IClientStatus](IClientStatus.md)> |
 | Source | `Models/IClientStatus.cs` |
 
 ## Overview

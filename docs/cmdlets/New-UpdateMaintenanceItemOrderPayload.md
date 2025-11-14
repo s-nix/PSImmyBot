@@ -25,7 +25,7 @@ title: New-UpdateMaintenanceItemOrderPayload
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| Location | `MaintenanceItemOrderLocation` | True | — | All | None |
+| Location | [MaintenanceItemOrderLocation](../models/MaintenanceItemOrderLocation.md) | True | — | All | None |
 | ToIndex | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets

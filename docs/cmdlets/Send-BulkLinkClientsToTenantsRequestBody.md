@@ -25,7 +25,7 @@ title: Send-BulkLinkClientsToTenantsRequestBody
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `BulkLinkClientsToTenantsRequestBody` | True | — | All | None |
+| PayloadBody | [BulkLinkClientsToTenantsRequestBody](../models/BulkLinkClientsToTenantsRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

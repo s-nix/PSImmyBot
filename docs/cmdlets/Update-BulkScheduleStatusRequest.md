@@ -10,7 +10,7 @@ title: Update-BulkScheduleStatusRequest
 | Source | `Cmdlets/UpdateBulkScheduleStatusRequest.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/schedules/bulk-update-status? |
-| Return Type | `BulkScheduleStatusRequest, List<BulkScheduleOperationResult>` |
+| Return Type | [BulkScheduleStatusRequest](../models/BulkScheduleStatusRequest.md), List<[BulkScheduleOperationResult](../models/BulkScheduleOperationResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Update-BulkScheduleStatusRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/schedules/bulk-update-status?` and deserializes to `BulkScheduleStatusRequest, List<BulkScheduleOperationResult>`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/schedules/bulk-update-status?` and deserializes to [BulkScheduleStatusRequest](../models/BulkScheduleStatusRequest.md), List<[BulkScheduleOperationResult](../models/BulkScheduleOperationResult.md)>.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `BulkScheduleStatusRequest` | True | — | All | None |
+| PayloadBody | [BulkScheduleStatusRequest](../models/BulkScheduleStatusRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Update-BulkScheduleStatusRequest
 
 ## Outputs
 
-- `BulkScheduleStatusRequest, List<BulkScheduleOperationResult>` records produced by `ImmyBotApiService.PATCH`
+- [BulkScheduleStatusRequest](../models/BulkScheduleStatusRequest.md), List<[BulkScheduleOperationResult](../models/BulkScheduleOperationResult.md)> records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

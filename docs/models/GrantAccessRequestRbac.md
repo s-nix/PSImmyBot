@@ -10,7 +10,7 @@ title: GrantAccessRequestRbac
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GrantAccessRequestRbac>` |
+| Implements | IEquatable<[GrantAccessRequestRbac](GrantAccessRequestRbac.md)> |
 | Source | `Models/GrantAccessRequestRbac.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GrantAccessRequestRbac
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ExpiresIn | `ExpirationTime` | No (value type) | — |
+| ExpiresIn | [ExpirationTime](ExpirationTime.md) | No (value type) | — |
 | PersonIds | `ICollection<int>` | Reference type (nullable) | — |
 | RoleIds | `ICollection<int>` | Reference type (nullable) | — |
 

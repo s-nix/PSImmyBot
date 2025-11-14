@@ -10,7 +10,7 @@ title: Get-AzureGroup
 | Source | `Cmdlets/GetAzureGroup.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/tenants/{ImmyTenantId}/azure-groups/{AzureGroupId}? |
-| Return Type | `GetAzureGroupResponse` |
+| Return Type | [GetAzureGroupResponse](../models/GetAzureGroupResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-AzureGroup
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/{ImmyTenantId}/azure-groups/{AzureGroupId}?` and deserializes to `GetAzureGroupResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/tenants/{ImmyTenantId}/azure-groups/{AzureGroupId}?` and deserializes to [GetAzureGroupResponse](../models/GetAzureGroupResponse.md).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ title: Get-AzureGroup
 
 ## Outputs
 
-- `GetAzureGroupResponse` records produced by `ImmyBotApiService.GET`
+- [GetAzureGroupResponse](../models/GetAzureGroupResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -24,10 +24,10 @@ title: New-TenantTagAuthorization
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Relationship | `Relationship` | True | — | All | None |
-| Tag | `Tag` | True | — | All | None |
+| Relationship | [Relationship](../models/Relationship.md) | True | — | All | None |
+| Tag | [Tag](../models/Tag.md) | True | — | All | None |
 | TagId | `Int32` | True | — | All | None |
-| Tenant | `Tenant` | True | — | All | None |
+| Tenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 
 ### Parameter sets

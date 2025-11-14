@@ -10,7 +10,7 @@ title: Send-GetProvisioningPackageUriParameters
 | Source | `Cmdlets/SendGetProvisioningPackageUriParameters.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/provider-links/{Id}/agents/provisioning-package-uri? |
-| Return Type | `GetProvisioningPackageUriParameters, string` |
+| Return Type | [GetProvisioningPackageUriParameters](../models/GetProvisioningPackageUriParameters.md), string |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Send-GetProvisioningPackageUriParameters
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/provisioning-package-uri?` and deserializes to `GetProvisioningPackageUriParameters, string`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/provider-links/{Id}/agents/provisioning-package-uri?` and deserializes to [GetProvisioningPackageUriParameters](../models/GetProvisioningPackageUriParameters.md), string.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `GetProvisioningPackageUriParameters` | True | — | All | None |
+| PayloadBody | [GetProvisioningPackageUriParameters](../models/GetProvisioningPackageUriParameters.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Send-GetProvisioningPackageUriParameters
 
 ## Outputs
 
-- `GetProvisioningPackageUriParameters, string` records produced by `ImmyBotApiService.POST`
+- [GetProvisioningPackageUriParameters](../models/GetProvisioningPackageUriParameters.md), string records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

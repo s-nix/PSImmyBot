@@ -10,7 +10,7 @@ title: Get-LocalMediaResponse
 | Source | `Cmdlets/GetLocalMediaResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/media/local/{Id}? |
-| Return Type | `LocalMediaResponse` |
+| Return Type | [LocalMediaResponse](../models/LocalMediaResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-LocalMediaResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/media/local/{Id}?` and deserializes to `LocalMediaResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/media/local/{Id}?` and deserializes to [LocalMediaResponse](../models/LocalMediaResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-LocalMediaResponse
 
 ## Outputs
 
-- `LocalMediaResponse` records produced by `ImmyBotApiService.GET`
+- [LocalMediaResponse](../models/LocalMediaResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

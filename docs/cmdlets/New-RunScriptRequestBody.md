@@ -29,8 +29,8 @@ title: New-RunScriptRequestBody
 | MaintenanceActionId | `Nullable`1` | False | — | All | None |
 | MaintenanceSessionId | `Nullable`1` | False | — | All | None |
 | MaintenanceTaskId | `Nullable`1` | False | — | All | None |
-| MaintenanceTaskType | `DatabaseType` | True | — | All | None |
-| Script | `Script` | True | — | All | None |
+| MaintenanceTaskType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
+| Script | [Script](../models/Script.md) | True | — | All | None |
 | SessionLogId | `Nullable`1` | False | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 | TerminalId | `Nullable`1` | False | — | All | None |

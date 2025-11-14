@@ -25,7 +25,7 @@ title: New-ComputerListViewModel
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ActiveSessionId | `Nullable`1` | False | — | All | None |
-| ActiveSessionStatus | `SessionStatus` | True | — | All | None |
+| ActiveSessionStatus | [SessionStatus](../models/SessionStatus.md) | True | — | All | None |
 | ChassisTypes | `ICollection`1` | False | — | All | None |
 | ComputerName | `String` | False | — | All | None |
 | ComputerTagIds | `ICollection`1` | False | — | All | None |
@@ -52,7 +52,7 @@ title: New-ComputerListViewModel
 | Manufacturer | `String` | False | — | All | None |
 | Model | `String` | False | — | All | None |
 | Notes | `String` | False | — | All | None |
-| OnboardingStatus | `ComputerOnboardingStatus` | True | — | All | None |
+| OnboardingStatus | [ComputerOnboardingStatus](../models/ComputerOnboardingStatus.md) | True | — | All | None |
 | OperatingSystem | `String` | False | — | All | None |
 | PrimaryPersonId | `Nullable`1` | False | — | All | None |
 | PrimaryUserEmail | `String` | False | — | All | None |

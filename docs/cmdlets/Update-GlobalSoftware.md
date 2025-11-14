@@ -10,7 +10,7 @@ title: Update-GlobalSoftware
 | Source | `Cmdlets/UpdateGlobalSoftware.cs` |
 | HTTP Method | PATCH |
 | Endpoint | /api/v1/software/global/{SoftwareIdentifier}? |
-| Return Type | `UpdateGlobalSoftwareRequestBody, GetGlobalSoftwareResponse` |
+| Return Type | [UpdateGlobalSoftwareRequestBody](../models/UpdateGlobalSoftwareRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Update-GlobalSoftware
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/global/{SoftwareIdentifier}?` and deserializes to `UpdateGlobalSoftwareRequestBody, GetGlobalSoftwareResponse`.
+- Calls `ImmyBotApiService.PATCH` targeting `/api/v1/software/global/{SoftwareIdentifier}?` and deserializes to [UpdateGlobalSoftwareRequestBody](../models/UpdateGlobalSoftwareRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateGlobalSoftwareRequestBody` | True | — | All | None |
+| PayloadBody | [UpdateGlobalSoftwareRequestBody](../models/UpdateGlobalSoftwareRequestBody.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | True | — | All | None |
 
 ### Parameter sets
@@ -33,7 +33,7 @@ title: Update-GlobalSoftware
 
 ## Outputs
 
-- `UpdateGlobalSoftwareRequestBody, GetGlobalSoftwareResponse` records produced by `ImmyBotApiService.PATCH`
+- [UpdateGlobalSoftwareRequestBody](../models/UpdateGlobalSoftwareRequestBody.md), [GetGlobalSoftwareResponse](../models/GetGlobalSoftwareResponse.md) records produced by `ImmyBotApiService.PATCH`
 
 ## Notes
 

@@ -24,8 +24,8 @@ title: New-GetBashInstallScriptParametersWithOnboardingOptions
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| OnboardingOptions | `AgentOnboardingOptions` | True | — | All | None |
-| Platform | `Platform` | True | — | All | None |
+| OnboardingOptions | [AgentOnboardingOptions](../models/AgentOnboardingOptions.md) | True | — | All | None |
+| Platform | [Platform](../models/Platform.md) | True | — | All | None |
 | TargetExternalClientId | `String` | False | — | All | None |
 
 ### Parameter sets

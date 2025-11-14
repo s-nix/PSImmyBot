@@ -10,7 +10,7 @@ title: TargetAssignmentNotes
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TargetAssignmentNotes>` |
+| Implements | IEquatable<[TargetAssignmentNotes](TargetAssignmentNotes.md)> |
 | Source | `Models/TargetAssignmentNotes.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: TargetAssignmentNotes
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Notes | `string` | Reference type (nullable) | — |
-| TargetAssignment | `TargetAssignment` | Reference type (nullable) | — |
+| TargetAssignment | [TargetAssignment](TargetAssignment.md) | Reference type (nullable) | — |
 | TargetAssignmentId | `int` | No (value type) | — |
 | UpdatedByName | `string` | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |

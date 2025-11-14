@@ -10,7 +10,7 @@ title: ApplicationLockEvent
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApplicationLockEvent>` |
+| Implements | IEquatable<[ApplicationLockEvent](ApplicationLockEvent.md)> |
 | Source | `Models/ApplicationLockEvent.cs` |
 
 ## Overview

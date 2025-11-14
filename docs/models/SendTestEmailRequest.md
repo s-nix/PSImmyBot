@@ -10,7 +10,7 @@ title: SendTestEmailRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SendTestEmailRequest>` |
+| Implements | IEquatable<[SendTestEmailRequest](SendTestEmailRequest.md)> |
 | Source | `Models/SendTestEmailRequest.cs` |
 
 ## Overview

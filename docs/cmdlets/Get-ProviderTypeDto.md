@@ -10,7 +10,7 @@ title: Get-ProviderTypeDto
 | Source | `Cmdlets/GetProviderTypeDto.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-types? |
-| Return Type | `List<ProviderTypeDto>` |
+| Return Type | List<[ProviderTypeDto](../models/ProviderTypeDto.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ProviderTypeDto
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-types?` and deserializes to `List<ProviderTypeDto>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-types?` and deserializes to List<[ProviderTypeDto](../models/ProviderTypeDto.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -33,7 +33,7 @@ title: Get-ProviderTypeDto
 
 ## Outputs
 
-- `List<ProviderTypeDto>` records produced by `ImmyBotApiService.GET`
+- List<[ProviderTypeDto](../models/ProviderTypeDto.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

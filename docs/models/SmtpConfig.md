@@ -10,7 +10,7 @@ title: SmtpConfig
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SmtpConfig>` |
+| Implements | IEquatable<[SmtpConfig](SmtpConfig.md)> |
 | Source | `Models/SmtpConfig.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: SmtpConfig
 | Enabled | `bool` | No (value type) | — |
 | EnableSsl | `bool` | No (value type) | — |
 | Host | `string` | Reference type (nullable) | — |
-| OwnerTenant | `Tenant` | Reference type (nullable) | — |
+| OwnerTenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | PasswordHash | `string` | Reference type (nullable) | — |
 | Port | `int` | No (value type) | — |
 | TenantId | `int` | No (value type) | — |

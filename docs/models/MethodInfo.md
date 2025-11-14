@@ -10,7 +10,7 @@ title: MethodInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MethodInfo>` |
+| Implements | IEquatable<[MethodInfo](MethodInfo.md)> |
 | Source | `Models/MethodInfo.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: MethodInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Attributes | `MethodAttributes` | No (value type) | — |
-| CallingConvention | `CallingConventions` | No (value type) | — |
+| Attributes | [MethodAttributes](MethodAttributes.md) | No (value type) | — |
+| CallingConvention | [CallingConventions](CallingConventions.md) | No (value type) | — |
 | ContainsGenericParameters | `bool` | No (value type) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
-| DeclaringType | `Type` | Reference type (nullable) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
+| DeclaringType | [Type](Type.md) | Reference type (nullable) | — |
 | IsAbstract | `bool` | No (value type) | — |
 | IsAssembly | `bool` | No (value type) | — |
 | IsCollectible | `bool` | No (value type) | — |
@@ -45,16 +45,16 @@ title: MethodInfo
 | IsSpecialName | `bool` | No (value type) | — |
 | IsStatic | `bool` | No (value type) | — |
 | IsVirtual | `bool` | No (value type) | — |
-| MemberType | `MemberTypes` | No (value type) | — |
+| MemberType | [MemberTypes](MemberTypes.md) | No (value type) | — |
 | MetadataToken | `int` | No (value type) | — |
-| MethodHandle | `RuntimeMethodHandle` | Reference type (nullable) | — |
-| MethodImplementationFlags | `MethodImplAttributes` | No (value type) | — |
-| Module | `Module` | Reference type (nullable) | — |
+| MethodHandle | [RuntimeMethodHandle](RuntimeMethodHandle.md) | Reference type (nullable) | — |
+| MethodImplementationFlags | [MethodImplAttributes](MethodImplAttributes.md) | No (value type) | — |
+| Module | [Module](Module.md) | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| ReflectedType | `Type` | Reference type (nullable) | — |
-| ReturnParameter | `ParameterInfo` | Reference type (nullable) | — |
-| ReturnType | `Type` | Reference type (nullable) | — |
-| ReturnTypeCustomAttributes | `ICustomAttributeProvider` | Reference type (nullable) | — |
+| ReflectedType | [Type](Type.md) | Reference type (nullable) | — |
+| ReturnParameter | [ParameterInfo](ParameterInfo.md) | Reference type (nullable) | — |
+| ReturnType | [Type](Type.md) | Reference type (nullable) | — |
+| ReturnTypeCustomAttributes | [ICustomAttributeProvider](ICustomAttributeProvider.md) | Reference type (nullable) | — |
 
 ## Serialization
 

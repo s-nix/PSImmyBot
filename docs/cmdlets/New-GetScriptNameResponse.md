@@ -25,7 +25,7 @@ title: New-GetScriptNameResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Action | `String` | False | — | All | None |
-| Category | `ScriptCategory` | True | — | All | None |
+| Category | [ScriptCategory](../models/ScriptCategory.md) | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | UpdatedBy | `String` | False | — | All | None |

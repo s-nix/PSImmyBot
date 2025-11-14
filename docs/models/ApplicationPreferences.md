@@ -10,7 +10,7 @@ title: ApplicationPreferences
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApplicationPreferences>` |
+| Implements | IEquatable<[ApplicationPreferences](ApplicationPreferences.md)> |
 | Source | `Models/ApplicationPreferences.cs` |
 
 ## Overview
@@ -24,10 +24,10 @@ title: ApplicationPreferences
 | AllowNonAdminsToManageAssignments | `bool` | No (value type) | — |
 | AutomaticImmyBotReleaseUpdateHour | `int` | No (value type) | — |
 | DaysToWaitBeforeAutomaticImmyBotUpdate | `int` | No (value type) | — |
-| DefaultBranding | `Branding` | Reference type (nullable) | — |
+| DefaultBranding | [Branding](Branding.md) | Reference type (nullable) | — |
 | DefaultBrandingId | `int?` | Yes (nullable value type) | — |
-| DefaultEmailBccList | `DefaultEmailBccList` | Reference type (nullable) | — |
-| DefaultScriptTimeouts | `DefaultScriptTimeouts` | Reference type (nullable) | — |
+| DefaultEmailBccList | [DefaultEmailBccList](DefaultEmailBccList.md) | Reference type (nullable) | — |
+| DefaultScriptTimeouts | [DefaultScriptTimeouts](DefaultScriptTimeouts.md) | Reference type (nullable) | — |
 | DefaultTimeZone | `string` | Reference type (nullable) | — |
 | DisconnectLeastActiveEditorServiceWhenLimitReached | `bool` | No (value type) | — |
 | EnableAutomaticImmyBotReleaseUpdates | `bool` | No (value type) | — |

@@ -10,7 +10,7 @@ title: DoesScriptHaveParamBlockRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DoesScriptHaveParamBlockRequest>` |
+| Implements | IEquatable<[DoesScriptHaveParamBlockRequest](DoesScriptHaveParamBlockRequest.md)> |
 | Source | `Models/DoesScriptHaveParamBlockRequest.cs` |
 
 ## Overview

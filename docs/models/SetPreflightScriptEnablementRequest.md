@@ -10,7 +10,7 @@ title: SetPreflightScriptEnablementRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SetPreflightScriptEnablementRequest>` |
+| Implements | IEquatable<[SetPreflightScriptEnablementRequest](SetPreflightScriptEnablementRequest.md)> |
 | Source | `Models/SetPreflightScriptEnablementRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: SetPreflightScriptEnablementRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | IsEnabled | `bool` | No (value type) | — |
 | ScriptId | `int` | No (value type) | — |
 

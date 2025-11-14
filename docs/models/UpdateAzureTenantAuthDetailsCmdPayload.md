@@ -10,7 +10,7 @@ title: UpdateAzureTenantAuthDetailsCmdPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateAzureTenantAuthDetailsCmdPayload>` |
+| Implements | IEquatable<[UpdateAzureTenantAuthDetailsCmdPayload](UpdateAzureTenantAuthDetailsCmdPayload.md)> |
 | Source | `Models/UpdateAzureTenantAuthDetailsCmdPayload.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: UpdateAzureTenantAuthDetailsCmdPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AuthDetails | `AzureTenantAuthDetails` | Reference type (nullable) | — |
+| AuthDetails | [AzureTenantAuthDetails](AzureTenantAuthDetails.md) | Reference type (nullable) | — |
 
 ## Serialization
 

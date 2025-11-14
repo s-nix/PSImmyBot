@@ -10,7 +10,7 @@ title: GetSourceContextsResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetSourceContextsResponse>` |
+| Implements | IEquatable<[GetSourceContextsResponse](GetSourceContextsResponse.md)> |
 | Source | `Models/GetSourceContextsResponse.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetSourceContextsResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| SourceContextLogLevels | `ICollection<SourceContextLogLevel>` | Reference type (nullable) | — |
+| SourceContextLogLevels | ICollection<[SourceContextLogLevel](SourceContextLogLevel.md)> | Reference type (nullable) | — |
 | StreamingEnabled | `bool` | No (value type) | — |
 
 ## Serialization

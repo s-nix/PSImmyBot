@@ -24,7 +24,7 @@ title: New-AgentStartupInfo
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| InstalledAgentState | `AgentInstallationDetails` | True | — | All | None |
+| InstalledAgentState | [AgentInstallationDetails](../models/AgentInstallationDetails.md) | True | — | All | None |
 | Pid | `Int32` | True | — | All | None |
 
 ### Parameter sets

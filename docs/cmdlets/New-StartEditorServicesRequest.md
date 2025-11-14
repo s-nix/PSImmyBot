@@ -24,10 +24,10 @@ title: New-StartEditorServicesRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ScriptCategory | `ScriptCategory` | True | — | All | None |
-| ScriptExecutionContext | `ScriptExecutionContext` | True | — | All | None |
+| ScriptCategory | [ScriptCategory](../models/ScriptCategory.md) | True | — | All | None |
+| ScriptExecutionContext | [ScriptExecutionContext](../models/ScriptExecutionContext.md) | True | — | All | None |
 | ScriptId | `Nullable`1` | False | — | All | None |
-| ScriptType | `DatabaseType` | True | — | All | None |
+| ScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | TerminalId | `Guid` | True | — | All | None |
 
 ### Parameter sets

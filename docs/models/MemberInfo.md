@@ -10,7 +10,7 @@ title: MemberInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MemberInfo>` |
+| Implements | IEquatable<[MemberInfo](MemberInfo.md)> |
 | Source | `Models/MemberInfo.cs` |
 
 ## Overview
@@ -20,14 +20,14 @@ title: MemberInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
-| DeclaringType | `Type` | Reference type (nullable) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
+| DeclaringType | [Type](Type.md) | Reference type (nullable) | — |
 | IsCollectible | `bool` | No (value type) | — |
-| MemberType | `MemberTypes` | No (value type) | — |
+| MemberType | [MemberTypes](MemberTypes.md) | No (value type) | — |
 | MetadataToken | `int` | No (value type) | — |
-| Module | `Module` | Reference type (nullable) | — |
+| Module | [Module](Module.md) | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| ReflectedType | `Type` | Reference type (nullable) | — |
+| ReflectedType | [Type](Type.md) | Reference type (nullable) | — |
 
 ## Serialization
 

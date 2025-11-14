@@ -10,7 +10,7 @@ title: Get-OptionalTargetAssignmentApproval
 | Source | `Cmdlets/GetOptionalTargetAssignmentApproval.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/optional-target-assignment-approvals/computer/{ComputerId}? |
-| Return Type | `List<GetOptionalTargetAssignmentApprovalResponse>` |
+| Return Type | List<[GetOptionalTargetAssignmentApprovalResponse](../models/GetOptionalTargetAssignmentApprovalResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-OptionalTargetAssignmentApproval
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/optional-target-assignment-approvals/computer/{ComputerId}?` and deserializes to `List<GetOptionalTargetAssignmentApprovalResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/optional-target-assignment-approvals/computer/{ComputerId}?` and deserializes to List<[GetOptionalTargetAssignmentApprovalResponse](../models/GetOptionalTargetAssignmentApprovalResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-OptionalTargetAssignmentApproval
 
 ## Outputs
 
-- `List<GetOptionalTargetAssignmentApprovalResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetOptionalTargetAssignmentApprovalResponse](../models/GetOptionalTargetAssignmentApprovalResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: GetMaintenanceSessionResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetMaintenanceSessionResponse>` |
+| Implements | IEquatable<[GetMaintenanceSessionResponse](GetMaintenanceSessionResponse.md)> |
 | Source | `Models/GetMaintenanceSessionResponse.cs` |
 
 ## Overview
@@ -20,33 +20,33 @@ title: GetMaintenanceSessionResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Activities | `ICollection<MaintenanceActionActivityResponse>` | Reference type (nullable) | — |
-| AgentUpdatesStageStatus | `SessionStatus` | No (value type) | — |
-| Computer | `GetComputerResponse` | Reference type (nullable) | — |
+| Activities | ICollection<[MaintenanceActionActivityResponse](MaintenanceActionActivityResponse.md)> | Reference type (nullable) | — |
+| AgentUpdatesStageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
+| Computer | [GetComputerResponse](GetComputerResponse.md) | Reference type (nullable) | — |
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | ComputerName | `string` | Reference type (nullable) | — |
 | CreatedBy | `string` | Reference type (nullable) | — |
 | CreatedById | `int?` | Yes (nullable value type) | — |
 | CreatedDateUtc | `DateTimeOffset` | No (value type) | — |
-| DetectionStageStatus | `SessionStatus` | No (value type) | — |
+| DetectionStageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
 | Duration | `string` | Reference type (nullable) | — |
-| ExecutionStageStatus | `SessionStatus` | No (value type) | — |
+| ExecutionStageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
 | FullMaintenance | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| InventoryStageStatus | `SessionStatus` | No (value type) | — |
+| InventoryStageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
 | JobId | `string` | Reference type (nullable) | — |
-| Logs | `ICollection<GetSessionLogResponse>` | Reference type (nullable) | — |
-| MaintenanceActions | `ICollection<GetMaintenanceActionResponse>` | Reference type (nullable) | — |
+| Logs | ICollection<[GetSessionLogResponse](GetSessionLogResponse.md)> | Reference type (nullable) | — |
+| MaintenanceActions | ICollection<[GetMaintenanceActionResponse](GetMaintenanceActionResponse.md)> | Reference type (nullable) | — |
 | Onboarding | `bool` | No (value type) | — |
-| OnboardingStageStatus | `SessionStatus` | No (value type) | — |
+| OnboardingStageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
 | PersonId | `int?` | Yes (nullable value type) | — |
-| ResolutionStageStatus | `SessionStatus` | No (value type) | — |
+| ResolutionStageStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
 | ScheduledExecutionDate | `DateTimeOffset?` | Yes (nullable value type) | — |
 | ScheduledId | `int?` | Yes (nullable value type) | — |
-| SessionJobArgs | `SessionJobArgs` | Reference type (nullable) | — |
-| SessionStatus | `SessionStatus` | No (value type) | — |
-| Stages | `ICollection<GetMaintenanceSessionStageResponse>` | Reference type (nullable) | — |
-| Tenant | `GetTenantResponse` | Reference type (nullable) | — |
+| SessionJobArgs | [SessionJobArgs](SessionJobArgs.md) | Reference type (nullable) | — |
+| SessionStatus | [SessionStatus](SessionStatus.md) | No (value type) | — |
+| Stages | ICollection<[GetMaintenanceSessionStageResponse](GetMaintenanceSessionStageResponse.md)> | Reference type (nullable) | — |
+| Tenant | [GetTenantResponse](GetTenantResponse.md) | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | TenantName | `string` | Reference type (nullable) | — |
 | UpdatedById | `int?` | Yes (nullable value type) | — |

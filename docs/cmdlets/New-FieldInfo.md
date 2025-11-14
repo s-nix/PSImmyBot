@@ -24,11 +24,11 @@ title: New-FieldInfo
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Attributes | `FieldAttributes` | True | — | All | None |
+| Attributes | [FieldAttributes](../models/FieldAttributes.md) | True | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
-| DeclaringType | `Type` | True | — | All | None |
-| FieldHandle | `RuntimeFieldHandle` | True | — | All | None |
-| FieldType | `Type` | True | — | All | None |
+| DeclaringType | [Type](../models/Type.md) | True | — | All | None |
+| FieldHandle | [RuntimeFieldHandle](../models/RuntimeFieldHandle.md) | True | — | All | None |
+| FieldType | [Type](../models/Type.md) | True | — | All | None |
 | IsAssembly | `Boolean` | True | — | All | None |
 | IsCollectible | `Boolean` | True | — | All | None |
 | IsFamily | `Boolean` | True | — | All | None |
@@ -45,11 +45,11 @@ title: New-FieldInfo
 | IsSecurityTransparent | `Boolean` | True | — | All | None |
 | IsSpecialName | `Boolean` | True | — | All | None |
 | IsStatic | `Boolean` | True | — | All | None |
-| MemberType | `MemberTypes` | True | — | All | None |
+| MemberType | [MemberTypes](../models/MemberTypes.md) | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
-| Module | `Module` | True | — | All | None |
+| Module | [Module](../models/Module.md) | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| ReflectedType | `Type` | True | — | All | None |
+| ReflectedType | [Type](../models/Type.md) | True | — | All | None |
 
 ### Parameter sets
 

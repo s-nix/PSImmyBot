@@ -10,7 +10,7 @@ title: GetTenantSoftwareFromInventoryResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetTenantSoftwareFromInventoryResponse>` |
+| Implements | IEquatable<[GetTenantSoftwareFromInventoryResponse](GetTenantSoftwareFromInventoryResponse.md)> |
 | Source | `Models/GetTenantSoftwareFromInventoryResponse.cs` |
 
 ## Overview

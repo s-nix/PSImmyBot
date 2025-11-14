@@ -24,7 +24,7 @@ title: New-GetBashInstallScriptParameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Platform | `Platform` | True | — | All | None |
+| Platform | [Platform](../models/Platform.md) | True | — | All | None |
 | TargetExternalClientId | `String` | False | — | All | None |
 
 ### Parameter sets

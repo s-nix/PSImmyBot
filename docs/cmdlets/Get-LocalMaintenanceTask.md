@@ -10,7 +10,7 @@ title: Get-LocalMaintenanceTask
 | Source | `Cmdlets/GetLocalMaintenanceTask.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-tasks/local/{Id}? |
-| Return Type | `GetLocalMaintenanceTaskResponse` |
+| Return Type | [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-LocalMaintenanceTask
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-tasks/local/{Id}?` and deserializes to `GetLocalMaintenanceTaskResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-tasks/local/{Id}?` and deserializes to [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-LocalMaintenanceTask
 
 ## Outputs
 
-- `GetLocalMaintenanceTaskResponse` records produced by `ImmyBotApiService.GET`
+- [GetLocalMaintenanceTaskResponse](../models/GetLocalMaintenanceTaskResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

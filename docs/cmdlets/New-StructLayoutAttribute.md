@@ -25,7 +25,7 @@ title: New-StructLayoutAttribute
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | TypeId | `Object` | False | — | All | None |
-| Value | `LayoutKind` | True | — | All | None |
+| Value | [LayoutKind](../models/LayoutKind.md) | True | — | All | None |
 
 ### Parameter sets
 

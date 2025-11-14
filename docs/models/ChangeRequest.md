@@ -10,7 +10,7 @@ title: ChangeRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ChangeRequest>` |
+| Implements | IEquatable<[ChangeRequest](ChangeRequest.md)> |
 | Source | `Models/ChangeRequest.cs` |
 
 ## Overview
@@ -22,20 +22,20 @@ title: ChangeRequest
 | --- | --- | --- | --- |
 | AcknowledgedByUserId | `int?` | Yes (nullable value type) | — |
 | AcknowledgedByUserName | `string` | Reference type (nullable) | — |
-| Comments | `ICollection<ChangeRequestComment>` | Reference type (nullable) | — |
+| Comments | ICollection<[ChangeRequestComment](ChangeRequestComment.md)> | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | NewValuesJson | `object` | Reference type (nullable) | — |
-| ObjectType | `ChangeRequestObjectType` | No (value type) | — |
-| Script | `Script` | Reference type (nullable) | — |
+| ObjectType | [ChangeRequestObjectType](ChangeRequestObjectType.md) | No (value type) | — |
+| Script | [Script](Script.md) | Reference type (nullable) | — |
 | ScriptId | `int?` | Yes (nullable value type) | — |
-| State | `ChangeRequestState` | No (value type) | — |
-| TargetAssignment | `TargetAssignment` | Reference type (nullable) | — |
+| State | [ChangeRequestState](ChangeRequestState.md) | No (value type) | — |
+| TargetAssignment | [TargetAssignment](TargetAssignment.md) | Reference type (nullable) | — |
 | TargetAssignmentId | `int?` | Yes (nullable value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

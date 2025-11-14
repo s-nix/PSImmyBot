@@ -10,7 +10,7 @@ title: CreateTenantTagAuthorizationPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateTenantTagAuthorizationPayload>` |
+| Implements | IEquatable<[CreateTenantTagAuthorizationPayload](CreateTenantTagAuthorizationPayload.md)> |
 | Source | `Models/CreateTenantTagAuthorizationPayload.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: CreateTenantTagAuthorizationPayload
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Relationship | `Relationship` | No (value type) | — |
+| Relationship | [Relationship](Relationship.md) | No (value type) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

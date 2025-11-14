@@ -25,7 +25,7 @@ title: New-MaintenanceSchedulingConfiguration
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | MaintenanceTime | `String` | False | — | All | None |
-| OfflineBehavior | `ComputerOfflineMaintenanceSessionBehavior` | True | — | All | None |
+| OfflineBehavior | [ComputerOfflineMaintenanceSessionBehavior](../models/ComputerOfflineMaintenanceSessionBehavior.md) | True | — | All | None |
 | ScheduleExecutionAfterActiveHours | `Boolean` | True | — | All | None |
 | Time | `String` | False | — | All | None |
 | TimeZoneInfoId | `String` | False | — | All | None |

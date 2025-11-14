@@ -10,7 +10,7 @@ title: ApplicationLockCallerInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ApplicationLockCallerInfo>` |
+| Implements | IEquatable<[ApplicationLockCallerInfo](ApplicationLockCallerInfo.md)> |
 | Source | `Models/ApplicationLockCallerInfo.cs` |
 
 ## Overview

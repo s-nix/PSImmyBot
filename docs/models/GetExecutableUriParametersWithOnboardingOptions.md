@@ -10,7 +10,7 @@ title: GetExecutableUriParametersWithOnboardingOptions
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetExecutableUriParametersWithOnboardingOptions>` |
+| Implements | IEquatable<[GetExecutableUriParametersWithOnboardingOptions](GetExecutableUriParametersWithOnboardingOptions.md)> |
 | Source | `Models/GetExecutableUriParametersWithOnboardingOptions.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GetExecutableUriParametersWithOnboardingOptions
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| OnboardingOptions | `AgentOnboardingOptions` | Reference type (nullable) | — |
+| OnboardingOptions | [AgentOnboardingOptions](AgentOnboardingOptions.md) | Reference type (nullable) | — |
 | TargetExternalClientId | `string` | Reference type (nullable) | — |
 
 ## Serialization

@@ -25,7 +25,7 @@ title: New-AzureTenantConsentDetails
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ConsentDateUtc | `Nullable`1` | False | — | All | None |
-| ConsentedWith | `AppRegistrationType` | True | — | All | None |
+| ConsentedWith | [AppRegistrationType](../models/AppRegistrationType.md) | True | — | All | None |
 
 ### Parameter sets
 

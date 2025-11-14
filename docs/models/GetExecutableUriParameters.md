@@ -10,7 +10,7 @@ title: GetExecutableUriParameters
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetExecutableUriParameters>` |
+| Implements | IEquatable<[GetExecutableUriParameters](GetExecutableUriParameters.md)> |
 | Source | `Models/GetExecutableUriParameters.cs` |
 
 ## Overview

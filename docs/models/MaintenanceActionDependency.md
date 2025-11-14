@@ -10,7 +10,7 @@ title: MaintenanceActionDependency
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceActionDependency>` |
+| Implements | IEquatable<[MaintenanceActionDependency](MaintenanceActionDependency.md)> |
 | Source | `Models/MaintenanceActionDependency.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: MaintenanceActionDependency
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Dependent | `MaintenanceAction` | Reference type (nullable) | — |
+| Dependent | [MaintenanceAction](MaintenanceAction.md) | Reference type (nullable) | — |
 | DependentId | `int` | No (value type) | — |
-| DependsOn | `MaintenanceAction` | Reference type (nullable) | — |
+| DependsOn | [MaintenanceAction](MaintenanceAction.md) | Reference type (nullable) | — |
 | DependsOnId | `int` | No (value type) | — |
 
 ## Serialization

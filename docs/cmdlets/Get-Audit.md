@@ -10,7 +10,7 @@ title: Get-Audit
 | Source | `Cmdlets/GetAudit.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/audits/global/dx? |
-| Return Type | `List<Audit>` |
+| Return Type | List<[Audit](../models/Audit.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Get-Audit
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/audits/global/dx?` and deserializes to `List<Audit>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/audits/global/dx?` and deserializes to List<[Audit](../models/Audit.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Get-Audit
 
 ## Outputs
 
-- `List<Audit>` records produced by `ImmyBotApiService.GET`
+- List<[Audit](../models/Audit.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

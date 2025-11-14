@@ -10,7 +10,7 @@ title: AcknowledgeNotificationsRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AcknowledgeNotificationsRequest>` |
+| Implements | IEquatable<[AcknowledgeNotificationsRequest](AcknowledgeNotificationsRequest.md)> |
 | Source | `Models/AcknowledgeNotificationsRequest.cs` |
 
 ## Overview

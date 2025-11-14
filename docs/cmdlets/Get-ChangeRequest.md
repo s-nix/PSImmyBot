@@ -10,7 +10,7 @@ title: Get-ChangeRequest
 | Source | `Cmdlets/GetChangeRequest.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/{DeploymentId}/change-requests? |
-| Return Type | `List<ChangeRequestResponse>` |
+| Return Type | List<[ChangeRequestResponse](../models/ChangeRequestResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ChangeRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/{DeploymentId}/change-requests?` and deserializes to `List<ChangeRequestResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/{DeploymentId}/change-requests?` and deserializes to List<[ChangeRequestResponse](../models/ChangeRequestResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-ChangeRequest
 
 ## Outputs
 
-- `List<ChangeRequestResponse>` records produced by `ImmyBotApiService.GET`
+- List<[ChangeRequestResponse](../models/ChangeRequestResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

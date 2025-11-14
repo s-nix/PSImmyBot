@@ -10,7 +10,7 @@ title: GetLicenseResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetLicenseResponse>` |
+| Implements | IEquatable<[GetLicenseResponse](GetLicenseResponse.md)> |
 | Source | `Models/GetLicenseResponse.cs` |
 
 ## Overview
@@ -25,10 +25,10 @@ title: GetLicenseResponse
 | LicenseValue | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
 | RestrictToMajorVersion | `bool` | No (value type) | — |
-| SemanticVersion | `SemanticVersion` | Reference type (nullable) | — |
+| SemanticVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 | SoftwareIdentifier | `string` | Reference type (nullable) | — |
 | SoftwareName | `string` | Reference type (nullable) | — |
-| SoftwareType | `SoftwareType` | No (value type) | — |
+| SoftwareType | [SoftwareType](SoftwareType.md) | No (value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | TenantName | `string` | Reference type (nullable) | — |
 | UpdatedBy | `string` | Reference type (nullable) | — |

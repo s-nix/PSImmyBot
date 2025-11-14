@@ -10,7 +10,7 @@ title: UpdateAzureTenantLinkRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateAzureTenantLinkRequest>` |
+| Implements | IEquatable<[UpdateAzureTenantLinkRequest](UpdateAzureTenantLinkRequest.md)> |
 | Source | `Models/UpdateAzureTenantLinkRequest.cs` |
 
 ## Overview

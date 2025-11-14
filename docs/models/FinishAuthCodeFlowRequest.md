@@ -10,7 +10,7 @@ title: FinishAuthCodeFlowRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<FinishAuthCodeFlowRequest>` |
+| Implements | IEquatable<[FinishAuthCodeFlowRequest](FinishAuthCodeFlowRequest.md)> |
 | Source | `Models/FinishAuthCodeFlowRequest.cs` |
 
 ## Overview

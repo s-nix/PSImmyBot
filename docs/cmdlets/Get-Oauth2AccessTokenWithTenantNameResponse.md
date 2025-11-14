@@ -10,7 +10,7 @@ title: Get-Oauth2AccessTokenWithTenantNameResponse
 | Source | `Cmdlets/GetOauth2AccessTokenWithTenantNameResponse.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/oauth/oauth-access-tokens/{Id}/{AccessTokenId}? |
-| Return Type | `Oauth2AccessTokenWithTenantNameResponse` |
+| Return Type | [Oauth2AccessTokenWithTenantNameResponse](../models/Oauth2AccessTokenWithTenantNameResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Oauth2AccessTokenWithTenantNameResponse
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/oauth/oauth-access-tokens/{Id}/{AccessTokenId}?` and deserializes to `Oauth2AccessTokenWithTenantNameResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/oauth/oauth-access-tokens/{Id}/{AccessTokenId}?` and deserializes to [Oauth2AccessTokenWithTenantNameResponse](../models/Oauth2AccessTokenWithTenantNameResponse.md).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ title: Get-Oauth2AccessTokenWithTenantNameResponse
 
 ## Outputs
 
-- `Oauth2AccessTokenWithTenantNameResponse` records produced by `ImmyBotApiService.GET`
+- [Oauth2AccessTokenWithTenantNameResponse](../models/Oauth2AccessTokenWithTenantNameResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

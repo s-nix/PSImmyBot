@@ -24,7 +24,7 @@ title: New-ParameterInfo
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Attributes | `ParameterAttributes` | True | — | All | None |
+| Attributes | [ParameterAttributes](../models/ParameterAttributes.md) | True | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
 | DefaultValue | `Object` | False | — | All | None |
 | HasDefaultValue | `Boolean` | True | — | All | None |
@@ -33,10 +33,10 @@ title: New-ParameterInfo
 | IsOptional | `Boolean` | True | — | All | None |
 | IsOut | `Boolean` | True | — | All | None |
 | IsRetval | `Boolean` | True | — | All | None |
-| Member | `MemberInfo` | True | — | All | None |
+| Member | [MemberInfo](../models/MemberInfo.md) | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
 | Name | `String` | False | — | All | None |
-| ParameterType | `Type` | True | — | All | None |
+| ParameterType | [Type](../models/Type.md) | True | — | All | None |
 | Position | `Int32` | True | — | All | None |
 | RawDefaultValue | `Object` | False | — | All | None |
 

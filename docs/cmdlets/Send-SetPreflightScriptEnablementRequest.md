@@ -10,7 +10,7 @@ title: Send-SetPreflightScriptEnablementRequest
 | Source | `Cmdlets/SendSetPreflightScriptEnablementRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/set-preflight-script-enablement? |
-| Return Type | `SetPreflightScriptEnablementRequest, OpResult` |
+| Return Type | [SetPreflightScriptEnablementRequest](../models/SetPreflightScriptEnablementRequest.md), [OpResult](../models/OpResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-SetPreflightScriptEnablementRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/set-preflight-script-enablement?` and deserializes to `SetPreflightScriptEnablementRequest, OpResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/set-preflight-script-enablement?` and deserializes to [SetPreflightScriptEnablementRequest](../models/SetPreflightScriptEnablementRequest.md), [OpResult](../models/OpResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `SetPreflightScriptEnablementRequest` | True | — | All | None |
+| PayloadBody | [SetPreflightScriptEnablementRequest](../models/SetPreflightScriptEnablementRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-SetPreflightScriptEnablementRequest
 
 ## Outputs
 
-- `SetPreflightScriptEnablementRequest, OpResult` records produced by `ImmyBotApiService.POST`
+- [SetPreflightScriptEnablementRequest](../models/SetPreflightScriptEnablementRequest.md), [OpResult](../models/OpResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

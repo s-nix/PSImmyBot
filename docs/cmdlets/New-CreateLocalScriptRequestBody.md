@@ -26,11 +26,11 @@ title: New-CreateLocalScriptRequestBody
 | --- | --- | --- | --- | --- | --- |
 | Action | `String` | False | — | All | None |
 | Name | `String` | False | — | All | None |
-| OutputType | `ScriptOutputType` | True | — | All | None |
-| ScriptCategory | `ScriptCategory` | True | — | All | None |
-| ScriptExecutionContext | `ScriptExecutionContext` | True | — | All | None |
-| ScriptLanguage | `ScriptLanguage` | True | — | All | None |
-| ScriptType | `DatabaseType` | True | — | All | None |
+| OutputType | [ScriptOutputType](../models/ScriptOutputType.md) | True | — | All | None |
+| ScriptCategory | [ScriptCategory](../models/ScriptCategory.md) | True | — | All | None |
+| ScriptExecutionContext | [ScriptExecutionContext](../models/ScriptExecutionContext.md) | True | — | All | None |
+| ScriptLanguage | [ScriptLanguage](../models/ScriptLanguage.md) | True | — | All | None |
+| ScriptType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | Tenants | `ICollection`1` | False | — | All | None |
 | Timeout | `Nullable`1` | False | — | All | None |
 

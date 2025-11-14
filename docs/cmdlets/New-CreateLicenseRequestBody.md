@@ -27,10 +27,10 @@ title: New-CreateLicenseRequestBody
 | LicenseValue | `String` | False | — | All | None |
 | Name | `String` | False | — | All | None |
 | RestrictToMajorVersion | `Boolean` | True | — | All | None |
-| SemanticVersion | `SemanticVersion` | True | — | All | None |
+| SemanticVersion | [SemanticVersion](../models/SemanticVersion.md) | True | — | All | None |
 | SoftwareIdentifier | `String` | False | — | All | None |
 | SoftwareName | `String` | False | — | All | None |
-| SoftwareType | `SoftwareType` | True | — | All | None |
+| SoftwareType | [SoftwareType](../models/SoftwareType.md) | True | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 
 ### Parameter sets

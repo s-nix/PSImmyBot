@@ -10,7 +10,7 @@ title: Send-MergeTenantsPayload
 | Source | `Cmdlets/SendMergeTenantsPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/tenants/bulk-merge? |
-| Return Type | `MergeTenantsPayload, CommandResult` |
+| Return Type | [MergeTenantsPayload](../models/MergeTenantsPayload.md), [CommandResult](../models/CommandResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-MergeTenantsPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/bulk-merge?` and deserializes to `MergeTenantsPayload, CommandResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/bulk-merge?` and deserializes to [MergeTenantsPayload](../models/MergeTenantsPayload.md), [CommandResult](../models/CommandResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `MergeTenantsPayload` | True | — | All | None |
+| PayloadBody | [MergeTenantsPayload](../models/MergeTenantsPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-MergeTenantsPayload
 
 ## Outputs
 
-- `MergeTenantsPayload, CommandResult` records produced by `ImmyBotApiService.POST`
+- [MergeTenantsPayload](../models/MergeTenantsPayload.md), [CommandResult](../models/CommandResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

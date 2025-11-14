@@ -28,10 +28,10 @@ title: New-GetMaintenanceSessionStageResponse
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | JobId | `String` | False | — | All | None |
-| MaintenanceSession | `GetMaintenanceSessionResponse` | True | — | All | None |
+| MaintenanceSession | [GetMaintenanceSessionResponse](../models/GetMaintenanceSessionResponse.md) | True | — | All | None |
 | MaintenanceSessionId | `Int32` | True | — | All | None |
-| StageStatus | `SessionStatus` | True | — | All | None |
-| Type | `SessionStageType` | True | — | All | None |
+| StageStatus | [SessionStatus](../models/SessionStatus.md) | True | — | All | None |
+| Type | [SessionStageType](../models/SessionStageType.md) | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
 | UpdatedDateUtc | `DateTimeOffset` | True | — | All | None |
 

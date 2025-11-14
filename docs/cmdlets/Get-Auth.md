@@ -10,7 +10,7 @@ title: Get-Auth
 | Source | `Cmdlets/GetAuth.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/auth? |
-| Return Type | `GetAuthResponse` |
+| Return Type | [GetAuthResponse](../models/GetAuthResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-Auth
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/auth?` and deserializes to `GetAuthResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/auth?` and deserializes to [GetAuthResponse](../models/GetAuthResponse.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `GetAuthResponse` records produced by `ImmyBotApiService.GET`
+- [GetAuthResponse](../models/GetAuthResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

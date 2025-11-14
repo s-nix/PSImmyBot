@@ -10,7 +10,7 @@ title: TestIntegrationMethodRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TestIntegrationMethodRequest>` |
+| Implements | IEquatable<[TestIntegrationMethodRequest](TestIntegrationMethodRequest.md)> |
 | Source | `Models/TestIntegrationMethodRequest.cs` |
 
 ## Overview

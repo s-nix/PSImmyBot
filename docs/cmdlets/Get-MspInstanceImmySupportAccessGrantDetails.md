@@ -10,7 +10,7 @@ title: Get-MspInstanceImmySupportAccessGrantDetails
 | Source | `Cmdlets/GetMspInstanceImmySupportAccessGrantDetails.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/system/immy-support-access-grant-details? |
-| Return Type | `MspInstanceImmySupportAccessGrantDetails` |
+| Return Type | [MspInstanceImmySupportAccessGrantDetails](../models/MspInstanceImmySupportAccessGrantDetails.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MspInstanceImmySupportAccessGrantDetails
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/system/immy-support-access-grant-details?` and deserializes to `MspInstanceImmySupportAccessGrantDetails`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/system/immy-support-access-grant-details?` and deserializes to [MspInstanceImmySupportAccessGrantDetails](../models/MspInstanceImmySupportAccessGrantDetails.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `MspInstanceImmySupportAccessGrantDetails` records produced by `ImmyBotApiService.GET`
+- [MspInstanceImmySupportAccessGrantDetails](../models/MspInstanceImmySupportAccessGrantDetails.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

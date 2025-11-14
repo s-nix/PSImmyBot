@@ -10,7 +10,7 @@ title: AzureError
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureError>` |
+| Implements | IEquatable<[AzureError](AzureError.md)> |
 | Source | `Models/AzureError.cs` |
 
 ## Overview
@@ -20,15 +20,15 @@ title: AzureError
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ApiResponseContent | `ApiResponseErrorContent` | Reference type (nullable) | — |
-| CredentialDetails | `AzureTenantTokenCredentialDetails` | Reference type (nullable) | — |
+| ApiResponseContent | [ApiResponseErrorContent](ApiResponseErrorContent.md) | Reference type (nullable) | — |
+| CredentialDetails | [AzureTenantTokenCredentialDetails](AzureTenantTokenCredentialDetails.md) | Reference type (nullable) | — |
 | FormattedErrorMessage | `string` | Reference type (nullable) | — |
 | Message | `string` | Reference type (nullable) | — |
-| MissingAccessToken | `MissingAccessTokenDetails` | Reference type (nullable) | — |
-| MsalError | `MsalErrorDetails` | Reference type (nullable) | — |
-| OauthAccessTokenErrorResponse | `Oauth2AccessTokenErrorResponse` | Reference type (nullable) | — |
-| ODataError | `ODataErrorDetails` | Reference type (nullable) | — |
-| PartnerCenterApiResponseDetails | `ApiResponseErrorContent` | Reference type (nullable) | — |
+| MissingAccessToken | [MissingAccessTokenDetails](MissingAccessTokenDetails.md) | Reference type (nullable) | — |
+| MsalError | [MsalErrorDetails](MsalErrorDetails.md) | Reference type (nullable) | — |
+| OauthAccessTokenErrorResponse | [Oauth2AccessTokenErrorResponse](Oauth2AccessTokenErrorResponse.md) | Reference type (nullable) | — |
+| ODataError | [ODataErrorDetails](ODataErrorDetails.md) | Reference type (nullable) | — |
+| PartnerCenterApiResponseDetails | [ApiResponseErrorContent](ApiResponseErrorContent.md) | Reference type (nullable) | — |
 
 ## Serialization
 

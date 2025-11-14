@@ -10,7 +10,7 @@ title: GdapRelationshipAccessAssignment
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GdapRelationshipAccessAssignment>` |
+| Implements | IEquatable<[GdapRelationshipAccessAssignment](GdapRelationshipAccessAssignment.md)> |
 | Source | `Models/GdapRelationshipAccessAssignment.cs` |
 
 ## Overview

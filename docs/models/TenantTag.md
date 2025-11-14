@@ -10,7 +10,7 @@ title: TenantTag
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantTag>` |
+| Implements | IEquatable<[TenantTag](TenantTag.md)> |
 | Source | `Models/TenantTag.cs` |
 
 ## Overview
@@ -21,9 +21,9 @@ title: TenantTag
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | EntityId | `int` | No (value type) | — |
-| Tag | `Tag` | Reference type (nullable) | — |
+| Tag | [Tag](Tag.md) | Reference type (nullable) | — |
 | TagId | `int` | No (value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 
 ## Serialization
 

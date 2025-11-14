@@ -10,7 +10,7 @@ title: AppRegistrationOption
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AppRegistrationOption>` |
+| Implements | IEquatable<[AppRegistrationOption](AppRegistrationOption.md)> |
 | Source | `Models/AppRegistrationOption.cs` |
 
 ## Overview

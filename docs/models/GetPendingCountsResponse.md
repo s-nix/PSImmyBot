@@ -10,7 +10,7 @@ title: GetPendingCountsResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetPendingCountsResponse>` |
+| Implements | IEquatable<[GetPendingCountsResponse](GetPendingCountsResponse.md)> |
 | Source | `Models/GetPendingCountsResponse.cs` |
 
 ## Overview

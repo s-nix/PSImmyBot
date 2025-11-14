@@ -10,7 +10,7 @@ title: ICustomAttributeProvider
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ICustomAttributeProvider>` |
+| Implements | IEquatable<[ICustomAttributeProvider](ICustomAttributeProvider.md)> |
 | Source | `Models/ICustomAttributeProvider.cs` |
 
 ## Overview

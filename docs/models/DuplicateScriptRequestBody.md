@@ -10,7 +10,7 @@ title: DuplicateScriptRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DuplicateScriptRequestBody>` |
+| Implements | IEquatable<[DuplicateScriptRequestBody](DuplicateScriptRequestBody.md)> |
 | Source | `Models/DuplicateScriptRequestBody.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: DuplicateScriptRequestBody
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Id | `int` | No (value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 
 ## Serialization
 

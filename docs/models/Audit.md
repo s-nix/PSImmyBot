@@ -10,7 +10,7 @@ title: Audit
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Audit>` |
+| Implements | IEquatable<[Audit](Audit.md)> |
 | Source | `Models/Audit.cs` |
 
 ## Overview

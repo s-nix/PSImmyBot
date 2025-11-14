@@ -10,7 +10,7 @@ title: ParentTenantInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ParentTenantInfo>` |
+| Implements | IEquatable<[ParentTenantInfo](ParentTenantInfo.md)> |
 | Source | `Models/ParentTenantInfo.cs` |
 
 ## Overview

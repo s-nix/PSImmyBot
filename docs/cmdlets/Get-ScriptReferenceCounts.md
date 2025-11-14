@@ -10,7 +10,7 @@ title: Get-ScriptReferenceCounts
 | Source | `Cmdlets/GetScriptReferenceCounts.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/scripts/references/count? |
-| Return Type | `ScriptReferenceCounts` |
+| Return Type | [ScriptReferenceCounts](../models/ScriptReferenceCounts.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ScriptReferenceCounts
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/references/count?` and deserializes to `ScriptReferenceCounts`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/scripts/references/count?` and deserializes to [ScriptReferenceCounts](../models/ScriptReferenceCounts.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -34,7 +34,7 @@ title: Get-ScriptReferenceCounts
 
 ## Outputs
 
-- `ScriptReferenceCounts` records produced by `ImmyBotApiService.GET`
+- [ScriptReferenceCounts](../models/ScriptReferenceCounts.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

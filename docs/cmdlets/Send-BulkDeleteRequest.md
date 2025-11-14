@@ -10,7 +10,7 @@ title: Send-BulkDeleteRequest
 | Source | `Cmdlets/SendBulkDeleteRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/tenants/bulk-delete? |
-| Return Type | `BulkDeleteRequest, DeleteTenantsCmdResponse` |
+| Return Type | [BulkDeleteRequest](../models/BulkDeleteRequest.md), [DeleteTenantsCmdResponse](../models/DeleteTenantsCmdResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-BulkDeleteRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/bulk-delete?` and deserializes to `BulkDeleteRequest, DeleteTenantsCmdResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/tenants/bulk-delete?` and deserializes to [BulkDeleteRequest](../models/BulkDeleteRequest.md), [DeleteTenantsCmdResponse](../models/DeleteTenantsCmdResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `BulkDeleteRequest` | True | — | All | None |
+| PayloadBody | [BulkDeleteRequest](../models/BulkDeleteRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-BulkDeleteRequest
 
 ## Outputs
 
-- `BulkDeleteRequest, DeleteTenantsCmdResponse` records produced by `ImmyBotApiService.POST`
+- [BulkDeleteRequest](../models/BulkDeleteRequest.md), [DeleteTenantsCmdResponse](../models/DeleteTenantsCmdResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

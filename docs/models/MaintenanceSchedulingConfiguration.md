@@ -10,7 +10,7 @@ title: MaintenanceSchedulingConfiguration
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceSchedulingConfiguration>` |
+| Implements | IEquatable<[MaintenanceSchedulingConfiguration](MaintenanceSchedulingConfiguration.md)> |
 | Source | `Models/MaintenanceSchedulingConfiguration.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: MaintenanceSchedulingConfiguration
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | MaintenanceTime | `string` | Reference type (nullable) | — |
-| OfflineBehavior | `ComputerOfflineMaintenanceSessionBehavior` | No (value type) | — |
+| OfflineBehavior | [ComputerOfflineMaintenanceSessionBehavior](ComputerOfflineMaintenanceSessionBehavior.md) | No (value type) | — |
 | ScheduleExecutionAfterActiveHours | `bool` | No (value type) | — |
 | Time | `string` | Reference type (nullable) | — |
 | TimeZoneInfoId | `string` | Reference type (nullable) | — |

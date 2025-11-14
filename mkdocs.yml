@@ -1,5 +1,7 @@
 site_name: PSImmyBot
 theme:
+  icon:
+    repo: fontawesome/brands/github
   features:
     - navigation.tabs
     - toc.integrate
@@ -38,3 +40,5 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/s-nix/PSImmyBot
 copyright: "Copyright (C) 2025 Stephen Nix. Licensed under GNU General Public License v3.0."
+repo_name: PSImmyBot
+repo_url: https://github.com/s-nix/PSImmyBot

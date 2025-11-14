@@ -10,7 +10,7 @@ title: MaintenanceAgentUpdatesConfiguration
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceAgentUpdatesConfiguration>` |
+| Implements | IEquatable<[MaintenanceAgentUpdatesConfiguration](MaintenanceAgentUpdatesConfiguration.md)> |
 | Source | `Models/MaintenanceAgentUpdatesConfiguration.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Get-User
 | Source | `Cmdlets/GetUser.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/users/{UserId}? |
-| Return Type | `GetUserResponse` |
+| Return Type | [GetUserResponse](../models/GetUserResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-User
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/users/{UserId}?` and deserializes to `GetUserResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/users/{UserId}?` and deserializes to [GetUserResponse](../models/GetUserResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-User
 
 ## Outputs
 
-- `GetUserResponse` records produced by `ImmyBotApiService.GET`
+- [GetUserResponse](../models/GetUserResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

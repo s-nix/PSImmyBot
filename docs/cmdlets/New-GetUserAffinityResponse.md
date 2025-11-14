@@ -27,7 +27,7 @@ title: New-GetUserAffinityResponse
 | ComputerId | `Int32` | True | — | All | None |
 | Date | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| Person | `GetPersonResponse` | True | — | All | None |
+| Person | [GetPersonResponse](../models/GetPersonResponse.md) | True | — | All | None |
 | PersonId | `Int32` | True | — | All | None |
 
 ### Parameter sets

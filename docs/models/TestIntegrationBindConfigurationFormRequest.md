@@ -10,7 +10,7 @@ title: TestIntegrationBindConfigurationFormRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TestIntegrationBindConfigurationFormRequest>` |
+| Implements | IEquatable<[TestIntegrationBindConfigurationFormRequest](TestIntegrationBindConfigurationFormRequest.md)> |
 | Source | `Models/TestIntegrationBindConfigurationFormRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: TestIntegrationBindConfigurationFormRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ParameterValues | `IDictionary<string, ParameterValue>` | Reference type (nullable) | — |
+| ParameterValues | IDictionary<string, [ParameterValue](ParameterValue.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

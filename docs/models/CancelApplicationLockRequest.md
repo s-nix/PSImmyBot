@@ -10,7 +10,7 @@ title: CancelApplicationLockRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CancelApplicationLockRequest>` |
+| Implements | IEquatable<[CancelApplicationLockRequest](CancelApplicationLockRequest.md)> |
 | Source | `Models/CancelApplicationLockRequest.cs` |
 
 ## Overview

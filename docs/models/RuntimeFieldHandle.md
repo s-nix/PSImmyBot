@@ -10,7 +10,7 @@ title: RuntimeFieldHandle
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RuntimeFieldHandle>` |
+| Implements | IEquatable<[RuntimeFieldHandle](RuntimeFieldHandle.md)> |
 | Source | `Models/RuntimeFieldHandle.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: RuntimeFieldHandle
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Value | `IntPtr` | Reference type (nullable) | — |
+| Value | [IntPtr](IntPtr.md) | Reference type (nullable) | — |
 
 ## Serialization
 

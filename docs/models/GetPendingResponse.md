@@ -10,7 +10,7 @@ title: GetPendingResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetPendingResponse>` |
+| Implements | IEquatable<[GetPendingResponse](GetPendingResponse.md)> |
 | Source | `Models/GetPendingResponse.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: GetPendingResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Count | `int` | No (value type) | — |
-| Results | `ICollection<GetPendingAgentResponse>` | Reference type (nullable) | — |
+| Results | ICollection<[GetPendingAgentResponse](GetPendingAgentResponse.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

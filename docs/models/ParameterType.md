@@ -10,7 +10,7 @@ title: ParameterType
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ParameterType>` |
+| Implements | IEquatable<[ParameterType](ParameterType.md)> |
 | Source | `Models/ParameterType.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Get-GlobalTargetAssignmentResource
 | Source | `Cmdlets/GetGlobalTargetAssignmentResource.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/target-assignments/global/{Id}? |
-| Return Type | `GlobalTargetAssignmentResource` |
+| Return Type | [GlobalTargetAssignmentResource](../models/GlobalTargetAssignmentResource.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-GlobalTargetAssignmentResource
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/global/{Id}?` and deserializes to `GlobalTargetAssignmentResource`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/target-assignments/global/{Id}?` and deserializes to [GlobalTargetAssignmentResource](../models/GlobalTargetAssignmentResource.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-GlobalTargetAssignmentResource
 
 ## Outputs
 
-- `GlobalTargetAssignmentResource` records produced by `ImmyBotApiService.GET`
+- [GlobalTargetAssignmentResource](../models/GlobalTargetAssignmentResource.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

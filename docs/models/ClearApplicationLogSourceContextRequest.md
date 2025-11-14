@@ -10,7 +10,7 @@ title: ClearApplicationLogSourceContextRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ClearApplicationLogSourceContextRequest>` |
+| Implements | IEquatable<[ClearApplicationLogSourceContextRequest](ClearApplicationLogSourceContextRequest.md)> |
 | Source | `Models/ClearApplicationLogSourceContextRequest.cs` |
 
 ## Overview

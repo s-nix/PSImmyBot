@@ -24,7 +24,7 @@ title: New-UpdateApplicationLogSourceContextRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| MinimumLevel | `LogLevel` | True | — | All | None |
+| MinimumLevel | [LogLevel](../models/LogLevel.md) | True | — | All | None |
 | SourceContext | `String` | False | — | All | None |
 
 ### Parameter sets

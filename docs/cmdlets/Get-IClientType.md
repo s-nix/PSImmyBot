@@ -10,7 +10,7 @@ title: Get-IClientType
 | Source | `Cmdlets/GetIClientType.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-links/{Id}/clients/types? |
-| Return Type | `List<IClientType>` |
+| Return Type | List<[IClientType](../models/IClientType.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-IClientType
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/clients/types?` and deserializes to `List<IClientType>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/clients/types?` and deserializes to List<[IClientType](../models/IClientType.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-IClientType
 
 ## Outputs
 
-- `List<IClientType>` records produced by `ImmyBotApiService.GET`
+- List<[IClientType](../models/IClientType.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: Media
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Media>` |
+| Implements | IEquatable<[Media](Media.md)> |
 | Source | `Models/Media.cs` |
 
 ## Overview
@@ -21,24 +21,24 @@ title: Media
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | BlobReference | `string` | Reference type (nullable) | — |
-| Category | `MediaCategory` | No (value type) | — |
+| Category | [MediaCategory](MediaCategory.md) | No (value type) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| DatabaseType | `DatabaseType` | No (value type) | — |
-| DynamicIntegrationTypes | `ICollection<DynamicIntegrationType>` | Reference type (nullable) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| DynamicIntegrationTypes | ICollection<[DynamicIntegrationType](DynamicIntegrationType.md)> | Reference type (nullable) | — |
 | FileName | `string` | Reference type (nullable) | — |
-| GlobalSoftware | `ICollection<GlobalSoftware>` | Reference type (nullable) | — |
-| IconForMaintenanceTasks | `ICollection<MaintenanceTask>` | Reference type (nullable) | — |
+| GlobalSoftware | ICollection<[GlobalSoftware](GlobalSoftware.md)> | Reference type (nullable) | — |
+| IconForMaintenanceTasks | ICollection<[MaintenanceTask](MaintenanceTask.md)> | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
-| LocalSoftware | `ICollection<LocalSoftware>` | Reference type (nullable) | — |
+| LocalSoftware | ICollection<[LocalSoftware](LocalSoftware.md)> | Reference type (nullable) | — |
 | MimeType | `string` | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
 | PackageHash | `string` | Reference type (nullable) | — |
 | RelativeCacheSourcePath | `string` | Reference type (nullable) | — |
-| TenantRelationships | `ICollection<TenantMedia>` | Reference type (nullable) | — |
+| TenantRelationships | ICollection<[TenantMedia](TenantMedia.md)> | Reference type (nullable) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

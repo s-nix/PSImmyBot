@@ -24,12 +24,12 @@ title: New-Module
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Assembly | `Assembly` | True | — | All | None |
+| Assembly | [Assembly](../models/Assembly.md) | True | — | All | None |
 | CustomAttributes | `ICollection`1` | False | — | All | None |
 | FullyQualifiedName | `String` | False | — | All | None |
 | MdStreamVersion | `Int32` | True | — | All | None |
 | MetadataToken | `Int32` | True | — | All | None |
-| ModuleHandle | `ModuleHandle` | True | — | All | None |
+| ModuleHandle | [ModuleHandle](../models/ModuleHandle.md) | True | — | All | None |
 | ModuleVersionId | `Guid` | True | — | All | None |
 | Name | `String` | False | — | All | None |
 | ScopeName | `String` | False | — | All | None |

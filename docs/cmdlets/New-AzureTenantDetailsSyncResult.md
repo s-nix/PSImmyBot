@@ -24,9 +24,9 @@ title: New-AzureTenantDetailsSyncResult
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| FailedReason | `AzureError` | True | — | All | None |
+| FailedReason | [AzureError](../models/AzureError.md) | True | — | All | None |
 | PrincipalId | `String` | False | — | All | None |
-| TenantInformationSynced | `AzureTenantInfo` | True | — | All | None |
+| TenantInformationSynced | [AzureTenantInfo](../models/AzureTenantInfo.md) | True | — | All | None |
 | WasSuccessful | `Boolean` | True | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: CreateSmtpRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateSmtpRequest>` |
+| Implements | IEquatable<[CreateSmtpRequest](CreateSmtpRequest.md)> |
 | Source | `Models/CreateSmtpRequest.cs` |
 
 ## Overview

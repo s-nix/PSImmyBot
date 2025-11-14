@@ -28,7 +28,7 @@ title: New-CalculateTargetedComputerResponse
 | Ct | `ICollection`1` | False | — | All | None |
 | Dr | `Nullable`1` | False | — | All | None |
 | Id | `Int32` | True | — | All | None |
-| Obs | `ComputerOnboardingStatus` | True | — | All | None |
+| Obs | [ComputerOnboardingStatus](../models/ComputerOnboardingStatus.md) | True | — | All | None |
 | On | `Boolean` | True | — | All | None |
 | Os | `String` | False | — | All | None |
 | Ppi | `Nullable`1` | False | — | All | None |

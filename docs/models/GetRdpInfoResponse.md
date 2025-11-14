@@ -10,7 +10,7 @@ title: GetRdpInfoResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetRdpInfoResponse>` |
+| Implements | IEquatable<[GetRdpInfoResponse](GetRdpInfoResponse.md)> |
 | Source | `Models/GetRdpInfoResponse.cs` |
 
 ## Overview

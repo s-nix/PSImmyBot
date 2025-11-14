@@ -24,7 +24,7 @@ title: Send-RunScriptRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `RunScriptRequestBody` | True | — | All | None |
+| PayloadBody | [RunScriptRequestBody](../models/RunScriptRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

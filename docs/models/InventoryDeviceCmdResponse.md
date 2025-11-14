@@ -10,7 +10,7 @@ title: InventoryDeviceCmdResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<InventoryDeviceCmdResponse>` |
+| Implements | IEquatable<[InventoryDeviceCmdResponse](InventoryDeviceCmdResponse.md)> |
 | Source | `Models/InventoryDeviceCmdResponse.cs` |
 
 ## Overview

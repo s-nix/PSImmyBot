@@ -24,8 +24,8 @@ title: New-CreateProviderLinkWithExternalProviderReferenceRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ProviderLink | `ProviderLink` | True | — | All | None |
-| ProviderLinkExternalReferenceData | `ProviderLinkExternalReferenceDataBody` | True | — | All | None |
+| ProviderLink | [ProviderLink](../models/ProviderLink.md) | True | — | All | None |
+| ProviderLinkExternalReferenceData | [ProviderLinkExternalReferenceDataBody](../models/ProviderLinkExternalReferenceDataBody.md) | True | — | All | None |
 
 ### Parameter sets
 

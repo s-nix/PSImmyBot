@@ -10,7 +10,7 @@ title: CreateBrandingRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateBrandingRequestBody>` |
+| Implements | IEquatable<[CreateBrandingRequestBody](CreateBrandingRequestBody.md)> |
 | Source | `Models/CreateBrandingRequestBody.cs` |
 
 ## Overview

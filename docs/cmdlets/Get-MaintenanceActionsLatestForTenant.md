@@ -26,7 +26,7 @@ title: Get-MaintenanceActionsLatestForTenant
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | CreatedDateUtc | `String` | False | — | All | None |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 | SessionType | `Nullable`1` | False | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 

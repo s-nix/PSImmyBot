@@ -10,7 +10,7 @@ title: Get-ChocoSearchResult
 | Source | `Cmdlets/GetChocoSearchResult.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/chocolatey/search? |
-| Return Type | `List<ChocoSearchResult>` |
+| Return Type | List<[ChocoSearchResult](../models/ChocoSearchResult.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ChocoSearchResult
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/chocolatey/search?` and deserializes to `List<ChocoSearchResult>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/chocolatey/search?` and deserializes to List<[ChocoSearchResult](../models/ChocoSearchResult.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -33,7 +33,7 @@ title: Get-ChocoSearchResult
 
 ## Outputs
 
-- `List<ChocoSearchResult>` records produced by `ImmyBotApiService.GET`
+- List<[ChocoSearchResult](../models/ChocoSearchResult.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

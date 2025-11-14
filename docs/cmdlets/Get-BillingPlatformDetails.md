@@ -10,7 +10,7 @@ title: Get-BillingPlatformDetails
 | Source | `Cmdlets/GetBillingPlatformDetails.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/billing/billing-platform-details? |
-| Return Type | `BillingPlatformDetails` |
+| Return Type | [BillingPlatformDetails](../models/BillingPlatformDetails.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-BillingPlatformDetails
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/billing/billing-platform-details?` and deserializes to `BillingPlatformDetails`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/billing/billing-platform-details?` and deserializes to [BillingPlatformDetails](../models/BillingPlatformDetails.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `BillingPlatformDetails` records produced by `ImmyBotApiService.GET`
+- [BillingPlatformDetails](../models/BillingPlatformDetails.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

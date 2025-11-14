@@ -25,11 +25,11 @@ title: New-AzureTenantLink
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | AzTenantId | `String` | False | — | All | None |
-| AzureTenant | `AzureTenant` | True | — | All | None |
+| AzureTenant | [AzureTenant](../models/AzureTenant.md) | True | — | All | None |
 | ImmyTenantId | `Int32` | True | — | All | None |
 | LimitToDomains | `ICollection`1` | False | — | All | None |
 | ShouldLimitDomains | `Boolean` | True | — | All | None |
-| Tenant | `Tenant` | True | — | All | None |
+| Tenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 
 ### Parameter sets
 

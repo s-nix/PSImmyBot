@@ -10,7 +10,7 @@ title: Get-TechnicianPageInfoFromPsaTicket
 | Source | `Cmdlets/GetTechnicianPageInfoFromPsaTicket.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/provider-links/{Id}/tickets/{TicketId}? |
-| Return Type | `TechnicianPageInfoFromPsaTicket` |
+| Return Type | [TechnicianPageInfoFromPsaTicket](../models/TechnicianPageInfoFromPsaTicket.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-TechnicianPageInfoFromPsaTicket
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/tickets/{TicketId}?` and deserializes to `TechnicianPageInfoFromPsaTicket`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/provider-links/{Id}/tickets/{TicketId}?` and deserializes to [TechnicianPageInfoFromPsaTicket](../models/TechnicianPageInfoFromPsaTicket.md).
 
 ## Parameters
 
@@ -33,7 +33,7 @@ title: Get-TechnicianPageInfoFromPsaTicket
 
 ## Outputs
 
-- `TechnicianPageInfoFromPsaTicket` records produced by `ImmyBotApiService.GET`
+- [TechnicianPageInfoFromPsaTicket](../models/TechnicianPageInfoFromPsaTicket.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: BulkScheduleOperationResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkScheduleOperationResult>` |
+| Implements | IEquatable<[BulkScheduleOperationResult](BulkScheduleOperationResult.md)> |
 | Source | `Models/BulkScheduleOperationResult.cs` |
 
 ## Overview

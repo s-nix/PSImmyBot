@@ -25,7 +25,7 @@ title: New-Tenant
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Active | `Boolean` | True | — | All | None |
-| AzureTenantLink | `AzureTenantLink` | True | — | All | None |
+| AzureTenantLink | [AzureTenantLink](../models/AzureTenantLink.md) | True | — | All | None |
 | Brandings | `ICollection`1` | False | — | All | None |
 | Computers | `ICollection`1` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
@@ -41,17 +41,17 @@ title: New-Tenant
 | Name | `String` | False | — | All | None |
 | OwnedProviderLinks | `ICollection`1` | False | — | All | None |
 | OwnedTenants | `ICollection`1` | False | — | All | None |
-| OwnerTenant | `Tenant` | True | — | All | None |
+| OwnerTenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | ParentTenantId | `Nullable`1` | False | — | All | None |
 | Persons | `ICollection`1` | False | — | All | None |
 | ProviderClients | `ICollection`1` | False | — | All | None |
 | Schedules | `ICollection`1` | False | — | All | None |
 | Scripts | `ICollection`1` | False | — | All | None |
 | Slug | `String` | False | — | All | None |
-| SmtpConfig | `SmtpConfig` | True | — | All | None |
+| SmtpConfig | [SmtpConfig](../models/SmtpConfig.md) | True | — | All | None |
 | Tags | `ICollection`1` | False | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
-| TenantPreferences | `TenantPreferences` | True | — | All | None |
+| TenantPreferences | [TenantPreferences](../models/TenantPreferences.md) | True | — | All | None |
 | TenantSoftware | `ICollection`1` | False | — | All | None |
 | TenantTagAuthorizations | `ICollection`1` | False | — | All | None |
 | TenantTags | `ICollection`1` | False | — | All | None |

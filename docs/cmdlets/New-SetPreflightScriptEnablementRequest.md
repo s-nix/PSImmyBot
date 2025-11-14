@@ -24,7 +24,7 @@ title: New-SetPreflightScriptEnablementRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | True | — | All | None |
+| DatabaseType | [DatabaseType](../models/DatabaseType.md) | True | — | All | None |
 | IsEnabled | `Boolean` | True | — | All | None |
 | ScriptId | `Int32` | True | — | All | None |
 

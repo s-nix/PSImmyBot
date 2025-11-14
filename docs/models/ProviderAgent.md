@@ -10,7 +10,7 @@ title: ProviderAgent
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ProviderAgent>` |
+| Implements | IEquatable<[ProviderAgent](ProviderAgent.md)> |
 | Source | `Models/ProviderAgent.cs` |
 
 ## Overview
@@ -20,25 +20,25 @@ title: ProviderAgent
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AgentVersion | `SemanticVersion` | Reference type (nullable) | — |
-| Computer | `Computer` | Reference type (nullable) | — |
+| AgentVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int?` | Yes (nullable value type) | — |
 | DateAddedUtc | `DateTimeOffset` | No (value type) | — |
 | DeletedAt | `DateTimeOffset?` | Yes (nullable value type) | — |
 | DeletedReason | `string` | Reference type (nullable) | — |
-| DeviceDetails | `DeviceDetails` | Reference type (nullable) | — |
+| DeviceDetails | [DeviceDetails](DeviceDetails.md) | Reference type (nullable) | — |
 | ExternalAgentId | `string` | Reference type (nullable) | — |
 | ExternalClientId | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
-| IdentificationFailures | `ICollection<AgentIdentificationFailure>` | Reference type (nullable) | — |
-| IdentificationLogs | `ICollection<AgentIdentificationLog>` | Reference type (nullable) | — |
+| IdentificationFailures | ICollection<[AgentIdentificationFailure](AgentIdentificationFailure.md)> | Reference type (nullable) | — |
+| IdentificationLogs | ICollection<[AgentIdentificationLog](AgentIdentificationLog.md)> | Reference type (nullable) | — |
 | InternalData | `object` | Reference type (nullable) | — |
 | IsMemberOfInitialDeviceSync | `bool` | No (value type) | — |
 | IsOnline | `bool` | No (value type) | — |
 | LastUpdatedUtc | `DateTimeOffset` | No (value type) | — |
-| OnboardingOptions | `AgentOnboardingOptions` | Reference type (nullable) | — |
-| ProviderClient | `ProviderClient` | Reference type (nullable) | — |
-| ProviderLink | `ProviderLink` | Reference type (nullable) | — |
+| OnboardingOptions | [AgentOnboardingOptions](AgentOnboardingOptions.md) | Reference type (nullable) | — |
+| ProviderClient | [ProviderClient](ProviderClient.md) | Reference type (nullable) | — |
+| ProviderLink | [ProviderLink](ProviderLink.md) | Reference type (nullable) | — |
 | ProviderLinkId | `int` | No (value type) | — |
 | RequireManualIdentification | `bool` | No (value type) | — |
 | SupportsOnlineStatus | `bool` | No (value type) | — |

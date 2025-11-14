@@ -24,7 +24,7 @@ title: Send-ResolveFailuresRequestBody
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `ResolveFailuresRequestBody` | True | — | All | None |
+| PayloadBody | [ResolveFailuresRequestBody](../models/ResolveFailuresRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 

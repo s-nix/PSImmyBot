@@ -25,7 +25,7 @@ title: New-ApplicationLocksResponse
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Key | `String` | False | — | All | None |
-| LockHolder | `ApplicationLockCallerInfo` | True | — | All | None |
+| LockHolder | [ApplicationLockCallerInfo](../models/ApplicationLockCallerInfo.md) | True | — | All | None |
 | LockWaiters | `ICollection`1` | False | — | All | None |
 
 ### Parameter sets

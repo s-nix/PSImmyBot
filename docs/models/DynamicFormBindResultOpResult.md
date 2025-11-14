@@ -10,7 +10,7 @@ title: DynamicFormBindResultOpResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DynamicFormBindResultOpResult>` |
+| Implements | IEquatable<[DynamicFormBindResultOpResult](DynamicFormBindResultOpResult.md)> |
 | Source | `Models/DynamicFormBindResultOpResult.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: DynamicFormBindResultOpResult
 | DateCreatedUtc | `DateTimeOffset` | No (value type) | — |
 | IsSuccess | `bool` | No (value type) | — |
 | Reason | `string` | Reference type (nullable) | — |
-| Value | `DynamicFormBindResult` | Reference type (nullable) | — |
+| Value | [DynamicFormBindResult](DynamicFormBindResult.md) | Reference type (nullable) | — |
 
 ## Serialization
 

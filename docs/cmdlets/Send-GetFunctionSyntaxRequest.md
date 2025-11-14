@@ -10,7 +10,7 @@ title: Send-GetFunctionSyntaxRequest
 | Source | `Cmdlets/SendGetFunctionSyntaxRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/scripts/functions/syntax? |
-| Return Type | `GetFunctionSyntaxRequest, string` |
+| Return Type | [GetFunctionSyntaxRequest](../models/GetFunctionSyntaxRequest.md), string |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-GetFunctionSyntaxRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/functions/syntax?` and deserializes to `GetFunctionSyntaxRequest, string`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/scripts/functions/syntax?` and deserializes to [GetFunctionSyntaxRequest](../models/GetFunctionSyntaxRequest.md), string.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `GetFunctionSyntaxRequest` | True | — | All | None |
+| PayloadBody | [GetFunctionSyntaxRequest](../models/GetFunctionSyntaxRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-GetFunctionSyntaxRequest
 
 ## Outputs
 
-- `GetFunctionSyntaxRequest, string` records produced by `ImmyBotApiService.POST`
+- [GetFunctionSyntaxRequest](../models/GetFunctionSyntaxRequest.md), string records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

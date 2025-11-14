@@ -10,7 +10,7 @@ title: TenantComputerCountResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TenantComputerCountResponse>` |
+| Implements | IEquatable<[TenantComputerCountResponse](TenantComputerCountResponse.md)> |
 | Source | `Models/TenantComputerCountResponse.cs` |
 
 ## Overview

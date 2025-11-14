@@ -27,7 +27,7 @@ title: New-DynamicFormBindResultOpResult
 | DateCreatedUtc | `DateTimeOffset` | True | — | All | None |
 | IsSuccess | `Boolean` | True | — | All | None |
 | Reason | `String` | False | — | All | None |
-| Value | `DynamicFormBindResult` | True | — | All | None |
+| Value | [DynamicFormBindResult](../models/DynamicFormBindResult.md) | True | — | All | None |
 
 ### Parameter sets
 

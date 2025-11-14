@@ -24,7 +24,7 @@ title: Update-BatchUpdateAssignmentRequest
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `BatchUpdateAssignmentRequest` | True | — | All | None |
+| PayloadBody | [BatchUpdateAssignmentRequest](../models/BatchUpdateAssignmentRequest.md) | True | — | All | None |
 
 ### Parameter sets
 

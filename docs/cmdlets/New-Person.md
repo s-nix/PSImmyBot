@@ -28,7 +28,7 @@ title: New-Person
 | AdditionalComputers | `ICollection`1` | False | — | All | None |
 | AzurePrincipalId | `String` | False | — | All | None |
 | CreatedBy | `Nullable`1` | False | — | All | None |
-| CreatedByUser | `User` | True | — | All | None |
+| CreatedByUser | [User](../models/User.md) | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | DetectedComputerSoftware | `ICollection`1` | False | — | All | None |
 | DisplayName | `String` | False | — | All | None |
@@ -37,16 +37,16 @@ title: New-Person
 | Id | `Int32` | True | — | All | None |
 | LastName | `String` | False | — | All | None |
 | OnPremisesSecurityIdentifier | `String` | False | — | All | None |
-| OwnerTenant | `Tenant` | True | — | All | None |
+| OwnerTenant | [Tenant](../models/Tenant.md) | True | — | All | None |
 | PersonSessions | `ICollection`1` | False | — | All | None |
 | PersonTags | `ICollection`1` | False | — | All | None |
 | PrimaryComputers | `ICollection`1` | False | — | All | None |
 | Tags | `ICollection`1` | False | — | All | None |
 | TenantId | `Int32` | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
-| UpdatedByUser | `User` | True | — | All | None |
+| UpdatedByUser | [User](../models/User.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
-| User | `User` | True | — | All | None |
+| User | [User](../models/User.md) | True | — | All | None |
 | UserAffinities | `ICollection`1` | False | — | All | None |
 
 ### Parameter sets

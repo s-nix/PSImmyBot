@@ -10,7 +10,7 @@ title: Get-ChocoPackageVersion
 | Source | `Cmdlets/GetChocoPackageVersion.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/chocolatey/find-packages-by-id? |
-| Return Type | `List<ChocoPackageVersion>` |
+| Return Type | List<[ChocoPackageVersion](../models/ChocoPackageVersion.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ChocoPackageVersion
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/chocolatey/find-packages-by-id?` and deserializes to `List<ChocoPackageVersion>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/chocolatey/find-packages-by-id?` and deserializes to List<[ChocoPackageVersion](../models/ChocoPackageVersion.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -33,7 +33,7 @@ title: Get-ChocoPackageVersion
 
 ## Outputs
 
-- `List<ChocoPackageVersion>` records produced by `ImmyBotApiService.GET`
+- List<[ChocoPackageVersion](../models/ChocoPackageVersion.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: ScriptReferenceCounts
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ScriptReferenceCounts>` |
+| Implements | IEquatable<[ScriptReferenceCounts](ScriptReferenceCounts.md)> |
 | Source | `Models/ScriptReferenceCounts.cs` |
 
 ## Overview

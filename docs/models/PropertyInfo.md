@@ -10,7 +10,7 @@ title: PropertyInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<PropertyInfo>` |
+| Implements | IEquatable<[PropertyInfo](PropertyInfo.md)> |
 | Source | `Models/PropertyInfo.cs` |
 
 ## Overview
@@ -20,21 +20,21 @@ title: PropertyInfo
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Attributes | `PropertyAttributes` | No (value type) | — |
+| Attributes | [PropertyAttributes](PropertyAttributes.md) | No (value type) | — |
 | CanRead | `bool` | No (value type) | — |
 | CanWrite | `bool` | No (value type) | — |
-| CustomAttributes | `ICollection<CustomAttributeData>` | Reference type (nullable) | — |
-| DeclaringType | `Type` | Reference type (nullable) | — |
-| GetMethod | `MethodInfo` | Reference type (nullable) | — |
+| CustomAttributes | ICollection<[CustomAttributeData](CustomAttributeData.md)> | Reference type (nullable) | — |
+| DeclaringType | [Type](Type.md) | Reference type (nullable) | — |
+| GetMethod | [MethodInfo](MethodInfo.md) | Reference type (nullable) | — |
 | IsCollectible | `bool` | No (value type) | — |
 | IsSpecialName | `bool` | No (value type) | — |
-| MemberType | `MemberTypes` | No (value type) | — |
+| MemberType | [MemberTypes](MemberTypes.md) | No (value type) | — |
 | MetadataToken | `int` | No (value type) | — |
-| Module | `Module` | Reference type (nullable) | — |
+| Module | [Module](Module.md) | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| PropertyType | `Type` | Reference type (nullable) | — |
-| ReflectedType | `Type` | Reference type (nullable) | — |
-| SetMethod | `MethodInfo` | Reference type (nullable) | — |
+| PropertyType | [Type](Type.md) | Reference type (nullable) | — |
+| ReflectedType | [Type](Type.md) | Reference type (nullable) | — |
+| SetMethod | [MethodInfo](MethodInfo.md) | Reference type (nullable) | — |
 
 ## Serialization
 

@@ -10,7 +10,7 @@ title: CreateDynamicIntegrationTypePayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CreateDynamicIntegrationTypePayload>` |
+| Implements | IEquatable<[CreateDynamicIntegrationTypePayload](CreateDynamicIntegrationTypePayload.md)> |
 | Source | `Models/CreateDynamicIntegrationTypePayload.cs` |
 
 ## Overview
@@ -26,7 +26,7 @@ title: CreateDynamicIntegrationTypePayload
 | LogoId | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | ScriptId | `int` | No (value type) | — |
-| Tag | `IntegrationTag` | No (value type) | — |
+| Tag | [IntegrationTag](IntegrationTag.md) | No (value type) | — |
 
 ## Serialization
 

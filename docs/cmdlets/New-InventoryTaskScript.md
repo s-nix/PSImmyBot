@@ -27,13 +27,13 @@ title: New-InventoryTaskScript
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | FromProvider | `Boolean` | True | — | All | None |
 | InventoryKey | `String` | False | — | All | None |
-| InventoryTask | `InventoryTask` | True | — | All | None |
+| InventoryTask | [InventoryTask](../models/InventoryTask.md) | True | — | All | None |
 | InventoryTaskId | `Int32` | True | — | All | None |
 | SaveDebugStream | `Boolean` | True | — | All | None |
 | SaveInformationStream | `Boolean` | True | — | All | None |
 | SaveVerboseStream | `Boolean` | True | — | All | None |
 | SaveWarningStream | `Boolean` | True | — | All | None |
-| Script | `Script` | True | — | All | None |
+| Script | [Script](../models/Script.md) | True | — | All | None |
 | ScriptId | `Int32` | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 

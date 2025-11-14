@@ -10,7 +10,7 @@ title: Get-AzureErrorLogItems
 | Source | `Cmdlets/GetAzureErrorLogItems.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/azure-errors/dx? |
-| Return Type | `List<AzureErrorLogItem>` |
+| Return Type | List<[AzureErrorLogItem](../models/AzureErrorLogItem.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,14 +18,14 @@ title: Get-AzureErrorLogItems
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure-errors/dx?` and deserializes to `List<AzureErrorLogItem>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure-errors/dx?` and deserializes to List<[AzureErrorLogItem](../models/AzureErrorLogItem.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+| LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +33,7 @@ title: Get-AzureErrorLogItems
 
 ## Outputs
 
-- `List<AzureErrorLogItem>` records produced by `ImmyBotApiService.GET`
+- List<[AzureErrorLogItem](../models/AzureErrorLogItem.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

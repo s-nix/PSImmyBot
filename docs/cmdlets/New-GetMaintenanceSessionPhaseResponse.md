@@ -24,7 +24,7 @@ title: New-GetMaintenanceSessionPhaseResponse
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| ActionProgressPhaseName | `ActionProgressPhaseName` | True | — | All | None |
+| ActionProgressPhaseName | [ActionProgressPhaseName](../models/ActionProgressPhaseName.md) | True | — | All | None |
 | DateCompletedUtc | `Nullable`1` | False | — | All | None |
 | DateStartedUtc | `Nullable`1` | False | — | All | None |
 | Id | `Int32` | True | — | All | None |
@@ -35,7 +35,7 @@ title: New-GetMaintenanceSessionPhaseResponse
 | ProgressCompleted | `Boolean` | True | — | All | None |
 | ProgressPercentComplete | `Nullable`1` | False | — | All | None |
 | ProgressStatus | `String` | False | — | All | None |
-| Status | `SessionPhaseStatus` | True | — | All | None |
+| Status | [SessionPhaseStatus](../models/SessionPhaseStatus.md) | True | — | All | None |
 
 ### Parameter sets
 

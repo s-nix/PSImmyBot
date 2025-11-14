@@ -10,7 +10,7 @@ title: AzureTenantAuthDetails
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantAuthDetails>` |
+| Implements | IEquatable<[AzureTenantAuthDetails](AzureTenantAuthDetails.md)> |
 | Source | `Models/AzureTenantAuthDetails.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: AzureTenantAuthDetails
 | AzureTenantPrincipalId | `string` | Reference type (nullable) | — |
 | CustomAppRegAppId | `string` | Reference type (nullable) | — |
 | CustomAppRegSecret | `string` | Reference type (nullable) | — |
-| SelectedPermissionLevel | `AzurePermissionLevel2` | No (value type) | — |
+| SelectedPermissionLevel | [AzurePermissionLevel2](AzurePermissionLevel2.md) | No (value type) | — |
 
 ## Serialization
 

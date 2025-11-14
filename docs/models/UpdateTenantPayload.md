@@ -10,7 +10,7 @@ title: UpdateTenantPayload
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateTenantPayload>` |
+| Implements | IEquatable<[UpdateTenantPayload](UpdateTenantPayload.md)> |
 | Source | `Models/UpdateTenantPayload.cs` |
 
 ## Overview

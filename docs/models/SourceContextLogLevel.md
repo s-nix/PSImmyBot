@@ -10,7 +10,7 @@ title: SourceContextLogLevel
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SourceContextLogLevel>` |
+| Implements | IEquatable<[SourceContextLogLevel](SourceContextLogLevel.md)> |
 | Source | `Models/SourceContextLogLevel.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: SourceContextLogLevel
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| LogLevel | `LogLevel` | No (value type) | — |
+| LogLevel | [LogLevel](LogLevel.md) | No (value type) | — |
 | SourceContext | `string` | Reference type (nullable) | — |
 
 ## Serialization

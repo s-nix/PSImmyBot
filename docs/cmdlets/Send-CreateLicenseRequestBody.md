@@ -10,7 +10,7 @@ title: Send-CreateLicenseRequestBody
 | Source | `Cmdlets/SendCreateLicenseRequestBody.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/licenses? |
-| Return Type | `CreateLicenseRequestBody, GetLicenseResponse` |
+| Return Type | [CreateLicenseRequestBody](../models/CreateLicenseRequestBody.md), [GetLicenseResponse](../models/GetLicenseResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateLicenseRequestBody
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/licenses?` and deserializes to `CreateLicenseRequestBody, GetLicenseResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/licenses?` and deserializes to [CreateLicenseRequestBody](../models/CreateLicenseRequestBody.md), [GetLicenseResponse](../models/GetLicenseResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateLicenseRequestBody` | True | — | All | None |
+| PayloadBody | [CreateLicenseRequestBody](../models/CreateLicenseRequestBody.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateLicenseRequestBody
 
 ## Outputs
 
-- `CreateLicenseRequestBody, GetLicenseResponse` records produced by `ImmyBotApiService.POST`
+- [CreateLicenseRequestBody](../models/CreateLicenseRequestBody.md), [GetLicenseResponse](../models/GetLicenseResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

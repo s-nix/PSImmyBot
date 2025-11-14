@@ -10,7 +10,7 @@ title: GrantAccessRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GrantAccessRequest>` |
+| Implements | IEquatable<[GrantAccessRequest](GrantAccessRequest.md)> |
 | Source | `Models/GrantAccessRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: GrantAccessRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ExpirationTime | `ExpirationTime` | No (value type) | — |
+| ExpirationTime | [ExpirationTime](ExpirationTime.md) | No (value type) | — |
 | HasManagementAccess | `bool` | No (value type) | — |
 | IsAdmin | `bool` | No (value type) | — |
 

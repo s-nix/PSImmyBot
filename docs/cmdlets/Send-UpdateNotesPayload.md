@@ -25,7 +25,7 @@ title: Send-UpdateNotesPayload
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | Id | `Int32` | True | — | All | None |
-| PayloadBody | `UpdateNotesPayload` | True | — | All | None |
+| PayloadBody | [UpdateNotesPayload](../models/UpdateNotesPayload.md) | True | — | All | None |
 
 ### Parameter sets
 

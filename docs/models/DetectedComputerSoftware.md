@@ -10,7 +10,7 @@ title: DetectedComputerSoftware
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DetectedComputerSoftware>` |
+| Implements | IEquatable<[DetectedComputerSoftware](DetectedComputerSoftware.md)> |
 | Source | `Models/DetectedComputerSoftware.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: DetectedComputerSoftware
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computer | `Computer` | Reference type (nullable) | — |
+| Computer | [Computer](Computer.md) | Reference type (nullable) | — |
 | ComputerId | `int` | No (value type) | — |
-| Context | `SoftwareRegistryContext` | No (value type) | — |
+| Context | [SoftwareRegistryContext](SoftwareRegistryContext.md) | No (value type) | — |
 | DetectedAt | `DateTimeOffset` | No (value type) | — |
 | DisplayIcon | `string` | Reference type (nullable) | — |
 | DisplayName | `string` | Reference type (nullable) | — |
@@ -34,13 +34,13 @@ title: DetectedComputerSoftware
 | InstallLocation | `string` | Reference type (nullable) | — |
 | OriginalKey | `string` | Reference type (nullable) | — |
 | Platform | `string` | Reference type (nullable) | — |
-| PrimaryPerson | `Person` | Reference type (nullable) | — |
+| PrimaryPerson | [Person](Person.md) | Reference type (nullable) | — |
 | PrimaryPersonId | `int?` | Yes (nullable value type) | — |
 | ProductCode | `Guid?` | Yes (nullable value type) | — |
 | QuietUninstallString | `string` | Reference type (nullable) | — |
 | RegistryPath | `string` | Reference type (nullable) | — |
 | SystemComponent | `int?` | Yes (nullable value type) | — |
-| Tenant | `Tenant` | Reference type (nullable) | — |
+| Tenant | [Tenant](Tenant.md) | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 | UninstallString | `string` | Reference type (nullable) | — |
 | UpgradeCode | `Guid?` | Yes (nullable value type) | — |

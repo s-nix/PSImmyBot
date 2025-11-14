@@ -10,7 +10,7 @@ title: UpdateComputerRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateComputerRequestBody>` |
+| Implements | IEquatable<[UpdateComputerRequestBody](UpdateComputerRequestBody.md)> |
 | Source | `Models/UpdateComputerRequestBody.cs` |
 
 ## Overview
@@ -22,8 +22,8 @@ title: UpdateComputerRequestBody
 | --- | --- | --- | --- |
 | AdditionalPersonIds | `ICollection<int>` | Reference type (nullable) | — |
 | Notes | `string` | Reference type (nullable) | — |
-| OnboardingStatus | `ComputerOnboardingStatus` | No (value type) | — |
-| ProviderLinkUpdates | `ICollection<ProviderLinkUpdate>` | Reference type (nullable) | — |
+| OnboardingStatus | [ComputerOnboardingStatus](ComputerOnboardingStatus.md) | No (value type) | — |
+| ProviderLinkUpdates | ICollection<[ProviderLinkUpdate](ProviderLinkUpdate.md)> | Reference type (nullable) | — |
 | TenantId | `int` | No (value type) | — |
 
 ## Serialization

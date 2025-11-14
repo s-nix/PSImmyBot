@@ -10,7 +10,7 @@ title: AzureTokenResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTokenResponse>` |
+| Implements | IEquatable<[AzureTokenResponse](AzureTokenResponse.md)> |
 | Source | `Models/AzureTokenResponse.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: IntegrationBindParametersRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IntegrationBindParametersRequest>` |
+| Implements | IEquatable<[IntegrationBindParametersRequest](IntegrationBindParametersRequest.md)> |
 | Source | `Models/IntegrationBindParametersRequest.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: IntegrationBindParametersRequest
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ParameterValues | `IDictionary<string, ParameterValue>` | Reference type (nullable) | — |
+| ParameterValues | IDictionary<string, [ParameterValue](ParameterValue.md)> | Reference type (nullable) | — |
 | ProviderLinkId | `int?` | Yes (nullable value type) | — |
 
 ## Serialization

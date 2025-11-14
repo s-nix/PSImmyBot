@@ -10,7 +10,7 @@ title: GetPreferencesResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetPreferencesResponse>` |
+| Implements | IEquatable<[GetPreferencesResponse](GetPreferencesResponse.md)> |
 | Source | `Models/GetPreferencesResponse.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: GetPreferencesResponse
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ApplicationPreferences | `ApplicationPreferences` | Reference type (nullable) | — |
-| TenantPreferences | `TenantPreferences` | Reference type (nullable) | — |
-| UserPreferences | `UserPreferences` | Reference type (nullable) | — |
+| ApplicationPreferences | [ApplicationPreferences](ApplicationPreferences.md) | Reference type (nullable) | — |
+| TenantPreferences | [TenantPreferences](TenantPreferences.md) | Reference type (nullable) | — |
+| UserPreferences | [UserPreferences](UserPreferences.md) | Reference type (nullable) | — |
 
 ## Serialization
 

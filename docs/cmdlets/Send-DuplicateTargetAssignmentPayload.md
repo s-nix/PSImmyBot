@@ -10,7 +10,7 @@ title: Send-DuplicateTargetAssignmentPayload
 | Source | `Cmdlets/SendDuplicateTargetAssignmentPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/target-assignments/duplicates? |
-| Return Type | `DuplicateTargetAssignmentPayload, TargetAssignmentDuplicateResponse` |
+| Return Type | [DuplicateTargetAssignmentPayload](../models/DuplicateTargetAssignmentPayload.md), [TargetAssignmentDuplicateResponse](../models/TargetAssignmentDuplicateResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-DuplicateTargetAssignmentPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/duplicates?` and deserializes to `DuplicateTargetAssignmentPayload, TargetAssignmentDuplicateResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/target-assignments/duplicates?` and deserializes to [DuplicateTargetAssignmentPayload](../models/DuplicateTargetAssignmentPayload.md), [TargetAssignmentDuplicateResponse](../models/TargetAssignmentDuplicateResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `DuplicateTargetAssignmentPayload` | True | — | All | None |
+| PayloadBody | [DuplicateTargetAssignmentPayload](../models/DuplicateTargetAssignmentPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-DuplicateTargetAssignmentPayload
 
 ## Outputs
 
-- `DuplicateTargetAssignmentPayload, TargetAssignmentDuplicateResponse` records produced by `ImmyBotApiService.POST`
+- [DuplicateTargetAssignmentPayload](../models/DuplicateTargetAssignmentPayload.md), [TargetAssignmentDuplicateResponse](../models/TargetAssignmentDuplicateResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

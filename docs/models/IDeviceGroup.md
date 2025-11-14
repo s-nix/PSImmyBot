@@ -10,7 +10,7 @@ title: IDeviceGroup
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<IDeviceGroup>` |
+| Implements | IEquatable<[IDeviceGroup](IDeviceGroup.md)> |
 | Source | `Models/IDeviceGroup.cs` |
 
 ## Overview

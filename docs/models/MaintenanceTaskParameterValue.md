@@ -10,7 +10,7 @@ title: MaintenanceTaskParameterValue
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<MaintenanceTaskParameterValue>` |
+| Implements | IEquatable<[MaintenanceTaskParameterValue](MaintenanceTaskParameterValue.md)> |
 | Source | `Models/MaintenanceTaskParameterValue.cs` |
 
 ## Overview
@@ -21,19 +21,19 @@ title: MaintenanceTaskParameterValue
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | AllowOverrideFromComputerOnboarding | `bool` | No (value type) | — |
-| Deployment | `TargetAssignment` | Reference type (nullable) | — |
+| Deployment | [TargetAssignment](TargetAssignment.md) | Reference type (nullable) | — |
 | DeploymentId | `int` | No (value type) | — |
 | Id | `int` | No (value type) | — |
-| MaintenanceTask | `MaintenanceTask` | Reference type (nullable) | — |
+| MaintenanceTask | [MaintenanceTask](MaintenanceTask.md) | Reference type (nullable) | — |
 | MaintenanceTaskId | `int` | No (value type) | — |
-| MaintenanceTaskParameter | `MaintenanceTaskParameter` | Reference type (nullable) | — |
+| MaintenanceTaskParameter | [MaintenanceTaskParameter](MaintenanceTaskParameter.md) | Reference type (nullable) | — |
 | MaintenanceTaskParameterId | `int` | No (value type) | — |
-| MaintenanceTaskType | `DatabaseType` | No (value type) | — |
-| Media | `Media` | Reference type (nullable) | — |
-| MediaDatabaseType | `DatabaseType` | No (value type) | — |
+| MaintenanceTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| Media | [Media](Media.md) | Reference type (nullable) | — |
+| MediaDatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | MediaId | `int?` | Yes (nullable value type) | — |
 | ParameterName | `string` | Reference type (nullable) | — |
-| ParameterType | `MaintenanceTaskParameterType` | No (value type) | — |
+| ParameterType | [MaintenanceTaskParameterType](MaintenanceTaskParameterType.md) | No (value type) | — |
 | Value | `string` | Reference type (nullable) | — |
 
 ## Serialization

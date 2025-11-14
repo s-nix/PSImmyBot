@@ -10,7 +10,7 @@ title: Script
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Script>` |
+| Implements | IEquatable<[Script](Script.md)> |
 | Source | `Models/Script.cs` |
 
 ## Overview
@@ -21,37 +21,37 @@ title: Script
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Action | `string` | Reference type (nullable) | — |
-| ChangeRequests | `ICollection<ChangeRequest>` | Reference type (nullable) | — |
+| ChangeRequests | ICollection<[ChangeRequest](ChangeRequest.md)> | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| DynamicIntegrationType | `DynamicIntegrationType` | Reference type (nullable) | — |
-| DynamicIntegrationTypeProperties | `DynamicIntegrationTypeProperties` | Reference type (nullable) | — |
+| DynamicIntegrationType | [DynamicIntegrationType](DynamicIntegrationType.md) | Reference type (nullable) | — |
+| DynamicIntegrationTypeProperties | [DynamicIntegrationTypeProperties](DynamicIntegrationTypeProperties.md) | Reference type (nullable) | — |
 | DynamicProviderStoreId | `string` | Reference type (nullable) | — |
-| ErrorActionPreference | `ActionPreference` | No (value type) | — |
+| ErrorActionPreference | [ActionPreference](ActionPreference.md) | No (value type) | — |
 | Hidden | `bool` | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Identifier | `string` | Reference type (nullable) | — |
-| InventoryTaskScript | `InventoryTaskScript` | Reference type (nullable) | — |
+| InventoryTaskScript | [InventoryTaskScript](InventoryTaskScript.md) | Reference type (nullable) | — |
 | Name | `string` | Reference type (nullable) | — |
-| OutputType | `ScriptOutputType` | No (value type) | — |
+| OutputType | [ScriptOutputType](ScriptOutputType.md) | No (value type) | — |
 | ParameterOverrides | `IDictionary<string, object>` | Reference type (nullable) | — |
 | Parameters | `IDictionary<string, object>` | Reference type (nullable) | — |
 | ProviderLinkIdForMaintenanceItem | `int?` | Yes (nullable value type) | — |
 | PublicStorageDownloadUrl | `string` | Reference type (nullable) | — |
 | ReadOnly | `bool` | No (value type) | — |
 | ScriptCacheName | `string` | Reference type (nullable) | — |
-| ScriptCategory | `ScriptCategory` | No (value type) | — |
-| ScriptExecutionContext | `ScriptExecutionContext` | No (value type) | — |
+| ScriptCategory | [ScriptCategory](ScriptCategory.md) | No (value type) | — |
+| ScriptExecutionContext | [ScriptExecutionContext](ScriptExecutionContext.md) | No (value type) | — |
 | ScriptHash | `string` | Reference type (nullable) | — |
-| ScriptLanguage | `ScriptLanguage` | No (value type) | — |
-| ScriptType | `DatabaseType` | No (value type) | — |
+| ScriptLanguage | [ScriptLanguage](ScriptLanguage.md) | No (value type) | — |
+| ScriptType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | SkipBusinessHoursCheck | `bool` | No (value type) | — |
 | SkipPreflight | `bool` | No (value type) | — |
-| TenantRelationships | `ICollection<TenantScript>` | Reference type (nullable) | — |
+| TenantRelationships | ICollection<[TenantScript](TenantScript.md)> | Reference type (nullable) | — |
 | Timeout | `int?` | Yes (nullable value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 | Variables | `IDictionary<string, object>` | Reference type (nullable) | — |
 

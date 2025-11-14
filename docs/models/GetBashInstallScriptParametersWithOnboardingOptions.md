@@ -10,7 +10,7 @@ title: GetBashInstallScriptParametersWithOnboardingOptions
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<GetBashInstallScriptParametersWithOnboardingOptions>` |
+| Implements | IEquatable<[GetBashInstallScriptParametersWithOnboardingOptions](GetBashInstallScriptParametersWithOnboardingOptions.md)> |
 | Source | `Models/GetBashInstallScriptParametersWithOnboardingOptions.cs` |
 
 ## Overview
@@ -20,8 +20,8 @@ title: GetBashInstallScriptParametersWithOnboardingOptions
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| OnboardingOptions | `AgentOnboardingOptions` | Reference type (nullable) | — |
-| Platform | `Platform` | No (value type) | — |
+| OnboardingOptions | [AgentOnboardingOptions](AgentOnboardingOptions.md) | Reference type (nullable) | — |
+| Platform | [Platform](Platform.md) | No (value type) | — |
 | TargetExternalClientId | `string` | Reference type (nullable) | — |
 
 ## Serialization

@@ -10,7 +10,7 @@ title: AzureTenantCustomersResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AzureTenantCustomersResult>` |
+| Implements | IEquatable<[AzureTenantCustomersResult](AzureTenantCustomersResult.md)> |
 | Source | `Models/AzureTenantCustomersResult.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: AzureTenantCustomersResult
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | PartnerPrincipalId | `string` | Reference type (nullable) | — |
-| Result | `AzureTenantCustomerICollectionAzureErrorOneOf` | Reference type (nullable) | — |
+| Result | [AzureTenantCustomerICollectionAzureErrorOneOf](AzureTenantCustomerICollectionAzureErrorOneOf.md) | Reference type (nullable) | — |
 
 ## Serialization
 

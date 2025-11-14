@@ -10,7 +10,7 @@ title: Send-NotificationsSilence
 | Source | `Cmdlets/SendNotificationsSilence.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/notifications/{Type}/silence? |
-| Return Type | `UserSilencedNotificationResponse` |
+| Return Type | [UserSilencedNotificationResponse](../models/UserSilencedNotificationResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-NotificationsSilence
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/notifications/{Type}/silence?` and deserializes to `UserSilencedNotificationResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/notifications/{Type}/silence?` and deserializes to [UserSilencedNotificationResponse](../models/UserSilencedNotificationResponse.md).
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -26,7 +26,7 @@ title: Send-NotificationsSilence
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | ObjectId | `String` | False | — | All | None |
-| Type | `NotificationType` | True | — | All | None |
+| Type | [NotificationType](../models/NotificationType.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -34,7 +34,7 @@ title: Send-NotificationsSilence
 
 ## Outputs
 
-- `UserSilencedNotificationResponse` records produced by `ImmyBotApiService.POST`
+- [UserSilencedNotificationResponse](../models/UserSilencedNotificationResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

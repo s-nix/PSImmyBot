@@ -10,7 +10,7 @@ title: Role
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Role>` |
+| Implements | IEquatable<[Role](Role.md)> |
 | Source | `Models/Role.cs` |
 
 ## Overview
@@ -22,21 +22,21 @@ title: Role
 | --- | --- | --- | --- |
 | ConcurrencyStamp | `string` | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
-| CustomAuditProperties | `ICollection<AuditPropertyChange>` | Reference type (nullable) | — |
+| CustomAuditProperties | ICollection<[AuditPropertyChange](AuditPropertyChange.md)> | Reference type (nullable) | — |
 | Description | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
 | NormalizedName | `string` | Reference type (nullable) | — |
-| RoleClaims | `ICollection<RoleClaim>` | Reference type (nullable) | — |
-| RoleType | `RoleType` | Reference type (nullable) | — |
+| RoleClaims | ICollection<[RoleClaim](RoleClaim.md)> | Reference type (nullable) | — |
+| RoleType | [RoleType](RoleType.md) | Reference type (nullable) | — |
 | RoleTypeId | `int` | No (value type) | — |
-| TenantRestrictionMode | `TenantRestrictionMode` | No (value type) | — |
+| TenantRestrictionMode | [TenantRestrictionMode](TenantRestrictionMode.md) | No (value type) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
-| UserRoles | `ICollection<UserRole>` | Reference type (nullable) | — |
+| UserRoles | ICollection<[UserRole](UserRole.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

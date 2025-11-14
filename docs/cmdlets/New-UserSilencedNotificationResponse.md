@@ -27,7 +27,7 @@ title: New-UserSilencedNotificationResponse
 | DateSilencedUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Int32` | True | — | All | None |
 | NotificationObjectId | `String` | False | — | All | None |
-| NotificationType | `NotificationType` | True | — | All | None |
+| NotificationType | [NotificationType](../models/NotificationType.md) | True | — | All | None |
 | UserId | `Int32` | True | — | All | None |
 
 ### Parameter sets

@@ -10,7 +10,7 @@ title: Get-SourceContexts
 | Source | `Cmdlets/GetSourceContexts.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/application-logs/source-contexts? |
-| Return Type | `GetSourceContextsResponse` |
+| Return Type | [GetSourceContextsResponse](../models/GetSourceContextsResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-SourceContexts
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/application-logs/source-contexts?` and deserializes to `GetSourceContextsResponse`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/application-logs/source-contexts?` and deserializes to [GetSourceContextsResponse](../models/GetSourceContextsResponse.md).
 
 ## Parameters
 
@@ -26,7 +26,7 @@ _This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- `GetSourceContextsResponse` records produced by `ImmyBotApiService.GET`
+- [GetSourceContextsResponse](../models/GetSourceContextsResponse.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

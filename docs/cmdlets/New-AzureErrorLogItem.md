@@ -24,7 +24,7 @@ title: New-AzureErrorLogItem
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AzureError | `AzureError` | True | — | All | None |
+| AzureError | [AzureError](../models/AzureError.md) | True | — | All | None |
 | CreatedDateUtc | `DateTimeOffset` | True | — | All | None |
 | Id | `Guid` | True | — | All | None |
 | Oauth2AccessTokenId | `Nullable`1` | False | — | All | None |

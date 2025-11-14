@@ -10,7 +10,7 @@ title: ResolveFailuresRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ResolveFailuresRequestBody>` |
+| Implements | IEquatable<[ResolveFailuresRequestBody](ResolveFailuresRequestBody.md)> |
 | Source | `Models/ResolveFailuresRequestBody.cs` |
 
 ## Overview

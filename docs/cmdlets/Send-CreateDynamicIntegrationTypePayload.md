@@ -10,7 +10,7 @@ title: Send-CreateDynamicIntegrationTypePayload
 | Source | `Cmdlets/SendCreateDynamicIntegrationTypePayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/dynamic-provider-types/local;? |
-| Return Type | `CreateDynamicIntegrationTypePayload, DynamicIntegrationTypeResponse` |
+| Return Type | [CreateDynamicIntegrationTypePayload](../models/CreateDynamicIntegrationTypePayload.md), [DynamicIntegrationTypeResponse](../models/DynamicIntegrationTypeResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateDynamicIntegrationTypePayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/dynamic-provider-types/local;?` and deserializes to `CreateDynamicIntegrationTypePayload, DynamicIntegrationTypeResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/dynamic-provider-types/local;?` and deserializes to [CreateDynamicIntegrationTypePayload](../models/CreateDynamicIntegrationTypePayload.md), [DynamicIntegrationTypeResponse](../models/DynamicIntegrationTypeResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateDynamicIntegrationTypePayload` | True | — | All | None |
+| PayloadBody | [CreateDynamicIntegrationTypePayload](../models/CreateDynamicIntegrationTypePayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateDynamicIntegrationTypePayload
 
 ## Outputs
 
-- `CreateDynamicIntegrationTypePayload, DynamicIntegrationTypeResponse` records produced by `ImmyBotApiService.POST`
+- [CreateDynamicIntegrationTypePayload](../models/CreateDynamicIntegrationTypePayload.md), [DynamicIntegrationTypeResponse](../models/DynamicIntegrationTypeResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -30,7 +30,7 @@ title: New-GetProviderClientResponse
 | ExternalClientName | `String` | False | — | All | None |
 | InternalData | `Object` | False | — | All | None |
 | LinkedToTenantId | `Nullable`1` | False | — | All | None |
-| ProviderLink | `GetProviderLinkResponse` | True | — | All | None |
+| ProviderLink | [GetProviderLinkResponse](../models/GetProviderLinkResponse.md) | True | — | All | None |
 | ProviderLinkId | `Int32` | True | — | All | None |
 | Status | `String` | False | — | All | None |
 | Types | `ICollection`1` | False | — | All | None |

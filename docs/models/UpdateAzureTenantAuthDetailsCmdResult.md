@@ -10,7 +10,7 @@ title: UpdateAzureTenantAuthDetailsCmdResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<UpdateAzureTenantAuthDetailsCmdResult>` |
+| Implements | IEquatable<[UpdateAzureTenantAuthDetailsCmdResult](UpdateAzureTenantAuthDetailsCmdResult.md)> |
 | Source | `Models/UpdateAzureTenantAuthDetailsCmdResult.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: UpdateAzureTenantAuthDetailsCmdResult
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| AuthDetails | `AzureTenantAuthDetails` | Reference type (nullable) | — |
+| AuthDetails | [AzureTenantAuthDetails](AzureTenantAuthDetails.md) | Reference type (nullable) | — |
 | DefaultAppRegistrationUpdated | `bool` | No (value type) | — |
 
 ## Serialization

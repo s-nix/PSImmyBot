@@ -10,7 +10,7 @@ title: ScriptReference
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ScriptReference>` |
+| Implements | IEquatable<[ScriptReference](ScriptReference.md)> |
 | Source | `Models/ScriptReference.cs` |
 
 ## Overview
@@ -20,11 +20,11 @@ title: ScriptReference
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| DatabaseType | `DatabaseType` | No (value type) | — |
+| DatabaseType | [DatabaseType](DatabaseType.md) | No (value type) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| ScriptReferenceType | `ScriptReferenceType` | No (value type) | — |
-| SoftwareVersion | `SemanticVersion` | Reference type (nullable) | — |
+| ScriptReferenceType | [ScriptReferenceType](ScriptReferenceType.md) | No (value type) | — |
+| SoftwareVersion | [SemanticVersion](SemanticVersion.md) | Reference type (nullable) | — |
 
 ## Serialization
 

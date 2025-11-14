@@ -10,7 +10,7 @@ title: Tag
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<Tag>` |
+| Implements | IEquatable<[Tag](Tag.md)> |
 | Source | `Models/Tag.cs` |
 
 ## Overview
@@ -21,21 +21,21 @@ title: Tag
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Color | `string` | Reference type (nullable) | — |
-| Computers | `ICollection<Computer>` | Reference type (nullable) | — |
-| ComputerTags | `ICollection<ComputerTag>` | Reference type (nullable) | — |
+| Computers | ICollection<[Computer](Computer.md)> | Reference type (nullable) | — |
+| ComputerTags | ICollection<[ComputerTag](ComputerTag.md)> | Reference type (nullable) | — |
 | CreatedBy | `int?` | Yes (nullable value type) | — |
-| CreatedByUser | `User` | Reference type (nullable) | — |
+| CreatedByUser | [User](User.md) | Reference type (nullable) | — |
 | CreatedDate | `DateTimeOffset` | No (value type) | — |
 | Description | `string` | Reference type (nullable) | — |
 | Id | `int` | No (value type) | — |
 | Name | `string` | Reference type (nullable) | — |
-| Persons | `ICollection<Person>` | Reference type (nullable) | — |
-| PersonTags | `ICollection<PersonTag>` | Reference type (nullable) | — |
-| TenantRelationships | `ICollection<TenantTagAuthorization>` | Reference type (nullable) | — |
-| Tenants | `ICollection<Tenant>` | Reference type (nullable) | — |
-| TenantTags | `ICollection<TenantTag>` | Reference type (nullable) | — |
+| Persons | ICollection<[Person](Person.md)> | Reference type (nullable) | — |
+| PersonTags | ICollection<[PersonTag](PersonTag.md)> | Reference type (nullable) | — |
+| TenantRelationships | ICollection<[TenantTagAuthorization](TenantTagAuthorization.md)> | Reference type (nullable) | — |
+| Tenants | ICollection<[Tenant](Tenant.md)> | Reference type (nullable) | — |
+| TenantTags | ICollection<[TenantTag](TenantTag.md)> | Reference type (nullable) | — |
 | UpdatedBy | `int?` | Yes (nullable value type) | — |
-| UpdatedByUser | `User` | Reference type (nullable) | — |
+| UpdatedByUser | [User](User.md) | Reference type (nullable) | — |
 | UpdatedDate | `DateTimeOffset` | No (value type) | — |
 
 ## Serialization

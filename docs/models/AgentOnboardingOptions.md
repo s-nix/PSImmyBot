@@ -10,7 +10,7 @@ title: AgentOnboardingOptions
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<AgentOnboardingOptions>` |
+| Implements | IEquatable<[AgentOnboardingOptions](AgentOnboardingOptions.md)> |
 | Source | `Models/AgentOnboardingOptions.cs` |
 
 ## Overview
@@ -25,9 +25,9 @@ title: AgentOnboardingOptions
 | IsDevLab | `bool` | No (value type) | — |
 | OnboardingCorrelationId | `string` | Reference type (nullable) | — |
 | OnboardingSessionAutoConsentToReboots | `bool` | No (value type) | — |
-| OnboardingSessionPromptTimeoutAction | `PromptTimeoutAction` | No (value type) | — |
+| OnboardingSessionPromptTimeoutAction | [PromptTimeoutAction](PromptTimeoutAction.md) | No (value type) | — |
 | OnboardingSessionPromptTimeoutMinutes | `int` | No (value type) | — |
-| OnboardingSessionRebootPreference | `RebootPreference` | No (value type) | — |
+| OnboardingSessionRebootPreference | [RebootPreference](RebootPreference.md) | No (value type) | — |
 | OnboardingSessionSendFollowUpEmail | `bool` | No (value type) | — |
 | PrimaryPersonId | `int?` | Yes (nullable value type) | — |
 | Tags | `ICollection<int>` | Reference type (nullable) | — |

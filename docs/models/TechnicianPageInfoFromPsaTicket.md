@@ -10,7 +10,7 @@ title: TechnicianPageInfoFromPsaTicket
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<TechnicianPageInfoFromPsaTicket>` |
+| Implements | IEquatable<[TechnicianPageInfoFromPsaTicket](TechnicianPageInfoFromPsaTicket.md)> |
 | Source | `Models/TechnicianPageInfoFromPsaTicket.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: TechnicianPageInfoFromPsaTicket
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Computers | `ICollection<UnifiedComputerInfo>` | Reference type (nullable) | — |
+| Computers | ICollection<[UnifiedComputerInfo](UnifiedComputerInfo.md)> | Reference type (nullable) | — |
 | PersonId | `int?` | Yes (nullable value type) | — |
 | PersonName | `string` | Reference type (nullable) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |

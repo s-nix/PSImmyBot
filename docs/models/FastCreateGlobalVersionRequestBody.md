@@ -10,7 +10,7 @@ title: FastCreateGlobalVersionRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<FastCreateGlobalVersionRequestBody>` |
+| Implements | IEquatable<[FastCreateGlobalVersionRequestBody](FastCreateGlobalVersionRequestBody.md)> |
 | Source | `Models/FastCreateGlobalVersionRequestBody.cs` |
 
 ## Overview
@@ -20,9 +20,9 @@ title: FastCreateGlobalVersionRequestBody
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| Software | `CreateGlobalSoftwareRequestBody` | Reference type (nullable) | — |
+| Software | [CreateGlobalSoftwareRequestBody](CreateGlobalSoftwareRequestBody.md) | Reference type (nullable) | — |
 | SoftwareId | `int?` | Yes (nullable value type) | — |
-| SoftwareVersion | `CreateGlobalSoftwareVersionRequestBody` | Reference type (nullable) | — |
+| SoftwareVersion | [CreateGlobalSoftwareVersionRequestBody](CreateGlobalSoftwareVersionRequestBody.md) | Reference type (nullable) | — |
 
 ## Serialization
 

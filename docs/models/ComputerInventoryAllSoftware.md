@@ -10,7 +10,7 @@ title: ComputerInventoryAllSoftware
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerInventoryAllSoftware>` |
+| Implements | IEquatable<[ComputerInventoryAllSoftware](ComputerInventoryAllSoftware.md)> |
 | Source | `Models/ComputerInventoryAllSoftware.cs` |
 
 ## Overview

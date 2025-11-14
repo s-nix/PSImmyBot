@@ -10,7 +10,7 @@ title: DynamicFormBindResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<DynamicFormBindResult>` |
+| Implements | IEquatable<[DynamicFormBindResult](DynamicFormBindResult.md)> |
 | Source | `Models/DynamicFormBindResult.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: DynamicFormBindResult
 | BindErrors | `IDictionary<string, string>` | Reference type (nullable) | — |
 | HasErrors | `bool` | No (value type) | — |
 | ParameterSetName | `string` | Reference type (nullable) | — |
-| ShowCommandInfo | `ShowCommandInfo` | Reference type (nullable) | — |
+| ShowCommandInfo | [ShowCommandInfo](ShowCommandInfo.md) | Reference type (nullable) | — |
 
 ## Serialization
 

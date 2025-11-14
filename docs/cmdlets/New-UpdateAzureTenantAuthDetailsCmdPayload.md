@@ -24,7 +24,7 @@ title: New-UpdateAzureTenantAuthDetailsCmdPayload
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| AuthDetails | `AzureTenantAuthDetails` | True | — | All | None |
+| AuthDetails | [AzureTenantAuthDetails](../models/AzureTenantAuthDetails.md) | True | — | All | None |
 
 ### Parameter sets
 

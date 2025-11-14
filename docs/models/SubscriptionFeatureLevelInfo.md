@@ -10,7 +10,7 @@ title: SubscriptionFeatureLevelInfo
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<SubscriptionFeatureLevelInfo>` |
+| Implements | IEquatable<[SubscriptionFeatureLevelInfo](SubscriptionFeatureLevelInfo.md)> |
 | Source | `Models/SubscriptionFeatureLevelInfo.cs` |
 
 ## Overview

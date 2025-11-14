@@ -10,7 +10,7 @@ title: Send-SchedulesDuplicate
 | Source | `Cmdlets/SendSchedulesDuplicate.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/schedules/{ScheduleId}/duplicate? |
-| Return Type | `GetScheduleResponse` |
+| Return Type | [GetScheduleResponse](../models/GetScheduleResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-SchedulesDuplicate
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/schedules/{ScheduleId}/duplicate?` and deserializes to `GetScheduleResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/schedules/{ScheduleId}/duplicate?` and deserializes to [GetScheduleResponse](../models/GetScheduleResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Send-SchedulesDuplicate
 
 ## Outputs
 
-- `GetScheduleResponse` records produced by `ImmyBotApiService.POST`
+- [GetScheduleResponse](../models/GetScheduleResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

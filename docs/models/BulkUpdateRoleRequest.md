@@ -10,7 +10,7 @@ title: BulkUpdateRoleRequest
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<BulkUpdateRoleRequest>` |
+| Implements | IEquatable<[BulkUpdateRoleRequest](BulkUpdateRoleRequest.md)> |
 | Source | `Models/BulkUpdateRoleRequest.cs` |
 
 ## Overview

@@ -10,7 +10,7 @@ title: Send-UpdateAzureTenantAuthDetailsCmdPayload
 | Source | `Cmdlets/SendUpdateAzureTenantAuthDetailsCmdPayload.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/auth/update-azure-tenant-auth-details? |
-| Return Type | `UpdateAzureTenantAuthDetailsCmdPayload, UpdateAzureTenantAuthDetailsCmdResult` |
+| Return Type | [UpdateAzureTenantAuthDetailsCmdPayload](../models/UpdateAzureTenantAuthDetailsCmdPayload.md), [UpdateAzureTenantAuthDetailsCmdResult](../models/UpdateAzureTenantAuthDetailsCmdResult.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-UpdateAzureTenantAuthDetailsCmdPayload
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/auth/update-azure-tenant-auth-details?` and deserializes to `UpdateAzureTenantAuthDetailsCmdPayload, UpdateAzureTenantAuthDetailsCmdResult`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/auth/update-azure-tenant-auth-details?` and deserializes to [UpdateAzureTenantAuthDetailsCmdPayload](../models/UpdateAzureTenantAuthDetailsCmdPayload.md), [UpdateAzureTenantAuthDetailsCmdResult](../models/UpdateAzureTenantAuthDetailsCmdResult.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `UpdateAzureTenantAuthDetailsCmdPayload` | True | — | All | None |
+| PayloadBody | [UpdateAzureTenantAuthDetailsCmdPayload](../models/UpdateAzureTenantAuthDetailsCmdPayload.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-UpdateAzureTenantAuthDetailsCmdPayload
 
 ## Outputs
 
-- `UpdateAzureTenantAuthDetailsCmdPayload, UpdateAzureTenantAuthDetailsCmdResult` records produced by `ImmyBotApiService.POST`
+- [UpdateAzureTenantAuthDetailsCmdPayload](../models/UpdateAzureTenantAuthDetailsCmdPayload.md), [UpdateAzureTenantAuthDetailsCmdResult](../models/UpdateAzureTenantAuthDetailsCmdResult.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

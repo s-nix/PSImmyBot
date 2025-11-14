@@ -10,7 +10,7 @@ title: ComputerPageResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<ComputerPageResponse>` |
+| Implements | IEquatable<[ComputerPageResponse](ComputerPageResponse.md)> |
 | Source | `Models/ComputerPageResponse.cs` |
 
 ## Overview
@@ -21,7 +21,7 @@ title: ComputerPageResponse
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | Count | `int` | No (value type) | — |
-| Results | `ICollection<ComputerListViewModel>` | Reference type (nullable) | — |
+| Results | ICollection<[ComputerListViewModel](ComputerListViewModel.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

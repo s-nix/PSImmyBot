@@ -10,7 +10,7 @@ title: InventoryTaskScriptResource
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<InventoryTaskScriptResource>` |
+| Implements | IEquatable<[InventoryTaskScriptResource](InventoryTaskScriptResource.md)> |
 | Source | `Models/InventoryTaskScriptResource.cs` |
 
 ## Overview

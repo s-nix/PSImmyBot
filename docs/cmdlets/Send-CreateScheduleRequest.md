@@ -10,7 +10,7 @@ title: Send-CreateScheduleRequest
 | Source | `Cmdlets/SendCreateScheduleRequest.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/schedules? |
-| Return Type | `CreateScheduleRequest, GetScheduleResponse` |
+| Return Type | [CreateScheduleRequest](../models/CreateScheduleRequest.md), [GetScheduleResponse](../models/GetScheduleResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,13 +18,13 @@ title: Send-CreateScheduleRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/schedules?` and deserializes to `CreateScheduleRequest, GetScheduleResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/schedules?` and deserializes to [CreateScheduleRequest](../models/CreateScheduleRequest.md), [GetScheduleResponse](../models/GetScheduleResponse.md).
 
 ## Parameters
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| PayloadBody | `CreateScheduleRequest` | True | — | All | None |
+| PayloadBody | [CreateScheduleRequest](../models/CreateScheduleRequest.md) | True | — | All | None |
 
 ### Parameter sets
 
@@ -32,7 +32,7 @@ title: Send-CreateScheduleRequest
 
 ## Outputs
 
-- `CreateScheduleRequest, GetScheduleResponse` records produced by `ImmyBotApiService.POST`
+- [CreateScheduleRequest](../models/CreateScheduleRequest.md), [GetScheduleResponse](../models/GetScheduleResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: Send-ComputersReinventory
 | Source | `Cmdlets/SendComputersReinventory.cs` |
 | HTTP Method | POST |
 | Endpoint | /api/v1/computers/{ComputerId}/reinventory? |
-| Return Type | `InventoryDeviceCmdResponse` |
+| Return Type | [InventoryDeviceCmdResponse](../models/InventoryDeviceCmdResponse.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Send-ComputersReinventory
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/{ComputerId}/reinventory?` and deserializes to `InventoryDeviceCmdResponse`.
+- Calls `ImmyBotApiService.POST` targeting `/api/v1/computers/{ComputerId}/reinventory?` and deserializes to [InventoryDeviceCmdResponse](../models/InventoryDeviceCmdResponse.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Send-ComputersReinventory
 
 ## Outputs
 
-- `InventoryDeviceCmdResponse` records produced by `ImmyBotApiService.POST`
+- [InventoryDeviceCmdResponse](../models/InventoryDeviceCmdResponse.md) records produced by `ImmyBotApiService.POST`
 
 ## Notes
 

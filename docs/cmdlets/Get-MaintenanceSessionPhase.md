@@ -10,7 +10,7 @@ title: Get-MaintenanceSessionPhase
 | Source | `Cmdlets/GetMaintenanceSessionPhase.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/maintenance-sessions/{SessionId}/phases? |
-| Return Type | `List<GetMaintenanceSessionPhaseResponse>` |
+| Return Type | List<[GetMaintenanceSessionPhaseResponse](../models/GetMaintenanceSessionPhaseResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-MaintenanceSessionPhase
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-sessions/{SessionId}/phases?` and deserializes to `List<GetMaintenanceSessionPhaseResponse>`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/maintenance-sessions/{SessionId}/phases?` and deserializes to List<[GetMaintenanceSessionPhaseResponse](../models/GetMaintenanceSessionPhaseResponse.md)>.
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-MaintenanceSessionPhase
 
 ## Outputs
 
-- `List<GetMaintenanceSessionPhaseResponse>` records produced by `ImmyBotApiService.GET`
+- List<[GetMaintenanceSessionPhaseResponse](../models/GetMaintenanceSessionPhaseResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: CustomAttributeTypedArgument
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CustomAttributeTypedArgument>` |
+| Implements | IEquatable<[CustomAttributeTypedArgument](CustomAttributeTypedArgument.md)> |
 | Source | `Models/CustomAttributeTypedArgument.cs` |
 
 ## Overview
@@ -20,7 +20,7 @@ title: CustomAttributeTypedArgument
 
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
-| ArgumentType | `Type` | Reference type (nullable) | — |
+| ArgumentType | [Type](Type.md) | Reference type (nullable) | — |
 | Value | `object` | Reference type (nullable) | — |
 
 ## Serialization

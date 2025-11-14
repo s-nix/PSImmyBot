@@ -27,7 +27,7 @@ title: New-Notification
 | AcknowledgedByUserAzureId | `String` | False | — | All | None |
 | AcknowledgedByUserDisplayName | `String` | False | — | All | None |
 | AcknowledgedByUserId | `Nullable`1` | False | — | All | None |
-| Acknowledgement | `NotificationAcknowledgement` | True | — | All | None |
+| Acknowledgement | [NotificationAcknowledgement](../models/NotificationAcknowledgement.md) | True | — | All | None |
 | AdminOnly | `Boolean` | True | — | All | None |
 | CreatedDate | `DateTimeOffset` | True | — | All | None |
 | Description | `String` | False | — | All | None |
@@ -37,11 +37,11 @@ title: New-Notification
 | OnlyForUserId | `Nullable`1` | False | — | All | None |
 | OutputData | `Object` | False | — | All | None |
 | Resolved | `Boolean` | True | — | All | None |
-| Severity | `NotificationSeverity` | True | — | All | None |
+| Severity | [NotificationSeverity](../models/NotificationSeverity.md) | True | — | All | None |
 | TenantId | `Nullable`1` | False | — | All | None |
 | Title | `String` | False | — | All | None |
 | TriggeredByUserId | `Nullable`1` | False | — | All | None |
-| Type | `NotificationType` | True | — | All | None |
+| Type | [NotificationType](../models/NotificationType.md) | True | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 
 ### Parameter sets

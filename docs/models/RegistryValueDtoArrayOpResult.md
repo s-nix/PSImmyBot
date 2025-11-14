@@ -10,7 +10,7 @@ title: RegistryValueDtoArrayOpResult
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RegistryValueDtoArrayOpResult>` |
+| Implements | IEquatable<[RegistryValueDtoArrayOpResult](RegistryValueDtoArrayOpResult.md)> |
 | Source | `Models/RegistryValueDtoArrayOpResult.cs` |
 
 ## Overview
@@ -23,7 +23,7 @@ title: RegistryValueDtoArrayOpResult
 | DateCreatedUtc | `DateTimeOffset` | No (value type) | — |
 | IsSuccess | `bool` | No (value type) | — |
 | Reason | `string` | Reference type (nullable) | — |
-| Value | `ICollection<RegistryValueDto>` | Reference type (nullable) | — |
+| Value | ICollection<[RegistryValueDto](RegistryValueDto.md)> | Reference type (nullable) | — |
 
 ## Serialization
 

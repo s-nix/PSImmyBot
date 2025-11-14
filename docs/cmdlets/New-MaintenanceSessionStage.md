@@ -29,11 +29,11 @@ title: New-MaintenanceSessionStage
 | Id | `Int32` | True | — | All | None |
 | JobId | `String` | False | — | All | None |
 | Logs | `ICollection`1` | False | — | All | None |
-| MaintenanceSession | `MaintenanceSession` | True | — | All | None |
+| MaintenanceSession | [MaintenanceSession](../models/MaintenanceSession.md) | True | — | All | None |
 | MaintenanceSessionId | `Int32` | True | — | All | None |
 | Phases | `ICollection`1` | False | — | All | None |
-| StageStatus | `SessionStatus` | True | — | All | None |
-| Type | `SessionStageType` | True | — | All | None |
+| StageStatus | [SessionStatus](../models/SessionStatus.md) | True | — | All | None |
+| Type | [SessionStageType](../models/SessionStageType.md) | True | — | All | None |
 | UpdatedBy | `Nullable`1` | False | — | All | None |
 | UpdatedDate | `DateTimeOffset` | True | — | All | None |
 

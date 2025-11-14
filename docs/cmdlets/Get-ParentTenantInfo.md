@@ -10,7 +10,7 @@ title: Get-ParentTenantInfo
 | Source | `Cmdlets/GetParentTenantInfo.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}/parent-tenant-info? |
-| Return Type | `ParentTenantInfo` |
+| Return Type | [ParentTenantInfo](../models/ParentTenantInfo.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ParentTenantInfo
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/parent-tenant-info?` and deserializes to `ParentTenantInfo`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/parent-tenant-info?` and deserializes to [ParentTenantInfo](../models/ParentTenantInfo.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-ParentTenantInfo
 
 ## Outputs
 
-- `ParentTenantInfo` records produced by `ImmyBotApiService.GET`
+- [ParentTenantInfo](../models/ParentTenantInfo.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

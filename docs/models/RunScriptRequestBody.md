@@ -10,7 +10,7 @@ title: RunScriptRequestBody
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<RunScriptRequestBody>` |
+| Implements | IEquatable<[RunScriptRequestBody](RunScriptRequestBody.md)> |
 | Source | `Models/RunScriptRequestBody.cs` |
 
 ## Overview
@@ -25,8 +25,8 @@ title: RunScriptRequestBody
 | MaintenanceActionId | `int?` | Yes (nullable value type) | — |
 | MaintenanceSessionId | `int?` | Yes (nullable value type) | — |
 | MaintenanceTaskId | `int?` | Yes (nullable value type) | — |
-| MaintenanceTaskType | `DatabaseType` | No (value type) | — |
-| Script | `Script` | Reference type (nullable) | — |
+| MaintenanceTaskType | [DatabaseType](DatabaseType.md) | No (value type) | — |
+| Script | [Script](Script.md) | Reference type (nullable) | — |
 | SessionLogId | `int?` | Yes (nullable value type) | — |
 | TenantId | `int?` | Yes (nullable value type) | — |
 | TerminalId | `Guid?` | Yes (nullable value type) | — |

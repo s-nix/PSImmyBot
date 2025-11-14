@@ -24,7 +24,7 @@ title: New-RuntimeTypeHandle
 
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
-| Value | `IntPtr` | True | — | All | None |
+| Value | [IntPtr](../models/IntPtr.md) | True | — | All | None |
 
 ### Parameter sets
 

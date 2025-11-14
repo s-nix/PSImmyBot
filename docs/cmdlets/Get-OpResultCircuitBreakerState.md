@@ -10,7 +10,7 @@ title: Get-OpResultCircuitBreakerState
 | Source | `Cmdlets/GetOpResultCircuitBreakerState.cs` |
 | HTTP Method | GET |
 | Endpoint | /api/v1/computers/{ComputerId}/ephemeral-agent-circuit-breaker? |
-| Return Type | `OpResultCircuitBreakerState` |
+| Return Type | [OpResultCircuitBreakerState](../models/OpResultCircuitBreakerState.md) |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-OpResultCircuitBreakerState
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/ephemeral-agent-circuit-breaker?` and deserializes to `OpResultCircuitBreakerState`.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/computers/{ComputerId}/ephemeral-agent-circuit-breaker?` and deserializes to [OpResultCircuitBreakerState](../models/OpResultCircuitBreakerState.md).
 
 ## Parameters
 
@@ -32,7 +32,7 @@ title: Get-OpResultCircuitBreakerState
 
 ## Outputs
 
-- `OpResultCircuitBreakerState` records produced by `ImmyBotApiService.GET`
+- [OpResultCircuitBreakerState](../models/OpResultCircuitBreakerState.md) records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -10,7 +10,7 @@ title: CalculateTargetedComputerResponse
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<CalculateTargetedComputerResponse>` |
+| Implements | IEquatable<[CalculateTargetedComputerResponse](CalculateTargetedComputerResponse.md)> |
 | Source | `Models/CalculateTargetedComputerResponse.cs` |
 
 ## Overview
@@ -24,7 +24,7 @@ title: CalculateTargetedComputerResponse
 | Ct | `ICollection<int>` | Reference type (nullable) | — |
 | Dr | `int?` | Yes (nullable value type) | — |
 | Id | `int` | No (value type) | — |
-| Obs | `ComputerOnboardingStatus` | No (value type) | — |
+| Obs | [ComputerOnboardingStatus](ComputerOnboardingStatus.md) | No (value type) | — |
 | On | `bool` | No (value type) | — |
 | Os | `string` | Reference type (nullable) | — |
 | Ppi | `int?` | Yes (nullable value type) | — |

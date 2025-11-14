@@ -10,7 +10,7 @@ title: FeatureEnabledFromSubscription
 | Kind | Class |
 | Assembly | `PSImmyBot` |
 | Base Type | `object` |
-| Implements | `IEquatable<FeatureEnabledFromSubscription>` |
+| Implements | IEquatable<[FeatureEnabledFromSubscription](FeatureEnabledFromSubscription.md)> |
 | Source | `Models/FeatureEnabledFromSubscription.cs` |
 
 ## Overview
@@ -21,9 +21,9 @@ title: FeatureEnabledFromSubscription
 | Property | Type | Nullable | Notes |
 | --- | --- | --- | --- |
 | FeatureCustomValue | `string` | Reference type (nullable) | — |
-| FeatureEntitlementType | `FeatureEntitlementType` | No (value type) | — |
+| FeatureEntitlementType | [FeatureEntitlementType](FeatureEntitlementType.md) | No (value type) | — |
 | FeatureId | `string` | Reference type (nullable) | — |
-| FeatureUsage | `FeatureUsageDetails` | Reference type (nullable) | — |
+| FeatureUsage | [FeatureUsageDetails](FeatureUsageDetails.md) | Reference type (nullable) | — |
 | IsUsageBased | `bool` | No (value type) | — |
 
 ## Serialization
