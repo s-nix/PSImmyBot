@@ -1,0 +1,33 @@
+---
+title: Get-UserSilencedNotificationResponse
+---
+
+# Get-UserSilencedNotificationResponse
+
+| Detail | Value |
+| --- | --- |
+| Class | `PSImmyBot.Cmdlets.GetUserSilencedNotificationResponse` |
+| Source | `Cmdlets/GetUserSilencedNotificationResponse.cs` |
+| HTTP Method | GET |
+| Endpoint | /api/v1/notifications? |
+| Return Type | `List<UserSilencedNotificationResponse>` |
+| SupportsShouldProcess | False |
+| SupportsPaging | False |
+| SupportsTransactions | False |
+| ConfirmImpact | None |
+| Default Parameter Set | None |
+
+## Behavior
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/notifications?` and deserializes to `List<UserSilencedNotificationResponse>`.
+
+## Parameters
+
+_This cmdlet does not expose custom parameters._
+
+## Outputs
+
+- `List<UserSilencedNotificationResponse>` records produced by `ImmyBotApiService.GET`
+
+## Notes
+
+This documentation was generated automatically by `HelperScripts/GenerateDocs.ps1` by analyzing the cmdlet source and compiled metadata.

@@ -1,0 +1,40 @@
+---
+title: Get-Audit
+---
+
+# Get-Audit
+
+| Detail | Value |
+| --- | --- |
+| Class | `PSImmyBot.Cmdlets.GetAudit` |
+| Source | `Cmdlets/GetAudit.cs` |
+| HTTP Method | GET |
+| Endpoint | /api/v1/audits/global/dx? |
+| Return Type | `List<Audit>` |
+| SupportsShouldProcess | False |
+| SupportsPaging | False |
+| SupportsTransactions | False |
+| ConfirmImpact | None |
+| Default Parameter Set | None |
+
+## Behavior
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/audits/global/dx?` and deserializes to `List<Audit>`.
+- Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
+
+## Parameters
+
+| Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| LoadOptions | `DataSourceLoadOptions` | False | — | All | None |
+
+### Parameter sets
+
+- `All`
+
+## Outputs
+
+- `List<Audit>` records produced by `ImmyBotApiService.GET`
+
+## Notes
+
+This documentation was generated automatically by `HelperScripts/GenerateDocs.ps1` by analyzing the cmdlet source and compiled metadata.
