@@ -8,7 +8,10 @@ namespace PSImmyBot.Cmdlets;
 /// This is a test
 /// </summary>
 [Cmdlet("Connect", "Api")]
-public class ConnectApi : Cmdlet {
+public class ConnectApi : Cmdlet
+{
+    internal static Func<HttpMessageHandler>? HttpMessageHandlerFactory { get; set; }
+
     [Parameter(Mandatory = true, ParameterSetName = "Saved")]
     public SwitchParameter UseSavedConfig { get; set; } = false;
 
@@ -31,17 +34,23 @@ public class ConnectApi : Cmdlet {
     [Parameter(Mandatory = false, ParameterSetName = "Direct")]
     public SwitchParameter Force { get; set; } = false;
 
-    protected override void ProcessRecord() {
-        if (Globals.Token != null && !Force) {
+    protected override void ProcessRecord()
+    {
+        if (Globals.Token != null && !Force)
+        {
             WriteInformation($"An API connection is already established. Expiration time: {Globals.Token.ExpirationTime:yyyy-MM-ddThh:mm:sszzz}", null);
             return;
         }
 
-        if (UseSavedConfig.IsPresent) {
+        if (UseSavedConfig.IsPresent)
+        {
             ApiConnectionConfig config;
-            try {
+            try
+            {
                 config = Globals.GetApiConnectionConfig();
-            } catch (Exception ex) {
+            }
+            catch (Exception ex)
+            {
                 throw new Exception("Failed to load saved API connection configuration. " +
                     "Please provide connection details directly or save a configuration first.", ex);
             }
@@ -61,33 +70,50 @@ public class ConnectApi : Cmdlet {
             new KeyValuePair<string, string>("grant_type", "client_credentials")
         ]);
 
-        HttpClient client = new();
+        HttpClient client = CreateHttpClient();
         HttpResponseMessage response = client.PostAsync(accessTokenUri, body).Result;
-        if (!response.IsSuccessStatusCode) {
+        if (!response.IsSuccessStatusCode)
+        {
             throw new Exception($"Failed to retrieve Azure access token: {response.ReasonPhrase}");
         }
         string content = response.Content.ReadAsStringAsync().Result;
         AzureTokenResponse azureTokenResponse = JsonSerializer.Deserialize<AzureTokenResponse>(content) ?? throw new Exception("Failed to deserialize Azure token response.");
         Globals.SaveApiToken(azureTokenResponse);
 
-        if (!UseSavedConfig && Save) {
-            ApiConnectionConfig config = new() {
-                AzureTenantDomain = AzureTenantDomain, AzureClientId = AzureClientId, AzureClientSecret = AzureClientSecret, ImmySubdomain = ImmySubdomain
+        if (!UseSavedConfig && Save)
+        {
+            ApiConnectionConfig config = new()
+            {
+                AzureTenantDomain = AzureTenantDomain,
+                AzureClientId = AzureClientId,
+                AzureClientSecret = AzureClientSecret,
+                ImmySubdomain = ImmySubdomain
             };
             _ = Globals.SaveApiConnectionConfig(config);
         }
         WriteInformation("API connection established successfully.", null);
     }
 
-    private static string GetTenantId(string azureDomain) {
-        HttpClient client = new();
+    private static string GetTenantId(string azureDomain)
+    {
+        HttpClient client = CreateHttpClient();
         string url = $"https://login.windows.net/{azureDomain}/.well-known/openid-configuration";
         HttpResponseMessage response = client.GetAsync(url).Result;
-        if (!response.IsSuccessStatusCode) {
+        if (!response.IsSuccessStatusCode)
+        {
             throw new Exception($"Failed to retrieve Azure token endpoint: {response.ReasonPhrase}");
         }
         string content = response.Content.ReadAsStringAsync().Result;
         AzureTokenEndpointMetadataResponse azureTokenEndpointResponse = JsonSerializer.Deserialize<AzureTokenEndpointMetadataResponse>(content) ?? throw new Exception("Failed to deserialize Azure token endpoint response.");
         return azureTokenEndpointResponse.TokenEndpoint.Segments[1].Trim('/');
+    }
+
+    private static HttpClient CreateHttpClient()
+    {
+        if (HttpMessageHandlerFactory is { } factory)
+        {
+            return new HttpClient(factory(), true);
+        }
+        return new HttpClient();
     }
 }

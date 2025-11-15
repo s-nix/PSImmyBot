@@ -5,20 +5,25 @@ using System.Text;
 
 namespace PSImmyBot;
 
-internal static class Globals {
+internal static class Globals
+{
+    private static string? configDirectoryOverride;
     private static JsonSerializerOptions JsonSerializerOptions { get; } =
-        new JsonSerializerOptions {
+        new JsonSerializerOptions
+        {
             WriteIndented = true
         };
     private static JsonSerializerOptions LoadJsonSerializerOptions { get; } =
-        new JsonSerializerOptions {
+        new JsonSerializerOptions
+        {
             WriteIndented = false
         };
     private static string ConfigDirectoryPath =>
-        Path.Combine(
-            Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
-            "PSImmyBot"
-        );
+        configDirectoryOverride
+            ?? Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                "PSImmyBot"
+            );
 
     private static string ApiConnectionConfigFilePath =>
         Path.Combine(ConfigDirectoryPath, "api_connection_config.json");
@@ -28,22 +33,33 @@ internal static class Globals {
 
     public static AzureTokenResponse? Token => GetSavedApiToken();
 
-    public static void SaveApiToken(AzureTokenResponse token) {
-        if (!Directory.Exists(ConfigDirectoryPath)) {
+    internal static void SetConfigDirectoryOverride(string? directoryPath)
+    {
+        configDirectoryOverride = directoryPath;
+    }
+
+    public static void SaveApiToken(AzureTokenResponse token)
+    {
+        if (!Directory.Exists(ConfigDirectoryPath))
+        {
             _ = Directory.CreateDirectory(ConfigDirectoryPath);
         }
         string json = JsonSerializer.Serialize(token, JsonSerializerOptions);
         File.WriteAllText(ApiTokenPath, json);
     }
 
-    public static void RemoveSavedApiToken() {
-        if (File.Exists(ApiTokenPath)) {
+    public static void RemoveSavedApiToken()
+    {
+        if (File.Exists(ApiTokenPath))
+        {
             File.Delete(ApiTokenPath);
         }
     }
 
-    private static AzureTokenResponse? GetSavedApiToken() {
-        if (!File.Exists(ApiTokenPath)) {
+    private static AzureTokenResponse? GetSavedApiToken()
+    {
+        if (!File.Exists(ApiTokenPath))
+        {
             return null;
         }
         string json = File.ReadAllText(ApiTokenPath);
@@ -52,21 +68,27 @@ internal static class Globals {
         return token.ExpirationTime > DateTime.UtcNow.AddMinutes(5) ? token : null;
     }
 
-    public static ApiConnectionConfig GetApiConnectionConfig() {
+    public static ApiConnectionConfig GetApiConnectionConfig()
+    {
         _ = new ApiConnectionConfig();
         ApiConnectionConfig? config;
-        if (File.Exists(ApiConnectionConfigFilePath)) {
+        if (File.Exists(ApiConnectionConfigFilePath))
+        {
             string json = File.ReadAllText(ApiConnectionConfigFilePath);
             config = JsonSerializer.Deserialize<ApiConnectionConfig>(json)
                 ?? throw new JsonException($"Failed to deserialize API connection configuration. File: {ApiConnectionConfigFilePath}");
-        } else {
+        }
+        else
+        {
             throw new FileNotFoundException($"API connection configuration file not found. File: {ApiConnectionConfigFilePath}");
         }
         return config;
     }
 
-    public static ApiConnectionConfig SaveApiConnectionConfig(ApiConnectionConfig config) {
-        if (!Directory.Exists(ConfigDirectoryPath)) {
+    public static ApiConnectionConfig SaveApiConnectionConfig(ApiConnectionConfig config)
+    {
+        if (!Directory.Exists(ConfigDirectoryPath))
+        {
             _ = Directory.CreateDirectory(ConfigDirectoryPath);
         }
         string json = JsonSerializer.Serialize(config, JsonSerializerOptions);
@@ -74,13 +96,17 @@ internal static class Globals {
         return config;
     }
 
-    public static void RemoveSavedApiConnectionConfig() {
-        if (File.Exists(ApiConnectionConfigFilePath)) {
+    public static void RemoveSavedApiConnectionConfig()
+    {
+        if (File.Exists(ApiConnectionConfigFilePath))
+        {
             File.Delete(ApiConnectionConfigFilePath);
         }
     }
-    public static string ConvertToQueryParameters(DataSourceLoadOptions? loadOptions) {
-        if (loadOptions == null) {
+    public static string ConvertToQueryParameters(DataSourceLoadOptions? loadOptions)
+    {
+        if (loadOptions == null)
+        {
             return string.Empty;
         }
 
@@ -110,10 +136,12 @@ internal static class Globals {
 
         return sb.ToString();
 
-        void Append(string name, object? val) {
+        void Append(string name, object? val)
+        {
             if (val == null) return;
 
-            string str = val switch {
+            string str = val switch
+            {
                 string s => s,
                 bool b => b ? "true" : "false",
                 sbyte or byte or short or ushort or int or uint or long or ulong or float or double or decimal => Convert.ToString(val, CultureInfo.InvariantCulture) ?? string.Empty,
@@ -125,9 +153,11 @@ internal static class Globals {
 
         string Escape(string s) => Uri.EscapeDataString(s);
     }
-    
-    public static string ConvertToQueryParameters<T>(T? value, string paramName) {
-        if (value == null) {
+
+    public static string ConvertToQueryParameters<T>(T? value, string paramName)
+    {
+        if (value == null)
+        {
             return string.Empty;
         }
         string stringValue = Uri.EscapeDataString(value.ToString() ?? string.Empty);

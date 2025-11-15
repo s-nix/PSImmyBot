@@ -20,4 +20,12 @@
     <Folder Include="docs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="PSImmyBot.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="tests\**\*.cs" />
+  </ItemGroup>
+
 </Project>
