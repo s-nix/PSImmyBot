@@ -4,16 +4,19 @@ using PSImmyBot.Services;
 
 namespace PSImmyBot.Cmdlets;
 
-[Cmdlet(VerbsCommon.Get, "ChangeRequest")]
-public class GetChangeRequest : Cmdlet {
+[Cmdlet(VerbsCommon.Get, "AuditGlobal")]
+public class GetAuditGlobal : Cmdlet
+{
     [Parameter(Mandatory = false)]
     public DataSourceLoadOptions? LoadOptions { get; set; }
 
-    protected override void ProcessRecord() {
-        string endpoint = $"/api/v1/change-requests/dx?";
+
+    protected override void ProcessRecord()
+    {
+        string endpoint = "/api/v1/audits/global/dx?";
         endpoint += Globals.ConvertToQueryParameters(LoadOptions);
 
-        LoadResult response = ImmyBotApiService.Get<LoadResult>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
+        List<Audit> response = ImmyBotApiService.Get<List<Audit>>(endpoint.TrimEnd('?').TrimEnd('&')).GetAwaiter().GetResult();
         WriteObject(response);
     }
 }
