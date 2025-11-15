@@ -1,16 +1,16 @@
 ---
-title: Get-ChangeRequest
+title: Get-AzureErrorLogItemsForTenant
 ---
 
-# Get-ChangeRequest
+# Get-AzureErrorLogItemsForTenant
 
 | Detail | Value |
 | --- | --- |
-| Class | `PSImmyBot.Cmdlets.GetChangeRequest` |
-| Source | `Cmdlets/GetChangeRequest.cs` |
+| Class | `PSImmyBot.Cmdlets.GetAzureErrorLogItemsForTenant` |
+| Source | `Cmdlets/GetAzureErrorLogItemsForTenant.cs` |
 | HTTP Method | GET |
-| Endpoint | /api/v1/change-requests/dx? |
-| Return Type | [LoadResult](../models/LoadResult.md) |
+| Endpoint | /api/v1/azure-errors/for-tenant/{TenantPrincipalId}/dx? |
+| Return Type | List<[AzureErrorLogItem](../models/AzureErrorLogItem.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,7 @@ title: Get-ChangeRequest
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/change-requests/dx?` and deserializes to [LoadResult](../models/LoadResult.md).
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/azure-errors/for-tenant/{TenantPrincipalId}/dx?` and deserializes to List<[AzureErrorLogItem](../models/AzureErrorLogItem.md)>.
 - Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
@@ -26,6 +26,7 @@ title: Get-ChangeRequest
 | Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
 | --- | --- | --- | --- | --- | --- |
 | LoadOptions | [DataSourceLoadOptions](../models/DataSourceLoadOptions.md) | False | — | All | None |
+| TenantPrincipalId | `String` | True | — | All | None |
 
 ### Parameter sets
 
@@ -33,7 +34,7 @@ title: Get-ChangeRequest
 
 ## Outputs
 
-- [LoadResult](../models/LoadResult.md) records produced by `ImmyBotApiService.GET`
+- List<[AzureErrorLogItem](../models/AzureErrorLogItem.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

@@ -26,15 +26,15 @@ Free Software Foundation, either version 3 of the License, or
 
     CmdletsToExport      = @(
         "Connect-Api", "Disconnect-Api", "Get-AccessRequest", "Get-AgentSha256Hash",
-        "Get-ApiConnectionConfig", "Get-ApplicationLocks", "Get-AppRegistrationOptions", "Get-Audit",
+        "Get-ApiConnectionConfig", "Get-ApplicationLocks", "Get-AppRegistrationOptions", "Get-AuditLocal", "Get-AuditGlobal"
         "Get-Auth", "Get-AzureErrorLogItems", "Get-AzureGroup", "Get-AzureTenantAuthDetails",
-        "Get-AzureTenantCustomers", "Get-BillingPlatformDetails", "Get-Branding", "Get-ChangeRequest",
+        "Get-AzureTenantCustomers", "Get-BillingPlatformDetails", "Get-Branding", "Get-BrandingById", "Get-ChangeRequest", "Get-ChangeRequestByDeployment",
         "Get-ChangeRequestDiff", "Get-ChangeRequestsOpenCount", "Get-ChocoPackageVersion", "Get-ChocoSearchResult",
         "Get-CircuitBreakerState", "Get-Claims", "Get-CommandResult", "Get-Computer",
         "Get-ComputerAgentStatusDto", "Get-ComputerDeviceUpdateFormData", "Get-ComputerInventory", "Get-ComputerInventoryAllSoftware",
         "Get-ComputerInventorySoftware", "Get-ComputerSearch", "Get-ComputersExport", "Get-ComputersInventoryExport",
         "Get-ComputersInventoryScriptResults", "Get-ComputersPaged", "Get-ComputersProviderLinksScreenShareUrl", "Get-ComputerStatus",
-        "Get-ComputersUserAffinitiesExport", "Get-ComputerUserAffinities", "Get-DetectedComputerSoftware", "Get-DisabledPreflightScripts",
+        "Get-ComputersUserAffinitiesExport", "Get-ComputerUserAffinities", "Get-DetectedComputerSoftware", "Get-DetectedComputerSoftwareByComputer", "Get-DisabledPreflightScripts",
         "Get-DynamicIntegrationType", "Get-EphemeralAgent", "Get-EphemeralSessionBinary", "Get-EphemeralSessionDevelopmentBinary",
         "Get-FailedPendingAgent", "Get-GlobalMaintenanceTask", "Get-GlobalMediaResponse", "Get-GlobalScript",
         "Get-GlobalSoftware", "Get-GlobalSoftwareVersion", "Get-GlobalTargetAssignmentResource", "Get-IClientGroup",

@@ -1,16 +1,16 @@
 ---
-title: Get-Audit
+title: Get-AuditLocal
 ---
 
-# Get-Audit
+# Get-AuditLocal
 
 | Detail | Value |
 | --- | --- |
-| Class | `PSImmyBot.Cmdlets.GetAudit` |
-| Source | `Cmdlets/GetAudit.cs` |
-| HTTP Method | Custom |
-| Endpoint | Not applicable |
-| Return Type | `Varies/none` |
+| Class | `PSImmyBot.Cmdlets.GetAuditLocal` |
+| Source | `Cmdlets/GetAuditLocal.cs` |
+| HTTP Method | GET |
+| Endpoint | /api/v1/audits/local/dx? |
+| Return Type | List<[Audit](../models/Audit.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,7 +18,8 @@ title: Get-Audit
 | Default Parameter Set | None |
 
 ## Behavior
-- Refer to the source implementation for detailed flow; this cmdlet performs custom orchestration beyond simple API proxying.
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/audits/local/dx?` and deserializes to List<[Audit](../models/Audit.md)>.
+- Builds query strings using `Globals.ConvertToQueryParameters` to keep parameter encoding consistent.
 
 ## Parameters
 
@@ -32,7 +33,7 @@ title: Get-Audit
 
 ## Outputs
 
-- See source for specific output behavior.
+- List<[Audit](../models/Audit.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 

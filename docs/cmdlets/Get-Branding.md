@@ -9,8 +9,8 @@ title: Get-Branding
 | Class | `PSImmyBot.Cmdlets.GetBranding` |
 | Source | `Cmdlets/GetBranding.cs` |
 | HTTP Method | GET |
-| Endpoint | /api/v1/brandings/{Id}? |
-| Return Type | [GetBrandingResponse](../models/GetBrandingResponse.md) |
+| Endpoint | /api/v1/brandings? |
+| Return Type | List<[GetBrandingResponse](../models/GetBrandingResponse.md)> |
 | SupportsShouldProcess | False |
 | SupportsPaging | False |
 | SupportsTransactions | False |
@@ -18,21 +18,15 @@ title: Get-Branding
 | Default Parameter Set | None |
 
 ## Behavior
-- Calls `ImmyBotApiService.GET` targeting `/api/v1/brandings/{Id}?` and deserializes to [GetBrandingResponse](../models/GetBrandingResponse.md).
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/brandings?` and deserializes to List<[GetBrandingResponse](../models/GetBrandingResponse.md)>.
 
 ## Parameters
 
-| Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
-| --- | --- | --- | --- | --- | --- |
-| Id | `Int32` | True | — | All | None |
-
-### Parameter sets
-
-- `All`
+_This cmdlet does not expose custom parameters._
 
 ## Outputs
 
-- [GetBrandingResponse](../models/GetBrandingResponse.md) records produced by `ImmyBotApiService.GET`
+- List<[GetBrandingResponse](../models/GetBrandingResponse.md)> records produced by `ImmyBotApiService.GET`
 
 ## Notes
 
