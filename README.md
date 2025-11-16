@@ -4,7 +4,7 @@
 
 PowerShell module and .NET 8 class library for automating the ImmyBot API.
 
-> **Status: Pre-Alpha**  
+> **Status: Alpha**  
 > All cmdlets have not yet been tested and will be broken. Expect breaking changes until full release.
 
 ## About the project
@@ -44,7 +44,7 @@ Connect-ImmyApi -AzureTenantDomain "<tenant-domain>" -AzureClientId "<app-id>" -
 Connect-ImmyApi -UseSavedConfig
 ```
 
-> Because the project is pre-alpha, individual cmdlets may fail or produce incomplete data. Validate responses against the ImmyBot portal before automating.
+> Because the project is alpha, individual cmdlets may fail or produce incomplete data. Validate responses against the ImmyBot portal before automating.
 
 ## Usage
 
@@ -76,7 +76,7 @@ All cmdlets rely on shared serialization helpers from `Globals`. Avoid direct HT
 
 ## Contributing
 
-Contributions are welcome even in pre-alpha—just expect sharp edges. ⚔️ 🐛
+Contributions are welcome even in alpha—just expect sharp edges. ⚔️ 🐛
 
 1. Open an issue describing the bug/feature and affected endpoint.
 2. Follow the established cmdlet naming (`Verb-Noun`) and reuse `Globals` helpers for configuration. (A default prefix of "Immy" is used, so the nouns do not need an explicit prefix)
