@@ -287,7 +287,7 @@ Free Software Foundation, either version 3 of the License, or
 
             ProjectUri                 = 'https://github.com/s-nix/PSImmyBot'
 
-            IconUri                    = ''
+            IconUri                    = 'https://raw.githubusercontent.com/s-nix/PSImmyBot/docs/assets/PSImmyBot.png'
 
             ReleaseNotes               = ''
 
