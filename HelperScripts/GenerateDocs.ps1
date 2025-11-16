@@ -170,6 +170,29 @@ function Get-ParameterMetadata {
 $script:CmdletDocPaths = @{}
 $script:ModelDocPaths = @{}
 
+function Get-DefaultCommandPrefix {
+    param([string]$RootPath)
+
+    $manifestPath = Join-Path $RootPath 'PSImmyBot.psd1'
+    if (-not (Test-Path $manifestPath)) {
+        return ''
+    }
+
+    try {
+        $manifest = Import-PowerShellDataFile -Path $manifestPath
+    }
+    catch {
+        Write-Warning "Unable to read module manifest at $manifestPath. Cmdlet docs will omit the default prefix."
+        return ''
+    }
+
+    if ($manifest.ContainsKey('DefaultCommandPrefix') -and -not [string]::IsNullOrWhiteSpace($manifest.DefaultCommandPrefix)) {
+        return [string]$manifest.DefaultCommandPrefix
+    }
+
+    return ''
+}
+
 function Get-RelativeDocLinkPath {
     param(
         [string]$SourceFile,
@@ -497,6 +520,7 @@ function Build-ModelDoc {
 $assemblyPath = Ensure-AssemblyReady -RootPath $Root
 $assembly = [System.Reflection.Assembly]::LoadFrom($assemblyPath)
 $cmdletBaseType = [System.Management.Automation.Cmdlet]
+$defaultCommandPrefix = Get-DefaultCommandPrefix -RootPath $Root
 
 $cmdlets = $assembly.GetTypes() |
 Where-Object { $_.IsClass -and -not $_.IsAbstract -and $_.IsSubclassOf($cmdletBaseType) } |
@@ -526,7 +550,12 @@ foreach ($type in $cmdlets) {
         continue
     }
     $cmdletAttr = $cmdletAttr[0]
-    $cmdletName = "{0}-{1}" -f $cmdletAttr.VerbName, $cmdletAttr.NounName
+    $cmdletName = if ([string]::IsNullOrWhiteSpace($defaultCommandPrefix)) {
+        "{0}-{1}" -f $cmdletAttr.VerbName, $cmdletAttr.NounName
+    }
+    else {
+        "{0}-{1}{2}" -f $cmdletAttr.VerbName, $defaultCommandPrefix, $cmdletAttr.NounName
+    }
     $targetPath = Join-Path $cmdletDocsDir "$cmdletName.md"
     $script:CmdletDocPaths[$cmdletName] = $targetPath
     $cmdletMetadata += [pscustomobject]@{

@@ -1,0 +1,39 @@
+---
+title: Get-ImmyTenantPreferences
+---
+
+# Get-ImmyTenantPreferences
+
+| Detail | Value |
+| --- | --- |
+| Class | `PSImmyBot.Cmdlets.GetTenantPreferences` |
+| Source | `Cmdlets/GetTenantPreferences.cs` |
+| HTTP Method | GET |
+| Endpoint | /api/v1/preferences/tenants/{TenantId}? |
+| Return Type | [TenantPreferences](../models/TenantPreferences.md) |
+| SupportsShouldProcess | False |
+| SupportsPaging | False |
+| SupportsTransactions | False |
+| ConfirmImpact | None |
+| Default Parameter Set | None |
+
+## Behavior
+- Calls `ImmyBotApiService.GET` targeting `/api/v1/preferences/tenants/{TenantId}?` and deserializes to [TenantPreferences](../models/TenantPreferences.md).
+
+## Parameters
+
+| Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| TenantId | `Int32` | True | — | All | None |
+
+### Parameter sets
+
+- `All`
+
+## Outputs
+
+- [TenantPreferences](../models/TenantPreferences.md) records produced by `ImmyBotApiService.GET`
+
+## Notes
+
+This documentation was generated automatically by `HelperScripts/GenerateDocs.ps1` by analyzing the cmdlet source and compiled metadata.

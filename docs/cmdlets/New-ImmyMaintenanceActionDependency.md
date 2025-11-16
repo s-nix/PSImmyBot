@@ -1,0 +1,42 @@
+---
+title: New-ImmyMaintenanceActionDependency
+---
+
+# New-ImmyMaintenanceActionDependency
+
+| Detail | Value |
+| --- | --- |
+| Class | `PSImmyBot.Cmdlets.NewMaintenanceActionDependency` |
+| Source | `Cmdlets/NewMaintenanceActionDependency.cs` |
+| HTTP Method | Custom |
+| Endpoint | Not applicable |
+| Return Type | `Varies/none` |
+| SupportsShouldProcess | False |
+| SupportsPaging | False |
+| SupportsTransactions | False |
+| ConfirmImpact | None |
+| Default Parameter Set | None |
+
+## Behavior
+- Refer to the source implementation for detailed flow; this cmdlet performs custom orchestration beyond simple API proxying.
+
+## Parameters
+
+| Name | Type | Mandatory | Position | Parameter Sets | Pipeline Input |
+| --- | --- | --- | --- | --- | --- |
+| Dependent | [MaintenanceAction](../models/MaintenanceAction.md) | True | — | All | None |
+| DependentId | `Int32` | True | — | All | None |
+| DependsOn | [MaintenanceAction](../models/MaintenanceAction.md) | True | — | All | None |
+| DependsOnId | `Int32` | True | — | All | None |
+
+### Parameter sets
+
+- `All`
+
+## Outputs
+
+- See source for specific output behavior.
+
+## Notes
+
+This documentation was generated automatically by `HelperScripts/GenerateDocs.ps1` by analyzing the cmdlet source and compiled metadata.
